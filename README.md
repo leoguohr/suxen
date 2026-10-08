@@ -1,10 +1,10 @@
 # NEXUS 实验与证据归档
 
-**私密仓库 · 截至 2026-10-08 的现有结果快照**
+**公开仓库 · 截至 2026-10-08 的现有结果快照**
 
 本仓库汇总本会话的 NEXUS 八叉树 Vertex Diffusion：代码、历史实验、结构调研、已保存预测、训练日志与结论；同时保存老师原始交付包、候选复建代码及独立核验。独立 VAE/OwnAE-v2 已完成，本次未改动或重新训练。
 
-- [完整下载包（Release）](https://github.com/leoguohr/nexus/releases/tag/evidence-2026-10-08)
+- [完整下载包（Release）](https://github.com/leoguohr/suxen/releases/tag/evidence-2026-10-08)
 - [各阶段结果与结论](docs/RESULTS_AND_CONCLUSIONS.md)
 - [本次资产与完整性清单](docs/ASSET_INDEX.md)
 - [Vertex 代码与研究文档](vertex/)
