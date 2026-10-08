@@ -1,0 +1,97 @@
+[
+  {
+    "path": "current/REPORT.md",
+    "bytes": 4519,
+    "sha256": "10ac5a692b16e093bfe1821514a373a271ad4ea4c0b13d2aa7fc8b77177fb950"
+  },
+  {
+    "path": "current/code/data_objective.py",
+    "bytes": 7729,
+    "sha256": "3e52edf63e0332bd3bf777826d5eb9e384f781b55ef87d67640a5b7ea06718e6"
+  },
+  {
+    "path": "current/code/evaluate_checkpoint.py",
+    "bytes": 7808,
+    "sha256": "b9bee888cb7e27c71e3b3d508c51fb8c7a4c5561688a25a49b105d6222cbbb4f"
+  },
+  {
+    "path": "current/code/native_models.py",
+    "bytes": 9139,
+    "sha256": "ad754ba4c83213ea6b69b2c6f496095924c6a4c2bfbd9c7c0300372ecb4fa1f3"
+  },
+  {
+    "path": "current/code/pair_negatives.py",
+    "bytes": 4201,
+    "sha256": "c8e67d1f58b6dc2b871f3051d93a2725688ba1f4d27bd4c4a35ed48fdbc1b18f"
+  },
+  {
+    "path": "current/code/prepare_continue.py",
+    "bytes": 6189,
+    "sha256": "3b54da08d4a032d5097d117c9b85172be9cd595bb46c48784c866647fb3dcd47"
+  },
+  {
+    "path": "current/code/run_support.py",
+    "bytes": 2706,
+    "sha256": "39e8e44eb7eb5133bcfe58337b5e4501f99e5f5103dc80082dbfbae9376d8229"
+  },
+  {
+    "path": "current/code/runtime_fixed100.py",
+    "bytes": 6113,
+    "sha256": "337b3bf40ace5281bd22eba4106a7af7d25fcc2ae1aa79c4b2b5daf14b117f3f"
+  },
+  {
+    "path": "current/code/stream_faces.py",
+    "bytes": 5200,
+    "sha256": "2fe8da1cc00aac733b8b0536a8169c0ee0c15b5ac000ff9265322af524fe3942"
+  },
+  {
+    "path": "current/code/train_continue.py",
+    "bytes": 22973,
+    "sha256": "0326278e53b6b059fd23d757255a296614778226e5d769e46e7078284f457361"
+  },
+  {
+    "path": "current/code/vae_protocol.py",
+    "bytes": 6127,
+    "sha256": "7a3812bda7f22ff2a5510d62633be2564cbc765e1330b9ee46b169b255d64814"
+  },
+  {
+    "path": "current/config.json",
+    "bytes": 3334,
+    "sha256": "9d1433b51a90b3cabcd833539e372cc971ac3ec3344d5e04ae7ecc84e44d3206"
+  },
+  {
+    "path": "current/hard_pool.json",
+    "bytes": 197703,
+    "sha256": "f45ad0b2084c6209fd8198ba963c9f7dfab411da5fda148184c72efbb8ab57a9"
+  },
+  {
+    "path": "current/negative_schedule.json",
+    "bytes": 1868353,
+    "sha256": "b99792dda893a5161ef30dc0f544a1444ef66ca68330642d6f7cb75cf28868aa"
+  },
+  {
+    "path": "current/run/checkpoints/vae-1000.json",
+    "bytes": 411,
+    "sha256": "c9901f958a9160f83052923e87f4ee4a53f9de2f3ef64aeb8c64751bac30ea70"
+  },
+  {
+    "path": "current/run/complete.json",
+    "bytes": 677,
+    "sha256": "0cfbec3569402ddfe5c1f9648a799f5e1a05b3270be7b5f72ce16d1390a7a27c"
+  },
+  {
+    "path": "current/run/data_manifest.json",
+    "bytes": 56233,
+    "sha256": "bc9aa36d8f798a1ddbc7eb5d41a4f30ba3eba7dfe7177eb31b5cc91937a74b82"
+  },
+  {
+    "path": "current/run_continue.py",
+    "bytes": 2109,
+    "sha256": "7141567de62c480a05b3bd4c645b5b839ddc8680773965e752259461a9613cd6"
+  },
+  {
+    "path": "current/summarize_results.py",
+    "bytes": 8554,
+    "sha256": "a406700600c3a29bd0f0ec0c9144f3357c51b8b58127a59e189abf8e93339953"
+  }
+]
