@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "authorized_gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+  "max_gpu_seconds": 28800,
+  "max_optimizer_updates": 1000,
+  "charged_gpu_seconds": 0,
+  "effective_optimizer_updates": 0,
+  "last_completed_updates": 0,
+  "active": null,
+  "attempts": []
+}

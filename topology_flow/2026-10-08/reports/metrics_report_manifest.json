@@ -1,0 +1,127 @@
+{
+  "builder_sha256": "487cdeefe97c31be9d8b51f501944b7e97f16fda1f3f1c33594fef9cbc977acc",
+  "input_files": 1550,
+  "source": "snapshot only",
+  "files": [
+    {
+      "path": "CONCLUSIONS_zh.md",
+      "bytes": 12317,
+      "sha256": "e6bae341b4aeb4764198971c7129327601a248aefeb069633650b6a7c9256ffc"
+    },
+    {
+      "path": "METRICS_README.md",
+      "bytes": 2641,
+      "sha256": "b09bf7745228280f392662fe6ea0889e2277357bf7e903f4b4b303b51af801f2"
+    },
+    {
+      "path": "STRUCTURE_AND_SCOPE_zh.md",
+      "bytes": 11720,
+      "sha256": "d5db7ea43579de7464128ac469ba9bea674edfb9d70f0d67b34c053065aacea9"
+    },
+    {
+      "path": "checkpoint_inventory.csv",
+      "bytes": 5097,
+      "sha256": "34a4b82cf16e779b49f6895ec4bdb67f59f3f5cd7429995cd882e44148f5b64c"
+    },
+    {
+      "path": "common_uid_f1_changes.png",
+      "bytes": 197845,
+      "sha256": "bb15930030c78054f227b97e8a472969c363e9ed40fb3f36ef85843025070048"
+    },
+    {
+      "path": "common_uid_f1_changes.svg",
+      "bytes": 81076,
+      "sha256": "b7ef0257e623f3f5b0d46f24f074107bc38ed1dfdc013a72331e1e6c44653b39"
+    },
+    {
+      "path": "common_uid_group_comparisons.csv",
+      "bytes": 17830,
+      "sha256": "1b21d75ddc53b2d550ae89e2eb124fcacbf76ba8b58d53e3236b99b35fd5567a"
+    },
+    {
+      "path": "common_uid_pairwise.csv",
+      "bytes": 26006,
+      "sha256": "cd9c9040c71601f54037c00d855164fff4c0207a85b3dda94f47e918db227352"
+    },
+    {
+      "path": "diagnostic_groups.json",
+      "bytes": 3417,
+      "sha256": "1fb3ca6e23f28fd9bcd4cf83a1c4b4c1a916a6c493bad25df99ac236d589caed"
+    },
+    {
+      "path": "evaluation_coverage.csv",
+      "bytes": 3703,
+      "sha256": "f5487c0222e86556954ef7cac0164f5a836f7ca32c061592531c9a764ce34d94"
+    },
+    {
+      "path": "flow_vs_vae_same_uid_gaps.csv",
+      "bytes": 6166,
+      "sha256": "0658e0fca626f32d41775b00af0f361f68a639ad745bc53364df1eecb0994dd7"
+    },
+    {
+      "path": "full50_aggregates.csv",
+      "bytes": 1939,
+      "sha256": "4ce10d6affc246e0cf3dcb5e11b0734ec96775c83603157efca1b287f9addfa1"
+    },
+    {
+      "path": "full50_generation_vs_vae.png",
+      "bytes": 77813,
+      "sha256": "58503f527f0e94f3c5f3270c67bf54d0cdba35b36d63afea4ae9322c45673636"
+    },
+    {
+      "path": "full50_generation_vs_vae.svg",
+      "bytes": 35549,
+      "sha256": "f61fc8fa4e0060b74d8797290fb9f6ba48f164bbc377088e92ef8c40d5868271"
+    },
+    {
+      "path": "metrics_integrity.json",
+      "bytes": 259851,
+      "sha256": "b90df35465eb3e1674387e6e356e38101d1486a0ecb75196102751041ae0401d"
+    },
+    {
+      "path": "metrics_summary.json",
+      "bytes": 76984,
+      "sha256": "b67580e56f41a3035d802c28714668c17794325ae5dca72ce6210268878b6646"
+    },
+    {
+      "path": "observed_subset_aggregates.csv",
+      "bytes": 889,
+      "sha256": "a826b53dbed280e99ab136113870d90139d747a36ff0b3d6e3429a175260daf1"
+    },
+    {
+      "path": "per_uid_all_checkpoints.csv",
+      "bytes": 152286,
+      "sha256": "0414a61f9fab35e6a72e46d1c3ac6e1d59ceb8a403b89dd034c80485c685af38"
+    },
+    {
+      "path": "training_mesh_participation.csv",
+      "bytes": 5863,
+      "sha256": "81de9fed22106d4aba813f3490504d5b61808ea1ed3556602e48ba2ef4a47f12"
+    },
+    {
+      "path": "training_summary.csv",
+      "bytes": 1502,
+      "sha256": "f6110d001c563941f62def026dfc3690304d3aee5586ac4ee5fae16044f7f1af"
+    },
+    {
+      "path": "training_updates.csv",
+      "bytes": 732961,
+      "sha256": "ada46c5bd1a08d6754c4a4dc320b14bf639dc6befba49dee3eeb9ce8e25c5068"
+    },
+    {
+      "path": "training_velocity_mse.png",
+      "bytes": 251483,
+      "sha256": "c96bd13e87a64ba12d6e5d36c1c78b127cbc9842fa2c7122a24c4f9230014fbf"
+    },
+    {
+      "path": "training_velocity_mse.svg",
+      "bytes": 226812,
+      "sha256": "b7891ca05c99df07e48962938fceada79cb3edb2d035fb0912f3db123b6704bf"
+    },
+    {
+      "path": "visualization_inputs.json",
+      "bytes": 291418,
+      "sha256": "0bc73e3aa8ab217af2d85bfb9d9cd2b1ead417fb5611af8571a6091e50b83cbf"
+    }
+  ]
+}

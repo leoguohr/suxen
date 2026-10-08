@@ -1,0 +1,83 @@
+{
+  "complete": false,
+  "completed_updates": 904,
+  "elapsed_seconds": 5146.179064449854,
+  "gpu_budget": {
+    "authorized_gpu_uuid": "GPU-208b1847-4ab0-f090-b8d4-f21ebd908b00",
+    "max_gpu_seconds": 7060,
+    "charged_gpu_seconds": 5146.180773020722,
+    "max_optimizer_updates": 8000,
+    "effective_optimizer_updates": 904,
+    "last_completed_updates": 904
+  },
+  "latest": {
+    "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c1/run/checkpoints/flow-0000904.pt",
+    "sha256": "ecc06db9adfaeb56be24ea23ec84ba1b2eee231d250cb7433d59e8503416f197",
+    "bytes": 28008597241,
+    "completed_updates": 904,
+    "protected": [
+      "final"
+    ],
+    "retained": true
+  },
+  "execution_policy": {
+    "flow_direct_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "condition_direct_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "execution_policy_sha256": "5ff23af236f54b9bf0bc15192d030debf4c066ecbfba827506f77f859535f629",
+  "execution_policy_path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/perf/execution_policy.json",
+  "execution_policy_file_sha256": "3ebd74d81b44c53731c5294e1286dfa00ee6184be728e7a29a60ddc0725a6f58",
+  "attempt_start_completed_updates": 0,
+  "reason": "time_update_budget_or_STOP",
+  "evaluation": "not_run; use evaluate_flow.py on an immutable checkpoint",
+  "direct_mesh_participation": {
+    "complete_epochs": 90,
+    "additional_five_mesh_groups": 4
+  }
+}

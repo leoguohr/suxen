@@ -1,0 +1,21 @@
+{
+  "model": {
+    "hidden_dim": 1536,
+    "num_layers": 36,
+    "num_heads": 12,
+    "condition_dim": 2048,
+    "condition_layers": 8,
+    "condition_heads": 16,
+    "condition_tokens": 1024,
+    "rope_scale": 256.0,
+    "latent_dim": 512,
+    "recompute": true,
+    "variant": "c1_fourier"
+  },
+  "seed": 0,
+  "batch_meshes": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.01,
+  "warmup_updates": 100,
+  "clip": 1.0
+}

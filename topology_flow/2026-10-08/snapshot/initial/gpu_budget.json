@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "authorized_gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+  "max_gpu_seconds": 28800,
+  "max_optimizer_updates": 1000,
+  "charged_gpu_seconds": 4305.654972188175,
+  "effective_optimizer_updates": 500,
+  "last_completed_updates": 500,
+  "active": {
+    "phase": "flow_evaluation",
+    "pid": 2154,
+    "started_unix": 1790939353.512628,
+    "gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+    "charged_before": 4265.941794624552,
+    "last_seen_unix": 1790939393.225811
+  },
+  "attempts": [
+    {
+      "phase": "cache_export",
+      "pid": 1293,
+      "started_unix": 1790934879.9933515,
+      "gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+      "charged_before": 0.0,
+      "last_seen_unix": 1790934919.256026,
+      "ended_unix": 1790934919.256027,
+      "seconds": 39.26268162764609,
+      "outcome": "finished",
+      "exceeded_time_budget": false
+    },
+    {
+      "phase": "vae_baseline",
+      "pid": 1345,
+      "started_unix": 1790934974.9151597,
+      "gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+      "charged_before": 39.26268162764609,
+      "last_seen_unix": 1790935117.4692085,
+      "ended_unix": 1790935117.4692101,
+      "seconds": 142.55405016150326,
+      "outcome": "finished",
+      "exceeded_time_budget": false
+    },
+    {
+      "phase": "train",
+      "pid": 1444,
+      "started_unix": 1790935235.6693335,
+      "gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+      "charged_before": 181.81673178914934,
+      "last_seen_unix": 1790939319.7943947,
+      "ended_unix": 1790939319.794398,
+      "seconds": 4084.125062835403,
+      "outcome": "finished",
+      "exceeded_time_budget": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "gpu_used": false,
+  "checks": [
+    "normal_exit",
+    "timeout_sigterm",
+    "sigkill_fallback",
+    "syntax"
+  ],
+  "core_runtime_changed": false
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "tests": [
+    "mu unchanged; two fixed posterior draws repeat exactly and leave global RNG unchanged; Flow domain differs",
+    "49, duplicated and reordered selections rejected; strict50 requires all four FP/FN zero under one identity",
+    "actual decoder-only baseline resume does not redraw; OBJ exactly preserves vertices and every predicted edge/face",
+    "Flow comparison requires a complete baseline bound to all 50 ordered UIDs and the same cache/VAE"
+  ],
+  "real_meshes_evaluated": 0,
+  "gpu_used": false,
+  "real_source_checkpoint_loaded": false,
+  "temporary_fixtures_removed": true
+}

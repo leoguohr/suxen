@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "tests": [
+    "50 unique UIDs exactly once per 10-update epoch; 1000 updates imply 100 direct participations each",
+    "step9 checkpoint crosses epoch boundary with identical model, AdamW, draws, UID cursor and unreset warmup after budget extension",
+    "changed recipe and corrupted cursor fail closed",
+    "partial five-mesh accumulation rolls back RNG/gradients; profile covers all five meshes and one counted Adam step",
+    "separate stage files extend cumulative allowance; retention preserves newest one, eval500/1000, best and explicit final protection",
+    "CPU CLI saves real populated fixture Adam at update1, extends stage2 to3, verifies SHA and preserves Adam cursor"
+  ],
+  "synthetic_optimizer_updates": 17,
+  "real_mesh_optimizer_updates": 0,
+  "gpu_used": false,
+  "production_scale_tested": false,
+  "temporary_fixtures_removed": true
+}

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "tests": [
+    "CPU mode performs no GPU accounting; CUDA requires an explicit ledger",
+    "Reject numeric, different or multiple visible GPUs and nonzero CUDA mapping without modifying the ledger",
+    "Exclusive ledger lock; export and train charge cumulative reservation time; idle gaps excluded; cursor/update writes durable",
+    "Reject replayed/skipped cursors; exact update cap stops further optimizer accounting",
+    "Evaluation can consume remaining time after the update cap; reserve/equality time boundary stops; exhausted reentry refused",
+    "Exceptions are charged and release the lock; unclosed attempts refuse restart without silently resetting time",
+    "Boundary overrun remains charged and explicitly flagged, never clamped out of recorded usage"
+  ],
+  "clock": "mocked",
+  "cuda_device_calls": 0,
+  "real_gpu_used": false,
+  "real_budget_files_modified": false,
+  "temporary_fixtures_removed": true
+}

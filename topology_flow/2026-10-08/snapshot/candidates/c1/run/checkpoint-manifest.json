@@ -1,0 +1,50 @@
+{
+  "keep_recent": 1,
+  "checkpoints": [
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c1/run/checkpoints/flow-0000000.pt",
+      "sha256": "83b62527d8fbe5a87185330e335cadc46274aae9c1c769a35d87bfd977a3f0f3",
+      "bytes": 9336224676,
+      "completed_updates": 0,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c1/run/checkpoints/flow-0000001.pt",
+      "sha256": "fe3f0ce210369eac7b334be2da9d031588d5f455d5ace2e07cc5816594f7ea12",
+      "bytes": 28008597241,
+      "completed_updates": 1,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c1/run/checkpoints/flow-0000003.pt",
+      "sha256": "911addca12c7583a2c2f3bf7d802191e9b354680e48be37d1bc5b49dbbbcf2d2",
+      "bytes": 28008597241,
+      "completed_updates": 3,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c1/run/checkpoints/flow-0000500.pt",
+      "sha256": "5f4694033858d7cbc0f3bc77be485f41f396c42f67e88797a6e963f64a5bc4e9",
+      "bytes": 28008597241,
+      "completed_updates": 500,
+      "protected": [
+        "scheduled_evaluation"
+      ],
+      "retained": true
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c1/run/checkpoints/flow-0000904.pt",
+      "sha256": "ecc06db9adfaeb56be24ea23ec84ba1b2eee231d250cb7433d59e8503416f197",
+      "bytes": 28008597241,
+      "completed_updates": 904,
+      "protected": [
+        "final"
+      ],
+      "retained": true
+    }
+  ],
+  "protection": "500/1000, final/best metadata, or CHECKPOINT.protect.json are never removed"
+}

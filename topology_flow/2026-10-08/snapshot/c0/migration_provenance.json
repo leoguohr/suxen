@@ -1,0 +1,15 @@
+{
+  "source_root": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002",
+  "destination_root": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006",
+  "frozen_runtime_changed": false,
+  "read_only_references": {
+    "cache": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/cache",
+    "vae_baseline": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/vae_baseline",
+    "inputs_verified": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/inputs_verified"
+  },
+  "retained_checkpoint_path_mapped_to": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0000500.pt",
+  "source_preserved": true,
+  "shared_checkpoint_bytes_unchanged": true,
+  "old_evaluation_identity_preserved": true,
+  "launch_requires_completed_checkpoint_copy_verification": true
+}

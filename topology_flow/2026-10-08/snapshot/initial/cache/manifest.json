@@ -1,0 +1,4036 @@
+{
+  "source_checkpoint_sha256": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15",
+  "source_checkpoint": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run/checkpoints/vae-1000.pt",
+  "data": {
+    "uids": [
+      "nexus_2k_001150",
+      "nexus_2k_001045",
+      "nexus_2k_000084",
+      "nexus_2k_001692",
+      "nexus_2k_001843",
+      "nexus_2k_000346",
+      "nexus_2k_001780",
+      "nexus_2k_000796",
+      "nexus_2k_001085",
+      "nexus_2k_000020",
+      "nexus_2k_000447",
+      "nexus_2k_001179",
+      "nexus_2k_000118",
+      "nexus_2k_000074",
+      "nexus_2k_000519",
+      "nexus_2k_001087",
+      "nexus_2k_000053",
+      "nexus_2k_000675",
+      "nexus_2k_001716",
+      "nexus_2k_000242",
+      "nexus_2k_000823",
+      "nexus_2k_001536",
+      "nexus_2k_000840",
+      "nexus_2k_001577",
+      "nexus_2k_001216",
+      "nexus_2k_001331",
+      "nexus_2k_000142",
+      "nexus_2k_001550",
+      "nexus_2k_000872",
+      "nexus_2k_000952",
+      "nexus_2k_001825",
+      "nexus_2k_001483",
+      "nexus_2k_001439",
+      "nexus_2k_001178",
+      "nexus_2k_001317",
+      "nexus_2k_000869",
+      "nexus_2k_001415",
+      "nexus_2k_000283",
+      "nexus_2k_000935",
+      "nexus_2k_000815",
+      "nexus_2k_000800",
+      "nexus_2k_001211",
+      "nexus_2k_001093",
+      "nexus_2k_000783",
+      "nexus_2k_000083",
+      "nexus_2k_001792",
+      "nexus_2k_000280",
+      "nexus_2k_000167",
+      "nexus_2k_001232",
+      "nexus_2k_000898"
+    ],
+    "totals": {
+      "meshes": 50,
+      "vertices": 52820,
+      "edges": 154978,
+      "faces": 102890,
+      "pairs": 41866721
+    },
+    "selection_sha256": "ee2588bcd212e750893904973b4aee4e3a40d3295f35b2d923f6d92076fa0ac4",
+    "selection": {
+      "schema": "topology_flow_user_selection_v1",
+      "selection_source": "user_supplied_2026-10-02",
+      "representation": "D9_unchanged_local_vertex_order",
+      "records": [
+        {
+          "uid": "nexus_2k_001150",
+          "vertices": 18
+        },
+        {
+          "uid": "nexus_2k_001045",
+          "vertices": 54
+        },
+        {
+          "uid": "nexus_2k_000084",
+          "vertices": 128
+        },
+        {
+          "uid": "nexus_2k_001692",
+          "vertices": 150
+        },
+        {
+          "uid": "nexus_2k_001843",
+          "vertices": 188
+        },
+        {
+          "uid": "nexus_2k_000346",
+          "vertices": 192
+        },
+        {
+          "uid": "nexus_2k_001780",
+          "vertices": 196
+        },
+        {
+          "uid": "nexus_2k_000796",
+          "vertices": 200
+        },
+        {
+          "uid": "nexus_2k_001085",
+          "vertices": 226
+        },
+        {
+          "uid": "nexus_2k_000020",
+          "vertices": 288
+        },
+        {
+          "uid": "nexus_2k_000447",
+          "vertices": 332
+        },
+        {
+          "uid": "nexus_2k_001179",
+          "vertices": 325
+        },
+        {
+          "uid": "nexus_2k_000118",
+          "vertices": 362
+        },
+        {
+          "uid": "nexus_2k_000074",
+          "vertices": 386
+        },
+        {
+          "uid": "nexus_2k_000519",
+          "vertices": 392
+        },
+        {
+          "uid": "nexus_2k_001087",
+          "vertices": 426
+        },
+        {
+          "uid": "nexus_2k_000053",
+          "vertices": 488
+        },
+        {
+          "uid": "nexus_2k_000675",
+          "vertices": 516
+        },
+        {
+          "uid": "nexus_2k_001716",
+          "vertices": 534
+        },
+        {
+          "uid": "nexus_2k_000242",
+          "vertices": 652
+        },
+        {
+          "uid": "nexus_2k_000823",
+          "vertices": 666
+        },
+        {
+          "uid": "nexus_2k_001536",
+          "vertices": 728
+        },
+        {
+          "uid": "nexus_2k_000840",
+          "vertices": 798
+        },
+        {
+          "uid": "nexus_2k_001577",
+          "vertices": 836
+        },
+        {
+          "uid": "nexus_2k_001216",
+          "vertices": 938
+        },
+        {
+          "uid": "nexus_2k_001331",
+          "vertices": 969
+        },
+        {
+          "uid": "nexus_2k_000142",
+          "vertices": 1029
+        },
+        {
+          "uid": "nexus_2k_001550",
+          "vertices": 1137
+        },
+        {
+          "uid": "nexus_2k_000872",
+          "vertices": 1215
+        },
+        {
+          "uid": "nexus_2k_000952",
+          "vertices": 1251
+        },
+        {
+          "uid": "nexus_2k_001825",
+          "vertices": 1277,
+          "user_reported_d9_vertices": 1279,
+          "authorization_note": "User explicitly authorized the existing 1277-vertex source after the table/source discrepancy was reported; no vertex or topology edit."
+        },
+        {
+          "uid": "nexus_2k_001483",
+          "vertices": 1418
+        },
+        {
+          "uid": "nexus_2k_001439",
+          "vertices": 1446
+        },
+        {
+          "uid": "nexus_2k_001178",
+          "vertices": 1458
+        },
+        {
+          "uid": "nexus_2k_001317",
+          "vertices": 1536
+        },
+        {
+          "uid": "nexus_2k_000869",
+          "vertices": 1590
+        },
+        {
+          "uid": "nexus_2k_001415",
+          "vertices": 1609
+        },
+        {
+          "uid": "nexus_2k_000283",
+          "vertices": 1644
+        },
+        {
+          "uid": "nexus_2k_000935",
+          "vertices": 1713
+        },
+        {
+          "uid": "nexus_2k_000815",
+          "vertices": 1735
+        },
+        {
+          "uid": "nexus_2k_000800",
+          "vertices": 1829
+        },
+        {
+          "uid": "nexus_2k_001211",
+          "vertices": 1830
+        },
+        {
+          "uid": "nexus_2k_001093",
+          "vertices": 1964
+        },
+        {
+          "uid": "nexus_2k_000783",
+          "vertices": 2172
+        },
+        {
+          "uid": "nexus_2k_000083",
+          "vertices": 2238
+        },
+        {
+          "uid": "nexus_2k_001792",
+          "vertices": 2244
+        },
+        {
+          "uid": "nexus_2k_000280",
+          "vertices": 2279
+        },
+        {
+          "uid": "nexus_2k_000167",
+          "vertices": 2273
+        },
+        {
+          "uid": "nexus_2k_001232",
+          "vertices": 2398
+        },
+        {
+          "uid": "nexus_2k_000898",
+          "vertices": 2547
+        }
+      ],
+      "totals": {
+        "meshes": 50,
+        "vertices": 52820,
+        "pairs": 41866721
+      }
+    },
+    "source": {
+      "kind": "explicit_hashed_manifest",
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/inputs_verified/data_source.json",
+      "sha256": "d9bbfae852eaf4f3d9cddaa9c80558c37ab23d9d8ba04ea1a4d9b91c1ba82d48"
+    },
+    "coordinate_frame": "same_as_original_vertices_norm",
+    "records": [
+      {
+        "uid": "nexus_2k_001150",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001150/mesh_quantized_training.npz",
+        "mesh_sha256": "e7e1a87bf1d6b059d0fa01e57efd59894f28044f6b81197f83f5f3bd92fb5584",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001150/topology.npz",
+        "topology_sha256": "c650d46a442c32e99272413e5aec7f140a0e04de6c94cd3cd3d12d1fbba7eabb",
+        "array_sha256": {
+          "vertices": "f60781019479b68fced8b6e14dcaf76b312cb2640bcd856672e8c499d34e4a29",
+          "faces": "482ca2dc6988306084007eb338b1f9d0667eafc1de452b97b8714ed0be8e0117",
+          "edges": "79d687a1822fb9b231cea2a8a44e0338bf3ab5b4df2a8bf7a9f46abc1d44f4da",
+          "gt_faces": "9a2bf8e9fc241acbff24370a4c09045f7853be9291f5fec459a009df872c5ccd",
+          "vertex_indices": "9db90f74f48661a319511c8293d724feb74e79b64d2af7427279103821518095"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "f60781019479b68fced8b6e14dcaf76b312cb2640bcd856672e8c499d34e4a29",
+          "faces": "482ca2dc6988306084007eb338b1f9d0667eafc1de452b97b8714ed0be8e0117",
+          "edge_index": "bcbda03b14e8f5afb3e2a1e4b97067e311c9e860aa054b0c92dfb30936311909",
+          "face_set": "9a2bf8e9fc241acbff24370a4c09045f7853be9291f5fec459a009df872c5ccd"
+        },
+        "counts": {
+          "vertices": 18,
+          "edges": 42,
+          "faces": 28,
+          "pairs": 153
+        }
+      },
+      {
+        "uid": "nexus_2k_001045",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001045/mesh_quantized_training.npz",
+        "mesh_sha256": "b6fa541b0d9598f7802c0c51e7685e234d048d376b19089710d17c957c3b2fe5",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001045/topology.npz",
+        "topology_sha256": "7be836185eb7ad0d18a7c7e584d17d91e41798b9b1502dc03a5808eeb91ebd11",
+        "array_sha256": {
+          "vertices": "25ad36feda16a32e101df2e8767afca41f08bef4cf5a84b5b982174dfc76a7c4",
+          "faces": "7e4d858e2bb77965ef04f58fec95fad56346497740c31477940516f10f7b07a2",
+          "edges": "1d25cc6a74efc2568c277c08765d410dadd13aead414525d009a6ec4107d08fe",
+          "gt_faces": "79d6f38defcfa10550e28a1c902157be8a8c6ec75035f883ca5ea4890e9ed7a8",
+          "vertex_indices": "5b667c7994585fe7e7b1858f545a1a1c24ba8b8a419f99ef0aa9b573c54813d4"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "25ad36feda16a32e101df2e8767afca41f08bef4cf5a84b5b982174dfc76a7c4",
+          "faces": "7e4d858e2bb77965ef04f58fec95fad56346497740c31477940516f10f7b07a2",
+          "edge_index": "3234e883f24e61de9700a36d815ad4e3fdd3463a888c6f3f3fe7fa09faa9b744",
+          "face_set": "79d6f38defcfa10550e28a1c902157be8a8c6ec75035f883ca5ea4890e9ed7a8"
+        },
+        "counts": {
+          "vertices": 54,
+          "edges": 156,
+          "faces": 104,
+          "pairs": 1431
+        }
+      },
+      {
+        "uid": "nexus_2k_000084",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000084/mesh_quantized_training.npz",
+        "mesh_sha256": "8b730053d3e6bce8f30fba050d74347ee2bff2d81415df0c0eddf62944ddbb2d",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000084/topology.npz",
+        "topology_sha256": "68f79deef270330e774a543d84e05ee57f68f5afc0bfe6c94996d6c82be242c6",
+        "array_sha256": {
+          "vertices": "446c68b9cf6e15c0599f71c108d4f13757bd3148bcae514823dc0638009e23dc",
+          "faces": "77682e9bdb4933c84927a15d6aec104e0ccec25803bfc89562f6c0e52f8062d1",
+          "edges": "a33f74a1d2ee6d4227f079c1643feadf169d6340e8a7330ffba020fc7bf4d85e",
+          "gt_faces": "f36dfdb87b691fb141de099eb1147b011b899ca23daea939e9b2759ca60e6d9a",
+          "vertex_indices": "31d4d7af6141417a4c4140c0712b23db02ca5acbaee21b2880a5a61ba11d29c8"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "446c68b9cf6e15c0599f71c108d4f13757bd3148bcae514823dc0638009e23dc",
+          "faces": "77682e9bdb4933c84927a15d6aec104e0ccec25803bfc89562f6c0e52f8062d1",
+          "edge_index": "821ff4f313a37425f80bc41b402d65f5add1802cfc685d56014178e823b2af5b",
+          "face_set": "f36dfdb87b691fb141de099eb1147b011b899ca23daea939e9b2759ca60e6d9a"
+        },
+        "counts": {
+          "vertices": 128,
+          "edges": 378,
+          "faces": 252,
+          "pairs": 8128
+        }
+      },
+      {
+        "uid": "nexus_2k_001692",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001692/mesh_quantized_training.npz",
+        "mesh_sha256": "17cf9493b531656d60d90f8a1cf451fe72616eb5c4f219e0d27c1957a77f6cc0",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001692/topology.npz",
+        "topology_sha256": "c1cec7bffd76196ae43f4de9a12ffe328976db939cfa26125074240d99c25344",
+        "array_sha256": {
+          "vertices": "3149336fb93bc895e49acffa287e8dbbde940d33ad092a4d85b5d48864da60ad",
+          "faces": "105003e43830542b360740b6d1c0da3e1d2d95571801278835973971923e2b39",
+          "edges": "a86b4aaa2e13d196c8468e58234e35272627401d8f26979879b525a417e4cb2c",
+          "gt_faces": "3796ba3c19de5b808e84e26c1480ba4e733accc8700148c4fe4ede32565bb799",
+          "vertex_indices": "6088ebdb3231357e1414b49887e67f0e56d030e6330fa60f54e002df69dedd49"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "3149336fb93bc895e49acffa287e8dbbde940d33ad092a4d85b5d48864da60ad",
+          "faces": "105003e43830542b360740b6d1c0da3e1d2d95571801278835973971923e2b39",
+          "edge_index": "86b030caa4bba87d408b24b2bf795ae859c66081ef94fab9fb49414ca0e5b354",
+          "face_set": "3796ba3c19de5b808e84e26c1480ba4e733accc8700148c4fe4ede32565bb799"
+        },
+        "counts": {
+          "vertices": 150,
+          "edges": 413,
+          "faces": 274,
+          "pairs": 11175
+        }
+      },
+      {
+        "uid": "nexus_2k_001843",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001843/mesh_quantized_training.npz",
+        "mesh_sha256": "433a756b92125dbe37547eeed3de762c788ba776dd485c4bdf885cf333841a36",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001843/topology.npz",
+        "topology_sha256": "9b8f191d63bb238665df1299fb70bb3fcf317a5ec2a077bcfa808abb7a7c0d53",
+        "array_sha256": {
+          "vertices": "ab62ff3ed5bc285a85ad39ae1917c2c9b25257a3d44183a4e0ee8bcafd0507c1",
+          "faces": "e6f0d7cbf37e67c1e025f119dd010a5bfeccd66a471dd3e259fc891224364f8d",
+          "edges": "651795a1494c361d311831004152d7ea9d93865c198808a1545b643911fc41a1",
+          "gt_faces": "8794c2b7ec08d4a69c9f9ba2d3019d97d857a60dce9c5b9b266d3313e77b2f1f",
+          "vertex_indices": "09ce1558b5bcb17e9367b175c440d5836a0b321f429149c6edad11c7ba6d74f6"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "ab62ff3ed5bc285a85ad39ae1917c2c9b25257a3d44183a4e0ee8bcafd0507c1",
+          "faces": "e6f0d7cbf37e67c1e025f119dd010a5bfeccd66a471dd3e259fc891224364f8d",
+          "edge_index": "ef1fd3f1762b7d5b6fbd597323ac299c58b451e2a27f2821fb0335eae3cb7afe",
+          "face_set": "8794c2b7ec08d4a69c9f9ba2d3019d97d857a60dce9c5b9b266d3313e77b2f1f"
+        },
+        "counts": {
+          "vertices": 188,
+          "edges": 576,
+          "faces": 392,
+          "pairs": 17578
+        }
+      },
+      {
+        "uid": "nexus_2k_000346",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000346/mesh_quantized_training.npz",
+        "mesh_sha256": "bcc929816128b3f78737c24582fd3a3ed652c323607b40d47704edb694c65a4d",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000346/topology.npz",
+        "topology_sha256": "f73a1688f3e533a802c297a33547495a880a9637d02cf0976c7b1913dd461b20",
+        "array_sha256": {
+          "vertices": "705f40df905281873e9b7926cda9e82f1c9b752d7fd50628e2eb2f3a9c69f05f",
+          "faces": "5c1cd71cd878cd90b76f8b0af1dd676e4975824e03f66418744a02de0582564d",
+          "edges": "f72079ee5f49047b51354211450de1276e8dc1a73c316faf6cf1a082ab311e41",
+          "gt_faces": "fde7318a47f4bc2ce4a5516392950c3216a2169412ccd2ad6820c44bae27b8f0",
+          "vertex_indices": "e06fadc3c3a0d3512c8526f284879c3b45adf623b28acd22012452cc86b99d7e"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "705f40df905281873e9b7926cda9e82f1c9b752d7fd50628e2eb2f3a9c69f05f",
+          "faces": "5c1cd71cd878cd90b76f8b0af1dd676e4975824e03f66418744a02de0582564d",
+          "edge_index": "9c4e0efa338fcefdc1c4cfb5154d7ac3690668c7dfa0f88401c249e7803ff71b",
+          "face_set": "fde7318a47f4bc2ce4a5516392950c3216a2169412ccd2ad6820c44bae27b8f0"
+        },
+        "counts": {
+          "vertices": 192,
+          "edges": 570,
+          "faces": 380,
+          "pairs": 18336
+        }
+      },
+      {
+        "uid": "nexus_2k_001780",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001780/mesh_quantized_training.npz",
+        "mesh_sha256": "38fcc695225028fe119053f4a407580cf2c1340f7cafb59a8e46a4de1919245f",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001780/topology.npz",
+        "topology_sha256": "a0aaa1ac125fce3488130ed4c54f9df4394b193e2a5446da967068a86a370301",
+        "array_sha256": {
+          "vertices": "bf8c721e5c7273c1553eddc0f64ed38c4fd4d8ff17f2fad638344ccfa03c8372",
+          "faces": "06f9c60934e1468972a15218366c930090f994b00173dd71191a0255268b9e91",
+          "edges": "c8e2f03c2341b13f8fb01ebfd777a19db3eed674a5b6a9cc95395da0c84ffc3a",
+          "gt_faces": "feac465743f5cde55eed791e9144bb15679d6a46fc6991daa4b3f55cd6069e1c",
+          "vertex_indices": "3138f42e59c9ae0e7a2136afce7ec4fba44e6e93e172c89d066d158aabd137f3"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "bf8c721e5c7273c1553eddc0f64ed38c4fd4d8ff17f2fad638344ccfa03c8372",
+          "faces": "06f9c60934e1468972a15218366c930090f994b00173dd71191a0255268b9e91",
+          "edge_index": "0bd23893002e943f491d15a24e25309a9a12cd864cb814cf34276a46b399f24d",
+          "face_set": "feac465743f5cde55eed791e9144bb15679d6a46fc6991daa4b3f55cd6069e1c"
+        },
+        "counts": {
+          "vertices": 196,
+          "edges": 576,
+          "faces": 384,
+          "pairs": 19110
+        }
+      },
+      {
+        "uid": "nexus_2k_000796",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000796/mesh_quantized_training.npz",
+        "mesh_sha256": "26d8b14f4020722639d4ecc6b858d868ff57626617c2e1273b20c09ba608ac11",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000796/topology.npz",
+        "topology_sha256": "a43be55677cfd1ce9c5bc59defc155679ba51363088c74f5a99bdda6d1fdae57",
+        "array_sha256": {
+          "vertices": "b829752864dd4fb9100fc8924369844c61caa1c95389ffc916f82fc4fce9989a",
+          "faces": "17e3fd2dab08013fe635a11675be78cb3f7c0bd33414e1b157b669be8322014c",
+          "edges": "32a997b4ba305d97ca05bd2293144d0db560b63d0f8d29dfefb01aa8a9527549",
+          "gt_faces": "86f3f8761cfcebf9aa8b163e534e013f2f0173b63cc660a1c696779dcde65f94",
+          "vertex_indices": "0d29800287b43580dc0a63b3f5f6ec1ff05ad8658576cd6dc666ad52016a31c5"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "b829752864dd4fb9100fc8924369844c61caa1c95389ffc916f82fc4fce9989a",
+          "faces": "17e3fd2dab08013fe635a11675be78cb3f7c0bd33414e1b157b669be8322014c",
+          "edge_index": "51ef732fe86b345a85c4c6932ba09b3bcf3f3cf64cb112ba07e391e96e0821de",
+          "face_set": "86f3f8761cfcebf9aa8b163e534e013f2f0173b63cc660a1c696779dcde65f94"
+        },
+        "counts": {
+          "vertices": 200,
+          "edges": 634,
+          "faces": 468,
+          "pairs": 19900
+        }
+      },
+      {
+        "uid": "nexus_2k_001085",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001085/mesh_quantized_training.npz",
+        "mesh_sha256": "0e13f2cb0fb7fd1928b8d9d219d68ae430245e96756e0c610140c36602387b58",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001085/topology.npz",
+        "topology_sha256": "f21b2d80676e64a036b2cdeeaa008f17d63733a24318fd9a3a2f1982a4370d04",
+        "array_sha256": {
+          "vertices": "cb34f5b25368ab3cce51efc01a85b0b8cf458ac55d1b1e2676628a6fb0587e47",
+          "faces": "3f48a1b9c3782b074a14746aced44ab41c1177bf1b0ba353392bc8801045dac8",
+          "edges": "bae129426b65585455559e9408a3850a994e572966a95f8274edfee62dee5cf1",
+          "gt_faces": "9166ad621a3bdce2c4eb1072614148734347b5c10102e9e45d44571535f0f1fe",
+          "vertex_indices": "13c561a34acb8cdad3fc32cb2339a84e41d923aa85c87cb7915cef1e8b59a6ba"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "cb34f5b25368ab3cce51efc01a85b0b8cf458ac55d1b1e2676628a6fb0587e47",
+          "faces": "3f48a1b9c3782b074a14746aced44ab41c1177bf1b0ba353392bc8801045dac8",
+          "edge_index": "f55e277e720644fb3c862df640b5ac77db4555f16846a34a7ac013a08efa7c57",
+          "face_set": "9166ad621a3bdce2c4eb1072614148734347b5c10102e9e45d44571535f0f1fe"
+        },
+        "counts": {
+          "vertices": 226,
+          "edges": 657,
+          "faces": 432,
+          "pairs": 25425
+        }
+      },
+      {
+        "uid": "nexus_2k_000020",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000020/mesh_quantized_training.npz",
+        "mesh_sha256": "e61e2cb39bc867ddc69f62c1e39bb5cbc0e61334070ad0d544fe875127911801",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000020/topology.npz",
+        "topology_sha256": "7c4c49e33ba60de566582b7b2b7dd115bf3ce9295eb039f9891e7626eaa2fc16",
+        "array_sha256": {
+          "vertices": "c19b7731d51774459805c7fc3b15c972548f6cc342892812f115d917eb2e81aa",
+          "faces": "5406341d54032726c5f350fba60f7e142e68581a8b40ce20fb6b0558db0daef7",
+          "edges": "e8c5e2d418744d49d390d0393fa1956a019726588ce4212ec2f28b6824295daa",
+          "gt_faces": "e13c971783b93b71fd3ff9c8aed4ae87c0374d63ccc8d0384f33893341a8a38a",
+          "vertex_indices": "4fe91123001c23b5723e831c28d7ab61563a60b1860bee3cc4d1f996b5057f74"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "c19b7731d51774459805c7fc3b15c972548f6cc342892812f115d917eb2e81aa",
+          "faces": "5406341d54032726c5f350fba60f7e142e68581a8b40ce20fb6b0558db0daef7",
+          "edge_index": "d835e4d24afcaacd41c2281fb669cc65a475b355f5739ffb15db01be3316b136",
+          "face_set": "e13c971783b93b71fd3ff9c8aed4ae87c0374d63ccc8d0384f33893341a8a38a"
+        },
+        "counts": {
+          "vertices": 288,
+          "edges": 811,
+          "faces": 534,
+          "pairs": 41328
+        }
+      },
+      {
+        "uid": "nexus_2k_000447",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000447/mesh_quantized_training.npz",
+        "mesh_sha256": "e576981660c6c473996dce46ed864f11bc1c5ca73771c89c59a184594a336d62",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000447/topology.npz",
+        "topology_sha256": "bf482955bd45372714edafa8bb76be799071c59c00aa91f09b82097de61f7047",
+        "array_sha256": {
+          "vertices": "6325580a384cbcf18afbe8dd7b10473bd2d88f5158303af725fcad22c9c2e056",
+          "faces": "1226bd36037d75ad7ead42578ea3ec2b3ef46a7932c4fdb610a9a9a4f3745043",
+          "edges": "dd326881837fef56218ca3244f1627ee80ba6d0788874186e7b78d2f72bc9985",
+          "gt_faces": "3bec25eef97451ad867878eeb9e1ebeb15eca9431a5e11aa3ce37a20adabbf5b",
+          "vertex_indices": "a4dc5fcee7aacfe4b37f1528235da05f3918fc612fc6958e84632326ec7fbd77"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "6325580a384cbcf18afbe8dd7b10473bd2d88f5158303af725fcad22c9c2e056",
+          "faces": "1226bd36037d75ad7ead42578ea3ec2b3ef46a7932c4fdb610a9a9a4f3745043",
+          "edge_index": "160f8ec5e9459654eeadd3c851422ab99b2908bf8d1c76a62809cfe4b55b724e",
+          "face_set": "3bec25eef97451ad867878eeb9e1ebeb15eca9431a5e11aa3ce37a20adabbf5b"
+        },
+        "counts": {
+          "vertices": 332,
+          "edges": 1140,
+          "faces": 760,
+          "pairs": 54946
+        }
+      },
+      {
+        "uid": "nexus_2k_001179",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001179/mesh_quantized_training.npz",
+        "mesh_sha256": "bb3db830b2ee5bad1ac726aa86c3785c689870d7e46ed7b00cb9379350f99ecd",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001179/topology.npz",
+        "topology_sha256": "023a9b3cfe09f306e80b140f629efe6610096de28df09c4e9fea37dc779568a2",
+        "array_sha256": {
+          "vertices": "9c8586381fe1005664d4091c5061db60ca8793c1923911632b3e93c3b4d7fbab",
+          "faces": "faea90d0bc5347ca0dcdeda276f746a85ca052f8af354e336af020b3e40b66c5",
+          "edges": "800c75550ac35b8eb6424cb7b42652f8d3c0a6ed95e2183d9a9c70a5884ab777",
+          "gt_faces": "c00c8455811564c757a4b8705599a1ea21b94581ad0e46eb7bbcfad2d4957c96",
+          "vertex_indices": "a07d65bda52a41d55af80898f9c147589759718d42958b6c4d37110128f3146b"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "9c8586381fe1005664d4091c5061db60ca8793c1923911632b3e93c3b4d7fbab",
+          "faces": "faea90d0bc5347ca0dcdeda276f746a85ca052f8af354e336af020b3e40b66c5",
+          "edge_index": "6541c2027196ffc62840b7800c80126c2aff7d4e23f1c2b52dd7a23223391803",
+          "face_set": "c00c8455811564c757a4b8705599a1ea21b94581ad0e46eb7bbcfad2d4957c96"
+        },
+        "counts": {
+          "vertices": 325,
+          "edges": 975,
+          "faces": 650,
+          "pairs": 52650
+        }
+      },
+      {
+        "uid": "nexus_2k_000118",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000118/mesh_quantized_training.npz",
+        "mesh_sha256": "a04a8f101b77baafb4641575f4f914a2bc6d3eddcfd62321c7e38dec96aefce2",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000118/topology.npz",
+        "topology_sha256": "fea5150b9cfec649c76045c4400bc27fe4f8898c24b6c864cab115f48f644c0b",
+        "array_sha256": {
+          "vertices": "648b1a5b5debcfed3f43318b2aa35f65af3c067382c303adb8d62e7545582963",
+          "faces": "bc563df4678a0c621ee5a48086cd82629f83f7a4d1cecf51984b411418e413ec",
+          "edges": "3f36743810af4b4c53c43dc56d57508696974d9e799ef8470f5ab996084d3886",
+          "gt_faces": "c3c405ad918eaf32409e810a6e3da1f6b19157d96c969411ea0c28ec643607fd",
+          "vertex_indices": "69bef52b7de007318e7cbd582d175e451a86b436e442b5a96e10742e42d329ca"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "648b1a5b5debcfed3f43318b2aa35f65af3c067382c303adb8d62e7545582963",
+          "faces": "bc563df4678a0c621ee5a48086cd82629f83f7a4d1cecf51984b411418e413ec",
+          "edge_index": "0bb5ce2ada3387fab03c4e6776e8076e73b25ae5751865227d14ff915926aa18",
+          "face_set": "c3c405ad918eaf32409e810a6e3da1f6b19157d96c969411ea0c28ec643607fd"
+        },
+        "counts": {
+          "vertices": 362,
+          "edges": 847,
+          "faces": 502,
+          "pairs": 65341
+        }
+      },
+      {
+        "uid": "nexus_2k_000074",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000074/mesh_quantized_training.npz",
+        "mesh_sha256": "33787192ec70ef865038d0d395ad0d039a61b5414ec3a6ab4e700f505331d03f",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000074/topology.npz",
+        "topology_sha256": "f8c4e9f95c28c3ab477bff4ab992c910c644a295e5358e04c912cc4548536272",
+        "array_sha256": {
+          "vertices": "c8f7c0c216c8bb99d3fe13cc769c63a36570d9e2dfd7d0b9e3eb394bf3ac6335",
+          "faces": "f045e952304c61cf666cccf5615a9b231c144d1d71c33ea6d874b5c4ea6e9a60",
+          "edges": "e0d3d485105545773f3af7aed4ef94020904630b1c7beb0e8132061e9d6a6351",
+          "gt_faces": "3aaf81179b1e72318c74677798b4b1deb2aa89c4f40145da84c08c6153f1a482",
+          "vertex_indices": "277ffea547471f182fefe41978c30d17e4518980570bacc66e457bccb9b711d4"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "c8f7c0c216c8bb99d3fe13cc769c63a36570d9e2dfd7d0b9e3eb394bf3ac6335",
+          "faces": "f045e952304c61cf666cccf5615a9b231c144d1d71c33ea6d874b5c4ea6e9a60",
+          "edge_index": "7603fd98f2ee92787809fd08b6ad8983a91c6ac4c8ba17bc451c3fea68c95d3e",
+          "face_set": "3aaf81179b1e72318c74677798b4b1deb2aa89c4f40145da84c08c6153f1a482"
+        },
+        "counts": {
+          "vertices": 386,
+          "edges": 1152,
+          "faces": 768,
+          "pairs": 74305
+        }
+      },
+      {
+        "uid": "nexus_2k_000519",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000519/mesh_quantized_training.npz",
+        "mesh_sha256": "06b07af39353d1ee2f6f21be699e879ed7fea1c22b646e7c7045b5857b50c7fd",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000519/topology.npz",
+        "topology_sha256": "522117cc3afcd681b4685db7461b2ac53cf046a1e7ddf9e14b4109303cb57959",
+        "array_sha256": {
+          "vertices": "75a0bb1f64c24ad83459e325f3bc54c885c0125757b39e28dd97c59bede98f3e",
+          "faces": "b0ea723951cff4c1735d60a2b96d0d9d4504eab71375a210fac5230756334673",
+          "edges": "6ab0f17c300da246ac68c1333ca29bd31508ff89a1b7e8267d8eaf27319863c2",
+          "gt_faces": "31b2bab56644bad161e3e7749f9a2d6d3e65dd4f2a4b2d21319fa95993a1fb94",
+          "vertex_indices": "a4a0505a5cfdb91bc26ead67c1ce2ab6cd20cefb6677f5c668a44a26c5dd0367"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "75a0bb1f64c24ad83459e325f3bc54c885c0125757b39e28dd97c59bede98f3e",
+          "faces": "b0ea723951cff4c1735d60a2b96d0d9d4504eab71375a210fac5230756334673",
+          "edge_index": "4f2d37f29da2e4bc9348087edb2dd7476324e3d1cbd626f012fe27db6a0a4076",
+          "face_set": "31b2bab56644bad161e3e7749f9a2d6d3e65dd4f2a4b2d21319fa95993a1fb94"
+        },
+        "counts": {
+          "vertices": 392,
+          "edges": 1133,
+          "faces": 748,
+          "pairs": 76636
+        }
+      },
+      {
+        "uid": "nexus_2k_001087",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001087/mesh_quantized_training.npz",
+        "mesh_sha256": "d612a7f8d09e6c5d3a4036bb968f29bd355b8cf0a3f678b15584e78f4b32b69e",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001087/topology.npz",
+        "topology_sha256": "713706748fee739ae12a7c80679d8fd567e256706e424dd6d1e587149c0f9f5f",
+        "array_sha256": {
+          "vertices": "895104fbd2e445a376c6662bfd9cf44663fde3bfe9a42afc08a495bf5822247f",
+          "faces": "f57ca9e9d79ac45b3c69635fc8089e80e424bc66beb4091b5f7ed8e3964011d6",
+          "edges": "d946bdc754ab71cd8eb217b8e965000a9263e368fb8ee5d37e9eece3a6195b1f",
+          "gt_faces": "d8c52a7ad00279759954fa91ca0bf37961539ae252ec1596ce7401216a74a857",
+          "vertex_indices": "676b2a471831c420658b53d9cb66a19cf1d29ec1201b4ff80918befd3dc508bc"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "895104fbd2e445a376c6662bfd9cf44663fde3bfe9a42afc08a495bf5822247f",
+          "faces": "f57ca9e9d79ac45b3c69635fc8089e80e424bc66beb4091b5f7ed8e3964011d6",
+          "edge_index": "3cde2943b6f4fb1f7ab34c05ebbe02306b6e8999a31b31cfe35cd7342f6bbeb3",
+          "face_set": "d8c52a7ad00279759954fa91ca0bf37961539ae252ec1596ce7401216a74a857"
+        },
+        "counts": {
+          "vertices": 426,
+          "edges": 1266,
+          "faces": 844,
+          "pairs": 90525
+        }
+      },
+      {
+        "uid": "nexus_2k_000053",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000053/mesh_quantized_training.npz",
+        "mesh_sha256": "1ac08bf1c0c5cc1b6278db074525d48d9d1cb9208bd772a1e093e7e79fdbbbb0",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000053/topology.npz",
+        "topology_sha256": "2c9350eb9d52c3a8cc24c844f30e032c8c6bfcf2c5f941f24bfe32f9e61df1f8",
+        "array_sha256": {
+          "vertices": "e94fdadcd065a8644723aa7ed8d0a0392d9516f1fccc897e75f034e124c4624c",
+          "faces": "60510d187fb420c99d7fef9417b829b75f5884556740167e6a9d04d1b3e0b076",
+          "edges": "83526e04fcbc7874349181279582c0bcccea992f7b758771df73fde7671bae17",
+          "gt_faces": "700248817cba840123ca48872cf97219a45ed6bc1bc49ec854522c89b23f9351",
+          "vertex_indices": "8b20ce29b65f073acf454c433c46edc53606a25ce2d2249bc1ef14d2373b6e77"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "e94fdadcd065a8644723aa7ed8d0a0392d9516f1fccc897e75f034e124c4624c",
+          "faces": "60510d187fb420c99d7fef9417b829b75f5884556740167e6a9d04d1b3e0b076",
+          "edge_index": "169c0adfcf3760f8f7b01da768b397aeeae33c5b2f353990599265e24e23d41f",
+          "face_set": "700248817cba840123ca48872cf97219a45ed6bc1bc49ec854522c89b23f9351"
+        },
+        "counts": {
+          "vertices": 488,
+          "edges": 1458,
+          "faces": 972,
+          "pairs": 118828
+        }
+      },
+      {
+        "uid": "nexus_2k_000675",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000675/mesh_quantized_training.npz",
+        "mesh_sha256": "fe8f35e734949d67d5564baae050fdc78d6ae47554c1a15c54171bedfa9a0a6f",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000675/topology.npz",
+        "topology_sha256": "da3b4eacd31feca92c6cbde6aec2cca9bf4f2d7eca879dfdec8ae776cbe92afa",
+        "array_sha256": {
+          "vertices": "d9d74150f358f36435935319d9d9cd1dfd6d038f8dc416cf02bcc7630855d52b",
+          "faces": "73fc77ba9720ccd355cd7cfcf2e788682d32feb78167685ac2ae2d1b38eb3063",
+          "edges": "8708a4eb97a35b4c9c911b7971c31233c58b736356450da492358fb4454c3971",
+          "gt_faces": "4e5059df74db6896996a74aa9d6af314f129289902b8c88ab86a048d13d2ced9",
+          "vertex_indices": "1186abd953a22b15b33e7d4b9f153a37b03732ddb194dcfa49ced4a1a459d4ff"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "d9d74150f358f36435935319d9d9cd1dfd6d038f8dc416cf02bcc7630855d52b",
+          "faces": "73fc77ba9720ccd355cd7cfcf2e788682d32feb78167685ac2ae2d1b38eb3063",
+          "edge_index": "b9833bdd8115f3599e28cdc19f50b528360efb23628e33d115698bf967ca4e71",
+          "face_set": "4e5059df74db6896996a74aa9d6af314f129289902b8c88ab86a048d13d2ced9"
+        },
+        "counts": {
+          "vertices": 516,
+          "edges": 1542,
+          "faces": 1028,
+          "pairs": 132870
+        }
+      },
+      {
+        "uid": "nexus_2k_001716",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001716/mesh_quantized_training.npz",
+        "mesh_sha256": "6decebbfd3feb1850068ffc2aefaf98cf6d54eb349595f10984c9eb78f837ec9",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001716/topology.npz",
+        "topology_sha256": "f4df458748b32712928dc8e75e9ab066badebd6e41db37f14195df2fb76b42d6",
+        "array_sha256": {
+          "vertices": "a2b530539ec67960e80bc7ae98dd2ed1310fba170a6f24285fcdecc0fc19c422",
+          "faces": "0df4dd4f72c04cea06d450abcdf00adefd2e9987e13120c835151cd8e115a459",
+          "edges": "802e14c5495bf5ddc0ec3b7a9df20cfe051a13ae6885c4decb09c25dba984af0",
+          "gt_faces": "94dbf2ff727c9bd8f77a1cee1c0c97e4597c7f8094f59b9bdda8abaca17bb02e",
+          "vertex_indices": "76780c8ecce532b8d3e64062839542b9fc51033d8f0d8f8311ee897d6d12617f"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "a2b530539ec67960e80bc7ae98dd2ed1310fba170a6f24285fcdecc0fc19c422",
+          "faces": "0df4dd4f72c04cea06d450abcdf00adefd2e9987e13120c835151cd8e115a459",
+          "edge_index": "99d6252e64b8a67beed6ede8f286ae3e3ecd00b56cd873ed67177027aa6512fb",
+          "face_set": "94dbf2ff727c9bd8f77a1cee1c0c97e4597c7f8094f59b9bdda8abaca17bb02e"
+        },
+        "counts": {
+          "vertices": 534,
+          "edges": 1544,
+          "faces": 1024,
+          "pairs": 142311
+        }
+      },
+      {
+        "uid": "nexus_2k_000242",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000242/mesh_quantized_training.npz",
+        "mesh_sha256": "793436eb50c54694fe54f7f550954c80f3e48ff2b8e19504524a6f6d38d296ff",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000242/topology.npz",
+        "topology_sha256": "0a3770c071dd3972059d08e2ee3c394131a0527c6e6afcf553aa3587219ca4da",
+        "array_sha256": {
+          "vertices": "211b3f79d42939334fcd51e0dfe2e6fa8beb41cabf6e25182ebec7135c12cffa",
+          "faces": "c0beb9c04f066b8632636c7d078395a5df3bd2eeae9f90be76da8b222aa028e5",
+          "edges": "dbe17ff0160a52915e2b0422f8f6d48e31f5e2f7fd079c9c90db656e62fa6e97",
+          "gt_faces": "79e0916d5836c24461ed8be6447848369fb6867ab4bbfa39430d57a87e5d0abd",
+          "vertex_indices": "94cd106399da94f619fe3d5d6206bcb6d328f839f1665d8f7c4077968772bb41"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "211b3f79d42939334fcd51e0dfe2e6fa8beb41cabf6e25182ebec7135c12cffa",
+          "faces": "c0beb9c04f066b8632636c7d078395a5df3bd2eeae9f90be76da8b222aa028e5",
+          "edge_index": "90f78ed889c7af0c543f641d6c86eb4055382947f8d08e4932eb8d8dfef32ec9",
+          "face_set": "79e0916d5836c24461ed8be6447848369fb6867ab4bbfa39430d57a87e5d0abd"
+        },
+        "counts": {
+          "vertices": 652,
+          "edges": 1962,
+          "faces": 1308,
+          "pairs": 212226
+        }
+      },
+      {
+        "uid": "nexus_2k_000823",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000823/mesh_quantized_training.npz",
+        "mesh_sha256": "45cf3f682a4eba666990f0aa4d5ca4387d1e702e0d62ed60626c215d4f39b06b",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000823/topology.npz",
+        "topology_sha256": "beea1dbcbce0ea62fb8553ea71b4bf18c3d6538fc1f1a4fc829dc0bafa3c5deb",
+        "array_sha256": {
+          "vertices": "7a81fd64cc84cd6a52a73fee316fdcefb5bb9974958be1b2f9fdf24b132b22c8",
+          "faces": "4899645886fb36c8a6f6047d3d5477cb1f38bb27e5aba4bdf018469f12328008",
+          "edges": "9cdf28dfdbe61cb5015d811343b747043285aeef14d460b8054c355216ab7df5",
+          "gt_faces": "cbcd4cfb76231ea83691eb38f442373061f6ba2b16ec837900dd900c0732a72f",
+          "vertex_indices": "412fdaf6f77660924b04b41696cc55615da3658257856eb7a37a8363ec8f7766"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "7a81fd64cc84cd6a52a73fee316fdcefb5bb9974958be1b2f9fdf24b132b22c8",
+          "faces": "4899645886fb36c8a6f6047d3d5477cb1f38bb27e5aba4bdf018469f12328008",
+          "edge_index": "893b1cfcea2e253d3403abe1d4089da8c8ab690db036e278837a50e1b4c968d0",
+          "face_set": "cbcd4cfb76231ea83691eb38f442373061f6ba2b16ec837900dd900c0732a72f"
+        },
+        "counts": {
+          "vertices": 666,
+          "edges": 1996,
+          "faces": 1330,
+          "pairs": 221445
+        }
+      },
+      {
+        "uid": "nexus_2k_001536",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001536/mesh_quantized_training.npz",
+        "mesh_sha256": "322068a6ed8614e7338e1f98e5517992641937b4e6b2e2dba28e7ffb8c78ef34",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001536/topology.npz",
+        "topology_sha256": "769e2bbf3286699e7f922811e4c2956a8ccd339d2a85cb8b44bec19c306a1fa4",
+        "array_sha256": {
+          "vertices": "bbd972d472048fc266f14b82ea3c49668e971b163348f263c5c408c50c43bd4e",
+          "faces": "9af0f6996aaa8d06f1ae75a5b53a3bcf7a9812a6be82a3c0ffa02e10fe0fbe88",
+          "edges": "ba58e94eface266efdda2ce783814b006507d7054724df9ced6facaced6c57bb",
+          "gt_faces": "600c8a2785209ca46a7f39da6f7a4413648620371752d83209fe8a855b679a37",
+          "vertex_indices": "29c80a76ae703abc2723631358ca7c6f69fc46b5e395518f494ad1736b34cd7d"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "bbd972d472048fc266f14b82ea3c49668e971b163348f263c5c408c50c43bd4e",
+          "faces": "9af0f6996aaa8d06f1ae75a5b53a3bcf7a9812a6be82a3c0ffa02e10fe0fbe88",
+          "edge_index": "274269ea503ce93804b6c8c7a1c771b5ad7c84ceffefc6460d0bbdd6295bf063",
+          "face_set": "600c8a2785209ca46a7f39da6f7a4413648620371752d83209fe8a855b679a37"
+        },
+        "counts": {
+          "vertices": 728,
+          "edges": 2178,
+          "faces": 1452,
+          "pairs": 264628
+        }
+      },
+      {
+        "uid": "nexus_2k_000840",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000840/mesh_quantized_training.npz",
+        "mesh_sha256": "7c009d15c33e67ce42b564c21bedf43560f0d047c38ec7b2f7fdd649f08ff8dd",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000840/topology.npz",
+        "topology_sha256": "c3fa5689adedd5dd42c8415cd597332f1ebf0630439ec228cf80f7164e6cffe2",
+        "array_sha256": {
+          "vertices": "9ac78dc4a03400c389937f5ec3ca2891c857336bf839ab193aa6200410b6005b",
+          "faces": "5a893b887e0b04aceecfd95c60186c793a2bcb7f011f8ea2a5a2006eb59d73f2",
+          "edges": "63711d1bd18a7402d0696152e6c7003514dea3f6a8e1ddb020698e1ebf927be4",
+          "gt_faces": "868459db7a989fbea512be5cd0e6fa0cdbe6d9993d0e38e70e4050026a73de34",
+          "vertex_indices": "38d4767e4934aeb25f4dbad0ececd1c0b93a9f52c17d702de927094b52456578"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "9ac78dc4a03400c389937f5ec3ca2891c857336bf839ab193aa6200410b6005b",
+          "faces": "5a893b887e0b04aceecfd95c60186c793a2bcb7f011f8ea2a5a2006eb59d73f2",
+          "edge_index": "bd4266fa9c848a76b0cb95efbf02d4ed1255b75d22207e3db6a71cb232b3ab46",
+          "face_set": "868459db7a989fbea512be5cd0e6fa0cdbe6d9993d0e38e70e4050026a73de34"
+        },
+        "counts": {
+          "vertices": 798,
+          "edges": 2337,
+          "faces": 1542,
+          "pairs": 318003
+        }
+      },
+      {
+        "uid": "nexus_2k_001577",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001577/mesh_quantized_training.npz",
+        "mesh_sha256": "1c673513af07f71904be26783f83d81279e6f59fba9bb92d734aa466a6cef570",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001577/topology.npz",
+        "topology_sha256": "3d30225bbdd820a8e38902503658f27e1f0bcc4d6bfa18a6361b8df7ca840bd8",
+        "array_sha256": {
+          "vertices": "65c984603ea7f6e91ff34c870917a69389970572d8d1877dc5933f137f58513f",
+          "faces": "6f6073e87dd3eb81055bfde732768eae763febf45073b063c3831ccc02507951",
+          "edges": "0d22884368512505af9e1c782337de28dd2b6e9958505ed06a05e6debfa4a004",
+          "gt_faces": "05ba841615d0238721421238e27246bbbc435f437ff63e1762cba8300dbb4f2d",
+          "vertex_indices": "6fbdacf1cc3d1c4b851e1f50acdfcbd7ea62e827ad3cd6d17e7772c458bbd08e"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "65c984603ea7f6e91ff34c870917a69389970572d8d1877dc5933f137f58513f",
+          "faces": "6f6073e87dd3eb81055bfde732768eae763febf45073b063c3831ccc02507951",
+          "edge_index": "ea24ddcc6b9baa565c82e1eea911b3efbc23b594fae074c311169a42201b2570",
+          "face_set": "05ba841615d0238721421238e27246bbbc435f437ff63e1762cba8300dbb4f2d"
+        },
+        "counts": {
+          "vertices": 836,
+          "edges": 2478,
+          "faces": 1652,
+          "pairs": 349030
+        }
+      },
+      {
+        "uid": "nexus_2k_001216",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001216/mesh_quantized_training.npz",
+        "mesh_sha256": "a30e04dc8dbbf3e893d7d28af9ae430e7bd79ee6af7056353b12a22ce8ed5728",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001216/topology.npz",
+        "topology_sha256": "428127ebeda629b6e8f7ab8fdb43c7a0f7717633ee40953c7ef82c171bd90355",
+        "array_sha256": {
+          "vertices": "3621c91dda2d16b320dae670e0648787ce82cbd954e7376e3037f9f7886ce0d1",
+          "faces": "9748518f83f9e3ed54bf8074eced90f8a95889768585d7a1d7c7e30acc65c075",
+          "edges": "456841c413ac7a6f504f510620f9f2a6ce5520b5947a06bf1eadb1407ad3a62f",
+          "gt_faces": "3248aea9f25d525c14c4bbd3e6ed6a24b39a521d241dc4907bbc0204eee90b16",
+          "vertex_indices": "402ec8f7519f8f8b53e9774b9e3819c47e06c93d1484a7cfc2eb40d563b402a4"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "3621c91dda2d16b320dae670e0648787ce82cbd954e7376e3037f9f7886ce0d1",
+          "faces": "9748518f83f9e3ed54bf8074eced90f8a95889768585d7a1d7c7e30acc65c075",
+          "edge_index": "f3a4a6d28c32c0f4fa9fd5edd77d9b7d3eb0a697fe31512b768156041a011d5c",
+          "face_set": "3248aea9f25d525c14c4bbd3e6ed6a24b39a521d241dc4907bbc0204eee90b16"
+        },
+        "counts": {
+          "vertices": 938,
+          "edges": 2765,
+          "faces": 1830,
+          "pairs": 439453
+        }
+      },
+      {
+        "uid": "nexus_2k_001331",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001331/mesh_quantized_training.npz",
+        "mesh_sha256": "637c530cac991cd68d0963eb97a99d25a53f440327cf9d0ff1a7a019e2724099",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001331/topology.npz",
+        "topology_sha256": "8b119204c848372e1c3a10f090a894cc7c58cf7c3e765fa929bb584b964a3014",
+        "array_sha256": {
+          "vertices": "0c0ff779bfb07b515a0ff1810afa740b2385f477c465cbb448eb466c9595b026",
+          "faces": "699cba27aa203dc8c436ad999f613c98fa04a2b8431535eb4ceec1563ad4eec5",
+          "edges": "485bc338d198cfc09560c35601ebdb4c3c1a6696b55be02669710f78d9b9562f",
+          "gt_faces": "d510c0c8cac9a8407b3eb0571a993c761bae295f6297e3f0eb0fe199cc196914",
+          "vertex_indices": "647dd6b3003a67895ba6853ca99f8b447afe47201bead20c09055aac66518467"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "0c0ff779bfb07b515a0ff1810afa740b2385f477c465cbb448eb466c9595b026",
+          "faces": "699cba27aa203dc8c436ad999f613c98fa04a2b8431535eb4ceec1563ad4eec5",
+          "edge_index": "d02870a1e059200bb5d2a5c82b6db24699c8f452c7666ccaf609f9499253bbd6",
+          "face_set": "d510c0c8cac9a8407b3eb0571a993c761bae295f6297e3f0eb0fe199cc196914"
+        },
+        "counts": {
+          "vertices": 969,
+          "edges": 2736,
+          "faces": 1824,
+          "pairs": 468996
+        }
+      },
+      {
+        "uid": "nexus_2k_000142",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000142/mesh_quantized_training.npz",
+        "mesh_sha256": "68662942ef5ed61066de9ab8587d6e6b0672655b964c2b45ed702a0537d1d5f9",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000142/topology.npz",
+        "topology_sha256": "b87ee706063b7179ad32ddf5d13386127e863dce20d72b7617e6dfe58b09b583",
+        "array_sha256": {
+          "vertices": "6487276773c53435e3798e3b447fa5958a844196249ed390b144899f97e59fc4",
+          "faces": "6c49df5997ab4c1afcdf0aa64c12a372cc5984c242a87f1f038fbb558f5e72d0",
+          "edges": "91024377e8eecfda2c9b549ed16e285ea311c5082a14f3d68fec739b8d4e4b87",
+          "gt_faces": "b67d04e7411755524de0ec873def55f91b170b5a98a98937326b27e8ac9cd4ec",
+          "vertex_indices": "82abda875bfaa18bfbfdfd9fca5aa77898a3c8c5d19f259705fd0df14026a62d"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "6487276773c53435e3798e3b447fa5958a844196249ed390b144899f97e59fc4",
+          "faces": "6c49df5997ab4c1afcdf0aa64c12a372cc5984c242a87f1f038fbb558f5e72d0",
+          "edge_index": "8ba54c8b4e7a15b01eff2ed2fde564667ca27612a5590611036bd7a2471e93c8",
+          "face_set": "b67d04e7411755524de0ec873def55f91b170b5a98a98937326b27e8ac9cd4ec"
+        },
+        "counts": {
+          "vertices": 1029,
+          "edges": 3021,
+          "faces": 2002,
+          "pairs": 528906
+        }
+      },
+      {
+        "uid": "nexus_2k_001550",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001550/mesh_quantized_training.npz",
+        "mesh_sha256": "e87b7d31a1168d59482dc000adf3f64403c4d60847ce1bce3661bae085d6abfc",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001550/topology.npz",
+        "topology_sha256": "aa8fe4ad7d23e88c3cfdfd26dd2e86593f173bb3720f82f702b4b52b0529e2e2",
+        "array_sha256": {
+          "vertices": "cbd86ee3eaa56073f433d4e31a68c10d6a649ee69a6dac8fa6f3a99287e5c683",
+          "faces": "aa49953417d9becde6444c00dae0611ffb15d8b989fe06861b21d455a0cc28af",
+          "edges": "9830724a1fe5236d31d01f55bb231fbf903f42da061dd8c747b142a61e94248f",
+          "gt_faces": "ce237ac6d29b85666908b51d1d6146ec663d30f2bae6e042cbb7b5c23e76709d",
+          "vertex_indices": "9d556703f82472e46ad92c4814e6cb7c0a9a786854877a5ed06621fe7d61e85c"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "cbd86ee3eaa56073f433d4e31a68c10d6a649ee69a6dac8fa6f3a99287e5c683",
+          "faces": "aa49953417d9becde6444c00dae0611ffb15d8b989fe06861b21d455a0cc28af",
+          "edge_index": "4f18ddd4679be5c097cb891eaa4237a76f73974f05fada3c372b9daa0bc69b25",
+          "face_set": "ce237ac6d29b85666908b51d1d6146ec663d30f2bae6e042cbb7b5c23e76709d"
+        },
+        "counts": {
+          "vertices": 1137,
+          "edges": 3429,
+          "faces": 2312,
+          "pairs": 645816
+        }
+      },
+      {
+        "uid": "nexus_2k_000872",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000872/mesh_quantized_training.npz",
+        "mesh_sha256": "8ae931c765edde229a56352ddee28921079517ca0f1a20d0ed00b490f03a3e33",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000872/topology.npz",
+        "topology_sha256": "c33d1cac1c1b7aa9bf36abe60002e59eef8ee55271cfaad391f7e70ecd3dcc44",
+        "array_sha256": {
+          "vertices": "8274cb5a48d366b505fb229a5241a03916faebe62045284b2d8652ed2ecc7ec5",
+          "faces": "c9185d1cd853b36eb03241517153c5ceccb0abe7c9c168481c8690be29dccd1a",
+          "edges": "f0dd359de11154d598f599c1a316f994d60265c3e4be8e935f7d35f72920a878",
+          "gt_faces": "8f740f9e41cc308091b8ded8cb5511381a4643b7cc00876323b4bd42429e6d4a",
+          "vertex_indices": "230c4a3fdba934a766c6a7d1e2cf2bbb6051e5acc8c7d8d0dd5f22ab4a0d77d1"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "8274cb5a48d366b505fb229a5241a03916faebe62045284b2d8652ed2ecc7ec5",
+          "faces": "c9185d1cd853b36eb03241517153c5ceccb0abe7c9c168481c8690be29dccd1a",
+          "edge_index": "35e2420003bec3543f2393e36595a3c8cf9dbad793e7ffc9b5009844f37e74f9",
+          "face_set": "8f740f9e41cc308091b8ded8cb5511381a4643b7cc00876323b4bd42429e6d4a"
+        },
+        "counts": {
+          "vertices": 1215,
+          "edges": 3438,
+          "faces": 2240,
+          "pairs": 737505
+        }
+      },
+      {
+        "uid": "nexus_2k_000952",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000952/mesh_quantized_training.npz",
+        "mesh_sha256": "0adf74a657543d9ed5334ea2e39e0131e9cdc2901f66e1d9f6c3b760116373ea",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000952/topology.npz",
+        "topology_sha256": "418a986e88d21bcb7100002ded383441bc9f63e8792de685b47561180de277c2",
+        "array_sha256": {
+          "vertices": "f6a1f2a5104b1ace033a5f1c3c1b773cad81abb816ff50f5e85e84abbd74f681",
+          "faces": "d3188f95cb839a74199197e42a2ce63a0d22a9fe15c08751e6e95dd9154f2283",
+          "edges": "19061f9badd652b9fc7c6e78eb84dfd68149bafced7db193bcd097e43d115ea5",
+          "gt_faces": "0084f3bd01b7d416cd8b0dda54e3e5efdc0c92a594d19c665ec1d02638b2e38b",
+          "vertex_indices": "7049a7928c0f34ab9373e1a58eeeb551167108f5b3c96dae0d8384714a864381"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "f6a1f2a5104b1ace033a5f1c3c1b773cad81abb816ff50f5e85e84abbd74f681",
+          "faces": "d3188f95cb839a74199197e42a2ce63a0d22a9fe15c08751e6e95dd9154f2283",
+          "edge_index": "4893ae17a6bae356d58a38fde84eb80cc751855e41a98d2d2bbcf6b439cb111f",
+          "face_set": "0084f3bd01b7d416cd8b0dda54e3e5efdc0c92a594d19c665ec1d02638b2e38b"
+        },
+        "counts": {
+          "vertices": 1251,
+          "edges": 3741,
+          "faces": 2494,
+          "pairs": 781875
+        }
+      },
+      {
+        "uid": "nexus_2k_001825",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001825/mesh_quantized_training.npz",
+        "mesh_sha256": "b971435f003339302e8402313c22e2df2e1539f88e2e1f791ded62a9d07a171c",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001825/topology.npz",
+        "topology_sha256": "188d5e98c296a9b9df07e2cd1a9acc0766ff2c435f6de248337f3848e2932342",
+        "array_sha256": {
+          "vertices": "cd1267bb9acc9c0f1e6afd120b1fa0f91caddf1139b7c1d07363da1a27f688c3",
+          "faces": "8fbe48268dea01d6800b792b53c568dd13da8761cf3dab5844dfb6dd11f1afc7",
+          "edges": "cdeee6bb8fc48c26f901ac7cc41d92de120e48c3d8a8e9e8ac956a9c176e8dc5",
+          "gt_faces": "11d7e52b66ebb281b1c068ac1c3ded424b1ca4ee6464a2d7fecb5b0f9b1e9851",
+          "vertex_indices": "1f1266b7e1092f60527d6217921ae425d2eec0c13bc9669321fe88e60f2cca4b"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "cd1267bb9acc9c0f1e6afd120b1fa0f91caddf1139b7c1d07363da1a27f688c3",
+          "faces": "8fbe48268dea01d6800b792b53c568dd13da8761cf3dab5844dfb6dd11f1afc7",
+          "edge_index": "81ec47b93ef81c17b0c97851a1b6f5a3f2b5fb7bb6651181365ca9b380ea6334",
+          "face_set": "11d7e52b66ebb281b1c068ac1c3ded424b1ca4ee6464a2d7fecb5b0f9b1e9851"
+        },
+        "counts": {
+          "vertices": 1277,
+          "edges": 3452,
+          "faces": 2274,
+          "pairs": 814726
+        }
+      },
+      {
+        "uid": "nexus_2k_001483",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001483/mesh_quantized_training.npz",
+        "mesh_sha256": "4c0219fb28660411ae7dd43b04499d1e999bb54b4582aca1622199b3a96bcf89",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001483/topology.npz",
+        "topology_sha256": "b3b1b538c762512c912c87e6ad773df35c495209a56f7b566d6660bd2e58c385",
+        "array_sha256": {
+          "vertices": "d3359c9ef9daf3016a0e017b4addf5fdbd609c3e9c63fde9b2e22aefffa1e139",
+          "faces": "f388e4cba9156692381c6f22d60718b1af9402c04f3229931b6e2caca751c951",
+          "edges": "b3ecaaff69ace9e792bac0dd1194edb0dade9453b91b9a28a5d62389ebe3b54f",
+          "gt_faces": "0bc59ee265ece6fad815e191f35e93c773dce2f124eee39324c994c583008b8b",
+          "vertex_indices": "e9b4bc42d64e36036d2f2bc69f7f6263c35863540d4ad88a481cef14886be4bf"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "d3359c9ef9daf3016a0e017b4addf5fdbd609c3e9c63fde9b2e22aefffa1e139",
+          "faces": "f388e4cba9156692381c6f22d60718b1af9402c04f3229931b6e2caca751c951",
+          "edge_index": "f822ea443d5e64630ef5e897790870cdc9681bdface50bcc8c120277523ad594",
+          "face_set": "0bc59ee265ece6fad815e191f35e93c773dce2f124eee39324c994c583008b8b"
+        },
+        "counts": {
+          "vertices": 1418,
+          "edges": 4206,
+          "faces": 2804,
+          "pairs": 1004653
+        }
+      },
+      {
+        "uid": "nexus_2k_001439",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001439/mesh_quantized_training.npz",
+        "mesh_sha256": "692b42de7905736aca0ed826543172ed19b18b4a09d35c2a0b63923d4a0f4761",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001439/topology.npz",
+        "topology_sha256": "c841747ec1237d96cb77771aec48841f255339747c3cf9c159164bde19a790bd",
+        "array_sha256": {
+          "vertices": "8fe9f59f92429cd31bda3d1ae213307224fdc7753dd29df30bed0298794b0f9c",
+          "faces": "87044b2b66302f29f9c6381db33bb3db36c2a6897d74189d662ab0ff1ed4962b",
+          "edges": "37fbb7eea912335758483ecd9e8ae2b140f8811ceb9fa35bb2a515e5eb872a8c",
+          "gt_faces": "ac44bc81939d51ef3d2edd657f12dfa6b44fabbc5a2b8b3046bf286269a56c72",
+          "vertex_indices": "312570afbb822d44abf0e12ab5153214539e535428c2529b353772be6d556744"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "8fe9f59f92429cd31bda3d1ae213307224fdc7753dd29df30bed0298794b0f9c",
+          "faces": "87044b2b66302f29f9c6381db33bb3db36c2a6897d74189d662ab0ff1ed4962b",
+          "edge_index": "8587299f2ccd921c0220be383b536d3131fe91312022e49e3d5cb378f548737c",
+          "face_set": "ac44bc81939d51ef3d2edd657f12dfa6b44fabbc5a2b8b3046bf286269a56c72"
+        },
+        "counts": {
+          "vertices": 1446,
+          "edges": 4351,
+          "faces": 2900,
+          "pairs": 1044735
+        }
+      },
+      {
+        "uid": "nexus_2k_001178",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001178/mesh_quantized_training.npz",
+        "mesh_sha256": "4c320f82f27bf2e8de539417b98ddc4f7d920ed59650f3ad962187235ee3d032",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001178/topology.npz",
+        "topology_sha256": "3217cc8235c916b2019d646412e996a631660b07f71d295bff52d6104b39e030",
+        "array_sha256": {
+          "vertices": "87ec71764eecf4c7139373ba5b6d96727c6bbf1ec5f5670eb048b0c5cc42e327",
+          "faces": "e3f866ed949e7abbe72d35ac0a192308a181426bed4b916258e253640354a666",
+          "edges": "79d6f1e209a581e9874da8395b88fa3c7e960593e30bb80cb4571b1bd7a323a7",
+          "gt_faces": "0893dcd48c021cad1bceadba341e7f77cf9325dee7e41a721391a2f8a2f821ad",
+          "vertex_indices": "1ffb7130e27bc3171ea65fa9568334d0fb9e48c1b6bde083b3ef5b877d8abe73"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "87ec71764eecf4c7139373ba5b6d96727c6bbf1ec5f5670eb048b0c5cc42e327",
+          "faces": "e3f866ed949e7abbe72d35ac0a192308a181426bed4b916258e253640354a666",
+          "edge_index": "451613a01cdc76ca40ff9b6a6522772fb135dc068c24d2a75f0eaea8b2ca99b2",
+          "face_set": "0893dcd48c021cad1bceadba341e7f77cf9325dee7e41a721391a2f8a2f821ad"
+        },
+        "counts": {
+          "vertices": 1458,
+          "edges": 4326,
+          "faces": 2875,
+          "pairs": 1062153
+        }
+      },
+      {
+        "uid": "nexus_2k_001317",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001317/mesh_quantized_training.npz",
+        "mesh_sha256": "6ff8a4fc6731646cf34161097069601e32da5a2c01864f104237cd0cdc4bafb7",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001317/topology.npz",
+        "topology_sha256": "e05b686b36bf48a08ecf1dc49fad3c534bb4427c6f44bb167ee22c99e4bcd0ae",
+        "array_sha256": {
+          "vertices": "ee450e3589066c98f41f998bbad66ded92c645531f3fb3e3bcf958bfeea60ad0",
+          "faces": "1d027d2ab8b267752e89e4248069ddccff00400dfce111918d17bbb1dac28137",
+          "edges": "2586d9d213a8f05e4222c077f2f7dae51a70c62ec2abb93cf4d23f6d8594e969",
+          "gt_faces": "e9b7913ef3f00b8ba2aea1bdf21d1e6f7dcc3cb241e7fe0faf9bc048382e4c5b",
+          "vertex_indices": "b3fddc2be698554873886ad8ef75e1e8cb5080758fb882abb4ca2177ac413bde"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "ee450e3589066c98f41f998bbad66ded92c645531f3fb3e3bcf958bfeea60ad0",
+          "faces": "1d027d2ab8b267752e89e4248069ddccff00400dfce111918d17bbb1dac28137",
+          "edge_index": "2c7f7574b24cb3823abf04e9ae19ec1c824988e0a94160eefb954b0554e87227",
+          "face_set": "e9b7913ef3f00b8ba2aea1bdf21d1e6f7dcc3cb241e7fe0faf9bc048382e4c5b"
+        },
+        "counts": {
+          "vertices": 1536,
+          "edges": 4362,
+          "faces": 2904,
+          "pairs": 1178880
+        }
+      },
+      {
+        "uid": "nexus_2k_000869",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000869/mesh_quantized_training.npz",
+        "mesh_sha256": "082115f7e8d092c029f2dbc1753eb7027970494193c7bf41f5c4354387a070ee",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000869/topology.npz",
+        "topology_sha256": "1182d9874ea83844d1171e8913a2d74ec134d3da455dfaa0054aa2441c166b70",
+        "array_sha256": {
+          "vertices": "5b621a8833b928b7125fd1f2c58caf7c31ac92831be3a57ebc5b50e57a1d38b0",
+          "faces": "7b470a6cebe2d5a87892cb0d520bb1595d30e581161c3aba4bab5a26e9b697d6",
+          "edges": "4a0e20422b302a73e05995af79430772c9b1edf500e5885dfc44637ecf8dcbb9",
+          "gt_faces": "0a3817770bcbc4afffb86e5d76a67633f294baf2b90e1fa0db749178e686fd03",
+          "vertex_indices": "06ad5ddf46da382ed49cfd7badce07ace44616fdee14d659c2e1d369a4d58867"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "5b621a8833b928b7125fd1f2c58caf7c31ac92831be3a57ebc5b50e57a1d38b0",
+          "faces": "7b470a6cebe2d5a87892cb0d520bb1595d30e581161c3aba4bab5a26e9b697d6",
+          "edge_index": "fe27fb05e00f3c685bca2acde2e694e9fad8326178968c6bdd0b023e22a68987",
+          "face_set": "0a3817770bcbc4afffb86e5d76a67633f294baf2b90e1fa0db749178e686fd03"
+        },
+        "counts": {
+          "vertices": 1590,
+          "edges": 4410,
+          "faces": 2940,
+          "pairs": 1263255
+        }
+      },
+      {
+        "uid": "nexus_2k_001415",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001415/mesh_quantized_training.npz",
+        "mesh_sha256": "f35a4deb6090ccf00c8f65967b390c33f41e6d2851cabc0dc603c857193e0d4b",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001415/topology.npz",
+        "topology_sha256": "9f50d24356d7b004a9d601f3da71d09b55d980dce7ccee272a23cd4b9f10aab1",
+        "array_sha256": {
+          "vertices": "cc07aa7212bf5397bdb6dbcdebb89d196f33f9481e591579698642a64aab36b5",
+          "faces": "37ab9cbbe76c83e430af5f439440dc4b87852cef489e7dbf14b30b13ef96aec4",
+          "edges": "ad31c631eedafc84ac60d073723ff18cff54aed9f69abfa5574d8063fb32824d",
+          "gt_faces": "8f7b8c2630f4c26ab97801d87c8db86a59921033f8c036935c67d4ac9eae9571",
+          "vertex_indices": "cdf7331b1b6da03dd2ff7d9447145dc4aef16128b24cd9a5220687cdef2a9bcc"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "cc07aa7212bf5397bdb6dbcdebb89d196f33f9481e591579698642a64aab36b5",
+          "faces": "37ab9cbbe76c83e430af5f439440dc4b87852cef489e7dbf14b30b13ef96aec4",
+          "edge_index": "cad900dbe2eb9f94c76fd0da9b5cc0ad8cda7c6b9a38b0096718b1e605e82c4c",
+          "face_set": "8f7b8c2630f4c26ab97801d87c8db86a59921033f8c036935c67d4ac9eae9571"
+        },
+        "counts": {
+          "vertices": 1609,
+          "edges": 4755,
+          "faces": 3170,
+          "pairs": 1293636
+        }
+      },
+      {
+        "uid": "nexus_2k_000283",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000283/mesh_quantized_training.npz",
+        "mesh_sha256": "89da9fd636ea580a240379246ad7fdd840de4cfa14213f14398d6ca7e7c06d8b",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000283/topology.npz",
+        "topology_sha256": "69e2fc7d2018f6303e848506d0172a4bc0e811def802060964b89441fb9b1ad8",
+        "array_sha256": {
+          "vertices": "41dc734378407833b880baeffa0bf4ee8bef8a20117f8573117628a9bb260b2f",
+          "faces": "a817c459390f173b63b479a6c5177ea7817dcd87fc1edd6d01743b718d706917",
+          "edges": "378da26980215a130faab055baec37c159f6c1b6f3a1d226d43ea3f9fdd15a09",
+          "gt_faces": "bce3cb9d0360599f7c1e95a6b221ed571defc3ca55e7d6bb7dea1ed94c65c298",
+          "vertex_indices": "ad53f817091f6d959f0e0e4b33afd72b1ed6f58b6866f59da67a72a8ede4ca82"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "41dc734378407833b880baeffa0bf4ee8bef8a20117f8573117628a9bb260b2f",
+          "faces": "a817c459390f173b63b479a6c5177ea7817dcd87fc1edd6d01743b718d706917",
+          "edge_index": "2ff66a7534a12d6d45f42e675b19f6b90108fd51cbc4f02467699403de62eb8e",
+          "face_set": "bce3cb9d0360599f7c1e95a6b221ed571defc3ca55e7d6bb7dea1ed94c65c298"
+        },
+        "counts": {
+          "vertices": 1644,
+          "edges": 4919,
+          "faces": 3269,
+          "pairs": 1350546
+        }
+      },
+      {
+        "uid": "nexus_2k_000935",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000935/mesh_quantized_training.npz",
+        "mesh_sha256": "f1bde24925d79093430377200c6e0ebed3cfbaf595f5341bdbf767a617fd35a3",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000935/topology.npz",
+        "topology_sha256": "dcc4a38c47bb06ab56296eceabbf13b2c492dd9c110933e0be88a50899f13b30",
+        "array_sha256": {
+          "vertices": "60cdce132383a1bbe6abb4ae68c870097ad86bbfa371bbcf914d5d1bea9ad792",
+          "faces": "906354abd6ad0a75cf1403e5ce2a604c615273371eb94c1168285b7b8cd07b84",
+          "edges": "f15edcc1c5cd1606fc5b3f03d16ec449f3f9cfd0a59436658f862b75a6c8aeee",
+          "gt_faces": "e3999c6381e874b79430dc7b98338481afd0b9c0a3dea8acdcff2dfdc193c224",
+          "vertex_indices": "69ef4bf82f419c192e7e7e623d7916f794506132c6a60d308e0c53ab58cd6803"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "60cdce132383a1bbe6abb4ae68c870097ad86bbfa371bbcf914d5d1bea9ad792",
+          "faces": "906354abd6ad0a75cf1403e5ce2a604c615273371eb94c1168285b7b8cd07b84",
+          "edge_index": "8052245d73c68accdcad6b3b19cf5f61dc4b111e77569f4181ba32de38a5d78f",
+          "face_set": "e3999c6381e874b79430dc7b98338481afd0b9c0a3dea8acdcff2dfdc193c224"
+        },
+        "counts": {
+          "vertices": 1713,
+          "edges": 4937,
+          "faces": 3261,
+          "pairs": 1466328
+        }
+      },
+      {
+        "uid": "nexus_2k_000815",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000815/mesh_quantized_training.npz",
+        "mesh_sha256": "0fdd13f6b5649fcadb091f5c4ff4bd006e4d9a2c80365ee964d020e42295a49e",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000815/topology.npz",
+        "topology_sha256": "55ae955839c47e8d02cc5164b6a6aacebe2acbad94e210c88b1012c7ac19caff",
+        "array_sha256": {
+          "vertices": "bad5e14bce568a3d2b6cf04753005b369117151690cca9dd5f620d4f66b6d80e",
+          "faces": "b7ed579ebf0958ee8f67d7b57ab3e0fc45cb5500d32c58775d6bd4068489fa4c",
+          "edges": "0b75746ed1126a9b7f62d8c095dace291e7e285e0e63852777db9776f25b42b4",
+          "gt_faces": "ef4a7a7c1dfd71f90e36b3b490593c600dafb3ba709a226f6b61f8e82d1f48ef",
+          "vertex_indices": "3fa6b45729224fc101785f34adeda92957436d287aace9d9123c0d33fd2bf3b0"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "bad5e14bce568a3d2b6cf04753005b369117151690cca9dd5f620d4f66b6d80e",
+          "faces": "b7ed579ebf0958ee8f67d7b57ab3e0fc45cb5500d32c58775d6bd4068489fa4c",
+          "edge_index": "67e5aa2e886a5964d0e14bbab8392adfc71b6e161d965b2519674bbc1172a11f",
+          "face_set": "ef4a7a7c1dfd71f90e36b3b490593c600dafb3ba709a226f6b61f8e82d1f48ef"
+        },
+        "counts": {
+          "vertices": 1735,
+          "edges": 5032,
+          "faces": 3336,
+          "pairs": 1504245
+        }
+      },
+      {
+        "uid": "nexus_2k_000800",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000800/mesh_quantized_training.npz",
+        "mesh_sha256": "ca1510287de00879e72cafbfc50d6e41723519503b88a73acb43c59e73384740",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000800/topology.npz",
+        "topology_sha256": "e11c7110c18fcb6e42ce16bbee3b005ec836307b723a13c278733741fa15188c",
+        "array_sha256": {
+          "vertices": "f7b8161624f8c062b2025406706ce865f5ef2557f083ec1ece3dfd2a733bdd31",
+          "faces": "1c816d47264f8e22ced4a450870669575fa417c006e744f5e835ceb7957f500c",
+          "edges": "93fd980ab09aaef12868b9edfe4676f65e4c6e0bc4e0439c64d082a7a45a3759",
+          "gt_faces": "a9175b7a10a9fc448c6f509850f3c394b0f1824e609f93c38e44c62cc5b0ca62",
+          "vertex_indices": "0d9f387062526578d61f42445b2085bccb50c5070454269be3b33c3c092b198d"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "f7b8161624f8c062b2025406706ce865f5ef2557f083ec1ece3dfd2a733bdd31",
+          "faces": "1c816d47264f8e22ced4a450870669575fa417c006e744f5e835ceb7957f500c",
+          "edge_index": "2d14a1964ea742372fbfcf17b2d56d4d63fb327d8f60bc0430a948c905dcb3f4",
+          "face_set": "a9175b7a10a9fc448c6f509850f3c394b0f1824e609f93c38e44c62cc5b0ca62"
+        },
+        "counts": {
+          "vertices": 1829,
+          "edges": 5485,
+          "faces": 3658,
+          "pairs": 1671706
+        }
+      },
+      {
+        "uid": "nexus_2k_001211",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001211/mesh_quantized_training.npz",
+        "mesh_sha256": "43bf735bdb0dfffc56417fdaa5500ba624b4f3c04e5042a0e34734bda9895d3b",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001211/topology.npz",
+        "topology_sha256": "28a8f7a3ddce69b14ed5d35937a04ba1e9fb4b7dced773f79565c7958ccd6fbb",
+        "array_sha256": {
+          "vertices": "1297486df8f979bd1cf5203610ab30a0926815c8b3d0797f4765e0cc4c4114b2",
+          "faces": "8813b5f773881675c93219f38039d5344e81cb09b504f90168650d0ed89f8565",
+          "edges": "2b8d270f0bb5c5f98b95c7056f254e3b99a5d528786338fe514e1a513bdd7502",
+          "gt_faces": "ff395be63856a4b66d1fe34db2828100758704eb11d956ac5dec93b20eb5b4a0",
+          "vertex_indices": "3af398eeaba496fa150c75999480646e02162164dc747c3f67f3b47cb9bc7b68"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "1297486df8f979bd1cf5203610ab30a0926815c8b3d0797f4765e0cc4c4114b2",
+          "faces": "8813b5f773881675c93219f38039d5344e81cb09b504f90168650d0ed89f8565",
+          "edge_index": "0abd9a6b8b3edfdc13212b58cbb295f1a6e60d31e4941316bdc39364360bd70c",
+          "face_set": "ff395be63856a4b66d1fe34db2828100758704eb11d956ac5dec93b20eb5b4a0"
+        },
+        "counts": {
+          "vertices": 1830,
+          "edges": 5407,
+          "faces": 3597,
+          "pairs": 1673535
+        }
+      },
+      {
+        "uid": "nexus_2k_001093",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001093/mesh_quantized_training.npz",
+        "mesh_sha256": "886322556ed349ab0419a2b8ce02d28141fc9626517ba53a36f1ece62bd64162",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001093/topology.npz",
+        "topology_sha256": "3b5fad9ac3a360969a8afcb3d9c8c6eb637b0bdfffc7267716cf0271acd6ea18",
+        "array_sha256": {
+          "vertices": "3b246f92dc83906afe3fc3688af95629cc8dd65e59d5113065a883ccf5ee5e12",
+          "faces": "aa87d23dac5bf5d685afe903e1feef4f69d10ababf9e1d2856c07bc1b3ead1be",
+          "edges": "535b1d84bc353cdb2d62d01e154594ef6075eba7905f2d0e7c273ba39e6befac",
+          "gt_faces": "97728bebbdb8117f15a61c1e1bddda07b78c91160cef8d60c9014097cba71389",
+          "vertex_indices": "a73457d4d1100d0c06962f810fc47792b91bd84054282dc521b35f3e473a8ece"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "3b246f92dc83906afe3fc3688af95629cc8dd65e59d5113065a883ccf5ee5e12",
+          "faces": "aa87d23dac5bf5d685afe903e1feef4f69d10ababf9e1d2856c07bc1b3ead1be",
+          "edge_index": "3493014670df8ec096ee2d487261b3a64dca6091f8f92fba3fee7b85e2dd3166",
+          "face_set": "97728bebbdb8117f15a61c1e1bddda07b78c91160cef8d60c9014097cba71389"
+        },
+        "counts": {
+          "vertices": 1964,
+          "edges": 5733,
+          "faces": 3800,
+          "pairs": 1927666
+        }
+      },
+      {
+        "uid": "nexus_2k_000783",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000783/mesh_quantized_training.npz",
+        "mesh_sha256": "0bddb73e22aef5e61384e2d644ee0984ebb3464acb6439a7536f150f9dcdb92b",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000783/topology.npz",
+        "topology_sha256": "b429edfd0b6902d12254db441eeed73452411f7ab93909d4192bf456bfb4fb80",
+        "array_sha256": {
+          "vertices": "94237b459701df4c8e065c6ecefa38b6a72161167de05ed7ad876446496e782b",
+          "faces": "c7075726c357c9e345527dce49f397ca49faad4e42a5679247c4afb8bf5ba074",
+          "edges": "3a9771b27ae462e748bc9ed87145b483371da7ecb37f1733dd6aac3d15efd268",
+          "gt_faces": "253a52fbc96b756a3675ea567e852c02a28e0f60509bb466647c3254220269e8",
+          "vertex_indices": "89668b5aa0efa976eefb861a70c8ac4915e63bdec7c705d1975be2de91bad429"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "94237b459701df4c8e065c6ecefa38b6a72161167de05ed7ad876446496e782b",
+          "faces": "c7075726c357c9e345527dce49f397ca49faad4e42a5679247c4afb8bf5ba074",
+          "edge_index": "cfefe6da70f0c99638b804a9229c4f321ad83fcac96c7b76afe4da1307e0dbca",
+          "face_set": "253a52fbc96b756a3675ea567e852c02a28e0f60509bb466647c3254220269e8"
+        },
+        "counts": {
+          "vertices": 2172,
+          "edges": 6419,
+          "faces": 4270,
+          "pairs": 2357706
+        }
+      },
+      {
+        "uid": "nexus_2k_000083",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000083/mesh_quantized_training.npz",
+        "mesh_sha256": "a37de7178db33f44c30f2a79636b0599550b454bff13305e52f465450fa007f5",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000083/topology.npz",
+        "topology_sha256": "8118a1e626bee7127b9aa2c05ce18d7c02dc5c1a46529ebeb1b555ed1922c658",
+        "array_sha256": {
+          "vertices": "190797af22607913afb990e657fa6493bf56e5d85dfdad1f884db165254b450a",
+          "faces": "e077f4c6e14633bcbfb13a1df5c4f61e306f88a9a44412a7d149ef0b49a03547",
+          "edges": "be625c26a9447ac8bb69807a27f890f8fb9479d16d3e6d993e64b96f16de8677",
+          "gt_faces": "68b63f48384c6d3be4ebe8e9270a8c64b01af77e136e3c0c8daf4f948311116a",
+          "vertex_indices": "9498afe7597a8c9d64a2c289a16dc6caa813c53c9cd51c015df1bf3457143ff5"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "190797af22607913afb990e657fa6493bf56e5d85dfdad1f884db165254b450a",
+          "faces": "e077f4c6e14633bcbfb13a1df5c4f61e306f88a9a44412a7d149ef0b49a03547",
+          "edge_index": "6f677d737c09ff86aaad80fed0ad75d11487971986d979bdd00009b39f166aac",
+          "face_set": "68b63f48384c6d3be4ebe8e9270a8c64b01af77e136e3c0c8daf4f948311116a"
+        },
+        "counts": {
+          "vertices": 2238,
+          "edges": 6141,
+          "faces": 3959,
+          "pairs": 2503203
+        }
+      },
+      {
+        "uid": "nexus_2k_001792",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001792/mesh_quantized_training.npz",
+        "mesh_sha256": "65fc37492aab4e8027fcd9357329a1fb07086fd648fb1a41bac86d5f4c9ded30",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001792/topology.npz",
+        "topology_sha256": "949a7e4754864643bbc3c90d7d71b2b528b5edf8fcfc5e27d5e83219d8de01fc",
+        "array_sha256": {
+          "vertices": "a7cd1eb4d664570dd2817f7d5aab090f2dbb78016c26198b95a6336cee9b0d6c",
+          "faces": "19e4e2fea5f51b1392ba35cbd14ee6614fc8b1c89a607d8ce979c70c3b336707",
+          "edges": "e7633c4e84afd2e0ff8a74a13f9a6b463d9ba18a5d74a3f9b12c0a9e85d4f74f",
+          "gt_faces": "3e810f4cd73c369ed13b0edc8ee5f5d7f7372bde6604e484d7f95eb448c8e584",
+          "vertex_indices": "9947080dfc62b7059361262cafede96b822fa321a5609c47f03ac1963a7372a7"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "a7cd1eb4d664570dd2817f7d5aab090f2dbb78016c26198b95a6336cee9b0d6c",
+          "faces": "19e4e2fea5f51b1392ba35cbd14ee6614fc8b1c89a607d8ce979c70c3b336707",
+          "edge_index": "093080678a756fee907cfade5feb642099b38813c2f418a1f46665ad9624b9ef",
+          "face_set": "3e810f4cd73c369ed13b0edc8ee5f5d7f7372bde6604e484d7f95eb448c8e584"
+        },
+        "counts": {
+          "vertices": 2244,
+          "edges": 6647,
+          "faces": 4393,
+          "pairs": 2516646
+        }
+      },
+      {
+        "uid": "nexus_2k_000280",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000280/mesh_quantized_training.npz",
+        "mesh_sha256": "861bcad54d4c3bafd15e46725a786ac0641db3ee03c7f9a43df06690a5177fed",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000280/topology.npz",
+        "topology_sha256": "f8730ebf54936b8b2f05148b81a68f438426f21e5818f70b616b483265af2fad",
+        "array_sha256": {
+          "vertices": "eaf30dd3c60155e70c719374257c39f45eb6d56e846d13c676407e25c2e1bf69",
+          "faces": "3206ab7afd5930d6b273c59546490e38bb6f2d816e1b1db22b66875749ebfe55",
+          "edges": "00c47c705183dcd77fdf2414c54074aabe22eae488df7b9321d24afee1c2c4f8",
+          "gt_faces": "6f76dc26539d6285b20d0a0fe72e4ced100c45f5ef1b3e2776c5eadfdb8d7a0a",
+          "vertex_indices": "031a2daa06b9f234faf627a036973b9ddb465a06e47f2af09aa1e31163619c3b"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "eaf30dd3c60155e70c719374257c39f45eb6d56e846d13c676407e25c2e1bf69",
+          "faces": "3206ab7afd5930d6b273c59546490e38bb6f2d816e1b1db22b66875749ebfe55",
+          "edge_index": "a374a6e91029ec84309cf2c9be3acc5a5f746cae808fd20c7334685a966f16fb",
+          "face_set": "6f76dc26539d6285b20d0a0fe72e4ced100c45f5ef1b3e2776c5eadfdb8d7a0a"
+        },
+        "counts": {
+          "vertices": 2279,
+          "edges": 6829,
+          "faces": 4544,
+          "pairs": 2595781
+        }
+      },
+      {
+        "uid": "nexus_2k_000167",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000167/mesh_quantized_training.npz",
+        "mesh_sha256": "bcdc4b3bdaac72d2e6d5b0e90bfb113d2d3aca82848f1be044f2bb48d4683af8",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000167/topology.npz",
+        "topology_sha256": "dc8c761b91fbcf44a6f2ee1fa86477caae7fb92490dc7b2adbfe7696a81acfdb",
+        "array_sha256": {
+          "vertices": "6051fd6fa39fcb26a41435f0028d0d815aee4dc27e1dcf9f580241f649cab73d",
+          "faces": "d4c9cad1dc577fb9fa98ff719d44e59cd193db583eefd0a4ecf8b670112e12dc",
+          "edges": "471deb1ba633136e04093364931e9cbc4e1bcc45446d1861917579cf65f60f43",
+          "gt_faces": "c356d7bcb3632ca35d6909e383466ca80dc2161d76e5d2280711a6e7d19e8510",
+          "vertex_indices": "bb4d24470996d30db90d645bade67eb6da9d5684fdd7f439e86a3062d3ed8fd3"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "6051fd6fa39fcb26a41435f0028d0d815aee4dc27e1dcf9f580241f649cab73d",
+          "faces": "d4c9cad1dc577fb9fa98ff719d44e59cd193db583eefd0a4ecf8b670112e12dc",
+          "edge_index": "541dda5242bca1b03520a1289e475e51adf8dd7f89d4bc502553860994bfad26",
+          "face_set": "c356d7bcb3632ca35d6909e383466ca80dc2161d76e5d2280711a6e7d19e8510"
+        },
+        "counts": {
+          "vertices": 2273,
+          "edges": 6682,
+          "faces": 4412,
+          "pairs": 2582128
+        }
+      },
+      {
+        "uid": "nexus_2k_001232",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001232/mesh_quantized_training.npz",
+        "mesh_sha256": "0bb132d1a524ee7d6959cb43343ef8cf44c25ae8905d8c2250a9937924e93b3f",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001232/topology.npz",
+        "topology_sha256": "de1babc23ab7003ad3cbb775570027fc0e101590fbfae34adafa02c02341af24",
+        "array_sha256": {
+          "vertices": "4ecfe7c07c6d178b0e5b2e1f103ead2703b5c2d667672b08191d30331d3692e2",
+          "faces": "3d290b4c2f3dda9320f8a8bfbcf3a78b0023d664c82a86bdc78c5da1d0a84302",
+          "edges": "ea61896db3fc954657ddb86cf633ee200d25fe2a81f1e79ee998c37b470f2a50",
+          "gt_faces": "8dd51f0fecb7caa6572c57206468020526041136dceb5acd4504adaffffb6619",
+          "vertex_indices": "dde27718d62ec8bc656a7983b9d1a02f90a4efba96c7a91b6e7dc670d298cd68"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "4ecfe7c07c6d178b0e5b2e1f103ead2703b5c2d667672b08191d30331d3692e2",
+          "faces": "3d290b4c2f3dda9320f8a8bfbcf3a78b0023d664c82a86bdc78c5da1d0a84302",
+          "edge_index": "447651228e0e27c791d1d074d4a8ffacf92362f63c5af8fe97cd71a0d109e6db",
+          "face_set": "8dd51f0fecb7caa6572c57206468020526041136dceb5acd4504adaffffb6619"
+        },
+        "counts": {
+          "vertices": 2398,
+          "edges": 7590,
+          "faces": 5194,
+          "pairs": 2874003
+        }
+      },
+      {
+        "uid": "nexus_2k_000898",
+        "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000898/mesh_quantized_training.npz",
+        "mesh_sha256": "6f760114c5b206e7813075ec940fa7d60bee139601e9d3948a86a8be923b35d8",
+        "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000898/topology.npz",
+        "topology_sha256": "355e97beef4792457dee9a8164cd94332e1bd1562154fbfbd636f016c1043a05",
+        "array_sha256": {
+          "vertices": "7d5099eeac75591602ea952a63b661f1718ca44a75b038e81adaded37b33bc16",
+          "faces": "7c7e04f66b39e2bdf4895f16e49b0dc96aef08c2cadbca0b368f4196f26e4f18",
+          "edges": "64814db80b9f91979cf146c9add2ac7073f9844e3d18235025076b510cd65aa2",
+          "gt_faces": "f9c05652af7ee6b5f2346b6137881c838dc8c22aebbbfec7b7abc315448e352d",
+          "vertex_indices": "b382c661abdd04b7bd579bb30cf100dfb059756506bc3b02da6ed7719fdc7670"
+        },
+        "source_array_sha256": {
+          "vertices_norm": "7d5099eeac75591602ea952a63b661f1718ca44a75b038e81adaded37b33bc16",
+          "faces": "7c7e04f66b39e2bdf4895f16e49b0dc96aef08c2cadbca0b368f4196f26e4f18",
+          "edge_index": "b3a36b6d40cfb60c35d415fdb1e9c3f2b03ad541ffe56276a9dba1ab335f1701",
+          "face_set": "f9c05652af7ee6b5f2346b6137881c838dc8c22aebbbfec7b7abc315448e352d"
+        },
+        "counts": {
+          "vertices": 2547,
+          "edges": 7344,
+          "faces": 4800,
+          "pairs": 3242331
+        }
+      }
+    ]
+  },
+  "uids": [
+    "nexus_2k_001150",
+    "nexus_2k_001045",
+    "nexus_2k_000084",
+    "nexus_2k_001692",
+    "nexus_2k_001843",
+    "nexus_2k_000346",
+    "nexus_2k_001780",
+    "nexus_2k_000796",
+    "nexus_2k_001085",
+    "nexus_2k_000020",
+    "nexus_2k_000447",
+    "nexus_2k_001179",
+    "nexus_2k_000118",
+    "nexus_2k_000074",
+    "nexus_2k_000519",
+    "nexus_2k_001087",
+    "nexus_2k_000053",
+    "nexus_2k_000675",
+    "nexus_2k_001716",
+    "nexus_2k_000242",
+    "nexus_2k_000823",
+    "nexus_2k_001536",
+    "nexus_2k_000840",
+    "nexus_2k_001577",
+    "nexus_2k_001216",
+    "nexus_2k_001331",
+    "nexus_2k_000142",
+    "nexus_2k_001550",
+    "nexus_2k_000872",
+    "nexus_2k_000952",
+    "nexus_2k_001825",
+    "nexus_2k_001483",
+    "nexus_2k_001439",
+    "nexus_2k_001178",
+    "nexus_2k_001317",
+    "nexus_2k_000869",
+    "nexus_2k_001415",
+    "nexus_2k_000283",
+    "nexus_2k_000935",
+    "nexus_2k_000815",
+    "nexus_2k_000800",
+    "nexus_2k_001211",
+    "nexus_2k_001093",
+    "nexus_2k_000783",
+    "nexus_2k_000083",
+    "nexus_2k_001792",
+    "nexus_2k_000280",
+    "nexus_2k_000167",
+    "nexus_2k_001232",
+    "nexus_2k_000898"
+  ],
+  "conditions_sha256": "95ffb40d59a58b0ba3b52299e624737832e7d4ed68d9f955e618e019d48b8e36",
+  "condition_coordinate_frame": "same_as_original_vertices_norm",
+  "coordinate_audit": {
+    "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/inputs_verified/coordinate_audit.json",
+    "sha256": "53fedb2d6d796792278365cc1bd1c6bfb8b477e3e41cb5a4630d30fbab30d2db",
+    "method": "Hash-check existing Stage2 point source and Stage3 mesh; bind Stage3 input to Stage2; verify existing D9 center coordinates, point-on-source-face residual and oriented unit normals without generating new points or changing topology."
+  },
+  "export_mode": "frozen_eval_fp32_mu_logvar",
+  "effective_code_sha256": {
+    "_faces_reference.py": "2fe8da1cc00aac733b8b0536a8169c0ee0c15b5ac000ff9265322af524fe3942",
+    "_fixed100_reference.py": "3e52edf63e0332bd3bf777826d5eb9e384f781b55ef87d67640a5b7ea06718e6",
+    "_vae_reference.py": "ad754ba4c83213ea6b69b2c6f496095924c6a4c2bfbd9c7c0300372ecb4fa1f3",
+    "_vertex_reference.py": "76d43e0460af34c908a7fd049cb0586fda3ca7ae848854ebfb4fc27460d95611",
+    "evaluate_flow.py": "9c1e834d13308ccc2bfdf57082125641f9f4c75b77ab901a249fb310a6096364",
+    "evaluate_vae.py": "2a2499b903366f1dc4c3c90f74677ce6c9a7482b1379ea754a42cfc6ca185d52",
+    "export_cache.py": "983ae38dcba9c763af8afd57655b1cbb19d7e63c67dbfcae41e74224e4ad3f9f",
+    "flow_training.py": "8ac9ceab0fd0acb04f5911aba5b9c2103bd3502b10ee736723eeb71a0f515fc9",
+    "gpu_budget.py": "2746dfc73dd0226835f11ccd1eacbbd7607914f7a1fe297eb708d9827c717e14",
+    "latent_data.py": "57f582a3d1407f570169e2f5ce7b24e912942d9fd0be18a4d64af0d330faab8c",
+    "prepare_user50_inputs.py": "1e7d9a5735c99aba436f2c3c2460d333f8d7cb7325cc1b417edf366a02dfc133",
+    "sampling.py": "f56a25974f975be41a3e62bf400b05609cc60e48b5a9f37983cd1930cc7ff243",
+    "selected_data.py": "1b7f48aba9e51446c4651978cbf05cfa20e8290ea5b2880477729824ef5885a3",
+    "test_evaluation50_cpu.py": "f117edac6cc78497dd3f24ce9014480c040c3a3dc57072a990928a283998ea7e",
+    "test_gpu_budget_cpu.py": "17972140ce7920ee53743eee5fa839107e06463a863c08540e59d183884e89f9",
+    "test_pipeline_cpu.py": "bdb600c986d63b1c56babf63a9fd928ee2ad8d5a2579d91cc560f2bb72e3e158",
+    "test_selected50_cpu.py": "607c2f02dd391b740e03d7df6b4e85499fdb5520cf5ad691c445083d0640eca3",
+    "test_structure_cpu.py": "7cd09966e081a71757c2b7da2add4b6eec8ce894e0e69b751b6802fed8e35aeb",
+    "test_training50_cpu.py": "e6924632eeb656238b681bf59f03cee55ab353e8c900cc9c6edb9ef786bec862",
+    "topology_flow.py": "85b77fffe8ebd07cd26d1c4b6d442c811027b02d930485bfd2be6f75a34e65be",
+    "train_flow.py": "b0224e8845deefff2ce6c9946319666331626b1d0eb8dce9a6a86425ecce3a08",
+    "vae_codec.py": "b98dbf2d2a54422df31ad5b9bca8d364d3d9c611481baeb3d12b71b65cec7a10"
+  },
+  "complete": true,
+  "records": [
+    {
+      "uid": "nexus_2k_001150",
+      "file": "nexus_2k_001150.npz",
+      "sha256": "f715d04d46f205c78704709ef7ee410d55d036210139a6b0e85c0a1bc542347a",
+      "vertices_sha256": "f60781019479b68fced8b6e14dcaf76b312cb2640bcd856672e8c499d34e4a29",
+      "vertices": 18,
+      "array_sha256": {
+        "vertices": "f60781019479b68fced8b6e14dcaf76b312cb2640bcd856672e8c499d34e4a29",
+        "faces": "482ca2dc6988306084007eb338b1f9d0667eafc1de452b97b8714ed0be8e0117",
+        "edges": "79d687a1822fb9b231cea2a8a44e0338bf3ab5b4df2a8bf7a9f46abc1d44f4da",
+        "vertex_indices": "9db90f74f48661a319511c8293d724feb74e79b64d2af7427279103821518095",
+        "points": "de0b53fd420549a618feacfafb7e2317b94beb7a04be4928e3086d083e1dcbc7",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "bc47bb04b813a07d581e1deaa0a36552b3fdf1816d7bbde5cef6ca598570c7d8",
+        "logvar": "963612e1ee496e76138dd7c76ee66f72e727f032f8b6f305c13adcfbdf34930a"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001045",
+      "file": "nexus_2k_001045.npz",
+      "sha256": "e69be714b6d73525f2314d1d92999df1b382356170b1f13b2bad20326602f722",
+      "vertices_sha256": "25ad36feda16a32e101df2e8767afca41f08bef4cf5a84b5b982174dfc76a7c4",
+      "vertices": 54,
+      "array_sha256": {
+        "vertices": "25ad36feda16a32e101df2e8767afca41f08bef4cf5a84b5b982174dfc76a7c4",
+        "faces": "7e4d858e2bb77965ef04f58fec95fad56346497740c31477940516f10f7b07a2",
+        "edges": "1d25cc6a74efc2568c277c08765d410dadd13aead414525d009a6ec4107d08fe",
+        "vertex_indices": "5b667c7994585fe7e7b1858f545a1a1c24ba8b8a419f99ef0aa9b573c54813d4",
+        "points": "5c2e6774e721db24d9319d28d69ad42a0d4adbdf9ee47a4663acf4fba4fbc4db",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "774548161d9137b0ed09ef9bc9a67b3c01c7e558763f34fbf422a50df4696e4b",
+        "logvar": "d495db9cf0ea78b95bd06c32e4cf54030ec2504658b7bbfcfb567bfaa01c34d9"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000084",
+      "file": "nexus_2k_000084.npz",
+      "sha256": "d4be691025357f7b9ed73e5d4cb0c060804d06f663e19d5deea46bb964552102",
+      "vertices_sha256": "446c68b9cf6e15c0599f71c108d4f13757bd3148bcae514823dc0638009e23dc",
+      "vertices": 128,
+      "array_sha256": {
+        "vertices": "446c68b9cf6e15c0599f71c108d4f13757bd3148bcae514823dc0638009e23dc",
+        "faces": "77682e9bdb4933c84927a15d6aec104e0ccec25803bfc89562f6c0e52f8062d1",
+        "edges": "a33f74a1d2ee6d4227f079c1643feadf169d6340e8a7330ffba020fc7bf4d85e",
+        "vertex_indices": "31d4d7af6141417a4c4140c0712b23db02ca5acbaee21b2880a5a61ba11d29c8",
+        "points": "9777ecb7658d8545fa32c06b81c4a709e6e21a0fe3a6f0b6a9bf32b0bf01114f",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "43437803ed5d732d13deed76ece1a25f90e34b59a6ddbb48cb329908f6af140c",
+        "logvar": "cbe9a8364d30e801985ba1db0c8185ad42fdd12e45962f2eb3d537b1674ec787"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001692",
+      "file": "nexus_2k_001692.npz",
+      "sha256": "93b755ff4d00c626e38bd44a2a971de4eef9bd98b0f4ce7332a66e61671067b5",
+      "vertices_sha256": "3149336fb93bc895e49acffa287e8dbbde940d33ad092a4d85b5d48864da60ad",
+      "vertices": 150,
+      "array_sha256": {
+        "vertices": "3149336fb93bc895e49acffa287e8dbbde940d33ad092a4d85b5d48864da60ad",
+        "faces": "105003e43830542b360740b6d1c0da3e1d2d95571801278835973971923e2b39",
+        "edges": "a86b4aaa2e13d196c8468e58234e35272627401d8f26979879b525a417e4cb2c",
+        "vertex_indices": "6088ebdb3231357e1414b49887e67f0e56d030e6330fa60f54e002df69dedd49",
+        "points": "719ef7954f91105a7773ea458639b1346af9859d25eeda592ebf6625106d1738",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "b38b59d89992e788a6f4969e3f19bdba4479d6c476af3130a1f0090b9b66c5bd",
+        "logvar": "b29d6746ce75cb377260e0844cba409bdc3757e28e5575f7b88bc855c94486ac"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001843",
+      "file": "nexus_2k_001843.npz",
+      "sha256": "918537a45b8bffb6c24a67b80fa40f612ea5ea5db5f3cde60722c71b8afa219e",
+      "vertices_sha256": "ab62ff3ed5bc285a85ad39ae1917c2c9b25257a3d44183a4e0ee8bcafd0507c1",
+      "vertices": 188,
+      "array_sha256": {
+        "vertices": "ab62ff3ed5bc285a85ad39ae1917c2c9b25257a3d44183a4e0ee8bcafd0507c1",
+        "faces": "e6f0d7cbf37e67c1e025f119dd010a5bfeccd66a471dd3e259fc891224364f8d",
+        "edges": "651795a1494c361d311831004152d7ea9d93865c198808a1545b643911fc41a1",
+        "vertex_indices": "09ce1558b5bcb17e9367b175c440d5836a0b321f429149c6edad11c7ba6d74f6",
+        "points": "08c873adca22e0a6c29a2d2fdf0587add9fe95264102b5cdf83cf660ccf2650b",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "f0de5bf631944caca3d5f564622f58a49e2072da7cdd829678567535e4e3e984",
+        "logvar": "6a5020191d82f1a5083696948d093f7c12a8620de3199585df9296b7c1da1688"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000346",
+      "file": "nexus_2k_000346.npz",
+      "sha256": "ba9013a17e1c231595d5291522ace03002d26690b84c3e2293bbece8cc3c638e",
+      "vertices_sha256": "705f40df905281873e9b7926cda9e82f1c9b752d7fd50628e2eb2f3a9c69f05f",
+      "vertices": 192,
+      "array_sha256": {
+        "vertices": "705f40df905281873e9b7926cda9e82f1c9b752d7fd50628e2eb2f3a9c69f05f",
+        "faces": "5c1cd71cd878cd90b76f8b0af1dd676e4975824e03f66418744a02de0582564d",
+        "edges": "f72079ee5f49047b51354211450de1276e8dc1a73c316faf6cf1a082ab311e41",
+        "vertex_indices": "e06fadc3c3a0d3512c8526f284879c3b45adf623b28acd22012452cc86b99d7e",
+        "points": "eb433d70f7ea930c25f12db7a9fcfe90bafcec5da6829b6a7d17e24dfdf30128",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "932b2f9a7466f4721aad1cb3f90d813781629354ec082f81909a065e4fd25e1b",
+        "logvar": "7c0afed9e11c48e5858e85b835ead3359f36d816706080158b084b24f24a9aa8"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001780",
+      "file": "nexus_2k_001780.npz",
+      "sha256": "f80472c82347f5dba2879cbb2b81e0a256ae3aa6aaf88c413de25b8a18e39ba4",
+      "vertices_sha256": "bf8c721e5c7273c1553eddc0f64ed38c4fd4d8ff17f2fad638344ccfa03c8372",
+      "vertices": 196,
+      "array_sha256": {
+        "vertices": "bf8c721e5c7273c1553eddc0f64ed38c4fd4d8ff17f2fad638344ccfa03c8372",
+        "faces": "06f9c60934e1468972a15218366c930090f994b00173dd71191a0255268b9e91",
+        "edges": "c8e2f03c2341b13f8fb01ebfd777a19db3eed674a5b6a9cc95395da0c84ffc3a",
+        "vertex_indices": "3138f42e59c9ae0e7a2136afce7ec4fba44e6e93e172c89d066d158aabd137f3",
+        "points": "77685bacdb6c00e15413dde035b18e373637200e1d8b24d7ea278b8bed9ee866",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "1d5dd8963e7faae8dc033c609add66c3b80b06f9e0e73086e8e443397c415eda",
+        "logvar": "b1760df58205428a77fbbae1a4e700946546af543cf5bcdde78eaaa5a62ebe6a"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000796",
+      "file": "nexus_2k_000796.npz",
+      "sha256": "76b63f276dc9d30fb411b3987c8f96ae64c2de7a546a6167821751e8a6a093dc",
+      "vertices_sha256": "b829752864dd4fb9100fc8924369844c61caa1c95389ffc916f82fc4fce9989a",
+      "vertices": 200,
+      "array_sha256": {
+        "vertices": "b829752864dd4fb9100fc8924369844c61caa1c95389ffc916f82fc4fce9989a",
+        "faces": "17e3fd2dab08013fe635a11675be78cb3f7c0bd33414e1b157b669be8322014c",
+        "edges": "32a997b4ba305d97ca05bd2293144d0db560b63d0f8d29dfefb01aa8a9527549",
+        "vertex_indices": "0d29800287b43580dc0a63b3f5f6ec1ff05ad8658576cd6dc666ad52016a31c5",
+        "points": "332aa4d007c5dbab4a12180d0bdeeb56d0debae7178e32612bb8867ca0f07b3e",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "68db7ab9efc01e9754e809b3ec97c852b0c0c00c167f71d638d35a21246f02e6",
+        "logvar": "25c2de44db489e19991252c163ea17f2f789f864127c00ea6367d47bb17042eb"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001085",
+      "file": "nexus_2k_001085.npz",
+      "sha256": "931b270882cdfa7d08599f064f1d8ede5ec72b0047edfe931fd7d1044777dfe5",
+      "vertices_sha256": "cb34f5b25368ab3cce51efc01a85b0b8cf458ac55d1b1e2676628a6fb0587e47",
+      "vertices": 226,
+      "array_sha256": {
+        "vertices": "cb34f5b25368ab3cce51efc01a85b0b8cf458ac55d1b1e2676628a6fb0587e47",
+        "faces": "3f48a1b9c3782b074a14746aced44ab41c1177bf1b0ba353392bc8801045dac8",
+        "edges": "bae129426b65585455559e9408a3850a994e572966a95f8274edfee62dee5cf1",
+        "vertex_indices": "13c561a34acb8cdad3fc32cb2339a84e41d923aa85c87cb7915cef1e8b59a6ba",
+        "points": "91876cb81743843989bad4c24d3bb6110e2cd85811e85aa167967cf7b99f5483",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "c851111b2429a420bb996196d4a09a2ab7fe75d77d9e7ea35fbcc0bd7beaedbf",
+        "logvar": "7a365b903408b593cfafbe1109b98c74d10cd9b55f49e0f3ed9dae633513c152"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000020",
+      "file": "nexus_2k_000020.npz",
+      "sha256": "58d016fcd24d87a94166cbb8fac980b8c05931f0e3345045badcce915c3d6b92",
+      "vertices_sha256": "c19b7731d51774459805c7fc3b15c972548f6cc342892812f115d917eb2e81aa",
+      "vertices": 288,
+      "array_sha256": {
+        "vertices": "c19b7731d51774459805c7fc3b15c972548f6cc342892812f115d917eb2e81aa",
+        "faces": "5406341d54032726c5f350fba60f7e142e68581a8b40ce20fb6b0558db0daef7",
+        "edges": "e8c5e2d418744d49d390d0393fa1956a019726588ce4212ec2f28b6824295daa",
+        "vertex_indices": "4fe91123001c23b5723e831c28d7ab61563a60b1860bee3cc4d1f996b5057f74",
+        "points": "f10726684f519c1dd4466e63e95768285450f4ecb7f959c3b8e48238e017bc5b",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "1bbfb0b39e5f4204ad658815c3c04452419a48440173d48fb6366e09290d62d6",
+        "logvar": "c95fbdd1b25a2fa4eddb345889e3b5a6fc4f7e68fb099ff4a8216128d8384d01"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000447",
+      "file": "nexus_2k_000447.npz",
+      "sha256": "fbc06d47717a130129d8e396d098c63f5ac78252972d70dba0a07c87dd15b37b",
+      "vertices_sha256": "6325580a384cbcf18afbe8dd7b10473bd2d88f5158303af725fcad22c9c2e056",
+      "vertices": 332,
+      "array_sha256": {
+        "vertices": "6325580a384cbcf18afbe8dd7b10473bd2d88f5158303af725fcad22c9c2e056",
+        "faces": "1226bd36037d75ad7ead42578ea3ec2b3ef46a7932c4fdb610a9a9a4f3745043",
+        "edges": "dd326881837fef56218ca3244f1627ee80ba6d0788874186e7b78d2f72bc9985",
+        "vertex_indices": "a4dc5fcee7aacfe4b37f1528235da05f3918fc612fc6958e84632326ec7fbd77",
+        "points": "2fbf02c71970c94b05a47e122f297d156302711d34fe04eeb22ce34aed4076ff",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "d8730ff294415c0038ad38a3d7262b8b2cc1b254a3fe0f7174fbd8865cc471d8",
+        "logvar": "04ca1d45e800aeb644ecca345f3b499b9bff1cac62d6b8d410dce478915c3c36"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001179",
+      "file": "nexus_2k_001179.npz",
+      "sha256": "abfc7c0dd9b9dc50f0d405d60d213ca51c7e0513ca9b3885faba2482e610489d",
+      "vertices_sha256": "9c8586381fe1005664d4091c5061db60ca8793c1923911632b3e93c3b4d7fbab",
+      "vertices": 325,
+      "array_sha256": {
+        "vertices": "9c8586381fe1005664d4091c5061db60ca8793c1923911632b3e93c3b4d7fbab",
+        "faces": "faea90d0bc5347ca0dcdeda276f746a85ca052f8af354e336af020b3e40b66c5",
+        "edges": "800c75550ac35b8eb6424cb7b42652f8d3c0a6ed95e2183d9a9c70a5884ab777",
+        "vertex_indices": "a07d65bda52a41d55af80898f9c147589759718d42958b6c4d37110128f3146b",
+        "points": "f4eebba2c88cf407e8953793b5429983127495da5b8fcc81472a385f70fea1c0",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "121256dddaf40b7edefc729252599c7c1220432069b56cce13b1ca3bc4532d63",
+        "logvar": "33969a290539d02307dfec484e602721abc06c236457dfbcd05cf844904428a0"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000118",
+      "file": "nexus_2k_000118.npz",
+      "sha256": "9a625d793cb154e5222aaeb5c8124e531b9bdd341fc4f389e2a7c310a5a043e5",
+      "vertices_sha256": "648b1a5b5debcfed3f43318b2aa35f65af3c067382c303adb8d62e7545582963",
+      "vertices": 362,
+      "array_sha256": {
+        "vertices": "648b1a5b5debcfed3f43318b2aa35f65af3c067382c303adb8d62e7545582963",
+        "faces": "bc563df4678a0c621ee5a48086cd82629f83f7a4d1cecf51984b411418e413ec",
+        "edges": "3f36743810af4b4c53c43dc56d57508696974d9e799ef8470f5ab996084d3886",
+        "vertex_indices": "69bef52b7de007318e7cbd582d175e451a86b436e442b5a96e10742e42d329ca",
+        "points": "2c84e1313170f799476c04e6ab766895aa42cc470c5e9827c0b455a073ddef9d",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "cdae1af47d71700c8d54dded007b2432378b29e31d655e93922e9c64fa975012",
+        "logvar": "66137cc85a0e0fcd9d489a9c49e0e9b18a57b0a7d931d9b07563a61c99102898"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000074",
+      "file": "nexus_2k_000074.npz",
+      "sha256": "65d8f796a11d6e7ce0a0976329dc548bcbe52f98fb61a72195bfe3f3cb00667f",
+      "vertices_sha256": "c8f7c0c216c8bb99d3fe13cc769c63a36570d9e2dfd7d0b9e3eb394bf3ac6335",
+      "vertices": 386,
+      "array_sha256": {
+        "vertices": "c8f7c0c216c8bb99d3fe13cc769c63a36570d9e2dfd7d0b9e3eb394bf3ac6335",
+        "faces": "f045e952304c61cf666cccf5615a9b231c144d1d71c33ea6d874b5c4ea6e9a60",
+        "edges": "e0d3d485105545773f3af7aed4ef94020904630b1c7beb0e8132061e9d6a6351",
+        "vertex_indices": "277ffea547471f182fefe41978c30d17e4518980570bacc66e457bccb9b711d4",
+        "points": "49acc549714ddf647bf6a1f1d40d3f3a65994924d632d1caf217408d3f84b6eb",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "e7d2854ea14130bd46c44baa81d844826484aed0c43e57765734cb87eb9a7463",
+        "logvar": "c61a7ef6d95a30f6c5435f25a23c2d92d797c230cab5bff44118d6330972dbbf"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000519",
+      "file": "nexus_2k_000519.npz",
+      "sha256": "8aa00e155add0fea71f1d45f227c4a4e56ce22571dfde60f544fd8893ea825cc",
+      "vertices_sha256": "75a0bb1f64c24ad83459e325f3bc54c885c0125757b39e28dd97c59bede98f3e",
+      "vertices": 392,
+      "array_sha256": {
+        "vertices": "75a0bb1f64c24ad83459e325f3bc54c885c0125757b39e28dd97c59bede98f3e",
+        "faces": "b0ea723951cff4c1735d60a2b96d0d9d4504eab71375a210fac5230756334673",
+        "edges": "6ab0f17c300da246ac68c1333ca29bd31508ff89a1b7e8267d8eaf27319863c2",
+        "vertex_indices": "a4a0505a5cfdb91bc26ead67c1ce2ab6cd20cefb6677f5c668a44a26c5dd0367",
+        "points": "1f3d1c4d066da58ecabe0e77f67399c9d0a105901550af163860d369e1d3e780",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "92256031958b2c49ff94f80a0af272199794be8e9b0562ebed38ca9ce51ab914",
+        "logvar": "e57b191da5b8cf2ef4a56817d2f6d43b2985d21fc00a28c6cccbc8294603dae1"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001087",
+      "file": "nexus_2k_001087.npz",
+      "sha256": "a23742e1f22ff42e37b77a5d3a7b4e289dfb3dcd1d8bfe7d67ac6c64fa39d11c",
+      "vertices_sha256": "895104fbd2e445a376c6662bfd9cf44663fde3bfe9a42afc08a495bf5822247f",
+      "vertices": 426,
+      "array_sha256": {
+        "vertices": "895104fbd2e445a376c6662bfd9cf44663fde3bfe9a42afc08a495bf5822247f",
+        "faces": "f57ca9e9d79ac45b3c69635fc8089e80e424bc66beb4091b5f7ed8e3964011d6",
+        "edges": "d946bdc754ab71cd8eb217b8e965000a9263e368fb8ee5d37e9eece3a6195b1f",
+        "vertex_indices": "676b2a471831c420658b53d9cb66a19cf1d29ec1201b4ff80918befd3dc508bc",
+        "points": "5ffcfe61039b2900864df0fc520525be15b5adcee9bc6da9a98262cf63130c9b",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "d89bc17aa04cfeaff31de6a534d44b3966a3afa2feeb35d8c8c9b4258666b06c",
+        "logvar": "9da53d035990681477a44c0f4c08118df5fed9b8f91d79825d24bc19666f2d88"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000053",
+      "file": "nexus_2k_000053.npz",
+      "sha256": "5efb915fc5f8f9c9ee2eef8bfb1b56007ba87641427990dbb1078e7763e4ec77",
+      "vertices_sha256": "e94fdadcd065a8644723aa7ed8d0a0392d9516f1fccc897e75f034e124c4624c",
+      "vertices": 488,
+      "array_sha256": {
+        "vertices": "e94fdadcd065a8644723aa7ed8d0a0392d9516f1fccc897e75f034e124c4624c",
+        "faces": "60510d187fb420c99d7fef9417b829b75f5884556740167e6a9d04d1b3e0b076",
+        "edges": "83526e04fcbc7874349181279582c0bcccea992f7b758771df73fde7671bae17",
+        "vertex_indices": "8b20ce29b65f073acf454c433c46edc53606a25ce2d2249bc1ef14d2373b6e77",
+        "points": "07f2e076929a3a9eb9b862c4db9db9d7dccfd6a352b2c4a30cb503c2d7c51a9c",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "56762f505b392a5833c9a6103d7b9df5346f3e795ec686c9736754240144e050",
+        "logvar": "89ccbd24e9a7cc2d7de2b8f64a4f61094c7cb29a1197d80137ae64cb3c909c60"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000675",
+      "file": "nexus_2k_000675.npz",
+      "sha256": "85c0b41a97802a19a2e60a6519a1009b56a48df4a75542346bd319db07d121a0",
+      "vertices_sha256": "d9d74150f358f36435935319d9d9cd1dfd6d038f8dc416cf02bcc7630855d52b",
+      "vertices": 516,
+      "array_sha256": {
+        "vertices": "d9d74150f358f36435935319d9d9cd1dfd6d038f8dc416cf02bcc7630855d52b",
+        "faces": "73fc77ba9720ccd355cd7cfcf2e788682d32feb78167685ac2ae2d1b38eb3063",
+        "edges": "8708a4eb97a35b4c9c911b7971c31233c58b736356450da492358fb4454c3971",
+        "vertex_indices": "1186abd953a22b15b33e7d4b9f153a37b03732ddb194dcfa49ced4a1a459d4ff",
+        "points": "33fd3848296482c0af5a4f546dc1fe7902679ae39ed9987a77d3be38f1dbffaa",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "abd8b274c6a0940d9980dbd84345494478babd90a6f3aff8c71b453b35a8dee5",
+        "logvar": "3920b5fd117d6a10765dc4511b7ce0125a06d502ce3b3a83a0a769fde7684a9f"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001716",
+      "file": "nexus_2k_001716.npz",
+      "sha256": "623ee86ceb9cdda08beb80891e81cd3819260f43e2dc4de0132045d60d7459a6",
+      "vertices_sha256": "a2b530539ec67960e80bc7ae98dd2ed1310fba170a6f24285fcdecc0fc19c422",
+      "vertices": 534,
+      "array_sha256": {
+        "vertices": "a2b530539ec67960e80bc7ae98dd2ed1310fba170a6f24285fcdecc0fc19c422",
+        "faces": "0df4dd4f72c04cea06d450abcdf00adefd2e9987e13120c835151cd8e115a459",
+        "edges": "802e14c5495bf5ddc0ec3b7a9df20cfe051a13ae6885c4decb09c25dba984af0",
+        "vertex_indices": "76780c8ecce532b8d3e64062839542b9fc51033d8f0d8f8311ee897d6d12617f",
+        "points": "c3cfe87f78c1e0ba49479be38fa6bdb87aeb55835664108ee3110294684c944f",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "4c720c8353902a60cea2f67b4392310eb26f758c853559d750516cd84d871247",
+        "logvar": "8b11ca67d3789ff6a25f604e61a498a65ee739aee1f0275491daeb719a048924"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000242",
+      "file": "nexus_2k_000242.npz",
+      "sha256": "82eebbb3894e66bccc9a2581947a3574452bad5be3954871f61c18c1f1a2108b",
+      "vertices_sha256": "211b3f79d42939334fcd51e0dfe2e6fa8beb41cabf6e25182ebec7135c12cffa",
+      "vertices": 652,
+      "array_sha256": {
+        "vertices": "211b3f79d42939334fcd51e0dfe2e6fa8beb41cabf6e25182ebec7135c12cffa",
+        "faces": "c0beb9c04f066b8632636c7d078395a5df3bd2eeae9f90be76da8b222aa028e5",
+        "edges": "dbe17ff0160a52915e2b0422f8f6d48e31f5e2f7fd079c9c90db656e62fa6e97",
+        "vertex_indices": "94cd106399da94f619fe3d5d6206bcb6d328f839f1665d8f7c4077968772bb41",
+        "points": "9b0bfea8de6744f6a4333adf55d19bc72061d3351ee734c453dc931325c3dafb",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "533eb96917d845de8ce79a93623f0eb4e0b2f4ad98130e991340c21ce102053e",
+        "logvar": "639ff3f289f853ce69b03a1bd814d72472354e5ca91786af9b6603a6ab056d63"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000823",
+      "file": "nexus_2k_000823.npz",
+      "sha256": "d72fa30aa54fab91d834e428e7c66b4fb3481f65c8cc901a60179e1e7f8b1db8",
+      "vertices_sha256": "7a81fd64cc84cd6a52a73fee316fdcefb5bb9974958be1b2f9fdf24b132b22c8",
+      "vertices": 666,
+      "array_sha256": {
+        "vertices": "7a81fd64cc84cd6a52a73fee316fdcefb5bb9974958be1b2f9fdf24b132b22c8",
+        "faces": "4899645886fb36c8a6f6047d3d5477cb1f38bb27e5aba4bdf018469f12328008",
+        "edges": "9cdf28dfdbe61cb5015d811343b747043285aeef14d460b8054c355216ab7df5",
+        "vertex_indices": "412fdaf6f77660924b04b41696cc55615da3658257856eb7a37a8363ec8f7766",
+        "points": "26454e551791348ab4658f31396852c22cd14b3ddbd3f3eba8f6b1ee0d751586",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "6a656065dedf8cbc70c4d91c7baca35d08d6201e0750c2ffd80212b62b389c77",
+        "logvar": "5459b2c680e227e2f8e223a8ef4acc3b1d33da80b6ec4d7c01dc9a2858a81e9a"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001536",
+      "file": "nexus_2k_001536.npz",
+      "sha256": "855486a142e4bbd7fb3eb76ec195d81840fdcb52b922cc9243b002c717e0c854",
+      "vertices_sha256": "bbd972d472048fc266f14b82ea3c49668e971b163348f263c5c408c50c43bd4e",
+      "vertices": 728,
+      "array_sha256": {
+        "vertices": "bbd972d472048fc266f14b82ea3c49668e971b163348f263c5c408c50c43bd4e",
+        "faces": "9af0f6996aaa8d06f1ae75a5b53a3bcf7a9812a6be82a3c0ffa02e10fe0fbe88",
+        "edges": "ba58e94eface266efdda2ce783814b006507d7054724df9ced6facaced6c57bb",
+        "vertex_indices": "29c80a76ae703abc2723631358ca7c6f69fc46b5e395518f494ad1736b34cd7d",
+        "points": "a7282380f867eb06d79e2f4efa44d85470cf24e6834db504d221f82424b7d2d4",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "32a31fa8ba96f33880dab578b0d70072f332a1e1d07f151d9ca1fb708c30b113",
+        "logvar": "265e026f20929d79a135ff64212a2e3824ced4d0d352f6594c7f31231889364c"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000840",
+      "file": "nexus_2k_000840.npz",
+      "sha256": "662df9fae5a384ab6d97bdff0c585eaafef4b02a91f854c6ecaac1406edf5884",
+      "vertices_sha256": "9ac78dc4a03400c389937f5ec3ca2891c857336bf839ab193aa6200410b6005b",
+      "vertices": 798,
+      "array_sha256": {
+        "vertices": "9ac78dc4a03400c389937f5ec3ca2891c857336bf839ab193aa6200410b6005b",
+        "faces": "5a893b887e0b04aceecfd95c60186c793a2bcb7f011f8ea2a5a2006eb59d73f2",
+        "edges": "63711d1bd18a7402d0696152e6c7003514dea3f6a8e1ddb020698e1ebf927be4",
+        "vertex_indices": "38d4767e4934aeb25f4dbad0ececd1c0b93a9f52c17d702de927094b52456578",
+        "points": "dfc833c6ce1dc4156de811b91ad2a7a2b94b5b6c654bd20390ab7449e946dfa4",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "63d1f131601fd6d7f6d20d5f7b574d6dc03ccfd7cfbc551ce0579fbad1f0dbd0",
+        "logvar": "cad63d7a9e86388ff2b7a7170a89a1e7b304e60cb5efb28310e056662402c5ae"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001577",
+      "file": "nexus_2k_001577.npz",
+      "sha256": "36ddf1292b410e98b8b9d29f41292452181012dc49344c29b2d00838f8a13ce0",
+      "vertices_sha256": "65c984603ea7f6e91ff34c870917a69389970572d8d1877dc5933f137f58513f",
+      "vertices": 836,
+      "array_sha256": {
+        "vertices": "65c984603ea7f6e91ff34c870917a69389970572d8d1877dc5933f137f58513f",
+        "faces": "6f6073e87dd3eb81055bfde732768eae763febf45073b063c3831ccc02507951",
+        "edges": "0d22884368512505af9e1c782337de28dd2b6e9958505ed06a05e6debfa4a004",
+        "vertex_indices": "6fbdacf1cc3d1c4b851e1f50acdfcbd7ea62e827ad3cd6d17e7772c458bbd08e",
+        "points": "328e2cabc99ee712603f1b9406dd07312a05e263ef7bdf26e83d14442241c80f",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "6c082d416b73c4ea55292c1471b900044c80083ea48ff528d7b39739548bb849",
+        "logvar": "e7cf091d98b8179d3253b6d390508e64f8ee9f30c7119db5d9cc5d3d8fd7f776"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001216",
+      "file": "nexus_2k_001216.npz",
+      "sha256": "4bd4ab5c35b28727d1a9530f302a7d43822487559730ae8a43e61036dbcf5c7b",
+      "vertices_sha256": "3621c91dda2d16b320dae670e0648787ce82cbd954e7376e3037f9f7886ce0d1",
+      "vertices": 938,
+      "array_sha256": {
+        "vertices": "3621c91dda2d16b320dae670e0648787ce82cbd954e7376e3037f9f7886ce0d1",
+        "faces": "9748518f83f9e3ed54bf8074eced90f8a95889768585d7a1d7c7e30acc65c075",
+        "edges": "456841c413ac7a6f504f510620f9f2a6ce5520b5947a06bf1eadb1407ad3a62f",
+        "vertex_indices": "402ec8f7519f8f8b53e9774b9e3819c47e06c93d1484a7cfc2eb40d563b402a4",
+        "points": "d4d5492315b92f56ed3fdc21464ae1c88280f61fa20ae7725c42cbdbb4c112aa",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "413ecc83ab6aeca703238e9b72a495cfa07fdc9d7e36f36626a43bc9a9fabf12",
+        "logvar": "2c074e5c5a6186c09637f62cf132e5b3ba6c6e521a10aa1f7fe76b96823bdd62"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001331",
+      "file": "nexus_2k_001331.npz",
+      "sha256": "24360c80b6cc796c23265067b3775d45515c24eb2169ca27acba0e69b9f552c9",
+      "vertices_sha256": "0c0ff779bfb07b515a0ff1810afa740b2385f477c465cbb448eb466c9595b026",
+      "vertices": 969,
+      "array_sha256": {
+        "vertices": "0c0ff779bfb07b515a0ff1810afa740b2385f477c465cbb448eb466c9595b026",
+        "faces": "699cba27aa203dc8c436ad999f613c98fa04a2b8431535eb4ceec1563ad4eec5",
+        "edges": "485bc338d198cfc09560c35601ebdb4c3c1a6696b55be02669710f78d9b9562f",
+        "vertex_indices": "647dd6b3003a67895ba6853ca99f8b447afe47201bead20c09055aac66518467",
+        "points": "3c11f45f4169a2c452ddf9c6895827ec8e724893a1b4deb12520032d65369caa",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "354ac1223f902cb7e6f7e627e2a6db6ddbd154075bce5c5f998599dbeace51dc",
+        "logvar": "4849364b85c267864816bc257d2f9bfbfb88ea373a572531fb87a2799e04410f"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000142",
+      "file": "nexus_2k_000142.npz",
+      "sha256": "0208e06ed5680e8a18a442c00990c3f599c06a9ccdf9c15012c74d30a75907b0",
+      "vertices_sha256": "6487276773c53435e3798e3b447fa5958a844196249ed390b144899f97e59fc4",
+      "vertices": 1029,
+      "array_sha256": {
+        "vertices": "6487276773c53435e3798e3b447fa5958a844196249ed390b144899f97e59fc4",
+        "faces": "6c49df5997ab4c1afcdf0aa64c12a372cc5984c242a87f1f038fbb558f5e72d0",
+        "edges": "91024377e8eecfda2c9b549ed16e285ea311c5082a14f3d68fec739b8d4e4b87",
+        "vertex_indices": "82abda875bfaa18bfbfdfd9fca5aa77898a3c8c5d19f259705fd0df14026a62d",
+        "points": "ff5ffe027b9da81e27e0de5756063d0975ccea6bbdcb02414d2f51e47deb484c",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "3f0d6e7dfb0fb9c638f1bc75edd6ad639d51ecf880896e3f6946aadf8c9b8c60",
+        "logvar": "e9d1b7ba05a308af36ee0f51959320204903b738fd969e8b16c67af5093551ce"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001550",
+      "file": "nexus_2k_001550.npz",
+      "sha256": "75e3dab392ea4d1d3263e60cedf61d340fc0331de8ffb3a7bc0cc1faf373688c",
+      "vertices_sha256": "cbd86ee3eaa56073f433d4e31a68c10d6a649ee69a6dac8fa6f3a99287e5c683",
+      "vertices": 1137,
+      "array_sha256": {
+        "vertices": "cbd86ee3eaa56073f433d4e31a68c10d6a649ee69a6dac8fa6f3a99287e5c683",
+        "faces": "aa49953417d9becde6444c00dae0611ffb15d8b989fe06861b21d455a0cc28af",
+        "edges": "9830724a1fe5236d31d01f55bb231fbf903f42da061dd8c747b142a61e94248f",
+        "vertex_indices": "9d556703f82472e46ad92c4814e6cb7c0a9a786854877a5ed06621fe7d61e85c",
+        "points": "f3310bfe404dbe7e324e21537005173e94a0adee1028f5afc409a9d44019965d",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "f298382f652b776943f02d20ba9140436df96431b37de07719bb3e7d225010b3",
+        "logvar": "6cba1746251760989cccc077e3006c2c787ebe9b2eb620025ad6f30bdec8a92e"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000872",
+      "file": "nexus_2k_000872.npz",
+      "sha256": "868cb0d0007c6d07ed1285c283eee76b96ea1380d0227b62a3eb1d9b05c761f2",
+      "vertices_sha256": "8274cb5a48d366b505fb229a5241a03916faebe62045284b2d8652ed2ecc7ec5",
+      "vertices": 1215,
+      "array_sha256": {
+        "vertices": "8274cb5a48d366b505fb229a5241a03916faebe62045284b2d8652ed2ecc7ec5",
+        "faces": "c9185d1cd853b36eb03241517153c5ceccb0abe7c9c168481c8690be29dccd1a",
+        "edges": "f0dd359de11154d598f599c1a316f994d60265c3e4be8e935f7d35f72920a878",
+        "vertex_indices": "230c4a3fdba934a766c6a7d1e2cf2bbb6051e5acc8c7d8d0dd5f22ab4a0d77d1",
+        "points": "9154bb75f602fa4ff8935025d064cc52df36a3a615c0a8f2c09170d97219c9d0",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "9109158dab179ec9ebb8888edd84a459351da333b757fc172bf92dbefadee19a",
+        "logvar": "b560b1ac5178452841dea8712ece91272d55b2471dbd6fd6275d21c5cc95a2fa"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000952",
+      "file": "nexus_2k_000952.npz",
+      "sha256": "d2121c6b4aafce929d130ec5609b2a683841fc28260af45f7990226d86d3d8f2",
+      "vertices_sha256": "f6a1f2a5104b1ace033a5f1c3c1b773cad81abb816ff50f5e85e84abbd74f681",
+      "vertices": 1251,
+      "array_sha256": {
+        "vertices": "f6a1f2a5104b1ace033a5f1c3c1b773cad81abb816ff50f5e85e84abbd74f681",
+        "faces": "d3188f95cb839a74199197e42a2ce63a0d22a9fe15c08751e6e95dd9154f2283",
+        "edges": "19061f9badd652b9fc7c6e78eb84dfd68149bafced7db193bcd097e43d115ea5",
+        "vertex_indices": "7049a7928c0f34ab9373e1a58eeeb551167108f5b3c96dae0d8384714a864381",
+        "points": "e608d5fc1b68e4c8a6bda1641a637f9759b3fee6e3ae68540a6ce483d9af9537",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "b1096c004cbbb65f6d006bfe700a88b5221e508239f18b0cc12e3d6e0d2396c5",
+        "logvar": "b8bf1c1bf4a76fb0a532f67619b890c8b32e866102672428869132797c8c0c4c"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001825",
+      "file": "nexus_2k_001825.npz",
+      "sha256": "ce2ba79265350d85314fb7e9f514e5b4d01fa2e03bfc92862336f63c59dcbc5e",
+      "vertices_sha256": "cd1267bb9acc9c0f1e6afd120b1fa0f91caddf1139b7c1d07363da1a27f688c3",
+      "vertices": 1277,
+      "array_sha256": {
+        "vertices": "cd1267bb9acc9c0f1e6afd120b1fa0f91caddf1139b7c1d07363da1a27f688c3",
+        "faces": "8fbe48268dea01d6800b792b53c568dd13da8761cf3dab5844dfb6dd11f1afc7",
+        "edges": "cdeee6bb8fc48c26f901ac7cc41d92de120e48c3d8a8e9e8ac956a9c176e8dc5",
+        "vertex_indices": "1f1266b7e1092f60527d6217921ae425d2eec0c13bc9669321fe88e60f2cca4b",
+        "points": "af6f1aead7a47c45b04f9c9f533e02c4ab991e94a70b85be7b83d09748b33687",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "bb6412d5896a200fa9d732753457fdd73d4373e4b77fa767a01054cf57f406c6",
+        "logvar": "53ab85dfa2374fe81a631d777ae323dd50f5363addf17641bd1cc1be33e0cf28"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001483",
+      "file": "nexus_2k_001483.npz",
+      "sha256": "7a6c2e7f7562981afcd12ef38b44a067d0eb4f4554523543d01a6a829bd69b92",
+      "vertices_sha256": "d3359c9ef9daf3016a0e017b4addf5fdbd609c3e9c63fde9b2e22aefffa1e139",
+      "vertices": 1418,
+      "array_sha256": {
+        "vertices": "d3359c9ef9daf3016a0e017b4addf5fdbd609c3e9c63fde9b2e22aefffa1e139",
+        "faces": "f388e4cba9156692381c6f22d60718b1af9402c04f3229931b6e2caca751c951",
+        "edges": "b3ecaaff69ace9e792bac0dd1194edb0dade9453b91b9a28a5d62389ebe3b54f",
+        "vertex_indices": "e9b4bc42d64e36036d2f2bc69f7f6263c35863540d4ad88a481cef14886be4bf",
+        "points": "bd21308a739d1a5fa5a25bff0d03eaf688ce6b115aba39329b0e228b75e4df21",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "0b2a9035a8dac9fed71c7161a264251aa217482ffd1d59d30c05ae47719d3ec4",
+        "logvar": "fb1a90fc1a3b11401a71581bf8bd6997a724a997d5756dcba5a3ed6165cde6fa"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001439",
+      "file": "nexus_2k_001439.npz",
+      "sha256": "deda01ebb72c16e4a0721d374bd36cdb43034d491fb7f82de797146284ca8740",
+      "vertices_sha256": "8fe9f59f92429cd31bda3d1ae213307224fdc7753dd29df30bed0298794b0f9c",
+      "vertices": 1446,
+      "array_sha256": {
+        "vertices": "8fe9f59f92429cd31bda3d1ae213307224fdc7753dd29df30bed0298794b0f9c",
+        "faces": "87044b2b66302f29f9c6381db33bb3db36c2a6897d74189d662ab0ff1ed4962b",
+        "edges": "37fbb7eea912335758483ecd9e8ae2b140f8811ceb9fa35bb2a515e5eb872a8c",
+        "vertex_indices": "312570afbb822d44abf0e12ab5153214539e535428c2529b353772be6d556744",
+        "points": "566d772fc4a88db30110bc8b17d2c9e5a3fea036ad9f00c66d8b9b6ada581249",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "ef3d38d37b55ef42d61213c08c84d0bb0786faa3530cb846feb9bc1e4e0cbf4e",
+        "logvar": "6c04da4b292ec208ec3bff249390b3b76429649bbb94c140e0464582c50b5692"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001178",
+      "file": "nexus_2k_001178.npz",
+      "sha256": "4d9a175599b11378f74a7a4549dd0d5b5007942ca535be42256881ea1d6d36d0",
+      "vertices_sha256": "87ec71764eecf4c7139373ba5b6d96727c6bbf1ec5f5670eb048b0c5cc42e327",
+      "vertices": 1458,
+      "array_sha256": {
+        "vertices": "87ec71764eecf4c7139373ba5b6d96727c6bbf1ec5f5670eb048b0c5cc42e327",
+        "faces": "e3f866ed949e7abbe72d35ac0a192308a181426bed4b916258e253640354a666",
+        "edges": "79d6f1e209a581e9874da8395b88fa3c7e960593e30bb80cb4571b1bd7a323a7",
+        "vertex_indices": "1ffb7130e27bc3171ea65fa9568334d0fb9e48c1b6bde083b3ef5b877d8abe73",
+        "points": "319173f871b65829db9eb92c6f2fa19d8a82773e615d46b8c7dc16a8d085cbfd",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "7d917919d1b04c76b38aaa8af52b5fb8b6d84b2337844ad00262248b30f7b198",
+        "logvar": "561900ae028776f5edcb46799478f242f35daa6d7deb0b6238ef69ecc9050518"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001317",
+      "file": "nexus_2k_001317.npz",
+      "sha256": "5e00f24084e594f553a92469384281c67ccaae8a0ed044ed269d4e4322835816",
+      "vertices_sha256": "ee450e3589066c98f41f998bbad66ded92c645531f3fb3e3bcf958bfeea60ad0",
+      "vertices": 1536,
+      "array_sha256": {
+        "vertices": "ee450e3589066c98f41f998bbad66ded92c645531f3fb3e3bcf958bfeea60ad0",
+        "faces": "1d027d2ab8b267752e89e4248069ddccff00400dfce111918d17bbb1dac28137",
+        "edges": "2586d9d213a8f05e4222c077f2f7dae51a70c62ec2abb93cf4d23f6d8594e969",
+        "vertex_indices": "b3fddc2be698554873886ad8ef75e1e8cb5080758fb882abb4ca2177ac413bde",
+        "points": "6ac60bf542e96f478e30a50db022d88acf300291409cd6e238026a4dc6bb8aa5",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "5d6f22b41573e4f35431405ab9373bfcd9549d0a7734362ae6e3927739cb2ca9",
+        "logvar": "4ab2906a51d51a73df721a437b6abafe9b81534ef2c61f023d1f27aad1f8e902"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000869",
+      "file": "nexus_2k_000869.npz",
+      "sha256": "cda4a04a3029d47a508189eb90435a073f87551393dd177fe848e66cfce0f531",
+      "vertices_sha256": "5b621a8833b928b7125fd1f2c58caf7c31ac92831be3a57ebc5b50e57a1d38b0",
+      "vertices": 1590,
+      "array_sha256": {
+        "vertices": "5b621a8833b928b7125fd1f2c58caf7c31ac92831be3a57ebc5b50e57a1d38b0",
+        "faces": "7b470a6cebe2d5a87892cb0d520bb1595d30e581161c3aba4bab5a26e9b697d6",
+        "edges": "4a0e20422b302a73e05995af79430772c9b1edf500e5885dfc44637ecf8dcbb9",
+        "vertex_indices": "06ad5ddf46da382ed49cfd7badce07ace44616fdee14d659c2e1d369a4d58867",
+        "points": "0c2f422fac7cbd2daa7179d4b4de63494fa783db16e09f9316c6143394a50f5e",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "be6aae50ab7b82f13bcc2da9f74febb7c38661df3c8f07546d3a0b8ad758e4ea",
+        "logvar": "dc7183c4b2b67cdbc2ceacc2708360306ac4c63b2f9878d4b294c323b6f70d47"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001415",
+      "file": "nexus_2k_001415.npz",
+      "sha256": "6c79c860475efaf5469347eaa6fff08a7ff562d85db20fdc79572f2e0542da10",
+      "vertices_sha256": "cc07aa7212bf5397bdb6dbcdebb89d196f33f9481e591579698642a64aab36b5",
+      "vertices": 1609,
+      "array_sha256": {
+        "vertices": "cc07aa7212bf5397bdb6dbcdebb89d196f33f9481e591579698642a64aab36b5",
+        "faces": "37ab9cbbe76c83e430af5f439440dc4b87852cef489e7dbf14b30b13ef96aec4",
+        "edges": "ad31c631eedafc84ac60d073723ff18cff54aed9f69abfa5574d8063fb32824d",
+        "vertex_indices": "cdf7331b1b6da03dd2ff7d9447145dc4aef16128b24cd9a5220687cdef2a9bcc",
+        "points": "eaa001627ae0782b96d27f7be3e6bdf73462be9e3e79f8024a6f5285c915555e",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "5f9adaf6f7c31f44068456eb1b2a1b3a212523ed0c9ba1eb30c377f2777933f5",
+        "logvar": "14ae0c4053c1351db06ecff8ecd15bb2ae564118c797e13da2aaa149e7b4fefc"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000283",
+      "file": "nexus_2k_000283.npz",
+      "sha256": "43a3a638f9a8a389a7d9becc349275afb956f38efca660ce97a4b405b53bf817",
+      "vertices_sha256": "41dc734378407833b880baeffa0bf4ee8bef8a20117f8573117628a9bb260b2f",
+      "vertices": 1644,
+      "array_sha256": {
+        "vertices": "41dc734378407833b880baeffa0bf4ee8bef8a20117f8573117628a9bb260b2f",
+        "faces": "a817c459390f173b63b479a6c5177ea7817dcd87fc1edd6d01743b718d706917",
+        "edges": "378da26980215a130faab055baec37c159f6c1b6f3a1d226d43ea3f9fdd15a09",
+        "vertex_indices": "ad53f817091f6d959f0e0e4b33afd72b1ed6f58b6866f59da67a72a8ede4ca82",
+        "points": "02576a4c833e0551a02100c8620dec6b70499381ff3b9d5730258a7c247343d1",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "44140b56ccad6f80aab29a607bcb1f44dfccfa05ed40cb4cd8ff6304f1314904",
+        "logvar": "91cdbdaa0a9751f9c63e39ece1cde1f58735363e77fdf319e86669fe0e33ffee"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000935",
+      "file": "nexus_2k_000935.npz",
+      "sha256": "ffc4fac7dd0c6a4bb84c32ec718808ecf35f0129b1e635d46236720cd4acc6d4",
+      "vertices_sha256": "60cdce132383a1bbe6abb4ae68c870097ad86bbfa371bbcf914d5d1bea9ad792",
+      "vertices": 1713,
+      "array_sha256": {
+        "vertices": "60cdce132383a1bbe6abb4ae68c870097ad86bbfa371bbcf914d5d1bea9ad792",
+        "faces": "906354abd6ad0a75cf1403e5ce2a604c615273371eb94c1168285b7b8cd07b84",
+        "edges": "f15edcc1c5cd1606fc5b3f03d16ec449f3f9cfd0a59436658f862b75a6c8aeee",
+        "vertex_indices": "69ef4bf82f419c192e7e7e623d7916f794506132c6a60d308e0c53ab58cd6803",
+        "points": "a942065d3e47ad0452656ac26834949ee55deb17f962619c5f384d5f10ad7342",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "ff10278b61774c6e3f0597751d5badc14accd1c033eb55ebdb5af3f7840f91a6",
+        "logvar": "f867aa874387f2176b6c4f02dbc8c1c415ade39a0a35ffc11174a995af979042"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000815",
+      "file": "nexus_2k_000815.npz",
+      "sha256": "c79ecfab924d192d735b2dceed34a511e7b171a5c7f5a58962ed6f28d9cfeda9",
+      "vertices_sha256": "bad5e14bce568a3d2b6cf04753005b369117151690cca9dd5f620d4f66b6d80e",
+      "vertices": 1735,
+      "array_sha256": {
+        "vertices": "bad5e14bce568a3d2b6cf04753005b369117151690cca9dd5f620d4f66b6d80e",
+        "faces": "b7ed579ebf0958ee8f67d7b57ab3e0fc45cb5500d32c58775d6bd4068489fa4c",
+        "edges": "0b75746ed1126a9b7f62d8c095dace291e7e285e0e63852777db9776f25b42b4",
+        "vertex_indices": "3fa6b45729224fc101785f34adeda92957436d287aace9d9123c0d33fd2bf3b0",
+        "points": "e85ef48a997429ccedc2e6e0beb2a9ff3ca2ef0f04b5e22782ca0b670db6b244",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "482517095762449167f77eae7e1c0f392a87b3da08e049f60d099d3129f3cf77",
+        "logvar": "7037150312a5ccb90e1ff3bad386bcbecfc8a99e3d5eb327cfde08b7d14b409b"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000800",
+      "file": "nexus_2k_000800.npz",
+      "sha256": "e2c89228cbdafb2dfba8a42768d040a1aeabbc59972f632cf69bd65807bf246b",
+      "vertices_sha256": "f7b8161624f8c062b2025406706ce865f5ef2557f083ec1ece3dfd2a733bdd31",
+      "vertices": 1829,
+      "array_sha256": {
+        "vertices": "f7b8161624f8c062b2025406706ce865f5ef2557f083ec1ece3dfd2a733bdd31",
+        "faces": "1c816d47264f8e22ced4a450870669575fa417c006e744f5e835ceb7957f500c",
+        "edges": "93fd980ab09aaef12868b9edfe4676f65e4c6e0bc4e0439c64d082a7a45a3759",
+        "vertex_indices": "0d9f387062526578d61f42445b2085bccb50c5070454269be3b33c3c092b198d",
+        "points": "7ee7952ab5dc8cdff823fd1e1c70d448012dce3fea5b65211192eb46a7a872c3",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "28bb56ab4271f0f7ed5dd4f768feb1b44cb12af1971440b415cbfdfe61783f6c",
+        "logvar": "966114be83d52370e8bbb6ffbcb9550712db816ac1a4295656fcec3179b2a55b"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001211",
+      "file": "nexus_2k_001211.npz",
+      "sha256": "58ca7c232830c88c8918065ffaa80189c3e683d95c32f78e7edad4dca98bb1a4",
+      "vertices_sha256": "1297486df8f979bd1cf5203610ab30a0926815c8b3d0797f4765e0cc4c4114b2",
+      "vertices": 1830,
+      "array_sha256": {
+        "vertices": "1297486df8f979bd1cf5203610ab30a0926815c8b3d0797f4765e0cc4c4114b2",
+        "faces": "8813b5f773881675c93219f38039d5344e81cb09b504f90168650d0ed89f8565",
+        "edges": "2b8d270f0bb5c5f98b95c7056f254e3b99a5d528786338fe514e1a513bdd7502",
+        "vertex_indices": "3af398eeaba496fa150c75999480646e02162164dc747c3f67f3b47cb9bc7b68",
+        "points": "9d3a19620bc91dd8c5b6f572f0959120bbdaa79c588d0ef8addee0e6621427e9",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "5722d267e0a53e95a5479cea75a3fd274074e65f18fba5c6201680485ab38ad5",
+        "logvar": "a051aaad1ad84debc8d0c2f683da38c3e7312e6406a1451a66124d5c4ec3f93c"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001093",
+      "file": "nexus_2k_001093.npz",
+      "sha256": "d37f53756249ddecb0e2626d71d8015b4a13e693d1ffee81a1374e79549e3e06",
+      "vertices_sha256": "3b246f92dc83906afe3fc3688af95629cc8dd65e59d5113065a883ccf5ee5e12",
+      "vertices": 1964,
+      "array_sha256": {
+        "vertices": "3b246f92dc83906afe3fc3688af95629cc8dd65e59d5113065a883ccf5ee5e12",
+        "faces": "aa87d23dac5bf5d685afe903e1feef4f69d10ababf9e1d2856c07bc1b3ead1be",
+        "edges": "535b1d84bc353cdb2d62d01e154594ef6075eba7905f2d0e7c273ba39e6befac",
+        "vertex_indices": "a73457d4d1100d0c06962f810fc47792b91bd84054282dc521b35f3e473a8ece",
+        "points": "c73398e978ad472fbdd17e14634a6638ba4d5f59c3142cebbde9aac8bd26188e",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "200dc5e03d9a466ec5f592905bd0908adde86aa7a10ebc1bed69b094b49dd4f8",
+        "logvar": "251883bc430745e88bdd4654bc25a7c92fd4e30f933f8c168b46003772116c6a"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000783",
+      "file": "nexus_2k_000783.npz",
+      "sha256": "bd1ad86da4f9eec00ab776013378e9a42dc4ac3fde0eeeee5b6e0a8e2dc20591",
+      "vertices_sha256": "94237b459701df4c8e065c6ecefa38b6a72161167de05ed7ad876446496e782b",
+      "vertices": 2172,
+      "array_sha256": {
+        "vertices": "94237b459701df4c8e065c6ecefa38b6a72161167de05ed7ad876446496e782b",
+        "faces": "c7075726c357c9e345527dce49f397ca49faad4e42a5679247c4afb8bf5ba074",
+        "edges": "3a9771b27ae462e748bc9ed87145b483371da7ecb37f1733dd6aac3d15efd268",
+        "vertex_indices": "89668b5aa0efa976eefb861a70c8ac4915e63bdec7c705d1975be2de91bad429",
+        "points": "8c5317557a9bd473cb4daa495b3c1854244ddaa43c6b29365c0173d61f45a432",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "93328df5aaacf363ff66b50ac3c484f205a953daf75a0d74a07d6ec8f4764d09",
+        "logvar": "3d860dd3116519cff4093b537ba1084cd1073dee6ece2c82c991a8cacbadefad"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000083",
+      "file": "nexus_2k_000083.npz",
+      "sha256": "ac20569caaf4e1d885abe133e6800e54aa87426e3f176acb56d8b8e0f05dde15",
+      "vertices_sha256": "190797af22607913afb990e657fa6493bf56e5d85dfdad1f884db165254b450a",
+      "vertices": 2238,
+      "array_sha256": {
+        "vertices": "190797af22607913afb990e657fa6493bf56e5d85dfdad1f884db165254b450a",
+        "faces": "e077f4c6e14633bcbfb13a1df5c4f61e306f88a9a44412a7d149ef0b49a03547",
+        "edges": "be625c26a9447ac8bb69807a27f890f8fb9479d16d3e6d993e64b96f16de8677",
+        "vertex_indices": "9498afe7597a8c9d64a2c289a16dc6caa813c53c9cd51c015df1bf3457143ff5",
+        "points": "e8a072c9696b128756fdd97ae2bf32879a5069a69f6e0966e5b357285b0bcd99",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "e39484f7a73905daa814743bc7b75d9a52b93aba27dfd83b00fcf0d258c1be5c",
+        "logvar": "067ae9121df9d04e970a4997572911b65540d49d8d126a133ca2cf733b422d29"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001792",
+      "file": "nexus_2k_001792.npz",
+      "sha256": "1f5161fa0d75e5f32918ad36af2f1f75dafc15d0389abc3f25e3c8e4514d9174",
+      "vertices_sha256": "a7cd1eb4d664570dd2817f7d5aab090f2dbb78016c26198b95a6336cee9b0d6c",
+      "vertices": 2244,
+      "array_sha256": {
+        "vertices": "a7cd1eb4d664570dd2817f7d5aab090f2dbb78016c26198b95a6336cee9b0d6c",
+        "faces": "19e4e2fea5f51b1392ba35cbd14ee6614fc8b1c89a607d8ce979c70c3b336707",
+        "edges": "e7633c4e84afd2e0ff8a74a13f9a6b463d9ba18a5d74a3f9b12c0a9e85d4f74f",
+        "vertex_indices": "9947080dfc62b7059361262cafede96b822fa321a5609c47f03ac1963a7372a7",
+        "points": "0f473426c82b3161c7f23d1fd979241f7dce8c3df4e9f4afd442961719347a39",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "0fe821c6d04b534d797bcf5ff09e1418c8232410bde5c5aeda65cf4eb9807dad",
+        "logvar": "0000bb0935629c6c9bc31dd3912b6dca1641d4eb52cdfef043e4648166e3ca91"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000280",
+      "file": "nexus_2k_000280.npz",
+      "sha256": "23d1c37699796696c2b16b0f631358523a856a4cfe01edfe0616f5da79674698",
+      "vertices_sha256": "eaf30dd3c60155e70c719374257c39f45eb6d56e846d13c676407e25c2e1bf69",
+      "vertices": 2279,
+      "array_sha256": {
+        "vertices": "eaf30dd3c60155e70c719374257c39f45eb6d56e846d13c676407e25c2e1bf69",
+        "faces": "3206ab7afd5930d6b273c59546490e38bb6f2d816e1b1db22b66875749ebfe55",
+        "edges": "00c47c705183dcd77fdf2414c54074aabe22eae488df7b9321d24afee1c2c4f8",
+        "vertex_indices": "031a2daa06b9f234faf627a036973b9ddb465a06e47f2af09aa1e31163619c3b",
+        "points": "96b4b131ff1b3de9b08c646c4cee4c79acf17379657f09cb9d701243f012df72",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "7b5ac7a36f597ca4c281ce873af2ef81e448282c84f476ee6c3860ceffb5d3f1",
+        "logvar": "184b35325fdc738926c0300b50e50744716c839823d6989e56dd4a1175fe7634"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000167",
+      "file": "nexus_2k_000167.npz",
+      "sha256": "ea522bcbd14798876934b1fed0e9f6034aa95a53eb630d5924a2461287722258",
+      "vertices_sha256": "6051fd6fa39fcb26a41435f0028d0d815aee4dc27e1dcf9f580241f649cab73d",
+      "vertices": 2273,
+      "array_sha256": {
+        "vertices": "6051fd6fa39fcb26a41435f0028d0d815aee4dc27e1dcf9f580241f649cab73d",
+        "faces": "d4c9cad1dc577fb9fa98ff719d44e59cd193db583eefd0a4ecf8b670112e12dc",
+        "edges": "471deb1ba633136e04093364931e9cbc4e1bcc45446d1861917579cf65f60f43",
+        "vertex_indices": "bb4d24470996d30db90d645bade67eb6da9d5684fdd7f439e86a3062d3ed8fd3",
+        "points": "223a43a5daf687bc9df17c3296c30a9a0cdfb93e3b5b93c5c2c326268f91f99c",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "1bc05f2da4ba7bdccab16deedc7ea95c82f1d74a72162e791558da904b8e0953",
+        "logvar": "7032e4838e6b45c8fe30c9889347c3167000d025e3ea85085dbc2c87ad34a99b"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_001232",
+      "file": "nexus_2k_001232.npz",
+      "sha256": "aff35c25cf0d0253e3cd40a73a9a52c5362b045e62bf6d1ea5230062f5e69f56",
+      "vertices_sha256": "4ecfe7c07c6d178b0e5b2e1f103ead2703b5c2d667672b08191d30331d3692e2",
+      "vertices": 2398,
+      "array_sha256": {
+        "vertices": "4ecfe7c07c6d178b0e5b2e1f103ead2703b5c2d667672b08191d30331d3692e2",
+        "faces": "3d290b4c2f3dda9320f8a8bfbcf3a78b0023d664c82a86bdc78c5da1d0a84302",
+        "edges": "ea61896db3fc954657ddb86cf633ee200d25fe2a81f1e79ee998c37b470f2a50",
+        "vertex_indices": "dde27718d62ec8bc656a7983b9d1a02f90a4efba96c7a91b6e7dc670d298cd68",
+        "points": "2c71146fe5699a0f350a2b91b0ac1d4207707bb860eaef253993e2bb92b9de90",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "52c89db4897cc8811885267e20b184eef46ff7b934d45d31c38784cf8fb95380",
+        "logvar": "280b7a97f8b7bb3ee7b28731a1728b719a272ff0de73a5ddbedf3725578201be"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    },
+    {
+      "uid": "nexus_2k_000898",
+      "file": "nexus_2k_000898.npz",
+      "sha256": "a340cbd93d36bd536bb1e92fb889fce13d80fcb331e494274665e683238a1519",
+      "vertices_sha256": "7d5099eeac75591602ea952a63b661f1718ca44a75b038e81adaded37b33bc16",
+      "vertices": 2547,
+      "array_sha256": {
+        "vertices": "7d5099eeac75591602ea952a63b661f1718ca44a75b038e81adaded37b33bc16",
+        "faces": "7c7e04f66b39e2bdf4895f16e49b0dc96aef08c2cadbca0b368f4196f26e4f18",
+        "edges": "64814db80b9f91979cf146c9add2ac7073f9844e3d18235025076b510cd65aa2",
+        "vertex_indices": "b382c661abdd04b7bd579bb30cf100dfb059756506bc3b02da6ed7719fdc7670",
+        "points": "c25bc4aca4161e4d18fdd68bde8ddf8ac6a933085b9b36e93725b16b4c15a0cb",
+        "point_mask": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+        "mu": "70ab7e06d73eb6f975caeeb036f4e9c80ee10dbb84f228a5da0d4652682ccbdc",
+        "logvar": "f561544a0d96630da8013090a50527ea7ac7ee2e7642f81623d05ceb4f7ae4c5"
+      },
+      "condition_points": 8192,
+      "mu_roundtrip_max_abs": {
+        "edge": 0.0,
+        "face": 0.0,
+        "decoder_hidden": 0.0,
+        "readback_edge": 0.0,
+        "readback_face": 0.0,
+        "readback_decoder_hidden": 0.0
+      }
+    }
+  ],
+  "optimizer_updates": 0,
+  "reconstruction_count_evaluation": false,
+  "model_config": {
+    "model_variant": "B_v2_teacher_blocks",
+    "encoder_width": 512,
+    "latent_width": 512,
+    "decoder_width": 1024,
+    "encoder_composite_blocks": 12,
+    "decoder_blocks": 16,
+    "heads": 8,
+    "ffn_ratio": 4,
+    "fourier_bands": 6,
+    "embedding_width": 32,
+    "dropout": 0.0,
+    "layer_norm_eps": 1e-05,
+    "activation_checkpointing": true
+  },
+  "budget": {
+    "authorized_gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+    "max_gpu_seconds": 28800,
+    "charged_gpu_seconds": 39.25610028300434,
+    "max_optimizer_updates": 1000,
+    "effective_optimizer_updates": 0,
+    "last_completed_updates": 0
+  },
+  "normalization": {
+    "mean": [
+      -1.317203164100647,
+      -0.31401675939559937,
+      -3.8917155265808105,
+      -2.6918387413024902,
+      3.4788639545440674,
+      -0.7845944762229919,
+      -1.4462367296218872,
+      0.8331766724586487,
+      1.9346197843551636,
+      2.6409311294555664,
+      -2.2269883155822754,
+      -0.016569476574659348,
+      0.26983675360679626,
+      0.8255707025527954,
+      -1.5743130445480347,
+      -2.086820363998413,
+      2.1308000087738037,
+      1.1456005573272705,
+      1.9349802732467651,
+      -0.44780194759368896,
+      -1.054848074913025,
+      0.10123775899410248,
+      2.9676592350006104,
+      0.749751627445221,
+      -1.6643340587615967,
+      -1.4565492868423462,
+      2.667846918106079,
+      -1.9657039642333984,
+      1.7281734943389893,
+      -0.7129082679748535,
+      -1.9276422262191772,
+      2.272380828857422,
+      0.06615479290485382,
+      -3.0552611351013184,
+      1.2589099407196045,
+      5.6919708251953125,
+      2.246661901473999,
+      -1.1068921089172363,
+      2.7884650230407715,
+      -1.684725046157837,
+      0.6880263686180115,
+      -0.891066312789917,
+      1.7367175817489624,
+      0.955631673336029,
+      -1.8405780792236328,
+      -1.1399129629135132,
+      -1.9332362413406372,
+      -2.325666666030884,
+      2.003573179244995,
+      2.5121519565582275,
+      1.3863744735717773,
+      -0.2026239037513733,
+      1.6359193325042725,
+      0.7358623743057251,
+      3.1642799377441406,
+      -1.2973970174789429,
+      -0.2465042620897293,
+      -2.287811517715454,
+      -0.7447178959846497,
+      2.99320125579834,
+      0.5589194297790527,
+      2.166672706604004,
+      0.05228659510612488,
+      -2.6613738536834717,
+      0.04787059500813484,
+      -0.17711199820041656,
+      -0.18392404913902283,
+      0.5466075539588928,
+      0.15305131673812866,
+      -2.299548625946045,
+      -1.4769755601882935,
+      -2.5052621364593506,
+      0.35404062271118164,
+      -2.8625988960266113,
+      0.6881987452507019,
+      -2.580026626586914,
+      -0.4552357494831085,
+      0.976468026638031,
+      0.7896643877029419,
+      -1.4045968055725098,
+      -0.6848276853561401,
+      0.5688072443008423,
+      0.65086829662323,
+      -2.6623008251190186,
+      -2.4355814456939697,
+      1.5494394302368164,
+      2.0398170948028564,
+      1.5302298069000244,
+      -2.732459783554077,
+      0.6562998294830322,
+      2.8526065349578857,
+      0.3494802713394165,
+      -0.7623316049575806,
+      -1.297864317893982,
+      3.992629051208496,
+      -1.5371224880218506,
+      -1.2644082307815552,
+      2.555891990661621,
+      1.7126153707504272,
+      -1.5127310752868652,
+      -0.9465044736862183,
+      0.4791370630264282,
+      0.5466445088386536,
+      -4.131860733032227,
+      1.6860662698745728,
+      -1.3652875423431396,
+      -0.24804574251174927,
+      -0.20660172402858734,
+      0.10873532295227051,
+      -0.42999961972236633,
+      0.6355053186416626,
+      -0.628929853439331,
+      0.1332811415195465,
+      2.057321071624756,
+      -0.8293756246566772,
+      2.432224988937378,
+      -1.1945902109146118,
+      -2.0778017044067383,
+      -1.027190923690796,
+      0.03859436511993408,
+      1.4425688982009888,
+      -2.9950051307678223,
+      -2.0073914527893066,
+      -1.8323235511779785,
+      0.29633402824401855,
+      -1.3915660381317139,
+      0.6264552474021912,
+      0.12887650728225708,
+      1.6988253593444824,
+      -0.15784350037574768,
+      -0.6922844052314758,
+      -0.851808488368988,
+      1.6984214782714844,
+      -2.6818137168884277,
+      0.46234357357025146,
+      -0.22844818234443665,
+      0.7352828979492188,
+      0.7011723518371582,
+      -0.7842050790786743,
+      -0.751471757888794,
+      1.6074334383010864,
+      3.7089061737060547,
+      -2.624703884124756,
+      -0.3063809275627136,
+      -1.4350571632385254,
+      0.3521311581134796,
+      -2.603483200073242,
+      -1.8569461107254028,
+      2.323146343231201,
+      -1.7177962064743042,
+      1.245354175567627,
+      -0.6468968987464905,
+      0.3957151472568512,
+      1.7035735845565796,
+      0.6741626858711243,
+      1.1414525508880615,
+      1.4804843664169312,
+      -1.1954553127288818,
+      0.6357151865959167,
+      2.2466650009155273,
+      -0.5076799392700195,
+      1.6296024322509766,
+      0.8112870454788208,
+      2.2003636360168457,
+      -0.9907559752464294,
+      -1.831106185913086,
+      -0.8065955638885498,
+      1.4698209762573242,
+      2.471859931945801,
+      -1.8218822479248047,
+      0.296146035194397,
+      -1.8472480773925781,
+      1.8562958240509033,
+      0.09376531094312668,
+      -0.4286612868309021,
+      -1.806659460067749,
+      -1.2890020608901978,
+      0.6111434698104858,
+      -1.086410641670227,
+      -2.116379976272583,
+      -1.3594468832015991,
+      0.4076143205165863,
+      -0.3559364378452301,
+      0.5451335906982422,
+      -2.57755184173584,
+      -0.6646283268928528,
+      -0.7965086102485657,
+      1.2521004676818848,
+      2.8292829990386963,
+      0.8958761096000671,
+      -0.18295827507972717,
+      0.3921950161457062,
+      -2.713273286819458,
+      1.4620436429977417,
+      -1.861374020576477,
+      0.45591413974761963,
+      0.7351445555686951,
+      -1.4675859212875366,
+      -0.5726171135902405,
+      -3.698906183242798,
+      -2.3184690475463867,
+      1.675816297531128,
+      -2.755997657775879,
+      0.41667672991752625,
+      -1.6707812547683716,
+      0.31779566407203674,
+      -3.209078550338745,
+      -1.4786652326583862,
+      -0.8158423900604248,
+      -2.597731351852417,
+      -1.3759392499923706,
+      -0.19992695748806,
+      -3.515717029571533,
+      -1.7709120512008667,
+      -1.4047373533248901,
+      2.7944576740264893,
+      -3.3789892196655273,
+      0.9346708059310913,
+      -3.0931484699249268,
+      0.7043250203132629,
+      -3.3594417572021484,
+      0.5315449833869934,
+      -1.3597023487091064,
+      3.529583215713501,
+      -2.7763633728027344,
+      -2.5703678131103516,
+      2.828961133956909,
+      1.346915602684021,
+      0.6750425100326538,
+      0.9001297950744629,
+      -1.241193413734436,
+      -0.40566790103912354,
+      -2.00742769241333,
+      2.6193299293518066,
+      1.2472082376480103,
+      -1.7920830249786377,
+      -1.2829575538635254,
+      -1.0507712364196777,
+      -4.492186069488525,
+      0.2233472615480423,
+      1.8221790790557861,
+      -1.590207815170288,
+      -0.464516282081604,
+      0.9232653975486755,
+      -1.0439841747283936,
+      -0.782140851020813,
+      -1.0898723602294922,
+      0.041282445192337036,
+      3.6540448665618896,
+      -0.3297572433948517,
+      -0.9201568365097046,
+      -0.0327310748398304,
+      0.3891848027706146,
+      -0.044244445860385895,
+      1.623052954673767,
+      -0.8639487624168396,
+      2.0219125747680664,
+      3.819742202758789,
+      1.3158226013183594,
+      -0.4226429760456085,
+      0.2892720401287079,
+      0.39601707458496094,
+      2.6835761070251465,
+      4.38100528717041,
+      -1.3381520509719849,
+      0.2245314121246338,
+      -1.749496579170227,
+      -0.18500572443008423,
+      1.077335238456726,
+      -3.7013955116271973,
+      -1.1577324867248535,
+      -1.9715542793273926,
+      -0.6582512855529785,
+      0.8201783895492554,
+      0.8581224679946899,
+      0.5382702350616455,
+      1.0854777097702026,
+      -0.433019757270813,
+      -0.6379597783088684,
+      3.436823606491089,
+      0.9769629240036011,
+      1.0051909685134888,
+      0.24544768035411835,
+      0.43235650658607483,
+      -2.3721859455108643,
+      0.7130407094955444,
+      1.803514838218689,
+      -1.4486429691314697,
+      -1.0018333196640015,
+      0.07587108761072159,
+      -0.6051737666130066,
+      2.1480712890625,
+      -0.4940371811389923,
+      -0.5967035293579102,
+      -1.2802156209945679,
+      -1.5226995944976807,
+      -0.2712387442588806,
+      1.9982588291168213,
+      -2.6897871494293213,
+      -1.7777663469314575,
+      1.9175776243209839,
+      0.3872849643230438,
+      -0.8549299240112305,
+      -0.3750860095024109,
+      5.168157577514648,
+      -0.2163267284631729,
+      2.370591163635254,
+      -0.8767842054367065,
+      -2.286121368408203,
+      0.4589163362979889,
+      -0.5028625726699829,
+      2.5450384616851807,
+      -1.9435874223709106,
+      -2.0982789993286133,
+      -0.2757647931575775,
+      -2.375918388366699,
+      -2.4750547409057617,
+      0.24185562133789062,
+      -1.1433467864990234,
+      1.052656888961792,
+      -2.8319854736328125,
+      1.0536713600158691,
+      -1.8407551050186157,
+      -1.5307008028030396,
+      1.8641077280044556,
+      -0.2492283582687378,
+      -0.8935309648513794,
+      -0.7006727457046509,
+      0.9302812218666077,
+      -0.8068389892578125,
+      2.7793006896972656,
+      1.690861701965332,
+      1.5518461465835571,
+      -2.0965778827667236,
+      -1.5416452884674072,
+      -0.5878123641014099,
+      -0.7867493629455566,
+      1.7661609649658203,
+      -2.1642792224884033,
+      -1.5528348684310913,
+      -0.7507739663124084,
+      2.237175941467285,
+      1.0777370929718018,
+      -0.43170738220214844,
+      0.3587668240070343,
+      1.3006402254104614,
+      0.3553488850593567,
+      -1.575972080230713,
+      -0.9682728052139282,
+      0.3919093906879425,
+      -2.0649590492248535,
+      -0.5712356567382812,
+      -1.411607027053833,
+      -2.593600034713745,
+      2.5257174968719482,
+      -1.4905778169631958,
+      0.9735209345817566,
+      -3.2043094635009766,
+      -0.44470539689064026,
+      3.2650415897369385,
+      0.9083853960037231,
+      -1.3538457155227661,
+      0.12429158389568329,
+      0.07841486483812332,
+      0.12140698730945587,
+      -2.171398878097534,
+      0.012492869980633259,
+      0.35042133927345276,
+      -1.5765247344970703,
+      0.3707605302333832,
+      -0.5712252259254456,
+      -2.3462319374084473,
+      1.253035306930542,
+      4.31346321105957,
+      -3.529510498046875,
+      1.8563743829727173,
+      2.8562510013580322,
+      2.2934300899505615,
+      2.7438297271728516,
+      -4.1902241706848145,
+      -4.168742656707764,
+      1.5453131198883057,
+      0.7770389914512634,
+      -3.297257423400879,
+      -0.13623908162117004,
+      -3.729210615158081,
+      0.09070166945457458,
+      2.556217670440674,
+      0.21304377913475037,
+      -0.1286872923374176,
+      1.0802078247070312,
+      2.893449544906616,
+      -0.8496466875076294,
+      0.3397723138332367,
+      1.6950839757919312,
+      -1.8161983489990234,
+      -0.26753419637680054,
+      2.0521724224090576,
+      3.627622127532959,
+      3.8384742736816406,
+      -2.2824580669403076,
+      -1.3307030200958252,
+      1.2089757919311523,
+      -1.2210482358932495,
+      0.4913886785507202,
+      5.15553092956543,
+      0.7990407347679138,
+      1.1227564811706543,
+      0.9048959016799927,
+      -0.9067889451980591,
+      -1.5322147607803345,
+      1.3501425981521606,
+      2.843364715576172,
+      -2.2367594242095947,
+      1.5652103424072266,
+      1.523662805557251,
+      0.20195387303829193,
+      -2.3901567459106445,
+      0.41332828998565674,
+      0.16061511635780334,
+      2.264791965484619,
+      -1.5072602033615112,
+      -0.5043116807937622,
+      -2.397209882736206,
+      0.5698895454406738,
+      -2.5554215908050537,
+      2.3663907051086426,
+      -0.6110896468162537,
+      2.0316860675811768,
+      0.8612197041511536,
+      -2.653677225112915,
+      0.3871863782405853,
+      0.2594023644924164,
+      -0.24672791361808777,
+      0.6820673942565918,
+      0.4282296895980835,
+      1.2542203664779663,
+      -0.9148114919662476,
+      -0.9380172491073608,
+      1.9599030017852783,
+      1.244199514389038,
+      -0.8365501761436462,
+      -1.1781221628189087,
+      1.1782277822494507,
+      2.073155164718628,
+      -0.8149728775024414,
+      1.0054808855056763,
+      4.229734897613525,
+      1.469904899597168,
+      -2.1001884937286377,
+      0.6061220169067383,
+      -2.8085849285125732,
+      -0.6548363566398621,
+      0.6081117391586304,
+      -1.3830012083053589,
+      0.6402966380119324,
+      -1.6724716424942017,
+      0.6092038154602051,
+      -4.282838344573975,
+      0.681393027305603,
+      1.5411347150802612,
+      0.7487791180610657,
+      0.17593984305858612,
+      -5.1721954345703125,
+      -3.7181777954101562,
+      -1.213897466659546,
+      0.8346495032310486,
+      0.3657319247722626,
+      -0.19017624855041504,
+      1.4780669212341309,
+      2.143092393875122,
+      -1.657193660736084,
+      -1.2829097509384155,
+      0.2900806665420532,
+      2.638920307159424,
+      -2.242279291152954,
+      1.4686856269836426,
+      0.8633120059967041,
+      3.048525094985962,
+      1.9545300006866455,
+      2.7248942852020264,
+      -1.2892224788665771,
+      0.6606543064117432,
+      2.4669740200042725,
+      0.39783015847206116,
+      1.4930086135864258,
+      -1.2600349187850952,
+      1.330470085144043,
+      -0.7766366600990295,
+      2.61033296585083,
+      -0.9542509317398071,
+      2.6723990440368652,
+      -1.7556501626968384,
+      -0.41366782784461975,
+      -0.009440298192203045,
+      -1.3018656969070435,
+      0.42557182908058167,
+      1.4209191799163818,
+      2.605945587158203,
+      1.1557031869888306,
+      -1.6501520872116089,
+      0.17642730474472046,
+      -3.5760605335235596,
+      1.0620911121368408,
+      -0.8681331276893616,
+      -2.7770004272460938,
+      -1.3916252851486206,
+      -0.7011886835098267,
+      1.3020482063293457,
+      2.280994415283203,
+      1.492830753326416,
+      -0.526378870010376
+    ],
+    "std": [
+      1.0485469102859497,
+      1.1191701889038086,
+      1.0376733541488647,
+      0.9978668093681335,
+      1.0300198793411255,
+      1.3523436784744263,
+      1.0446776151657104,
+      0.9228206276893616,
+      1.058931589126587,
+      1.0888710021972656,
+      1.0815658569335938,
+      1.057267665863037,
+      0.939825177192688,
+      1.1740208864212036,
+      1.2684963941574097,
+      1.0388773679733276,
+      1.0651761293411255,
+      1.1804922819137573,
+      0.9679657816886902,
+      1.109488606452942,
+      0.9379031658172607,
+      1.0146100521087646,
+      1.0528713464736938,
+      0.9521710872650146,
+      1.0548301935195923,
+      0.9392781257629395,
+      1.224338412284851,
+      0.9037392139434814,
+      1.0671064853668213,
+      0.971184492111206,
+      0.9966751337051392,
+      1.0051714181900024,
+      1.1178574562072754,
+      0.9546999335289001,
+      0.9827267527580261,
+      0.9834969639778137,
+      1.0106797218322754,
+      1.0353775024414062,
+      0.8888936042785645,
+      1.2563846111297607,
+      1.1263878345489502,
+      1.1121114492416382,
+      1.0955396890640259,
+      1.026992678642273,
+      1.1402690410614014,
+      1.0000571012496948,
+      0.8979706764221191,
+      0.9233048558235168,
+      1.1041741371154785,
+      1.1842968463897705,
+      0.9622616767883301,
+      1.0360525846481323,
+      1.1414799690246582,
+      0.9099501371383667,
+      1.1201595067977905,
+      1.069785714149475,
+      0.9418715238571167,
+      1.0481854677200317,
+      0.9062442183494568,
+      0.9001649022102356,
+      1.227949857711792,
+      0.8532212376594543,
+      1.1300630569458008,
+      1.1664543151855469,
+      1.0201328992843628,
+      1.231234073638916,
+      0.8718656301498413,
+      1.0802762508392334,
+      0.9983091354370117,
+      1.08747136592865,
+      0.8570512533187866,
+      1.2646901607513428,
+      1.0113415718078613,
+      1.2208501100540161,
+      1.1551579236984253,
+      1.0183225870132446,
+      1.4191421270370483,
+      1.2793173789978027,
+      1.1718717813491821,
+      1.0432560443878174,
+      1.0472748279571533,
+      1.0638911724090576,
+      1.0045630931854248,
+      1.111444115638733,
+      1.062976360321045,
+      1.2278565168380737,
+      1.1369140148162842,
+      0.9455723762512207,
+      1.118454098701477,
+      1.0410162210464478,
+      1.1319386959075928,
+      1.0361428260803223,
+      1.1421383619308472,
+      0.9836931824684143,
+      0.9130421280860901,
+      1.0114974975585938,
+      0.896449625492096,
+      0.89486163854599,
+      0.9509738087654114,
+      1.0545654296875,
+      1.0697526931762695,
+      0.9578746557235718,
+      1.2145723104476929,
+      0.7572445273399353,
+      1.2149577140808105,
+      1.0969573259353638,
+      0.9088624119758606,
+      0.9241935014724731,
+      0.9677572846412659,
+      1.1427720785140991,
+      1.0338730812072754,
+      1.0369404554367065,
+      1.1153191328048706,
+      1.2831538915634155,
+      0.9606334567070007,
+      1.1055232286453247,
+      1.1932518482208252,
+      1.018498420715332,
+      0.9098440408706665,
+      1.0049796104431152,
+      0.9228028655052185,
+      1.0740623474121094,
+      0.9266459941864014,
+      1.2766716480255127,
+      1.0692304372787476,
+      1.2047048807144165,
+      0.9542281031608582,
+      1.094235897064209,
+      0.7855126261711121,
+      1.2815321683883667,
+      0.8049276471138,
+      1.3573392629623413,
+      0.8325141668319702,
+      1.1984940767288208,
+      1.3087871074676514,
+      1.4240176677703857,
+      0.9457439184188843,
+      1.3647620677947998,
+      1.0278220176696777,
+      1.000832438468933,
+      1.3014192581176758,
+      1.400700569152832,
+      1.0371043682098389,
+      0.9866877794265747,
+      1.1081212759017944,
+      0.9571529626846313,
+      0.7357304096221924,
+      1.118654489517212,
+      0.9072938561439514,
+      1.1312612295150757,
+      1.163047194480896,
+      1.043145775794983,
+      1.045738697052002,
+      1.3857148885726929,
+      1.1104921102523804,
+      1.1437472105026245,
+      1.1742984056472778,
+      0.978790819644928,
+      1.0477185249328613,
+      1.128360390663147,
+      0.9798312187194824,
+      1.1754108667373657,
+      1.2422728538513184,
+      0.784472644329071,
+      0.8809547424316406,
+      1.192095398902893,
+      1.172947883605957,
+      1.0747833251953125,
+      1.0946303606033325,
+      1.096221923828125,
+      1.086237907409668,
+      1.1212549209594727,
+      1.0628496408462524,
+      1.2296921014785767,
+      1.013427972793579,
+      1.1541038751602173,
+      0.9440622925758362,
+      0.8475579023361206,
+      1.106023907661438,
+      1.1348590850830078,
+      1.0077983140945435,
+      1.0660094022750854,
+      1.2471373081207275,
+      1.0913219451904297,
+      0.858614981174469,
+      1.2056576013565063,
+      1.3454283475875854,
+      0.8484899997711182,
+      1.0300296545028687,
+      1.1752614974975586,
+      1.1628122329711914,
+      1.2291183471679688,
+      1.0763874053955078,
+      0.8346958756446838,
+      0.8734646439552307,
+      1.4198979139328003,
+      1.3627893924713135,
+      1.1435343027114868,
+      0.8672654628753662,
+      1.3907889127731323,
+      0.9244803786277771,
+      1.1123517751693726,
+      0.7889788746833801,
+      1.012655258178711,
+      1.0924713611602783,
+      1.2013381719589233,
+      0.7691086530685425,
+      1.2468127012252808,
+      1.1612104177474976,
+      0.7036489844322205,
+      1.1004804372787476,
+      1.0790979862213135,
+      1.0314940214157104,
+      1.0847421884536743,
+      1.254319667816162,
+      1.2059673070907593,
+      1.0064327716827393,
+      1.0400208234786987,
+      1.2640163898468018,
+      1.0343761444091797,
+      1.1496975421905518,
+      1.0379093885421753,
+      1.0338135957717896,
+      0.8916937112808228,
+      1.1466532945632935,
+      0.9477924704551697,
+      1.008223295211792,
+      1.026642084121704,
+      1.0571374893188477,
+      1.007205605506897,
+      0.9223420023918152,
+      1.2729130983352661,
+      0.7941645979881287,
+      0.9560925960540771,
+      1.1776787042617798,
+      0.8886098861694336,
+      1.2350620031356812,
+      1.1571574211120605,
+      1.010191559791565,
+      1.0610913038253784,
+      0.9784558415412903,
+      0.8585034608840942,
+      0.9409152269363403,
+      1.160315990447998,
+      1.043587327003479,
+      1.0169936418533325,
+      1.3640459775924683,
+      1.0187807083129883,
+      1.2919243574142456,
+      1.0844600200653076,
+      0.9384918808937073,
+      1.039417028427124,
+      1.0974117517471313,
+      1.0408596992492676,
+      1.0193612575531006,
+      1.2344813346862793,
+      1.0092051029205322,
+      0.933900773525238,
+      1.090804100036621,
+      0.8897095322608948,
+      0.9694420695304871,
+      1.0733377933502197,
+      0.9874855279922485,
+      0.7891823053359985,
+      0.8954104781150818,
+      1.0171306133270264,
+      1.0876102447509766,
+      0.9475991129875183,
+      1.020786166191101,
+      1.1314787864685059,
+      1.0012279748916626,
+      1.3664939403533936,
+      1.1646276712417603,
+      0.9703766107559204,
+      1.1849302053451538,
+      1.1613987684249878,
+      0.9205428957939148,
+      1.1822731494903564,
+      1.1939499378204346,
+      1.1462230682373047,
+      0.975527822971344,
+      0.8507686257362366,
+      1.3488949537277222,
+      0.9980784058570862,
+      1.187730073928833,
+      1.1408445835113525,
+      1.1182094812393188,
+      1.0241349935531616,
+      1.0899614095687866,
+      1.1761648654937744,
+      1.1161189079284668,
+      1.0811094045639038,
+      0.8831415772438049,
+      1.20607328414917,
+      1.0378926992416382,
+      1.0754708051681519,
+      1.2964537143707275,
+      0.8538744449615479,
+      1.0297834873199463,
+      1.1627933979034424,
+      1.3567241430282593,
+      1.2063665390014648,
+      1.231716275215149,
+      1.0782538652420044,
+      1.0671463012695312,
+      0.9197479486465454,
+      0.9860799908638,
+      1.0876394510269165,
+      1.1156970262527466,
+      1.1165646314620972,
+      1.1142029762268066,
+      1.148098111152649,
+      1.024819016456604,
+      1.1529489755630493,
+      0.9945846796035767,
+      0.9553588032722473,
+      0.95531165599823,
+      1.0083116292953491,
+      1.1122946739196777,
+      1.0168952941894531,
+      0.9686902761459351,
+      1.051021695137024,
+      0.7278008460998535,
+      0.8481380343437195,
+      0.7930117249488831,
+      0.8293241262435913,
+      0.9398295879364014,
+      1.0111806392669678,
+      0.908346951007843,
+      0.9068222045898438,
+      1.438658356666565,
+      1.0010225772857666,
+      0.9611547589302063,
+      1.2904740571975708,
+      0.8746875524520874,
+      1.1521780490875244,
+      1.255063772201538,
+      1.0052173137664795,
+      0.8933476805686951,
+      1.2456519603729248,
+      1.1107999086380005,
+      1.0687488317489624,
+      1.308066487312317,
+      1.1921420097351074,
+      0.9363633990287781,
+      1.1823561191558838,
+      1.1941123008728027,
+      0.9982326030731201,
+      0.9585899710655212,
+      1.3129892349243164,
+      1.0131597518920898,
+      1.2090476751327515,
+      1.1726353168487549,
+      1.1644643545150757,
+      1.0215308666229248,
+      1.1328349113464355,
+      1.2326306104660034,
+      0.9304773211479187,
+      1.0194495916366577,
+      1.0588971376419067,
+      0.9877537488937378,
+      1.3156203031539917,
+      1.205180287361145,
+      1.1895771026611328,
+      1.0104141235351562,
+      0.8298079967498779,
+      1.051123857498169,
+      1.0795836448669434,
+      1.090189814567566,
+      1.139941930770874,
+      1.0500781536102295,
+      1.034591555595398,
+      1.0346437692642212,
+      0.994114100933075,
+      1.032890796661377,
+      1.3345507383346558,
+      1.0911861658096313,
+      0.9955874681472778,
+      0.9381248950958252,
+      1.0751655101776123,
+      1.1631194353103638,
+      0.9892324209213257,
+      1.3632683753967285,
+      1.1963038444519043,
+      1.1707338094711304,
+      1.1318460702896118,
+      0.95723557472229,
+      1.163213849067688,
+      0.9498277306556702,
+      1.0668303966522217,
+      1.1651941537857056,
+      1.1586036682128906,
+      0.935798704624176,
+      1.0502502918243408,
+      1.121224284172058,
+      1.0874234437942505,
+      0.9923307299613953,
+      1.172573208808899,
+      1.3257665634155273,
+      1.0532057285308838,
+      0.9096329212188721,
+      0.8588191866874695,
+      1.1346096992492676,
+      1.1058212518692017,
+      1.3750101327896118,
+      1.070565938949585,
+      1.1553010940551758,
+      0.9400740265846252,
+      0.9577292799949646,
+      1.0947849750518799,
+      0.953882098197937,
+      1.1173237562179565,
+      1.006738543510437,
+      1.1473228931427002,
+      1.096805214881897,
+      0.9446413516998291,
+      0.8742682337760925,
+      0.9052304625511169,
+      1.1914485692977905,
+      1.099557638168335,
+      1.115699291229248,
+      0.9452009201049805,
+      1.039416790008545,
+      1.0832231044769287,
+      1.2073826789855957,
+      1.0010476112365723,
+      0.7948203086853027,
+      1.0565319061279297,
+      1.131577968597412,
+      1.1305699348449707,
+      1.2017371654510498,
+      1.1953001022338867,
+      1.097206711769104,
+      1.0838481187820435,
+      1.0288190841674805,
+      1.2758324146270752,
+      1.1137083768844604,
+      1.0509716272354126,
+      1.2888964414596558,
+      1.1826633214950562,
+      1.154320478439331,
+      0.8128073215484619,
+      1.106716513633728,
+      1.0782616138458252,
+      1.0630220174789429,
+      1.0182970762252808,
+      1.102085828781128,
+      1.003301978111267,
+      1.0273239612579346,
+      1.111144781112671,
+      1.4038593769073486,
+      0.9591507315635681,
+      0.767899215221405,
+      0.9614561796188354,
+      1.1132071018218994,
+      1.0358291864395142,
+      1.023091197013855,
+      1.2376729249954224,
+      1.1099047660827637,
+      0.9224545955657959,
+      1.0810896158218384,
+      1.2460116147994995,
+      1.0583219528198242,
+      0.7015542984008789,
+      0.8187655806541443,
+      0.962049663066864,
+      1.093753695487976,
+      1.1978967189788818,
+      1.110588550567627,
+      1.1184463500976562,
+      0.8865870833396912,
+      1.1614400148391724,
+      1.148026704788208,
+      1.314675211906433,
+      1.2544057369232178,
+      1.1601694822311401,
+      1.207977294921875,
+      1.1783111095428467,
+      0.8820912837982178,
+      0.9360623955726624,
+      1.12328040599823,
+      0.9567716121673584,
+      1.030835747718811,
+      1.0435686111450195,
+      1.0499030351638794,
+      0.8790748119354248,
+      1.0861765146255493,
+      1.0339365005493164,
+      0.9835520386695862,
+      0.9600972533226013,
+      1.1437853574752808,
+      0.7991858124732971,
+      1.1114448308944702,
+      1.2229039669036865,
+      1.3165042400360107,
+      1.017671823501587,
+      0.9426615834236145,
+      1.060559630393982,
+      1.1539922952651978,
+      1.0859047174453735,
+      1.0600844621658325,
+      1.079166293144226,
+      1.0422253608703613,
+      1.1193488836288452,
+      0.9335344433784485,
+      0.861189067363739,
+      1.1719766855239868,
+      0.9747294187545776,
+      1.0349427461624146,
+      0.8359223008155823,
+      1.162390112876892,
+      1.0281627178192139
+    ],
+    "meshes": 50,
+    "weighting": "equal_mesh_then_vertex",
+    "target": "fresh_posterior",
+    "std_floor": 1e-06,
+    "floored_channels": 0
+  },
+  "normalization_sha256": "a144fa69f836d15282acd1173bfee4ca3027fd832828d4ab9303a74f8ca44f01"
+}

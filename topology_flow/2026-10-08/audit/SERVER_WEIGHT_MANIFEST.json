@@ -1,0 +1,111 @@
+{
+  "checkpoints": [
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c1/run/checkpoints/flow-0000500.pt",
+      "bytes": 28008597241,
+      "sha256": "5f4694033858d7cbc0f3bc77be485f41f396c42f67e88797a6e963f64a5bc4e9",
+      "recorded_manifest_matches": true,
+      "completed_updates": 500,
+      "protected": [
+        "scheduled_evaluation"
+      ],
+      "uploaded": false,
+      "reason": "Large full training states retained on persistent server under prior user authorization",
+      "verified_unix": 1791447182.54428
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c1/run/checkpoints/flow-0000904.pt",
+      "bytes": 28008597241,
+      "sha256": "ecc06db9adfaeb56be24ea23ec84ba1b2eee231d250cb7433d59e8503416f197",
+      "recorded_manifest_matches": true,
+      "completed_updates": 904,
+      "protected": [
+        "final"
+      ],
+      "uploaded": false,
+      "reason": "Large full training states retained on persistent server under prior user authorization",
+      "verified_unix": 1791447209.3247912
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c2/run/checkpoints/flow-0000500.pt",
+      "bytes": 28005796405,
+      "sha256": "d73446bd7bffce8f7bdf3ba69c2fc3ff7ff7f2c4f4f3f54a6b92a05c232bbc25",
+      "recorded_manifest_matches": true,
+      "completed_updates": 500,
+      "protected": [
+        "scheduled_evaluation"
+      ],
+      "uploaded": false,
+      "reason": "Large full training states retained on persistent server under prior user authorization",
+      "verified_unix": 1791447236.9988587
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c2/run/checkpoints/flow-0001000.pt",
+      "bytes": 28005796405,
+      "sha256": "6d338af27ee36d2d4efb962f90a76ab0736803580a9db36bb804aaa26be652b2",
+      "recorded_manifest_matches": true,
+      "completed_updates": 1000,
+      "protected": [
+        "scheduled_evaluation"
+      ],
+      "uploaded": false,
+      "reason": "Large full training states retained on persistent server under prior user authorization",
+      "verified_unix": 1791447266.6992188
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c2/run/checkpoints/flow-0001049.pt",
+      "bytes": 28005796405,
+      "sha256": "4aa9a4536d6cbabc10c539ac1cae5252e8de45597bcf71c22457e42a4dd6ced9",
+      "recorded_manifest_matches": true,
+      "completed_updates": 1049,
+      "protected": [
+        "final"
+      ],
+      "uploaded": false,
+      "reason": "Large full training states retained on persistent server under prior user authorization",
+      "verified_unix": 1791447296.2047615
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0000500.pt",
+      "bytes": 28007856377,
+      "sha256": "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f",
+      "recorded_manifest_matches": true,
+      "completed_updates": 500,
+      "protected": [
+        "scheduled_evaluation",
+        "final"
+      ],
+      "uploaded": false,
+      "reason": "Large full training states retained on persistent server under prior user authorization",
+      "verified_unix": 1791447325.390053
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0001000.pt",
+      "bytes": 28007856377,
+      "sha256": "20b297ed40643b6bc82a4ce535252e578397c2eb1e76e09a90c2624980678d52",
+      "recorded_manifest_matches": true,
+      "completed_updates": 1000,
+      "protected": [
+        "scheduled_evaluation",
+        "final"
+      ],
+      "uploaded": false,
+      "reason": "Large full training states retained on persistent server under prior user authorization",
+      "verified_unix": 1791447354.471793
+    },
+    {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000500.pt",
+      "bytes": 28007856377,
+      "sha256": "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f",
+      "recorded_manifest_matches": true,
+      "completed_updates": 500,
+      "protected": [
+        "scheduled_evaluation",
+        "final"
+      ],
+      "uploaded": false,
+      "reason": "Large full training states retained on persistent server under prior user authorization",
+      "verified_unix": 1791447383.6976955
+    }
+  ]
+}

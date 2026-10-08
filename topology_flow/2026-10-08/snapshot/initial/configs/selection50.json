@@ -1,0 +1,214 @@
+{
+  "schema": "topology_flow_user_selection_v1",
+  "selection_source": "user_supplied_2026-10-02",
+  "representation": "D9_unchanged_local_vertex_order",
+  "records": [
+    {
+      "uid": "nexus_2k_001150",
+      "vertices": 18
+    },
+    {
+      "uid": "nexus_2k_001045",
+      "vertices": 54
+    },
+    {
+      "uid": "nexus_2k_000084",
+      "vertices": 128
+    },
+    {
+      "uid": "nexus_2k_001692",
+      "vertices": 150
+    },
+    {
+      "uid": "nexus_2k_001843",
+      "vertices": 188
+    },
+    {
+      "uid": "nexus_2k_000346",
+      "vertices": 192
+    },
+    {
+      "uid": "nexus_2k_001780",
+      "vertices": 196
+    },
+    {
+      "uid": "nexus_2k_000796",
+      "vertices": 200
+    },
+    {
+      "uid": "nexus_2k_001085",
+      "vertices": 226
+    },
+    {
+      "uid": "nexus_2k_000020",
+      "vertices": 288
+    },
+    {
+      "uid": "nexus_2k_000447",
+      "vertices": 332
+    },
+    {
+      "uid": "nexus_2k_001179",
+      "vertices": 325
+    },
+    {
+      "uid": "nexus_2k_000118",
+      "vertices": 362
+    },
+    {
+      "uid": "nexus_2k_000074",
+      "vertices": 386
+    },
+    {
+      "uid": "nexus_2k_000519",
+      "vertices": 392
+    },
+    {
+      "uid": "nexus_2k_001087",
+      "vertices": 426
+    },
+    {
+      "uid": "nexus_2k_000053",
+      "vertices": 488
+    },
+    {
+      "uid": "nexus_2k_000675",
+      "vertices": 516
+    },
+    {
+      "uid": "nexus_2k_001716",
+      "vertices": 534
+    },
+    {
+      "uid": "nexus_2k_000242",
+      "vertices": 652
+    },
+    {
+      "uid": "nexus_2k_000823",
+      "vertices": 666
+    },
+    {
+      "uid": "nexus_2k_001536",
+      "vertices": 728
+    },
+    {
+      "uid": "nexus_2k_000840",
+      "vertices": 798
+    },
+    {
+      "uid": "nexus_2k_001577",
+      "vertices": 836
+    },
+    {
+      "uid": "nexus_2k_001216",
+      "vertices": 938
+    },
+    {
+      "uid": "nexus_2k_001331",
+      "vertices": 969
+    },
+    {
+      "uid": "nexus_2k_000142",
+      "vertices": 1029
+    },
+    {
+      "uid": "nexus_2k_001550",
+      "vertices": 1137
+    },
+    {
+      "uid": "nexus_2k_000872",
+      "vertices": 1215
+    },
+    {
+      "uid": "nexus_2k_000952",
+      "vertices": 1251
+    },
+    {
+      "uid": "nexus_2k_001825",
+      "vertices": 1277,
+      "user_reported_d9_vertices": 1279,
+      "authorization_note": "User explicitly authorized the existing 1277-vertex source after the table/source discrepancy was reported; no vertex or topology edit."
+    },
+    {
+      "uid": "nexus_2k_001483",
+      "vertices": 1418
+    },
+    {
+      "uid": "nexus_2k_001439",
+      "vertices": 1446
+    },
+    {
+      "uid": "nexus_2k_001178",
+      "vertices": 1458
+    },
+    {
+      "uid": "nexus_2k_001317",
+      "vertices": 1536
+    },
+    {
+      "uid": "nexus_2k_000869",
+      "vertices": 1590
+    },
+    {
+      "uid": "nexus_2k_001415",
+      "vertices": 1609
+    },
+    {
+      "uid": "nexus_2k_000283",
+      "vertices": 1644
+    },
+    {
+      "uid": "nexus_2k_000935",
+      "vertices": 1713
+    },
+    {
+      "uid": "nexus_2k_000815",
+      "vertices": 1735
+    },
+    {
+      "uid": "nexus_2k_000800",
+      "vertices": 1829
+    },
+    {
+      "uid": "nexus_2k_001211",
+      "vertices": 1830
+    },
+    {
+      "uid": "nexus_2k_001093",
+      "vertices": 1964
+    },
+    {
+      "uid": "nexus_2k_000783",
+      "vertices": 2172
+    },
+    {
+      "uid": "nexus_2k_000083",
+      "vertices": 2238
+    },
+    {
+      "uid": "nexus_2k_001792",
+      "vertices": 2244
+    },
+    {
+      "uid": "nexus_2k_000280",
+      "vertices": 2279
+    },
+    {
+      "uid": "nexus_2k_000167",
+      "vertices": 2273
+    },
+    {
+      "uid": "nexus_2k_001232",
+      "vertices": 2398
+    },
+    {
+      "uid": "nexus_2k_000898",
+      "vertices": 2547
+    }
+  ],
+  "totals": {
+    "meshes": 50,
+    "vertices": 52820,
+    "pairs": 41866721
+  }
+}

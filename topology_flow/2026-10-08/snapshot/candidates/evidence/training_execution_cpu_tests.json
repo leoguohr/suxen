@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "tests": [
+    "Strict policy schema; sorted unique bounded integers; canonical and file SHA identities; legacy empty-policy compatibility only",
+    "Fresh CLI records policy in logs/checkpoint; profiles exactly first two full updates; fixed update1/3 checkpoints remain despite save_every=1000",
+    "Resume profiles invocation-first updates5/6 without resetting Adam, warmup or cursor; formatting-only policy changes retain canonical identity",
+    "Changed execution policy refuses resume before training and leaves latest durable checkpoint unchanged",
+    "Injected CPU OOM/nonfinite exceptions record failure and policy, preserve last durable state, and never claim completion or fall back"
+  ],
+  "synthetic_optimizer_updates": 6,
+  "real_mesh_optimizer_updates": 0,
+  "gpu_used": false,
+  "production_scale_tested": false,
+  "temporary_fixtures_removed": true
+}

@@ -1,0 +1,116 @@
+{
+  "keep_recent": 1,
+  "checkpoints": [
+    {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000000.pt",
+      "sha256": "300c415b74e4daff7df0feb974d49cddb23a93f1c500f4eb941995b61cf2e808",
+      "bytes": 9335977104,
+      "completed_updates": 0,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000001.pt",
+      "sha256": "7b279c9bf88145e281b62f7c590d568091b0e712e67f7372e9e8031bbcf4cb8b",
+      "bytes": 28007856377,
+      "completed_updates": 1,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000003.pt",
+      "sha256": "da598b91ab79ea1e52c5830ae2435d138182079f452cd2a75f0455735d2651b5",
+      "bytes": 28007856377,
+      "completed_updates": 3,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000100.pt",
+      "sha256": "96ab209e6aed0e40a6471051cefbe8e4b48ec00a102090bcdb36dcd385bbf312",
+      "bytes": 28007856377,
+      "completed_updates": 100,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000200.pt",
+      "sha256": "c47711cb4fb68bb4cee45beece287490036302d4af17a7755b6c859e11d6f184",
+      "bytes": 28007856377,
+      "completed_updates": 200,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000300.pt",
+      "sha256": "7651a909b12ddb9fbfdeff136034cdc670f07ce262e11b72f20f4781b6beb454",
+      "bytes": 28007856377,
+      "completed_updates": 300,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000400.pt",
+      "sha256": "b49715fe7430c3de5200aaa6ba26ba7e3743d48888e53bf228f566160ad16071",
+      "bytes": 28007856377,
+      "completed_updates": 400,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0000500.pt",
+      "sha256": "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f",
+      "bytes": 28007856377,
+      "completed_updates": 500,
+      "protected": [
+        "scheduled_evaluation",
+        "final"
+      ],
+      "retained": true
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0000600.pt",
+      "sha256": "f9388df416b00102e53af1ec6c7d8c4dddaa2d4dcfcb75d34bba64a32e5fa215",
+      "bytes": 28007856377,
+      "completed_updates": 600,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0000700.pt",
+      "sha256": "f51a6486bbc4a76d3492d38ca086410d379c8a09fb3b949f7cb11f5a4d135f46",
+      "bytes": 28007856377,
+      "completed_updates": 700,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0000800.pt",
+      "sha256": "9ca8cefbf7befa36f872488b941d821a979a93cc52629d1c8b36829569cbdfc0",
+      "bytes": 28007856377,
+      "completed_updates": 800,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0000900.pt",
+      "sha256": "6a00e14b14128fb524a30ccbe2423dd4c2f73f4d259fd13fd0664fd85bd7f3ed",
+      "bytes": 28007856377,
+      "completed_updates": 900,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0001000.pt",
+      "sha256": "20b297ed40643b6bc82a4ce535252e578397c2eb1e76e09a90c2624980678d52",
+      "bytes": 28007856377,
+      "completed_updates": 1000,
+      "protected": [
+        "scheduled_evaluation",
+        "final"
+      ],
+      "retained": true
+    }
+  ],
+  "protection": "500/1000, final/best metadata, or CHECKPOINT.protect.json are never removed"
+}

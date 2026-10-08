@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "torch_version": "2.3.0a0+6ddf5cf85e.nv24.04",
+  "optimizer_updates": 0,
+  "production_scale_tested": false,
+  "small_model_parameters": [
+    86488,
+    87448,
+    87304
+  ],
+  "production_parameter_delta_vs_c0": {
+    "c1_fourier": 61440,
+    "c2_teacher": -156672
+  },
+  "tests": [
+    "C0/C1 shared seed-0 tensors and RNG identical",
+    "C1 nonzero-function equivalence",
+    "teacher Fourier feature layout",
+    "C2 structure and parameter deltas",
+    "vertex permutation and invalid-mask isolation for all variants",
+    "full/mixed/no recomputation output and gradient equivalence",
+    "execution-only policy validation and checkpoint call counts"
+  ]
+}

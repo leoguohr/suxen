@@ -1,0 +1,219 @@
+{
+  "status": "finished",
+  "max_updates": 1000,
+  "max_gpu_seconds": 43200,
+  "additional_gpu_seconds": 14400,
+  "flow_noise_seed": 0,
+  "euler_steps": 50,
+  "phases": [
+    {
+      "name": "evaluate_step500_seed0",
+      "argv": [
+        "code/evaluate_flow.py",
+        "--checkpoint",
+        "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0000500.pt",
+        "--checkpoint-sha256",
+        "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f",
+        "--vae-checkpoint",
+        "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run/checkpoints/vae-1000.pt",
+        "--cache",
+        "cache",
+        "--vae-baseline",
+        "vae_baseline",
+        "--output",
+        "evaluations/step500_seed0",
+        "--device",
+        "cuda:0",
+        "--seed",
+        "0",
+        "--steps",
+        "50",
+        "--max-seconds",
+        "7200",
+        "--budget-file",
+        "gpu_budget.json"
+      ],
+      "started_unix": 1791288577.2003798,
+      "gpu_uuid": "GPU-4db14efb-13b4-ec8b-bcba-670816c5837f",
+      "returncode": 0,
+      "ended_unix": 1791289591.8270566
+    },
+    {
+      "name": "train_to1000",
+      "argv": [
+        "code/train_flow.py",
+        "--config",
+        "configs/user50_recipe.json",
+        "--stage-budget",
+        "configs/user50_stage_to1000.json",
+        "--budget-file",
+        "gpu_budget.json",
+        "--cache",
+        "cache",
+        "--output",
+        "run",
+        "--device",
+        "cuda:0",
+        "--resume",
+        "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0000500.pt",
+        "--resume-sha256",
+        "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f"
+      ],
+      "started_unix": 1791289591.8740122,
+      "gpu_uuid": "GPU-4db14efb-13b4-ec8b-bcba-670816c5837f",
+      "returncode": 0,
+      "ended_unix": 1791293659.030698
+    },
+    {
+      "name": "evaluate_step1000_seed0",
+      "argv": [
+        "code/evaluate_flow.py",
+        "--checkpoint",
+        "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0001000.pt",
+        "--checkpoint-sha256",
+        "20b297ed40643b6bc82a4ce535252e578397c2eb1e76e09a90c2624980678d52",
+        "--vae-checkpoint",
+        "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run/checkpoints/vae-1000.pt",
+        "--cache",
+        "cache",
+        "--vae-baseline",
+        "vae_baseline",
+        "--output",
+        "evaluations/step1000_seed0",
+        "--device",
+        "cuda:0",
+        "--seed",
+        "0",
+        "--steps",
+        "50",
+        "--max-seconds",
+        "9323",
+        "--budget-file",
+        "gpu_budget.json"
+      ],
+      "started_unix": 1791293689.4317377,
+      "gpu_uuid": "GPU-4db14efb-13b4-ec8b-bcba-670816c5837f",
+      "returncode": 0,
+      "ended_unix": 1791294485.3850758
+    }
+  ],
+  "evaluation_complete": {
+    "step500": true,
+    "step1000": true
+  },
+  "finished_unix": 1791294485.4006448,
+  "gpu_budget": {
+    "schema_version": 1,
+    "authorized_gpu_uuid": "GPU-4db14efb-13b4-ec8b-bcba-670816c5837f",
+    "max_gpu_seconds": 43200,
+    "max_optimizer_updates": 1000,
+    "charged_gpu_seconds": 34669.35999859311,
+    "effective_optimizer_updates": 1000,
+    "last_completed_updates": 1000,
+    "active": null,
+    "attempts": [
+      {
+        "phase": "cache_export",
+        "pid": 1293,
+        "started_unix": 1790934879.9933515,
+        "gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+        "charged_before": 0.0,
+        "last_seen_unix": 1790934919.256026,
+        "ended_unix": 1790934919.256027,
+        "seconds": 39.26268162764609,
+        "outcome": "finished",
+        "exceeded_time_budget": false
+      },
+      {
+        "phase": "vae_baseline",
+        "pid": 1345,
+        "started_unix": 1790934974.9151597,
+        "gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+        "charged_before": 39.26268162764609,
+        "last_seen_unix": 1790935117.4692085,
+        "ended_unix": 1790935117.4692101,
+        "seconds": 142.55405016150326,
+        "outcome": "finished",
+        "exceeded_time_budget": false
+      },
+      {
+        "phase": "train",
+        "pid": 1444,
+        "started_unix": 1790935235.6693335,
+        "gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+        "charged_before": 181.81673178914934,
+        "last_seen_unix": 1790939319.7943947,
+        "ended_unix": 1790939319.794398,
+        "seconds": 4084.125062835403,
+        "outcome": "finished",
+        "exceeded_time_budget": false
+      },
+      {
+        "phase": "flow_evaluation",
+        "pid": 2154,
+        "started_unix": 1790939353.512628,
+        "gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+        "charged_before": 4265.941794624552,
+        "last_seen_unix": 1790939393.225811,
+        "outcome": "interrupted_unknown_duration",
+        "ended_unix": null,
+        "seconds": null,
+        "last_persisted_elapsed_seconds": 39.713177563622594,
+        "note": "Historical actual duration unknown; no original unused allowance carried into this new approved continuation."
+      },
+      {
+        "phase": "flow_evaluation",
+        "pid": 870,
+        "started_unix": 1791288578.8954608,
+        "gpu_uuid": "GPU-4db14efb-13b4-ec8b-bcba-670816c5837f",
+        "charged_before": 28800.0,
+        "last_seen_unix": 1791289591.1452413,
+        "ended_unix": 1791289591.145244,
+        "seconds": 1012.2497812090442,
+        "outcome": "finished",
+        "exceeded_time_budget": false
+      },
+      {
+        "phase": "train",
+        "pid": 889,
+        "started_unix": 1791289593.929927,
+        "gpu_uuid": "GPU-4db14efb-13b4-ec8b-bcba-670816c5837f",
+        "charged_before": 29812.249781209044,
+        "last_seen_unix": 1791293657.9043067,
+        "ended_unix": 1791293657.9043105,
+        "seconds": 4063.9743799250573,
+        "outcome": "finished",
+        "exceeded_time_budget": false
+      },
+      {
+        "phase": "flow_evaluation",
+        "pid": 909,
+        "started_unix": 1791293691.643488,
+        "gpu_uuid": "GPU-4db14efb-13b4-ec8b-bcba-670816c5837f",
+        "charged_before": 33876.2241611341,
+        "last_seen_unix": 1791294484.7793288,
+        "ended_unix": 1791294484.7793372,
+        "seconds": 793.1358374590054,
+        "outcome": "finished",
+        "exceeded_time_budget": false
+      }
+    ],
+    "budget_adjustments": [
+      {
+        "date": "2026-10-06",
+        "reason": "Conservative write-off of uncertain original allowance; not a measurement of historical GPU use",
+        "last_observed_seconds": 4305.654972188175,
+        "accounted_seconds": 28800,
+        "adjustment_seconds": 24494.345027811825
+      }
+    ],
+    "additional_budget_approval": {
+      "date": "2026-10-06",
+      "user_text": "\u6279\u51c6\u8ffd\u52a0\u6700\u591a4 GPU\u5c0f\u65f6",
+      "additional_gpu_seconds": 14400,
+      "max_cumulative_optimizer_updates": 1000,
+      "previous_gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+      "current_gpu_uuid": "GPU-4db14efb-13b4-ec8b-bcba-670816c5837f"
+    }
+  }
+}

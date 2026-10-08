@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "completed_updates": 500,
+  "elapsed_seconds": 4084.1042334455997,
+  "gpu_budget": {
+    "authorized_gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+    "max_gpu_seconds": 28800,
+    "charged_gpu_seconds": 4265.928680847399,
+    "max_optimizer_updates": 1000,
+    "effective_optimizer_updates": 500,
+    "last_completed_updates": 500
+  },
+  "latest": {
+    "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000500.pt",
+    "sha256": "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f",
+    "bytes": 28007856377,
+    "completed_updates": 500,
+    "protected": [
+      "scheduled_evaluation",
+      "final"
+    ],
+    "retained": true
+  },
+  "reason": "stage_update_budget",
+  "evaluation": "not_run; use evaluate_flow.py on an immutable checkpoint",
+  "direct_mesh_participation": {
+    "complete_epochs": 50,
+    "additional_five_mesh_groups": 0
+  }
+}

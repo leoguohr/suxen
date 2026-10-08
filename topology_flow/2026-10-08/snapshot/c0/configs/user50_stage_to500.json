@@ -1,0 +1,6 @@
+{
+  "max_updates": 500,
+  "max_seconds": 28800,
+  "save_every": 100,
+  "checkpoint_reserve_seconds": 600
+}

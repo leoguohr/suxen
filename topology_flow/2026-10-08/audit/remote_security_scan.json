@@ -1,0 +1,6 @@
+{
+  "time": 1791448204.644928,
+  "text_files_checked": 2118,
+  "findings": [],
+  "binary_scope": "Numeric NPZ arrays and generated OBJ; no model pickle files uploaded. Source path provenance deliberately retained in private repository."
+}

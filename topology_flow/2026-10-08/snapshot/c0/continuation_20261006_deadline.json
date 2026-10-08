@@ -1,0 +1,13 @@
+{
+  "status": "runner_exited",
+  "pid": 844,
+  "child_pid": 845,
+  "started_unix": 1791288542.936084,
+  "hard_timeout_seconds": 14380,
+  "kill_grace_seconds": 10,
+  "authorized_additional_gpu_seconds": 14400,
+  "max_optimizer_updates": 1000,
+  "returncode": 0,
+  "elapsed_seconds": 5942.527928576805,
+  "ended_unix": 1791294485.464043
+}

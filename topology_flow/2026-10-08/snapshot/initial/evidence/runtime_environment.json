@@ -1,0 +1,6 @@
+{
+  "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION": "python",
+  "reason": "Existing ONNX-generated protobuf imports are incompatible with installed C protobuf runtime; pure Python parser avoids a global dependency change. No precision/architecture change.",
+  "cpu_checks_CUDA_VISIBLE_DEVICES": "",
+  "training_threads": 8
+}

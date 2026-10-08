@@ -1,0 +1,45 @@
+{
+  "repository": "leoguohr/nexus",
+  "private": true,
+  "branch": "archive/topology-flow-20261008",
+  "release_tag": "topology-flow-evidence-2026-10-08",
+  "assets": [
+    {
+      "name": "TopologyFlow_c0_20261008.tar.gz",
+      "bytes": 552650557,
+      "sha256": "710d6f04fb4b89f8774934ae8a3e29330fa600d225ba0985519c6661f583fa7e"
+    },
+    {
+      "name": "TopologyFlow_candidates_20261008.tar.gz",
+      "bytes": 544637198,
+      "sha256": "dd6a469b0aa98663969a9adb5ed7599f57a62bd7e79c6179efb5cdc471b60bd4"
+    },
+    {
+      "name": "TopologyFlow_fixed50_20261008.tar.gz",
+      "bytes": 1018870662,
+      "sha256": "57c96b89444b1df9642b066d9aca9386da0f4e9e19e58da4ce654508e1b73f84"
+    },
+    {
+      "name": "TopologyFlow_initial_history_20261008.tar.gz",
+      "bytes": 6051899,
+      "sha256": "65fa6d16dae1448e1e87a63e6709e91c13988eb465c1eab9cf66a578416d72aa"
+    },
+    {
+      "name": "TopologyFlow_visualizations_20261008.tar.gz",
+      "bytes": 30449675,
+      "sha256": "16d99d0eba7f51ccf526c2d37ad2470053b55cc028fa6850efcf58c8c889d0b8"
+    },
+    {
+      "name": "TopologyFlow_local_research_and_history_20261008.zip",
+      "bytes": 14616095,
+      "sha256": "dd1cede5ef38bc5f278ea50b55c81368acb3a10c63f519f58717a03ff0d777e1"
+    },
+    {
+      "name": "TopologyFlow_report_bundle_20261008.zip",
+      "bytes": 7854106,
+      "sha256": "b72edb36949712d9a1bc7f354bd15d0966c8f95ca439c197fd81f8543bd0d7c7"
+    }
+  ],
+  "exclusions": "Full model/Adam states stay on persistent server; eight exact file hashes plus frozen VAE dependency are in audit. No independent Vertex runs or teacher source bundles.",
+  "extraction": "c0/candidates: extract into snapshot/. fixed50/initial_history: strip first component into snapshot/initial/. visuals: extract at this report root. local research/history: optional historical supplement."
+}

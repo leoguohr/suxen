@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "code/evaluate_vae.py",
+    "--vae-checkpoint",
+    "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run/checkpoints/vae-1000.pt",
+    "--cache",
+    "cache",
+    "--output",
+    "vae_baseline",
+    "--device",
+    "cuda:0",
+    "--max-seconds",
+    "28800",
+    "--budget-file",
+    "gpu_budget.json"
+  ],
+  "cwd": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002",
+  "visible_gpu": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3"
+}

@@ -1,0 +1,359 @@
+{
+  "coordinate_frame": "same_as_original_vertices_norm",
+  "uids": [
+    "nexus_2k_001150",
+    "nexus_2k_001045",
+    "nexus_2k_000084",
+    "nexus_2k_001692",
+    "nexus_2k_001843",
+    "nexus_2k_000346",
+    "nexus_2k_001780",
+    "nexus_2k_000796",
+    "nexus_2k_001085",
+    "nexus_2k_000020",
+    "nexus_2k_000447",
+    "nexus_2k_001179",
+    "nexus_2k_000118",
+    "nexus_2k_000074",
+    "nexus_2k_000519",
+    "nexus_2k_001087",
+    "nexus_2k_000053",
+    "nexus_2k_000675",
+    "nexus_2k_001716",
+    "nexus_2k_000242",
+    "nexus_2k_000823",
+    "nexus_2k_001536",
+    "nexus_2k_000840",
+    "nexus_2k_001577",
+    "nexus_2k_001216",
+    "nexus_2k_001331",
+    "nexus_2k_000142",
+    "nexus_2k_001550",
+    "nexus_2k_000872",
+    "nexus_2k_000952",
+    "nexus_2k_001825",
+    "nexus_2k_001483",
+    "nexus_2k_001439",
+    "nexus_2k_001178",
+    "nexus_2k_001317",
+    "nexus_2k_000869",
+    "nexus_2k_001415",
+    "nexus_2k_000283",
+    "nexus_2k_000935",
+    "nexus_2k_000815",
+    "nexus_2k_000800",
+    "nexus_2k_001211",
+    "nexus_2k_001093",
+    "nexus_2k_000783",
+    "nexus_2k_000083",
+    "nexus_2k_001792",
+    "nexus_2k_000280",
+    "nexus_2k_000167",
+    "nexus_2k_001232",
+    "nexus_2k_000898"
+  ],
+  "records": [
+    {
+      "uid": "nexus_2k_001150",
+      "file": "conditions/nexus_2k_001150.npz",
+      "sha256": "b89b778f9c0d5594aa50de5f997026a2527390ac9ee70727c96ad7571f871e53",
+      "vertices_sha256": "f60781019479b68fced8b6e14dcaf76b312cb2640bcd856672e8c499d34e4a29"
+    },
+    {
+      "uid": "nexus_2k_001045",
+      "file": "conditions/nexus_2k_001045.npz",
+      "sha256": "85d2f70f8ee8984109aec509f97de3b794269aa6adead198c7fcc15d55de2785",
+      "vertices_sha256": "25ad36feda16a32e101df2e8767afca41f08bef4cf5a84b5b982174dfc76a7c4"
+    },
+    {
+      "uid": "nexus_2k_000084",
+      "file": "conditions/nexus_2k_000084.npz",
+      "sha256": "a8018af4c22776fd02995e9b738a75861dc2c00b5733a06f64ec4aa0511fdff0",
+      "vertices_sha256": "446c68b9cf6e15c0599f71c108d4f13757bd3148bcae514823dc0638009e23dc"
+    },
+    {
+      "uid": "nexus_2k_001692",
+      "file": "conditions/nexus_2k_001692.npz",
+      "sha256": "b109a12e7da430745dbda6eceaa5c21aa0bc96d9f93b9a62dda41eb895cbb7af",
+      "vertices_sha256": "3149336fb93bc895e49acffa287e8dbbde940d33ad092a4d85b5d48864da60ad"
+    },
+    {
+      "uid": "nexus_2k_001843",
+      "file": "conditions/nexus_2k_001843.npz",
+      "sha256": "1326c7fab6f1a63641fce8c1e469554bc3fd31fbd0552e377358a65a54a046b2",
+      "vertices_sha256": "ab62ff3ed5bc285a85ad39ae1917c2c9b25257a3d44183a4e0ee8bcafd0507c1"
+    },
+    {
+      "uid": "nexus_2k_000346",
+      "file": "conditions/nexus_2k_000346.npz",
+      "sha256": "4f747b88eb07f2f5ad79e8121776450d793e576a08195083adc1c7c00c72062a",
+      "vertices_sha256": "705f40df905281873e9b7926cda9e82f1c9b752d7fd50628e2eb2f3a9c69f05f"
+    },
+    {
+      "uid": "nexus_2k_001780",
+      "file": "conditions/nexus_2k_001780.npz",
+      "sha256": "819ec495789258f38a8fb783cca637729c0273212b08aa78d518e812efcc34d3",
+      "vertices_sha256": "bf8c721e5c7273c1553eddc0f64ed38c4fd4d8ff17f2fad638344ccfa03c8372"
+    },
+    {
+      "uid": "nexus_2k_000796",
+      "file": "conditions/nexus_2k_000796.npz",
+      "sha256": "7936421e658b03e164813ada2f95a1b3e873004dd11e473454c0f0fef0e226b0",
+      "vertices_sha256": "b829752864dd4fb9100fc8924369844c61caa1c95389ffc916f82fc4fce9989a"
+    },
+    {
+      "uid": "nexus_2k_001085",
+      "file": "conditions/nexus_2k_001085.npz",
+      "sha256": "379c83054c2f91dc75ee5d290fbf577052f6a3abb78a36b4fedc59d2d36fae45",
+      "vertices_sha256": "cb34f5b25368ab3cce51efc01a85b0b8cf458ac55d1b1e2676628a6fb0587e47"
+    },
+    {
+      "uid": "nexus_2k_000020",
+      "file": "conditions/nexus_2k_000020.npz",
+      "sha256": "f71a00308e0c0a1667bec3211042d56383e408d28ba70c52b3b57058be39af7f",
+      "vertices_sha256": "c19b7731d51774459805c7fc3b15c972548f6cc342892812f115d917eb2e81aa"
+    },
+    {
+      "uid": "nexus_2k_000447",
+      "file": "conditions/nexus_2k_000447.npz",
+      "sha256": "1cdab554af2b3d2b593ada8ca58cee4e8f05b59d39755cc096bc5dfdfee4dfda",
+      "vertices_sha256": "6325580a384cbcf18afbe8dd7b10473bd2d88f5158303af725fcad22c9c2e056"
+    },
+    {
+      "uid": "nexus_2k_001179",
+      "file": "conditions/nexus_2k_001179.npz",
+      "sha256": "2a9c4bab25502b8ea504f54d9d622ea52faaa3c3ffdeb8253a054540d4b803ab",
+      "vertices_sha256": "9c8586381fe1005664d4091c5061db60ca8793c1923911632b3e93c3b4d7fbab"
+    },
+    {
+      "uid": "nexus_2k_000118",
+      "file": "conditions/nexus_2k_000118.npz",
+      "sha256": "0a03a2619fc87bcc53d23a1398f69029b3ff11894bb730f829c1c00141ab49b0",
+      "vertices_sha256": "648b1a5b5debcfed3f43318b2aa35f65af3c067382c303adb8d62e7545582963"
+    },
+    {
+      "uid": "nexus_2k_000074",
+      "file": "conditions/nexus_2k_000074.npz",
+      "sha256": "8545025b4220616a9c5d233b33e09c187b87b55be11d4d066ec8e0d50eb99a3b",
+      "vertices_sha256": "c8f7c0c216c8bb99d3fe13cc769c63a36570d9e2dfd7d0b9e3eb394bf3ac6335"
+    },
+    {
+      "uid": "nexus_2k_000519",
+      "file": "conditions/nexus_2k_000519.npz",
+      "sha256": "58356cdf76094e9ec1488b5fd341944be9369bc53da3b04c0965bab0bade4d92",
+      "vertices_sha256": "75a0bb1f64c24ad83459e325f3bc54c885c0125757b39e28dd97c59bede98f3e"
+    },
+    {
+      "uid": "nexus_2k_001087",
+      "file": "conditions/nexus_2k_001087.npz",
+      "sha256": "ad9f255cea4bf1c494862e9096355613ee9d379c07e05bf8fe18f9b728ae3e26",
+      "vertices_sha256": "895104fbd2e445a376c6662bfd9cf44663fde3bfe9a42afc08a495bf5822247f"
+    },
+    {
+      "uid": "nexus_2k_000053",
+      "file": "conditions/nexus_2k_000053.npz",
+      "sha256": "f001ddfc7d4165d43c73c7c3888d5df2de38fe5a34b23698231170e9d74e0e60",
+      "vertices_sha256": "e94fdadcd065a8644723aa7ed8d0a0392d9516f1fccc897e75f034e124c4624c"
+    },
+    {
+      "uid": "nexus_2k_000675",
+      "file": "conditions/nexus_2k_000675.npz",
+      "sha256": "738c0fdf8735ec39481fc53f91ff54b30831023c5a5296bdcde9a53e4190505a",
+      "vertices_sha256": "d9d74150f358f36435935319d9d9cd1dfd6d038f8dc416cf02bcc7630855d52b"
+    },
+    {
+      "uid": "nexus_2k_001716",
+      "file": "conditions/nexus_2k_001716.npz",
+      "sha256": "c4dcd9d56129ea3dc0787ca832020f234043da93c2791e28d46ff9958179de2d",
+      "vertices_sha256": "a2b530539ec67960e80bc7ae98dd2ed1310fba170a6f24285fcdecc0fc19c422"
+    },
+    {
+      "uid": "nexus_2k_000242",
+      "file": "conditions/nexus_2k_000242.npz",
+      "sha256": "ea0dcc3d9b4c320cc11d9cb258ee2a53f355b298ecbd8cb7670cb1eda7f02360",
+      "vertices_sha256": "211b3f79d42939334fcd51e0dfe2e6fa8beb41cabf6e25182ebec7135c12cffa"
+    },
+    {
+      "uid": "nexus_2k_000823",
+      "file": "conditions/nexus_2k_000823.npz",
+      "sha256": "8941b18d56b56240dd3b63230e583cedf561ec2086981c414293661dadf2923d",
+      "vertices_sha256": "7a81fd64cc84cd6a52a73fee316fdcefb5bb9974958be1b2f9fdf24b132b22c8"
+    },
+    {
+      "uid": "nexus_2k_001536",
+      "file": "conditions/nexus_2k_001536.npz",
+      "sha256": "4031dd0e149b42742e421ccc1be766af1ad783cc13fbff1956d483336157e2c5",
+      "vertices_sha256": "bbd972d472048fc266f14b82ea3c49668e971b163348f263c5c408c50c43bd4e"
+    },
+    {
+      "uid": "nexus_2k_000840",
+      "file": "conditions/nexus_2k_000840.npz",
+      "sha256": "971959293997f02f10faaa6a1354eff98619c9dc69af798f2c689b208eccb2cd",
+      "vertices_sha256": "9ac78dc4a03400c389937f5ec3ca2891c857336bf839ab193aa6200410b6005b"
+    },
+    {
+      "uid": "nexus_2k_001577",
+      "file": "conditions/nexus_2k_001577.npz",
+      "sha256": "cf3749423063a394a3b099c49d8b2085d5d6705dda11280bdbc61c19971718b5",
+      "vertices_sha256": "65c984603ea7f6e91ff34c870917a69389970572d8d1877dc5933f137f58513f"
+    },
+    {
+      "uid": "nexus_2k_001216",
+      "file": "conditions/nexus_2k_001216.npz",
+      "sha256": "547640d7dfce0fd63b12dfc9d273f2d13eda08961c3ac36913023ba9206f3c13",
+      "vertices_sha256": "3621c91dda2d16b320dae670e0648787ce82cbd954e7376e3037f9f7886ce0d1"
+    },
+    {
+      "uid": "nexus_2k_001331",
+      "file": "conditions/nexus_2k_001331.npz",
+      "sha256": "617ec2a14f06523b406eeed75dc60e83baffbc3e938b34e6808570656f5c3095",
+      "vertices_sha256": "0c0ff779bfb07b515a0ff1810afa740b2385f477c465cbb448eb466c9595b026"
+    },
+    {
+      "uid": "nexus_2k_000142",
+      "file": "conditions/nexus_2k_000142.npz",
+      "sha256": "baef6ca039fdc909548439848bfe2512420c9f62b7167e68c6cc6c67ac447533",
+      "vertices_sha256": "6487276773c53435e3798e3b447fa5958a844196249ed390b144899f97e59fc4"
+    },
+    {
+      "uid": "nexus_2k_001550",
+      "file": "conditions/nexus_2k_001550.npz",
+      "sha256": "dad67dfe5253ea6914408cf5e1635d045978b8d1bef63d01014ec361df733fe5",
+      "vertices_sha256": "cbd86ee3eaa56073f433d4e31a68c10d6a649ee69a6dac8fa6f3a99287e5c683"
+    },
+    {
+      "uid": "nexus_2k_000872",
+      "file": "conditions/nexus_2k_000872.npz",
+      "sha256": "3359152d18ed20676181ea87a80d2dbdde846fad90dd793e7c060f0fafcdf9c8",
+      "vertices_sha256": "8274cb5a48d366b505fb229a5241a03916faebe62045284b2d8652ed2ecc7ec5"
+    },
+    {
+      "uid": "nexus_2k_000952",
+      "file": "conditions/nexus_2k_000952.npz",
+      "sha256": "55aa1ef2257e2fad357b9fbfd7040df27782ab9b93932851ac251272083abdec",
+      "vertices_sha256": "f6a1f2a5104b1ace033a5f1c3c1b773cad81abb816ff50f5e85e84abbd74f681"
+    },
+    {
+      "uid": "nexus_2k_001825",
+      "file": "conditions/nexus_2k_001825.npz",
+      "sha256": "319656a663136bdc0a2d3b2b17dea9eeb4a36f29da79ec69e170f9fd7bef9fc1",
+      "vertices_sha256": "cd1267bb9acc9c0f1e6afd120b1fa0f91caddf1139b7c1d07363da1a27f688c3"
+    },
+    {
+      "uid": "nexus_2k_001483",
+      "file": "conditions/nexus_2k_001483.npz",
+      "sha256": "1a9b0c3ffcc44e6310e9ee3f902ae3700a724a7636bcbfc02a38818699c09f70",
+      "vertices_sha256": "d3359c9ef9daf3016a0e017b4addf5fdbd609c3e9c63fde9b2e22aefffa1e139"
+    },
+    {
+      "uid": "nexus_2k_001439",
+      "file": "conditions/nexus_2k_001439.npz",
+      "sha256": "645c0f051fdf4bc71bfedc57e0f652561961ee8bb557b5a2fe6427f828c16688",
+      "vertices_sha256": "8fe9f59f92429cd31bda3d1ae213307224fdc7753dd29df30bed0298794b0f9c"
+    },
+    {
+      "uid": "nexus_2k_001178",
+      "file": "conditions/nexus_2k_001178.npz",
+      "sha256": "6b3369c5b9166c7afdd25f9bc5969dc5cb4230a1aaaeef7df6d324f713bdc285",
+      "vertices_sha256": "87ec71764eecf4c7139373ba5b6d96727c6bbf1ec5f5670eb048b0c5cc42e327"
+    },
+    {
+      "uid": "nexus_2k_001317",
+      "file": "conditions/nexus_2k_001317.npz",
+      "sha256": "fa05930199033069c1d00d6b7c36b03cea534e43e736a9088a019c82ff9ece5b",
+      "vertices_sha256": "ee450e3589066c98f41f998bbad66ded92c645531f3fb3e3bcf958bfeea60ad0"
+    },
+    {
+      "uid": "nexus_2k_000869",
+      "file": "conditions/nexus_2k_000869.npz",
+      "sha256": "47a5e663e8b31973dcb7b0475907460a6cf6c53f9746af77fe1a958b298156ed",
+      "vertices_sha256": "5b621a8833b928b7125fd1f2c58caf7c31ac92831be3a57ebc5b50e57a1d38b0"
+    },
+    {
+      "uid": "nexus_2k_001415",
+      "file": "conditions/nexus_2k_001415.npz",
+      "sha256": "9eb195e62e1cbf08baf6241c4d5e5bd8047f70480c386f3d0806fd4c3de1a393",
+      "vertices_sha256": "cc07aa7212bf5397bdb6dbcdebb89d196f33f9481e591579698642a64aab36b5"
+    },
+    {
+      "uid": "nexus_2k_000283",
+      "file": "conditions/nexus_2k_000283.npz",
+      "sha256": "113d52dd047c0a5bc68fdac4f0d7550c21eac6de93b902c42c389bcea7b212ca",
+      "vertices_sha256": "41dc734378407833b880baeffa0bf4ee8bef8a20117f8573117628a9bb260b2f"
+    },
+    {
+      "uid": "nexus_2k_000935",
+      "file": "conditions/nexus_2k_000935.npz",
+      "sha256": "2b4561b86b6a0bd3a7c909e6854e49fb5c75ef6db8c2015bfbe9a8825cf43e06",
+      "vertices_sha256": "60cdce132383a1bbe6abb4ae68c870097ad86bbfa371bbcf914d5d1bea9ad792"
+    },
+    {
+      "uid": "nexus_2k_000815",
+      "file": "conditions/nexus_2k_000815.npz",
+      "sha256": "65edc796af0faecd7876259ada2a6e84068fbad8234d1d75ebd675fb662a40aa",
+      "vertices_sha256": "bad5e14bce568a3d2b6cf04753005b369117151690cca9dd5f620d4f66b6d80e"
+    },
+    {
+      "uid": "nexus_2k_000800",
+      "file": "conditions/nexus_2k_000800.npz",
+      "sha256": "266fc6ce50f3e7b4d58569096a529cc6d5432e3c3b5f716d2253e62313787210",
+      "vertices_sha256": "f7b8161624f8c062b2025406706ce865f5ef2557f083ec1ece3dfd2a733bdd31"
+    },
+    {
+      "uid": "nexus_2k_001211",
+      "file": "conditions/nexus_2k_001211.npz",
+      "sha256": "d3a1584e320e8c0de08c2b935784179302f60b36eacf2461f2992df88a4209b4",
+      "vertices_sha256": "1297486df8f979bd1cf5203610ab30a0926815c8b3d0797f4765e0cc4c4114b2"
+    },
+    {
+      "uid": "nexus_2k_001093",
+      "file": "conditions/nexus_2k_001093.npz",
+      "sha256": "2cdcebf8da4165277d43c3c8074275c2addcf5ce7ae65171a4b211e5b9a89a54",
+      "vertices_sha256": "3b246f92dc83906afe3fc3688af95629cc8dd65e59d5113065a883ccf5ee5e12"
+    },
+    {
+      "uid": "nexus_2k_000783",
+      "file": "conditions/nexus_2k_000783.npz",
+      "sha256": "c839e359d6e283c5716e0c9afa563ecf7e860259b5aa73f7e6b0f788be633f7f",
+      "vertices_sha256": "94237b459701df4c8e065c6ecefa38b6a72161167de05ed7ad876446496e782b"
+    },
+    {
+      "uid": "nexus_2k_000083",
+      "file": "conditions/nexus_2k_000083.npz",
+      "sha256": "a28bcd7ed9613dcc72f99971f6774c42244fb6288c12249fc72ecb5f85d98980",
+      "vertices_sha256": "190797af22607913afb990e657fa6493bf56e5d85dfdad1f884db165254b450a"
+    },
+    {
+      "uid": "nexus_2k_001792",
+      "file": "conditions/nexus_2k_001792.npz",
+      "sha256": "dce5745f5128c93d12180a829c5df7ae71b6ad93559f31d5085ed8249201c45c",
+      "vertices_sha256": "a7cd1eb4d664570dd2817f7d5aab090f2dbb78016c26198b95a6336cee9b0d6c"
+    },
+    {
+      "uid": "nexus_2k_000280",
+      "file": "conditions/nexus_2k_000280.npz",
+      "sha256": "503391d45924cb0d90fd4f14c83b9e78bb8f8d47ecf0cf5e5d39f58c351b57dd",
+      "vertices_sha256": "eaf30dd3c60155e70c719374257c39f45eb6d56e846d13c676407e25c2e1bf69"
+    },
+    {
+      "uid": "nexus_2k_000167",
+      "file": "conditions/nexus_2k_000167.npz",
+      "sha256": "33317201efb51f7c3b2296000103494ad12734d6dac63785e357e4533be78480",
+      "vertices_sha256": "6051fd6fa39fcb26a41435f0028d0d815aee4dc27e1dcf9f580241f649cab73d"
+    },
+    {
+      "uid": "nexus_2k_001232",
+      "file": "conditions/nexus_2k_001232.npz",
+      "sha256": "5d2c8e204bdc6e0757bf60e154996d1c39ee259bfda4622ac198b3328c5ba88a",
+      "vertices_sha256": "4ecfe7c07c6d178b0e5b2e1f103ead2703b5c2d667672b08191d30331d3692e2"
+    },
+    {
+      "uid": "nexus_2k_000898",
+      "file": "conditions/nexus_2k_000898.npz",
+      "sha256": "6d1dd20152c3c25594a4579cb03ecc4335d288f1cb5639893defbfda5efb3832",
+      "vertices_sha256": "7d5099eeac75591602ea952a63b661f1718ca44a75b038e81adaded37b33bc16"
+    }
+  ],
+  "coordinate_audit_file": "coordinate_audit.json",
+  "coordinate_audit_sha256": "53fedb2d6d796792278365cc1bd1c6bfb8b477e3e41cb5a4630d30fbab30d2db"
+}

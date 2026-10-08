@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "code/export_cache.py",
+    "--data-source",
+    "inputs_verified/data_source.json",
+    "--data-source-sha256",
+    "d9bbfae852eaf4f3d9cddaa9c80558c37ab23d9d8ba04ea1a4d9b91c1ba82d48",
+    "--conditions",
+    "inputs_verified/conditions.json",
+    "--vae-checkpoint",
+    "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run/checkpoints/vae-1000.pt",
+    "--output",
+    "cache",
+    "--device",
+    "cuda:0",
+    "--budget-file",
+    "gpu_budget.json"
+  ],
+  "cwd": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002",
+  "visible_gpu": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+  "environment_overrides": {
+    "CUDA_VISIBLE_DEVICES": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+    "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION": "python",
+    "OMP_NUM_THREADS": "8",
+    "MKL_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "8"
+  }
+}

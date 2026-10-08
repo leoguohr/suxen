@@ -1,0 +1,151 @@
+{
+  "complete": true,
+  "uid": "nexus_2k_000074",
+  "edge": {
+    "tp": 56,
+    "fp": 170,
+    "fn": 1096,
+    "tn": 72983,
+    "micro_f1": 0.08127721335268505
+  },
+  "face": {
+    "tp": 1,
+    "fp": 29,
+    "fn": 767,
+    "tn": 1,
+    "micro_f1": 0.002506265664160401
+  },
+  "actual_face_candidates": 31,
+  "face_fn_missing": 767,
+  "face_fn_present": 0,
+  "edge_strict": false,
+  "joint_strict": false,
+  "identity": {
+    "flow_sha256": "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f",
+    "vae_sha256": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15",
+    "cache_sha256": "f14f796c421cab6b9d5206047f927ea7c3490ff3c2435b2ebd38904a749c27e3",
+    "uids": [
+      "nexus_2k_001150",
+      "nexus_2k_001045",
+      "nexus_2k_000084",
+      "nexus_2k_001692",
+      "nexus_2k_001843",
+      "nexus_2k_000346",
+      "nexus_2k_001780",
+      "nexus_2k_000796",
+      "nexus_2k_001085",
+      "nexus_2k_000020",
+      "nexus_2k_000447",
+      "nexus_2k_001179",
+      "nexus_2k_000118",
+      "nexus_2k_000074",
+      "nexus_2k_000519",
+      "nexus_2k_001087",
+      "nexus_2k_000053",
+      "nexus_2k_000675",
+      "nexus_2k_001716",
+      "nexus_2k_000242",
+      "nexus_2k_000823",
+      "nexus_2k_001536",
+      "nexus_2k_000840",
+      "nexus_2k_001577",
+      "nexus_2k_001216",
+      "nexus_2k_001331",
+      "nexus_2k_000142",
+      "nexus_2k_001550",
+      "nexus_2k_000872",
+      "nexus_2k_000952",
+      "nexus_2k_001825",
+      "nexus_2k_001483",
+      "nexus_2k_001439",
+      "nexus_2k_001178",
+      "nexus_2k_001317",
+      "nexus_2k_000869",
+      "nexus_2k_001415",
+      "nexus_2k_000283",
+      "nexus_2k_000935",
+      "nexus_2k_000815",
+      "nexus_2k_000800",
+      "nexus_2k_001211",
+      "nexus_2k_001093",
+      "nexus_2k_000783",
+      "nexus_2k_000083",
+      "nexus_2k_001792",
+      "nexus_2k_000280",
+      "nexus_2k_000167",
+      "nexus_2k_001232",
+      "nexus_2k_000898"
+    ],
+    "seed": 0,
+    "euler_steps": 50,
+    "completed_updates": 500,
+    "vae_baseline_summary_sha256": "da96916eea65dfdef499f07f36fa49c1de8c4f0f10469ab57acbfa876dbae462",
+    "noise_recipe": "CPU torch.Generator; sha256(topology-eval/seed/uid) first 8 bytes little-endian; float32 Normal(0,1) [1,N,512]",
+    "sampling": "local explicit Euler from independent Gaussian t=0 to t=1; no Encoder or GT topology input",
+    "vertices": "original_GT_coordinates; not Vertex-generated",
+    "threshold": "logit>0",
+    "evaluation_code_sha256": {
+      "evaluate_flow.py": "9c1e834d13308ccc2bfdf57082125641f9f4c75b77ab901a249fb310a6096364",
+      "evaluate_vae.py": "2a2499b903366f1dc4c3c90f74677ce6c9a7482b1379ea754a42cfc6ca185d52",
+      "sampling.py": "f56a25974f975be41a3e62bf400b05609cc60e48b5a9f37983cd1930cc7ff243",
+      "vae_codec.py": "b98dbf2d2a54422df31ad5b9bca8d364d3d9c611481baeb3d12b71b65cec7a10",
+      "latent_data.py": "57f582a3d1407f570169e2f5ce7b24e912942d9fd0be18a4d64af0d330faab8c",
+      "_faces_reference.py": "2fe8da1cc00aac733b8b0536a8169c0ee0c15b5ac000ff9265322af524fe3942",
+      "_fixed100_reference.py": "3e52edf63e0332bd3bf777826d5eb9e384f781b55ef87d67640a5b7ea06718e6",
+      "_vae_reference.py": "ad754ba4c83213ea6b69b2c6f496095924c6a4c2bfbd9c7c0300372ecb4fa1f3",
+      "_vertex_reference.py": "76d43e0460af34c908a7fd049cb0586fda3ca7ae848854ebfb4fc27460d95611",
+      "topology_flow.py": "85b77fffe8ebd07cd26d1c4b6d442c811027b02d930485bfd2be6f75a34e65be"
+    },
+    "uid": "nexus_2k_000074"
+  },
+  "difference_from_vae": {
+    "mu": {
+      "edge": {
+        "tp": -1096,
+        "fp": 170,
+        "fn": 1096,
+        "micro_f1": -0.918722786647315
+      },
+      "face": {
+        "tp": -767,
+        "fp": 29,
+        "fn": 767,
+        "micro_f1": -0.9974937343358397
+      },
+      "edge_strict": -1,
+      "joint_strict": -1
+    },
+    "posterior_seed0": {
+      "edge": {
+        "tp": -1096,
+        "fp": 170,
+        "fn": 1096,
+        "micro_f1": -0.918722786647315
+      },
+      "face": {
+        "tp": -767,
+        "fp": 29,
+        "fn": 767,
+        "micro_f1": -0.9974937343358397
+      },
+      "edge_strict": -1,
+      "joint_strict": -1
+    },
+    "posterior_seed1": {
+      "edge": {
+        "tp": -1096,
+        "fp": 170,
+        "fn": 1096,
+        "micro_f1": -0.918722786647315
+      },
+      "face": {
+        "tp": -767,
+        "fp": 29,
+        "fn": 767,
+        "micro_f1": -0.9974937343358397
+      },
+      "edge_strict": -1,
+      "joint_strict": -1
+    }
+  }
+}

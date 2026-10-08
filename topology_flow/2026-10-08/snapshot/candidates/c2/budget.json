@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "authorized_gpu_uuid": "GPU-208b1847-4ab0-f090-b8d4-f21ebd908b00",
+  "max_gpu_seconds": 7703,
+  "max_optimizer_updates": 8000,
+  "charged_gpu_seconds": 6259.22558797244,
+  "effective_optimizer_updates": 1049,
+  "last_completed_updates": 1049,
+  "attempts": [
+    {
+      "phase": "train",
+      "pid": 812,
+      "started_unix": 1791378045.5753236,
+      "gpu_uuid": "GPU-208b1847-4ab0-f090-b8d4-f21ebd908b00",
+      "charged_before": 0.0,
+      "last_seen_unix": 1791383831.1853192,
+      "ended_unix": 1791383831.1853213,
+      "seconds": 5785.609998056665,
+      "outcome": "finished",
+      "exceeded_time_budget": false
+    }
+  ],
+  "active": {
+    "phase": "flow_evaluation",
+    "pid": 822,
+    "started_unix": 1791383833.4869266,
+    "gpu_uuid": "GPU-208b1847-4ab0-f090-b8d4-f21ebd908b00",
+    "charged_before": 5785.609998056665,
+    "last_seen_unix": 1791384307.1025152
+  },
+  "campaign_sha256": "46085fe52e8915924f2109402057deb5c2f6f11ee0c502adc566fa4705b96f8e",
+  "group": "c2"
+}

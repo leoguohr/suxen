@@ -1,0 +1,290 @@
+{
+  "actual_first_epoch_verified": true,
+  "completed_updates": 10,
+  "mesh_participation": {
+    "nexus_2k_001825": 1,
+    "nexus_2k_000952": 1,
+    "nexus_2k_001536": 1,
+    "nexus_2k_001716": 1,
+    "nexus_2k_001415": 1,
+    "nexus_2k_000815": 1,
+    "nexus_2k_001178": 1,
+    "nexus_2k_000167": 1,
+    "nexus_2k_001045": 1,
+    "nexus_2k_000084": 1,
+    "nexus_2k_000675": 1,
+    "nexus_2k_001483": 1,
+    "nexus_2k_001843": 1,
+    "nexus_2k_000935": 1,
+    "nexus_2k_000142": 1,
+    "nexus_2k_000118": 1,
+    "nexus_2k_000872": 1,
+    "nexus_2k_000283": 1,
+    "nexus_2k_000800": 1,
+    "nexus_2k_001093": 1,
+    "nexus_2k_001692": 1,
+    "nexus_2k_000020": 1,
+    "nexus_2k_000083": 1,
+    "nexus_2k_001577": 1,
+    "nexus_2k_001087": 1,
+    "nexus_2k_001150": 1,
+    "nexus_2k_001232": 1,
+    "nexus_2k_001179": 1,
+    "nexus_2k_001085": 1,
+    "nexus_2k_000898": 1,
+    "nexus_2k_001331": 1,
+    "nexus_2k_000783": 1,
+    "nexus_2k_000280": 1,
+    "nexus_2k_001211": 1,
+    "nexus_2k_000823": 1,
+    "nexus_2k_001792": 1,
+    "nexus_2k_000869": 1,
+    "nexus_2k_001780": 1,
+    "nexus_2k_000053": 1,
+    "nexus_2k_000074": 1,
+    "nexus_2k_001216": 1,
+    "nexus_2k_000840": 1,
+    "nexus_2k_000519": 1,
+    "nexus_2k_001439": 1,
+    "nexus_2k_000346": 1,
+    "nexus_2k_001550": 1,
+    "nexus_2k_001317": 1,
+    "nexus_2k_000242": 1,
+    "nexus_2k_000447": 1,
+    "nexus_2k_000796": 1
+  },
+  "mean_update_seconds": 6.962680043186992,
+  "first_epoch_update_seconds": 69.62680043186992,
+  "first3_profiles": [
+    {
+      "completed_updates": 1,
+      "forward_at_completed_updates": 0,
+      "velocity_mse": 2.0297832012176515,
+      "meshes": [
+        {
+          "uid": "nexus_2k_001825",
+          "velocity_mse": 2.1140682697296143,
+          "time": 0.004263520240783691,
+          "time_bin": 0,
+          "forward_seconds": 0.5965065434575081,
+          "backward_seconds": 1.1189674967899919
+        },
+        {
+          "uid": "nexus_2k_000952",
+          "velocity_mse": 2.098762035369873,
+          "time": 0.10556936264038086,
+          "time_bin": 1,
+          "forward_seconds": 0.39781329967081547,
+          "backward_seconds": 1.076496260240674
+        },
+        {
+          "uid": "nexus_2k_001536",
+          "velocity_mse": 2.2760581970214844,
+          "time": 0.2858424782752991,
+          "time_bin": 2,
+          "forward_seconds": 0.3032693713903427,
+          "backward_seconds": 0.7387869814410806
+        },
+        {
+          "uid": "nexus_2k_001716",
+          "velocity_mse": 1.926445722579956,
+          "time": 0.026954829692840576,
+          "time_bin": 0,
+          "forward_seconds": 0.23626169562339783,
+          "backward_seconds": 0.6377972373738885
+        },
+        {
+          "uid": "nexus_2k_001415",
+          "velocity_mse": 1.733581781387329,
+          "time": 0.47161436080932617,
+          "time_bin": 4,
+          "forward_seconds": 0.4572705617174506,
+          "backward_seconds": 1.2810112917795777
+        }
+      ],
+      "lr": 1.0000000000000002e-06,
+      "gradient_norm_preclip": 0.2308340221643448,
+      "clip_coefficient": 1.0,
+      "adam_steps": [
+        1
+      ],
+      "profile": {
+        "accumulation_seconds": 6.851955184713006,
+        "forward_seconds": 1.9911214718595147,
+        "backward_seconds": 4.853059267625213,
+        "clip_seconds": 0.09879529383033514,
+        "adam_step_seconds": 0.2887972090393305,
+        "complete_update_seconds": 7.295716016553342,
+        "accumulated_meshes": 5
+      },
+      "seconds": 7.3046270199120045,
+      "elapsed_seconds": 67.67186425905675,
+      "gpu_budget": {
+        "authorized_gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+        "max_gpu_seconds": 28800,
+        "charged_gpu_seconds": 249.49630067124963,
+        "max_optimizer_updates": 1000,
+        "effective_optimizer_updates": 1,
+        "last_completed_updates": 1
+      },
+      "peak_allocated": 46902447104,
+      "peak_reserved": 48123346944
+    },
+    {
+      "completed_updates": 2,
+      "forward_at_completed_updates": 1,
+      "velocity_mse": 2.045500922203064,
+      "meshes": [
+        {
+          "uid": "nexus_2k_000815",
+          "velocity_mse": 2.0487310886383057,
+          "time": 0.06011629104614258,
+          "time_bin": 0,
+          "forward_seconds": 0.529076031409204,
+          "backward_seconds": 1.3720692778006196
+        },
+        {
+          "uid": "nexus_2k_001178",
+          "velocity_mse": 2.1335136890411377,
+          "time": 0.7718658447265625,
+          "time_bin": 7,
+          "forward_seconds": 0.4355743108317256,
+          "backward_seconds": 1.2074186000972986
+        },
+        {
+          "uid": "nexus_2k_000167",
+          "velocity_mse": 2.2428157329559326,
+          "time": 0.7436993718147278,
+          "time_bin": 7,
+          "forward_seconds": 0.5927817467600107,
+          "backward_seconds": 1.6730025690048933
+        },
+        {
+          "uid": "nexus_2k_001045",
+          "velocity_mse": 1.836529016494751,
+          "time": 0.5944212079048157,
+          "time_bin": 5,
+          "forward_seconds": 0.23469058610498905,
+          "backward_seconds": 0.470466036349535
+        },
+        {
+          "uid": "nexus_2k_000084",
+          "velocity_mse": 1.9659150838851929,
+          "time": 0.887856662273407,
+          "time_bin": 8,
+          "forward_seconds": 0.20705630723387003,
+          "backward_seconds": 0.4658182756975293
+        }
+      ],
+      "lr": 2.0000000000000003e-06,
+      "gradient_norm_preclip": 0.6607189178466797,
+      "clip_coefficient": 1.0,
+      "adam_steps": [
+        2
+      ],
+      "profile": {
+        "accumulation_seconds": 7.1933507127687335,
+        "forward_seconds": 1.9991789823397994,
+        "backward_seconds": 5.188774758949876,
+        "clip_seconds": 0.02676238026469946,
+        "adam_step_seconds": 0.15947622526437044,
+        "complete_update_seconds": 7.435986732132733,
+        "accumulated_meshes": 5
+      },
+      "seconds": 7.446165037341416,
+      "elapsed_seconds": 157.7462277384475,
+      "gpu_budget": {
+        "authorized_gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+        "max_gpu_seconds": 28800,
+        "charged_gpu_seconds": 339.5706644495949,
+        "max_optimizer_updates": 1000,
+        "effective_optimizer_updates": 2,
+        "last_completed_updates": 2
+      },
+      "peak_allocated": 46946417664,
+      "peak_reserved": 49788485632
+    },
+    {
+      "completed_updates": 3,
+      "forward_at_completed_updates": 2,
+      "velocity_mse": 2.007124662399292,
+      "meshes": [
+        {
+          "uid": "nexus_2k_000675",
+          "velocity_mse": 1.9789631366729736,
+          "time": 0.45103132724761963,
+          "time_bin": 4,
+          "forward_seconds": 0.22592672239989042,
+          "backward_seconds": 0.6159726781770587
+        },
+        {
+          "uid": "nexus_2k_001483",
+          "velocity_mse": 2.1828365325927734,
+          "time": 0.7994906306266785,
+          "time_bin": 7,
+          "forward_seconds": 0.4217545706778765,
+          "backward_seconds": 1.1614313693717122
+        },
+        {
+          "uid": "nexus_2k_001843",
+          "velocity_mse": 1.7933638095855713,
+          "time": 0.14984089136123657,
+          "time_bin": 1,
+          "forward_seconds": 0.2150923702865839,
+          "backward_seconds": 0.4615095667541027
+        },
+        {
+          "uid": "nexus_2k_000935",
+          "velocity_mse": 1.8385436534881592,
+          "time": 0.40146881341934204,
+          "time_bin": 4,
+          "forward_seconds": 0.4663555081933737,
+          "backward_seconds": 1.3199395695701241
+        },
+        {
+          "uid": "nexus_2k_000142",
+          "velocity_mse": 2.2419161796569824,
+          "time": 0.054176926612854004,
+          "time_bin": 0,
+          "forward_seconds": 0.35891356226056814,
+          "backward_seconds": 0.9361559124663472
+        }
+      ],
+      "lr": 3e-06,
+      "gradient_norm_preclip": 0.40397584438323975,
+      "clip_coefficient": 1.0,
+      "adam_steps": [
+        3
+      ],
+      "profile": {
+        "accumulation_seconds": 6.188446602784097,
+        "forward_seconds": 1.6880427338182926,
+        "backward_seconds": 4.495009096339345,
+        "clip_seconds": 0.028862648643553257,
+        "adam_step_seconds": 0.13235610350966454,
+        "complete_update_seconds": 6.405587746761739,
+        "accumulated_meshes": 5
+      },
+      "seconds": 6.4165441785007715,
+      "elapsed_seconds": 164.16312523558736,
+      "gpu_budget": {
+        "authorized_gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3",
+        "max_gpu_seconds": 28800,
+        "charged_gpu_seconds": 345.98756151646376,
+        "max_optimizer_updates": 1000,
+        "effective_optimizer_updates": 3,
+        "last_completed_updates": 3
+      },
+      "peak_allocated": 46902483968,
+      "peak_reserved": 49788485632
+    }
+  ],
+  "first_full_checkpoint": {
+    "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000001.pt",
+    "sha256": "7b279c9bf88145e281b62f7c590d568091b0e712e67f7372e9e8031bbcf4cb8b",
+    "bytes": 28007856377,
+    "completed_updates": 1,
+    "protected": [],
+    "retained": false
+  }
+}

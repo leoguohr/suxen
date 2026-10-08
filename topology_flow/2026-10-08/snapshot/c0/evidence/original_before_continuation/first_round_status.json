@@ -1,0 +1,39 @@
+{
+  "status": "evaluate_step500_seed0",
+  "max_updates": 1000,
+  "max_gpu_seconds": 28800,
+  "flow_noise_seed": 0,
+  "euler_steps": 50,
+  "phases": [
+    {
+      "name": "evaluate_step500_seed0",
+      "argv": [
+        "code/evaluate_flow.py",
+        "--checkpoint",
+        "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000500.pt",
+        "--checkpoint-sha256",
+        "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f",
+        "--vae-checkpoint",
+        "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run/checkpoints/vae-1000.pt",
+        "--cache",
+        "cache",
+        "--vae-baseline",
+        "vae_baseline",
+        "--output",
+        "evaluations/step500_seed0",
+        "--device",
+        "cuda:0",
+        "--seed",
+        "0",
+        "--steps",
+        "50",
+        "--max-seconds",
+        "7200",
+        "--budget-file",
+        "gpu_budget.json"
+      ],
+      "started_unix": 1790939351.8787916,
+      "gpu_uuid": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3"
+    }
+  ]
+}

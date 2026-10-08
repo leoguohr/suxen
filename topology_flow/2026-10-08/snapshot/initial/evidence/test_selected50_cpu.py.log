@@ -1,0 +1,18 @@
+{"complete": false, "exported": 1, "expected": 50, "manifest": "/tmp/topology-user50-cpu-3krlmoxa/export/manifest.json", "sha256": "147008a7b9f79e1572828950d70fae19f7fad7ea490540b06ccfcb1e086e14a2"}
+{"complete": false, "exported": 2, "expected": 50, "manifest": "/tmp/topology-user50-cpu-3krlmoxa/export/manifest.json", "sha256": "49853b73f8056a1862a384610f043b170a56c81bafd9599ef63ce51536134f57"}
+{
+  "passed": true,
+  "device": "cpu",
+  "tests": [
+    "exact user50 order/counts and authorized 1279-to-1277 source discrepancy retained",
+    "hashed source contract preserves 50 exact meshes; rejects source hash, duplicate UID and D9 count changes",
+    "real-condition provenance/coordinate audit binds exact XYZ, normals, masks and mesh arrays",
+    "NPZ save/readback arrays and re-decoded Edge/Face/hidden tensors equal original VAE exactly",
+    "budget-stopped export resumes at the next UID without rewriting previous records or finalizing partial statistics",
+    "production cache validates fixed normalization hash and unchanged source vertex/topology binding"
+  ],
+  "real_source_checkpoint_loaded": false,
+  "real_mesh_exported": false,
+  "gpu_used": false,
+  "temporary_fixtures_removed": true
+}

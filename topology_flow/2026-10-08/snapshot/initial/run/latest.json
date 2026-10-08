@@ -1,0 +1,11 @@
+{
+  "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000500.pt",
+  "sha256": "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f",
+  "bytes": 28007856377,
+  "completed_updates": 500,
+  "protected": [
+    "scheduled_evaluation",
+    "final"
+  ],
+  "retained": true
+}

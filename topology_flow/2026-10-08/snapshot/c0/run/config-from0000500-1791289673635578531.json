@@ -1,0 +1,82 @@
+{
+  "config": {
+    "model": {
+      "hidden_dim": 1536,
+      "num_layers": 36,
+      "num_heads": 12,
+      "condition_dim": 2048,
+      "condition_layers": 8,
+      "condition_heads": 16,
+      "condition_tokens": 1024,
+      "rope_scale": 256.0,
+      "latent_dim": 512,
+      "recompute": true
+    },
+    "seed": 0,
+    "batch_meshes": 5,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_updates": 100,
+    "clip": 1.0
+  },
+  "stage_budget": {
+    "max_updates": 1000,
+    "max_seconds": 28800,
+    "save_every": 100,
+    "checkpoint_reserve_seconds": 600
+  },
+  "stage_budget_path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/configs/user50_stage_to1000.json",
+  "stage_budget_sha256": "d3681f507e9d36b730b258fcc3ce7f6f9526c9c7288b7c3aba50e2ab674f1458",
+  "cache": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/cache",
+  "cache_sha256": "f14f796c421cab6b9d5206047f927ea7c3490ff3c2435b2ebd38904a749c27e3",
+  "imported_code": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/code",
+  "code_sha256": {
+    "_faces_reference.py": "2fe8da1cc00aac733b8b0536a8169c0ee0c15b5ac000ff9265322af524fe3942",
+    "_fixed100_reference.py": "3e52edf63e0332bd3bf777826d5eb9e384f781b55ef87d67640a5b7ea06718e6",
+    "_vae_reference.py": "ad754ba4c83213ea6b69b2c6f496095924c6a4c2bfbd9c7c0300372ecb4fa1f3",
+    "_vertex_reference.py": "76d43e0460af34c908a7fd049cb0586fda3ca7ae848854ebfb4fc27460d95611",
+    "evaluate_flow.py": "9c1e834d13308ccc2bfdf57082125641f9f4c75b77ab901a249fb310a6096364",
+    "evaluate_vae.py": "2a2499b903366f1dc4c3c90f74677ce6c9a7482b1379ea754a42cfc6ca185d52",
+    "export_cache.py": "983ae38dcba9c763af8afd57655b1cbb19d7e63c67dbfcae41e74224e4ad3f9f",
+    "flow_training.py": "8ac9ceab0fd0acb04f5911aba5b9c2103bd3502b10ee736723eeb71a0f515fc9",
+    "gpu_budget.py": "2746dfc73dd0226835f11ccd1eacbbd7607914f7a1fe297eb708d9827c717e14",
+    "latent_data.py": "57f582a3d1407f570169e2f5ce7b24e912942d9fd0be18a4d64af0d330faab8c",
+    "prepare_user50_inputs.py": "1e7d9a5735c99aba436f2c3c2460d333f8d7cb7325cc1b417edf366a02dfc133",
+    "sampling.py": "f56a25974f975be41a3e62bf400b05609cc60e48b5a9f37983cd1930cc7ff243",
+    "selected_data.py": "1b7f48aba9e51446c4651978cbf05cfa20e8290ea5b2880477729824ef5885a3",
+    "test_evaluation50_cpu.py": "f117edac6cc78497dd3f24ce9014480c040c3a3dc57072a990928a283998ea7e",
+    "test_gpu_budget_cpu.py": "17972140ce7920ee53743eee5fa839107e06463a863c08540e59d183884e89f9",
+    "test_pipeline_cpu.py": "bdb600c986d63b1c56babf63a9fd928ee2ad8d5a2579d91cc560f2bb72e3e158",
+    "test_selected50_cpu.py": "607c2f02dd391b740e03d7df6b4e85499fdb5520cf5ad691c445083d0640eca3",
+    "test_structure_cpu.py": "7cd09966e081a71757c2b7da2add4b6eec8ce894e0e69b751b6802fed8e35aeb",
+    "test_training50_cpu.py": "e6924632eeb656238b681bf59f03cee55ab353e8c900cc9c6edb9ef786bec862",
+    "topology_flow.py": "85b77fffe8ebd07cd26d1c4b6d442c811027b02d930485bfd2be6f75a34e65be",
+    "train_flow.py": "b0224e8845deefff2ce6c9946319666331626b1d0eb8dce9a6a86425ecce3a08",
+    "vae_codec.py": "b98dbf2d2a54422df31ad5b9bca8d364d3d9c611481baeb3d12b71b65cec7a10"
+  },
+  "device": "cuda:0",
+  "torch_version": "2.3.0a0+6ddf5cf85e.nv24.04",
+  "gpu_name": "NVIDIA A100-SXM4-80GB",
+  "resume": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0000500.pt",
+  "resume_sha256": "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f",
+  "gpu_budget": {
+    "authorized_gpu_uuid": "GPU-4db14efb-13b4-ec8b-bcba-670816c5837f",
+    "max_gpu_seconds": 43200,
+    "charged_gpu_seconds": 29891.961592676118,
+    "max_optimizer_updates": 1000,
+    "effective_optimizer_updates": 500,
+    "last_completed_updates": 500
+  },
+  "storage_preflight": {
+    "free_bytes": 3890265748144128,
+    "required_bytes": 29147475968,
+    "estimated_full_checkpoint_bytes": 28073734144,
+    "filesystem": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run",
+    "full_model_adam_tensor_bytes": 28006625280,
+    "keep_recent": 1,
+    "planned_peak_checkpoint_count": 3,
+    "planned_peak_checkpoint_bytes": 84221202432,
+    "peak_note": "latest plus protected500 plus incoming1000; extra best/final protections add their sizes",
+    "quota": "unknown; actual populated AdamW checkpoint at update1 is the write/fsync/SHA probe; no cleanup on quota error"
+  }
+}

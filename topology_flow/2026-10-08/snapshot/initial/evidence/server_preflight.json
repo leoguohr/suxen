@@ -1,0 +1,75 @@
+{
+  "vae_path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run/checkpoints/vae-1000.pt",
+  "vae_bytes": 2962774094,
+  "vae_sha256": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15",
+  "checkpoint_keys": [
+    "model",
+    "optimizer",
+    "rng",
+    "train_noise_rng",
+    "completed_updates",
+    "participation",
+    "cursor",
+    "config",
+    "data",
+    "model_config",
+    "optimizer_group_parameter_names",
+    "source_checkpoint_sha256",
+    "source_model_sha256",
+    "hard_pool_sha256",
+    "source_baseline_sha256",
+    "code_sha256",
+    "unlogged_records",
+    "beta",
+    "no_scheduler"
+  ],
+  "model_config": {
+    "model_variant": "B_v2_teacher_blocks",
+    "encoder_width": 512,
+    "latent_width": 512,
+    "decoder_width": 1024,
+    "encoder_composite_blocks": 12,
+    "decoder_blocks": 16,
+    "heads": 8,
+    "ffn_ratio": 4,
+    "fourier_bands": 6,
+    "embedding_width": 32,
+    "dropout": 0.0,
+    "layer_norm_eps": 1e-05,
+    "activation_checkpointing": true
+  },
+  "scalar_metadata": {
+    "completed_updates": 36220,
+    "source_checkpoint_sha256": "a1d650c12a4c86350f8645a0fc32e81abac550b563f979349c3946f08f12c2a9",
+    "source_model_sha256": "24e3df521012ea13e8f0883235cb8df4b817f1ecf32d7ec743c8cfade956a33c",
+    "hard_pool_sha256": "f45ad0b2084c6209fd8198ba963c9f7dfab411da5fda148184c72efbb8ab57a9",
+    "source_baseline_sha256": "b39eac9cdfe12a72a58e402cd4ab3507399ac76316e9b73b4c44ec0217ebcfb5",
+    "beta": 1e-06,
+    "no_scheduler": true
+  },
+  "torch_version": "2.3.0a0+6ddf5cf85e.nv24.04",
+  "quota": "unknown: quota/mmlsquota not installed; actual complete first-update write is the approved probe",
+  "no_gpu_work_started": true,
+  "gpu_budget_hours": 8,
+  "storage_probe": "real full step1 checkpoint, fsync, pre/post-rename SHA; retain old until verified; no placeholder allocation and no cleanup-on-error",
+  "gpu": {
+    "returncode": 0,
+    "stdout": "index, uuid, name, memory.total [MiB], memory.used [MiB], utilization.gpu [%]\n0, GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3, NVIDIA A100-SXM4-80GB, 81920 MiB, 0 MiB, 0 %\n1, GPU-6977060b-ce26-90fc-e2ba-8af1370f8c0e, NVIDIA A100-SXM4-80GB, 81920 MiB, 0 MiB, 0 %\n",
+    "stderr": ""
+  },
+  "processes": {
+    "returncode": 0,
+    "stdout": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\n",
+    "stderr": ""
+  },
+  "mount": {
+    "returncode": 0,
+    "stdout": "TARGET             SOURCE                                FSTYPE OPTIONS\n/ssdwork/guohaoran ssdwork[/home/huangxiangru/guohaoran] gpfs   rw,relatime,seclabel\n",
+    "stderr": ""
+  },
+  "free": {
+    "returncode": 0,
+    "stdout": "Filesystem           1B-blocks            Used       Available Use% Mounted on\nssdwork        737326632271872 473929122578432 263397509693440  65% /ssdwork/guohaoran\n",
+    "stderr": ""
+  }
+}

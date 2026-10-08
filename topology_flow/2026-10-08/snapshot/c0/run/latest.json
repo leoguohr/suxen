@@ -1,0 +1,11 @@
+{
+  "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0001000.pt",
+  "sha256": "20b297ed40643b6bc82a4ce535252e578397c2eb1e76e09a90c2624980678d52",
+  "bytes": 28007856377,
+  "completed_updates": 1000,
+  "protected": [
+    "scheduled_evaluation",
+    "final"
+  ],
+  "retained": true
+}

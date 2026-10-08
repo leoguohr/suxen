@@ -1,0 +1,20 @@
+{
+  "launched": true,
+  "root": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006",
+  "guard_pid": 844,
+  "runner_pid": 845,
+  "status": {
+    "status": "started",
+    "pid": 844,
+    "child_pid": 845,
+    "started_unix": 1791288542.936084,
+    "hard_timeout_seconds": 14380,
+    "kill_grace_seconds": 10,
+    "authorized_additional_gpu_seconds": 14400,
+    "max_optimizer_updates": 1000
+  },
+  "training_checkpoint_sha256": "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f",
+  "gpu_uuid": "GPU-4db14efb-13b4-ec8b-bcba-670816c5837f",
+  "additional_gpu_seconds": 14400,
+  "max_cumulative_updates": 1000
+}

@@ -1,0 +1,913 @@
+{
+  "euler_steps": 50,
+  "primary_seed": 0,
+  "secondary_seed": 1,
+  "secondary_policy": "only after one immutable checkpoint reaches strict50 on primary noise, within remaining budget",
+  "time_start": 0,
+  "time_end": 1,
+  "noise": "independent CPU torch Normal(0,1)",
+  "records": [
+    {
+      "uid": "nexus_2k_001150",
+      "shape": [
+        1,
+        18,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 16243885793584448984,
+          "initial_gaussian_array_sha256": "db7185f727c5a6d08a5f8fe68968d87e4de2d807d1ca11090b291bf83c8f53e3"
+        },
+        "1": {
+          "derived_seed": 9196031044461479910,
+          "initial_gaussian_array_sha256": "2a9318e7aa76a4afaa1acc1a5f2084d67849baa1e2f0c53966d5a1c010f856b7"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001045",
+      "shape": [
+        1,
+        54,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 10190099435511517242,
+          "initial_gaussian_array_sha256": "04f6055e1bfe405da5c625950f08af8d0c227412cb54420d57696942562f59c4"
+        },
+        "1": {
+          "derived_seed": 7970608039232991022,
+          "initial_gaussian_array_sha256": "31380fb0280f859536aadc7e8ca7116e7b1003bb3d5b84675b8aac1304c64620"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000084",
+      "shape": [
+        1,
+        128,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 16273231180483985698,
+          "initial_gaussian_array_sha256": "3bfef0a2150f7394967af944c80a4b4992e157afd5d594dbf24107b533e61769"
+        },
+        "1": {
+          "derived_seed": 8862887222173188963,
+          "initial_gaussian_array_sha256": "2660bca2ff71be3f66ce59d202d228dd84d49ee1d7152a56d058eb8b0a491c48"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001692",
+      "shape": [
+        1,
+        150,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 5923644128678561409,
+          "initial_gaussian_array_sha256": "f21cf042abfaf444ed393cc11c2b86fa0060c09048593ac03a5e311000e9cd64"
+        },
+        "1": {
+          "derived_seed": 9234912095099644002,
+          "initial_gaussian_array_sha256": "2ec5bb71799a1ebc8b5a9fc227964076634b5a2ce87291b54839870d2deaf4c5"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001843",
+      "shape": [
+        1,
+        188,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 15556687666833809362,
+          "initial_gaussian_array_sha256": "d6c2547d071ed6fff1953514f43d312679f47aa1f20d4a83cc2a004851b44a55"
+        },
+        "1": {
+          "derived_seed": 15057840086200759562,
+          "initial_gaussian_array_sha256": "94be1d3da1df5f46c1d710d47fec6145a3c2178d81fd15f788712162508eb348"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000346",
+      "shape": [
+        1,
+        192,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 16795752131011227498,
+          "initial_gaussian_array_sha256": "7f57caac6e72ca89445b819b46b0de13cc7666c3b7905126ad4d89d26114e901"
+        },
+        "1": {
+          "derived_seed": 685286277944609373,
+          "initial_gaussian_array_sha256": "bb7fd3998f381b36b31e6e0fb4e6d50feae65587b3abf687b4677a9c4767f219"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001780",
+      "shape": [
+        1,
+        196,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 6762795820775935123,
+          "initial_gaussian_array_sha256": "d266318e8670294726f8d73e5f0fbdb6d604940d1a1d64c51376b600033488d4"
+        },
+        "1": {
+          "derived_seed": 8564751021497866887,
+          "initial_gaussian_array_sha256": "5ddcaf9a776a18d9b381213ac67889f60554f0cbc8cd81706043d5e995c43921"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000796",
+      "shape": [
+        1,
+        200,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 4429666253715020319,
+          "initial_gaussian_array_sha256": "542d17dfd3a19f5b26257443bac9166c56e09be9656a20e578d3e3b078e0c4ec"
+        },
+        "1": {
+          "derived_seed": 8800692444670088386,
+          "initial_gaussian_array_sha256": "d17e8b18ae61ffb992957ec149323807c47e8b37d8451878f606d46d11c70aa9"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001085",
+      "shape": [
+        1,
+        226,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 15771377228298472408,
+          "initial_gaussian_array_sha256": "1be226eb1e9692b23668fed7a757f0eb1b454bb59c58aee719ded865b3f8d9a8"
+        },
+        "1": {
+          "derived_seed": 4144909528603086306,
+          "initial_gaussian_array_sha256": "ce483d635900c11499474c583d93abcf51de464df5963098288abbe391d16943"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000020",
+      "shape": [
+        1,
+        288,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 6122338411134275533,
+          "initial_gaussian_array_sha256": "94d36c19c71d043eab250950fda5a981dcc842bd2fb79c978005e0a16adc0bd0"
+        },
+        "1": {
+          "derived_seed": 12970903405622884871,
+          "initial_gaussian_array_sha256": "3c09c7783da29e6d79553439f30a07163620f018135a5474202dda93ceee6649"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000447",
+      "shape": [
+        1,
+        332,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 7743297998959018567,
+          "initial_gaussian_array_sha256": "05a94b1a254401a5689eceb90e6b399f1114111f86d9e4a95020f7d48c2e07c3"
+        },
+        "1": {
+          "derived_seed": 18283132060919459898,
+          "initial_gaussian_array_sha256": "ae86150f150f6246f79e2aff1bf715d658f18223f2d794d88f3bf27ed7d9a448"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001179",
+      "shape": [
+        1,
+        325,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 8039391768400791308,
+          "initial_gaussian_array_sha256": "0e6d247f555df27d7dc2a8f0201e39b6ebec5445eaa1edc8e04e70013ca1ac43"
+        },
+        "1": {
+          "derived_seed": 4867965715922558314,
+          "initial_gaussian_array_sha256": "e67460f6d2c2ec17da02bd74096eb189066683f4091e7d9e2572fddae826aa23"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000118",
+      "shape": [
+        1,
+        362,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 16117089598765661335,
+          "initial_gaussian_array_sha256": "1037d0adb9ea8b11ab555e841ef9301949da34bf25e858d4aa4b1fc4b14f8ee8"
+        },
+        "1": {
+          "derived_seed": 5132005023215251431,
+          "initial_gaussian_array_sha256": "74433d862cc9eecf7d29d1b033c60b1cec976b5ac86ddbd79ef2f85417f4e186"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000074",
+      "shape": [
+        1,
+        386,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 9627877601240748438,
+          "initial_gaussian_array_sha256": "3918bb20b830a52fb9ba2845e7546b5d21882edbaae6c4cedb934a2cd1e6f55e"
+        },
+        "1": {
+          "derived_seed": 9718062044819104775,
+          "initial_gaussian_array_sha256": "98c3e8f009e2538bf04601fa84b7ecce5a772a3474ddd51190801438010520e4"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000519",
+      "shape": [
+        1,
+        392,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 16181233324710909612,
+          "initial_gaussian_array_sha256": "6c8f5965ff40c3edbaec96ef18b4f9c04c9040b7cf49e3b78bd91b5e20182c01"
+        },
+        "1": {
+          "derived_seed": 5978829097012324564,
+          "initial_gaussian_array_sha256": "7f615396099c6be3f6397ede0c81a89ba5d297e0c3d5f75f38830d79b0a0fad6"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001087",
+      "shape": [
+        1,
+        426,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 3192905181391750719,
+          "initial_gaussian_array_sha256": "d9e7c68eb206d3ca95a62707b1508789a2e04c339d8da15a928d26b63d5b2b61"
+        },
+        "1": {
+          "derived_seed": 9164278087350628470,
+          "initial_gaussian_array_sha256": "1f059ad8ccafdd0aa6747ed42cd28eecc776ba705b51dcd5a95c442d135a5808"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000053",
+      "shape": [
+        1,
+        488,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 10532147272510551275,
+          "initial_gaussian_array_sha256": "df1cd010c7138eab8e08eebd85d67a9064bf5e9f77f16c2bc0d74f60e582c911"
+        },
+        "1": {
+          "derived_seed": 7957706025478564888,
+          "initial_gaussian_array_sha256": "193b0c1d8dc6514a259bb3d482b0cbd8cd27a2ed43ef8f25f9b353f58e83724e"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000675",
+      "shape": [
+        1,
+        516,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 9541299215226479146,
+          "initial_gaussian_array_sha256": "5b6fcc8a3ca56388503b619e56bbf75aa46cdeb2e19c728246763756efc86e91"
+        },
+        "1": {
+          "derived_seed": 8638693817059555765,
+          "initial_gaussian_array_sha256": "ae30dcfe391a9129e8b77a354fedb7e539405e4f0732447eab6af23a4527b646"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001716",
+      "shape": [
+        1,
+        534,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 16980072898963051019,
+          "initial_gaussian_array_sha256": "7e1c7218c36f0cfa184abc03ac49fd3c1262ccdb7f7d65a491838872fefbbd69"
+        },
+        "1": {
+          "derived_seed": 10753395538207784567,
+          "initial_gaussian_array_sha256": "c13695f1f57c62bece31f37e11dd219930266c060260ba52cd4e6381d33d3cdc"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000242",
+      "shape": [
+        1,
+        652,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 14102099557732659932,
+          "initial_gaussian_array_sha256": "7ec0254238b0cf77b20c532b428abea8c7829a70dbbd324faf825b71e988cfaf"
+        },
+        "1": {
+          "derived_seed": 15912580960932802653,
+          "initial_gaussian_array_sha256": "4604e6a11f29829189db88a79618fa7e4f7636a21276ecc086f45c3f54c8013e"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000823",
+      "shape": [
+        1,
+        666,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 5847302091983172109,
+          "initial_gaussian_array_sha256": "63b914d97dde336a5526a224d66f3e1ef0644231fa8f5f4eb81a900da1ea36e7"
+        },
+        "1": {
+          "derived_seed": 11329752122565152529,
+          "initial_gaussian_array_sha256": "82e3717fb0d1a8e88eeb00778e9d576cb2a7b9b9637d27f7cdddd03bea198437"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001536",
+      "shape": [
+        1,
+        728,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 6268262164329652367,
+          "initial_gaussian_array_sha256": "5c0a6db992bd7a2b6c08ded771ebefea53e721904c68fa4741cc6a9820491ee6"
+        },
+        "1": {
+          "derived_seed": 4084094620654116251,
+          "initial_gaussian_array_sha256": "fa05f69dfc43a675f8c8c98f88a952dcc9e9afb775ae03e8e6676b3b2813c7d4"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000840",
+      "shape": [
+        1,
+        798,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 17316263549555457539,
+          "initial_gaussian_array_sha256": "91ccb04a6d0d56b548a8793d63ad44b3e9cbcf73647a7d4b5713a65799bb5968"
+        },
+        "1": {
+          "derived_seed": 11909136246996871314,
+          "initial_gaussian_array_sha256": "2593276fdab81664c8736086b472a83943885d9ce7bedbb81220d57f722c6b83"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001577",
+      "shape": [
+        1,
+        836,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 17919169595073290280,
+          "initial_gaussian_array_sha256": "bb4a849164e38d3fb84c399835b339d6113ae432122a8704dba47f600a7e7336"
+        },
+        "1": {
+          "derived_seed": 8639997279544265446,
+          "initial_gaussian_array_sha256": "00fafd5af9e35afaf3bacec1b0fb00e6bee489d63be16371ea842d1a96a888fd"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001216",
+      "shape": [
+        1,
+        938,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 4352632006138415287,
+          "initial_gaussian_array_sha256": "7644bdf4c7e5f116ff3c87ada734c89550666d343d490a656021f05260136659"
+        },
+        "1": {
+          "derived_seed": 7539535489665394817,
+          "initial_gaussian_array_sha256": "1b6616de999934beab5075813abb8df85ae77ba753d095848af29be58776e2e9"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001331",
+      "shape": [
+        1,
+        969,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 1798240794776380718,
+          "initial_gaussian_array_sha256": "ecab8397486cd33ffebf7f681678b129d69018f046e3d7abfbca78b70d3bdb64"
+        },
+        "1": {
+          "derived_seed": 12241282106594641829,
+          "initial_gaussian_array_sha256": "9ef8228ec55ea058cccac76a6a5daffa2170df04100d599d7a1244d455db5c2d"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000142",
+      "shape": [
+        1,
+        1029,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 18020661783060806994,
+          "initial_gaussian_array_sha256": "687db25ce749629908e0cbe818f02ed6b8e2456858266e9cd85473e2acba24dc"
+        },
+        "1": {
+          "derived_seed": 14238244973546326281,
+          "initial_gaussian_array_sha256": "652189a66fca1092229347cf45dcd7fa3717c01be344e3461c2b3e4812ed0b07"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001550",
+      "shape": [
+        1,
+        1137,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 16373503553681469232,
+          "initial_gaussian_array_sha256": "f714aab87fdbbd292dd02b34307116e92e413a95ef149b9312b370f76cb95309"
+        },
+        "1": {
+          "derived_seed": 2721148894949226105,
+          "initial_gaussian_array_sha256": "11fcce6fb887323105af11332255e76a19763c3849d0976ca9699de04cb058d7"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000872",
+      "shape": [
+        1,
+        1215,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 4878852677412974023,
+          "initial_gaussian_array_sha256": "e8865689454529a0ce68737b97b0455dd842ba0a786f71a2b51751122251dce7"
+        },
+        "1": {
+          "derived_seed": 14834169746874691633,
+          "initial_gaussian_array_sha256": "25e145387ba1882036f0b589c812721c4679fa620ba1cdb874039f52aaa7682e"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000952",
+      "shape": [
+        1,
+        1251,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 11403391741233785885,
+          "initial_gaussian_array_sha256": "13a97bc929612bcdb68f0c48de92fc89ef72e232b7373832e404f141afad8865"
+        },
+        "1": {
+          "derived_seed": 15052118546137051329,
+          "initial_gaussian_array_sha256": "671d70a1de7b74e2de89509c7c4548674047c4fb8f6dc98f2686ab75f7ea2ba4"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001825",
+      "shape": [
+        1,
+        1277,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 5271440917684333647,
+          "initial_gaussian_array_sha256": "78b10aa3876c077d92e4d9c01cd9915b6e50e889e3c4f54f1236cabecdebbfbd"
+        },
+        "1": {
+          "derived_seed": 13908082345246877052,
+          "initial_gaussian_array_sha256": "b717f9fb4d5e1e15d21f399204676289a246e80b702613f2b3db0208c07bc0e8"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001483",
+      "shape": [
+        1,
+        1418,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 13322375756440301571,
+          "initial_gaussian_array_sha256": "c96a133501468d9c510ca8ffd6dfade4d4490d328cd4b8abde308d3dd61e6f5b"
+        },
+        "1": {
+          "derived_seed": 10396354179898507983,
+          "initial_gaussian_array_sha256": "1de66ac6c15938b487ccf0cc00ab351bec6eb1a3db8ad27cc2c488bf0ae6918f"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001439",
+      "shape": [
+        1,
+        1446,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 4791177450878041294,
+          "initial_gaussian_array_sha256": "d8d48233a5926f61e82a3c65dac461687f12e1b8e8f8dc814b995625be0c1258"
+        },
+        "1": {
+          "derived_seed": 2381919754583817322,
+          "initial_gaussian_array_sha256": "e2cda6249e508eade467324f774982973fb0b091c1fd2f0f3ed0645f2db70840"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001178",
+      "shape": [
+        1,
+        1458,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 6502676914109281857,
+          "initial_gaussian_array_sha256": "3afdf025cb062b105e90fff6f9d40a49ed7e5d0548dd9073dea2bf4a68326562"
+        },
+        "1": {
+          "derived_seed": 5088462108720483174,
+          "initial_gaussian_array_sha256": "888c8b29e1fd6968a948ffc429d2af2ff0faf668bd2277b21589213ec7349521"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001317",
+      "shape": [
+        1,
+        1536,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 14265218795735637326,
+          "initial_gaussian_array_sha256": "befa15aa3b267927ea3fad3b7838934a5347407324054ffae0eebb51f6322613"
+        },
+        "1": {
+          "derived_seed": 18023260213433300515,
+          "initial_gaussian_array_sha256": "ee733b12923cf10e529814431020ac8135682733b990dbccbc93829ebcefc68c"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000869",
+      "shape": [
+        1,
+        1590,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 268166850597353794,
+          "initial_gaussian_array_sha256": "9299ef354ee5cd88e33619c0a7ae054b6794a05d9558a7df40d67fdc39563653"
+        },
+        "1": {
+          "derived_seed": 12704065305088361760,
+          "initial_gaussian_array_sha256": "3ccb6f0f509235bb6d377c89567ec0c0608ae256f195654047bfcafa17d17b2d"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001415",
+      "shape": [
+        1,
+        1609,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 2639105332792998045,
+          "initial_gaussian_array_sha256": "3d3f94242b00844aa2114201214544fc157706da95b4ee9fc8e5139f61dff256"
+        },
+        "1": {
+          "derived_seed": 13336200024968087754,
+          "initial_gaussian_array_sha256": "516c8fb4ca61e7e7bbcd05e7212598cbd9bb196eedff8bcdd343f3a93679c918"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000283",
+      "shape": [
+        1,
+        1644,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 14965750211215928267,
+          "initial_gaussian_array_sha256": "a140f8509af77fa45c4ebb79433e2e18a1a95d49eb26934e760103e2d2d3835d"
+        },
+        "1": {
+          "derived_seed": 10548469686928599793,
+          "initial_gaussian_array_sha256": "4935811e0e178f7096d50e45503b4ffbf3da3a5a22d827cb3a681162696f6db0"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000935",
+      "shape": [
+        1,
+        1713,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 14067630961753790962,
+          "initial_gaussian_array_sha256": "96ff5f706acf807b2d446683375f9dfd66201c265017a5292e606fcd96a3bf8d"
+        },
+        "1": {
+          "derived_seed": 10922661399378790866,
+          "initial_gaussian_array_sha256": "e10807660e50c7372227787430e498c248dc7b92b4a1b48b563cbfaf2c536481"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000815",
+      "shape": [
+        1,
+        1735,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 5096002298572761806,
+          "initial_gaussian_array_sha256": "7a1460cab86ee4a6155f79b4a19b1197bc1cba0057cad76e074ecc883e7e8b53"
+        },
+        "1": {
+          "derived_seed": 7190651422132248111,
+          "initial_gaussian_array_sha256": "f76aa5bbdc20ca76674fc64760b4d475986ad31581310ad871df2f9c2c4fecbf"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000800",
+      "shape": [
+        1,
+        1829,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 17757526191008145880,
+          "initial_gaussian_array_sha256": "a97766b1e9212e4b3b5bae40721dc2935d40d0ca2d20d62b2d512d0404bc906f"
+        },
+        "1": {
+          "derived_seed": 4243157648872199240,
+          "initial_gaussian_array_sha256": "cd4510bc107e2328ef88e904e52615845f937f617e73e03f8e8f3d512bedd210"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001211",
+      "shape": [
+        1,
+        1830,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 7649670871324137483,
+          "initial_gaussian_array_sha256": "50f58625fddbbf940601e6acd06b0bcf306be8f10453bfdfde783e9e8bd6ca29"
+        },
+        "1": {
+          "derived_seed": 208943248575953560,
+          "initial_gaussian_array_sha256": "05f9ab48e4017162ccbf222b3d8b1abe74f3b8da59a866c7131d27fa41153602"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001093",
+      "shape": [
+        1,
+        1964,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 10014677224188846797,
+          "initial_gaussian_array_sha256": "b1ea90bbf2944f3bfd7ad995e906bca347f4289fee9ae410e884562c778c2433"
+        },
+        "1": {
+          "derived_seed": 3543700586424419517,
+          "initial_gaussian_array_sha256": "6f7674c8198e4850af47075cf4cf1665136feed2c1f2f93fc2c44ca994bb5fa4"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000783",
+      "shape": [
+        1,
+        2172,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 10450284021038649144,
+          "initial_gaussian_array_sha256": "bb073dbf04941c54fc70efd98318ee91f9b259141c97b2ff1ddda0c08d4fc691"
+        },
+        "1": {
+          "derived_seed": 13437852564589968986,
+          "initial_gaussian_array_sha256": "a8c9947dbef5fe318e1f8b79295c3489cae0f5573dd9ce56069d34ff0be55642"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000083",
+      "shape": [
+        1,
+        2238,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 3338242126725889924,
+          "initial_gaussian_array_sha256": "829d15a352fc318055ef26552ee6b464614d35ca181395850c938325c2c53fe9"
+        },
+        "1": {
+          "derived_seed": 6733862283691598024,
+          "initial_gaussian_array_sha256": "c20a06821e44e6fd5daa56805f29facd4c8619e304b0563f8f58898ef9a28604"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001792",
+      "shape": [
+        1,
+        2244,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 18266714387727792370,
+          "initial_gaussian_array_sha256": "fb25326d209abb447b4a7d5b70e94605c1fb1c180a68421b112c21159c413015"
+        },
+        "1": {
+          "derived_seed": 6008820417098486090,
+          "initial_gaussian_array_sha256": "26f6b70af9ef08ba5f78d1932d12e4b5c0b357316ad69dac29e68ed694f7fd10"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000280",
+      "shape": [
+        1,
+        2279,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 9312513023351719769,
+          "initial_gaussian_array_sha256": "15f1c103c999a8f60d6b1de9ef491a052c144e2634a80bf7b1efb372e0c552a3"
+        },
+        "1": {
+          "derived_seed": 1747088992176590222,
+          "initial_gaussian_array_sha256": "e2e0e936f842248c555370c77e052c10eff17f508560e426307bcfff5631114e"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000167",
+      "shape": [
+        1,
+        2273,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 8319637580476222288,
+          "initial_gaussian_array_sha256": "5ff52365af01d8c3a5258cf58fb4970f08c787eb43077399b9362e70b2f4baf3"
+        },
+        "1": {
+          "derived_seed": 16166346477600300487,
+          "initial_gaussian_array_sha256": "9b932223783e5d4266462ff67d44a8a982deec582b2d04749b8ab38dfa6a883b"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_001232",
+      "shape": [
+        1,
+        2398,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 16425236951590452942,
+          "initial_gaussian_array_sha256": "15d3b30ccc0eb7ad341baa6cb65df9f4ad422ecbb2690df5f6fdd3caeda7863d"
+        },
+        "1": {
+          "derived_seed": 5284720656259886861,
+          "initial_gaussian_array_sha256": "9f7768256e4c7f4cd1288b1c2544ecb8b9f93551510133b1ae1a73759632bf12"
+        }
+      }
+    },
+    {
+      "uid": "nexus_2k_000898",
+      "shape": [
+        1,
+        2547,
+        512
+      ],
+      "noise": {
+        "0": {
+          "derived_seed": 15311626662964199306,
+          "initial_gaussian_array_sha256": "531e93d1a9c64845aa45d03a146721a69c326f51ac161d5e71dbf14c7bd6670e"
+        },
+        "1": {
+          "derived_seed": 1940029293321862813,
+          "initial_gaussian_array_sha256": "64f0dafb0a3d8b946a88674e0340a6bb271003d93a2f7d118739b9f003438c9d"
+        }
+      }
+    }
+  ],
+  "torch_version": "2.3.0a0+6ddf5cf85e.nv24.04",
+  "fixed_before_flow_evaluation": true
+}

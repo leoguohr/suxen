@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/run/checkpoints/flow-0000500.pt",
+  "destination": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/run/checkpoints/flow-0000500.pt",
+  "bytes": 28007856377,
+  "sha256": "d2c08bd377bfea373cb139a7fa43bd42cf64a2de93bf65db83c605f75adb367f",
+  "source_retained": true,
+  "fsync_file_and_directory": true,
+  "sha_checked_before_and_after_atomic_rename": true,
+  "seconds": 116.15009724907577,
+  "personal_quota": "unknown",
+  "limitation": "This complete checkpoint write succeeded; it does not guarantee future saves."
+}

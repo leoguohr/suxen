@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "code/train_flow.py",
+    "--config",
+    "configs/user50_recipe.json",
+    "--stage-budget",
+    "configs/user50_stage_to500.json",
+    "--budget-file",
+    "gpu_budget.json",
+    "--cache",
+    "cache",
+    "--output",
+    "run",
+    "--device",
+    "cuda:0"
+  ],
+  "cwd": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002",
+  "visible_gpu": "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3"
+}

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "torch_version": "2.3.0a0+6ddf5cf85e.nv24.04",
+  "tests": [
+    "equal-mesh posterior moments include variance; reversible channel scaling and padding",
+    "Euler noise0 to data1 velocity sign and endpoint with an oracle field",
+    "hash-bound synthetic frozen VAE load, exact encode/decode and cache validation",
+    "condition-encoder reference equality with explicit recompute context",
+    "five synthetic AdamW updates: boundary restore exactly matches uninterrupted weights, moments, LR, draws and cursor",
+    "STOP during accumulation discards gradients and restores RNG without an optimizer update",
+    "reproducible Gaussian-only generation and decoder-only inference leave training RNG and frozen VAE untouched",
+    "complete streamed actual triangles equal brute force; resume has no duplicates and missing GT is FN",
+    "orphan shard is overwritten on resume, never double-counted",
+    "aggregate sums confusion counts before micro-F1 and keeps strict success separate"
+  ],
+  "synthetic_optimizer_updates": 5,
+  "real_mesh_optimizer_updates": 0,
+  "real_source_checkpoint_loaded": false,
+  "real100_exported": false,
+  "gpu_used": false,
+  "temporary_fixtures_removed": true
+}

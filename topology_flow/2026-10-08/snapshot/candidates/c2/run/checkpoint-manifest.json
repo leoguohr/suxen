@@ -1,0 +1,60 @@
+{
+  "keep_recent": 1,
+  "checkpoints": [
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c2/run/checkpoints/flow-0000000.pt",
+      "sha256": "ed4ff15d76e5a0866ed7d30ea6797f72167d5076d132c32bc8a90eca9b8b10bb",
+      "bytes": 9335294956,
+      "completed_updates": 0,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c2/run/checkpoints/flow-0000001.pt",
+      "sha256": "2b0f8b938c6f9a56bfff1bf31c60aad70879e7858c4d4924e34d453b9604cefe",
+      "bytes": 28005796405,
+      "completed_updates": 1,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c2/run/checkpoints/flow-0000003.pt",
+      "sha256": "c571c5ebf1d235e373e2827b82fa71ba364b88bbbb013df0a74e8dde51696f4c",
+      "bytes": 28005796405,
+      "completed_updates": 3,
+      "protected": [],
+      "retained": false
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c2/run/checkpoints/flow-0000500.pt",
+      "sha256": "d73446bd7bffce8f7bdf3ba69c2fc3ff7ff7f2c4f4f3f54a6b92a05c232bbc25",
+      "bytes": 28005796405,
+      "completed_updates": 500,
+      "protected": [
+        "scheduled_evaluation"
+      ],
+      "retained": true
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c2/run/checkpoints/flow-0001000.pt",
+      "sha256": "6d338af27ee36d2d4efb962f90a76ab0736803580a9db36bb804aaa26be652b2",
+      "bytes": 28005796405,
+      "completed_updates": 1000,
+      "protected": [
+        "scheduled_evaluation"
+      ],
+      "retained": true
+    },
+    {
+      "path": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/c2/run/checkpoints/flow-0001049.pt",
+      "sha256": "4aa9a4536d6cbabc10c539ac1cae5252e8de45597bcf71c22457e42a4dd6ced9",
+      "bytes": 28005796405,
+      "completed_updates": 1049,
+      "protected": [
+        "final"
+      ],
+      "retained": true
+    }
+  ],
+  "protection": "500/1000, final/best metadata, or CHECKPOINT.protect.json are never removed"
+}

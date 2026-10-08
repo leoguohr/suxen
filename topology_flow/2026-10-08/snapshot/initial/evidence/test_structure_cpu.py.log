@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "torch_version": "2.3.0a0+6ddf5cf85e.nv24.04",
+  "optimizer_updates": 0,
+  "real_checkpoint_loaded": false,
+  "production_scale_tested": false,
+  "tests": [
+    "latent512 shape and zero initialization",
+    "nonzero permutation equivariance",
+    "padding isolation",
+    "mesh batch isolation",
+    "point/position/time influence",
+    "linear path endpoints and velocity sign",
+    "equal mesh loss reduction",
+    "finite flow and VecSet gradients",
+    "MATH recompute output and gradient equality",
+    "frozen synthetic VAE encode/decode equality",
+    "posterior RNG continuation and restore",
+    "decoder cannot read GT faces or call Encoder"
+  ]
+}

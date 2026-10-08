@@ -1,0 +1,35 @@
+{
+  "snapshot_unix": 1791447907.554625,
+  "hostname": "eusk5t3tad7qs-0",
+  "runner_state": "c2_eval500",
+  "state_last_updated_unix": 1791383831.958551,
+  "gpu_processes": "",
+  "old_phase_pids": [
+    {
+      "phase": "c1_train",
+      "pid": 780,
+      "exists_in_current_container": false
+    },
+    {
+      "phase": "c1_eval500",
+      "pid": 794,
+      "exists_in_current_container": false
+    },
+    {
+      "phase": "c1_eval904",
+      "pid": 803,
+      "exists_in_current_container": false
+    },
+    {
+      "phase": "c2_train",
+      "pid": 812,
+      "exists_in_current_container": false
+    },
+    {
+      "phase": "c2_eval500",
+      "pid": 822,
+      "exists_in_current_container": false
+    }
+  ],
+  "note": "No training/evaluation launched or process stopped. Container differs from launch session hostname vslqrluv8oj3-0. Exit reason not established."
+}

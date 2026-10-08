@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "real_network_calls": 0,
+  "real_git_calls": 0,
+  "credential_read": false,
+  "checks": [
+    "credential child environment clears traces/inherited Git settings and encodes token only in header",
+    "explicit private/repository identity guard",
+    "push only dedicated explicit ref; refuses pre-existing unowned branch; records exact remote HEAD",
+    "refuses existing release without matching receipt",
+    "release exact HEAD/draft false/latest false; unknown POST queried and recovered by owned intent marker",
+    "release marker ownership guard",
+    "same-name wrong digest refused without deletion",
+    "stream upload unknown result queried once; matching asset reused; verify checks local size/SHA and GitHub digest",
+    "asset listing paginates beyond first100"
+  ]
+}

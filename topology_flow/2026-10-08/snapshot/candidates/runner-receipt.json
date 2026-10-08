@@ -1,0 +1,28 @@
+{
+  "pid": 760,
+  "started_unix": 1791371566.4222183,
+  "campaign_sha256": "46085fe52e8915924f2109402057deb5c2f6f11ee0c502adc566fa4705b96f8e",
+  "original_started_unix": 1791371406.8210063,
+  "deadline_unix": 1791385806.8210063,
+  "max_gpu_seconds": 14400,
+  "per_group_max_optimizer_updates": 8000,
+  "authorized_gpu_uuid": "GPU-208b1847-4ab0-f090-b8d4-f21ebd908b00",
+  "execution_policy_sha256": "3ebd74d81b44c53731c5294e1286dfa00ee6184be728e7a29a60ddc0725a6f58",
+  "config_sha256": {
+    "c1": "9b19f5b13b3558fc8c7eebf92b65da3bfab5dc68a9f9659ad822f06d004e337c",
+    "c2": "cd806e47fc33e1650d4be814702c5bc70ab2a4661685091c521fe0d06ee307ba"
+  },
+  "runner_sha256": "3938868fbdb571ace9e5fd91ce5f8efc88e18f87a874e996763f44de189a9536",
+  "order": [
+    "c1_train",
+    "c1_eval500",
+    "c1_eval1000",
+    "c1_eval_final_if_distinct",
+    "c2_train",
+    "c2_eval500",
+    "c2_eval1000",
+    "c2_eval_final_if_distinct"
+  ],
+  "benchmark": "Already performed in foreground; its time remains inside the original campaign clock",
+  "accounting": "Serial campaign wall deadline, including setup/saving/evaluation; separate group update cursors"
+}

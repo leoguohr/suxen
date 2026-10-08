@@ -1,0 +1,8 @@
+{
+  "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run/checkpoints/vae-1000.pt",
+  "bytes": 2962774094,
+  "sha256": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15",
+  "verified_unix": 1791448426.016782,
+  "role": "Frozen OwnAE-v2 step36220 dependency; no AE training or independent AE results included",
+  "uploaded": false
+}

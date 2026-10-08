@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-06",
+  "mount_source": "storage[/home/huangxiangru/guohaoran]",
+  "filesystem": "gpfs",
+  "personal_quota": "unknown",
+  "purpose": "user-authorized Topology Flow continuation only",
+  "complete_checkpoint_bytes": 28007856377,
+  "expected_peak_full_checkpoints": 3,
+  "expected_peak_checkpoint_bytes": 84023569131,
+  "retention": "latest ordinary plus protected500 and1000; incoming checkpoint atomic temporary overlaps; no old experiment cleanup",
+  "full_checkpoint_copy_status": "pending; small write does not establish checkpoint capacity"
+}

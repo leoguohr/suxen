@@ -1,0 +1,1764 @@
+{
+  "verified": true,
+  "coordinate_frame": "same_as_original_vertices_norm",
+  "method": "Hash-check existing Stage2 point source and Stage3 mesh; bind Stage3 input to Stage2; verify existing D9 center coordinates, point-on-source-face residual and oriented unit normals without generating new points or changing topology.",
+  "records": [
+    {
+      "uid": "nexus_2k_001150",
+      "vertices_sha256": "f60781019479b68fced8b6e14dcaf76b312cb2640bcd856672e8c499d34e4a29",
+      "points_sha256": "de0b53fd420549a618feacfafb7e2317b94beb7a04be4928e3086d083e1dcbc7",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001150/condition_point.npz",
+      "source_sha256": "4d0d002707e4550841694e891095759f15b371a1ed0bc63f2b61cf53a27cd014",
+      "source_xyz_array_sha256": "24631fbb58c167728355f334926b82857e86661e0f3149dc1537190593ee1944",
+      "source_normal_array_sha256": "08a322935ff0767a9fc225b2726b11f0e7fadebea3bf09630d5d2a6282eab0ac",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001150/transform.json",
+      "transform_sha256": "5c75bfc4d19c74f6f23b2d2896037ebb9fcd2a3d2e1d5f8314486275d0d0fa7f",
+      "stage2_quality_sha256": "93baaf7306cc2faf7f14351ed2e7182364cecd439407cbf7df319e5eb398cfc1",
+      "stage3_quality_sha256": "5f0ed61128d9c6364d608c884f61c32e3c831897b3e820da8a3e9c7c6323efe2",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -0.0023575006052851677,
+          0.556158971041441,
+          0.07164149917662146
+        ],
+        "half_extent_world": 0.5437809713184834,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.7921476353220953e-08,
+      "observed_point_plane_max_abs_residual": 2.974034891073167e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001045",
+      "vertices_sha256": "25ad36feda16a32e101df2e8767afca41f08bef4cf5a84b5b982174dfc76a7c4",
+      "points_sha256": "5c2e6774e721db24d9319d28d69ad42a0d4adbdf9ee47a4663acf4fba4fbc4db",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001045/condition_point.npz",
+      "source_sha256": "1a38569cfef7a2e1d49c0a68ef8bfb100519c75986850983f386116b30849aec",
+      "source_xyz_array_sha256": "eabd641c3f418dcd328ec9b33a238ba8401083fe8e8175bf26c65db304b95fd9",
+      "source_normal_array_sha256": "bceb9551cca6712aa8350ade4db1515c6d584c65f71713605e548da17b87c6a1",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001045/transform.json",
+      "transform_sha256": "563b716c18717c88373c3205192e4a09048d67cf5576e758acdcf0734651a2eb",
+      "stage2_quality_sha256": "08a5df689af8de3198c261dbf5c39c56d4c25e8be75a365c3597f4c380f5a2ef",
+      "stage3_quality_sha256": "55d726ca5a08bb13e2e9c7d6a138294583fc1ebbc3c8dd3b9c37741906397a5d",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -0.13283196091651917,
+          0.20722158253192902,
+          0.05824899673461914
+        ],
+        "half_extent_world": 0.6135591268539429,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9288790837078693e-08,
+      "observed_point_plane_max_abs_residual": 3.8382377380574706e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000084",
+      "vertices_sha256": "446c68b9cf6e15c0599f71c108d4f13757bd3148bcae514823dc0638009e23dc",
+      "points_sha256": "9777ecb7658d8545fa32c06b81c4a709e6e21a0fe3a6f0b6a9bf32b0bf01114f",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000084/condition_point.npz",
+      "source_sha256": "2d2e3f53aa14363ba690c9d672b82a27db0faa7e1404de27fad5fe818e7e5ab3",
+      "source_xyz_array_sha256": "696b823c3bc750345cf951e8ac739c6a2b0b0fc60a5842137102618f8c7b3ebc",
+      "source_normal_array_sha256": "f269cbc31466ceab8b1cc893100c4f6c7889fb60ef412b389eff455309b43d47",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000084/transform.json",
+      "transform_sha256": "f5adcb283bd47fb5d9f586e04c726a2dd588f67c43509c3cdd36b062632ee892",
+      "stage2_quality_sha256": "419420d31ab16c3a134f79f858e0df764c02a5e5941241c5137812e7766de64d",
+      "stage3_quality_sha256": "e4bbcc5f932b2d6981ef4b47cd6ea35fb1ded696fe0997bbac23049dea30d844",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          0.3628293563622237,
+          8.326672684688674e-17
+        ],
+        "half_extent_world": 0.08193064363777638,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.968189860563797e-08,
+      "observed_point_plane_max_abs_residual": 4.2183489257219264e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001692",
+      "vertices_sha256": "3149336fb93bc895e49acffa287e8dbbde940d33ad092a4d85b5d48864da60ad",
+      "points_sha256": "719ef7954f91105a7773ea458639b1346af9859d25eeda592ebf6625106d1738",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001692/condition_point.npz",
+      "source_sha256": "f39c25d37aa58d52db33f8901e5c7323c37139965713478c408b483148997979",
+      "source_xyz_array_sha256": "89b8da59ff3eff2de5387635f8a293df0ac48531752d4b53d11feb45a296d507",
+      "source_normal_array_sha256": "6cd2d1d74121e275596a7663946b57d5a236e06cb2416e2fdaac4d031bc82c03",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001692/transform.json",
+      "transform_sha256": "c41fda2084a0159f846f5e2b3f2cc283b71f7dd8bbdf02065e2701bf7add5b23",
+      "stage2_quality_sha256": "68eb18b4bc1fb7d98146485e0b159ab7bec480b05185e929d1c7fda2c4367d0e",
+      "stage3_quality_sha256": "b7bff9627c36a2f4c39da9ff63d73c991059b22a35e1ee80a6f3cfa91b90f9ad",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          0.0,
+          0.008183370272019763
+        ],
+        "half_extent_world": 2.106197281679801,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.948366206734221e-08,
+      "observed_point_plane_max_abs_residual": 2.979342638053823e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001843",
+      "vertices_sha256": "ab62ff3ed5bc285a85ad39ae1917c2c9b25257a3d44183a4e0ee8bcafd0507c1",
+      "points_sha256": "08c873adca22e0a6c29a2d2fdf0587add9fe95264102b5cdf83cf660ccf2650b",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001843/condition_point.npz",
+      "source_sha256": "3e5750a3d07ed64101612c23f9428ba4d3fd1948ce60ef3015e56e9d2d3187f2",
+      "source_xyz_array_sha256": "875ba77b9c36de794c910a5e8e97f2af7ccd67e7253295b6dbc9c8e1eb6f8377",
+      "source_normal_array_sha256": "5d8bf38316dcfccaadeac8132dcbd2ee8c562dc2f177ba9ce3efbdfbef5d564c",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001843/transform.json",
+      "transform_sha256": "2e63e23e3095fd6e156b9c0ea5fd0a4a4285518625cf14bf921fdc66c9b60267",
+      "stage2_quality_sha256": "73fd8439bea693e8d344fc0e90dfb4ef3f92ce9ca20ae153000a820653919d83",
+      "stage3_quality_sha256": "10ca2099f36d0488a0b472e8b6cf4f57280fe6d3cb4afa4a1441b32c80d04984",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          6.15,
+          1.5999999999999999,
+          4.550000000000001
+        ],
+        "half_extent_world": 1.3,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 0.0,
+      "observed_point_plane_max_abs_residual": 0.0,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000346",
+      "vertices_sha256": "705f40df905281873e9b7926cda9e82f1c9b752d7fd50628e2eb2f3a9c69f05f",
+      "points_sha256": "eb433d70f7ea930c25f12db7a9fcfe90bafcec5da6829b6a7d17e24dfdf30128",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000346/condition_point.npz",
+      "source_sha256": "45fdd5b65586d93f36506eb98bbcba132cba0702ec1ca38e63fd570420841bd0",
+      "source_xyz_array_sha256": "354d101e8e5009951fc78749621e58c337573c1559f5a4012c4321eaebd132a7",
+      "source_normal_array_sha256": "57cb393e53d419b75ddb2f0f1210c3ce24998f403e4b64843ddeba424c40b25d",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000346/transform.json",
+      "transform_sha256": "f9b3249126a675db3c1c4e7ac508338f2d0c2e0fe9261a092c72ddb2f58de947",
+      "stage2_quality_sha256": "d6a63ff0529bfe8f5fdbf7af88bcd1c3d72923a1c10aed14c8114a60f8572d75",
+      "stage3_quality_sha256": "fcdcd9ccd114815253a67736d9db3b6ea9da9169587209b141b1f901f670c761",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -0.5,
+          13.5,
+          -0.4999999999999982
+        ],
+        "half_extent_world": 13.5,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 0.0,
+      "observed_point_plane_max_abs_residual": 0.0,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001780",
+      "vertices_sha256": "bf8c721e5c7273c1553eddc0f64ed38c4fd4d8ff17f2fad638344ccfa03c8372",
+      "points_sha256": "77685bacdb6c00e15413dde035b18e373637200e1d8b24d7ea278b8bed9ee866",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001780/condition_point.npz",
+      "source_sha256": "0222075738d235e3459cd2ec814b6a1ea9d75c148b7e4a3dd8ceb9bc7a3e96c6",
+      "source_xyz_array_sha256": "85f9951bfbf4f92251e55c1a473db9747ab7333196bf49a1374ae0571b679a8e",
+      "source_normal_array_sha256": "66b2d6e2b43c49a800cc10b916cf08bfd2a8a8bb641fd0d8a142724c568c0ea5",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001780/transform.json",
+      "transform_sha256": "4061ebca542470df56cd597d0b8266f8fd574d98efc2851c3022d14266adb449",
+      "stage2_quality_sha256": "46b11477572a65d39a9366389f053f6954c48b62f55421ae90a9dc5a79ba87d3",
+      "stage3_quality_sha256": "b2edbe5dc38ed60cc10dfa36007697a37bda06bd4c9e614293a7613a724b420a",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -0.001261499999999971,
+          0.19683250000000002,
+          0.0
+        ],
+        "half_extent_world": 0.7898164999999999,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.978895596861264e-08,
+      "observed_point_plane_max_abs_residual": 4.032343889522061e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000796",
+      "vertices_sha256": "b829752864dd4fb9100fc8924369844c61caa1c95389ffc916f82fc4fce9989a",
+      "points_sha256": "332aa4d007c5dbab4a12180d0bdeeb56d0debae7178e32612bb8867ca0f07b3e",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000796/condition_point.npz",
+      "source_sha256": "98975c37260866731d0e7fdda4aaa1565148885a9f3adb78d7559b5614bcb1c0",
+      "source_xyz_array_sha256": "2bba88e52d9a70f9e848f332d5b656af63a46ec8ab90851a8d7791566c4b480e",
+      "source_normal_array_sha256": "ab5c065368b53dc8c978653b1f8fbc8feb09300c44f27168bc7e86513cebd3d9",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000796/transform.json",
+      "transform_sha256": "be0b84adcc31fa0cf37c4bc0e79888c4c567b54354dcd3a6f6fb7d27d1f530ff",
+      "stage2_quality_sha256": "3b912aa488b6a9531b17241ba43780b7ffa9eb7194a557088b9415f4de9f1d34",
+      "stage3_quality_sha256": "2b46510e50874deb07c6958043232f9614b3a4d533283f22e9f9f08e8a47fe77",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -28.443115234375,
+          -44.25146484375,
+          -1.4210854715202004e-14
+        ],
+        "half_extent_world": 1595.0,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 7.365544179381106e-24,
+      "observed_point_plane_max_abs_residual": 1.303240952812061e-23,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001085",
+      "vertices_sha256": "cb34f5b25368ab3cce51efc01a85b0b8cf458ac55d1b1e2676628a6fb0587e47",
+      "points_sha256": "91876cb81743843989bad4c24d3bb6110e2cd85811e85aa167967cf7b99f5483",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001085/condition_point.npz",
+      "source_sha256": "649442b34fad1f0e7f9900e7333969a8cb5a02c03775da542fc6483f1ee5d888",
+      "source_xyz_array_sha256": "3ce23821da65e40363a62000a763555fece06e68b1828f29e61b7af8e7ac0874",
+      "source_normal_array_sha256": "3ff9665b0e3cdf4c89995e5c57f81e4921f43b861330750e8dc7675f7fefbc4b",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001085/transform.json",
+      "transform_sha256": "30d5dbe7d05c670d0513f3c45eacc0c78c648106f6e4c24244082b7da0760c08",
+      "stage2_quality_sha256": "fbd4b3c58290b557b3cbf77744c012cefef9452f4e2385e8b3358a53dd9b7c19",
+      "stage3_quality_sha256": "3fa0033dc6cbff1427de5aa9c2554eeb3c89a867f7474e005b6014b8d0ec5a9f",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          0.1750419842702371,
+          -4.163336342344337e-17
+        ],
+        "half_extent_world": 0.6941073405037486,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9673430046450733e-08,
+      "observed_point_plane_max_abs_residual": 2.282287491211111e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000020",
+      "vertices_sha256": "c19b7731d51774459805c7fc3b15c972548f6cc342892812f115d917eb2e81aa",
+      "points_sha256": "f10726684f519c1dd4466e63e95768285450f4ecb7f959c3b8e48238e017bc5b",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000020/condition_point.npz",
+      "source_sha256": "25ad4afabb74b68b053acccedb7175727e7454356627b548479c604dec961716",
+      "source_xyz_array_sha256": "86d79da0550ebc6862ab9832c37cb841f2a21dc2cba77f14b39e8d721fbec885",
+      "source_normal_array_sha256": "09be2d8c62b207f07b2be6db856f1c37ef0df8b2c0c4907578548db794ec8f88",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000020/transform.json",
+      "transform_sha256": "e83d0ed15ac6c4d0bdfe4dc4afe1418bff25c85c92a8367f12f35e594c957482",
+      "stage2_quality_sha256": "e3d882608a8a03055fec33c7814f91eb754fb01435bf6218af9de73bb4594608",
+      "stage3_quality_sha256": "8ad6574160d0a668406eeb013f2bf84ab9cd8e76bb1048ef6d8b8c8ca0ef3685",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.7444364150990737,
+          28.664710122328543,
+          0.6010480513220289
+        ],
+        "half_extent_world": 14.489856404084419,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.969743218006471e-08,
+      "observed_point_plane_max_abs_residual": 3.8021426592219076e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000447",
+      "vertices_sha256": "6325580a384cbcf18afbe8dd7b10473bd2d88f5158303af725fcad22c9c2e056",
+      "points_sha256": "2fbf02c71970c94b05a47e122f297d156302711d34fe04eeb22ce34aed4076ff",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000447/condition_point.npz",
+      "source_sha256": "db30e46da80539a95105461854969926543d797438148caf3188fa28c306a23a",
+      "source_xyz_array_sha256": "bea00b8a07978590073700d04549b69198275fc9b8bd1d079214a96de12c66ca",
+      "source_normal_array_sha256": "18a80f1fab256483293a2de125ec00d356d53bdd19fad63bad8e1fe6f872b9cf",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000447/transform.json",
+      "transform_sha256": "487acf6953c354cb36fdb8220c5a45923cb4f01eb7034e51fcc0d730fadb8bed",
+      "stage2_quality_sha256": "7ef72a21b8ccd39f9293b263c5636b1c605dfa603aa3e16730e874f804f82fb7",
+      "stage3_quality_sha256": "e6216876672ad89f76fcacd93273ee1d737284b51ad7dee191c0ea0adddd8147",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.2242269515991211,
+          14.424668788909912,
+          -1.2659549133612629
+        ],
+        "half_extent_world": 37.96671794079532,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9340389118281962e-08,
+      "observed_point_plane_max_abs_residual": 2.978434687010547e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001179",
+      "vertices_sha256": "9c8586381fe1005664d4091c5061db60ca8793c1923911632b3e93c3b4d7fbab",
+      "points_sha256": "f4eebba2c88cf407e8953793b5429983127495da5b8fcc81472a385f70fea1c0",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001179/condition_point.npz",
+      "source_sha256": "b6d91fd7f6aff5712bd4fd8cd708988221302bfa14d152b6911f1a14ae383318",
+      "source_xyz_array_sha256": "bcd6c09b252770f5b25e58e5e975a272b9ced2ecde8550390850c2ef6128f217",
+      "source_normal_array_sha256": "08b7082b3c29a926ba76be591f03235baddbfc0d6affc158006f8efd327385db",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001179/transform.json",
+      "transform_sha256": "16999c8142c40b167aa3cc1d03f9bd36dbaf55e06bf0e41295a1a28d168e8d57",
+      "stage2_quality_sha256": "fa22808313a2c4409abda1bc8e403c54e5bcd9ea8b0ad5055749f06d110b3aaf",
+      "stage3_quality_sha256": "86a8587cdd70fe6e920c46d09f08c304e7bb6dc3002adb08847342561d8afcc4",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          1.4398441526388694,
+          13.100648172312061,
+          10.986039999802859
+        ],
+        "half_extent_world": 0.826005817158304,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9798394196589584e-08,
+      "observed_point_plane_max_abs_residual": 4.0966143637077845e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000118",
+      "vertices_sha256": "648b1a5b5debcfed3f43318b2aa35f65af3c067382c303adb8d62e7545582963",
+      "points_sha256": "2c84e1313170f799476c04e6ab766895aa42cc470c5e9827c0b455a073ddef9d",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000118/condition_point.npz",
+      "source_sha256": "5125a95e9346a2deabf25ead2c016ca24ae853fc025c30f21be457d5d1329d38",
+      "source_xyz_array_sha256": "bd31e3dff8b3919d88a3cb9daa6b75290d0b038569343510097b187a9a4bcb6c",
+      "source_normal_array_sha256": "3e80cbb7ccbe406e5e81aea4e321179bdf795e12e41b801bb67b1e0ce156174b",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000118/transform.json",
+      "transform_sha256": "10f2a0e1bc3d32485c2cdb7b2a40d1b6d283a21a3125167bb25a85df8d1a1135",
+      "stage2_quality_sha256": "93f4fdf91c0dd5a401abbdbeca634b383fd4da288004e5ee39b996a7b6a83ba5",
+      "stage3_quality_sha256": "b96134ea593d5245eb7b4e9fdd82e454146b62e92766e64cb858f5c41461dbc1",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          -6.781188166549157e-09,
+          -4.371139028513937e-08
+        ],
+        "half_extent_world": 1.000000011699243,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9790356070868995e-08,
+      "observed_point_plane_max_abs_residual": 2.968981852874471e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000074",
+      "vertices_sha256": "c8f7c0c216c8bb99d3fe13cc769c63a36570d9e2dfd7d0b9e3eb394bf3ac6335",
+      "points_sha256": "49acc549714ddf647bf6a1f1d40d3f3a65994924d632d1caf217408d3f84b6eb",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000074/condition_point.npz",
+      "source_sha256": "932b3a99e8c61e5163e832b9a5a36dc25b87c15623bca6d4aa8e5e46bf4a12a9",
+      "source_xyz_array_sha256": "d555d9ccd32564fe958ba230bdfbbd782f21229b8e9ddf9be1b7806902740e0c",
+      "source_normal_array_sha256": "299dc76c5cbdb173a96c14e74a1e8288648eae6959d996d4fdb078c1ceaeb961",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000074/transform.json",
+      "transform_sha256": "165963ad4f5d82f2d5e7f98f9f73c3f0dbfbdde231325c4c5ccce312c568962c",
+      "stage2_quality_sha256": "dfb19d2aec7643e50169f65f7af7d44270cca0140140ba0f98d9344e093ea8c8",
+      "stage3_quality_sha256": "e1155bb4bf539ba4dc30a3d0889d850ce659380a5d8dfc7e7792f35744ad7ac6",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -0.004340954124927521,
+          0.14355971001295376,
+          0.016050064546905926
+        ],
+        "half_extent_world": 0.14111013066452488,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9794472666822003e-08,
+      "observed_point_plane_max_abs_residual": 3.961087996495749e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000519",
+      "vertices_sha256": "75a0bb1f64c24ad83459e325f3bc54c885c0125757b39e28dd97c59bede98f3e",
+      "points_sha256": "1f3d1c4d066da58ecabe0e77f67399c9d0a105901550af163860d369e1d3e780",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000519/condition_point.npz",
+      "source_sha256": "321d1fa7243af1468a1e157ca13c408a14765c679b4e5aef20dc336254ad7655",
+      "source_xyz_array_sha256": "d480c2e3cf8af9dce3a2261e0004f63448b1e3dcb170ade4a9160588392b131d",
+      "source_normal_array_sha256": "9bd541d98ef9eca02c1bcecf942f2a06fbeebf1242409533b26055134e1185e0",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000519/transform.json",
+      "transform_sha256": "f3d4a5e6f55e4e7e333c787ee3c3e2a259f1d36b19cd6c763428818ff8530995",
+      "stage2_quality_sha256": "ee21fa3e3ba2b645df0f9fb5027026eef0c1829317cca045cc30b38da1596061",
+      "stage3_quality_sha256": "479c8f5aeac4454e37c5070f78be3c55e466b8d33f94cc5261a285e5835df886",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          -8.765815961986334e-09,
+          2.4993516090088264e-08
+        ],
+        "half_extent_world": 1.0000000308389754,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.94617188423274e-08,
+      "observed_point_plane_max_abs_residual": 3.908473696079273e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001087",
+      "vertices_sha256": "895104fbd2e445a376c6662bfd9cf44663fde3bfe9a42afc08a495bf5822247f",
+      "points_sha256": "5ffcfe61039b2900864df0fc520525be15b5adcee9bc6da9a98262cf63130c9b",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001087/condition_point.npz",
+      "source_sha256": "615b5c4622c42723dc5ccce067111b70ab534089ac3b89befd497a258f627428",
+      "source_xyz_array_sha256": "19d882360d547adff128ae1aae86adf2a6fed36bd96286d78f6ad8465016e387",
+      "source_normal_array_sha256": "16d2e617aa3c27d790be1f6ca35300c963ec1b9f9d0842d1b1e984fa87285594",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001087/transform.json",
+      "transform_sha256": "4f8586c96958a059f8cde6001142dcada581369ea92dcb2678c37c2242461fa0",
+      "stage2_quality_sha256": "448bee878f78634a5ee83cf574838d15ab77ffa4ee7c5a6221668eae1b177508",
+      "stage3_quality_sha256": "be6d12dfa30b59e3068c6146a3ba93604bedf06cc7c8ede793015f348b912080",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          -0.003472643319508025,
+          6.938893903907228e-18
+        ],
+        "half_extent_world": 0.05278789885690177,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9528581246829333e-08,
+      "observed_point_plane_max_abs_residual": 3.792591085453878e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000053",
+      "vertices_sha256": "e94fdadcd065a8644723aa7ed8d0a0392d9516f1fccc897e75f034e124c4624c",
+      "points_sha256": "07f2e076929a3a9eb9b862c4db9db9d7dccfd6a352b2c4a30cb503c2d7c51a9c",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000053/condition_point.npz",
+      "source_sha256": "8e8e5449cca99c26204d22e750e7356087fd54fcd9a0ab5c82d7fef3e1aad5ba",
+      "source_xyz_array_sha256": "2a5da07cab02a770cb2ac38760d052681e635e293da387475fb6b8c40cf4aa72",
+      "source_normal_array_sha256": "a586299a1dcc73fc56ec1aaed6d4c83041bc56593b657fb82bf7159cc368a509",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000053/transform.json",
+      "transform_sha256": "3c37f5bc1e252a97f99447da8041cd2dc8e3ba6e8f668d3ed6e0f2d5d91b56aa",
+      "stage2_quality_sha256": "9615bfe9765ab5accb23fad3d2d11c0a3a8f7118944d13575f36b0cbbf061e8d",
+      "stage3_quality_sha256": "48588314456de91396605d42f1525bbb22d81fa4fc7a961b9b26c9c3fa1554f4",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0038959309458732605,
+          0.2793828099966049,
+          0.0
+        ],
+        "half_extent_world": 0.5905000120401382,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9550112468079703e-08,
+      "observed_point_plane_max_abs_residual": 2.962138192954926e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000675",
+      "vertices_sha256": "d9d74150f358f36435935319d9d9cd1dfd6d038f8dc416cf02bcc7630855d52b",
+      "points_sha256": "33fd3848296482c0af5a4f546dc1fe7902679ae39ed9987a77d3be38f1dbffaa",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000675/condition_point.npz",
+      "source_sha256": "536ffb7d364579dbbda7a8d7947032a82485c73d9625d8303d0926e00624b902",
+      "source_xyz_array_sha256": "fe01a2f2eef8619bb0cb478044f481d37a25ec3eb5cdb702325264bee3cb9aa8",
+      "source_normal_array_sha256": "8adbf026e5ec597da60b98c079af6de943afc206289e897654c36e98f58bfd48",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000675/transform.json",
+      "transform_sha256": "104cdec04a42080dbfff18b47b88ea5656cb169040c451277e9cdc8544f2fe23",
+      "stage2_quality_sha256": "0eb17656dbe3bab28f89803e7e36593c5a6ee520ad0bb05a06a899e65666f737",
+      "stage3_quality_sha256": "e0c09c7c54bd7ec799e568fae6b86fa9fc1435a23c5eef768d27e5f093f7257e",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0007700026035308838,
+          -0.07577499747276303,
+          -0.009554997086525019
+        ],
+        "half_extent_world": 0.6563200056552887,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.979593061169794e-08,
+      "observed_point_plane_max_abs_residual": 3.485865104815161e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001716",
+      "vertices_sha256": "a2b530539ec67960e80bc7ae98dd2ed1310fba170a6f24285fcdecc0fc19c422",
+      "points_sha256": "c3cfe87f78c1e0ba49479be38fa6bdb87aeb55835664108ee3110294684c944f",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001716/condition_point.npz",
+      "source_sha256": "af398910e7173bc120d1cddd431bc5c79ab561185d6ffa59a2ee0177b7ef0796",
+      "source_xyz_array_sha256": "269a92a3fb6968dd4727d15d347805e2363e5a2f734411e3534355d14a9401b0",
+      "source_normal_array_sha256": "55b249c67e1a80b42d6815a229cfdbb03636c17d4a593031d632124383b90c53",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001716/transform.json",
+      "transform_sha256": "24a99cad3a584ddb01e040226077fc86dd0fe7c14a43df063d670497de81f332",
+      "stage2_quality_sha256": "f2bd0840f84dfec7ac84d1e8820b54acb4ed73071deb4ae080c999855a72d596",
+      "stage3_quality_sha256": "16da66d50470ca38d3c1410128f964f6130c5795c6a5d730cd2563ca6f62fbcf",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -0.703997,
+          -0.9639355000000001,
+          5.392679
+        ],
+        "half_extent_world": 5.663737,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.977061630549116e-08,
+      "observed_point_plane_max_abs_residual": 3.5958512976897936e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000242",
+      "vertices_sha256": "211b3f79d42939334fcd51e0dfe2e6fa8beb41cabf6e25182ebec7135c12cffa",
+      "points_sha256": "9b0bfea8de6744f6a4333adf55d19bc72061d3351ee734c453dc931325c3dafb",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000242/condition_point.npz",
+      "source_sha256": "cd79fc864f7615aafe442572cd916fb3c7f20073170f31569e473b7f5eff1fd7",
+      "source_xyz_array_sha256": "058d42bea35e4725e23bd8d04bd681b67c1bdbdcf3f5a723248dfb2b917a2f2b",
+      "source_normal_array_sha256": "ce91e5db5a778246719a77fe7331eb34f279c4a80815a4357fc671dfc971767b",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000242/transform.json",
+      "transform_sha256": "819dc4468d1162df475367dbf23d5a540d344fbfb5787040f0a368e94dc0db6c",
+      "stage2_quality_sha256": "1796599c49d4a6ea1553676d1164ae8c2974164bcb29a87a0ff6f1816c38d475",
+      "stage3_quality_sha256": "0a470c5f1461f0ca9b5ba13ede3eaee3f7e77db34fb4d669680b3b2389f86d19",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -1.4315929412841797,
+          56.006996154785156,
+          1.2434497875801753e-14
+        ],
+        "half_extent_world": 56.006996154785156,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9797721179392056e-08,
+      "observed_point_plane_max_abs_residual": 3.886563175491738e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000823",
+      "vertices_sha256": "7a81fd64cc84cd6a52a73fee316fdcefb5bb9974958be1b2f9fdf24b132b22c8",
+      "points_sha256": "26454e551791348ab4658f31396852c22cd14b3ddbd3f3eba8f6b1ee0d751586",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000823/condition_point.npz",
+      "source_sha256": "e7563fac277b3229a917e9ab2d3aa75ae8146729ee46f8035756f3c23e6fc692",
+      "source_xyz_array_sha256": "81575ea557adb2c484d19c05b7c03459617f810b526304fbbf243cd0c4100cc2",
+      "source_normal_array_sha256": "29ecfd5b4975d68a997460e00dcdaa8427a7b2846ca96cd1459e8881337a5f7c",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000823/transform.json",
+      "transform_sha256": "b136f0e01b4d3b9cddb40cb763fb83869d6cd2ea4542619f96b32f49840bb617",
+      "stage2_quality_sha256": "01f5312e78112f3f2351e2759ecf85e6819971b074b144c6a9103378778a6b22",
+      "stage3_quality_sha256": "2b7bd2da47c75586accd634b4bbaf8a3d7d1eb1ddc09e9fc8dfcb3886dd5061b",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          0.46411449043080205,
+          0.0
+        ],
+        "half_extent_world": 1.0,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9781806243356357e-08,
+      "observed_point_plane_max_abs_residual": 3.889964610842567e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001536",
+      "vertices_sha256": "bbd972d472048fc266f14b82ea3c49668e971b163348f263c5c408c50c43bd4e",
+      "points_sha256": "a7282380f867eb06d79e2f4efa44d85470cf24e6834db504d221f82424b7d2d4",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001536/condition_point.npz",
+      "source_sha256": "6c99ba5a15301d455282404db365821303616a93753769f41d832c9119909c08",
+      "source_xyz_array_sha256": "8b23ee4db43dd5426b86d7ff8f6485c974ffb77c1394e15c2700af0ff7766ed0",
+      "source_normal_array_sha256": "38bad136297c4223c1b5399cb5ed0bd80f6bc2a25204d19cf199fd56d479d79c",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001536/transform.json",
+      "transform_sha256": "01d2ef4ad62777a247bc0caf195ac49b5c2e1c2096502bef128c357730eeabff",
+      "stage2_quality_sha256": "8693e0cdf2748967c371b6d1f9449f6e25c240b5c50eabb2d095d778bc52afbb",
+      "stage3_quality_sha256": "3aa5dadeb395e8bda471d3f121109643a180638b348f25bc67f5f3db56ef6381",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "half_extent_world": 0.5,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.974000234967633e-08,
+      "observed_point_plane_max_abs_residual": 4.1795207789279734e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000840",
+      "vertices_sha256": "9ac78dc4a03400c389937f5ec3ca2891c857336bf839ab193aa6200410b6005b",
+      "points_sha256": "dfc833c6ce1dc4156de811b91ad2a7a2b94b5b6c654bd20390ab7449e946dfa4",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000840/condition_point.npz",
+      "source_sha256": "e1f9650ce20b624071551b9f1d1d0819e0ecb593c60ad98302aa53c6324aec55",
+      "source_xyz_array_sha256": "a9859069c1b1e9d745036cbf906447b3d713c76689d8310c7be3e6d75ec6759e",
+      "source_normal_array_sha256": "20f08f11e990ebca0f0f3a67f428d2f75ea2aaeef9f9b16549c5b6877f64330f",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000840/transform.json",
+      "transform_sha256": "7ff4751ffbc9cd789a7f7ecf74f4450fb873e57e6403cc8a391ae36b57a5867f",
+      "stage2_quality_sha256": "60118ce3ec68396bb76c0484cb8f69cf529bc5a644ab3fcbae3c7323d7e2a5ca",
+      "stage3_quality_sha256": "0cae4399335f93d6ac13819b422eff88ca8954aa0b495401aa7f211addfa5e79",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          200.99494388360608,
+          -175.16634809615724
+        ],
+        "half_extent_world": 175.02896823954424,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.975132218363541e-08,
+      "observed_point_plane_max_abs_residual": 2.9655115457456055e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001577",
+      "vertices_sha256": "65c984603ea7f6e91ff34c870917a69389970572d8d1877dc5933f137f58513f",
+      "points_sha256": "328e2cabc99ee712603f1b9406dd07312a05e263ef7bdf26e83d14442241c80f",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001577/condition_point.npz",
+      "source_sha256": "cbb24b16a8dfe9f9f19318f2d451ce6f70ffcf242fea8119ce4ff619448cbb8d",
+      "source_xyz_array_sha256": "f766a9dcb9f0af232d95d3a553c1a8ee58e81cef46f22c9459a273c54269ffe8",
+      "source_normal_array_sha256": "19e24cf363c5b52ea9c93fa1115c2a5f27e94c1f6d47ecd31eb7d51556a5dd32",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001577/transform.json",
+      "transform_sha256": "a72d73657a3b6b3c62c1c9cc46a46e2d5edce4e4f7ca11f9dc59b90981a6af65",
+      "stage2_quality_sha256": "1b87932e882bd44192172a1bcd5ddda1d8dc16c81d727b01579507ec0dcccefe",
+      "stage3_quality_sha256": "290586ad442d36edf8502270f5c5240f00441be3e37c02f5cdc7104481546ef9",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -1.9026391506195068,
+          0.3761597126722336,
+          -2.5164469480514526
+        ],
+        "half_extent_world": 0.6007058620452881,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9574866333703653e-08,
+      "observed_point_plane_max_abs_residual": 3.598638213169001e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001216",
+      "vertices_sha256": "3621c91dda2d16b320dae670e0648787ce82cbd954e7376e3037f9f7886ce0d1",
+      "points_sha256": "d4d5492315b92f56ed3fdc21464ae1c88280f61fa20ae7725c42cbdbb4c112aa",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001216/condition_point.npz",
+      "source_sha256": "769bd2ea25b2f04b6469d267a503b1fb833d4a1373969f4363d0d141522ebda1",
+      "source_xyz_array_sha256": "c32b997a9b25dd588f9164fa206cd7fb5fd8d24c68d0d35f9fb88789cfbf9efe",
+      "source_normal_array_sha256": "1a73b13fd9cf04947488eba110914b2c782017d676a03a8cd1216a8cc28799ed",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001216/transform.json",
+      "transform_sha256": "134431ec6fb0710802726347958972046e2dee75a8a930ab8e6190cdd8c538d3",
+      "stage2_quality_sha256": "eaeca4e03a7b890ca75985565f7d5c514d31598e08501dd6154aa07ed8948a7f",
+      "stage3_quality_sha256": "8eecef8544a0c09190a8612a14c48bdde299ca0b6aa045d3d2edf00999963fc2",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          7.82310962677002e-07,
+          -0.01741785402986913,
+          1.6602417191242085
+        ],
+        "half_extent_world": 0.15030026628869142,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9799065437430272e-08,
+      "observed_point_plane_max_abs_residual": 3.906006814519136e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001331",
+      "vertices_sha256": "0c0ff779bfb07b515a0ff1810afa740b2385f477c465cbb448eb466c9595b026",
+      "points_sha256": "3c11f45f4169a2c452ddf9c6895827ec8e724893a1b4deb12520032d65369caa",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001331/condition_point.npz",
+      "source_sha256": "39d96c364d1ab139b3d74e8a274e60854dfae354b5da627f81e7f44d751d3642",
+      "source_xyz_array_sha256": "5e94e3c8f3d6333273fce46ba5137246010575a5780fb35ee91f5ba0683457ac",
+      "source_normal_array_sha256": "1f6518f51f9a963b10b02f4c6ae31a28c046a99ea6091280736a638443bb7a5b",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001331/transform.json",
+      "transform_sha256": "e76f70dc5122115b2eef0f12b2badee438892dbf2305d46a05058db98607e6e7",
+      "stage2_quality_sha256": "74924b54c08a756d29ba497635a0881a0c1a27c53638808fbfde6d9ebc9f85d0",
+      "stage3_quality_sha256": "5d6d7118e87f761716ab7b8b071022cfceda2e69e7befaedf2f822aeee33093b",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          0.7060120512905996,
+          0.03349661827087402
+        ],
+        "half_extent_world": 2.0492231845855713,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9792958766705624e-08,
+      "observed_point_plane_max_abs_residual": 3.115796121458403e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000142",
+      "vertices_sha256": "6487276773c53435e3798e3b447fa5958a844196249ed390b144899f97e59fc4",
+      "points_sha256": "ff5ffe027b9da81e27e0de5756063d0975ccea6bbdcb02414d2f51e47deb484c",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000142/condition_point.npz",
+      "source_sha256": "9b17940b633366037fddfe7fbbba182a1135b535ad1d84ab5de9cd455f561349",
+      "source_xyz_array_sha256": "c41ce968fcb857a99b7177568e321e8105d55a4c2290c4e5440ae2551e49f70d",
+      "source_normal_array_sha256": "dc8540b3f5b0a0fcdc12af90d990087c12d1d45bf93477285c206e1495642b77",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000142/transform.json",
+      "transform_sha256": "943674cd1fb0c25937850e1d219cc973bad6374c14d27b8c96c138ee9dcf0b5e",
+      "stage2_quality_sha256": "7e38bf13732947e6c17aefa5efe18c35489c4fb4bbac6eb739c090909ee7cfcd",
+      "stage3_quality_sha256": "79ae89eda6ec666ff5d5772ec46ff9be7ed16b9c77710643455c39ee43c983b2",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          231.82568257284484,
+          8.644609785335433e-06
+        ],
+        "half_extent_world": 554.7159319424799,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.979954183413014e-08,
+      "observed_point_plane_max_abs_residual": 2.817303854943875e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001550",
+      "vertices_sha256": "cbd86ee3eaa56073f433d4e31a68c10d6a649ee69a6dac8fa6f3a99287e5c683",
+      "points_sha256": "f3310bfe404dbe7e324e21537005173e94a0adee1028f5afc409a9d44019965d",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001550/condition_point.npz",
+      "source_sha256": "b3d184f86f700c8e561d878f471368da6bd9d0038e6c49310a100c2ca098b618",
+      "source_xyz_array_sha256": "0bbd414ef913a70d32d04e2fc121a286c60f9c04aaa0e784e0423c11f61b4c65",
+      "source_normal_array_sha256": "e288a2a46c3989e91d18dafa857c4d344eb27a6c1ca824004b541eb7adf3ee82",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001550/transform.json",
+      "transform_sha256": "2dade212063b2c7d1e0b39bf8d1d6af0f357ff934388cf05c364314d567d86a8",
+      "stage2_quality_sha256": "72716e7e8084e71e690e5db0d19791679fc6a623c4bd1b5c84b65746349e9df5",
+      "stage3_quality_sha256": "b90a394e30c58f7f74dd398faf31ef2dd4157f7c4326e65e675bddca1ccef65b",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.009406879544258118,
+          1.2431209006529553,
+          3.8743019104003906e-07
+        ],
+        "half_extent_world": 1.2398856498222248,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9776027976602393e-08,
+      "observed_point_plane_max_abs_residual": 2.9682848249134776e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000872",
+      "vertices_sha256": "8274cb5a48d366b505fb229a5241a03916faebe62045284b2d8652ed2ecc7ec5",
+      "points_sha256": "9154bb75f602fa4ff8935025d064cc52df36a3a615c0a8f2c09170d97219c9d0",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000872/condition_point.npz",
+      "source_sha256": "fae0ea345c0da8977fca8e20fdb8b4b53c2a29268c19309e13661dfc7b7121f1",
+      "source_xyz_array_sha256": "4533874a7cd3c635fa43822aab5c9eb1bd0a7d1c5d01a2f340a1862a5d5de2ad",
+      "source_normal_array_sha256": "cade6e254c419949e3361a78f79bd1e564e7e0b057b71f1534d06d30bb39af7c",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000872/transform.json",
+      "transform_sha256": "9aec92bd3031147487c12e075bf03530cd3018f92d81b8bd74ab7fe6edf7e8c4",
+      "stage2_quality_sha256": "5bce83154d466b6705abf82638c4861e48d679ba0e4a50a2cc967ce71183788a",
+      "stage3_quality_sha256": "0edbad0e9111bc319cb2dd7925b6f0ec0967e5c70e0a98534a2554cbe480616f",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -9174.41030883789,
+          14469.108947753886,
+          93430.7421875
+        ],
+        "half_extent_world": 14951.797302246092,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9795139022681383e-08,
+      "observed_point_plane_max_abs_residual": 3.676923162818091e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000952",
+      "vertices_sha256": "f6a1f2a5104b1ace033a5f1c3c1b773cad81abb816ff50f5e85e84abbd74f681",
+      "points_sha256": "e608d5fc1b68e4c8a6bda1641a637f9759b3fee6e3ae68540a6ce483d9af9537",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000952/condition_point.npz",
+      "source_sha256": "11a5c626a09557a6d3ea3db8dfa24c4f49912e8d1c52b243df79cc8ff5449d33",
+      "source_xyz_array_sha256": "5fb7afd3169e56a5fbbee53cd616e268a7638a36c5c8fd5bec68256cd32fc8cc",
+      "source_normal_array_sha256": "d18af0308c6278baa1d3c0ea53db8ce466ec3a22c21a9fa8f54c089ba776e871",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000952/transform.json",
+      "transform_sha256": "2451159da5e8d3543059c7dccd515ee344a765bc0f041b37f4d1039908d54caa",
+      "stage2_quality_sha256": "9f88700e2b77963e4e06109181b019226c069926a9ca7d4398dcd0e46218b2d4",
+      "stage3_quality_sha256": "aa4374270e89aa4dff59503bfb04d453105264c914cec324569f2a5ea44bd592",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -0.046618760896921074,
+          0.6614069359377712,
+          -0.41546438162088406
+        ],
+        "half_extent_world": 1.1257680192552384,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9801012435548557e-08,
+      "observed_point_plane_max_abs_residual": 4.020589891920445e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001825",
+      "vertices_sha256": "cd1267bb9acc9c0f1e6afd120b1fa0f91caddf1139b7c1d07363da1a27f688c3",
+      "points_sha256": "af6f1aead7a47c45b04f9c9f533e02c4ab991e94a70b85be7b83d09748b33687",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001825/condition_point.npz",
+      "source_sha256": "f42a13b94d54f0232ff1c2a62f671667ea7deea3dd016d10c7b571d8bfb6ca12",
+      "source_xyz_array_sha256": "0a4c3d36348ce43c2ca232e0351573111819b1182013968a8ecc8ccf3daae285",
+      "source_normal_array_sha256": "aeee13d28670d7b98ab49f547a34e032ae60e792a62086a641e5d659037818f0",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001825/transform.json",
+      "transform_sha256": "be86799242005229deea8228d33cc2be544642174ba72f9f532e87ed575e99bd",
+      "stage2_quality_sha256": "d1cc523fe2a904149627d35435b4ced5761635738e34626634eb227a91efacbe",
+      "stage3_quality_sha256": "221b45758902613e3ebae73d440ce2cce677e481aaa8bb24c95ef7bf1d85c817",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          4.2076715,
+          7.240049999999999,
+          0.3320034999999999
+        ],
+        "half_extent_world": 21.1641625,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9795567457746586e-08,
+      "observed_point_plane_max_abs_residual": 2.976179056469379e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001483",
+      "vertices_sha256": "d3359c9ef9daf3016a0e017b4addf5fdbd609c3e9c63fde9b2e22aefffa1e139",
+      "points_sha256": "bd21308a739d1a5fa5a25bff0d03eaf688ce6b115aba39329b0e228b75e4df21",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001483/condition_point.npz",
+      "source_sha256": "b93820b50acdaf2a4751bcc535d852cbacb84d88c2434714d510fc52c3e43219",
+      "source_xyz_array_sha256": "77b66e03a8403c4416cfd9add4595b663db9eb973ba3807aa4314fafe990e9d7",
+      "source_normal_array_sha256": "174f553ccdb803d841618ef001db7b42f333ff13941a3787d81eb670fa513e50",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001483/transform.json",
+      "transform_sha256": "8ca6da57d4f782d911d8ecd27d27198caa750736d6764cb41d5242d0e5cb44a4",
+      "stage2_quality_sha256": "a1c00f5bc7856d52f9cbd1e8e500ca5a3f40cd3b336e095f7961a93e4a026f84",
+      "stage3_quality_sha256": "26aa50f542c84f868db40e1a60d6dec2c659a8ffb828b9e5375f53e9bdbef24a",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.3270489500077842,
+          0.41333215782793586,
+          0.333590276325458
+        ],
+        "half_extent_world": 0.1207055243476842,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.976819346578452e-08,
+      "observed_point_plane_max_abs_residual": 3.985344552287495e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001439",
+      "vertices_sha256": "8fe9f59f92429cd31bda3d1ae213307224fdc7753dd29df30bed0298794b0f9c",
+      "points_sha256": "566d772fc4a88db30110bc8b17d2c9e5a3fea036ad9f00c66d8b9b6ada581249",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001439/condition_point.npz",
+      "source_sha256": "9a2f7a0583df3d02242f877b0e1552bb29931b78c6f083d5091f7ca78a39c9c2",
+      "source_xyz_array_sha256": "011a534c6e6329768037bcd3a3994b297c62edf18b17c70b61a2c95f3198925d",
+      "source_normal_array_sha256": "fbed0286ed3e06766d6ae45d571a43e4248937616313d01adf9f4fb851fe311a",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001439/transform.json",
+      "transform_sha256": "93488ebf88afeae4c5867cfd518a95c8d1218908cf79e8adaeabb1b5705292c0",
+      "stage2_quality_sha256": "4a5b1fe549b0a8229701b68ff284d96d7bea14cda8209098dfdf7cc2930daef9",
+      "stage3_quality_sha256": "f4fefc645c9dff02e63d9e1593c9041f2d1df1a58c449281e240a2e0f9300f5e",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -2.793757677078247,
+          0.3478773981332779,
+          -2.47637140750885
+        ],
+        "half_extent_world": 0.31595098972320557,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9748226104686637e-08,
+      "observed_point_plane_max_abs_residual": 3.87048139176803e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001178",
+      "vertices_sha256": "87ec71764eecf4c7139373ba5b6d96727c6bbf1ec5f5670eb048b0c5cc42e327",
+      "points_sha256": "319173f871b65829db9eb92c6f2fa19d8a82773e615d46b8c7dc16a8d085cbfd",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001178/condition_point.npz",
+      "source_sha256": "f6fab6dc42bf012dd8bf695fe9e3ad8c33efec1f26151870f7a0b6744983fd1b",
+      "source_xyz_array_sha256": "51be99eddfb5de7fc64ecc9f66d29356de20ab209538b0b378b31bce5c03dd31",
+      "source_normal_array_sha256": "313d93568022f99ff7e9661f31677652c8635fdbf377782203bde490c1c8553f",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001178/transform.json",
+      "transform_sha256": "4fd34f91ba3a3665bc812edf91dc374ac7afa04c3a0144c18ec71145c255e828",
+      "stage2_quality_sha256": "d4a61caa40fa5fbcd10ee8c12d3c06b4bab3e309ae3d89b2cfed73147b523c9d",
+      "stage3_quality_sha256": "0e498bbe5593aad177e5f5d84907e3c18034bf42b9aacf3a55b8dc7f0a148646",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.020642094068067385,
+          0.2708384841680527,
+          -1.000325356937305
+        ],
+        "half_extent_world": 1.1341355300455043,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9801084044933646e-08,
+      "observed_point_plane_max_abs_residual": 3.6195921229243214e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001317",
+      "vertices_sha256": "ee450e3589066c98f41f998bbad66ded92c645531f3fb3e3bcf958bfeea60ad0",
+      "points_sha256": "6ac60bf542e96f478e30a50db022d88acf300291409cd6e238026a4dc6bb8aa5",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001317/condition_point.npz",
+      "source_sha256": "f966e977e7bde2eb3de6e698601c40f2873f0fd0605f382233766e5ad9883aac",
+      "source_xyz_array_sha256": "49f6451726e53c60b6efd485f48a5e93f7b8567e32d2de7c0e218e850d03c5c8",
+      "source_normal_array_sha256": "93a14501c39b8ecca7b1a8308f4a7cb599ad8fc2d1c0753f5b188973e9b949b2",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001317/transform.json",
+      "transform_sha256": "c35ff12756a6807df9ad5856868c9581d502520c1227ed5e36c9e3ec05505a73",
+      "stage2_quality_sha256": "bc84b5490ec09553805e16501c41c807ceb711dd328a747799d320a42119ae39",
+      "stage3_quality_sha256": "466390ede4f87346bb6820f31d08729df360f7acdfbbb22bcd4dfcce8231c2ad",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.0,
+          1.3282452821731567,
+          0.07190825790166855
+        ],
+        "half_extent_world": 1.336676001548767,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.980017033138438e-08,
+      "observed_point_plane_max_abs_residual": 3.0555201229430506e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000869",
+      "vertices_sha256": "5b621a8833b928b7125fd1f2c58caf7c31ac92831be3a57ebc5b50e57a1d38b0",
+      "points_sha256": "0c2f422fac7cbd2daa7179d4b4de63494fa783db16e09f9316c6143394a50f5e",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000869/condition_point.npz",
+      "source_sha256": "0bd1590487647ff79125a2ac4627fa57797cf7b57192acbc2261a2fd922e299c",
+      "source_xyz_array_sha256": "1409822b9b868c2429d047ddbba50a48e7970d75846be22a019f570835cca9f0",
+      "source_normal_array_sha256": "50e3532f4afbdfdd85c2350918537e507f4e3fa31fa655156feeaa7853ad6507",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000869/transform.json",
+      "transform_sha256": "732247ec33227e60d62a017dabc56add8af6256a2081a405b741f1803ce51315",
+      "stage2_quality_sha256": "b26afae89cc6eaf80fe0b699a4bafe52fafe3c72e3fc4f7aee5d72392d4103cb",
+      "stage3_quality_sha256": "84677448bff7da7ca3f46620cad88195489fc6265614ca2d3d2a36e254783c8c",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -0.0075119733810424805,
+          1.6842564642429352,
+          -0.024202525615691806
+        ],
+        "half_extent_world": 1.6097530126571655,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9645537025224655e-08,
+      "observed_point_plane_max_abs_residual": 3.710454408653585e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001415",
+      "vertices_sha256": "cc07aa7212bf5397bdb6dbcdebb89d196f33f9481e591579698642a64aab36b5",
+      "points_sha256": "eaa001627ae0782b96d27f7be3e6bdf73462be9e3e79f8024a6f5285c915555e",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001415/condition_point.npz",
+      "source_sha256": "3d6c2a497d7975a576c3ba4239207fc346ddecc14a0fcbf5e14bae86ff78ef0d",
+      "source_xyz_array_sha256": "3779bf0e45eaf92a5a50e1e82e9475c993ec798e94d1b5cddbca8cbc8e65b4b6",
+      "source_normal_array_sha256": "d3afb40806041c33f8ba5ac9d22e3832a552c307f0d3f6376e206f5e113557c7",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001415/transform.json",
+      "transform_sha256": "38fa2dad8e4026554fd29dc9529fe292cf17fadfc51243ed45394682b7a4e934",
+      "stage2_quality_sha256": "e474e655d08bbcb0cb8c593b9fab48c2a8107cf3ad58068e28ac8d08dce74899",
+      "stage3_quality_sha256": "8ae8e0fb446b41dab372bdec9c2b183d8c29995cd8ba6c7e517711d8a350941c",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.08859772980213165,
+          0.3540608584880829,
+          -1.63717731614895
+        ],
+        "half_extent_world": 4.17383973300457,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9801838663523483e-08,
+      "observed_point_plane_max_abs_residual": 2.917830505162755e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000283",
+      "vertices_sha256": "41dc734378407833b880baeffa0bf4ee8bef8a20117f8573117628a9bb260b2f",
+      "points_sha256": "02576a4c833e0551a02100c8620dec6b70499381ff3b9d5730258a7c247343d1",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000283/condition_point.npz",
+      "source_sha256": "8b239de39d53f99492d81eb11e90f476e2eb24e8c8aeea5afdc5827e0d4cf7ea",
+      "source_xyz_array_sha256": "e097ff492506642e806a4d3abe2109eef7ca820f3ad9ac0f477b45112be19835",
+      "source_normal_array_sha256": "8a3433a6189d538f0301003b15cd303e9e5e41ac4626e2b9548c87db68a7436b",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000283/transform.json",
+      "transform_sha256": "4048c992965c3b256abf7f74f3876ed22d7e8a54cd17428e11314533bc62bff0",
+      "stage2_quality_sha256": "5e9c9ca9c0eb76fe7af0652365d317b47ac623eda11da33b8aee8c685092f458",
+      "stage3_quality_sha256": "7a13fdb202efc155f30f8092ecd26f0097d76cc04b089c42aadb2560834df480",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.6162304878234863,
+          0.9752080440521179,
+          32.00425434112549
+        ],
+        "half_extent_world": 7.085349082946777,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9800644063548987e-08,
+      "observed_point_plane_max_abs_residual": 3.07499644820481e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000935",
+      "vertices_sha256": "60cdce132383a1bbe6abb4ae68c870097ad86bbfa371bbcf914d5d1bea9ad792",
+      "points_sha256": "a942065d3e47ad0452656ac26834949ee55deb17f962619c5f384d5f10ad7342",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000935/condition_point.npz",
+      "source_sha256": "b31770a69393b16ad2fde11169e488e8bdf73de0937a2235836055aedb3f0c8b",
+      "source_xyz_array_sha256": "61b493957d83585bfd893ba7f5226a8a8c9aa69bef3cc7c364553990fb15cbbe",
+      "source_normal_array_sha256": "d006f5cd0b9b47bfe00a1eae26ce93161be1b192384b40c0d4d75d5c644e3192",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000935/transform.json",
+      "transform_sha256": "5838d338515ceb823ee3be545174ee665423a9aea9726d2b8a208b1b32f9a56c",
+      "stage2_quality_sha256": "b4c4a1b814351892513b8029176a3f8ec468d744066618d3fe3207a2aa822b85",
+      "stage3_quality_sha256": "7e6f4c9914aeceb5e9ac33ad1a7ee735b9e60a80f773b9122c71e2812c189794",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.00951615704889637,
+          0.0021774906222764984,
+          4.091359774438183e-05
+        ],
+        "half_extent_world": 0.15026907583770116,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.979197977204251e-08,
+      "observed_point_plane_max_abs_residual": 3.701962806787473e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000815",
+      "vertices_sha256": "bad5e14bce568a3d2b6cf04753005b369117151690cca9dd5f620d4f66b6d80e",
+      "points_sha256": "e85ef48a997429ccedc2e6e0beb2a9ff3ca2ef0f04b5e22782ca0b670db6b244",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000815/condition_point.npz",
+      "source_sha256": "0a4b9b3c3abfce2889da56ce295cd1cd142d79fe0f262f108323ddc5599f5755",
+      "source_xyz_array_sha256": "767fd0b6f711fa1c727408bfcf8680a8f728fda378b1de6fbd1c0ecddd667bc9",
+      "source_normal_array_sha256": "3f008af277f44e47f560cab97539804a7beba40d399ffa70fdc7542334282db4",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000815/transform.json",
+      "transform_sha256": "f1a5bd3111d478dbe6a362d8a4ae3446c2a8cd25bc3031921a9788e4ce7019f6",
+      "stage2_quality_sha256": "06fb6ee1fd824d5f8e42cf5dcab40dba34db56604028ccb0c5b90881e7a79831",
+      "stage3_quality_sha256": "59239c4155bb5e397b3c848a113a61402be92fb69e808ac868c1dd2e5faf9db0",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -195.07031432841723,
+          -6.9093842652973905,
+          261.4434610254877
+        ],
+        "half_extent_world": 244.902842538328,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.979887192555708e-08,
+      "observed_point_plane_max_abs_residual": 3.725291125231123e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000800",
+      "vertices_sha256": "f7b8161624f8c062b2025406706ce865f5ef2557f083ec1ece3dfd2a733bdd31",
+      "points_sha256": "7ee7952ab5dc8cdff823fd1e1c70d448012dce3fea5b65211192eb46a7a872c3",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000800/condition_point.npz",
+      "source_sha256": "e1c586eee8820b25d57c571e5a63cec1fbb2c29af78560b0d56ef8d79f0de367",
+      "source_xyz_array_sha256": "722510ae3681479eb15452c362f38ad9c480d597ad310430f5dc0f5636a69708",
+      "source_normal_array_sha256": "e95cac0db05526fa4f079d2f960075cb038d7f3f845595c3c0c740a13f59a64f",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000800/transform.json",
+      "transform_sha256": "5aa5db10b76f0eb34b29551b818ead440d000e49880a5d66badd6218c0695c28",
+      "stage2_quality_sha256": "b05364d24716619873166f889c368ed85aa98e03c2c9518134f76831c1bc7d8f",
+      "stage3_quality_sha256": "b96e7a683f61308ef5a766532c9f815d9bb4a205ac35232870d5fc5f8ae4ce7b",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.09999996423721313,
+          0.7499999999999998,
+          2.220446049250313e-16
+        ],
+        "half_extent_world": 1.800000011920929,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 0.0,
+      "observed_point_plane_max_abs_residual": 0.0,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001211",
+      "vertices_sha256": "1297486df8f979bd1cf5203610ab30a0926815c8b3d0797f4765e0cc4c4114b2",
+      "points_sha256": "9d3a19620bc91dd8c5b6f572f0959120bbdaa79c588d0ef8addee0e6621427e9",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001211/condition_point.npz",
+      "source_sha256": "4abe416c1ea3eaaf5bbaea3dddce91c53c9cfa04eb7d6809b9fda099e176c823",
+      "source_xyz_array_sha256": "5d488154059db46696fc0e5e553a8c40241718c5bd3b4ee6b3f7a8c8678c7cef",
+      "source_normal_array_sha256": "55054bd8b335b7555e217ceae943d55303d955cbc883806aac72420f70612471",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001211/transform.json",
+      "transform_sha256": "be245f473e1fc28bb04acda6e1abad8e321eda2fda6c744b736a34b9750086ea",
+      "stage2_quality_sha256": "4eadf01a2304b4d762229660917cf56d63a6cf083103f1ba295e7d135fa88826",
+      "stage3_quality_sha256": "9aaaee209cb112b258d2c72191aec4d0aef7dfa873f22e0b4fcf48396482406b",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -5.960464477539063e-08,
+          1.2929107633873953,
+          0.003544926643371582
+        ],
+        "half_extent_world": 2.4344550371170044,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9758341790753207e-08,
+      "observed_point_plane_max_abs_residual": 3.675817681052934e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001093",
+      "vertices_sha256": "3b246f92dc83906afe3fc3688af95629cc8dd65e59d5113065a883ccf5ee5e12",
+      "points_sha256": "c73398e978ad472fbdd17e14634a6638ba4d5f59c3142cebbde9aac8bd26188e",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001093/condition_point.npz",
+      "source_sha256": "b64793b8d5f86e439a40468577ebc03d67ed9cc28fb30dce47062deb541f221f",
+      "source_xyz_array_sha256": "2d861e5dfdeb24897f5d15068c4e47aaf5c07843865c06242f292893b78aced0",
+      "source_normal_array_sha256": "5141408b445a14ca7f34684ad533a5439dbf6afc474b1b4731a04c9ef4ae9db5",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001093/transform.json",
+      "transform_sha256": "a22da2b82671708c5e7c252edde16117f2f85602e1ac492f7da265c4fe9870b4",
+      "stage2_quality_sha256": "041ba834bb9d3c259574a6081e8be8fc4de9ed02403b2a32af94890cf3b8fe0e",
+      "stage3_quality_sha256": "96cec2853081e450e6639c5cac8ff1b2223eff1bea869cbb9747c80fb246d061",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.04276558153094745,
+          0.4269828051328654,
+          -0.69277932533326
+        ],
+        "half_extent_world": 1.9573455125020978,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9795556022449432e-08,
+      "observed_point_plane_max_abs_residual": 4.04120482984556e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000783",
+      "vertices_sha256": "94237b459701df4c8e065c6ecefa38b6a72161167de05ed7ad876446496e782b",
+      "points_sha256": "8c5317557a9bd473cb4daa495b3c1854244ddaa43c6b29365c0173d61f45a432",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000783/condition_point.npz",
+      "source_sha256": "e4a2ca85be658a92ff0e0bc5ee31821244fdd7c128f8862f933f84526a99ccd8",
+      "source_xyz_array_sha256": "91de02c6192830d38a47d3c8d2b8d4fa8b75246d6d89bb78891855a4ea35163f",
+      "source_normal_array_sha256": "7289f94d968798887aa1993b42bf53f2e7bca4ea8361bfe0210fc6c27d06fa0e",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000783/transform.json",
+      "transform_sha256": "e33eae92e8ba312fa561f332bd0477fa88b862ffab921d2027b6bc70c47e3e02",
+      "stage2_quality_sha256": "b2c2e2648a076feec7524f505ffaa1a40ae6ea275671704cb1641dba20f2679b",
+      "stage3_quality_sha256": "e25dc2fc7ef622245c67353bfe1d1796727bcdd501dfd84d76a677353326d247",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.014321327209472656,
+          31.628204252570868,
+          1.0844550132751571
+        ],
+        "half_extent_world": 31.681156251579523,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9793195133187567e-08,
+      "observed_point_plane_max_abs_residual": 2.97130723521784e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000083",
+      "vertices_sha256": "190797af22607913afb990e657fa6493bf56e5d85dfdad1f884db165254b450a",
+      "points_sha256": "e8a072c9696b128756fdd97ae2bf32879a5069a69f6e0966e5b357285b0bcd99",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000083/condition_point.npz",
+      "source_sha256": "dbc0ac2f1af9328643bdec27da388141a65ef1dd34201883bfca439f81fab445",
+      "source_xyz_array_sha256": "0e3a21a2f4bf5ec6128b8e5609188dc9d643de7604e87b4079a81c2048378fc3",
+      "source_normal_array_sha256": "d2900b9be44b84227f453f735e7ef4a62ac939e0b131966e98bc2a23a860512d",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000083/transform.json",
+      "transform_sha256": "26e36f7b1324e71f6775a21e191fb90bf66c73e36b90fb3e057e6d288d6f3394",
+      "stage2_quality_sha256": "befd7b263343b01de5df48a2b9c666def4e46f3a81c0a107ecb83044490a1c42",
+      "stage3_quality_sha256": "3a01b6023689d141a0cd38caca03f4b01e45978fa19e333eebad55460371ab79",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          1.032650500535965,
+          0.016826987266540527,
+          0.3730830103158951
+        ],
+        "half_extent_world": 0.7715170234441757,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9800340084484844e-08,
+      "observed_point_plane_max_abs_residual": 4.012301574318755e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001792",
+      "vertices_sha256": "a7cd1eb4d664570dd2817f7d5aab090f2dbb78016c26198b95a6336cee9b0d6c",
+      "points_sha256": "0f473426c82b3161c7f23d1fd979241f7dce8c3df4e9f4afd442961719347a39",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001792/condition_point.npz",
+      "source_sha256": "b140b538ca309c842872c32fd57e8e9964e36f043b5b79e4b7d5eaf2168caa75",
+      "source_xyz_array_sha256": "c27b5334e3e12bc0b184749c48816a3992d147aed156885e551fd274df2a1032",
+      "source_normal_array_sha256": "91caea757f496366cea32dd8e536397dba5ef73565d8be45006178a046696232",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001792/transform.json",
+      "transform_sha256": "426503ecd0e4e8e53444f0875d73f78d539bdd70acf92574674e40976b4b97fc",
+      "stage2_quality_sha256": "1500d279432e00d29d8bf597939ede3054014087646988bca06d521c7f6aebf4",
+      "stage3_quality_sha256": "dd7035a90446fdee6310763f553aa72479d0542888a51e849e12bbf4ef244385",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -0.047986000000000084,
+          2.769339,
+          -0.06760649999999996
+        ],
+        "half_extent_world": 3.4955640000000003,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.979649460499445e-08,
+      "observed_point_plane_max_abs_residual": 3.015090031734547e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000280",
+      "vertices_sha256": "eaf30dd3c60155e70c719374257c39f45eb6d56e846d13c676407e25c2e1bf69",
+      "points_sha256": "96b4b131ff1b3de9b08c646c4cee4c79acf17379657f09cb9d701243f012df72",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000280/condition_point.npz",
+      "source_sha256": "1e6b1f1e44be8d018430541238051ede0caffcbbc76724933cd2ef09606609e3",
+      "source_xyz_array_sha256": "80c8b0faa7b05b7e8f2f9c994e8111c1283f8768121035b2e02b8b8dcec5a9b0",
+      "source_normal_array_sha256": "9cd5c2e9629edacf2cd0cbb117334229cad1137b529af5da786c734a542f8648",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000280/transform.json",
+      "transform_sha256": "536828474ef5cfe13cd994f94ccf8f17737b1e433470c744f030c0f9ae7dff0e",
+      "stage2_quality_sha256": "e0a1c770cf62f65b591978a470f8229ec99c16b7ee0ec65eac576b5a41210b2d",
+      "stage3_quality_sha256": "6d724187a4ed876b203116c12bb5524192effae7b26fb24d2225ddc4e9cf9842",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          29.168673476837156,
+          -3.4156124727180868,
+          71.2213750210985
+        ],
+        "half_extent_world": 26.922050476074148,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.98008701049568e-08,
+      "observed_point_plane_max_abs_residual": 3.206047870935036e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000167",
+      "vertices_sha256": "6051fd6fa39fcb26a41435f0028d0d815aee4dc27e1dcf9f580241f649cab73d",
+      "points_sha256": "223a43a5daf687bc9df17c3296c30a9a0cdfb93e3b5b93c5c2c326268f91f99c",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000167/condition_point.npz",
+      "source_sha256": "62d4d39c2dba7a2a7fdabc45f9ed2da02fd2b4ed048dd1467f329f455bbbd04c",
+      "source_xyz_array_sha256": "e1c09585b8465883d611f6fdeb4c47e5ff51f6fc148a3273311ddd7f4ccb8286",
+      "source_normal_array_sha256": "6ec325f83923804cb58f459c94292c6c4bb6c44cb84176e26728170c5683b5b6",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000167/transform.json",
+      "transform_sha256": "c9dd5434b5fba204cbb70c75805ac6f99a691046b870a60867e8a3019db3b890",
+      "stage2_quality_sha256": "f59735f6f0cabcdce46048fc951d16b9930ba3ec344d62c42ec3230a91d6e4cf",
+      "stage3_quality_sha256": "891e194954bbeb2f34a3d4c8197e0dfdc37bdcb423048b623e05ff08839f173e",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -0.18594312225971965,
+          5.1611626781298385,
+          -0.11242239775189411
+        ],
+        "half_extent_world": 5.7860338670318106,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.980066182711738e-08,
+      "observed_point_plane_max_abs_residual": 4.112722985782913e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_001232",
+      "vertices_sha256": "4ecfe7c07c6d178b0e5b2e1f103ead2703b5c2d667672b08191d30331d3692e2",
+      "points_sha256": "2c71146fe5699a0f350a2b91b0ac1d4207707bb860eaef253993e2bb92b9de90",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001232/condition_point.npz",
+      "source_sha256": "fb9e68e2e753b04769f4892e3f4fef27a189249c34901e386476456ad47b150e",
+      "source_xyz_array_sha256": "dc42d7234fc6a471f508ceb21e892b865c20c44bd46ba93dc4f6b197783b52a5",
+      "source_normal_array_sha256": "602549ad9aef53592a066684efa269fd06f8cabb8791f7650ebcbc08f1a9108f",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_001232/transform.json",
+      "transform_sha256": "e39e3c81036de930a8ab78515c0c0dd6c6edbdf96f1ba8056e953234f0378f73",
+      "stage2_quality_sha256": "54bf67ffcab7b328985c339ad069cd3200f928d63db57d83c30aa36126b3afbb",
+      "stage3_quality_sha256": "6f7fc3a7d875a395ec681ba2a55e0f77de3e2dbf078b715c32ad3831f17fb897",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          0.05245494842529297,
+          0.07262539863586426,
+          0.2683488130569458
+        ],
+        "half_extent_world": 3.1623255014419556,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.979827551374825e-08,
+      "observed_point_plane_max_abs_residual": 4.1358212153619345e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    },
+    {
+      "uid": "nexus_2k_000898",
+      "vertices_sha256": "7d5099eeac75591602ea952a63b661f1718ca44a75b038e81adaded37b33bc16",
+      "points_sha256": "c25bc4aca4161e4d18fdd68bde8ddf8ac6a933085b9b36e93725b16b4c15a0cb",
+      "point_mask_sha256": "da3ada71e16b30abeb45a4598c2e15fbb2e5cdddb784ba5ea6776e7b3cd51ff3",
+      "source_kind": "existing_pointcloud_xyz_normals",
+      "source_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000898/condition_point.npz",
+      "source_sha256": "e739b1ca4e4635739370d1f78bf3c86de854d8686bad41fef1a643e14b57ef8e",
+      "source_xyz_array_sha256": "2cae3cc6967aff75fc5ac350f631e48a6aa30b6900e016273cb8cdf3d150b5b3",
+      "source_normal_array_sha256": "fb40151ae3c02e055ccfd5764253bc4121332ef940f5ddd06cba44e254b33706",
+      "transform_file": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage2_outputs/nexus_2k_000898/transform.json",
+      "transform_sha256": "bc3a819c561f523ffbfbe16a16a8d15bc55bed54028acd4add63703a8691f15f",
+      "stage2_quality_sha256": "7ce9b127db12610d06a194d0f11b69dff38d1da0f9462fd3d0dafbe6853090e0",
+      "stage3_quality_sha256": "90679fac06a52ceca5d4a2b9d0d22a1879aa375566289c6a14609fe7a7eca5ed",
+      "xyz_transform": {
+        "existing_frame": "Stage2 normalized coordinates",
+        "packing": "byte-preserving concatenate XYZ+normals",
+        "center_world": [
+          -0.0613010077035554,
+          5.267688651323335,
+          0.0005108673405627151
+        ],
+        "half_extent_world": 4.960924904725034,
+        "formula": "v_norm = (v_world - center_world) / half_extent_world",
+        "mesh_coordinates": "existing Stage3 D9 cell centers in the same frame"
+      },
+      "normal_transform": {
+        "applied": "none",
+        "reason": "existing unit normals; source normalization is positive uniform scaling"
+      },
+      "observed_normal_max_abs_error": 2.9789921973666367e-08,
+      "observed_point_plane_max_abs_residual": 3.5310422299907485e-08,
+      "gt_vertices_unchanged": true,
+      "gt_topology_unchanged": true
+    }
+  ],
+  "rope": {
+    "scale": 256.0,
+    "input": "existing normalized GT XYZ",
+    "units": "D9 reference-grid units: one cell is one unit",
+    "formula": "rope_positions = vertices_norm * 256",
+    "basis": "Unchanged apply_vertex_rope expects reference-grid units; existing D9 cell spacing is 1/256; local first-round choice, no scale sweep."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "meshes": 50,
+  "totals": {
+    "meshes": 50,
+    "vertices": 52820,
+    "edges": 154978,
+    "faces": 102890,
+    "pairs": 41866721
+  },
+  "data_source_sha256": "d9bbfae852eaf4f3d9cddaa9c80558c37ab23d9d8ba04ea1a4d9b91c1ba82d48",
+  "conditions_sha256": "95ffb40d59a58b0ba3b52299e624737832e7d4ed68d9f955e618e019d48b8e36",
+  "coordinate_audit_sha256": "53fedb2d6d796792278365cc1bd1c6bfb8b477e3e41cb5a4630d30fbab30d2db",
+  "gpu_used": false,
+  "rope_scale": 256.0
+}

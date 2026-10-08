@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "authorized_gpu_uuid": "GPU-208b1847-4ab0-f090-b8d4-f21ebd908b00",
+  "max_gpu_seconds": 1200,
+  "max_optimizer_updates": 1,
+  "charged_gpu_seconds": 152.61138182412833,
+  "effective_optimizer_updates": 0,
+  "last_completed_updates": 0,
+  "attempts": [
+    {
+      "phase": "performance_preflight",
+      "pid": 766,
+      "started_unix": 1791371411.7261028,
+      "gpu_uuid": "GPU-208b1847-4ab0-f090-b8d4-f21ebd908b00",
+      "charged_before": 0.0,
+      "last_seen_unix": 1791371564.3374772,
+      "ended_unix": 1791371564.337479,
+      "seconds": 152.61138182412833,
+      "outcome": "finished",
+      "exceeded_time_budget": false
+    }
+  ],
+  "active": null
+}
