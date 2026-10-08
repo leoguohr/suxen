@@ -1,0 +1,241 @@
+{
+  "complete": true,
+  "started_utc": "2026-10-08T06:44:06.487397+00:00",
+  "finished_utc": "2026-10-08T06:51:06.211529+00:00",
+  "hostname": "eusk5t3tad7qs-0",
+  "output_root": "/tmp/nexus_github_20261008",
+  "assets": [
+    {
+      "asset": "00_collection_manifest_and_commands.zip",
+      "path": "/tmp/nexus_github_20261008/00_collection_manifest_and_commands.zip",
+      "bytes": 1541922,
+      "sha256": "6b3c775a8269d50e45fa7064de7e4c5044222a97e664ecedf35f6ee34362e85d",
+      "crc_verified": true,
+      "zip_member_count": 22,
+      "role": "All source/root completeness and exclusion manifests, collection/verification commands, collector/finalizer source, security scans, protocol noise completeness and instance snapshot metadata"
+    },
+    {
+      "asset": "01_vertex_arch_sweep_recovery_and_original.zip",
+      "path": "/tmp/nexus_github_20261008/01_vertex_arch_sweep_recovery_and_original.zip",
+      "bytes": 107971559,
+      "sha256": "6f45b3e586df02c98f272c5593b248ab2f119d30bb6801338445c974ec37bd06",
+      "crc_verified": true,
+      "source_sha256_rechecked": true,
+      "zip_member_count": 2698,
+      "source_file_count": 2690,
+      "source_bytes": 304742596
+    },
+    {
+      "asset": "02_e0_e1_results.zip",
+      "path": "/tmp/nexus_github_20261008/02_e0_e1_results.zip",
+      "bytes": 1301432705,
+      "sha256": "1fa689a8a06470da62071336f6e4cc089bf8fcfadf2e70f88ebea64a10028d6d",
+      "crc_verified": true,
+      "source_sha256_rechecked": true,
+      "zip_member_count": 1239,
+      "source_file_count": 1232,
+      "source_bytes": 1331434617
+    },
+    {
+      "asset": "03_e2_C_results.zip",
+      "path": "/tmp/nexus_github_20261008/03_e2_C_results.zip",
+      "bytes": 1144953109,
+      "sha256": "d09d78ced94fab38b12820224de924cb1a0507a5b9d899c4846ac06243863857",
+      "crc_verified": true,
+      "source_sha256_rechecked": true,
+      "zip_member_count": 331,
+      "source_file_count": 324,
+      "source_bytes": 1169733033
+    },
+    {
+      "asset": "04_e2_N_results.zip",
+      "path": "/tmp/nexus_github_20261008/04_e2_N_results.zip",
+      "bytes": 1173642125,
+      "sha256": "062d1d1ea1833df40d71581762775c472ef7447a7bcb9870fd9a7647d557bf8d",
+      "crc_verified": true,
+      "source_sha256_rechecked": true,
+      "zip_member_count": 331,
+      "source_file_count": 324,
+      "source_bytes": 1199431561
+    },
+    {
+      "asset": "05_e2_T_results.zip",
+      "path": "/tmp/nexus_github_20261008/05_e2_T_results.zip",
+      "bytes": 1172413460,
+      "sha256": "30ea172c3a6eddad4a22ca21821f5bde160bd4ddde2a6a3bb5eba81ce509ab28",
+      "crc_verified": true,
+      "source_sha256_rechecked": true,
+      "zip_member_count": 331,
+      "source_file_count": 324,
+      "source_bytes": 1194322626
+    },
+    {
+      "asset": "06_e0_e2_protocol_actual_noise_and_records.zip",
+      "path": "/tmp/nexus_github_20261008/06_e0_e2_protocol_actual_noise_and_records.zip",
+      "bytes": 496658130,
+      "sha256": "2553bc62a71d29a6c6d6b34e8a46aecbd48565f67588debd2162a8fbb1c05218",
+      "crc_verified": true,
+      "source_sha256_rechecked": true,
+      "zip_member_count": 458,
+      "source_file_count": 451,
+      "source_bytes": 538708251
+    },
+    {
+      "asset": "07_d9_interp_trajectory_results.zip",
+      "path": "/tmp/nexus_github_20261008/07_d9_interp_trajectory_results.zip",
+      "bytes": 951641982,
+      "sha256": "7a435e4c04edeb511efa503e99149c158ba9836ec089414c5d5d98c72b36aeb5",
+      "crc_verified": true,
+      "source_sha256_rechecked": true,
+      "zip_member_count": 1048,
+      "source_file_count": 1041,
+      "source_bytes": 964917126
+    },
+    {
+      "asset": "08_d15_resume7000_results.zip",
+      "path": "/tmp/nexus_github_20261008/08_d15_resume7000_results.zip",
+      "bytes": 81089070,
+      "sha256": "25a70d44d16162d8f7d715edb5e355a8f79c9eb150724e3d0286929cfe2be7c2",
+      "crc_verified": true,
+      "source_sha256_rechecked": true,
+      "zip_member_count": 2155,
+      "source_file_count": 2148,
+      "source_bytes": 113620559
+    },
+    {
+      "asset": "09_prepared_d9_conditions_labels_and_runtime.zip",
+      "path": "/tmp/nexus_github_20261008/09_prepared_d9_conditions_labels_and_runtime.zip",
+      "bytes": 10114402,
+      "sha256": "474b3e6e1a6bdcf707562cc84e8b8b16fd8bf45a9f55cf22c4ef621396c76907",
+      "crc_verified": true,
+      "source_sha256_rechecked": true,
+      "zip_member_count": 494,
+      "source_file_count": 484,
+      "source_bytes": 11338900
+    }
+  ],
+  "total_zip_bytes": 6441458464,
+  "source_file_count": 9018,
+  "source_bytes": 6828249269,
+  "root_summary": {
+    "sweep_recovery": {
+      "source_root": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b",
+      "scope": "all",
+      "missing": false,
+      "included_file_count": 2603,
+      "included_bytes": 298793662,
+      "excluded_file_count": 4,
+      "excluded_file_bytes": 112009617456,
+      "excluded_directory_count": 0
+    },
+    "capability": {
+      "source_root": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_e0_e2_capability_20261003",
+      "scope": "all",
+      "missing": false,
+      "included_file_count": 2655,
+      "included_bytes": 5433630088,
+      "excluded_file_count": 12,
+      "excluded_file_bytes": 255920701330,
+      "excluded_directory_count": 2
+    },
+    "interp_trajectory": {
+      "source_root": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_A_interp_trajectory_20261002",
+      "scope": "all",
+      "missing": false,
+      "included_file_count": 1041,
+      "included_bytes": 964917126,
+      "excluded_file_count": 1,
+      "excluded_file_bytes": 951456311,
+      "excluded_directory_count": 1
+    },
+    "resume7000": {
+      "source_root": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_overfit50_resume7000_20260930",
+      "scope": "all",
+      "missing": false,
+      "included_file_count": 2148,
+      "included_bytes": 113620559,
+      "excluded_file_count": 3,
+      "excluded_file_bytes": 56070077781,
+      "excluded_directory_count": 0
+    },
+    "sweep_original": {
+      "source_root": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006",
+      "scope": "all",
+      "missing": false,
+      "included_file_count": 87,
+      "included_bytes": 5948934,
+      "excluded_file_count": 4,
+      "excluded_file_bytes": 112075452112,
+      "excluded_directory_count": 1
+    },
+    "prepared_d9": {
+      "source_root": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/prepared_d9",
+      "scope": "all",
+      "missing": false,
+      "included_file_count": 51,
+      "included_bytes": 445920,
+      "excluded_file_count": 0,
+      "excluded_file_bytes": 0,
+      "excluded_directory_count": 0
+    },
+    "source_runtime": {
+      "source_root": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime",
+      "scope": "all",
+      "missing": false,
+      "included_file_count": 411,
+      "included_bytes": 10729244,
+      "excluded_file_count": 0,
+      "excluded_file_bytes": 0,
+      "excluded_directory_count": 4
+    },
+    "d9_support_code": {
+      "source_root": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930",
+      "scope": "immediate_code_and_records",
+      "missing": false,
+      "included_file_count": 19,
+      "included_bytes": 127436,
+      "excluded_file_count": 0,
+      "excluded_file_bytes": 0,
+      "excluded_directory_count": 0
+    },
+    "gtparents_support_code": {
+      "source_root": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_A_gtparents_20261002",
+      "scope": "immediate_code_and_records",
+      "missing": false,
+      "included_file_count": 3,
+      "included_bytes": 36300,
+      "excluded_file_count": 0,
+      "excluded_file_bytes": 0,
+      "excluded_directory_count": 0
+    }
+  },
+  "secret_finding_count": 0,
+  "metadata_files": [
+    "ADDITIONAL_TOKEN_LITERAL_SCAN.json",
+    "ASSETS.partial.json",
+    "COMMANDS_EXECUTED.json",
+    "COMPLETE_SOURCE_FILE_MANIFEST.json",
+    "EXCLUDED_FILES.json",
+    "PREPARED_D9_REFERENCE_CHECKS.json",
+    "PROTOCOL_NOISE_COMPLETENESS.json",
+    "ROOT_INVENTORY/capability.json",
+    "ROOT_INVENTORY/d9_support_code.json",
+    "ROOT_INVENTORY/gtparents_support_code.json",
+    "ROOT_INVENTORY/interp_trajectory.json",
+    "ROOT_INVENTORY/prepared_d9.json",
+    "ROOT_INVENTORY/resume7000.json",
+    "ROOT_INVENTORY/source_runtime.json",
+    "ROOT_INVENTORY/sweep_original.json",
+    "ROOT_INVENTORY/sweep_recovery.json",
+    "SECRET_SCAN_FINDINGS.json",
+    "SNAPSHOT_METADATA.json",
+    "collect_results.py"
+  ],
+  "result_zip_count": 9,
+  "metadata_zip_count": 1,
+  "finalized_utc": "2026-10-08T06:53:10.414340+00:00",
+  "all_selected_source_files_in_archives_exactly_once": true,
+  "protocol_array_completeness": "401/401 declared arrays, SHA256 matched; shared events (16000,2); 50 UID",
+  "primary_metadata_asset": "00_collection_manifest_and_commands.zip",
+  "authoritative_index": "FINAL_DELIVERY_INDEX.json"
+}

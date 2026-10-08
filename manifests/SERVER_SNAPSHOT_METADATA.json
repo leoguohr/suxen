@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-10-08T06:44:06.487397+00:00",
+  "hostname": "eusk5t3tad7qs-0",
+  "scope": "Read-only collection of existing results, arrays, protocol noise, original architecture-sweep code, prepared labels and condition/runtime inputs. No model execution, training, GPU access, or source modification.",
+  "current_process_snapshot": {
+    "matching_nexus_training_or_diagnostic_processes": [],
+    "ps_returncode": 0
+  },
+  "operator_supplied_current_instance_fact": "Current replacement instance eusk5t3tad7qs-0 has one idle GPU and no running training from this project. Collector did not query or access the GPU.",
+  "historical_sweep_snapshot_warning": "Any queue/running state archived from the old instance is a historical snapshot, not current execution.",
+  "operator_supplied_last_sweep_progress": {
+    "S2": {
+      "logged_added_updates": 6098,
+      "checkpoint_added_updates": 6000
+    },
+    "S3": {
+      "logged_added_updates": 5688,
+      "checkpoint_added_updates": 5600
+    },
+    "S4_S5_S6": "Not started in the reported old-instance snapshot"
+  },
+  "weight_policy": "All .pt/.pth/.ckpt/.safetensors excluded without reading tensor payloads. Excluded files have size/mtime and sha256=null; their hashes are not recomputed.",
+  "nested_archive_policy": "Existing nested archives excluded; fresh ZIP assets independently decompress.",
+  "security_policy": "Potential secret-bearing files excluded entirely. Findings report only path, line and type, never matching text.",
+  "archive_size_limit_bytes": 1610612736,
+  "collector_sha256": "057ba6d49cf35b1d8bb34a4e1f17f27e74de67f2dd51c239cd57b5a4785d5a4c"
+}

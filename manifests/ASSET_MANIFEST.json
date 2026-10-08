@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-08",
+  "repository": "leoguohr/nexus",
+  "visibility": "private",
+  "release_tag": "evidence-2026-10-08",
+  "archive_count": 13,
+  "total_archive_bytes": 8505606738,
+  "assets": [
+    {
+      "name": "00_collection_manifest_and_commands.zip",
+      "bytes": 1541922,
+      "sha256": "6b3c775a8269d50e45fa7064de7e4c5044222a97e664ecedf35f6ee34362e85d",
+      "origin": "server_snapshot"
+    },
+    {
+      "name": "01_vertex_arch_sweep_recovery_and_original.zip",
+      "bytes": 107971559,
+      "sha256": "6f45b3e586df02c98f272c5593b248ab2f119d30bb6801338445c974ec37bd06",
+      "origin": "server_snapshot"
+    },
+    {
+      "name": "02_e0_e1_results.zip",
+      "bytes": 1301432705,
+      "sha256": "1fa689a8a06470da62071336f6e4cc089bf8fcfadf2e70f88ebea64a10028d6d",
+      "origin": "server_snapshot"
+    },
+    {
+      "name": "03_e2_C_results.zip",
+      "bytes": 1144953109,
+      "sha256": "d09d78ced94fab38b12820224de924cb1a0507a5b9d899c4846ac06243863857",
+      "origin": "server_snapshot"
+    },
+    {
+      "name": "04_e2_N_results.zip",
+      "bytes": 1173642125,
+      "sha256": "062d1d1ea1833df40d71581762775c472ef7447a7bcb9870fd9a7647d557bf8d",
+      "origin": "server_snapshot"
+    },
+    {
+      "name": "05_e2_T_results.zip",
+      "bytes": 1172413460,
+      "sha256": "30ea172c3a6eddad4a22ca21821f5bde160bd4ddde2a6a3bb5eba81ce509ab28",
+      "origin": "server_snapshot"
+    },
+    {
+      "name": "06_e0_e2_protocol_actual_noise_and_records.zip",
+      "bytes": 496658130,
+      "sha256": "2553bc62a71d29a6c6d6b34e8a46aecbd48565f67588debd2162a8fbb1c05218",
+      "origin": "server_snapshot"
+    },
+    {
+      "name": "07_d9_interp_trajectory_results.zip",
+      "bytes": 951641982,
+      "sha256": "7a435e4c04edeb511efa503e99149c158ba9836ec089414c5d5d98c72b36aeb5",
+      "origin": "server_snapshot"
+    },
+    {
+      "name": "08_d15_resume7000_results.zip",
+      "bytes": 81089070,
+      "sha256": "25a70d44d16162d8f7d715edb5e355a8f79c9eb150724e3d0286929cfe2be7c2",
+      "origin": "server_snapshot"
+    },
+    {
+      "name": "09_prepared_d9_conditions_labels_and_runtime.zip",
+      "bytes": 10114402,
+      "sha256": "474b3e6e1a6bdcf707562cc84e8b8b16fd8bf45a9f55cf22c4ef621396c76907",
+      "origin": "server_snapshot"
+    },
+    {
+      "name": "Nexus_Teacher_Reconstruction_20261008.zip",
+      "bytes": 81098072,
+      "sha256": "d95219e4c4d71a1f557d9d20177a8b72267415ac09f45b4ccda75a96010f09b8",
+      "origin": "local_verified_archive"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_Evidence_20261008.zip",
+      "bytes": 1741110688,
+      "sha256": "a543fb89d8ce22b4d2ce1b480b5a520fe3bcfc07661ac811b1578565d8abb98b",
+      "origin": "local_verified_archive"
+    },
+    {
+      "name": "Teacher_Original_nexus_overfit_data_results_no_code.zip",
+      "bytes": 241939514,
+      "sha256": "982686feb58c207932d9311786cabb3ffd7a1397627b83c44df3d5c8ab2189e5",
+      "origin": "teacher_original_unmodified"
+    }
+  ],
+  "scope": "existing Vertex results, conclusions, code, teacher original and reconstructed materials; own large checkpoints excluded"
+}
