@@ -1,0 +1,178 @@
+{
+  "created_at": "2026-10-08T09:45:00.548738+00:00",
+  "source": {
+    "name": "Nexus_Vertex_Historical_Evidence_20261008.zip",
+    "bytes": 1741110688,
+    "sha256": "a543fb89d8ce22b4d2ce1b480b5a520fe3bcfc07661ac811b1578565d8abb98b",
+    "member_count": 38035
+  },
+  "max_part_bytes": 104857600,
+  "parts": [
+    {
+      "name": "Nexus_Vertex_Historical_metadata_part01.zip",
+      "bytes": 7706484,
+      "sha256": "f23ec29d054004def0dc289f801038940f1fbd7f094ddb8b6a1601fc53aa30d1",
+      "file_count": 8,
+      "group": "metadata"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_interp_part01.zip",
+      "bytes": 94161638,
+      "sha256": "8759b851a5b02875b7950c4afbc69fefc85b86d6c2ff1b5fea240781f621a69d",
+      "file_count": 325,
+      "group": "interp"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_interp_part02.zip",
+      "bytes": 94346570,
+      "sha256": "09cf0fc8cfeeac904947d9ee8e430194983376aafc36cab4fedba667da0515a5",
+      "file_count": 60,
+      "group": "interp"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_interp_part03.zip",
+      "bytes": 93337812,
+      "sha256": "3b24cdc61e0992d272fa44d52752a7466cb261dd251f4d7a623b77e170aa78a8",
+      "file_count": 63,
+      "group": "interp"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_interp_part04.zip",
+      "bytes": 92885617,
+      "sha256": "7c7576e3bb62df35c46da0fac369ae55f8e651fabef2c5e13abae67fa588c71c",
+      "file_count": 92,
+      "group": "interp"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_interp_part05.zip",
+      "bytes": 93893344,
+      "sha256": "b74c8aa86ce6dc1198639df0257d8a06765f893c187f5e794f1a4f9fba197a03",
+      "file_count": 68,
+      "group": "interp"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_interp_part06.zip",
+      "bytes": 92973143,
+      "sha256": "456fcd0c5ca44785471250c28f4ba0b0b5872153718283610a93b4f867985f44",
+      "file_count": 65,
+      "group": "interp"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_interp_part07.zip",
+      "bytes": 74849741,
+      "sha256": "d208c87758ce3a106a414c1b51a0c3949ee285db3efce8050e0ca3cb500fd488",
+      "file_count": 76,
+      "group": "interp"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_gtparents_part01.zip",
+      "bytes": 94242798,
+      "sha256": "b1bab7885359965e629483a4affc64a7f043749c9f3501cc09da3745b41e66f4",
+      "file_count": 1647,
+      "group": "gtparents"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_gtparents_part02.zip",
+      "bytes": 92905804,
+      "sha256": "d7d130f6711118e4f39893f0812d934e2ab20ea87ace2e8db0e8bb20d6bf50cc",
+      "file_count": 263,
+      "group": "gtparents"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_gtparents_part03.zip",
+      "bytes": 93212325,
+      "sha256": "f56e7aeace4e666f13b60f720ed11cefdeca32a0b01712b2ba16f519240025a1",
+      "file_count": 261,
+      "group": "gtparents"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_gtparents_part04.zip",
+      "bytes": 85191621,
+      "sha256": "8630d1e2af72709697216aa47befd5cd5a22b66f84b8acef082200875e8c685c",
+      "file_count": 266,
+      "group": "gtparents"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_efg_part01.zip",
+      "bytes": 91500092,
+      "sha256": "2008af751125daeae57a3dcdf073c1e5a8aa911fa0bd9b1a4985556b246455a8",
+      "file_count": 637,
+      "group": "efg"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_efg_part02.zip",
+      "bytes": 94318302,
+      "sha256": "ef8660913cd28c0b171f800334002d2b02c7cf66d74aa36eedf7390965b29f48",
+      "file_count": 2251,
+      "group": "efg"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_efg_part03.zip",
+      "bytes": 83038170,
+      "sha256": "c73e5f6ad1eb12326dfe61d412bf69f6c422b21e8321e1e3197ead7a0f075e76",
+      "file_count": 4428,
+      "group": "efg"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_cd_part01.zip",
+      "bytes": 93977797,
+      "sha256": "31b4457783833234697017cf421bc7045451089d30192c6d22f7836f5a5f4852",
+      "file_count": 930,
+      "group": "cd"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_cd_part02.zip",
+      "bytes": 94341055,
+      "sha256": "5c9ff22df5ee3cb6765961fa0d22489568367e8668e0c0c48f5efa5de8cd6a12",
+      "file_count": 3182,
+      "group": "cd"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_cd_part03.zip",
+      "bytes": 44620978,
+      "sha256": "432b98ba178e7bfb618749f47350d28bd8d369147ca30427be4311c9a6d97d29",
+      "file_count": 1099,
+      "group": "cd"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_early_history_part01.zip",
+      "bytes": 71527094,
+      "sha256": "2fb3efdd376132bc5ca5ee308d722d41b32b80b1b2a0b5b95d1851ef6db8e7da",
+      "file_count": 8173,
+      "group": "early_history"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_early_history_part02.zip",
+      "bytes": 94106419,
+      "sha256": "df0de498f4020bee6fc23bed7ddad923e1636726a0b60f20cf0c24ca19ded03c",
+      "file_count": 5006,
+      "group": "early_history"
+    },
+    {
+      "name": "Nexus_Vertex_Historical_early_history_part03.zip",
+      "bytes": 64735024,
+      "sha256": "74114d8d624f590ccef37cce49c35c44bce569459efa043263a5733d1b482a3d",
+      "file_count": 9135,
+      "group": "early_history"
+    }
+  ],
+  "member_to_part": {
+    "file": "HISTORICAL_MEMBER_TO_PART.jsonl",
+    "sha256": "caa543c85857bb64691b65c2e72b08c9fbfb359953a0aaa96005f495c6b1d34b",
+    "rows": 38035
+  },
+  "verification": {
+    "source_member_crc_checked": 38035,
+    "output_zip_crc_passed": 21,
+    "member_sha256_equal": 38035,
+    "source_set_equals_output_set": true,
+    "duplicate_output_members": 0,
+    "missing_output_members": 0,
+    "added_output_members": 0,
+    "all_parts_within_limit": true,
+    "source_zip_unchanged": true
+  },
+  "part_count": 21,
+  "total_compressed_bytes": 1741871828,
+  "largest_part_bytes": 94346570
+}

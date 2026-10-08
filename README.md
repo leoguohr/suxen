@@ -28,7 +28,7 @@
 
 | 分类 | 可浏览内容 | 完整数组及原件 |
 |---|---|---|
-| 自己的 Vertex | `vertex/` | `Nexus_Vertex_Historical_Evidence_20261008.zip` 及服务器证据资产 |
+| 自己的 Vertex | `vertex/` | 21个 `Nexus_Vertex_Historical_*_part*.zip` 及服务器证据资产（见下载索引） |
 | 老师候选复建与核验 | `teacher/` | `Nexus_Teacher_Reconstruction_20261008.zip` |
 | 老师原始交付 | 原件身份见 `manifests/teacher_original_identity.json` | `Teacher_Original_nexus_overfit_data_results_no_code.zip` |
 
