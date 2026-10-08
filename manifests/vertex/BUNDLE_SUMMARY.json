@@ -1,0 +1,29 @@
+{
+  "name": "Nexus_Vertex_Historical_Evidence_20261008",
+  "group": "vertex",
+  "source_roots": 41,
+  "payload_files": 38027,
+  "payload_bytes": 2135761115,
+  "mapped_origins": 60721,
+  "excluded_items": 45394,
+  "excluded_bytes": 1488123726,
+  "exclusions_by_reason": {
+    "archive_container_replaced_by_audited_member_mapping": 58,
+    "cache_git_or_dependency_environment": 30296,
+    "symlink_not_followed": 3,
+    "generated_cache": 2,
+    "mini_nexus_non_vertex_document_outside_scope": 5,
+    "mini_nexus_non_vertex_output_outside_scope": 53,
+    "vertex_checkpoint_weights_excluded": 7,
+    "same_content_array_deduplicated_original_mapped": 14970
+  },
+  "nested_archive_members": 7758,
+  "archive_member_statuses": {
+    "content_duplicate_mapped": 7724,
+    "unique_member_preserved": 34
+  },
+  "created_at": "2026-10-08T06:47:13.934031+00:00",
+  "verification_scope": "File preservation, SHA256, safe archive expansion, and ZIP CRC. No model/result evaluation.",
+  "identical_array_copies_deduplicated": 14970,
+  "identical_array_bytes_saved": 497616065
+}

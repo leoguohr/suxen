@@ -1,0 +1,137 @@
+{
+  "bundles": [
+    {
+      "name": "Nexus_Vertex_Historical_Evidence_20261008",
+      "group": "vertex",
+      "source_roots": 41,
+      "payload_files": 38027,
+      "payload_bytes": 2135761115,
+      "mapped_origins": 60721,
+      "excluded_items": 45394,
+      "excluded_bytes": 1488123726,
+      "exclusions_by_reason": {
+        "archive_container_replaced_by_audited_member_mapping": 58,
+        "cache_git_or_dependency_environment": 30296,
+        "symlink_not_followed": 3,
+        "generated_cache": 2,
+        "mini_nexus_non_vertex_document_outside_scope": 5,
+        "mini_nexus_non_vertex_output_outside_scope": 53,
+        "vertex_checkpoint_weights_excluded": 7,
+        "same_content_array_deduplicated_original_mapped": 14970
+      },
+      "nested_archive_members": 7758,
+      "archive_member_statuses": {
+        "content_duplicate_mapped": 7724,
+        "unique_member_preserved": 34
+      },
+      "created_at": "2026-10-08T06:47:13.934031+00:00",
+      "verification_scope": "File preservation, SHA256, safe archive expansion, and ZIP CRC. No model/result evaluation.",
+      "identical_array_copies_deduplicated": 14970,
+      "identical_array_bytes_saved": 497616065
+    },
+    {
+      "name": "Nexus_Teacher_Reconstruction_20261008",
+      "group": "teacher",
+      "source_roots": 3,
+      "payload_files": 2116,
+      "payload_bytes": 93373756,
+      "mapped_origins": 2116,
+      "excluded_items": 1,
+      "excluded_bytes": 11244,
+      "exclusions_by_reason": {
+        "cache_git_or_dependency_environment": 1
+      },
+      "nested_archive_members": 0,
+      "archive_member_statuses": {},
+      "created_at": "2026-10-08T06:43:10.737861+00:00",
+      "verification_scope": "File preservation, SHA256, safe archive expansion, and ZIP CRC. No model/result evaluation."
+    }
+  ],
+  "repo": {
+    "browse_files": 1098,
+    "browse_bytes": 9995906,
+    "source_map": "/Users/luthier/Documents/sophomore/output/github_nexus_20261008/repo/manifests/REPO_SOURCE_MAP.jsonl"
+  },
+  "text_scan": {
+    "vertex": {
+      "text_files_scanned": 9731,
+      "findings": 0,
+      "findings_by_category": {},
+      "report": "/Users/luthier/Documents/sophomore/output/github_nexus_20261008/stage/vertex_potential_secrets.jsonl",
+      "report_contains": "paths, line numbers and categories only; no matched values"
+    },
+    "teacher": {
+      "text_files_scanned": 764,
+      "findings": 0,
+      "findings_by_category": {},
+      "report": "/Users/luthier/Documents/sophomore/output/github_nexus_20261008/stage/teacher_potential_secrets.jsonl",
+      "report_contains": "paths, line numbers and categories only; no matched values"
+    },
+    "repo": {
+      "text_files_scanned": 1105,
+      "findings": 0,
+      "findings_by_category": {},
+      "report": "/Users/luthier/Documents/sophomore/output/github_nexus_20261008/stage/repo_potential_secrets.jsonl",
+      "report_contains": "paths, line numbers and categories only; no matched values"
+    }
+  },
+  "verification": [
+    {
+      "asset": "/Users/luthier/Documents/sophomore/output/github_nexus_20261008/assets/Nexus_Vertex_Historical_Evidence_20261008.zip",
+      "zip_bytes": 1741110688,
+      "zip_sha256": "a543fb89d8ce22b4d2ce1b480b5a520fe3bcfc07661ac811b1578565d8abb98b",
+      "testzip": "passed",
+      "stage_checksum_files_verified": 38034,
+      "zip_payload_sha256_files_verified": 38027,
+      "zip_entries": 38035,
+      "manifest_sha256": "95e580cfcb31f3827341b16e4ea16975ecb215c47a810f81120fa82931f5d1e9",
+      "checksum_manifest_sha256": "da3fa93d195bd8985c2da11de0927a0f97023b15f89af51e8378fa160e394ee5",
+      "verified_at": "2026-10-08T06:48:02.973160+00:00",
+      "verification_scope": "File integrity only; no generation score validation.",
+      "origin_path_mappings_verified": 60721
+    },
+    {
+      "asset": "/Users/luthier/Documents/sophomore/output/github_nexus_20261008/assets/Nexus_Teacher_Reconstruction_20261008.zip",
+      "zip_bytes": 81098072,
+      "zip_sha256": "d95219e4c4d71a1f557d9d20177a8b72267415ac09f45b4ccda75a96010f09b8",
+      "testzip": "passed",
+      "stage_checksum_files_verified": 2123,
+      "zip_payload_sha256_files_verified": 2116,
+      "zip_entries": 2124,
+      "manifest_sha256": "f4b1b7f610ed33cf3a44768de629f2b4e2cf6b414db32d9f87c3097f472ab895",
+      "checksum_manifest_sha256": "8e2895f1a5404a62ccd080ea0fbcd187d577de6e0b91deef7ec87fb97becb3bd",
+      "verified_at": "2026-10-08T06:44:48.209817+00:00",
+      "verification_scope": "File integrity only; no generation score validation.",
+      "origin_path_mappings_verified": 2116
+    }
+  ],
+  "final_scope_checks": {
+    "vertex": {
+      "stored_files": 38027,
+      "forbidden_cache_or_env_paths": 0,
+      "weight_files": 0
+    },
+    "teacher": {
+      "stored_files": 2116,
+      "forbidden_cache_or_env_paths": 0,
+      "weight_files": 6
+    },
+    "repo": {
+      "forbidden_binary_files": 0
+    }
+  },
+  "completeness_check": {
+    "vertex": {
+      "source_files_or_links_enumerated": 83387,
+      "unaccounted_source_files": 0,
+      "source_python_files_in_repo": 807,
+      "source_python_missing_from_repo": 0
+    },
+    "teacher": {
+      "source_files_or_links_enumerated": 2117,
+      "unaccounted_source_files": 0,
+      "source_python_files_in_repo": 39,
+      "source_python_missing_from_repo": 0
+    }
+  }
+}

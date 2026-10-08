@@ -1,0 +1,6 @@
+numpy>=1.26,<3
+torch>=2.4,<3
+pytest>=8,<9
+trimesh>=4,<5
+PyYAML>=6,<7
+

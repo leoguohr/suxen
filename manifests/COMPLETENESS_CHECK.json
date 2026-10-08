@@ -1,0 +1,14 @@
+{
+  "vertex": {
+    "source_files_or_links_enumerated": 83387,
+    "unaccounted_source_files": 0,
+    "source_python_files_in_repo": 807,
+    "source_python_missing_from_repo": 0
+  },
+  "teacher": {
+    "source_files_or_links_enumerated": 2117,
+    "unaccounted_source_files": 0,
+    "source_python_files_in_repo": 39,
+    "source_python_missing_from_repo": 0
+  }
+}

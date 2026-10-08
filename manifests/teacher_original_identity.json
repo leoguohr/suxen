@@ -1,0 +1,8 @@
+{
+  "file": "Teacher_Original_nexus_overfit_data_results_no_code.zip",
+  "bytes": 241939514,
+  "sha256": "982686feb58c207932d9311786cabb3ffd7a1397627b83c44df3d5c8ab2189e5",
+  "member_count": 1330,
+  "contains_original_training_source": false,
+  "description": "Original teacher delivery preserved byte-for-byte: data, weights, conditions, configs, logs, predictions; no original source code."
+}

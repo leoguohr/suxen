@@ -1,0 +1,17 @@
+{
+  "name": "Nexus_Teacher_Reconstruction_20261008",
+  "group": "teacher",
+  "source_roots": 3,
+  "payload_files": 2116,
+  "payload_bytes": 93373756,
+  "mapped_origins": 2116,
+  "excluded_items": 1,
+  "excluded_bytes": 11244,
+  "exclusions_by_reason": {
+    "cache_git_or_dependency_environment": 1
+  },
+  "nested_archive_members": 0,
+  "archive_member_statuses": {},
+  "created_at": "2026-10-08T06:43:10.737861+00:00",
+  "verification_scope": "File preservation, SHA256, safe archive expansion, and ZIP CRC. No model/result evaluation."
+}

@@ -1,0 +1,903 @@
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=2.1cm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{booktabs,longtable,array,tabularx,multirow}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{caption}
+
+\definecolor{Navy}{HTML}{123B5D}
+\definecolor{Blue}{HTML}{246B9E}
+\definecolor{LightBlue}{HTML}{EAF3F8}
+\definecolor{LightGray}{HTML}{F5F6F7}
+\definecolor{Green}{HTML}{176B45}
+\definecolor{Red}{HTML}{A33A32}
+\definecolor{Amber}{HTML}{8A5A00}
+\hypersetup{colorlinks=true,linkcolor=Navy,urlcolor=Blue,citecolor=Green,pdfauthor={Independent Nexus Reproduction Notes}}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.35em}
+\linespread{1.18}
+\setlist{itemsep=0.25em,topsep=0.35em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Nexus 生成模型：数学与代码}
+\fancyhead[R]{独立复现学习讲义}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\lstdefinestyle{py}{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{Blue}\bfseries,
+  commentstyle=\color{Green},
+  stringstyle=\color{Red},
+  showstringspaces=false,
+  breaklines=true,
+  breakatwhitespace=false,
+  columns=fullflexible,
+  keepspaces=true,
+  frame=single,
+  rulecolor=\color{black!15},
+  backgroundcolor=\color{LightGray},
+  xleftmargin=0.4em,
+  framexleftmargin=0.4em
+}
+\newtcolorbox{keybox}[1][]{colback=LightBlue,colframe=Blue!65!black,title=#1,fonttitle=\bfseries,breakable}
+\newtcolorbox{warnbox}[1][]{colback=yellow!7,colframe=Amber!75!black,title=#1,fonttitle=\bfseries,breakable}
+\newtcolorbox{claimbox}[1][]{colback=green!5,colframe=Green!70!black,title=#1,fonttitle=\bfseries,breakable}
+\newcommand{\paperref}[1]{\textcolor{Blue}{\footnotesize\textbf{[论文定位：}#1\textbf{]}}}
+\newcommand{\coderef}[1]{\par\noindent{\footnotesize\color{Green}\textbf{[代码定位：}\nolinkurl{#1}\textbf{]}}\par}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\KL}{D_{\mathrm{KL}}}
+\newcommand{\dd}{\mathrm{d}}
+\DeclareMathOperator{\diag}{diag}
+
+\title{\vspace{-1.5cm}\textbf{Nexus 生成模型的数学与代码}\\[0.5em]
+\large 从 AE/VAE、Diffusion、Flow Matching 到 Hunyuan3D-2.1 与当前独立复现}
+\author{面向当前项目源码的可核对学习讲义}
+\date{2026-08-27}
+
+\begin{document}
+\maketitle
+
+\begin{warnbox}[使用边界]
+本文不是 Nexus 作者代码说明。Nexus 目前是依据公开论文完成的\textbf{独立复现}；Hunyuan3D-2.1 部分依据腾讯公开仓库固定提交
+\texttt{82920d643c0dc2f7bfd7255f45f62d386edfe60c}。
+
+论文“行号”不是出版社印刷行号，而是对文末列出的固定 PDF，按页提取文本、删去空行后从 L001 重新编号。因此任一引用都可以用“PDF SHA-256 + 页码 + 本页行号 + 公式号”复核。
+\end{warnbox}
+
+\tableofcontents
+\newpage
+
+\section{第一部分：只补足读代码所需的 AE、VAE 与四行训练代码}
+
+\subsection*{Autoencoder 与 VAE 分别解决什么问题}
+
+给定输入 $x$，普通 Autoencoder 由编码器和解码器组成：
+\begin{equation}
+z=\operatorname{Enc}_{\phi}(x),\qquad \hat x=\operatorname{Dec}_{\psi}(z),\qquad
+\mathcal L_{\mathrm{rec}}=\ell(\hat x,x).
+\end{equation}
+它解决的是\textbf{压缩后仍能重建}：编码器把高维对象压成 $z$，解码器从 $z$ 恢复对象。但它没有要求不同样本的 $z$ 在空间中连续、规整，也没有保证从一个随机点出发能解码出合理样本。
+
+VAE 不再把 $x$ 映射为一个确定点，而是映射为一个高斯后验：
+\begin{equation}
+q_{\phi}(z\mid x)=\N\!\left(z;\mu_{\phi}(x),\diag\sigma^2_{\phi}(x)\right),
+\qquad z=\mu+\sigma\odot\epsilon,quad\epsilon\sim\N(0,I).
+\end{equation}
+训练目标是负 ELBO：
+\begin{equation}
+\mathcal L_{\mathrm{VAE}}
+=-\E_{q_{\phi}(z\mid x)}\log p_{\psi}(x\mid z)
++\KL\!\left(q_{\phi}(z\mid x)\Vert p(z)\right),\qquad p(z)=\N(0,I).
+\end{equation}
+第一项让 latent 保留重建所需信息；第二项把后验拉向统一先验，使 latent 空间更连续、可采样。Nexus 的 Topology VAE 正是“mesh graph $\to$ per-vertex latent $H_V$ $\to$ spacetime embeddings $Z$”；Hunyuan3D-ShapeVAE 则是“surface samples $\to$ latent tokens $\to$ SDF field”。
+
+\paperref{Nexus v1 p.5 L028--L040, Eq.(6)；Hunyuan3D-2.1 p.5 L023--L058, Eq.(1)}
+
+VAE 的公式不是凭空来的。对任意 $q_{\phi}(z\mid x)$，
+\begin{align}
+\log p_{\psi}(x)
+&=\E_q\left[\log p_{\psi}(x)\right]\\
+&=\E_q\left[\log\frac{p_{\psi}(x,z)}{q_{\phi}(z\mid x)}\right]
++\E_q\left[\log\frac{q_{\phi}(z\mid x)}{p_{\psi}(z\mid x)}\right]\\
+&=\underbrace{\E_q\log p_{\psi}(x\mid z)-\KL(q_{\phi}(z\mid x)\Vert p(z))}_{\mathrm{ELBO}(x)}
++\underbrace{\KL(q_{\phi}(z\mid x)\Vert p_{\psi}(z\mid x))}_{\ge 0}.
+\end{align}
+所以 $\mathrm{ELBO}(x)\le\log p_{\psi}(x)$。对角高斯与标准高斯的 KL 可逐维算出：
+\begin{equation}
+\KL(q\Vert p)=\frac12\sum_j\left(\mu_j^2+\sigma_j^2-1-\log\sigma_j^2\right).
+\end{equation}
+代码通常输出 \texttt{log\_variance}，因为 $\sigma^2=\exp(\texttt{log\_variance})$ 自动保证方差为正，且重参数写成
+\texttt{mu + exp(0.5 * log\_variance) * eps}。
+
+\subsection*{必须看懂的四行}
+
+\begin{lstlisting}[style=py]
+noise = torch.randn_like(latent)
+t = torch.rand(batch_size)
+prediction = model(x_t, t, condition)
+loss = ((prediction - target) ** 2).mean()
+\end{lstlisting}
+
+这里 \texttt{latent} 是干净目标 $x_1$；\texttt{noise} 是同形状的 $x_0\sim\N(0,I)$；$t\sim U(0,1)$ 指定路径上的位置；\texttt{x\_t} 是由 $x_0,x_1,t$ 构造的中间状态；模型读入 $x_t,t$ 和条件 $c$，预测一个目标；最后用 MSE 回归。\textbf{决定它是 DDPM 还是 Flow Matching 的不是 MSE 本身，而是 $x_t$ 与 target 的定义。}
+
+在当前代码中，
+\begin{equation}
+x_t=(1-t)x_0+t x_1,\qquad \texttt{target}=u_t=x_1-x_0,
+\end{equation}
+因此模型预测的是速度，不是“干净样本”，也不是 DDPM 的噪声 $\epsilon$。\coderef{mini_nexus/flow.py:11--40,43--59}
+
+\section{第二部分：Diffusion 与 Flow Matching 的完整推导链}
+
+本部分从概率模型定义推到实际训练代码。记数据为 $x_0\sim q_{\mathrm{data}}$；在 DDPM 文献中 $x_0$ 表示数据、$x_T$ 表示噪声，而在当前 Flow Matching 代码中 $x_0$ 表示噪声、$x_1$ 表示数据。两套下标方向不同，不能混用。
+
+\subsection{离散 Diffusion：前向加噪闭式、后验、ELBO 与噪声回归}
+
+\subsubsection*{前向 Markov 链与任意时刻闭式}
+
+设噪声日程 $\beta_t\in(0,1)$，$\alpha_t=1-\beta_t$，$\bar\alpha_t=\prod_{s=1}^t\alpha_s$。前向过程固定为
+\begin{equation}
+q(x_{1:T}\mid x_0)=\prod_{t=1}^T q(x_t\mid x_{t-1}),\qquad
+q(x_t\mid x_{t-1})=\N(\sqrt{\alpha_t}x_{t-1},\beta_t I).
+\end{equation}
+等价采样式为
+\begin{equation}
+x_t=\sqrt{\alpha_t}x_{t-1}+\sqrt{1-\alpha_t}\epsilon_t,\qquad\epsilon_t\sim\N(0,I).
+\end{equation}
+
+要证明任意 $t$ 的闭式，先展开两步：
+\begin{align}
+x_t
+&=\sqrt{\alpha_t}\left(\sqrt{\alpha_{t-1}}x_{t-2}+\sqrt{1-\alpha_{t-1}}\epsilon_{t-1}\right)
++\sqrt{1-\alpha_t}\epsilon_t\\
+&=\sqrt{\alpha_t\alpha_{t-1}}x_{t-2}
++\sqrt{\alpha_t(1-\alpha_{t-1})}\epsilon_{t-1}
++\sqrt{1-\alpha_t}\epsilon_t.
+\end{align}
+后两项是独立高斯之和，协方差为
+$\alpha_t(1-\alpha_{t-1})+(1-\alpha_t)=1-\alpha_t\alpha_{t-1}$。
+归纳得到
+\begin{equation}
+q(x_t\mid x_0)=\N(\sqrt{\bar\alpha_t}x_0,(1-\bar\alpha_t)I),
+\qquad x_t=\sqrt{\bar\alpha_t}x_0+\sqrt{1-\bar\alpha_t}\epsilon.
+\label{eq:ddpmclosed}
+\end{equation}
+这就是训练时可以随机抽一个 $t$、一步得到 $x_t$，而不必真的循环加噪 $t$ 次的原因。
+
+\paperref{DDPM arXiv:2006.11239 p.2 L044--L063, Eq.(1)--(4)}
+
+\subsubsection*{精确后验 $q(x_{t-1}\mid x_t,x_0)$}
+
+由 Bayes 公式并忽略与 $x_{t-1}$ 无关的归一化常数，
+\begin{align}
+q(x_{t-1}\mid x_t,x_0)
+&\propto q(x_t\mid x_{t-1})q(x_{t-1}\mid x_0)\\
+&\propto \exp\left[-\frac{\|x_t-\sqrt{\alpha_t}x_{t-1}\|^2}{2\beta_t}
+-\frac{\|x_{t-1}-\sqrt{\bar\alpha_{t-1}}x_0\|^2}{2(1-\bar\alpha_{t-1})}\right].
+\end{align}
+收集 $x_{t-1}$ 的二次项与一次项：
+\begin{align}
+A&=\frac{\alpha_t}{\beta_t}+\frac{1}{1-\bar\alpha_{t-1}}
+=\frac{1-\bar\alpha_t}{\beta_t(1-\bar\alpha_{t-1})},\\
+b&=\frac{\sqrt{\alpha_t}}{\beta_t}x_t
++\frac{\sqrt{\bar\alpha_{t-1}}}{1-\bar\alpha_{t-1}}x_0.
+\end{align}
+配方 $-\tfrac12(A\|x\|^2-2b^\top x)=-\tfrac A2\|x-A^{-1}b\|^2+\mathrm{const}$，得到
+\begin{equation}
+q(x_{t-1}\mid x_t,x_0)=\N(\tilde\mu_t,\tilde\beta_t I),
+\end{equation}
+其中
+\begin{align}
+\tilde\beta_t&=A^{-1}=\frac{1-\bar\alpha_{t-1}}{1-\bar\alpha_t}\beta_t,\\
+\tilde\mu_t(x_t,x_0)
+&=\frac{\sqrt{\bar\alpha_{t-1}}\beta_t}{1-\bar\alpha_t}x_0
++\frac{\sqrt{\alpha_t}(1-\bar\alpha_{t-1})}{1-\bar\alpha_t}x_t.
+\end{align}
+\paperref{DDPM p.3 L001--L017, Eq.(5)--(7)}
+
+\subsubsection*{从最大似然到 ELBO 分解}
+
+生成模型定义为
+\begin{equation}
+p_\theta(x_{0:T})=p(x_T)\prod_{t=1}^T p_\theta(x_{t-1}\mid x_t),\qquad p(x_T)=\N(0,I).
+\end{equation}
+对负对数似然插入前向分布并用 Jensen：
+\begin{align}
+-\log p_\theta(x_0)
+&=-\log\int q(x_{1:T}\mid x_0)
+\frac{p_\theta(x_{0:T})}{q(x_{1:T}\mid x_0)}\dd x_{1:T}\\
+&\le \E_q\left[-\log\frac{p_\theta(x_{0:T})}{q(x_{1:T}\mid x_0)}\right]
+=\mathcal L_{\mathrm{VLB}}.
+\end{align}
+利用 Markov 分解并反复使用 Bayes 关系，可以整理为
+\begin{align}
+\mathcal L_{\mathrm{VLB}}
+&=\underbrace{\KL(q(x_T\mid x_0)\Vert p(x_T))}_{L_T}
++\sum_{t=2}^{T}\underbrace{\E_q\KL(q(x_{t-1}\mid x_t,x_0)\Vert p_\theta(x_{t-1}\mid x_t))}_{L_{t-1}}\\
+&\quad-\underbrace{\E_q\log p_\theta(x_0\mid x_1)}_{L_0}.
+\end{align}
+$L_T$ 与 $\theta$ 无关；中间每一项都是两个高斯之间的 KL；$L_0$ 是最后一步解码似然。
+\paperref{DDPM p.2 L050--L063, Eq.(3)--(4)；p.3 L001--L017, Eq.(5)--(7)}
+
+\subsubsection*{为什么最终变成预测噪声的 MSE}
+
+令
+$p_\theta(x_{t-1}\mid x_t)=\N(\mu_\theta(x_t,t),\sigma_t^2 I)$，则两个同为各向同性高斯的 KL 中，与 $\theta$ 有关的部分为
+\begin{equation}
+L_{t-1}=\E_q\left[\frac{1}{2\sigma_t^2}\|\tilde\mu_t(x_t,x_0)-\mu_\theta(x_t,t)\|^2\right]+C.
+\end{equation}
+由式\eqref{eq:ddpmclosed}，
+\begin{equation}
+x_0=\frac{x_t-\sqrt{1-\bar\alpha_t}\epsilon}{\sqrt{\bar\alpha_t}}.
+\end{equation}
+代入 $\tilde\mu_t$ 并化简：
+\begin{equation}
+\tilde\mu_t=\frac{1}{\sqrt{\alpha_t}}
+\left(x_t-\frac{\beta_t}{\sqrt{1-\bar\alpha_t}}\epsilon\right).
+\end{equation}
+因此将网络参数化为
+\begin{equation}
+\mu_\theta(x_t,t)=\frac{1}{\sqrt{\alpha_t}}
+\left(x_t-\frac{\beta_t}{\sqrt{1-\bar\alpha_t}}\epsilon_\theta(x_t,t)\right)
+\end{equation}
+后，
+\begin{equation}
+L_{t-1}=\E_{x_0,\epsilon}\left[
+\frac{\beta_t^2}{2\sigma_t^2\alpha_t(1-\bar\alpha_t)}
+\|\epsilon-\epsilon_\theta(x_t,t)\|^2\right]+C.
+\end{equation}
+DDPM 常用的 simplified loss 删掉随 $t$ 变化的权重：
+\begin{equation}
+\mathcal L_{\mathrm{simple}}=\E_{t,x_0,\epsilon}
+\|\epsilon-\epsilon_\theta(\sqrt{\bar\alpha_t}x_0+\sqrt{1-\bar\alpha_t}\epsilon,t)\|^2.
+\end{equation}
+所以“预测噪声”是对反向高斯均值的一种等价参数化，不是说模型把噪声当作最终输出。
+\paperref{DDPM p.3 L030--L061, Eq.(8)--(10)；p.4 L001--L044, Eq.(11)--(12)}
+
+\subsubsection*{噪声、score 与 $x_0$ 参数化}
+
+对条件高斯 $q(x_t\mid x_0)$，
+\begin{equation}
+\nabla_{x_t}\log q(x_t\mid x_0)
+=-\frac{x_t-\sqrt{\bar\alpha_t}x_0}{1-\bar\alpha_t}
+=-\frac{\epsilon}{\sqrt{1-\bar\alpha_t}}.
+\end{equation}
+因此噪声预测、score 预测、干净样本预测之间可以互换：
+\begin{align}
+s_\theta(x_t,t)&=-\epsilon_\theta(x_t,t)/\sqrt{1-\bar\alpha_t},\\
+\hat x_{0,\theta}(x_t,t)&=\frac{x_t-\sqrt{1-\bar\alpha_t}\epsilon_\theta(x_t,t)}{\sqrt{\bar\alpha_t}}.
+\end{align}
+它们对应不同损失权重和数值尺度，但在理想无限容量下描述同一个反向过程。
+
+\subsection{连续时间：SDE、反向 SDE 与 Probability Flow ODE}
+
+令离散步长 $\Delta t\to0$，一般前向扩散写为 It\^o SDE：
+\begin{equation}
+\dd x=f(x,t)\dd t+g(t)\dd W_t.
+\end{equation}
+其密度满足 Fokker--Planck 方程
+\begin{equation}
+\partial_t p_t(x)=-\nabla\cdot(f p_t)+\frac12 g(t)^2\Delta p_t
+=-\nabla\cdot\left[\left(f-\frac12g^2\nabla\log p_t\right)p_t\right].
+\label{eq:fp}
+\end{equation}
+第二个等号使用 $\Delta p=\nabla\cdot(p\nabla\log p)$。这说明同一边缘密度路径也可由确定性 ODE 产生：
+\begin{equation}
+\frac{\dd x}{\dd t}=f(x,t)-\frac12g(t)^2\nabla_x\log p_t(x),
+\end{equation}
+称为 probability flow ODE。反向时间 SDE 的漂移则为
+\begin{equation}
+\dd x=\left[f(x,t)-g(t)^2\nabla_x\log p_t(x)\right]\dd t+g(t)\dd\bar W_t,
+\end{equation}
+其中积分方向从 $T$ 到 $0$。注意 ODE 中 score 系数为 $1/2$，反向 SDE 中为 $1$；前者没有随机项，后者保留随机扩散，两者拥有相同的时刻边缘分布。
+
+\subsection{Flow Matching：从连续性方程到可训练的条件目标}
+
+\subsubsection*{流、向量场与连续性方程}
+
+设向量场 $v_t:\R^d\to\R^d$，流映射 $\phi_t$ 满足
+\begin{equation}
+\frac{\dd}{\dd t}\phi_t(x)=v_t(\phi_t(x)),\qquad\phi_0(x)=x.
+\end{equation}
+若 $x_0\sim p_0$，则 $x_t=\phi_t(x_0)$ 的分布为推前
+$p_t=(\phi_t)_\#p_0$。对任意光滑紧支撑测试函数 $\varphi$，
+\begin{align}
+\frac{\dd}{\dd t}\int\varphi(x)p_t(x)\dd x
+&=\frac{\dd}{\dd t}\E[\varphi(\phi_t(x_0))]\\
+&=\E[\nabla\varphi(\phi_t(x_0))^\top v_t(\phi_t(x_0))]\\
+&=\int\nabla\varphi(x)^\top v_t(x)p_t(x)\dd x\\
+&=-\int\varphi(x)\nabla\cdot(p_t(x)v_t(x))\dd x.
+\end{align}
+因此在弱意义下
+\begin{equation}
+\partial_t p_t+\nabla\cdot(p_t v_t)=0.
+\label{eq:continuity}
+\end{equation}
+这就是质量守恒：概率质量不会凭空产生或消失，只会被速度场搬运。
+
+理想 Flow Matching 直接回归能产生目标概率路径 $p_t$ 的向量场 $u_t$：
+\begin{equation}
+\mathcal L_{\mathrm{FM}}(\theta)=\E_{t\sim U(0,1),x\sim p_t}
+\|v_\theta(x,t)-u_t(x)\|^2.
+\end{equation}
+\paperref{Flow Matching arXiv:2210.02747 p.3 L002--L014, Eq.(5)}
+
+\subsubsection*{为什么条件向量场可以合成为边缘向量场}
+
+对每个数据样本 $x_1\sim q$，构造条件路径 $p_t(x\mid x_1)$ 与满足连续性方程的条件速度 $u_t(x\mid x_1)$。定义边缘路径
+\begin{equation}
+p_t(x)=\int p_t(x\mid x_1)q(x_1)\dd x_1
+\end{equation}
+以及
+\begin{equation}
+u_t(x)=\int u_t(x\mid x_1)
+\frac{p_t(x\mid x_1)q(x_1)}{p_t(x)}\dd x_1.
+\label{eq:marginalvf}
+\end{equation}
+则
+\begin{align}
+\partial_t p_t(x)
+&=\int \partial_t p_t(x\mid x_1)q(x_1)\dd x_1\\
+&=-\int\nabla\cdot[p_t(x\mid x_1)u_t(x\mid x_1)]q(x_1)\dd x_1\\
+&=-\nabla\cdot\left[p_t(x)u_t(x)\right].
+\end{align}
+最后一步正是代入式\eqref{eq:marginalvf}。因此边缘 $u_t$ 确实生成边缘 $p_t$。
+\paperref{Flow Matching p.3 L015--L049, Eq.(6)--(8), Theorem 1}
+
+\subsubsection*{CFM 与 FM 同梯度的严格证明}
+
+可训练目标是
+\begin{equation}
+\mathcal L_{\mathrm{CFM}}(\theta)=
+\E_{t,x_1\sim q,x\sim p_t(\cdot\mid x_1)}
+\|v_\theta(x,t)-u_t(x\mid x_1)\|^2.
+\end{equation}
+展开平方并先对 $x_1\mid x,t$ 取条件期望：
+\begin{align}
+\mathcal L_{\mathrm{CFM}}
+&=\E_{t,x\sim p_t}\left[
+\|v_\theta\|^2-2v_\theta^\top\E[u_t(x\mid x_1)\mid x,t]
++\E[\|u_t(x\mid x_1)\|^2\mid x,t]\right]\\
+&=\E_{t,x\sim p_t}\left[\|v_\theta\|^2-2v_\theta^\top u_t(x)\right]
++C_1.
+\end{align}
+而
+\begin{equation}
+\mathcal L_{\mathrm{FM}}
+=\E[\|v_\theta\|^2-2v_\theta^\top u_t+\|u_t\|^2]
+=\E[\|v_\theta\|^2-2v_\theta^\top u_t]+C_2.
+\end{equation}
+所以 $\mathcal L_{\mathrm{CFM}}-\mathcal L_{\mathrm{FM}}=C_1-C_2$ 与 $\theta$ 无关，
+\begin{equation}
+\nabla_\theta\mathcal L_{\mathrm{CFM}}=\nabla_\theta\mathcal L_{\mathrm{FM}}.
+\end{equation}
+这解释了为何训练时只需随机抽一个真实样本和一份噪声，不需要计算不可得的整体数据密度或边缘速度。
+\paperref{Flow Matching p.4 L002--L021, Eq.(9), Theorem 2}
+
+\subsubsection*{一般高斯路径的速度场}
+
+设条件路径
+\begin{equation}
+p_t(x\mid x_1)=\N(x;\mu_t(x_1),\sigma_t(x_1)^2 I),
+\end{equation}
+并以 $x_0\sim\N(0,I)$ 重参数化
+\begin{equation}
+\psi_t(x_0)=\sigma_t x_0+\mu_t.
+\end{equation}
+对时间求导：
+\begin{equation}
+\dot\psi_t=\dot\sigma_t x_0+\dot\mu_t.
+\end{equation}
+因为 $x=\psi_t(x_0)$ 且 $x_0=(x-\mu_t)/\sigma_t$，条件向量场闭式为
+\begin{equation}
+u_t(x\mid x_1)=\frac{\dot\sigma_t}{\sigma_t}(x-\mu_t)+\dot\mu_t.
+\end{equation}
+\paperref{Flow Matching p.4 L022--L055, Eq.(10)--(14)；p.5 L002--L007, Eq.(15), Theorem 3}
+
+\subsubsection*{当前代码使用的线性条件 OT 路径}
+
+若不保留终点小方差，直接令
+\begin{equation}
+x_t=(1-t)x_0+t x_1,\qquad x_0\sim\N(0,I),\quad x_1\sim q,
+\end{equation}
+则
+\begin{equation}
+u_t=\frac{\partial x_t}{\partial t}=x_1-x_0.
+\end{equation}
+速度对 $t$ 为常量；训练可写成
+\begin{equation}
+\mathcal L(\theta)=\E_{t,x_0,x_1}
+\|v_\theta((1-t)x_0+t x_1,t,c)-(x_1-x_0)\|^2.
+\label{eq:linearFM}
+\end{equation}
+这与 Hunyuan3D-2.1 论文 Eq.(2) 完全同形，也与当前 \texttt{flow\_matching\_batch} 一致。
+\paperref{Flow Matching p.5 L056--L062, Eq.(20)--(21)；p.6 L007--L024, Eq.(22)--(24)；Hunyuan3D-2.1 p.6 L010--L018, Eq.(2)}
+
+\subsubsection*{ODE 解的存在唯一性：你最近看的“唯一性”放在这里}
+
+采样要求解
+\begin{equation}
+\dot x(t)=v_\theta(x(t),t),\qquad x(0)=x_0.
+\end{equation}
+若在区域 $D$ 内，$v(x,t)$ 对 $t$ 连续，并对 $x$ 一致 Lipschitz：
+\begin{equation}
+\|v(x,t)-v(y,t)\|\le L\|x-y\|,
+\end{equation}
+则 Picard 迭代
+\begin{equation}
+x^{(k+1)}(t)=x_0+\int_0^t v(x^{(k)}(s),s)\dd s
+\end{equation}
+在足够短区间 $LT<1$ 上是压缩映射，从而存在唯一不动点；把短区间拼接即可得到局部唯一解，若再有线性增长界则可延伸到整个 $[0,1]$。
+
+唯一性也可由 Gr\"onwall 不等式直接证明。若 $x,y$ 是同初值两解，
+\begin{align}
+\|x(t)-y(t)\|
+&\le\int_0^t\|v(x(s),s)-v(y(s),s)\|\dd s\\
+&\le L\int_0^t\|x(s)-y(s)\|\dd s,
+\end{align}
+故 $\|x(t)-y(t)\|=0$。神经网络在有限权重、Lipschitz 激活下通常是局部 Lipschitz，但训练并不自动保证小 Lipschitz 常数或数值求解稳定；这就是“理论上向量场定义了唯一轨迹”与“20 步 Euler 一定准确”之间的区别。
+
+\subsubsection*{Euler 与 Heun：代码为什么是一步一步加速度}
+
+对步长 $h=1/K$，显式 Euler 为
+\begin{equation}
+x_{k+1}=x_k+h\,v_\theta(x_k,t_k).
+\end{equation}
+由 Taylor 展开
+$x(t+h)=x(t)+h\dot x(t)+\tfrac12h^2\ddot x(\xi)$，单步截断误差 $O(h^2)$，累计全局误差 $O(h)$。Heun 方法先预测再校正：
+\begin{align}
+\tilde x_{k+1}&=x_k+h v(x_k,t_k),\\
+x_{k+1}&=x_k+\frac h2\left[v(x_k,t_k)+v(\tilde x_{k+1},t_{k+1})\right],
+\end{align}
+全局误差 $O(h^2)$，代价是每步两次网络前向。当前 mini\_nexus 采用 20 步 Euler；这只是独立复现的简化采样器，不等于 Nexus 论文使用的 DPM-Solver。
+\coderef{mini_nexus/flow.py:62--83}
+\paperref{Nexus v1 p.6 L018--L024、L037--L045}
+
+\begin{keybox}[Diffusion、Flow Matching、DiT 三者不能混为一谈]
+\textbf{Diffusion}主要指定从数据到噪声的概率路径以及如何学习逆过程；\textbf{Flow Matching}直接回归运输概率路径的速度场；\textbf{DiT}只是实现 $v_\theta$、$\epsilon_\theta$ 或其他预测器的 Transformer 网络骨干。Hunyuan 与 Nexus 都称其为“flow-based diffusion / diffusion transformer”，但训练目标在公开描述中采用 velocity-prediction flow matching。
+\end{keybox}
+
+\section{第三部分：把速度场写成能够处理三维结构的网络}
+
+Diffusion 或 Flow Matching 只规定了“模型应该预测什么”。它们没有规定
+$v_\theta(x_t,t,C)$ 应该使用 CNN、MLP 还是 Transformer。Nexus 与
+Hunyuan3D-2.1 选择 DiT，是因为生成对象可表示为一组 token，并且每个 token
+都需要同时读取其他 token、时间 $t$ 和外部条件 $C$。因此，读代码时应把下面
+几层看成一个整体，而不是把 attention、RoPE 和条件编码器分别背诵。
+
+\paragraph{从 attention 到 Transformer：一个 token 如何读取整组 token。}
+设输入 $X\in\R^{B\times N\times C}$，其中 $N$ 是 token 数，$C$ 是通道数。
+单头 self-attention 先作三组线性投影：
+\begin{equation}
+Q=XW_Q,\qquad K=XW_K,\qquad V=XW_V,
+\end{equation}
+再计算
+\begin{equation}
+\operatorname{Attn}(X)
+=\operatorname{softmax}\!\left(\frac{QK^\top}{\sqrt{d_h}}+M\right)V.
+\end{equation}
+$Q_iK_j^\top$ 衡量第 $i$ 个 token 应该从第 $j$ 个 token 读取多少信息；
+$1/\sqrt{d_h}$ 防止通道数增大时内积方差随 $d_h$ 增大，使 softmax 过早饱和；
+$M$ 把 padding key 的 logit 置为 $-\infty$。多头 attention 只是让不同通道组
+使用不同 $W_Q,W_K,W_V$，最后拼接并线性投影。
+
+这个运算天然保持 token 排列的等变性。若 $P$ 是置换矩阵，则
+$Q'=PQ,K'=PK,V'=PV$，且
+\begin{equation}
+\operatorname{softmax}(PQK^\top P^\top)PV
+=P\operatorname{softmax}(QK^\top)V.
+\end{equation}
+所以输入重排，输出会按相同方式重排。它不会凭空获得几何位置；位置必须由
+metadata、position embedding 或 RoPE 提供。当前 self-attention 的真实代码
+把 $[B,N,C]$ 变成 $[B,H,N,d_h]$，应用 3D RoPE 后调用
+\texttt{scaled\_dot\_product\_attention}。
+\coderef{mini_nexus/models.py:195--232}
+
+Cross-attention 使用两组 token：query 来自正在生成的三维 token $X$，key/value
+来自条件 token $C$：
+\begin{equation}
+\operatorname{CrossAttn}(X,C)
+=\operatorname{softmax}\!\left(
+\frac{(XW_Q)(CW_K)^\top}{\sqrt{d_h}}
+\right)(CW_V).
+\end{equation}
+它的作用不是“把条件和输入拼在一起”，而是让每个生成 token 主动查询与自己
+相关的条件信息。Self-attention 解决生成 token 之间的关系，cross-attention
+解决生成对象对输入点云或图像的服从。
+
+\paragraph{DiT：时间为什么必须进入 Transformer。}
+同一个 $x_t$ 数值在不同 $t$ 下具有不同语义，速度场因此必须写成
+$v_\theta(x_t,t,C)$，不能只写成 $v_\theta(x_t,C)$。代码先把标量 $t$ 映射为
+正余弦特征，再经过 MLP 得到 $e_t$。当前 mini\_nexus 的 block 使用加性时间
+bias：
+\begin{align}
+h^{(0)}&=W_xx_t+W_mm+e_{\mathrm{depth}},\\
+\tilde h&=\operatorname{LN}(h+g(e_t)),\\
+h&\leftarrow h+\operatorname{SelfAttn}_{\mathrm{3D\mbox{-}RoPE}}(\tilde h),\\
+h&\leftarrow h+\operatorname{CrossAttn}(\operatorname{LN}(h+g(e_t)),C),\\
+h&\leftarrow h+\operatorname{FFN}(\operatorname{LN}(h+g(e_t))).
+\end{align}
+最后 $W_{out}$ 把 hidden feature 投影回与 $x_t$ 相同的 data dimension，于是输出
+可直接和目标速度做 MSE。这里的 DiT 不是另一种扩散公式，而是承载速度场的
+Transformer 函数族。
+\coderef{mini_nexus/models.py:235--268,271--348}
+
+Hunyuan3D-2.1 使用更强的 modulation：时间/条件网络产生 shift、scale、gate，
+以 $(1+\mathrm{scale})\odot\operatorname{LN}(h)+\mathrm{shift}$ 调制每个 block，
+再用 gate 控制残差更新。两种写法都表达 $t$ 条件化，但当前 mini\_nexus 的
+加性 bias 是更小的独立实现，不能说成论文原样复刻。
+\paperref{Hunyuan3D-2.1 p.5 L001--L016, Fig.2--3；Nexus v1 p.4 L031--L046、p.6 L051--L062}
+\coderef{Hunyuan3D-2.1/.../models/denoisers/hunyuan3ddit.py:138--217}
+
+\paragraph{3D RoPE：让 attention 分数依赖相对三维位移。}
+普通 Transformer 看不出 token 的三维坐标。RoPE 对 query/key 的偶数-奇数
+通道对施加二维旋转
+\begin{equation}
+R(\theta)=
+\begin{bmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{bmatrix}.
+\end{equation}
+若位置 $p$ 的 query 使用 $R(\omega p)q$，位置 $r$ 的 key 使用
+$R(\omega r)k$，则
+\begin{equation}
+\langle R(\omega p)q,R(\omega r)k\rangle
+=q^\top R(\omega(r-p))k,
+\end{equation}
+因为 $R(a)^\top R(b)=R(b-a)$。因此 attention logit 显式依赖相对位置
+$r-p$，而不是只记绝对 token 编号。
+
+当前实现把每个 head 的一部分通道均分给 $x,y,z$ 三轴，每个轴使用频率
+\begin{equation}
+\omega_j=10000^{-2j/d_{axis}}.
+\end{equation}
+未分配到 rotary 的余下通道保持不变。它旋转
+query/key，不旋转 value，因为 RoPE 要修改的是“谁和谁相关”的内积，而不是
+被聚合的内容。
+\coderef{mini_nexus/models.py:155--192,206--229}
+
+\paragraph{点云如何变成少量 condition tokens。}
+直接让几千个点和所有生成 token 交叉注意力开销较大。当前条件编码器先对
+点坐标作多频 Fourier embedding：
+\begin{equation}
+\gamma(p)=
+[\sin(\omega_1p),\cos(\omega_1p),\ldots,
+\sin(\omega_Kp),\cos(\omega_Kp),p,n],
+\end{equation}
+其中 $p$ 是坐标，$n$ 是法向。高频项让线性层更容易区分细小空间差异。随后
+FPS 选择覆盖表面的 anchor 点，把 anchor feature 作为 query、全部点 feature
+作为 key/value 做 cross-attention，得到固定数量的 condition tokens：
+\begin{equation}
+C_{token}=Q_{anchor}+\operatorname{CrossAttn}(Q_{anchor},F_{all}).
+\end{equation}
+这一步是“把无序的 8192 点压成固定长度条件记忆”，不是生成 mesh，也不改变
+训练真值。当前实现与 VecSet 思路一致，但层数和 hidden size 明显缩小。
+\coderef{mini_nexus/models.py:36--72,75--148}
+\paperref{Nexus v1 p.6 L051--L062}
+
+\paragraph{图消息传递为何仍然需要 Transformer。}
+Topology VAE 的输入不是普通序列，而是 mesh incidence graph。对顶点 $i$，
+一层消息聚合可以抽象为
+\begin{equation}
+m_i=\frac{1}{|\mathcal N(i)|}\sum_{f\in\mathcal N(i)}\phi_f(c_f),
+\qquad
+h_i'=\phi_v([h_i,m_i]),
+\end{equation}
+其中 $c_f$ 是 incident face 的 centroid feature。局部聚合告诉顶点“自己属于
+哪些面”；后续 Transformer 让远距离顶点交换全局信息。只有 Transformer 而
+没有 incidence，模型不容易区分局部连接；只有局部图卷积又难以表达全局形状。
+
+当前 encoder 用 \texttt{index\_add\_} 把 face message 累加到三个 incident
+vertices，除以计数后与 vertex feature 拼接，再送入 Transformer，输出
+$\mu_i,\log\sigma_i^2$。decoder 把采样 latent 与同一 vertex 坐标拼接，输出
+edge/face 两套 per-vertex embedding。论文采用交错 SAGEConv 与 Transformer；
+当前代码是一次显式 face-to-vertex 聚合加 Transformer 的简化版本。
+\coderef{mini_nexus/topology.py:111--180}
+\paperref{Nexus v1 p.5 L028--L040, Eq.(6)}
+
+\paragraph{变长 mask、负样本和训练顺序不是工程附属品。}
+不同对象的 token 数不同，padding 后的 masked MSE 必须写成
+\begin{equation}
+\mathcal L_{\mathrm{mask}}
+=\frac{\sum_{b,i}m_{bi}\|v_\theta(x_{t,bi},t,C)-u_{t,bi}\|^2}
+{D\sum_{b,i}m_{bi}},
+\end{equation}
+而不能先对所有 padding 元素求平均。Attention 同样必须屏蔽 padding key，输出
+位置还要再乘 mask；否则网络可以通过 padding 数量识别样本，loss 也会被大量
+零元素稀释。
+\coderef{mini_nexus/models.py:218--228,320--347; mini_nexus/flow.py:43--59}
+
+Topology 分类还面对 $O(V^2)$ 非边远多于真边的问题。若只用均匀随机负样本，
+大多数负例过于简单；模型可能学会“距离远就是负”，却不会区分空间近邻但不连接、
+two-hop、假 cycle 和 wedge。当前 sidecar 按 preset 分配各来源配额，训练时无放回
+并跨来源去重；验证时固定顺序，避免阈值指标被重新采样噪声污染。BCE 的下降只能
+证明候选上的分类改善，必须结合 edge/face precision、recall、F1 与最终 recovery。
+\coderef{mini_nexus/negative_candidates.py:64--138,152--235,237--274; mini_nexus/training_2k.py:147--189}
+\paperref{Nexus v1 p.5 L057--L066, Eq.(7)；p.6 L019--L023}
+
+上面六块知识最终汇成一条调用链：点云经 VecSet-style encoder 变成条件 token；
+DiT 用 self-attention、3D RoPE、cross-attention 和时间条件实现速度场；Topology
+VAE 用 incidence message 加全局 Transformer 得到可生成 latent；mask 保证变长
+batch 的数学目标正确；负样本协议决定 topology classifier 是否真的学会边和面。
+
+\section{第四部分：Hunyuan3D-2.1 与 Nexus 的论文--代码对应}
+
+\subsection{Hunyuan3D-2.1 Shape：从 VAE latent 到最终 mesh}
+
+\subsubsection*{完整数据流：它为何不是 mesh 直出}
+
+Hunyuan3D-2.1 Shape 的数据流是
+\begin{equation*}
+\begin{aligned}
+\text{image}&\xrightarrow{\text{DINOv2}}c,\\
+\text{mesh surface}&\xrightarrow{\text{ShapeVAE encoder}}z_1,\\
+x_0\sim\N(0,I)&\xrightarrow{\text{DiT+ODE}}\hat z_1
+\xrightarrow{\text{VAE decoder}}\widehat{\mathrm{SDF}}
+\xrightarrow{\text{Marching Cubes}}\hat M.
+\end{aligned}
+\end{equation*}
+论文明确说 VAE decoder 输出 SDF，再通过 Marching Cubes 得到三角网格，所以它不是直接预测 $(V,F)$。
+\paperref{Hunyuan3D-2.1 p.4 L038--L048；p.5 L015--L031、L048--L058}
+
+\subsubsection*{训练代码逐层展开}
+
+\paragraph{1. 条件和干净 latent。}
+官方 \texttt{Diffuser.forward} 先用条件编码器处理图像，然后在无梯度区间用冻结的 first-stage ShapeVAE 编码 shape，并乘 \texttt{z\_scale\_factor}；最后把 latent 与条件交给 transport loss。
+\coderef{Hunyuan3D-2.1/hy3dshape/hy3dshape/models/diffusion/flow_matching_sit.py:256--289}
+
+\begin{lstlisting}[style=py]
+contexts = cond_stage_model(image=batch["image"], ...)
+with torch.no_grad():
+    latents = first_stage_model.encode(batch["surface"], sample_posterior=True)
+    latents = z_scale_factor * latents
+loss = transport.training_losses(model, latents, {"contexts": contexts})["loss"].mean()
+\end{lstlisting}
+
+\paragraph{2. Flow Matching 样本与 loss。}
+\texttt{Transport.sample} 生成 $x_0\sim\N(0,I)$ 和 $t$；\texttt{path\_sampler.plan} 构造 $(t,x_t,u_t)$；DiT 输出速度；velocity 模式下做 $\|v_\theta-u_t\|^2$。
+\coderef{Hunyuan3D-2.1/.../models/diffusion/transport/transport.py:138--182}
+
+\begin{lstlisting}[style=py]
+x0 = torch.randn_like(x1)
+t = torch.rand(x1.shape[0])
+t, xt, ut = path_sampler.plan(t, x0, x1)
+model_output = model(xt, t, **model_kwargs)
+loss = mean_flat((model_output - ut) ** 2)
+\end{lstlisting}
+
+这里的 $x_1$ 是 ShapeVAE 的真实 latent token，不是最终 mesh；$u_t$ 是路径速度。若配置切换到 noise 或 score 参数化，同一个 transport 文件还实现了对应权重，但当前论文所述主线是 velocity。
+
+\paragraph{3. DiT 到底做什么。}
+DiT 的输入 token 是 $x_t$，另有时间嵌入 $e(t)$ 和图像条件 token $c$。Transformer 自注意力交换 shape token 间信息；条件交叉注意力把图像语义注入 shape token；时间调制让同一个网络知道当前噪声/路径位置。论文报告 21 层 Transformer，并使用 cross-attention 注入图像条件。
+\paperref{Hunyuan3D-2.1 p.6 L001--L009；p.5 Fig.2--3, L001--L016}
+
+官方实现中 \texttt{timestep\_embedding} 生成正余弦时间特征；\texttt{Modulation} 产生 shift、scale、gate；双流 block 先分别调制 image/text 流，再拼接 Q/K/V 做联合注意力。
+\coderef{Hunyuan3D-2.1/.../models/denoisers/hunyuan3ddit.py:40--60,138--217}
+
+\paragraph{4. 推理为何变量还叫 noise\_pred。}
+Pipeline 从随机 latent 开始，编码图像条件，在每个时间步调用模型；若使用 CFG，则
+\begin{equation}
+v_{\mathrm{cfg}}=v_{\mathrm{uncond}}+w(v_{\mathrm{cond}}-v_{\mathrm{uncond}}).
+\end{equation}
+代码变量名仍叫 \texttt{noise\_pred}，但 scheduler 更新
+\begin{equation}
+x_{k+1}=x_k+(\sigma_{k+1}-\sigma_k)\,\texttt{model\_output},
+\end{equation}
+其语义是 Flow Matching Euler 的速度输出；不能仅凭变量名断言它预测 DDPM 噪声。
+\coderef{Hunyuan3D-2.1/hy3dshape/hy3dshape/pipelines.py:690--783; schedulers.py:301--318}
+
+\begin{claimbox}[对 Hunyuan3D-2.1 的正确结论]
+Hunyuan3D-2.1 提供了非常清楚的“VAE latent 上做 flow matching”的参考代码组织：冻结 first stage，训练 DiT 运输 latent，采样后用 decoder 还原隐式场并 Marching Cubes。可以借鉴其 transport / model / pipeline / scheduler 分层，但不能把它的 SDF 解码器直接当成 Nexus 的 topology decoder。
+\end{claimbox}
+
+\subsection{Nexus 论文主线与当前 mini\_nexus 代码结构}
+
+\subsubsection*{论文的两阶段生成逻辑}
+
+论文将
+\begin{equation}
+p(M\mid C)=p(V,F\mid C)=p(V\mid C)\,p(F\mid V,C)
+\end{equation}
+实现为两阶段：
+\begin{enumerate}
+\item \textbf{Vertex Stage}：把顶点量化为深度 $D$ 的八叉树，逐层生成每个 occupied parent 的 8 位 child occupancy；最深叶 cell center 给出 $V$。
+\item \textbf{Topology Stage}：Topology VAE 把 $(V,F)$ 编码成 per-vertex latent $H_V$；条件 flow/DiT 生成 $H_V$；冻结 decoder 得到 edge/face spacetime embedding；先判边，再枚举 edge graph 的 3-cycle 并判面，得到 $F$。
+\end{enumerate}
+\paperref{Nexus v1 p.4 L003--L046, Eq.(2)；p.5 L028--L066, Eq.(3)--(7)；p.6 L025--L045}
+
+\subsubsection*{当前仓库调用图}
+
+\begin{verbatim}
+training_manifest_manual_dedup.csv
+  -> Nexus2KManifestDataset / collate_nexus2k_samples
+      -> condition [B,8192,6]
+      -> 9 octree levels: target [B,P_d,8], metadata/position/depth/mask
+      -> Stage-3 vertices/faces + Stage-4 topology truth
+
+  vertex:
+      VecSetConditionEncoder -> ConditionalFlowTransformer
+      -> 8-channel occupancy velocity -> masked FM loss
+
+  topology-ae:
+      TopologyAutoencoder -> edge/face spacetime embeddings
+      -> positive truth + mixed hard negatives -> BCE + KL
+
+  topology-flow:
+      frozen TopologyAutoencoder.encode -> target mu = H_V
+      -> ConditionalFlowTransformer -> masked FM loss
+
+inference:
+  octree Euler sampling -> generated V
+  topology latent Euler sampling -> frozen decoder -> Z_edge/Z_face
+  -> pair interval -> edges -> 3-cycles -> face interval -> faces
+\end{verbatim}
+
+\subsubsection*{数据层：为什么 manifest 不是“随便扫四个文件夹”}
+
+\texttt{Nexus2KManifestDataset} 逐行绑定同一 UID 的 condition、Stage-3 training mesh、octree、topology。加载时验证点云 $[8192,3]$、顶点/面形状、face index、D=9 collision 已消除、octree round-trip、faces/edges/incidence 一致；它不会重新量化或重建标签。
+\coderef{mini_nexus/data_2k.py:184--266,269--300}
+
+变长 mesh 在 batch 中只 padding 顶点并生成 \texttt{vertex\_mask}；faces、edge index 等保留为 tuple，避免把不同对象的 topology 错拼在一起。每个深度单独 padding parent token，并保留 8 位 target、metadata、3D position、depth 与 mask。
+\coderef{mini_nexus/data_2k.py:309--355}
+
+\subsubsection*{Vertex Stage：从八叉树标签到速度回归}
+
+Vertex system 的数据维为 8，因为一个 parent 的 8 个 children 可以同时 occupied；它不是八分类 softmax，而是 8 维 multi-hot 连续目标。Flow Matching 把这个 8 维目标视作 $x_1$，DiT 预测 $x_1-x_0$。
+\coderef{mini_nexus/training.py:14--51}
+\paperref{Nexus v1 p.4 L031--L046}
+
+条件编码器采用简化 VecSet 风格：对 8192 个点做 Fourier 坐标嵌入，用 FPS 选 anchor query，再以所有点为 context 做 cross-attention，输出固定数量条件 token。
+\coderef{mini_nexus/models.py:36--72,75--148}
+
+主干 \texttt{ConditionalFlowTransformer} 的 token 表示为
+\begin{equation}
+h_i=W_x x_{t,i}+W_m m_i+e_{\mathrm{depth}(i)},
+\end{equation}
+每个 block 依次执行 3D-RoPE self-attention、condition cross-attention、FFN，时间 embedding 作为 bias 注入；最后线性层输出与 $x_t$ 同维的速度。
+\coderef{mini_nexus/models.py:155--232,235--268,271--345}
+
+这里是\textbf{结构上对齐、规模上缩小}的独立实现。论文使用约 2B 参数 DiT、VecSet 8 层/2048 hidden/1024 tokens、32 张 A100；当前训练脚本默认 hidden 128、2 层、32 condition tokens，不能把当前 checkpoint 称为论文规模复现。
+\paperref{Nexus p.6 L051--L062；当前默认见 scripts/train\_nexus2k\_single.py:38--66}
+
+\subsubsection*{Topology VAE：图消息、KL bottleneck 与 Spacetime Interval}
+
+当前 encoder 先以顶点坐标和 face centroid 建特征，把 incident face message 平均聚合回顶点，再用 Transformer 做全局交换，输出 per-vertex $\mu,\log\sigma^2$。训练时重参数采样；decoder 把 latent 与 vertex position 拼接，输出两套 embedding：一套判 edge，一套判 face。
+\coderef{mini_nexus/topology.py:111--180}
+
+第一阶 interval 为
+\begin{equation}
+d_{uv}=\|s_u-s_v\|^2-\|t_u-t_v\|^2,
+\end{equation}
+第二阶使用 Gram determinant 得到平行四边形面积平方
+\begin{equation}
+A^2(a,b,c)=\|a-c\|^2\|b-c\|^2-\langle a-c,b-c\rangle^2,
+\end{equation}
+再作
+\begin{equation}
+d_{uvw}=A_s^2-A_t^2.
+\end{equation}
+代码直接把 interval 当 logit，以 $0$ 为自然阈值：正值表示连接，负值表示不连接。
+\paperref{Nexus p.5 L002--L026, L040--L066, Eq.(3)--(5)}
+\coderef{mini_nexus/topology.py:10--43}
+
+正负极不平衡是这里最容易训练失败的原因。论文对边按 TP/TN/FP/FN 分组平衡，对面使用所有正 triplet 与采样负 triplet。当前正式代码使用版本化 sidecar 中的空间近邻、two-hop、cycle、wedge、uniform 负样本，按 preset 无放回抽样并跨来源去重；固定验证不重新随机抽。
+\paperref{Nexus p.5 L057--L066, Eq.(7)；p.6 L019--L023}
+\coderef{mini_nexus/negative_candidates.py:64--138,152--235,237--274; training_2k.py:147--189}
+
+\subsubsection*{Topology Flow：latent 是什么，为什么必须先训好 AE}
+
+\texttt{TopologyFlowSystem} 冻结 Topology Autoencoder，把真实 $(V,F)$ 编码所得 $\mu$ 当干净 $H_V$；再对 $H_V$ 做线性 flow matching，条件是点云 token，metadata/position 是同一批顶点 $V$。若 AE 还不能从 $H_V$ 恢复边和面，flow 即使 loss 很低也没有可用目标空间。
+\coderef{mini_nexus/training.py:95--151}
+
+论文同样先定义 KL-regularized topology AE，再训练条件于 $V,C$ 的 topology latent diffusion；推理时 decoder 后采用 edges-first recovery。
+\paperref{Nexus p.5 L028--L040, Eq.(6)；p.6 L025--L045}
+
+\subsubsection*{训练入口：一条命令如何落到每一步}
+
+\texttt{train\_nexus2k\_single.py} 的 \texttt{--stage} 只允许 vertex / topology-ae / topology-flow。它读取固定 1060/118 manifest；topology-flow 必须加载 topology-ae checkpoint；启用 sidecar 后固定验证 UID；checkpoint resume 会校验 manifest hash 和负样本协议 hash。
+\coderef{scripts/train_nexus2k_single.py:38--66,90--145,305--399}
+
+每个 optimizer step 内，确定性 index stream 取样；vertex stage 按深度轮换；bf16 autocast 前向；loss 除以 gradient accumulation；反向后检查 finite gradient、clip norm、optimizer step；异常时写 \texttt{failure.json}。这使“程序退出”“loss 下降”“恢复 topology”成为三种不同证据。
+\coderef{scripts/train_nexus2k_single.py:148--188,401--458}
+
+\begin{warnbox}[必须保留的论文偏差]
+\begin{itemize}
+\item 论文：Vertex DiT 与 Topology Diffusion 均约 2B；当前：小模型可运行基线。
+\item 论文：推理 DPM-Solver 20 steps；当前：教学/基线实现是 Euler 20 steps。
+\item 论文：Topology AE 交错 SAGEConv 与 Transformer；当前：一次显式 face-to-vertex 聚合后接 Transformer，是简化近似。
+\item 论文：边训练监督 all vertex pairs；当前正式训练为适应规模使用 positive truth + 审计过的混合负样本。
+\item 论文未公开作者代码和权重；因此这里任何成功都只能称 independent reimplementation 的阶段性结果。
+\end{itemize}
+\end{warnbox}
+
+\subsection{如何用代码与实验判断“学会了什么”}
+
+\subsubsection*{最小手算实验}
+
+取一维 $x_0=-1,x_1=3,t=0.25$，则
+\begin{equation}
+x_t=0.75(-1)+0.25(3)=0,\qquad u_t=x_1-x_0=4.
+\end{equation}
+若模型预测 $3.5$，MSE 为 $(3.5-4)^2=0.25$。Euler 取 $K=4$ 且模型始终预测真速度 4，从 $-1$ 开始每步加 $h u=1$，四步恰到 3。高维 tensor 只是每个坐标同时做这件事；Transformer 的任务是根据 $x_t,t,c$ 推断未观测的 $x_1-x_0$。
+
+\subsubsection*{四个层级的验收，不要只看 loss}
+
+\begin{longtable}{>{\bfseries}p{2.7cm}p{5.7cm}p{6.0cm}}
+\toprule
+层级 & 能证明什么 & 不能证明什么\\
+\midrule
+forward / backward smoke & shape、dtype、梯度链路可运行 & 网络学到分布\\
+训练 loss 下降 & 训练目标可优化 & 采样可用、topology 正确\\
+AE recovery & latent/decoder 能重建 edge/face & flow 能生成正确 latent\\
+端到端 generation & generated $V$ 与 generated topology 能组成 mesh & 达到论文质量；仍需正式指标与规模\\
+\bottomrule
+\end{longtable}
+
+当前最关键的诊断顺序是：先看 Topology AE 在固定 24 条 recovery protocol 上的 edge/face precision、recall、F1；再训练 topology flow 并比较 latent recovery；最后处理 generated vertices 与 topology vertex identity 的端到端对应。若 AE 在零阈值下仍恢复 0 face，先修 AE/负样本/阈值校准，不应直接增加 topology-flow 训练步数。
+
+\subsubsection*{读源码时逐行追踪的变量表}
+
+\begin{longtable}{p{3.2cm}p{4.0cm}p{7.3cm}}
+\toprule
+变量 & 数学对象 & 在项目中的含义\\
+\midrule
+\texttt{condition} & $C$ & $[B,8192,6]$，xyz+normal\\
+\texttt{level.target} & $x_1$ & $[B,P_d,8]$，八个 child 的 multi-hot occupancy\\
+\texttt{noise} & $x_0$ & 与 $x_1$ 同形标准高斯\\
+\texttt{noisy} & $x_t$ & $(1-t)x_0+t x_1$\\
+\texttt{target\_velocity} & $u_t$ & $x_1-x_0$\\
+\texttt{prediction} & $v_\theta$ & DiT 预测速度\\
+\texttt{mu} & $H_V$ 的均值 & topology-flow 的干净目标\\
+\texttt{edge\_embedding} & $Z_{edge}$ & 第一阶 interval 的 per-vertex embedding\\
+\texttt{face\_embedding} & $Z_{face}$ & 第二阶 interval 的 per-vertex embedding\\
+\texttt{vertex\_mask} & 有效 token 指示 & padding 不进入 MSE\\
+\bottomrule
+\end{longtable}
+
+\section*{引用版本、行号规则与可复核清单}
+\addcontentsline{toc}{section}{引用版本、行号规则与可复核清单}
+
+\paragraph{行号规则。} 对每个固定 PDF，逐页执行 layout-preserving 文本提取；删去空行；每页从 L001 编号。双栏 PDF 的提取顺序可能把左右栏拼在同一行，因此引用同时保留章节、公式号和图号。讲义中的推导由本文展开；论文定位只用于证明“作者公开写了什么”。
+
+\begin{longtable}{p{3.0cm}p{3.4cm}p{8.8cm}}
+\toprule
+文献 & 固定版本 & SHA-256\\
+\midrule
+Nexus & arXiv:2607.13563v1，13 页 & \texttt{816be5f87a3916cc507c7b59d5dc501c}\newline\texttt{86971a4f14ad8c113d405c5034cd5f6a}\\
+Hunyuan3D-2.1 & arXiv:2506.15442，14 页 & \texttt{f6142fe646f9ff22bacac95118ac952d3}\newline\texttt{82088a4c3fb7ccd0f1f8a5f8afd8a93}\\
+DDPM & arXiv:2006.11239，25 页 & \texttt{aee5e07a802e8dfd2a386374c94fd61d}\newline\texttt{1d056cb7e1e0fec4f28e8120ff5d8505}\\
+Flow Matching & arXiv:2210.02747，28 页 & \texttt{5eeb39ba516396924aba4787452f9d0ab}\newline\texttt{dee88467a4d0c264d9f66cad0c5ee14}\\
+\bottomrule
+\end{longtable}
+
+\paragraph{原始文献链接。}
+\begin{itemize}
+\item Nexus: \url{https://arxiv.org/abs/2607.13563}
+\item Hunyuan3D-2.1: \url{https://arxiv.org/abs/2506.15442}
+\item DDPM: \url{https://arxiv.org/abs/2006.11239}
+\item Flow Matching: \url{https://arxiv.org/abs/2210.02747}
+\item Hunyuan3D-2.1 official repository: \url{https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1}
+\end{itemize}
+
+\begin{claimbox}[读完后应能独立回答]
+\begin{enumerate}
+\item DDPM 的 $q(x_t\mid x_0)$ 为什么有闭式？后验均值和方差怎么配方得到？
+\item ELBO 如何分成 $L_T+\sum L_{t-1}+L_0$？为什么噪声 MSE 是反向均值的一种参数化？
+\item 连续性方程从推前分布如何推导？CFM 为什么与不可计算的 FM 同梯度？
+\item 线性路径为何 target velocity 是 $x_1-x_0$？ODE 唯一性需要什么条件？
+\item Hunyuan 的 latent、DiT、Euler scheduler、SDF decoder 和 Marching Cubes 各自处在什么位置？
+\item Nexus 的 vertex flow 与 topology flow 分别运输什么？Topology VAE 为什么必须先学会 recovery？
+\item 当前 mini\_nexus 哪些是论文一致结构，哪些是缩小或简化的独立实现？
+\end{enumerate}
+\end{claimbox}
+
+\end{document}

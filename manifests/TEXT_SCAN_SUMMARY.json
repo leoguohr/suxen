@@ -1,0 +1,23 @@
+{
+  "vertex": {
+    "text_files_scanned": 9731,
+    "findings": 0,
+    "findings_by_category": {},
+    "report": "/Users/luthier/Documents/sophomore/output/github_nexus_20261008/stage/vertex_potential_secrets.jsonl",
+    "report_contains": "paths, line numbers and categories only; no matched values"
+  },
+  "teacher": {
+    "text_files_scanned": 764,
+    "findings": 0,
+    "findings_by_category": {},
+    "report": "/Users/luthier/Documents/sophomore/output/github_nexus_20261008/stage/teacher_potential_secrets.jsonl",
+    "report_contains": "paths, line numbers and categories only; no matched values"
+  },
+  "repo": {
+    "text_files_scanned": 1105,
+    "findings": 0,
+    "findings_by_category": {},
+    "report": "/Users/luthier/Documents/sophomore/output/github_nexus_20261008/stage/repo_potential_secrets.jsonl",
+    "report_contains": "paths, line numbers and categories only; no matched values"
+  }
+}

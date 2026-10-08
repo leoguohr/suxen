@@ -1,0 +1,10 @@
+# D4 固定实验协议
+D2最终检查点step7400/d2_update3600，SHA2384b430fa52d5012cd793fc2781c79791814f6a4b2e8ac120a711fb91112e1b。严格恢复完整模型、Adam、CPU/CUDA RNG，不重置、不新增warmup。
+四对象 A000105/8，B000195/52，C001045/54，D001885/176。A/B文件与条件/GT哈希原样保留；C/D闭合、无非流形边或退化面，原预处理碰撞/删面率0。四份整数顶点集合两两不同，固定点云/法向，无增强或重新采样。
+新入口train_vertex_d4.py；D2入口、历史权重、结果不修改。模型、loss、精度和采样不变。lr1e-5 WD0 clip1 accum8 BF16，联合训练VecSet/DiT；训练每micro新前向VecSet、新随机t~U[0,1)、新噪声。k=((update-1)*8+micro)%36，mesh=k//9，depth=k%9+1。新预算7200更新，每400开发评估；最终累计14600，每物体每层1600份microbatch（不是1600次独立优化器更新）。非有限loss/梯度停止报错，不调整超参。
+开发base种子29000000..29000003，启动时测基线，此后每400更新4种子×4条件=16树。终验base种子30000000..30000015，只在7200最终模型冻结后一次使用，16×4=64树，主要验收64/64精确整数坐标恢复，4×4匹配矩阵必须为单位矩阵。每层保存真实parents/noise/连续占据/预测cells/GT和最早失配，记录点数/FP/FN/MSE/F1/阈值余量，诊断不加硬门槛。
+完整生成每层20Euler、阈值0.5、从根开始只用自身上层parents；实际noise seed=base+depth*1000，四个root实际噪声相同。后续parent数不同允许noise形状不同。无GT替换、非空修复、topk。沿用C/D2容量4096parents中止并计为失败，不截断称成功。
+六对象对(i,j)分别找最早分叉层，固定该对共同parents和实际噪声，仅切换对应两条件；这批样本六对实测都是depth2/8parents，代码不写死，有depth1/2/9的oracle测试。每种子执行六对，开发24对、终验96对，单独报告；noise seed=base+500000+pair_index*1000。目标相同层不要求输出不同。
+日志每更新NVME与共享存储双写fsync，每400先保存模型/Adam/RNGcheckpoint并共享存储读回SHA，再开发评估。每个评估seed开始/完成有ledger，数组持久SHA验证。training_complete、checkpoint_verified、final_evaluation_started/complete分开记录。已开始的种子不再称为未见。
+输出/tmp/vertex_d4_20260916/run，持久/guohaoran/tmp/vertex_d4_20260916。控制台及启动身份也持久保存。监督同步小日志/数组，不下载权重。
+D4训练/终验结束后复核打包并报告，通过后再讨论4→10→20；不自动扩展、不在本轮加入重新采样点云实验。重新采样条件是之后单独的冻结诊断。
