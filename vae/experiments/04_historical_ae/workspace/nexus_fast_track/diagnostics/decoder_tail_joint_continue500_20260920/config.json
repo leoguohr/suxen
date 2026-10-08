@@ -1,0 +1,59 @@
+{
+  "source_checkpoint": "/guohaoran/nexus_fast_track/diagnostics/decoder_tail_joint_fixed100_20260919/run/model-joint500-tail1000-face1000-inference.pt",
+  "source_sha256": "5a36ab88ee147ef160945cfcec11d1d5cb98026e20c536ce602f6303f1448f7e",
+  "control": "/guohaoran/nexus_fast_track/diagnostics/shared_edge_head_fixed100_20260917",
+  "trainable": [
+    "decoder_blocks.15",
+    "decoder_output_norm",
+    "edge_embedding",
+    "face_embedding"
+  ],
+  "tail_lr": 1e-05,
+  "head_lr": 0.0001,
+  "updates": 500,
+  "optimizer": "restore all three groups from Joint step500 exactly; no reset",
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0,
+  "clip": 1,
+  "objective": "mean100(fully-differentiable Edge Soft4 + Face Soft4); each internal /4; no extra coefficient",
+  "batch_meshes": 100,
+  "microbatch_meshes": 1,
+  "sampling": false,
+  "kl": 0,
+  "face_training": true,
+  "backend": "math00, FP32, TF32 and autocast disabled, identical nonreentrant attention recompute",
+  "threshold": 0,
+  "seed": 20260917,
+  "checkpoint_steps": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+  ],
+  "parent": "/guohaoran/nexus_fast_track/diagnostics/decoder_tail_joint_fixed100_20260919",
+  "parent_checkpoint": "/guohaoran/nexus_fast_track/diagnostics/decoder_tail_joint_fixed100_20260919/run/checkpoint-new0500-tail1000.pt",
+  "parent_checkpoint_sha256": "4e328fcff09d85d001af29548cfd559bf39306054b8c05825249cc95e2ad3b68",
+  "parent_updates": 1000,
+  "new_updates": 500,
+  "cumulative_tail_updates": 1500,
+  "face_head": "continue current Joint Face head and its exact Adam state",
+  "expected_start": {
+    "edge_perfect": 71,
+    "edge_fp": 117054,
+    "edge_fn": 1,
+    "joint_perfect": 71,
+    "face_fp": 7537,
+    "face_fn": 336
+  },
+  "face_lr": 0.0001,
+  "preserve_joint74": "/guohaoran/nexus_fast_track/diagnostics/face_head_recovery_tail1000_fixed100_20260919/run/model-tail1000-face1000-inference.pt",
+  "preserve_joint74_sha256": "0816b3f7358f7a39fc1bd1fbe70ea338a726a0c89fe9ecafc777bbd9b3868170",
+  "parent_joint_updates": 500,
+  "cumulative_joint_updates": 1000
+}

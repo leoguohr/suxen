@@ -1,0 +1,9 @@
+{
+  "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run/checkpoints/vae-1000.pt",
+  "bytes": 2962774094,
+  "sha256": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15",
+  "completed_updates": 36220,
+  "new_updates": 1000,
+  "reason": "milestone",
+  "model_state_sha256": "67eecf4a0e225a5af2f9eb832e44ef2841eccbf00813fa0fc3d2eea0ba6e8bc6"
+}

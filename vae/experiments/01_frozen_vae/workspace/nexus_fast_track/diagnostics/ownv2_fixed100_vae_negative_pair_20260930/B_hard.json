@@ -1,0 +1,60 @@
+{
+  "gpu_uuid": "GPU-80f199d2-afab-fad3-824d-6d2482a4c882",
+  "parent_checkpoint": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_small_noise_20260929/run/checkpoints/vae-0500.pt",
+  "parent_sha256": "7fb1e2a5d128762e147a4b87524d4cc212909625b706841c80e3519576e05562",
+  "parent_model_sha256": "0321529a335611b1c2e96e7b67c7dcfc15aeec81f3eb7a805afdaabc46c9331e",
+  "parent_code_hashes": {
+    "data_objective.py": "3e52edf63e0332bd3bf777826d5eb9e384f781b55ef87d67640a5b7ea06718e6",
+    "evaluate_checkpoint.py": "b9bee888cb7e27c71e3b3d508c51fb8c7a4c5561688a25a49b105d6222cbbb4f",
+    "native_models.py": "ad754ba4c83213ea6b69b2c6f496095924c6a4c2bfbd9c7c0300372ecb4fa1f3",
+    "run_support.py": "39e8e44eb7eb5133bcfe58337b5e4501f99e5f5103dc80082dbfbae9376d8229",
+    "runtime_fixed100.py": "337b3bf40ace5281bd22eba4106a7af7d25fcc2ae1aa79c4b2b5daf14b117f3f",
+    "stream_faces.py": "2fe8da1cc00aac733b8b0536a8169c0ee0c15b5ac000ff9265322af524fe3942",
+    "test_vae_cpu.py": "75dda5a11e79a02a74d2f3b728b92aaf61b1187913759f32daaff80e99587559",
+    "train_vae.py": "eb33ee0d1ce76ba55872fe2bd7b0d1d07993f6eea77ff856ec1ed42c3467433b",
+    "vae_protocol.py": "7a3812bda7f22ff2a5510d62633be2564cbc765e1330b9ee46b169b255d64814"
+  },
+  "parent_baseline": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_small_noise_20260929/run/evaluations/update-00034720/mu/complete.json",
+  "parent_baseline_sha256": "cf0858c965eb62d15881c43e29e65519779d2840095aaefb7446eb69b95d4d94",
+  "data_source": "/guohaoran/nexus_fast_track/diagnostics/shared_edge_head_fixed100_20260917",
+  "run_directory": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_negative_pair_20260930/B_hard",
+  "branch": "B_hard",
+  "hard_pool_path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_negative_pair_20260930/hard_pool.json",
+  "hard_pool_sha256": "f45ad0b2084c6209fd8198ba963c9f7dfab411da5fda148184c72efbb8ab57a9",
+  "negative_schedule_path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_negative_pair_20260930/negative_schedule.json",
+  "negative_schedule_sha256": "16d6615272d02d71138c62154a686aa5490c010ed35bacc948ed4f30753000e6",
+  "source_step": 34720,
+  "new_updates": 500,
+  "mu_checkpoints": [
+    0,
+    100,
+    250,
+    500
+  ],
+  "noise_checkpoints": [
+    0,
+    500
+  ],
+  "evaluation_seeds": [
+    861001,
+    861002,
+    861003,
+    861004,
+    861005
+  ],
+  "beta": 1e-06,
+  "lr": 0.0001,
+  "logvar_lr": 0.0001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.01,
+  "clip": 1.0,
+  "mesh_per_update": 5,
+  "warmup": false,
+  "negative_seed": 0,
+  "train_noise": "restore parent CUDA generator state; paired fresh epsilon sequence",
+  "authorization": "User authorized two independent500-update same-parent branches; onlynegative source differs; no persistent assistant monitoring afterstartup."
+}

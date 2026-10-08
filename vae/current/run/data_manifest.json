@@ -1,0 +1,816 @@
+{
+  "uids": [
+    "nexus_2k_001150",
+    "nexus_2k_000479",
+    "nexus_2k_000341",
+    "nexus_2k_001045",
+    "nexus_2k_000084",
+    "nexus_2k_001244",
+    "nexus_2k_001692",
+    "nexus_2k_001662",
+    "nexus_2k_001251",
+    "nexus_2k_001843",
+    "nexus_2k_000346",
+    "nexus_2k_000618",
+    "nexus_2k_001780",
+    "nexus_2k_001226",
+    "nexus_2k_000796",
+    "nexus_2k_001409",
+    "nexus_2k_001085",
+    "nexus_2k_001144",
+    "nexus_2k_001370",
+    "nexus_2k_000020",
+    "nexus_2k_001194",
+    "nexus_2k_001179",
+    "nexus_2k_000447",
+    "nexus_2k_001260",
+    "nexus_2k_000118",
+    "nexus_2k_001759",
+    "nexus_2k_000074",
+    "nexus_2k_000519",
+    "nexus_2k_001567",
+    "nexus_2k_000039",
+    "nexus_2k_001087",
+    "nexus_2k_000414",
+    "nexus_2k_000053",
+    "nexus_2k_001277",
+    "nexus_2k_000675",
+    "nexus_2k_001427",
+    "nexus_2k_001716",
+    "nexus_2k_000673",
+    "nexus_2k_000996",
+    "nexus_2k_000242",
+    "nexus_2k_000823",
+    "nexus_2k_000966",
+    "nexus_2k_001536",
+    "nexus_2k_000132",
+    "nexus_2k_000840",
+    "nexus_2k_000575",
+    "nexus_2k_001577",
+    "nexus_2k_000023",
+    "nexus_2k_001960",
+    "nexus_2k_001216",
+    "nexus_2k_001331",
+    "nexus_2k_000142",
+    "nexus_2k_000379",
+    "nexus_2k_001660",
+    "nexus_2k_001550",
+    "nexus_2k_000255",
+    "nexus_2k_001919",
+    "nexus_2k_000872",
+    "nexus_2k_001477",
+    "nexus_2k_000952",
+    "nexus_2k_001825",
+    "nexus_2k_001304",
+    "nexus_2k_001764",
+    "nexus_2k_001483",
+    "nexus_2k_001439",
+    "nexus_2k_001178",
+    "nexus_2k_001395",
+    "nexus_2k_000446",
+    "nexus_2k_001317",
+    "nexus_2k_001957",
+    "nexus_2k_000249",
+    "nexus_2k_000869",
+    "nexus_2k_001415",
+    "nexus_2k_000766",
+    "nexus_2k_000283",
+    "nexus_2k_001539",
+    "nexus_2k_000935",
+    "nexus_2k_001969",
+    "nexus_2k_000520",
+    "nexus_2k_000815",
+    "nexus_2k_000800",
+    "nexus_2k_001211",
+    "nexus_2k_001670",
+    "nexus_2k_001093",
+    "nexus_2k_000308",
+    "nexus_2k_000783",
+    "nexus_2k_000382",
+    "nexus_2k_001935",
+    "nexus_2k_000294",
+    "nexus_2k_001898",
+    "nexus_2k_000083",
+    "nexus_2k_001792",
+    "nexus_2k_000925",
+    "nexus_2k_001896",
+    "nexus_2k_000167",
+    "nexus_2k_000280",
+    "nexus_2k_001232",
+    "nexus_2k_001815",
+    "nexus_2k_001776",
+    "nexus_2k_000898"
+  ],
+  "totals": {
+    "meshes": 100,
+    "vertices": 106325,
+    "edges": 309194,
+    "faces": 204330,
+    "pairs": 84669234
+  },
+  "selection_sha256": "6a88ce78eee5caa00e27e4d7d8d9247132e6725a44697bbb16180ca38fee14c6",
+  "manifest_sha256": "b90e14f5d318dc0d32ad806c631af7f66be28aa644ff3caf357d34ce3e208b93",
+  "source": "/guohaoran/nexus_fast_track/diagnostics/shared_edge_head_fixed100_20260917",
+  "records": [
+    {
+      "uid": "nexus_2k_001150",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001150/mesh_quantized_training.npz",
+      "mesh_sha256": "e7e1a87bf1d6b059d0fa01e57efd59894f28044f6b81197f83f5f3bd92fb5584",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001150/topology.npz",
+      "topology_sha256": "c650d46a442c32e99272413e5aec7f140a0e04de6c94cd3cd3d12d1fbba7eabb"
+    },
+    {
+      "uid": "nexus_2k_000479",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000479/mesh_quantized_training.npz",
+      "mesh_sha256": "1e0891914d9d3b529e9384ec981b79feb0536aa8c55c2b2c966accd7a4f72a53",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000479/topology.npz",
+      "topology_sha256": "be1b75061a64e8ab5baee84c3a7d026cd690bb4eef399d530e155ebe6c1b4fa0"
+    },
+    {
+      "uid": "nexus_2k_000341",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000341/mesh_quantized_training.npz",
+      "mesh_sha256": "d515fcdf61e733bbf16ea52887d1bc3c28c5e6873c3ebfa442aadcad2cca0236",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000341/topology.npz",
+      "topology_sha256": "c44a2f68ec07a05803f368cf7f50753ea190fc7a73b341c4beb5989ab3ecc58b"
+    },
+    {
+      "uid": "nexus_2k_001045",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001045/mesh_quantized_training.npz",
+      "mesh_sha256": "b6fa541b0d9598f7802c0c51e7685e234d048d376b19089710d17c957c3b2fe5",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001045/topology.npz",
+      "topology_sha256": "7be836185eb7ad0d18a7c7e584d17d91e41798b9b1502dc03a5808eeb91ebd11"
+    },
+    {
+      "uid": "nexus_2k_000084",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000084/mesh_quantized_training.npz",
+      "mesh_sha256": "8b730053d3e6bce8f30fba050d74347ee2bff2d81415df0c0eddf62944ddbb2d",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000084/topology.npz",
+      "topology_sha256": "68f79deef270330e774a543d84e05ee57f68f5afc0bfe6c94996d6c82be242c6"
+    },
+    {
+      "uid": "nexus_2k_001244",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001244/mesh_quantized_training.npz",
+      "mesh_sha256": "8e970a9cf1f4673a113a49fb35202a0b5357c8062054733c21215513110596f2",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001244/topology.npz",
+      "topology_sha256": "a34b0a332983b71efcef78f64b69f6d4c7eae072ffdb3788574c11055ab7e5f6"
+    },
+    {
+      "uid": "nexus_2k_001692",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001692/mesh_quantized_training.npz",
+      "mesh_sha256": "17cf9493b531656d60d90f8a1cf451fe72616eb5c4f219e0d27c1957a77f6cc0",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001692/topology.npz",
+      "topology_sha256": "c1cec7bffd76196ae43f4de9a12ffe328976db939cfa26125074240d99c25344"
+    },
+    {
+      "uid": "nexus_2k_001662",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001662/mesh_quantized_training.npz",
+      "mesh_sha256": "e873bc6a8e02adcd7e9920684b7deea0da223d93757b9e33345425b19ad9bc53",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001662/topology.npz",
+      "topology_sha256": "ae0234483544bf8cba4e828c437c9a914604a12efc4af0e99064dc4e1dcd2904"
+    },
+    {
+      "uid": "nexus_2k_001251",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001251/mesh_quantized_training.npz",
+      "mesh_sha256": "d2f3cd10187651e50a840d2d1085767a84f40b1c5568a247980fd88a50e5e8a6",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001251/topology.npz",
+      "topology_sha256": "925a771b7fe76bd3667aecb81d7e41aeda71215b218b3f231822ac1deab7a5e6"
+    },
+    {
+      "uid": "nexus_2k_001843",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001843/mesh_quantized_training.npz",
+      "mesh_sha256": "433a756b92125dbe37547eeed3de762c788ba776dd485c4bdf885cf333841a36",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001843/topology.npz",
+      "topology_sha256": "9b8f191d63bb238665df1299fb70bb3fcf317a5ec2a077bcfa808abb7a7c0d53"
+    },
+    {
+      "uid": "nexus_2k_000346",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000346/mesh_quantized_training.npz",
+      "mesh_sha256": "bcc929816128b3f78737c24582fd3a3ed652c323607b40d47704edb694c65a4d",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000346/topology.npz",
+      "topology_sha256": "f73a1688f3e533a802c297a33547495a880a9637d02cf0976c7b1913dd461b20"
+    },
+    {
+      "uid": "nexus_2k_000618",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000618/mesh_quantized_training.npz",
+      "mesh_sha256": "6624fb1fd5e809f243aa58ee7da886769df776ccbc5189ea3db7fed7ed9b503f",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000618/topology.npz",
+      "topology_sha256": "7053e04c706f6924b45d06ee5f9bd8ccc375ec2d52c8385a143ef337839f2279"
+    },
+    {
+      "uid": "nexus_2k_001780",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001780/mesh_quantized_training.npz",
+      "mesh_sha256": "38fcc695225028fe119053f4a407580cf2c1340f7cafb59a8e46a4de1919245f",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001780/topology.npz",
+      "topology_sha256": "a0aaa1ac125fce3488130ed4c54f9df4394b193e2a5446da967068a86a370301"
+    },
+    {
+      "uid": "nexus_2k_001226",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001226/mesh_quantized_training.npz",
+      "mesh_sha256": "6d6f9b3a0dd972a18bd2fbf8b25d1562cbfcf9b1cf33e72bac9adc7320fdf2a6",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001226/topology.npz",
+      "topology_sha256": "cab0db224dd67628ec0591e645868cd38891e9feac1e4339f1c1489b5eaf1d73"
+    },
+    {
+      "uid": "nexus_2k_000796",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000796/mesh_quantized_training.npz",
+      "mesh_sha256": "26d8b14f4020722639d4ecc6b858d868ff57626617c2e1273b20c09ba608ac11",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000796/topology.npz",
+      "topology_sha256": "a43be55677cfd1ce9c5bc59defc155679ba51363088c74f5a99bdda6d1fdae57"
+    },
+    {
+      "uid": "nexus_2k_001409",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001409/mesh_quantized_training.npz",
+      "mesh_sha256": "ba93cfc2b7346952db8d0b47a7b3a9eb5fbd609676567156a4beeed88a496ea6",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001409/topology.npz",
+      "topology_sha256": "a593bb7ab642faf123728c3ec0abc86e191db86f165b067f0e8f384c75050c0d"
+    },
+    {
+      "uid": "nexus_2k_001085",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001085/mesh_quantized_training.npz",
+      "mesh_sha256": "0e13f2cb0fb7fd1928b8d9d219d68ae430245e96756e0c610140c36602387b58",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001085/topology.npz",
+      "topology_sha256": "f21b2d80676e64a036b2cdeeaa008f17d63733a24318fd9a3a2f1982a4370d04"
+    },
+    {
+      "uid": "nexus_2k_001144",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001144/mesh_quantized_training.npz",
+      "mesh_sha256": "6748e6c7830f9343e76e765aeb2e1f12d34ed0b1ca092adeaa7347cc658d85a6",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001144/topology.npz",
+      "topology_sha256": "5a9ab763b772fefe597482ec2f8e8fdd0933161d7ebe71c67b5ee2455b19e842"
+    },
+    {
+      "uid": "nexus_2k_001370",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001370/mesh_quantized_training.npz",
+      "mesh_sha256": "3898ca08d37e4ecc7b4e15c243f8f4e4cf623025fd5c9f385c7a1768f5ae3c30",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001370/topology.npz",
+      "topology_sha256": "ba3181a60c9f6555ef2d2de89657b0f8826b53d1557b9e2035d7fb66adf7e5cf"
+    },
+    {
+      "uid": "nexus_2k_000020",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000020/mesh_quantized_training.npz",
+      "mesh_sha256": "e61e2cb39bc867ddc69f62c1e39bb5cbc0e61334070ad0d544fe875127911801",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000020/topology.npz",
+      "topology_sha256": "7c4c49e33ba60de566582b7b2b7dd115bf3ce9295eb039f9891e7626eaa2fc16"
+    },
+    {
+      "uid": "nexus_2k_001194",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001194/mesh_quantized_training.npz",
+      "mesh_sha256": "edbc8d61b966871c9d4db0affa6841e476adb8002f2fa3cef9f94f67ccbe7ed6",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001194/topology.npz",
+      "topology_sha256": "2a9f042d52f1fd46b1a385b213c4066e60efa48054d18d940bcfc513ed593f10"
+    },
+    {
+      "uid": "nexus_2k_001179",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001179/mesh_quantized_training.npz",
+      "mesh_sha256": "bb3db830b2ee5bad1ac726aa86c3785c689870d7e46ed7b00cb9379350f99ecd",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001179/topology.npz",
+      "topology_sha256": "023a9b3cfe09f306e80b140f629efe6610096de28df09c4e9fea37dc779568a2"
+    },
+    {
+      "uid": "nexus_2k_000447",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000447/mesh_quantized_training.npz",
+      "mesh_sha256": "e576981660c6c473996dce46ed864f11bc1c5ca73771c89c59a184594a336d62",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000447/topology.npz",
+      "topology_sha256": "bf482955bd45372714edafa8bb76be799071c59c00aa91f09b82097de61f7047"
+    },
+    {
+      "uid": "nexus_2k_001260",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001260/mesh_quantized_training.npz",
+      "mesh_sha256": "bf74d8cfeed65664f78ed47bf1e6c98b5c3f36362305ee32d83bb9bc4778c8e2",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001260/topology.npz",
+      "topology_sha256": "b643419820a18bdfb791dbea1e77a8f6ab4b586d0b632f3a8ea325e88471a8c4"
+    },
+    {
+      "uid": "nexus_2k_000118",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000118/mesh_quantized_training.npz",
+      "mesh_sha256": "a04a8f101b77baafb4641575f4f914a2bc6d3eddcfd62321c7e38dec96aefce2",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000118/topology.npz",
+      "topology_sha256": "fea5150b9cfec649c76045c4400bc27fe4f8898c24b6c864cab115f48f644c0b"
+    },
+    {
+      "uid": "nexus_2k_001759",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001759/mesh_quantized_training.npz",
+      "mesh_sha256": "e67840969a8a3e462a119dbaeb277cf1c1f283bc9ed02dd63e1c3958d2080766",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001759/topology.npz",
+      "topology_sha256": "b89069b1248856aae80464cc93bf571f56f3dab9b84d0d0c3609dcb8e867c2a1"
+    },
+    {
+      "uid": "nexus_2k_000074",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000074/mesh_quantized_training.npz",
+      "mesh_sha256": "33787192ec70ef865038d0d395ad0d039a61b5414ec3a6ab4e700f505331d03f",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000074/topology.npz",
+      "topology_sha256": "f8c4e9f95c28c3ab477bff4ab992c910c644a295e5358e04c912cc4548536272"
+    },
+    {
+      "uid": "nexus_2k_000519",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000519/mesh_quantized_training.npz",
+      "mesh_sha256": "06b07af39353d1ee2f6f21be699e879ed7fea1c22b646e7c7045b5857b50c7fd",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000519/topology.npz",
+      "topology_sha256": "522117cc3afcd681b4685db7461b2ac53cf046a1e7ddf9e14b4109303cb57959"
+    },
+    {
+      "uid": "nexus_2k_001567",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001567/mesh_quantized_training.npz",
+      "mesh_sha256": "a77d1289de552c94b962c25a486dc1cfc5e4daa40169ee7bef8be2351e5f2a5f",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001567/topology.npz",
+      "topology_sha256": "fbe1ac1b3384db29b772c8c1e57830beeef95286c1db713faf466af11e99d1c4"
+    },
+    {
+      "uid": "nexus_2k_000039",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000039/mesh_quantized_training.npz",
+      "mesh_sha256": "fbf574f114b17e27330a5618e643f3a2726d29a48943211c53884f2a1f1b62d5",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000039/topology.npz",
+      "topology_sha256": "f9c9e7b4465cfb52ac43d02dd8f2bf8575e337aef14eb652cf679ec5c7dee0e0"
+    },
+    {
+      "uid": "nexus_2k_001087",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001087/mesh_quantized_training.npz",
+      "mesh_sha256": "d612a7f8d09e6c5d3a4036bb968f29bd355b8cf0a3f678b15584e78f4b32b69e",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001087/topology.npz",
+      "topology_sha256": "713706748fee739ae12a7c80679d8fd567e256706e424dd6d1e587149c0f9f5f"
+    },
+    {
+      "uid": "nexus_2k_000414",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000414/mesh_quantized_training.npz",
+      "mesh_sha256": "54fb097a6000ebd0ee3b509532ee03908ec3c1021de17f171f1e56243c2ee166",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000414/topology.npz",
+      "topology_sha256": "0017a154403fa76b19e7c170dd1145e2a06f123c0c1af8d30f1ce9d066410cdd"
+    },
+    {
+      "uid": "nexus_2k_000053",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000053/mesh_quantized_training.npz",
+      "mesh_sha256": "1ac08bf1c0c5cc1b6278db074525d48d9d1cb9208bd772a1e093e7e79fdbbbb0",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000053/topology.npz",
+      "topology_sha256": "2c9350eb9d52c3a8cc24c844f30e032c8c6bfcf2c5f941f24bfe32f9e61df1f8"
+    },
+    {
+      "uid": "nexus_2k_001277",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001277/mesh_quantized_training.npz",
+      "mesh_sha256": "ceafdc33dd5856fc38f8139aa5eac434e5574aadfd4358f654e660e883e2365c",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001277/topology.npz",
+      "topology_sha256": "14f687437fd65d3ea674b135e9d6f6d8ad7701b87153a1911338f1b5557ebe05"
+    },
+    {
+      "uid": "nexus_2k_000675",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000675/mesh_quantized_training.npz",
+      "mesh_sha256": "fe8f35e734949d67d5564baae050fdc78d6ae47554c1a15c54171bedfa9a0a6f",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000675/topology.npz",
+      "topology_sha256": "da3b4eacd31feca92c6cbde6aec2cca9bf4f2d7eca879dfdec8ae776cbe92afa"
+    },
+    {
+      "uid": "nexus_2k_001427",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001427/mesh_quantized_training.npz",
+      "mesh_sha256": "d94fbe19157e6401e98daf4791137c77620ce1f7375ed8d34db6187addb99e73",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001427/topology.npz",
+      "topology_sha256": "dc3ab7936cb088c1ecb94990ee53ab4f88ea1eb9a3235040970856d782e343ac"
+    },
+    {
+      "uid": "nexus_2k_001716",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001716/mesh_quantized_training.npz",
+      "mesh_sha256": "6decebbfd3feb1850068ffc2aefaf98cf6d54eb349595f10984c9eb78f837ec9",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001716/topology.npz",
+      "topology_sha256": "f4df458748b32712928dc8e75e9ab066badebd6e41db37f14195df2fb76b42d6"
+    },
+    {
+      "uid": "nexus_2k_000673",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000673/mesh_quantized_training.npz",
+      "mesh_sha256": "0db2ca278564be7cf56ee6b00cc5bc416a087c56baa197287797c47a78bce2c8",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000673/topology.npz",
+      "topology_sha256": "ebc68bfb2ee902c228d4a082022e090877583c75cf758e84b3475f45bbd33eb7"
+    },
+    {
+      "uid": "nexus_2k_000996",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000996/mesh_quantized_training.npz",
+      "mesh_sha256": "914a89cb889351d2fdd3aaf83bd2b394e0e819519526897584f0b09983979d45",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000996/topology.npz",
+      "topology_sha256": "d8656cf31a022e31769c2580386b8cfca1c6cd19cb9c5285aa2b07b94e64f2fb"
+    },
+    {
+      "uid": "nexus_2k_000242",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000242/mesh_quantized_training.npz",
+      "mesh_sha256": "793436eb50c54694fe54f7f550954c80f3e48ff2b8e19504524a6f6d38d296ff",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000242/topology.npz",
+      "topology_sha256": "0a3770c071dd3972059d08e2ee3c394131a0527c6e6afcf553aa3587219ca4da"
+    },
+    {
+      "uid": "nexus_2k_000823",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000823/mesh_quantized_training.npz",
+      "mesh_sha256": "45cf3f682a4eba666990f0aa4d5ca4387d1e702e0d62ed60626c215d4f39b06b",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000823/topology.npz",
+      "topology_sha256": "beea1dbcbce0ea62fb8553ea71b4bf18c3d6538fc1f1a4fc829dc0bafa3c5deb"
+    },
+    {
+      "uid": "nexus_2k_000966",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000966/mesh_quantized_training.npz",
+      "mesh_sha256": "b6ff02121ff76a14fbe47ac8df8c07d0d512d9b52c0bf46a9beecfd99eed89a2",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000966/topology.npz",
+      "topology_sha256": "685d8662b180246d63ccd2bcb3e22ec14b5a6640662ada4fe137d65420b37ce1"
+    },
+    {
+      "uid": "nexus_2k_001536",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001536/mesh_quantized_training.npz",
+      "mesh_sha256": "322068a6ed8614e7338e1f98e5517992641937b4e6b2e2dba28e7ffb8c78ef34",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001536/topology.npz",
+      "topology_sha256": "769e2bbf3286699e7f922811e4c2956a8ccd339d2a85cb8b44bec19c306a1fa4"
+    },
+    {
+      "uid": "nexus_2k_000132",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000132/mesh_quantized_training.npz",
+      "mesh_sha256": "49102402fe4b4064359b9ff9e4517a11faa15af0362b16cb08958a76607381aa",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000132/topology.npz",
+      "topology_sha256": "6534554644e4ccad423fc9b316c043873b4046839634c203837c22548b14cd58"
+    },
+    {
+      "uid": "nexus_2k_000840",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000840/mesh_quantized_training.npz",
+      "mesh_sha256": "7c009d15c33e67ce42b564c21bedf43560f0d047c38ec7b2f7fdd649f08ff8dd",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000840/topology.npz",
+      "topology_sha256": "c3fa5689adedd5dd42c8415cd597332f1ebf0630439ec228cf80f7164e6cffe2"
+    },
+    {
+      "uid": "nexus_2k_000575",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000575/mesh_quantized_training.npz",
+      "mesh_sha256": "1c2c5bf332771bc72930541621b6f7c6b4e6b0773181cb0738bb8b65cb4367cc",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000575/topology.npz",
+      "topology_sha256": "8738dbc32d51f8273bf26ae0553ce1c2dad5887a638061907c4e8e42d77961d4"
+    },
+    {
+      "uid": "nexus_2k_001577",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001577/mesh_quantized_training.npz",
+      "mesh_sha256": "1c673513af07f71904be26783f83d81279e6f59fba9bb92d734aa466a6cef570",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001577/topology.npz",
+      "topology_sha256": "3d30225bbdd820a8e38902503658f27e1f0bcc4d6bfa18a6361b8df7ca840bd8"
+    },
+    {
+      "uid": "nexus_2k_000023",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000023/mesh_quantized_training.npz",
+      "mesh_sha256": "12680ac68719ee0d3e8e800688250baff0f672fb4bb5e8843081ea8eba56e518",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000023/topology.npz",
+      "topology_sha256": "7dbdcece32db5fa527552452881b61df716bf80e1dc9a4e7a68b912f3d56ce4f"
+    },
+    {
+      "uid": "nexus_2k_001960",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001960/mesh_quantized_training.npz",
+      "mesh_sha256": "4d8976919d8d0e6ccfb2034a3e71178d0422a23210d7ee44f40b7faac6b41d05",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001960/topology.npz",
+      "topology_sha256": "21a93242397b435387ebd54c501449f8dc4d71c6a64b81dae805df119d97bee8"
+    },
+    {
+      "uid": "nexus_2k_001216",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001216/mesh_quantized_training.npz",
+      "mesh_sha256": "a30e04dc8dbbf3e893d7d28af9ae430e7bd79ee6af7056353b12a22ce8ed5728",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001216/topology.npz",
+      "topology_sha256": "428127ebeda629b6e8f7ab8fdb43c7a0f7717633ee40953c7ef82c171bd90355"
+    },
+    {
+      "uid": "nexus_2k_001331",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001331/mesh_quantized_training.npz",
+      "mesh_sha256": "637c530cac991cd68d0963eb97a99d25a53f440327cf9d0ff1a7a019e2724099",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001331/topology.npz",
+      "topology_sha256": "8b119204c848372e1c3a10f090a894cc7c58cf7c3e765fa929bb584b964a3014"
+    },
+    {
+      "uid": "nexus_2k_000142",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000142/mesh_quantized_training.npz",
+      "mesh_sha256": "68662942ef5ed61066de9ab8587d6e6b0672655b964c2b45ed702a0537d1d5f9",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000142/topology.npz",
+      "topology_sha256": "b87ee706063b7179ad32ddf5d13386127e863dce20d72b7617e6dfe58b09b583"
+    },
+    {
+      "uid": "nexus_2k_000379",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000379/mesh_quantized_training.npz",
+      "mesh_sha256": "bc412c4ba3b94b84a40f33e25a46d19cd38c62d3f659b4abfc2af3b73ea46662",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000379/topology.npz",
+      "topology_sha256": "9f0305a1bcc74ea9414b2e02aeb7de4fec68fc2bc26d2d3c466ddc6250191fa2"
+    },
+    {
+      "uid": "nexus_2k_001660",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001660/mesh_quantized_training.npz",
+      "mesh_sha256": "ebf5a17abf29aab4d88d3f1ee9e435ecb273c0177822a95c243c007b9381d211",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001660/topology.npz",
+      "topology_sha256": "2fd23488c3fb705bf96394d6520b58c4a2660d106fadef588540da4bc8d80be8"
+    },
+    {
+      "uid": "nexus_2k_001550",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001550/mesh_quantized_training.npz",
+      "mesh_sha256": "e87b7d31a1168d59482dc000adf3f64403c4d60847ce1bce3661bae085d6abfc",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001550/topology.npz",
+      "topology_sha256": "aa8fe4ad7d23e88c3cfdfd26dd2e86593f173bb3720f82f702b4b52b0529e2e2"
+    },
+    {
+      "uid": "nexus_2k_000255",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000255/mesh_quantized_training.npz",
+      "mesh_sha256": "c96399e5e49dbf5df495dff215d6a7db68bd1f19d98127d294a235e03118d397",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000255/topology.npz",
+      "topology_sha256": "7596a6b075dfee476540d6cd117faebd1b3c5269fbe5dc72d546670bdce8854c"
+    },
+    {
+      "uid": "nexus_2k_001919",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001919/mesh_quantized_training.npz",
+      "mesh_sha256": "1a226e5c31897c664cac339ed79bec773775718513fa37edfacb9b2dc15da05c",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001919/topology.npz",
+      "topology_sha256": "7216ef97e655f4623e3f56f0fb0d12f69b000306cb515f713062be1907d1009e"
+    },
+    {
+      "uid": "nexus_2k_000872",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000872/mesh_quantized_training.npz",
+      "mesh_sha256": "8ae931c765edde229a56352ddee28921079517ca0f1a20d0ed00b490f03a3e33",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000872/topology.npz",
+      "topology_sha256": "c33d1cac1c1b7aa9bf36abe60002e59eef8ee55271cfaad391f7e70ecd3dcc44"
+    },
+    {
+      "uid": "nexus_2k_001477",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001477/mesh_quantized_training.npz",
+      "mesh_sha256": "4ac46b723df89d8c61d6fbb86b39a2be25bf1f127e17f8019079ca7fddf956a1",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001477/topology.npz",
+      "topology_sha256": "1b2e8f82c4c843dfee29204ae52c9fd50411dc030e3d8e1f8969d554bf853d83"
+    },
+    {
+      "uid": "nexus_2k_000952",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000952/mesh_quantized_training.npz",
+      "mesh_sha256": "0adf74a657543d9ed5334ea2e39e0131e9cdc2901f66e1d9f6c3b760116373ea",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000952/topology.npz",
+      "topology_sha256": "418a986e88d21bcb7100002ded383441bc9f63e8792de685b47561180de277c2"
+    },
+    {
+      "uid": "nexus_2k_001825",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001825/mesh_quantized_training.npz",
+      "mesh_sha256": "b971435f003339302e8402313c22e2df2e1539f88e2e1f791ded62a9d07a171c",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001825/topology.npz",
+      "topology_sha256": "188d5e98c296a9b9df07e2cd1a9acc0766ff2c435f6de248337f3848e2932342"
+    },
+    {
+      "uid": "nexus_2k_001304",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001304/mesh_quantized_training.npz",
+      "mesh_sha256": "a2274a89895f1541648c11e7479632b0cd11a93385b4ac978cadd9fcbedb6423",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001304/topology.npz",
+      "topology_sha256": "d4309bf8d296d5d70ce0fdefb866d57512ba81988c161621f56656d8111d8311"
+    },
+    {
+      "uid": "nexus_2k_001764",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001764/mesh_quantized_training.npz",
+      "mesh_sha256": "caf9dd2984512a478b03ee1d833e484fcd6eb7457f9122dfc3237727dfc8f70f",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001764/topology.npz",
+      "topology_sha256": "954e84bd28a0758e8eff4d98cd7253371c06d6a514606265a9ad8771cc6f9048"
+    },
+    {
+      "uid": "nexus_2k_001483",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001483/mesh_quantized_training.npz",
+      "mesh_sha256": "4c0219fb28660411ae7dd43b04499d1e999bb54b4582aca1622199b3a96bcf89",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001483/topology.npz",
+      "topology_sha256": "b3b1b538c762512c912c87e6ad773df35c495209a56f7b566d6660bd2e58c385"
+    },
+    {
+      "uid": "nexus_2k_001439",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001439/mesh_quantized_training.npz",
+      "mesh_sha256": "692b42de7905736aca0ed826543172ed19b18b4a09d35c2a0b63923d4a0f4761",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001439/topology.npz",
+      "topology_sha256": "c841747ec1237d96cb77771aec48841f255339747c3cf9c159164bde19a790bd"
+    },
+    {
+      "uid": "nexus_2k_001178",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001178/mesh_quantized_training.npz",
+      "mesh_sha256": "4c320f82f27bf2e8de539417b98ddc4f7d920ed59650f3ad962187235ee3d032",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001178/topology.npz",
+      "topology_sha256": "3217cc8235c916b2019d646412e996a631660b07f71d295bff52d6104b39e030"
+    },
+    {
+      "uid": "nexus_2k_001395",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001395/mesh_quantized_training.npz",
+      "mesh_sha256": "76fb68f632b8b468c0696c03b9ee2e598c8734add62acf30b0146aeec6f031b9",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001395/topology.npz",
+      "topology_sha256": "7dd8e7ad8ef7efb90c82b9376b39dcf69afe5c7bf051b21b1d3e2ec797c1f14c"
+    },
+    {
+      "uid": "nexus_2k_000446",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000446/mesh_quantized_training.npz",
+      "mesh_sha256": "337c99307d91dd4cb8a533285b2985b47f20a7428eab34ed40a4edfbfe685231",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000446/topology.npz",
+      "topology_sha256": "5cd54e0191163f0bf51cd132b97acff67b4b09d62fbdb0284caadcddf9167a29"
+    },
+    {
+      "uid": "nexus_2k_001317",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001317/mesh_quantized_training.npz",
+      "mesh_sha256": "6ff8a4fc6731646cf34161097069601e32da5a2c01864f104237cd0cdc4bafb7",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001317/topology.npz",
+      "topology_sha256": "e05b686b36bf48a08ecf1dc49fad3c534bb4427c6f44bb167ee22c99e4bcd0ae"
+    },
+    {
+      "uid": "nexus_2k_001957",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001957/mesh_quantized_training.npz",
+      "mesh_sha256": "417ceaaef6bb5c4c80569864f665d4522879422470e4e3d361b7880aedcadcd1",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001957/topology.npz",
+      "topology_sha256": "dd9c07aa49d1bb9bba2def74debe24654614e59cef63713319c4ac96c3b58388"
+    },
+    {
+      "uid": "nexus_2k_000249",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000249/mesh_quantized_training.npz",
+      "mesh_sha256": "40e61266f127b4f7798538127b613a7c0d5d16bf0460fcb1267c1e9b371d287c",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000249/topology.npz",
+      "topology_sha256": "7898f2f8126c2c66e34fa4dde4467f77d8165de36ef73b66baa4da653864412a"
+    },
+    {
+      "uid": "nexus_2k_000869",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000869/mesh_quantized_training.npz",
+      "mesh_sha256": "082115f7e8d092c029f2dbc1753eb7027970494193c7bf41f5c4354387a070ee",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000869/topology.npz",
+      "topology_sha256": "1182d9874ea83844d1171e8913a2d74ec134d3da455dfaa0054aa2441c166b70"
+    },
+    {
+      "uid": "nexus_2k_001415",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001415/mesh_quantized_training.npz",
+      "mesh_sha256": "f35a4deb6090ccf00c8f65967b390c33f41e6d2851cabc0dc603c857193e0d4b",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001415/topology.npz",
+      "topology_sha256": "9f50d24356d7b004a9d601f3da71d09b55d980dce7ccee272a23cd4b9f10aab1"
+    },
+    {
+      "uid": "nexus_2k_000766",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000766/mesh_quantized_training.npz",
+      "mesh_sha256": "17bb3e2f3ddabf383e8acec7f855694812e4507f0f1c152cafa0f4018bf7c4b5",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000766/topology.npz",
+      "topology_sha256": "bcb4c07d0ff28939757532a99ab9849a0dd63d194c14417a5abd6c376020a964"
+    },
+    {
+      "uid": "nexus_2k_000283",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000283/mesh_quantized_training.npz",
+      "mesh_sha256": "89da9fd636ea580a240379246ad7fdd840de4cfa14213f14398d6ca7e7c06d8b",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000283/topology.npz",
+      "topology_sha256": "69e2fc7d2018f6303e848506d0172a4bc0e811def802060964b89441fb9b1ad8"
+    },
+    {
+      "uid": "nexus_2k_001539",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001539/mesh_quantized_training.npz",
+      "mesh_sha256": "dc58e66c4406a80ce7d9a825c65c283c34206833625bb055f5ac9eb732a12c84",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001539/topology.npz",
+      "topology_sha256": "4ca5d128bd7b6413a83e0755bfe2f5c4697eba58351119eafc4c23547ce8a506"
+    },
+    {
+      "uid": "nexus_2k_000935",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000935/mesh_quantized_training.npz",
+      "mesh_sha256": "f1bde24925d79093430377200c6e0ebed3cfbaf595f5341bdbf767a617fd35a3",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000935/topology.npz",
+      "topology_sha256": "dcc4a38c47bb06ab56296eceabbf13b2c492dd9c110933e0be88a50899f13b30"
+    },
+    {
+      "uid": "nexus_2k_001969",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001969/mesh_quantized_training.npz",
+      "mesh_sha256": "8e0f6a987cf7f4386c80fb0b38263b779197a306599f1e60cb8e451b1dfc91f2",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001969/topology.npz",
+      "topology_sha256": "838c2fc2b5f93c926d77b33727dde681b9bc4ec75d7f2f307287354cee96bf71"
+    },
+    {
+      "uid": "nexus_2k_000520",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000520/mesh_quantized_training.npz",
+      "mesh_sha256": "656fb8cc5a0d551ed7295207ecc50e9a49c159c1ffa161c24a31e984cfb522f5",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000520/topology.npz",
+      "topology_sha256": "b9d58ba9f914d9cc896f4ff68562828d935763b659562659c837e77df8f6e13e"
+    },
+    {
+      "uid": "nexus_2k_000815",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000815/mesh_quantized_training.npz",
+      "mesh_sha256": "0fdd13f6b5649fcadb091f5c4ff4bd006e4d9a2c80365ee964d020e42295a49e",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000815/topology.npz",
+      "topology_sha256": "55ae955839c47e8d02cc5164b6a6aacebe2acbad94e210c88b1012c7ac19caff"
+    },
+    {
+      "uid": "nexus_2k_000800",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000800/mesh_quantized_training.npz",
+      "mesh_sha256": "ca1510287de00879e72cafbfc50d6e41723519503b88a73acb43c59e73384740",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000800/topology.npz",
+      "topology_sha256": "e11c7110c18fcb6e42ce16bbee3b005ec836307b723a13c278733741fa15188c"
+    },
+    {
+      "uid": "nexus_2k_001211",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001211/mesh_quantized_training.npz",
+      "mesh_sha256": "43bf735bdb0dfffc56417fdaa5500ba624b4f3c04e5042a0e34734bda9895d3b",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001211/topology.npz",
+      "topology_sha256": "28a8f7a3ddce69b14ed5d35937a04ba1e9fb4b7dced773f79565c7958ccd6fbb"
+    },
+    {
+      "uid": "nexus_2k_001670",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001670/mesh_quantized_training.npz",
+      "mesh_sha256": "32f106b95cafb723fa31103ec20bb97b8324d5dcae53543f58edf3e070f15c9d",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001670/topology.npz",
+      "topology_sha256": "f6582479c95edcff110770cd0c47a0b45dcbf433096b0aaa12f0a49148db0439"
+    },
+    {
+      "uid": "nexus_2k_001093",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001093/mesh_quantized_training.npz",
+      "mesh_sha256": "886322556ed349ab0419a2b8ce02d28141fc9626517ba53a36f1ece62bd64162",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001093/topology.npz",
+      "topology_sha256": "3b5fad9ac3a360969a8afcb3d9c8c6eb637b0bdfffc7267716cf0271acd6ea18"
+    },
+    {
+      "uid": "nexus_2k_000308",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000308/mesh_quantized_training.npz",
+      "mesh_sha256": "e2c9009baf0ab2d31f1ae7d64b42dfefdf5c7a1f42e6b4cdecb90873da2f06f2",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000308/topology.npz",
+      "topology_sha256": "eeb86e7f9f15e0066efabe0d410481d6de7ed0d7d16fc6874cd80e2cb7025a50"
+    },
+    {
+      "uid": "nexus_2k_000783",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000783/mesh_quantized_training.npz",
+      "mesh_sha256": "0bddb73e22aef5e61384e2d644ee0984ebb3464acb6439a7536f150f9dcdb92b",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000783/topology.npz",
+      "topology_sha256": "b429edfd0b6902d12254db441eeed73452411f7ab93909d4192bf456bfb4fb80"
+    },
+    {
+      "uid": "nexus_2k_000382",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000382/mesh_quantized_training.npz",
+      "mesh_sha256": "515dfc2523d28737a1367c63406b6b638bd56a692b4602bf704d238fc410edbb",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000382/topology.npz",
+      "topology_sha256": "94a5485f8260984522fe028c9554d6eabda6585a50935787e58da1364ea8af55"
+    },
+    {
+      "uid": "nexus_2k_001935",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001935/mesh_quantized_training.npz",
+      "mesh_sha256": "b0646951be3eabaf4e6c72b3c42b0b3489d5492c98fd458e4765eaed9bb99b9b",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001935/topology.npz",
+      "topology_sha256": "dc9a8d31f09cf08776b37fd5b3c1ac09a96b360fdb3be16f1a42ff747559d6b0"
+    },
+    {
+      "uid": "nexus_2k_000294",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000294/mesh_quantized_training.npz",
+      "mesh_sha256": "e06cb70e31aea92a096ac3b29f609a3ede4d2b40e9e456feb0d1264fc0fcf607",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000294/topology.npz",
+      "topology_sha256": "67135764353f242889dfee26f949d58b5da907a8bda1a7f7935c7d835d1135cd"
+    },
+    {
+      "uid": "nexus_2k_001898",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001898/mesh_quantized_training.npz",
+      "mesh_sha256": "59fba00bb29d8d6041fb966676bb1d3875c8ddb056c7de3f271ac2d306679252",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001898/topology.npz",
+      "topology_sha256": "0ca1c26efe45039bba8045138e682007ca240c1644860d34f77ca0afa0003f30"
+    },
+    {
+      "uid": "nexus_2k_000083",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000083/mesh_quantized_training.npz",
+      "mesh_sha256": "a37de7178db33f44c30f2a79636b0599550b454bff13305e52f465450fa007f5",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000083/topology.npz",
+      "topology_sha256": "8118a1e626bee7127b9aa2c05ce18d7c02dc5c1a46529ebeb1b555ed1922c658"
+    },
+    {
+      "uid": "nexus_2k_001792",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001792/mesh_quantized_training.npz",
+      "mesh_sha256": "65fc37492aab4e8027fcd9357329a1fb07086fd648fb1a41bac86d5f4c9ded30",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001792/topology.npz",
+      "topology_sha256": "949a7e4754864643bbc3c90d7d71b2b528b5edf8fcfc5e27d5e83219d8de01fc"
+    },
+    {
+      "uid": "nexus_2k_000925",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000925/mesh_quantized_training.npz",
+      "mesh_sha256": "5949822fdb4e0a56062fe60a27318ea60ac8aa797eebce37eedf405ff8fb5782",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000925/topology.npz",
+      "topology_sha256": "205a283016b725ce541e14f6e32a54bbee1fde8b858de3b5ad3f9f675e3a735b"
+    },
+    {
+      "uid": "nexus_2k_001896",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001896/mesh_quantized_training.npz",
+      "mesh_sha256": "5d9d8b69c6f0f6449e4f3be96cc0813d6b134d09f4949be4d63d5a0a0b5eb0e4",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001896/topology.npz",
+      "topology_sha256": "9be1f0f7a77f4e5c95ca4ac1473353cd0f41da2447f8eb26ca601cf1f0fb6074"
+    },
+    {
+      "uid": "nexus_2k_000167",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000167/mesh_quantized_training.npz",
+      "mesh_sha256": "bcdc4b3bdaac72d2e6d5b0e90bfb113d2d3aca82848f1be044f2bb48d4683af8",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000167/topology.npz",
+      "topology_sha256": "dc8c761b91fbcf44a6f2ee1fa86477caae7fb92490dc7b2adbfe7696a81acfdb"
+    },
+    {
+      "uid": "nexus_2k_000280",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000280/mesh_quantized_training.npz",
+      "mesh_sha256": "861bcad54d4c3bafd15e46725a786ac0641db3ee03c7f9a43df06690a5177fed",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000280/topology.npz",
+      "topology_sha256": "f8730ebf54936b8b2f05148b81a68f438426f21e5818f70b616b483265af2fad"
+    },
+    {
+      "uid": "nexus_2k_001232",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001232/mesh_quantized_training.npz",
+      "mesh_sha256": "0bb132d1a524ee7d6959cb43343ef8cf44c25ae8905d8c2250a9937924e93b3f",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001232/topology.npz",
+      "topology_sha256": "de1babc23ab7003ad3cbb775570027fc0e101590fbfae34adafa02c02341af24"
+    },
+    {
+      "uid": "nexus_2k_001815",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001815/mesh_quantized_training.npz",
+      "mesh_sha256": "daab3b3bca107d2e4c40055c6f6da622f02c370dc34488d25635b8b30b60af1e",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001815/topology.npz",
+      "topology_sha256": "74644eaa37243a05eef22a4893022c89f7fd8267b25659455e6d037a51fe79ba"
+    },
+    {
+      "uid": "nexus_2k_001776",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_001776/mesh_quantized_training.npz",
+      "mesh_sha256": "e42bfdd05f2a5308331e9306778a05a5d0091f043832f7379d76dca5d76622b9",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_001776/topology.npz",
+      "topology_sha256": "1485a36360e80ef23dbbe5756c00a9bca43406f4f4925f1d7483760849986865"
+    },
+    {
+      "uid": "nexus_2k_000898",
+      "mesh_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage3_outputs/nexus_2k_000898/mesh_quantized_training.npz",
+      "mesh_sha256": "6f760114c5b206e7813075ec940fa7d60bee139601e9d3948a86a8be923b35d8",
+      "topology_path": "/guohaoran/nexus_fast_track/data_2k_v1/runs/independent_reimplementation_v2_2k/stage4_outputs/nexus_2k_000898/topology.npz",
+      "topology_sha256": "355e97beef4792457dee9a8164cd94332e1bd1562154fbfbd636f016c1043a05"
+    }
+  ]
+}

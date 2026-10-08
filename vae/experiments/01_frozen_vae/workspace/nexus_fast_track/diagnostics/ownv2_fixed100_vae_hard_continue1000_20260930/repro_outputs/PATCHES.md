@@ -1,0 +1,1 @@
+在新诊断目录复制既有有效代码，原目录只读。此诊断目录不在Git仓库内，无虚构commit。train_continue.py相对父train_pair.py差异见evidence/train_continue.diff：修改源SHA、预算与里程碑，继承B的hard-negative游标，起点采样来源复用明确标注。架构、loss、评分、optimizer更新循环、负采样函数、实际评价器完全原样。新增prepare_continue.py、run_continue.py和汇总脚本仅用于核验、启动与交付。

@@ -1,0 +1,21 @@
+{
+  "source_checkpoint": "/guohaoran/nexus_fast_track/diagnostics/math00_overfit100_face_hardneg_round2_20260917/run/checkpoint-update22500.pt",
+  "source_sha256": "428aeddbc6ea03ae166ba22aa431fe40f4298ca83e0e5008302a3c5eed3ceb79",
+  "scoring_reference": "/guohaoran/nexus_fast_track/diagnostics/shared_edge_head_large3_20260917/snapshots/nexus_2k_000446/effective_code",
+  "head_shape": [32, 1024],
+  "bias": true,
+  "objective": "mean over all 100 meshes of fully differentiable Edge Soft4",
+  "outer_coefficient": 1.0,
+  "batch_meshes": 100,
+  "microbatch_meshes": 1,
+  "head_initialization": "original epoch900 head, not the three-mesh specialist",
+  "upstream_frozen": true,
+  "threshold": 0,
+  "dtype": "float32",
+  "tf32": false,
+  "autocast": false,
+  "seed": 20260917,
+  "sampling": false,
+  "kl": 0,
+  "face_training": false
+}

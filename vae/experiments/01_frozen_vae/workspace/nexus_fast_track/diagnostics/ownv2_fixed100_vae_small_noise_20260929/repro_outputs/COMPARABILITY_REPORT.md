@@ -1,0 +1,3 @@
+# 可比范围
+
+mu评价核对原step34220，sampling结果比较同一5组噪声的新增0与500。noise仅评价不反传，评价不得推进训练RNG。loss分开记录重建、未加权KL、beta；不将sampling与mu的差异直接当成optimizer退化。

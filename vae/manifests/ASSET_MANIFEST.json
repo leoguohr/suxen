@@ -1,0 +1,150 @@
+{
+  "repository": "leoguohr/nexus",
+  "private": true,
+  "branch": "vae/archive-20261008",
+  "release_tag": "vae-evidence-2026-10-08",
+  "created_date": "2026-10-08",
+  "assets": [
+    {
+      "asset": "vae_01_frozen_vae_20261008.zip",
+      "bytes": 79359882,
+      "sha256": "e7925e2e651e7ea5cda2798f5f234dc0e992eaaeaf18a7e0b9aece37353b50ec",
+      "upload_source": "local",
+      "path": "/Users/luthier/Documents/sophomore/output/github_vae_20261008/assets/vae_01_frozen_vae_20261008.zip"
+    },
+    {
+      "asset": "vae_02_ownae_v2_20261008.zip",
+      "bytes": 509541094,
+      "sha256": "e82aa190c8268a4df49d888da1b08d868eca1788c5c0abf1355d254ec935b702",
+      "upload_source": "local",
+      "path": "/Users/luthier/Documents/sophomore/output/github_vae_20261008/assets/vae_02_ownae_v2_20261008.zip"
+    },
+    {
+      "asset": "vae_03_cad50_diagnostics_20261008.zip",
+      "bytes": 30186260,
+      "sha256": "521f1c11f202b8d8dace7b137bcb228c99d0633b7d1c466e3cf9454cce945494",
+      "upload_source": "local",
+      "path": "/Users/luthier/Documents/sophomore/output/github_vae_20261008/assets/vae_03_cad50_diagnostics_20261008.zip"
+    },
+    {
+      "asset": "vae_04_historical_ae_20261008.zip",
+      "bytes": 361320710,
+      "sha256": "90b3f4cd755e21b8c3c8952ed572ae31a4ba1d56ddcb5e762dde0ddab91fd276",
+      "upload_source": "local",
+      "path": "/Users/luthier/Documents/sophomore/output/github_vae_20261008/assets/vae_04_historical_ae_20261008.zip"
+    },
+    {
+      "asset": "ownv2_fixed100_vae_small_noise_20260929.zip",
+      "bytes": 27711066,
+      "sha256": "b40223837e8f22028df811a0aaf16214396aa7c684a305b254ad31336a3deeb1",
+      "files": 5706,
+      "upload_source": "server",
+      "path": "/tmp/nexus_vae_archive_20261008/ownv2_fixed100_vae_small_noise_20260929.zip"
+    },
+    {
+      "asset": "ownv2_fixed100_vae_negative_pair_20260930.zip",
+      "bytes": 104971532,
+      "sha256": "fec83586bda3c1e600fea2e396e3a538661dcc098804f5068247175b44b10261",
+      "files": 11353,
+      "upload_source": "server",
+      "path": "/tmp/nexus_vae_archive_20261008/ownv2_fixed100_vae_negative_pair_20260930.zip"
+    },
+    {
+      "asset": "ownv2_fixed100_vae_hard_continue1000_20260930.zip",
+      "bytes": 46408655,
+      "sha256": "e499e6074fcb0b44f9403aeefe28e20965e75a881923f1dad58b4298d904ac6d",
+      "files": 4498,
+      "upload_source": "server",
+      "path": "/tmp/nexus_vae_archive_20261008/ownv2_fixed100_vae_hard_continue1000_20260930.zip"
+    },
+    {
+      "asset": "cad50_fourier_graph_continue10000_20261005.zip",
+      "bytes": 113678525,
+      "sha256": "c405079588cafe320cf30357230cc279f2156c07c84acea5c32390ed3b7e85d4",
+      "files": 11171,
+      "upload_source": "server",
+      "path": "/tmp/nexus_vae_archive_20261008/cad50_fourier_graph_continue10000_20261005.zip"
+    },
+    {
+      "asset": "fixed100_original_data.zip",
+      "bytes": 7021469,
+      "sha256": "5dc41627be93997612d4d6b450af8f4d9bb6fc77a93a2a03be8a6f5f92ae5491",
+      "files": 202,
+      "upload_source": "server",
+      "path": "/tmp/nexus_vae_archive_20261008/fixed100_original_data.zip"
+    },
+    {
+      "asset": "vae_step36220.pt.part001",
+      "bytes": 891289600,
+      "sha256": "fff418c91f884cd82885f1bd05606ba0af01b5a28b8fa7edd7b4ec445b54074c",
+      "upload_source": "server",
+      "path": "/tmp/nexus_vae_archive_20261008/vae_step36220.pt.part001"
+    },
+    {
+      "asset": "vae_step36220.pt.part002",
+      "bytes": 891289600,
+      "sha256": "f009907b36f00c082f0e6d868cd120c076cbad58b63550c0e8a22ea86ccedeb9",
+      "upload_source": "server",
+      "path": "/tmp/nexus_vae_archive_20261008/vae_step36220.pt.part002"
+    },
+    {
+      "asset": "vae_step36220.pt.part003",
+      "bytes": 891289600,
+      "sha256": "e691360eabdef8b9e7a163996206e4106678dc2d51407e28122f060f7a107e22",
+      "upload_source": "server",
+      "path": "/tmp/nexus_vae_archive_20261008/vae_step36220.pt.part003"
+    },
+    {
+      "asset": "vae_step36220.pt.part004",
+      "bytes": 288905294,
+      "sha256": "8c6dff923bbacf1996c6c31d45fefd7340fa970536641d971075fc8551a44d4d",
+      "upload_source": "server",
+      "path": "/tmp/nexus_vae_archive_20261008/vae_step36220.pt.part004"
+    },
+    {
+      "asset": "vae_server_manifests_20261008.zip",
+      "bytes": 1776149,
+      "sha256": "2e697137d554ddc667a95210c520cf86c7bf0d7027853fc8127bd21b2df1610d",
+      "upload_source": "server",
+      "path": "/tmp/nexus_vae_archive_20261008/vae_server_manifests_20261008.zip"
+    },
+    {
+      "asset": "vae_manifests_and_readme_20261008.zip",
+      "bytes": 3654136,
+      "sha256": "70c236777bd9a6ce6645c2858170b15cd85dcfdd5691cf6ac6b4f78de7e98b01",
+      "upload_source": "local",
+      "path": "/Users/luthier/Documents/sophomore/output/github_vae_20261008/assets/vae_manifests_and_readme_20261008.zip"
+    }
+  ],
+  "bytes": 4248403572,
+  "checkpoint": {
+    "source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run/checkpoints/vae-1000.pt",
+    "bytes": 2962774094,
+    "sha256": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15",
+    "parts": [
+      {
+        "asset": "vae_step36220.pt.part001",
+        "bytes": 891289600,
+        "sha256": "fff418c91f884cd82885f1bd05606ba0af01b5a28b8fa7edd7b4ec445b54074c"
+      },
+      {
+        "asset": "vae_step36220.pt.part002",
+        "bytes": 891289600,
+        "sha256": "f009907b36f00c082f0e6d868cd120c076cbad58b63550c0e8a22ea86ccedeb9"
+      },
+      {
+        "asset": "vae_step36220.pt.part003",
+        "bytes": 891289600,
+        "sha256": "e691360eabdef8b9e7a163996206e4106678dc2d51407e28122f060f7a107e22"
+      },
+      {
+        "asset": "vae_step36220.pt.part004",
+        "bytes": 288905294,
+        "sha256": "8c6dff923bbacf1996c6c31d45fefd7340fa970536641d971075fc8551a44d4d"
+      }
+    ],
+    "format": "raw byte split; concatenate in listed order"
+  },
+  "excluded": "Historical checkpoint replicas and redundant hidden caches; see SERVER_COLLECTION.json; no credentials.",
+  "manifest_scope": "payload assets only; this manifest, checksum table and later verification receipt are metadata sidecars"
+}

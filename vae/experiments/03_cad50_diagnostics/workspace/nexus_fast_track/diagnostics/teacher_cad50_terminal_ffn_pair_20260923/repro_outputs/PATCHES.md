@@ -1,0 +1,7 @@
+# 改动范围
+
+新增代码在独立实验目录；不修改主工程AGENTS、模型源代码、训练配置、原README、数据/pool或历史checkpoint。
+
+H的runtime.py、effective_loss_and_scoring.py、loader.py、evaluate.py、construction_args.json、pool_manifest.json与baseline字节相同。terminal_ffn.py新增FFN及可恢复执行hook；train.py增加独立新组与审计；helpers.py支持新组step0与逐字节起点核对。后处理新增cold_verify、CPU审计、表格和打包脚本。
+
+DIFF_FROM_BASELINE.patch仅列源码差异，新增运行JSON不混入源码diff。启动commit与文件SHA保留；Git bundle另包含完成后的后处理代码及报告。主README内CPU toy措辞更正在ANNOTATED_README副本和COMPARABILITY_REPORT中说明。

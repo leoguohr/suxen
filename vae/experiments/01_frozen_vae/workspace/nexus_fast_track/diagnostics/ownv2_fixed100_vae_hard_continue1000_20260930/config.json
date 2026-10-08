@@ -1,0 +1,67 @@
+{
+  "gpu_uuid": "GPU-d59b34c9-1810-15c1-4cc9-db2bd953b574",
+  "parent_checkpoint": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_negative_pair_20260930/B_hard/checkpoints/vae-0500.pt",
+  "parent_sha256": "a1d650c12a4c86350f8645a0fc32e81abac550b563f979349c3946f08f12c2a9",
+  "parent_model_sha256": "24e3df521012ea13e8f0883235cb8df4b817f1ecf32d7ec743c8cfade956a33c",
+  "parent_code_hashes": {
+    "data_objective.py": "3e52edf63e0332bd3bf777826d5eb9e384f781b55ef87d67640a5b7ea06718e6",
+    "evaluate_checkpoint.py": "b9bee888cb7e27c71e3b3d508c51fb8c7a4c5561688a25a49b105d6222cbbb4f",
+    "native_models.py": "ad754ba4c83213ea6b69b2c6f496095924c6a4c2bfbd9c7c0300372ecb4fa1f3",
+    "pair_negatives.py": "c8e67d1f58b6dc2b871f3051d93a2725688ba1f4d27bd4c4a35ed48fdbc1b18f",
+    "prepare_pair.py": "47c5f07c3562c55e04af60d4854ebfc4dded59468fe5eea645ecb82a107b2d3c",
+    "run_support.py": "39e8e44eb7eb5133bcfe58337b5e4501f99e5f5103dc80082dbfbae9376d8229",
+    "runtime_fixed100.py": "337b3bf40ace5281bd22eba4106a7af7d25fcc2ae1aa79c4b2b5daf14b117f3f",
+    "stream_faces.py": "2fe8da1cc00aac733b8b0536a8169c0ee0c15b5ac000ff9265322af524fe3942",
+    "train_pair.py": "f12a306d38e4b5d70326544bfb0d895248311b25b2edf7030a75661cbc73e4d3",
+    "vae_protocol.py": "7a3812bda7f22ff2a5510d62633be2564cbc765e1330b9ee46b169b255d64814"
+  },
+  "parent_baseline": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_negative_pair_20260930/B_hard/evaluations/update-00035220/mu/complete.json",
+  "parent_baseline_sha256": "b39eac9cdfe12a72a58e402cd4ab3507399ac76316e9b73b4c44ec0217ebcfb5",
+  "data_source": "/guohaoran/nexus_fast_track/diagnostics/shared_edge_head_fixed100_20260917",
+  "run_directory": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run",
+  "branch": "B_hard",
+  "hard_pool_path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/hard_pool.json",
+  "hard_pool_sha256": "f45ad0b2084c6209fd8198ba963c9f7dfab411da5fda148184c72efbb8ab57a9",
+  "negative_schedule_path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/negative_schedule.json",
+  "negative_schedule_sha256": "b99792dda893a5161ef30dc0f544a1444ef66ca68330642d6f7cb75cf28868aa",
+  "source_step": 35220,
+  "new_updates": 1000,
+  "mu_checkpoints": [
+    0,
+    100,
+    250,
+    500,
+    750,
+    1000
+  ],
+  "noise_checkpoints": [
+    0,
+    1000
+  ],
+  "evaluation_seeds": [
+    861001,
+    861002,
+    861003,
+    861004,
+    861005
+  ],
+  "beta": 1e-06,
+  "lr": 0.0001,
+  "logvar_lr": 0.0001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.01,
+  "clip": 1.0,
+  "mesh_per_update": 5,
+  "warmup": false,
+  "negative_seed": 0,
+  "train_noise": "Continue B35220 training generator exactly; no reseeding or replay",
+  "authorization": "User: continue B35220 for1000 effective updates to36220, then stop; use the one available GPU; no persistent assistant supervision after startup.",
+  "hard_pool_source_sha256": "7fb1e2a5d128762e147a4b87524d4cc212909625b706841c80e3519576e05562",
+  "primary_metric": "actual Face micro-F1 >= 0.997; mu and each noise condition reported separately",
+  "strict_zero_error_is_required_for_stage_pass": false,
+  "reused_step0_noise_evaluations": true
+}

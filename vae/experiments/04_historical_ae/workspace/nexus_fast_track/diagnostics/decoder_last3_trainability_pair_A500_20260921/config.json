@@ -1,0 +1,72 @@
+{
+  "experiment": "Same A500: last2 versus last3 trainability; no added layer",
+  "control": "/guohaoran/nexus_fast_track/diagnostics/shared_edge_head_fixed100_20260917",
+  "branches": {
+    "Control_last2": false,
+    "Treatment_last3": true
+  },
+  "new_updates_per_branch": 500,
+  "checkpoints": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+  ],
+  "partition": "historical S71 F29; 000520 stays F",
+  "objective": "L_SE+L_SF+L_FE+L_FF; each mesh /100; both branches identical",
+  "source_full": "/guohaoran/nexus_fast_track/diagnostics/decoder_last2_success_edge_half_pair_20260921/A_control/run/model-new0500-inference.pt",
+  "source_full_sha256": "b0b31c3fcef870f303c6d808eb3468b6c70e5eb3313c039fdcbfc34632bede3e",
+  "source_checkpoint": "/guohaoran/nexus_fast_track/diagnostics/decoder_last2_success_edge_half_pair_20260921/A_control/run/checkpoint-new0500.pt",
+  "source_checkpoint_sha256": "8268d06c33820da22291ff433ee60fc50510c5e6ea19c6f26a073fb5b97bd952",
+  "preserve74": "/guohaoran/nexus_fast_track/diagnostics/face_head_recovery_tail1000_fixed100_20260919/run/model-tail1000-face1000-inference.pt",
+  "preserve74_sha256": "0816b3f7358f7a39fc1bd1fbe70ea338a726a0c89fe9ecafc777bbd9b3868170",
+  "lr": {
+    "decoder_tail": 1e-05,
+    "decoder14": 1e-05,
+    "edge_head": 0.0001,
+    "face_head": 0.0001,
+    "decoder13": 1e-05
+  },
+  "adam": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0
+  },
+  "clip": 1,
+  "face_pool_count": 750215,
+  "edge_pair_count": 84669234,
+  "sampling": false,
+  "kl": 0,
+  "threshold": 0,
+  "backend": "existing math00; FP32 MATH, deterministic Graph, TF32/autocast off",
+  "cache_boundary": "input to decoder13; frozen upstream decoder0..12; block13 forward in both branches",
+  "full_real_network_check": "all100 at every checkpoint",
+  "checkpoint_extra_steps": [
+    1
+  ],
+  "gpu_uuid": "GPU-0ae7719a-74e5-08ae-75de-0a6205381365",
+  "per_step_edge_records": true,
+  "edge_loss_uid_reference": [
+    "A500",
+    "previous_update"
+  ],
+  "progress_thresholds": {
+    "branch_progress": ">72",
+    "project_record": ">74",
+    "main_goal": "100/100 same checkpoint"
+  },
+  "new_optimizer_group": "Only Treatment decoder13 begins with empty Adam state; inherited groups remain exact",
+  "full_eval_schedule": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+  ]
+}

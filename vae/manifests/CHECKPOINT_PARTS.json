@@ -1,0 +1,28 @@
+{
+  "source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run/checkpoints/vae-1000.pt",
+  "bytes": 2962774094,
+  "sha256": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15",
+  "parts": [
+    {
+      "asset": "vae_step36220.pt.part001",
+      "bytes": 891289600,
+      "sha256": "fff418c91f884cd82885f1bd05606ba0af01b5a28b8fa7edd7b4ec445b54074c"
+    },
+    {
+      "asset": "vae_step36220.pt.part002",
+      "bytes": 891289600,
+      "sha256": "f009907b36f00c082f0e6d868cd120c076cbad58b63550c0e8a22ea86ccedeb9"
+    },
+    {
+      "asset": "vae_step36220.pt.part003",
+      "bytes": 891289600,
+      "sha256": "e691360eabdef8b9e7a163996206e4106678dc2d51407e28122f060f7a107e22"
+    },
+    {
+      "asset": "vae_step36220.pt.part004",
+      "bytes": 288905294,
+      "sha256": "8c6dff923bbacf1996c6c31d45fefd7340fa970536641d971075fc8551a44d4d"
+    }
+  ],
+  "format": "raw byte split; concatenate in listed order"
+}

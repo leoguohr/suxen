@@ -1,0 +1,69 @@
+{
+  "current_effective_python_files": 12,
+  "local_server_exact_match": true,
+  "syntax_ast_parse_only": true,
+  "gpu_test_or_training_performed": false,
+  "files": [
+    {
+      "path": "code/data_objective.py",
+      "sha256": "3e52edf63e0332bd3bf777826d5eb9e384f781b55ef87d67640a5b7ea06718e6",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/code/data_objective.py"
+    },
+    {
+      "path": "code/evaluate_checkpoint.py",
+      "sha256": "b9bee888cb7e27c71e3b3d508c51fb8c7a4c5561688a25a49b105d6222cbbb4f",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/code/evaluate_checkpoint.py"
+    },
+    {
+      "path": "code/native_models.py",
+      "sha256": "ad754ba4c83213ea6b69b2c6f496095924c6a4c2bfbd9c7c0300372ecb4fa1f3",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/code/native_models.py"
+    },
+    {
+      "path": "code/pair_negatives.py",
+      "sha256": "c8e67d1f58b6dc2b871f3051d93a2725688ba1f4d27bd4c4a35ed48fdbc1b18f",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/code/pair_negatives.py"
+    },
+    {
+      "path": "code/prepare_continue.py",
+      "sha256": "3b54da08d4a032d5097d117c9b85172be9cd595bb46c48784c866647fb3dcd47",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/code/prepare_continue.py"
+    },
+    {
+      "path": "code/run_support.py",
+      "sha256": "39e8e44eb7eb5133bcfe58337b5e4501f99e5f5103dc80082dbfbae9376d8229",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/code/run_support.py"
+    },
+    {
+      "path": "code/runtime_fixed100.py",
+      "sha256": "337b3bf40ace5281bd22eba4106a7af7d25fcc2ae1aa79c4b2b5daf14b117f3f",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/code/runtime_fixed100.py"
+    },
+    {
+      "path": "code/stream_faces.py",
+      "sha256": "2fe8da1cc00aac733b8b0536a8169c0ee0c15b5ac000ff9265322af524fe3942",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/code/stream_faces.py"
+    },
+    {
+      "path": "code/train_continue.py",
+      "sha256": "0326278e53b6b059fd23d757255a296614778226e5d769e46e7078284f457361",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/code/train_continue.py"
+    },
+    {
+      "path": "code/vae_protocol.py",
+      "sha256": "7a3812bda7f22ff2a5510d62633be2564cbc765e1330b9ee46b169b255d64814",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/code/vae_protocol.py"
+    },
+    {
+      "path": "run_continue.py",
+      "sha256": "7141567de62c480a05b3bd4c645b5b839ddc8680773965e752259461a9613cd6",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/run_continue.py"
+    },
+    {
+      "path": "summarize_results.py",
+      "sha256": "a406700600c3a29bd0f0ec0c9144f3357c51b8b58127a59e189abf8e93339953",
+      "server_source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/ownv2_fixed100_vae_hard_continue1000_20260930/summarize_results.py"
+    }
+  ],
+  "final_checkpoint_sha256": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15"
+}
