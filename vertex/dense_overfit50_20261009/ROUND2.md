@@ -96,3 +96,22 @@ After a resume, the SHA check is skipped (state comes from `latest.pt`). On firs
 For each failed tree it reports the sampler's continuous values for the wrong bits at the first
 wrong depth. Values near 0.5 point to sampling or near-miss problems; values near 0/1 mean the
 model was confidently wrong.
+
+## Round 2b: two more jobs on the two extra GPUs (J3, J4)
+
+Same start, seed, schedule and evaluations as J1/J2. Each adds one change to **J2** (`--loss-weighting token`):
+
+| Job | Extra flags | Question |
+|---|---|---|
+| J3 | `--fine-copies 2` | Do depths 6–9, where failures now start, need more samples per update? About 1.7× time per update, so roughly 1.5 days for 9,000 updates. |
+| J4 | `--parent-drop 0.1 --parent-add 0.1` | Self-correction test. Each item at depths 2–9 has up to 10% of its true parents dropped and up to 10% spurious neighbour parents added, with "no children" as their target. Does training on corrupted parents shrink the error cascade? |
+
+These flags default to off, and with them off the item stream is bit-identical to before, so J1/J2 are
+unaffected even if they restart on this code.
+
+```bash
+# J3 (GPU 3):  $PY -u dense_train.py $COMMON --loss-weighting token --fine-copies 2 --output $OUT/J3_token_fine2
+# J4 (GPU 4):  $PY -u dense_train.py $COMMON --loss-weighting token --parent-drop 0.1 --parent-add 0.1 --output $OUT/J4_token_selfcorrect
+```
+Compare J3 and J4 with J2 at the same milestone updates (1,800 / 3,600 / ...). For J4, run
+`analyze_cascade.py` on its evaluations to see whether inherited errors drop.

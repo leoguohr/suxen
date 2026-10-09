@@ -63,7 +63,7 @@ def make_args(**overrides):
     args = argparse.Namespace(objects_per_update=3, coarse_depths=5, coarse_copies=3, row_tokens=1024,
                               chunk_tokens=2048, checkpoint_activations=1, clip=1e9, lr=0.0, warmup=1,
                               seed=7, loss_weighting="item", decay_fraction=0.0, min_lr=0.0,
-                              max_updates=10**9)
+                              max_updates=10**9, fine_copies=1, parent_drop=0.0, parent_add=0.0)
     for k, v in overrides.items():
         setattr(args, k, v)
     return args
@@ -151,6 +151,37 @@ def main():
         vecset = [g for g, (n, _) in zip(got, model.named_parameters()) if n.startswith("condition_encoder.")]
         check("VecSet receives gradient", sum(float(g.abs().sum()) for g in vecset) > 0)
         check("gradients freed after the update", all(q.grad is None for q in model.parameters()))
+
+    # 2a) J3/J4 options: defaults leave the item stream untouched; perturbation is well formed
+    legacy = make_args()
+    for name in ("fine_copies", "parent_drop", "parent_add"):
+        delattr(legacy, name)  # args as J1/J2 were launched, before these options existed
+    base = dense_train.build_items(legacy, [5, 17, 40], levels, 3, DEVICE)
+    same = dense_train.build_items(make_args(fine_copies=1, parent_drop=0.0, parent_add=0.0), [5, 17, 40], levels, 3, DEVICE)
+    check("new options off = identical items", len(base) == len(same) and all(
+        torch.equal(a.codes, b.codes) and torch.equal(a.noise, b.noise) and a.time == b.time for a, b in zip(base, same)))
+    more = dense_train.build_items(make_args(fine_copies=2), [5, 17, 40], levels, 3, DEVICE)
+    fine = sum(1 for i in more if i.depth > 5) == 2 * sum(1 for i in base if i.depth > 5)
+    check("fine copies double depth 6-9 items, weights still sum to 1", fine and abs(sum(i.weight for i in more) - 1) < 1e-9)
+    noisy = dense_train.build_items(make_args(parent_drop=0.3, parent_add=0.3), [5, 17, 40], levels, 3, DEVICE)
+    ok, added, dropped = True, 0, 0
+    for item in noisy:
+        codes, target = levels[[5, 17, 40][item.obj]][item.depth - 1]
+        truth = {tuple(c): r for r, c in enumerate(codes.tolist())}
+        rows = [tuple(c) for c in item.codes.tolist()]
+        ok &= len(rows) == len(set(rows)) and item.noise.shape == item.target.shape
+        limit = 1 << (item.depth - 1)
+        for r, c in enumerate(rows):
+            if c in truth:
+                ok &= bool(torch.equal(item.target[r], target[truth[c]]))
+            else:
+                added += 1
+                ok &= item.depth >= 2 and bool((item.target[r] == 0).all()) and all(0 <= v < limit for v in c)
+        dropped += sum(1 for c in truth if c not in set(rows))
+        if item.depth == 1:
+            ok &= torch.equal(item.codes, codes)
+    check("perturbed parents: true targets kept, spurious parents empty, no duplicates", ok and added > 0 and dropped > 0,
+          f"added={added} dropped={dropped}")
 
     # 2b) learning-rate schedule: warmup, constant, linear decay over the last 20%
     sched = make_args(lr=1e-5, warmup=20, max_updates=100, decay_fraction=0.2, min_lr=0.0)

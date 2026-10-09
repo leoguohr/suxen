@@ -53,19 +53,63 @@ def objects_for_update(args, update: int, count: int) -> list[int]:
     return picked
 
 
+SIX_NEIGHBOURS = ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1))
+
+
+def perturb_parents(codes, target, depth, drop_max, add_max, g, device):
+    """Self-correction training (J4): corrupt one item's parent set the way generation errs.
+
+    Drop a random fraction (U[0, drop_max]) of the ground-truth parents, and add up to a random
+    fraction (U[0, add_max]) of spurious parents: 6-neighbours of kept parents that are NOT
+    ground-truth cells. Kept parents keep their true child targets; spurious parents get the
+    all-zero target ("this cell has no children"), so the model learns to let wrong cells die out.
+    Depth 1 (the root) is never perturbed.
+    """
+    n = len(codes)
+    if depth < 2 or n == 0:
+        return codes, target
+    keep = torch.rand((n,), generator=g, device=device) >= torch.rand((), generator=g, device=device) * drop_max
+    if not bool(keep.any()):
+        keep[int(torch.randint(n, (1,), generator=g, device=device))] = True
+    kept_codes, kept_target = codes[keep], target[keep]
+    count = int(round(float(torch.rand((), generator=g, device=device)) * add_max * n))
+    if count == 0:
+        return kept_codes, kept_target
+    limit = 1 << (depth - 1)
+    directions = torch.tensor(SIX_NEIGHBOURS, dtype=torch.long, device=device)
+    picks = torch.randint(len(kept_codes), (count,), generator=g, device=device)
+    candidates = kept_codes[picks] + directions[torch.randint(6, (count,), generator=g, device=device)]
+    inside = ((candidates >= 0) & (candidates < limit)).all(dim=1)
+    candidates = candidates[inside]
+    key = lambda c: (c[:, 0] * limit + c[:, 1]) * limit + c[:, 2]  # noqa: E731
+    candidate_keys = torch.unique(key(candidates))
+    candidate_keys = candidate_keys[~torch.isin(candidate_keys, key(codes))]
+    if len(candidate_keys) == 0:
+        return kept_codes, kept_target
+    spurious = torch.stack([candidate_keys // (limit * limit), (candidate_keys // limit) % limit,
+                            candidate_keys % limit], dim=1)
+    return (torch.cat([kept_codes, spurious]),
+            torch.cat([kept_target, torch.zeros((len(spurious), 8), dtype=target.dtype, device=device)]))
+
+
 def build_items(args, objects, levels, update, device) -> list[Item]:
     g = seeded(f"dense|{args.seed}|{update}", device)
     items = []
     unit_weight = 1.0 / (len(objects) * len(levels[0]))
+    fine_copies = getattr(args, "fine_copies", 1)
+    drop_max, add_max = getattr(args, "parent_drop", 0.0), getattr(args, "parent_add", 0.0)
     for k, obj in enumerate(objects):
         for depth0, (codes, target) in enumerate(levels[obj]):
             depth = depth0 + 1
-            copies = args.coarse_copies if depth <= args.coarse_depths else 1
+            copies = args.coarse_copies if depth <= args.coarse_depths else fine_copies
             u = torch.rand((copies,), generator=g, device=device)
             times = ((torch.arange(copies, device=device) + u) / copies).tolist()
             for t in times:
-                noise = torch.randn(target.shape, generator=g, device=device)
-                items.append(Item(obj=k, depth=depth, codes=codes, target=target, time=float(t),
+                item_codes, item_target = codes, target
+                if drop_max > 0 or add_max > 0:  # no extra random draws when off: J1/J2 streams unchanged
+                    item_codes, item_target = perturb_parents(codes, target, depth, drop_max, add_max, g, device)
+                noise = torch.randn(item_target.shape, generator=g, device=device)
+                items.append(Item(obj=k, depth=depth, codes=item_codes, target=item_target, time=float(t),
                                   noise=noise, weight=unit_weight / copies))
     return items
 
@@ -243,6 +287,9 @@ def main():
     p.add_argument("--objects-per-update", type=int, default=8)
     p.add_argument("--coarse-depths", type=int, default=5)
     p.add_argument("--coarse-copies", type=int, default=4)
+    p.add_argument("--fine-copies", type=int, default=1, help="stratified-t copies for depths above --coarse-depths")
+    p.add_argument("--parent-drop", type=float, default=0.0, help="self-correction: max fraction of GT parents dropped per item")
+    p.add_argument("--parent-add", type=float, default=0.0, help="self-correction: max fraction of spurious neighbour parents added")
     p.add_argument("--row-tokens", type=int, default=4096)
     p.add_argument("--chunk-tokens", type=int, default=8192)
     p.add_argument("--checkpoint-activations", type=int, default=1)
