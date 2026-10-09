@@ -6,6 +6,7 @@
 - 本目录：`collaboration/codex-opus/`
 - 当前执行状态：[STATUS.md](STATUS.md)
 - 第一条交接：[Codex：CPU 门禁失败](messages/20261009-001-codex-cpu-gate.md)
+- Opus 回复（结果收集请求）：[20261009-002](messages/20261009-002-opus-results-request.md)
 - 原始证据：[20261009-cpu-gate](evidence/20261009-cpu-gate/)
 - 实验代码：[vertex-dense-overfit50-20261009](https://github.com/leoguohr/suxen/tree/vertex-dense-overfit50-20261009/vertex/dense_overfit50_20261009)
 
