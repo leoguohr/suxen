@@ -22,6 +22,8 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 DEPTH = 9
 OFFSETS = np.array([[i >> 2 & 1, i >> 1 & 1, i & 1] for i in range(8)], dtype=np.int64)
+RING26 = [(a, b, c) for a in (-1, 0, 1) for b in (-1, 0, 1) for c in (-1, 0, 1) if (a, b, c) != (0, 0, 0)]
+RING6 = [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]
 
 
 def as_set(cells) -> set:
@@ -41,7 +43,9 @@ def analyze(eval_dir: Path, leaves: dict) -> dict:
     files = sorted((eval_dir / "predictions").glob("seed-*_*.npz"))
     assert files, f"no predictions under {eval_dir / 'predictions'}"
     keys = ("local_fn", "inherited_fn", "local_fp", "inherited_fp", "correct_parents", "extra_parents",
-            "extra_parents_with_no_children", "missing_parents", "first_loss_cells", "d9_vertices_under_first_loss")
+            "extra_parents_with_no_children", "missing_parents", "first_loss_cells", "d9_vertices_under_first_loss",
+            "missing_parents_next_to_predicted_6", "missing_parents_next_to_predicted_26",
+            "predicted_parents", "ring6_candidates", "ring26_candidates")
     per_depth = {d: dict.fromkeys(keys, 0) for d in range(1, DEPTH + 1)}
     trees = 0
     for path in files:
@@ -72,8 +76,18 @@ def analyze(eval_dir: Path, leaves: dict) -> dict:
                         stats["extra_parents"] += 1
                         stats["inherited_fp"] += len(predicted)
                         stats["extra_parents_with_no_children"] += int(len(predicted) == 0)
-                missing = truth[d - 1] - as_set(parents)
+                predicted_parents = as_set(parents)
+                missing = truth[d - 1] - predicted_parents
                 stats["missing_parents"] += len(missing)
+                stats["predicted_parents"] += len(predicted_parents)
+                # Could a "1-ring" candidate set (predicted cells plus their neighbours) bring back missing cells?
+                for ring, key in ((RING6, "6"), (RING26, "26")):
+                    stats[f"missing_parents_next_to_predicted_{key}"] += sum(
+                        1 for m in missing if any((m[0] + a, m[1] + b, m[2] + c) in predicted_parents for a, b, c in ring))
+                    limit = 1 << (d - 1)
+                    neighbours = {(x + a, y + b, z + c) for x, y, z in predicted_parents for a, b, c in ring
+                                  if 0 <= x + a < limit and 0 <= y + b < limit and 0 <= z + c < limit}
+                    stats[f"ring{key}_candidates"] += len(neighbours - predicted_parents)
                 stats["inherited_fn"] += sum(1 for c in truth[d] if (c[0] >> 1, c[1] >> 1, c[2] >> 1) in missing)
     for stats in per_depth.values():
         fn = stats["local_fn"] + stats["inherited_fn"]
@@ -84,6 +98,11 @@ def analyze(eval_dir: Path, leaves: dict) -> dict:
                                                   if stats["extra_parents"] else None)
         stats["d9_vertices_lost_per_first_loss"] = (stats["d9_vertices_under_first_loss"] / stats["first_loss_cells"]
                                                     if stats["first_loss_cells"] else None)
+        for key in ("6", "26"):
+            stats[f"missing_recoverable_share_{key}"] = (stats[f"missing_parents_next_to_predicted_{key}"] / stats["missing_parents"]
+                                                         if stats["missing_parents"] else None)
+            stats[f"ring{key}_token_overhead"] = (stats[f"ring{key}_candidates"] / stats["predicted_parents"]
+                                                  if stats["predicted_parents"] else None)
     return {"eval_dir": str(eval_dir), "trees": trees, "per_depth": per_depth}
 
 
@@ -104,6 +123,11 @@ def main():
             lost = "-" if s["d9_vertices_lost_per_first_loss"] is None else f"{s['d9_vertices_lost_per_first_loss']:.1f}"
             print(f" {d} | {s['local_fn']:7d} | {s['inherited_fn']:7d} ({share:>4}) | {s['local_fp']:7d} | "
                   f"{s['inherited_fp']:7d} | {s['extra_parents']:7d} | {die:>5} | {per} | {lost}")
+        print(" d | missing parents | next to a predicted cell (6-ring / 26-ring) | extra candidate tokens (6 / 26) per predicted cell")
+        for d, s in r["per_depth"].items():
+            if s["missing_parents"]:
+                print(f" {d} | {s['missing_parents']:7d} | {s['missing_recoverable_share_6']:.0%} / {s['missing_recoverable_share_26']:.0%} | "
+                      f"{s['ring6_token_overhead']:.2f} / {s['ring26_token_overhead']:.2f}")
     if args.output:
         args.output.write_text(json.dumps(reports, indent=2) + "\n")
 
