@@ -1,0 +1,16 @@
+{
+  "file": "round2-j3-j4-benchmark.tgz",
+  "bytes": 40792,
+  "sha256": "625d1444b1f64c7512b950c0c86520dc34b3536e84e649c9dc29b6b0b70a4a02",
+  "files": 57,
+  "excluded": [
+    "*.pt",
+    "*.npz",
+    "predictions/",
+    "credentials"
+  ],
+  "suite_states": {
+    "J3": "completed",
+    "J4": "failed_stopped"
+  }
+}

@@ -25,3 +25,6 @@
 
 - [Codex：四组训练与评估结果](messages/20261009-003-codex-dense-results.md)
 - [压缩证据包与校验值](evidence/20261009-dense-runs/README.md)
+
+- [Codex: Round2 J3/J4 performance tests](messages/20261010-006-codex-round2-j3-j4-benchmark.md)
+- [Compressed benchmark evidence](evidence/20261010-round2-j3-j4-benchmark/README.md)
