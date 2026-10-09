@@ -1,0 +1,47 @@
+[PASS] data: 50 objects, SHA256 verified 
+[PASS] packed forward == original forward items=57 max|diff|=1.79e-07
+[PASS] per-item loss == original per-object velocity MSE max rel diff=2.20e-07
+[PASS] loss weights sum to 1 1.0000000000000004
+[PASS] each (object, depth) has equal weight 
+Traceback (most recent call last):
+  File "/tmp/nexus_vertex_dense_overfit50_20261009/source/vertex/dense_overfit50_20261009/tests/test_cpu.py", line 170, in <module>
+    main()
+  File "/tmp/nexus_vertex_dense_overfit50_20261009/source/vertex/dense_overfit50_20261009/tests/test_cpu.py", line 114, in main
+    optimizer = torch.optim.SGD(model.parameters(), lr=0.0)
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/sgd.py", line 27, in __init__
+    super().__init__(params, defaults)
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py", line 284, in __init__
+    self.add_param_group(cast(dict, param_group))
+  File "/usr/local/lib/python3.10/dist-packages/torch/_compile.py", line 22, in inner
+    import torch._dynamo
+  File "/usr/local/lib/python3.10/dist-packages/torch/_dynamo/__init__.py", line 2, in <module>
+    from . import convert_frame, eval_frame, resume_execution
+  File "/usr/local/lib/python3.10/dist-packages/torch/_dynamo/convert_frame.py", line 40, in <module>
+    from . import config, exc, trace_rules
+  File "/usr/local/lib/python3.10/dist-packages/torch/_dynamo/trace_rules.py", line 50, in <module>
+    from .variables import (
+  File "/usr/local/lib/python3.10/dist-packages/torch/_dynamo/variables/__init__.py", line 34, in <module>
+    from .higher_order_ops import (
+  File "/usr/local/lib/python3.10/dist-packages/torch/_dynamo/variables/higher_order_ops.py", line 13, in <module>
+    import torch.onnx.operators
+  File "/usr/local/lib/python3.10/dist-packages/torch/onnx/__init__.py", line 59, in <module>
+    from ._internal.onnxruntime import (
+  File "/usr/local/lib/python3.10/dist-packages/torch/onnx/_internal/onnxruntime.py", line 36, in <module>
+    import onnx
+  File "/usr/local/lib/python3.10/dist-packages/onnx/__init__.py", line 78, in <module>
+    from onnx.external_data_helper import (
+  File "/usr/local/lib/python3.10/dist-packages/onnx/external_data_helper.py", line 12, in <module>
+    from onnx.onnx_pb import AttributeProto, GraphProto, ModelProto, TensorProto
+  File "/usr/local/lib/python3.10/dist-packages/onnx/onnx_pb.py", line 4, in <module>
+    from .onnx_ml_pb2 import *  # noqa
+  File "/usr/local/lib/python3.10/dist-packages/onnx/onnx_ml_pb2.py", line 33, in <module>
+    _descriptor.EnumValueDescriptor(
+  File "/guohaoran/envs/nexus-algo/lib/python3.10/site-packages/google/protobuf/descriptor.py", line 796, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot not be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
