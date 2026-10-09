@@ -25,7 +25,12 @@ parts: storage, job scripts, copying checkpoints, submission and monitoring.
    $PY analyze_margins.py --eval-dir $R1/A/eval_raw --eval-dir $R1/D/eval_raw --eval-dir $R1/D/eval_ema \
      --eval-dir $R1/B/eval_raw --output <OUT>/round1_margins.json
    ```
-   Keep the printed lines and the JSON.
+   Then run the error-cascade analysis on the same evaluations (also CPU only):
+   ```bash
+   $PY analyze_cascade.py --eval-dir $R1/A/eval_raw --eval-dir $R1/D/eval_ema --eval-dir $R1/B/eval_raw \
+     --output <OUT>/round1_cascade.json
+   ```
+   Keep the printed lines and both JSON files.
 2. **CPU tests.** `CUDA_VISIBLE_DEVICES= $PY tests/test_cpu.py`. The script forces the math
    attention kernel itself, so you don't need your earlier wrapper. It must end with
    `ALL CPU TESTS PASSED`. If not, stop and report.
@@ -55,7 +60,7 @@ parts: storage, job scripts, copying checkpoints, submission and monitoring.
    report.
 6. **Report (push to `codex-opus-exchange`, as `messages/2026101x-NNN-codex-round2-*.md` plus
    evidence).**
-   - **Right after submission:** the margin-check output, the CPU test log, the smoke-test log and
+   - **Right after submission:** the margin-check and cascade-analysis output (printed lines and JSON), the CPU test log, the smoke-test log and
      result, the job IDs, servers/GPUs, storage paths, the exact job scripts, and a SHA256 for each
      copy of the init checkpoint.
    - **After each milestone evaluation (~every 4 h), and at the end:** per job, `evals.jsonl`,

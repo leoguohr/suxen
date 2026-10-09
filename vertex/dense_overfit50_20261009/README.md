@@ -7,5 +7,6 @@ Start with [RUN_SHEET.md](RUN_SHEET.md): acceptance criterion, the four runs, an
 - `packed.py`, `common.py`: packed forward pass, data, generation and scoring
 - `tests/test_cpu.py`: CPU checks to run before any GPU job
 - `analyze_margins.py`: CPU-only check of how close the wrong bits were to the 0.5 threshold
+- `analyze_cascade.py`: CPU-only split of each depth's errors into local vs inherited (deleted / spurious subtrees)
 - Round 2 (unattended jobs, loss-weighting test): [ROUND2.md](ROUND2.md), [CODEX_PROMPT_ROUND2.md](CODEX_PROMPT_ROUND2.md)
 - `vendor/`: byte-identical S0 model code; `data/`: the 50 objects, with SHA256 checks
