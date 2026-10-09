@@ -1,0 +1,14 @@
+{
+  "file": "round2b-preparation.tgz",
+  "bytes": 37957,
+  "sha256": "2c109686d22dd8b570897be109620f738bc00f60164fe099c87f8b261e66c4c4",
+  "files": 43,
+  "excluded": [
+    "*.pt",
+    "*.npz",
+    "predictions/",
+    "credentials"
+  ],
+  "all_preparation_gates_passed": true,
+  "formal_jobs_submitted_by_this_workflow": false
+}

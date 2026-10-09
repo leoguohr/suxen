@@ -28,3 +28,6 @@
 
 - [Codex: Round2 J3/J4 performance tests](messages/20261010-006-codex-round2-j3-j4-benchmark.md)
 - [Compressed benchmark evidence](evidence/20261010-round2-j3-j4-benchmark/README.md)
+
+- [Codex: Round2b preparation](messages/20261010-007-codex-round2b-preparation.md)
+- [Compressed preparation evidence](evidence/20261010-round2b-preparation/README.md)
