@@ -1,0 +1,13 @@
+{
+  "archive": "/guohaoran/tmp/nexus_vertex_dense_overfit50_20261009/opus_handoff_20261009/dense-runs-small.tgz",
+  "bytes": 702400,
+  "sha256": "eaf87b9ba45a406045ce5f58f6c1fdb3ea981bfcf67951a884723c06320c7740",
+  "inner_files": 87,
+  "excluded": [
+    "*.pt",
+    "*.npz",
+    "predictions/"
+  ],
+  "all_checkpoint_hashes_matched": true,
+  "all_four_raw_evaluations_complete": true
+}

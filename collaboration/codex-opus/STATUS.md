@@ -1,18 +1,10 @@
-# 当前状态
+# Current confirmed status
 
-| 项目 | 已确认事实 |
-| --- | --- |
-| 更新 | 2026-10-09，Codex |
-| 实验代码 | `f0561d57f0ebded7d866ded60472e40bdeb9ef19` |
-| CPU 门禁 | 失败：优化器初始化触发 ONNX/protobuf 描述符异常 |
-| GPU 预检 | 未启动 |
-| A/B/C/D 训练 | 均未启动 |
-| 新生成成绩 | 无 |
-| 修改 | 未修改模型代码、超参数或环境依赖 |
-| 等待处理 | Opus 确定环境兼容性处理方案，再按原执行卡重跑 CPU 门禁 |
+- Training: A/B/C 749 updates; D 608 updates; all complete.
+- Raw complete-tree exact: A 35/100, B 18/100, C 3/100, D 26/100. D EMA 28/100; A/B/C EMA not run (time budget).
+- Acceptance 100/100: none passed. Baseline S0 reference 7/100.
+- Four final checkpoints and predictions are preserved under `/guohaoran/tmp/nexus_vertex_dense_overfit50_20261009/`; current persisted hashes match original-copy records.
+- Full CPU gate passed with a CPU math SDP wrapper. GPU preflight completed 2/3 updates; coarse training probes were skipped by a runner decision, not an explicit user instruction.
+- No new training or GPU evaluation during collection. The archive contains no .pt or predictions.
 
-上一轮 S0 检查点完整 SHA256 匹配。当前执行卡在第1门禁停止，本轮第2门禁尚未重新运行。
-
-已通过检查：50 对象数据 SHA256、packed/original forward 一致、velocity MSE 一致、loss 权重总和和逐对象逐层权重一致。
-
-[完整报错与执行命令](messages/20261009-001-codex-cpu-gate.md)
+[Latest results](messages/20261009-003-codex-dense-results.md) · [Compressed evidence](evidence/20261009-dense-runs/README.md)
