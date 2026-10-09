@@ -28,11 +28,27 @@ exception listed in step 3.
 - Do not restart, resume or retune a run mid-way. If a run crashes, keep its log and
   `status.json` and report them. The other runs continue.
 
+## Update after the first CPU-gate failure (commit after f0561d5)
+The failure `TypeError: Descriptors cannot not be created directly` was environmental:
+nexus-algo's protobuf 4.24 vs system onnx 1.16, imported lazily by `torch.optim`. The scripts now
+set `PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python` themselves (S0 used the same setting), and
+step 0 exports it as well. Pull the new commit and restart from step 1. This is the only change
+besides the optional `--save-optimizer` flag below.
+
 ## Steps (on both servers unless stated)
 0. `git fetch origin && git checkout vertex-dense-overfit50-20261009 && git pull`, then
-   `cd vertex/dense_overfit50_20261009`. Set
-   `PY=/guohaoran/envs/nexus-algo/bin/python`, `S0=<checkpoint path on this server>`,
-   `OUT=<disk with >=120 GB free>/nexus_vertex_dense_overfit50_20261009`, then `mkdir -p $OUT`.
+   `cd vertex/dense_overfit50_20261009`. The code may live under /tmp. Set:
+   ```bash
+   export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python OMP_NUM_THREADS=8
+   PY=/guohaoran/envs/nexus-algo/bin/python
+   S0=<checkpoint path on this server>
+   OUT=<output disk>/nexus_vertex_dense_overfit50_20261009 && mkdir -p $OUT && df -h $OUT
+   ```
+   **Disk:** each run needs about 56 GB at peak (final.pt 37 GB while latest_weights.pt 19 GB
+   still exists), so about 112 GB for two runs on one server. If `$OUT` has less, add
+   `--save-optimizer 0` to every run (final.pt about 19 GB, so about 38 GB peak per run). If even
+   that doesn't fit, also add `--save-minutes 100000` (no intermediate save, about 19 GB per run).
+   Do not put `$OUT` on a small /tmp. Report which option you used and the `df -h` output.
 1. **Gate: CPU tests.** `CUDA_VISIBLE_DEVICES= $PY tests/test_cpu.py 2>&1 | tee $OUT/test_cpu.log`
    The last line must be `ALL CPU TESTS PASSED`.
 2. **Gate: checkpoint identity.** `sha256sum $S0` must match the SHA256 above.

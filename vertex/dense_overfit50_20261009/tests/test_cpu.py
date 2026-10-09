@@ -10,6 +10,11 @@ and generation + scoring (perfect GT replay scores exact; random model runs).
 """
 from __future__ import annotations
 
+import os
+# nexus-algo pairs protobuf 4.x with system onnx 1.16; torch.optim lazily imports onnx.
+# S0 ran with the same setting. Must be set before torch is imported.
+os.environ.setdefault("PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION", "python")
+
 import argparse
 from pathlib import Path
 import sys

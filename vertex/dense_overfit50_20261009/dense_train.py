@@ -10,6 +10,11 @@ Each (object, depth) has equal total weight in the loss, as in the original prot
 """
 from __future__ import annotations
 
+import os
+# nexus-algo pairs protobuf 4.x with system onnx 1.16; torch.optim lazily imports onnx.
+# S0 ran with the same setting. Must be set before torch is imported.
+os.environ.setdefault("PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION", "python")
+
 import argparse
 import hashlib
 import math
@@ -185,6 +190,8 @@ def main():
     p.add_argument("--probe-minutes", type=float, default=30.0)
     p.add_argument("--probe-depth", type=int, default=5)
     p.add_argument("--save-minutes", type=float, default=60.0)
+    p.add_argument("--save-optimizer", type=int, default=1,
+                   help="1: final.pt has model+EMA+AdamW (~37 GB); 0: model+EMA only (~19 GB)")
     p.add_argument("--preflight", action="store_true", help="3 updates on the largest objects, no saves")
     args = p.parse_args()
     args.start_wall = time.time()
@@ -274,7 +281,7 @@ def main():
         run_probe(model, ema, conditions, leaves, args, update, probe_log)
         write_json(status_path, {"state": "saving_final", "update": update})
         final = args.output / "final.pt"
-        save(final, checkpoint_payload(model, ema, optimizer, args, update, True))
+        save(final, checkpoint_payload(model, ema, optimizer, args, update, bool(args.save_optimizer)))
         stale = args.output / "latest_weights.pt"
         if stale.exists():
             stale.unlink()

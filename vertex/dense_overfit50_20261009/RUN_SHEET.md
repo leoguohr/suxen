@@ -38,12 +38,14 @@ max error / min spacing < 0.1.
 Set once per server, then adjust paths:
 ```bash
 cd <repo>/vertex/dense_overfit50_20261009
+export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python OMP_NUM_THREADS=8   # protobuf/onnx clash; S0 used this too
 PY=/guohaoran/envs/nexus-algo/bin/python
 S0=/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/runs/S0/checkpoint-034000.pt   # or the copied path
 OUT=<a disk with >=120 GB free>/nexus_vertex_dense_overfit50_20261009
 ```
 Each run writes `final.pt` (~37 GB: model + EMA + optimizer). During training it also keeps
-`latest_weights.pt` (~19 GB, deleted at the end).
+`latest_weights.pt` (~19 GB, deleted at the end). If disk is short, `--save-optimizer 0` makes
+`final.pt` ~19 GB.
 
 1. **CPU tests (both servers, 1–3 min).** `CUDA_VISIBLE_DEVICES= $PY tests/test_cpu.py`
    It must end with `ALL CPU TESTS PASSED`. If any line says FAIL, stop and send the full output.
