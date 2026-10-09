@@ -1,0 +1,11 @@
+{
+  "file": "round2-gates.tgz",
+  "bytes": 71385,
+  "sha256": "095a42929d8edc7d82aab71c636b4c75734dec262b839a5370985435b736b624",
+  "files": 35,
+  "excluded": [
+    "checkpoints",
+    "predictions",
+    "credentials"
+  ]
+}
