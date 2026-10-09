@@ -1,12 +1,13 @@
-"""Dense 50-object Vertex overfit training, warm-started from S0@34000. One GPU per run.
+"""Dense 50-object Vertex overfit training (S0 architecture). One GPU per process.
 
-Same model (S0), same objective (rectified-flow velocity MSE, per-item mean, uniform t),
-same data. What changes is how much signal each optimizer update carries:
-  * every update takes K objects and ALL nine depths of each (VecSet runs once per object);
-  * depths 1..C (cheap, and where 84/93 of S0's failures start) get R stratified-t copies;
-  * a fresh AdamW (wd 0) with linear warmup, an EMA of the weights, a wall-clock deadline;
-  * a cheap coarse probe (root -> depth 5, all 50 objects, own parents) every few minutes.
-Each (object, depth) has equal total weight in the loss, as in the original protocol.
+Round 1 (2026-10-09): warm start from S0@34000 with a wall-clock deadline (--train-minutes).
+Round 2: unattended jobs (--max-updates) that resume themselves after a restart, evaluate every
+--eval-every updates, stop early at 100/100, and decay the LR over the last --decay-fraction.
+
+Same model, same rectified-flow velocity-MSE objective, same data. Every update takes K objects
+and ALL nine depths of each (VecSet runs once per object); depths 1..C get R stratified-t copies.
+--loss-weighting item: each (object, depth) has equal total weight (round 1, original protocol).
+--loss-weighting token: every token has equal weight (plain mean over all tokens of the update).
 """
 from __future__ import annotations
 
@@ -26,8 +27,8 @@ import traceback
 
 import torch
 
-from common import (HERE, S0_SHA256, append_jsonl, build_model, cache_fixed_features, coarse_probe,
-                    load_data, load_weights, sha, write_json)
+from common import (S0_SHA256, append_jsonl, build_model, cache_fixed_features, coarse_probe,
+                    load_data, run_evaluation, sha, write_json)
 from packed import Item, chunk_loss, make_chunks, pack_rows, packed_flow_forward
 from architecture_variants import cached_condition_batch
 
@@ -69,9 +70,23 @@ def build_items(args, objects, levels, update, device) -> list[Item]:
     return items
 
 
+def lr_at(args, update: int) -> float:
+    """Linear warmup over --warmup updates, constant, then linear decay to --min-lr over the
+    last --decay-fraction of --max-updates (only when --max-updates is set)."""
+    lr = args.lr * min(1.0, update / max(args.warmup, 1))
+    if getattr(args, "decay_fraction", 0) > 0 and args.max_updates < 10**9:
+        start = int(round(args.max_updates * (1 - args.decay_fraction)))
+        if update > start:
+            frac = min(1.0, (update - start) / max(args.max_updates - start, 1))
+            lr = args.min_lr + (args.lr - args.min_lr) * (1.0 - frac)
+    return lr
+
+
 def train_update(model, optimizer, args, conditions, levels, update, device):
     objects = objects_for_update(args, update, len(conditions))
     items = build_items(args, objects, levels, update, device)
+    token_denominator = (8.0 * sum(len(item.codes) for item in items)
+                         if getattr(args, "loss_weighting", "item") == "token" else None)
     rows = pack_rows(items, args.row_tokens)
     chunks = make_chunks(items, rows, args.chunk_tokens, device)
     optimizer.zero_grad(set_to_none=True)
@@ -90,7 +105,7 @@ def train_update(model, optimizer, args, conditions, levels, update, device):
                                              chunk.item_ids, chunk.item_times,
                                              condition_leaf[chunk.row_object],
                                              use_checkpoint=args.checkpoint_activations)
-        loss, per_item = chunk_loss(prediction, chunk)
+        loss, per_item = chunk_loss(prediction, chunk, token_denominator)
         if not torch.isfinite(loss):
             raise FloatingPointError("nonfinite loss; optimizer not stepped")
         loss.backward()
@@ -100,10 +115,11 @@ def train_update(model, optimizer, args, conditions, levels, update, device):
         tokens += chunk.tokens
     condition_full.backward(condition_leaf.grad.to(condition_full.dtype))
     norm = torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip, error_if_nonfinite=True)
-    lr = args.lr * min(1.0, update / max(args.warmup, 1))
+    lr = lr_at(args, update)
     for group in optimizer.param_groups:
         group["lr"] = lr
     optimizer.step()
+    optimizer.zero_grad(set_to_none=True)  # free gradient memory between updates and before evaluations
     per_depth = (depth_sum / depth_n.clamp_min(1)).tolist()
     return {"loss": total, "per_depth_mse": per_depth, "grad_norm": float(norm), "lr": lr,
             "objects": objects, "items": len(items), "rows": len(rows), "chunks": len(chunks),
@@ -145,16 +161,19 @@ def save(path: Path, payload: dict):
     tmp.replace(path)
 
 
-def checkpoint_payload(model, ema, optimizer, args, update, full):
+def checkpoint_payload(model, ema, optimizer, args, update, full, **extra):
     payload = {"model": {k: v.detach().cpu() for k, v in model.state_dict().items()},
-               "ema": ema_state(model, ema), "update": update, "args": vars(args) | {"output": str(args.output),
-               "init": str(args.init)}, "architecture": "S0", "source_checkpoint_sha256": args.init_sha}
+               "ema": ema_state(model, ema), "update": update,
+               "args": vars(args) | {"output": str(args.output), "init": str(args.init)},
+               "architecture": "S0", "source_checkpoint_sha256": args.init_sha, **extra}
     if full:
         payload["optimizer"] = optimizer.state_dict()
     return payload
 
 
 def run_probe(model, ema, conditions, leaves, args, update, log):
+    if args.probe_minutes <= 0:
+        return
     started = time.monotonic()
     raw = coarse_probe(model, conditions, leaves, max_depth=args.probe_depth)
     ema_swap(ema)
@@ -169,13 +188,58 @@ def run_probe(model, ema, conditions, leaves, args, update, log):
           f"ema {smooth['exact_through_depth']} ({row['seconds']:.0f}s)", flush=True)
 
 
+def load_ema_into(ema, model, state_dict, device):
+    names = [n for n, _ in model.named_parameters()]
+    with torch.no_grad():
+        for i, name in enumerate(names):
+            ema.shadow[i].copy_(state_dict[name].to(device))
+
+
+def evals_done(args) -> set:
+    path = args.output / "evals.jsonl"
+    if not path.exists():
+        return set()
+    import json
+    return {(row["update"], row["weights"]) for row in map(json.loads, path.read_text().splitlines()) if row}
+
+
+def run_milestone_eval(model, ema, data, args, update, weights):
+    """Full 100-tree acceptance evaluation in-process; resumable (incomplete dirs are set aside)."""
+    manifest, conditions, leaves, raw_gt = data
+    folder = args.output / "evals" / f"u{update:06d}_{weights}"
+    if folder.exists():
+        folder.rename(folder.with_name(folder.name + f".incomplete-{int(time.time())}"))
+    if weights == "ema":
+        ema_swap(ema)
+    try:
+        summary = run_evaluation(model, manifest, conditions, leaves, raw_gt, folder, steps=args.eval_steps,
+                                 info={"update": update, "weights": weights, "run_output": str(args.output)})
+    finally:
+        if weights == "ema":
+            ema_swap(ema)
+    row = {"update": update, "weights": weights, "full_trees_exact": summary["full_trees_exact"],
+           "per_depth_exact": [d["full_level_exact"] for d in summary["per_depth"]],
+           "first_mismatch_depth_histogram": summary["first_mismatch_depth_histogram"],
+           "exact_by_vertex_count": summary["exact_by_vertex_count"], "minutes": summary["minutes"],
+           "wall_minutes": (time.time() - args.start_wall) / 60}
+    append_jsonl(args.output / "evals.jsonl", row)
+    print(f"[eval u{update} {weights}] full_trees_exact {row['full_trees_exact']}/100 per-depth "
+          f"{row['per_depth_exact']} by-size {row['exact_by_vertex_count']} ({row['minutes']:.0f} min)", flush=True)
+    return row
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--init", type=Path, required=True, help="S0 checkpoint-034000.pt (or a dense checkpoint)")
+    p.add_argument("--init", type=Path, required=True, help="S0 checkpoint-034000.pt or a dense checkpoint")
     p.add_argument("--init-sha", default=S0_SHA256, help="expected SHA256 of --init; 'skip' to skip the check")
+    p.add_argument("--init-state", choices=("weights", "full"), default="weights",
+                   help="full: also load AdamW and EMA from --init when present")
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--lr", type=float, required=True)
     p.add_argument("--warmup", type=int, default=50)
+    p.add_argument("--decay-fraction", type=float, default=0.0, help="linear LR decay over the last fraction of --max-updates")
+    p.add_argument("--min-lr", type=float, default=0.0)
+    p.add_argument("--loss-weighting", choices=("item", "token"), default="item")
     p.add_argument("--objects-per-update", type=int, default=8)
     p.add_argument("--coarse-depths", type=int, default=5)
     p.add_argument("--coarse-copies", type=int, default=4)
@@ -185,32 +249,54 @@ def main():
     p.add_argument("--ema-decay", type=float, default=0.995)
     p.add_argument("--clip", type=float, default=1.0)
     p.add_argument("--seed", type=int, default=20261009)
-    p.add_argument("--train-minutes", type=float, default=None, help="wall-clock training budget (required unless --preflight)")
+    p.add_argument("--train-minutes", type=float, default=None, help="round-1 wall-clock budget; omit for unattended jobs")
     p.add_argument("--max-updates", type=int, default=10**9)
-    p.add_argument("--probe-minutes", type=float, default=30.0)
+    p.add_argument("--probe-minutes", type=float, default=30.0, help="<=0 disables probes")
     p.add_argument("--probe-depth", type=int, default=5)
     p.add_argument("--save-minutes", type=float, default=60.0)
     p.add_argument("--save-optimizer", type=int, default=1,
-                   help="1: final.pt has model+EMA+AdamW (~37 GB); 0: model+EMA only (~19 GB)")
+                   help="round-1 final.pt: 1 model+EMA+AdamW (~37 GB); 0 model+EMA (~19 GB)")
+    p.add_argument("--eval-every", type=int, default=0, help="full 100-tree evaluation every N updates (raw weights)")
+    p.add_argument("--final-evals", default="", help="comma list of weights evaluated at the end, e.g. raw,ema")
+    p.add_argument("--eval-steps", type=int, default=20)
+    p.add_argument("--stop-at-pass", type=int, default=1, help="stop early when an evaluation reaches 100/100")
     p.add_argument("--preflight", action="store_true", help="3 updates on the largest objects, no saves")
     args = p.parse_args()
     args.start_wall = time.time()
-    assert args.preflight or args.train_minutes, "--train-minutes is required"
+    unattended = args.train_minutes is None and not args.preflight
+    assert args.preflight or args.train_minutes or args.max_updates < 10**9, \
+        "give --train-minutes (round 1) or --max-updates (unattended)"
     assert torch.cuda.is_available() and torch.cuda.device_count() == 1, "set CUDA_VISIBLE_DEVICES to ONE GPU"
     device = torch.device("cuda:0")
     torch.set_num_threads(8)
-    if not args.preflight:
-        assert not args.output.exists(), "output must be a new directory"
-    args.output.mkdir(parents=True, exist_ok=args.preflight)
     status_path = args.output / "status.json"
-    if args.init_sha != "skip":
-        print("checking SHA256 of --init (28 GB, ~1-2 min)...", flush=True)
+    latest = args.output / "latest.pt"
+    if status_path.exists():
+        import json
+        previous = json.loads(status_path.read_text())
+        if previous.get("state") == "complete":
+            print(f"ALREADY_COMPLETE {args.output}; nothing to do", flush=True)
+            return
+    resume = unattended and latest.exists()
+    if not resume and args.output.exists() and not args.preflight:
+        if unattended and any(args.output.iterdir()):
+            aside = args.output / f"restart-{int(time.time())}"
+            aside.mkdir()
+            for child in list(args.output.iterdir()):
+                if child != aside and not child.name.startswith("restart-"):
+                    child.rename(aside / child.name)
+            print(f"no latest.pt: previous partial files moved to {aside}", flush=True)
+        elif not unattended:
+            assert not any(args.output.iterdir()), "output must be a new directory"
+    args.output.mkdir(parents=True, exist_ok=True)
+    source = latest if resume else args.init
+    if not resume and args.init_sha != "skip":
+        print("checking SHA256 of --init ...", flush=True)
         actual = sha(args.init)
         assert actual == args.init_sha, f"--init SHA256 mismatch: {actual}"
-    manifest, conditions, leaves, levels, _ = load_data(device)
-    weights, _state = load_weights(args.init, "raw")
-    model = build_model(weights, device)
-    del weights, _state
+    manifest, conditions, leaves, levels, raw_gt = load_data(device)
+    state = torch.load(source, map_location="cpu", mmap=True, weights_only=False)
+    model = build_model(state["model"], device)
     model.train().requires_grad_(True)
     model.flow.use_checkpoint = False
     model.condition_encoder.use_checkpoint = False
@@ -218,15 +304,27 @@ def main():
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, betas=(0.9, 0.999), eps=1e-8,
                                   weight_decay=0.0, fused=True)
     ema = EMA(model, args.ema_decay)
-    write_json(args.output / "config.json", vars(args) | {"output": str(args.output), "init": str(args.init),
-               "uids": manifest["train_uids"], "torch": torch.__version__,
-               "gpu": torch.cuda.get_device_name(device),
-               "parameters": sum(p.numel() for p in model.parameters())})
+    start_update, final_stage = 0, False
+    if resume or args.init_state == "full":
+        if "optimizer" in state:
+            optimizer.load_state_dict(state["optimizer"])
+        if "ema" in state:
+            load_ema_into(ema, model, state["ema"], device)
+    if resume:
+        start_update = int(state["update"])
+        final_stage = bool(state.get("final_stage", False))
+        print(f"RESUMED from {latest} at update {start_update} (final_stage={final_stage})", flush=True)
+    del state
+    write_json(args.output / ("config.json" if not resume else f"config.resume-u{start_update}.json"),
+               vars(args) | {"output": str(args.output), "init": str(args.init), "resumed_from": str(source) if resume else None,
+                             "start_update": start_update, "uids": manifest["train_uids"], "torch": torch.__version__,
+                             "gpu": torch.cuda.get_device_name(device),
+                             "parameters": sum(p.numel() for p in model.parameters())})
     if args.preflight:
         started = time.monotonic()
         probe = coarse_probe(model, conditions, leaves, max_depth=args.probe_depth)
-        print(f"[preflight probe, S0 weights] exact-through-depth {probe['exact_through_depth']} "
-              f"(S0 reference for seed 97029000: [49, 43, 30, 16, 9]) in {time.monotonic() - started:.0f}s",
+        print(f"[preflight probe] exact-through-depth {probe['exact_through_depth']} "
+              f"(S0@34000 reference for seed 97029000: [49, 43, 30, 16, 9]) in {time.monotonic() - started:.0f}s",
               flush=True)
         append_jsonl(args.output / "preflight.jsonl", {"probe": probe, "seconds": time.monotonic() - started})
         sizes = [sum(len(c) for c, _ in lv) for lv in levels]
@@ -241,53 +339,99 @@ def main():
             ema.update()
             row.update(seconds=time.monotonic() - started,
                        peak_gib=torch.cuda.max_memory_allocated(device) / 2**30)
-            print({k: row[k] for k in ("loss", "grad_norm", "items", "rows", "chunks", "padded_tokens",
+            print({k: row[k] for k in ("loss", "grad_norm", "lr", "items", "rows", "chunks", "padded_tokens",
                                         "seconds", "peak_gib")}, flush=True)
             append_jsonl(args.output / "preflight.jsonl", row)
         print("PREFLIGHT_OK (largest objects; typical updates are faster)", flush=True)
         return
-    deadline = time.monotonic() + args.train_minutes * 60
+
+    data = (manifest, conditions, leaves, raw_gt)
+    deadline = time.monotonic() + args.train_minutes * 60 if args.train_minutes else float("inf")
     stop = {"flag": False}
     signal.signal(signal.SIGTERM, lambda *_: stop.update(flag=True))
     signal.signal(signal.SIGINT, lambda *_: stop.update(flag=True))
     probe_log = args.output / "probes.jsonl"
-    run_probe(model, ema, conditions, leaves, args, 0, probe_log)
-    next_probe = time.monotonic() + args.probe_minutes * 60
-    next_save = time.monotonic() + args.save_minutes * 60
-    update = 0
+    final_evals = [w for w in args.final_evals.split(",") if w]
+    passed = False
+
+    def save_latest(update, final=False):
+        write_json(status_path, {"state": "saving", "update": update})
+        save(latest, checkpoint_payload(model, ema, optimizer, args, update, True, final_stage=final))
+        write_json(status_path, {"state": "final_evaluation" if final else "training", "update": update,
+                                 "latest": str(latest)})
+
+    update = start_update
     try:
-        while time.monotonic() < deadline and update < args.max_updates and not stop["flag"]:
-            update += 1
-            started = time.monotonic()
-            row = train_update(model, optimizer, args, conditions, levels, update, device)
-            ema.update()
-            torch.cuda.synchronize(device)
-            row.update(update=update, seconds=time.monotonic() - started,
-                       peak_gib=torch.cuda.max_memory_allocated(device) / 2**30,
-                       wall_minutes=(time.time() - args.start_wall) / 60)
-            append_jsonl(args.output / "train.jsonl", row)
-            if update % 10 == 0 or update <= 3:
-                print(f"u{update} loss {row['loss']:.5f} gn {row['grad_norm']:.3f} lr {row['lr']:.2e} "
-                      f"{row['seconds']:.1f}s peak {row['peak_gib']:.1f}GiB "
-                      f"depthMSE {[round(x, 4) for x in row['per_depth_mse']]}", flush=True)
-            write_json(status_path, {"state": "training", "update": update, "last_loss": row["loss"],
-                                     "minutes_left": (deadline - time.monotonic()) / 60})
-            if time.monotonic() >= next_probe:
-                run_probe(model, ema, conditions, leaves, args, update, probe_log)
-                next_probe = time.monotonic() + args.probe_minutes * 60
-            if time.monotonic() >= next_save and time.monotonic() < deadline - 10 * 60:
-                save(args.output / "latest_weights.pt", checkpoint_payload(model, ema, optimizer, args, update, False))
-                next_save = time.monotonic() + args.save_minutes * 60
-        run_probe(model, ema, conditions, leaves, args, update, probe_log)
-        write_json(status_path, {"state": "saving_final", "update": update})
+        if not final_stage:
+            # A restart during a milestone evaluation resumes at that update: finish the evaluation first.
+            if (resume and args.eval_every > 0 and update > 0 and update % args.eval_every == 0
+                    and update < args.max_updates and (update, "raw") not in evals_done(args)):
+                row = run_milestone_eval(model, ema, data, args, update, "raw")
+                passed = bool(args.stop_at_pass) and row["full_trees_exact"] == 100
+            run_probe(model, ema, conditions, leaves, args, update, probe_log)
+            next_probe = time.monotonic() + args.probe_minutes * 60
+            next_save = time.monotonic() + args.save_minutes * 60
+            while time.monotonic() < deadline and update < args.max_updates and not stop["flag"] and not passed:
+                update += 1
+                started = time.monotonic()
+                row = train_update(model, optimizer, args, conditions, levels, update, device)
+                ema.update()
+                torch.cuda.synchronize(device)
+                row.update(update=update, seconds=time.monotonic() - started,
+                           peak_gib=torch.cuda.max_memory_allocated(device) / 2**30,
+                           wall_minutes=(time.time() - args.start_wall) / 60)
+                append_jsonl(args.output / "train.jsonl", row)
+                if update % 10 == 0 or update <= start_update + 3:
+                    print(f"u{update} loss {row['loss']:.5f} gn {row['grad_norm']:.3f} lr {row['lr']:.2e} "
+                          f"{row['seconds']:.1f}s peak {row['peak_gib']:.1f}GiB "
+                          f"depthMSE {[round(x, 4) for x in row['per_depth_mse']]}", flush=True)
+                if update % 25 == 0:
+                    write_json(status_path, {"state": "training", "update": update, "last_loss": row["loss"],
+                                             "max_updates": args.max_updates})
+                if time.monotonic() >= next_probe:
+                    run_probe(model, ema, conditions, leaves, args, update, probe_log)
+                    next_probe = time.monotonic() + args.probe_minutes * 60
+                milestone = args.eval_every > 0 and update % args.eval_every == 0 and update < args.max_updates
+                if unattended and (milestone or time.monotonic() >= next_save):
+                    save_latest(update)
+                    next_save = time.monotonic() + args.save_minutes * 60
+                elif not unattended and time.monotonic() >= next_save and time.monotonic() < deadline - 10 * 60:
+                    save(args.output / "latest_weights.pt", checkpoint_payload(model, ema, optimizer, args, update, False))
+                    next_save = time.monotonic() + args.save_minutes * 60
+                if milestone and (update, "raw") not in evals_done(args):
+                    row = run_milestone_eval(model, ema, data, args, update, "raw")
+                    passed = bool(args.stop_at_pass) and row["full_trees_exact"] == 100
+            if stop["flag"]:
+                if unattended:
+                    save_latest(update)
+                    write_json(status_path, {"state": "interrupted", "update": update, "latest": str(latest)})
+                    print(f"INTERRUPTED at update {update}; rerun the same command to resume", flush=True)
+                    raise SystemExit(143)
+            run_probe(model, ema, conditions, leaves, args, update, probe_log)
+            if not unattended:  # round-1 behaviour
+                write_json(status_path, {"state": "saving_final", "update": update})
+                final = args.output / "final.pt"
+                save(final, checkpoint_payload(model, ema, optimizer, args, update, bool(args.save_optimizer)))
+                stale = args.output / "latest_weights.pt"
+                if stale.exists():
+                    stale.unlink()
+                write_json(status_path, {"state": "training_complete", "update": update, "final": str(final),
+                                         "stopped_by_signal": stop["flag"]})
+                print(f"TRAINING_COMPLETE updates={update} final={final}", flush=True)
+                return
+            save_latest(update, final=True)
+        print(f"TRAINING_COMPLETE updates={update}; final evaluations {final_evals}", flush=True)
+        done = evals_done(args)
+        for weights in final_evals:
+            if (update, weights) not in done:
+                run_milestone_eval(model, ema, data, args, update, weights)
         final = args.output / "final.pt"
-        save(final, checkpoint_payload(model, ema, optimizer, args, update, bool(args.save_optimizer)))
-        stale = args.output / "latest_weights.pt"
-        if stale.exists():
-            stale.unlink()
-        write_json(status_path, {"state": "training_complete", "update": update, "final": str(final),
-                                 "stopped_by_signal": stop["flag"]})
-        print(f"TRAINING_COMPLETE updates={update} final={final}", flush=True)
+        latest.replace(final)
+        write_json(status_path, {"state": "complete", "update": update, "final": str(final),
+                                 "passed_early": passed})
+        print(f"JOB_COMPLETE updates={update} final={final}", flush=True)
+    except SystemExit:
+        raise
     except Exception as error:
         write_json(status_path, {"state": "failed", "update": update, "error": repr(error),
                                  "traceback": traceback.format_exc()})

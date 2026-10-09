@@ -199,6 +199,11 @@ def summarize(rows):
     for row in rows:
         key = str(row["first_mismatch_depth"])
         first[key] = first.get(key, 0) + 1
+    by_size = {}
+    for low, high in ((0, 300), (300, 700), (700, 1200), (1200, 10**9)):
+        bucket = [r for r in rows if low <= r["target_n"] < high]
+        label = f"{low}-{high}" if high < 10**9 else f"{low}+"
+        by_size[label] = {"trees": len(bucket), "exact": sum(r["all_levels_exact"] for r in bucket)}
     ratios = [row["d9_gt_xyz"].get("spacing_ratio") for row in rows]
     teacher_rule = sum(1 for row, r in zip(rows, ratios) if row["count_correct"] and r is not None and r < 0.1)
     return {"trees": len(rows), "full_trees_exact": sum(r["all_levels_exact"] for r in rows),
@@ -206,7 +211,7 @@ def summarize(rows):
             "capacity_abort_trees": sum(r["status"] == "capacity_abort" for r in rows),
             "count_accuracy": sum(r["count_correct"] for r in rows) / max(len(rows), 1),
             "teacher_rule_vs_d9_gt_pass": teacher_rule,
-            "first_mismatch_depth_histogram": first, "per_depth": depths}
+            "first_mismatch_depth_histogram": first, "exact_by_vertex_count": by_size, "per_depth": depths}
 
 
 @torch.no_grad()
@@ -233,3 +238,47 @@ def coarse_probe(model, conditions, leaves, *, seed=EVAL_SEEDS[0], max_depth=5, 
     model.train(was_training)
     return {"seed": seed, "max_depth": max_depth, "objects": len(conditions),
             "exact_through_depth": exact, "first_error_depth": first_error}
+
+
+def run_evaluation(model, manifest, conditions, leaves, raw_gt, output, *, steps=20, info=None):
+    """The 100-tree acceptance evaluation (50 objects x EVAL_SEEDS). Saves every prediction
+    before any ground truth is read, then scores. Returns the summary dict."""
+    import hashlib
+    import time
+    output = Path(output)
+    (output / "predictions").mkdir(parents=True)
+    started = time.monotonic()
+    was_training = model.training
+    model.eval()
+    generated = []
+    with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16, enabled=conditions[0].is_cuda):
+        for seed in EVAL_SEEDS:
+            for index, uid in enumerate(manifest["train_uids"]):
+                context = model.condition_encoder(conditions[index])
+                status, levels, q = generate_tree(model, context, seed, steps=steps)
+                path = output / "predictions" / f"seed-{seed}_{uid}.npz"
+                np.savez_compressed(path, integer_vertices=q, status=np.asarray(status),
+                                    **{f"depth{lv['depth']}_{k}": lv[k] for lv in levels
+                                       for k in ("parents", "occupancy", "estimate", "predicted_cells")})
+                generated.append({"seed": seed, "uid": uid, "index": index, "status": status,
+                                  "levels": levels, "q": q,
+                                  "prediction_sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
+                write_json(output / "progress.json", {"generated": len(generated), "expected": 2 * len(conditions),
+                                                      "minutes": (time.monotonic() - started) / 60})
+    model.train(was_training)
+    write_json(output / "generation_manifest.json",
+               {"gt_read": False, "rows": [{k: g[k] for k in ("seed", "uid", "status", "prediction_sha256")}
+                                           for g in generated]})
+    rows = []
+    for g in generated:
+        scored = score_tree(g["status"], g["levels"], g["q"], leaves[g["index"]], raw_gt[g["index"]])
+        rows.append({"seed": g["seed"], "uid": g["uid"], **scored})
+    report = summarize(rows)
+    report["acceptance"] = {"criterion": "100/100 trees exact at every depth (50 objects x 2 seeds)",
+                            "passed": report["full_trees_exact"] == 100}
+    report["s0_reference"] = {"full_trees_exact": 7, "per_depth_full_level_exact": [98, 88, 58, 32, 16, 14, 12, 7, 7]}
+    info = dict(info or {})
+    write_json(output / "evaluation.json", {**info, **report, "rows": rows})
+    summary = {**info, **report, "minutes": (time.monotonic() - started) / 60}
+    write_json(output / "summary.json", summary)
+    return summary

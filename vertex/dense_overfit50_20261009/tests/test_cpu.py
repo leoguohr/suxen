@@ -32,6 +32,23 @@ from packed import chunk_loss, make_chunks, pack_rows, packed_flow_forward  # no
 torch.manual_seed(0)
 torch.set_num_threads(4)
 DEVICE = torch.device("cpu")
+# The nexus-algo torch build returns NaN from its CPU fused attention for some shapes
+# (found by Codex on 2026-10-09). Tests run on CPU only, so force the math kernel here.
+torch.backends.cuda.enable_flash_sdp(False)
+torch.backends.cuda.enable_mem_efficient_sdp(False)
+torch.backends.cuda.enable_math_sdp(True)
+
+
+class RecordingSGD(torch.optim.SGD):
+    """lr=0 optimizer that records gradients at step() (train_update frees them afterwards)."""
+    def __init__(self, params):
+        super().__init__(params, lr=0.0)
+        self.recorded = None
+
+    def step(self, closure=None):
+        self.recorded = [None if q.grad is None else q.grad.detach().clone()
+                         for group in self.param_groups for q in group["params"]]
+        return super().step(closure)
 
 
 def tiny_model():
@@ -45,7 +62,8 @@ def tiny_model():
 def make_args(**overrides):
     args = argparse.Namespace(objects_per_update=3, coarse_depths=5, coarse_copies=3, row_tokens=1024,
                               chunk_tokens=2048, checkpoint_activations=1, clip=1e9, lr=0.0, warmup=1,
-                              seed=7)
+                              seed=7, loss_weighting="item", decay_fraction=0.0, min_lr=0.0,
+                              max_updates=10**9)
     for k, v in overrides.items():
         setattr(args, k, v)
     return args
@@ -98,33 +116,47 @@ def main():
         depth_weight[(i.obj, i.depth)] = depth_weight.get((i.obj, i.depth), 0) + i.weight
     check("each (object, depth) has equal weight", max(depth_weight.values()) - min(depth_weight.values()) < 1e-12)
 
-    # 2) detached-condition chunked backward == plain backward (also exercises checkpointing)
-    for ckpt in (1, 0):
-        args = make_args(checkpoint_activations=ckpt, row_tokens=4096, chunk_tokens=8192)
+    # 2) detached-condition chunked backward == plain backward, for both loss weightings
+    for weighting, ckpt in (("item", 1), ("item", 0), ("token", 1)):
+        args = make_args(checkpoint_activations=ckpt, row_tokens=4096, chunk_tokens=8192, loss_weighting=weighting)
         update = 2
         objects = dense_train.objects_for_update(args, update, 50)
         items = dense_train.build_items(args, objects, levels, update, DEVICE)
         chunks = make_chunks(items, pack_rows(items, args.row_tokens), args.chunk_tokens, DEVICE)
+        denominator = 8.0 * sum(len(i.codes) for i in items) if weighting == "token" else None
         model.zero_grad(set_to_none=True)
         batch = dense_train.cached_condition_batch(model, conditions, objects)
         condition = model.condition_encoder(batch)
-        reference = 0
+        reference, squared, count = 0, 0.0, 0
         for chunk in chunks:
             pred = packed_flow_forward(model.flow, chunk.noisy, chunk.codes, chunk.depths, chunk.item_ids,
                                        chunk.item_times, condition[chunk.row_object])
-            reference = reference + chunk_loss(pred, chunk)[0]
+            reference = reference + chunk_loss(pred, chunk, denominator)[0]
+            valid = chunk.item_ids >= 0
+            squared += float(((pred - chunk.velocity) ** 2).sum(-1)[valid].sum())
+            count += int(valid.sum()) * 8
+        if weighting == "token":
+            check("token loss == plain mean over all tokens", abs(float(reference) - squared / count) < 1e-6 * max(1, squared / count),
+                  f"{float(reference):.6e} vs {squared / count:.6e}")
         reference.backward()
         grad = lambda q: q.grad if q.grad is not None else torch.zeros_like(q)  # noqa: E731
-        expected = {n: grad(p).clone() for n, p in model.named_parameters()}
-        optimizer = torch.optim.SGD(model.parameters(), lr=0.0)
+        expected = [grad(q).clone() for q in model.parameters()]
+        optimizer = RecordingSGD(model.parameters())
         row = dense_train.train_update(model, optimizer, args, conditions, levels, update, DEVICE)
-        worst = max(float((grad(p) - expected[n]).abs().max() / (expected[n].abs().max() + 1e-12))
-                    for n, p in model.named_parameters())
-        check(f"chunked backward == plain backward (checkpoint={ckpt})",
+        got = [g if g is not None else torch.zeros_like(e) for g, e in zip(optimizer.recorded, expected)]
+        worst = max(float((g - e).abs().max() / (e.abs().max() + 1e-12)) for g, e in zip(got, expected))
+        check(f"chunked backward == plain backward ({weighting}, checkpoint={ckpt})",
               worst < 1e-4 and abs(row["loss"] - float(reference)) < 1e-5 * max(1, float(reference)),
               f"max rel grad diff={worst:.2e}, chunks={row['chunks']}")
-        vecset_grad = sum(float(grad(p).abs().sum()) for p in model.condition_encoder.parameters())
-        check("VecSet receives gradient", vecset_grad > 0)
+        vecset = [g for g, (n, _) in zip(got, model.named_parameters()) if n.startswith("condition_encoder.")]
+        check("VecSet receives gradient", sum(float(g.abs().sum()) for g in vecset) > 0)
+        check("gradients freed after the update", all(q.grad is None for q in model.parameters()))
+
+    # 2b) learning-rate schedule: warmup, constant, linear decay over the last 20%
+    sched = make_args(lr=1e-5, warmup=20, max_updates=100, decay_fraction=0.2, min_lr=0.0)
+    values = [dense_train.lr_at(sched, u) for u in (10, 20, 50, 80, 90, 100)]
+    expected_lr = [5e-6, 1e-5, 1e-5, 1e-5, 5e-6, 0.0]
+    check("LR schedule", all(abs(a - b) < 1e-12 for a, b in zip(values, expected_lr)), f"{values}")
 
     # 3) object schedule covers each object once per epoch
     args = make_args(objects_per_update=8)

@@ -24,8 +24,7 @@ import time
 import numpy as np
 import torch
 
-from common import (EVAL_SEEDS, build_model, cache_fixed_features, generate_tree, load_data,
-                    load_weights, score_tree, summarize, write_json, sha)
+from common import build_model, cache_fixed_features, load_data, load_weights, run_evaluation, sha
 
 
 def main():
@@ -39,47 +38,19 @@ def main():
     assert torch.cuda.is_available() and torch.cuda.device_count() == 1, "set CUDA_VISIBLE_DEVICES to ONE GPU"
     device = torch.device("cuda:0")
     assert not args.output.exists(), "output must be a new directory"
-    (args.output / "predictions").mkdir(parents=True)
-    started = time.monotonic()
     manifest, conditions, leaves, _levels, raw_gt = load_data(device)
     weights, state = load_weights(args.checkpoint, args.weights)
     model = build_model(weights, device).eval().requires_grad_(False)
     info = {"checkpoint": str(args.checkpoint), "weights": args.weights, "update": state.get("update"),
-            "step": state.get("step"), "steps_per_depth": args.steps, "seeds": list(EVAL_SEEDS),
+            "step": state.get("step"), "steps_per_depth": args.steps,
             "checkpoint_sha256": sha(args.checkpoint) if args.hash_checkpoint else None}
     del weights, state
     cache_fixed_features(model, conditions)
-    generated = []
-    with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16):
-        for seed in EVAL_SEEDS:
-            for index, uid in enumerate(manifest["train_uids"]):
-                context = model.condition_encoder(conditions[index])
-                status, levels, q = generate_tree(model, context, seed, steps=args.steps)
-                path = args.output / "predictions" / f"seed-{seed}_{uid}.npz"
-                np.savez_compressed(path, integer_vertices=q, status=np.asarray(status),
-                                    **{f"depth{lv['depth']}_{k}": lv[k] for lv in levels
-                                       for k in ("parents", "occupancy", "estimate", "predicted_cells")})
-                generated.append({"seed": seed, "uid": uid, "index": index, "status": status,
-                                  "levels": levels, "q": q,
-                                  "prediction_sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
-                write_json(args.output / "progress.json", {"generated": len(generated), "expected": 100,
-                                                           "minutes": (time.monotonic() - started) / 60})
-    write_json(args.output / "generation_manifest.json",
-               {"gt_read": False, "rows": [{k: g[k] for k in ("seed", "uid", "status", "prediction_sha256")}
-                                           for g in generated]})
-    rows = []
-    for g in generated:
-        scored = score_tree(g["status"], g["levels"], g["q"], leaves[g["index"]], raw_gt[g["index"]])
-        rows.append({"seed": g["seed"], "uid": g["uid"], **scored})
-    report = summarize(rows)
-    report["acceptance"] = {"criterion": "100/100 trees exact at every depth (50 objects x 2 seeds)",
-                            "passed": report["full_trees_exact"] == 100}
-    report["s0_reference"] = {"full_trees_exact": 7, "per_depth_full_level_exact": [98, 88, 58, 32, 16, 14, 12, 7, 7]}
-    write_json(args.output / "evaluation.json", {**info, **report, "rows": rows})
-    write_json(args.output / "summary.json", {**info, **report, "minutes": (time.monotonic() - started) / 60})
+    report = run_evaluation(model, manifest, conditions, leaves, raw_gt, args.output, steps=args.steps, info=info)
     print(f"EVALUATION_COMPLETE full_trees_exact={report['full_trees_exact']}/100 "
           f"per-depth exact={[d['full_level_exact'] for d in report['per_depth']]} "
           f"first-mismatch={report['first_mismatch_depth_histogram']} "
+          f"by-size={report['exact_by_vertex_count']} "
           f"passed={report['acceptance']['passed']}", flush=True)
 
 

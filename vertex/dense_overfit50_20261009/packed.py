@@ -188,11 +188,23 @@ def packed_flow_forward(flow, noisy: Tensor, codes: Tensor, depths: Tensor, item
     return flow.output(flow.output_norm(x)).masked_fill(~valid.unsqueeze(-1), 0)
 
 
-def chunk_loss(prediction: Tensor, chunk: Chunk) -> tuple[Tensor, Tensor]:
-    """Weighted sum over items of per-item velocity MSE; also per-item MSE (detached)."""
+def chunk_loss(prediction: Tensor, chunk: Chunk,
+               token_denominator: float | None = None) -> tuple[Tensor, Tensor]:
+    """This chunk's share of the update loss, plus per-item MSE (detached, for logging).
+
+    token_denominator=None ('item' weighting, round 1): sum over items of
+        item_weight * mean squared error over the item's tokens and 8 channels.
+    token_denominator=8 * (all valid tokens in the update) ('token' weighting): every token of
+        every item (stratified-t copies included) has equal weight; summing the chunk losses
+        gives the plain mean over all tokens of the update.
+    """
     valid = chunk.item_ids >= 0
     error = (prediction.float() - chunk.velocity).square().sum(-1).masked_fill(~valid, 0)
     per_item_sum = torch.zeros_like(chunk.item_times).index_add(
         0, chunk.item_ids[valid], error[valid])
     per_item = per_item_sum / (chunk.item_counts * 8)
-    return (per_item * chunk.item_weights).sum(), per_item.detach()
+    if token_denominator is None:
+        loss = (per_item * chunk.item_weights).sum()
+    else:
+        loss = per_item_sum.sum() / token_denominator
+    return loss, per_item.detach()
