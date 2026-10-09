@@ -97,21 +97,26 @@ For each failed tree it reports the sampler's continuous values for the wrong bi
 wrong depth. Values near 0.5 point to sampling or near-miss problems; values near 0/1 mean the
 model was confidently wrong.
 
-## Round 2b: two more jobs on the two extra GPUs (J3, J4)
+## Round 2b: J3–J6 on the extra GPUs
 
-Same start, seed, schedule and evaluations as J1/J2. Each adds one change to **J2** (`--loss-weighting token`):
+Same start, seed, schedule and evaluations as J1/J2. Each adds one change to **J2** (`--loss-weighting token`).
+J3/J4 need no new code; J5/J6 need this commit's options. If only two GPUs are free, run J6 first, then J5.
 
 | Job | Extra flags | Question |
 |---|---|---|
-| J3 | `--fine-copies 2` | Do depths 6–9, where failures now start, need more samples per update? About 1.7× time per update, so roughly 1.5 days for 9,000 updates. |
-| J4 | `--parent-drop 0.1 --parent-add 0.1` | Self-correction test. Each item at depths 2–9 has up to 10% of its true parents dropped and up to 10% spurious neighbour parents added, with "no children" as their target. Does training on corrupted parents shrink the error cascade? |
+| J3 | `--lr 5e-6` (after `$COMMON`) | Is a lower learning rate still better? |
+| J4 | `--coarse-copies 8` | Does extra weight on depths 1–5 protect them under per-token loss? |
+| J5 | `--fine-copies 2` | Do depths 6–9, where failures now start, need more samples per update? About 1.7× time per update, so roughly 1.5 days for 9,000 updates. |
+| J6 | `--parent-drop 0.1 --parent-add 0.1` | Self-correction test. Each item at depths 2–9 has up to 10% of its true parents dropped and up to 10% spurious neighbour parents added, with "no children" as their target. Does training on corrupted parents shrink the error cascade? |
 
 These flags default to off, and with them off the item stream is bit-identical to before, so J1/J2 are
 unaffected even if they restart on this code.
 
 ```bash
-# J3 (GPU 3):  $PY -u dense_train.py $COMMON --loss-weighting token --fine-copies 2 --output $OUT/J3_token_fine2
-# J4 (GPU 4):  $PY -u dense_train.py $COMMON --loss-weighting token --parent-drop 0.1 --parent-add 0.1 --output $OUT/J4_token_selfcorrect
+# J3:  $PY -u dense_train.py $COMMON --loss-weighting token --lr 5e-6 --output $OUT/J3_token_lr5e-6
+# J4:  $PY -u dense_train.py $COMMON --loss-weighting token --coarse-copies 8 --output $OUT/J4_token_copies8
+# J5:  $PY -u dense_train.py $COMMON --loss-weighting token --fine-copies 2 --output $OUT/J5_token_fine2
+# J6:  $PY -u dense_train.py $COMMON --loss-weighting token --parent-drop 0.1 --parent-add 0.1 --output $OUT/J6_token_selfcorrect
 ```
-Compare J3 and J4 with J2 at the same milestone updates (1,800 / 3,600 / ...). For J4, run
+Compare J3–J6 with J2 at the same milestone updates (1,800 / 3,600 / ...). For J6, run
 `analyze_cascade.py` on its evaluations to see whether inherited errors drop.

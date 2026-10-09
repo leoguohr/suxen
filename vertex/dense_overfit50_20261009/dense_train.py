@@ -57,7 +57,7 @@ SIX_NEIGHBOURS = ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0
 
 
 def perturb_parents(codes, target, depth, drop_max, add_max, g, device):
-    """Self-correction training (J4): corrupt one item's parent set the way generation errs.
+    """Self-correction training (J6): corrupt one item's parent set the way generation errs.
 
     Drop a random fraction (U[0, drop_max]) of the ground-truth parents, and add up to a random
     fraction (U[0, add_max]) of spurious parents: 6-neighbours of kept parents that are NOT
