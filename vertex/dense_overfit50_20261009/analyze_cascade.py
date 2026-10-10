@@ -45,7 +45,8 @@ def analyze(eval_dir: Path, leaves: dict) -> dict:
     keys = ("local_fn", "inherited_fn", "local_fp", "inherited_fp", "correct_parents", "extra_parents",
             "extra_parents_with_no_children", "missing_parents", "first_loss_cells", "d9_vertices_under_first_loss",
             "missing_parents_next_to_predicted_6", "missing_parents_next_to_predicted_26",
-            "predicted_parents", "ring6_candidates", "ring26_candidates")
+            "predicted_parents", "ring6_candidates", "ring26_candidates",
+            "local_fn_with_adjacent_fp", "local_fp_with_adjacent_fn", "local_fn_with_sibling_fp")
     per_depth = {d: dict.fromkeys(keys, 0) for d in range(1, DEPTH + 1)}
     trees = 0
     for path in files:
@@ -60,14 +61,18 @@ def analyze(eval_dir: Path, leaves: dict) -> dict:
                 parents = z[f"depth{d}_parents"].reshape(-1, 3)
                 occupancy = z[f"depth{d}_occupancy"].astype(bool).reshape(len(parents), 8)
                 stats = per_depth[d]
+                predicted_all, local_fn_cells, local_fp_cells = set(), [], []
                 for row, parent in enumerate(map(tuple, parents.tolist())):
                     children = np.asarray(parent)[None] * 2 + OFFSETS
                     predicted = as_set(children[occupancy[row]])
+                    predicted_all |= predicted
                     if parent in truth[d - 1]:
                         stats["correct_parents"] += 1
                         missed = (as_set(children) & truth[d]) - predicted
                         stats["local_fn"] += len(missed)
                         stats["local_fp"] += len(predicted - truth[d])
+                        local_fn_cells += list(missed)
+                        local_fp_cells += list(predicted - truth[d])
                         for cell in missed:  # first loss: everything below this cell is gone
                             stats["first_loss_cells"] += 1
                             under = (cells >> (DEPTH - d) == np.asarray(cell)).all(axis=1).sum()
@@ -76,6 +81,15 @@ def analyze(eval_dir: Path, leaves: dict) -> dict:
                         stats["extra_parents"] += 1
                         stats["inherited_fp"] += len(predicted)
                         stats["extra_parents_with_no_children"] += int(len(predicted) == 0)
+                # "Shifted" errors: a missed cell with a wrong predicted cell right next to it (26-ring,
+                # same depth), i.e. the vertex was put one cell off rather than lost.
+                all_fp, all_fn = predicted_all - truth[d], truth[d] - predicted_all
+                near = lambda c, pool: any((c[0] + a, c[1] + b, c[2] + e) in pool for a, b, e in RING26)
+                stats["local_fn_with_adjacent_fp"] += sum(1 for c in local_fn_cells if near(c, all_fp))
+                stats["local_fp_with_adjacent_fn"] += sum(1 for c in local_fp_cells if near(c, all_fn))
+                stats["local_fn_with_sibling_fp"] += sum(
+                    1 for c in local_fn_cells
+                    if any((c[0] >> 1 << 1 | o[0], c[1] >> 1 << 1 | o[1], c[2] >> 1 << 1 | o[2]) in all_fp for o in OFFSETS))
                 predicted_parents = as_set(parents)
                 missing = truth[d - 1] - predicted_parents
                 stats["missing_parents"] += len(missing)
@@ -98,6 +112,12 @@ def analyze(eval_dir: Path, leaves: dict) -> dict:
                                                   if stats["extra_parents"] else None)
         stats["d9_vertices_lost_per_first_loss"] = (stats["d9_vertices_under_first_loss"] / stats["first_loss_cells"]
                                                     if stats["first_loss_cells"] else None)
+        stats["shifted_fn_share"] = (stats["local_fn_with_adjacent_fp"] / stats["local_fn"]
+                                     if stats["local_fn"] else None)
+        stats["shifted_fp_share"] = (stats["local_fp_with_adjacent_fn"] / stats["local_fp"]
+                                     if stats["local_fp"] else None)
+        stats["sibling_fn_share"] = (stats["local_fn_with_sibling_fp"] / stats["local_fn"]
+                                     if stats["local_fn"] else None)
         for key in ("6", "26"):
             stats[f"missing_recoverable_share_{key}"] = (stats[f"missing_parents_next_to_predicted_{key}"] / stats["missing_parents"]
                                                          if stats["missing_parents"] else None)
@@ -123,6 +143,12 @@ def main():
             lost = "-" if s["d9_vertices_lost_per_first_loss"] is None else f"{s['d9_vertices_lost_per_first_loss']:.1f}"
             print(f" {d} | {s['local_fn']:7d} | {s['inherited_fn']:7d} ({share:>4}) | {s['local_fp']:7d} | "
                   f"{s['inherited_fp']:7d} | {s['extra_parents']:7d} | {die:>5} | {per} | {lost}")
+        pct = lambda v: "-" if v is None else f"{v:.0%}"
+        print(" d | local FN with a wrong cell next to it (26-ring / same parent) | local FP with a missed cell next to it")
+        for d, s in r["per_depth"].items():
+            if s["local_fn"] or s["local_fp"]:
+                print(f" {d} | {pct(s['shifted_fn_share'])} / {pct(s['sibling_fn_share'])} of {s['local_fn']} | "
+                      f"{pct(s['shifted_fp_share'])} of {s['local_fp']}")
         print(" d | missing parents | next to a predicted cell (6-ring / 26-ring) | extra candidate tokens (6 / 26) per predicted cell")
         for d, s in r["per_depth"].items():
             if s["missing_parents"]:
