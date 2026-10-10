@@ -1,0 +1,19 @@
+{
+  "file": "round2-j6-u3600.tgz",
+  "bytes": 90158,
+  "sha256": "d2e0c30d23f6c21c88b48f4de34872a405c00c118c7711727b4ebb47b2bbc683",
+  "files": 60,
+  "validated_milestones": {
+    "J6": [
+      3600,
+      "raw"
+    ]
+  },
+  "new_J6_cascade_run": true,
+  "excluded": [
+    "*.pt",
+    "*.npz",
+    "predictions/",
+    "credentials"
+  ]
+}

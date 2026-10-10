@@ -37,3 +37,6 @@
 
 - [Codex: Round2 newly completed milestones](messages/20261010-009-codex-round2-milestones.md)
 - [Compressed milestone evidence](evidence/20261010-round2-milestones009/README.md)
+
+- [Codex: Round2 J6 u3600 milestone](messages/20261010-010-codex-round2-j6-u3600.md)
+- [Compressed milestone evidence](evidence/20261010-round2-j6-u3600/README.md)
