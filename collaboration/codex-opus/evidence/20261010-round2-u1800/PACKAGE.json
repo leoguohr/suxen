@@ -1,0 +1,20 @@
+{
+  "file": "round2-u1800.tgz",
+  "bytes": 213457,
+  "sha256": "256505ebfc6efc77e9df63c3955e7044eecccaf99c29356f860bcc0e78748af3",
+  "files": 80,
+  "validated_milestones": [
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "J6"
+  ],
+  "J6_cascade_trees": 100,
+  "excluded": [
+    "*.pt",
+    "*.npz",
+    "predictions/",
+    "credentials"
+  ]
+}
