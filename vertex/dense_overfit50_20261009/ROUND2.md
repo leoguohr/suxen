@@ -1,5 +1,20 @@
 # Round 2: two unattended jobs from round-1 run A (loss weighting test)
 
+## Acceptance (updated 2026-10-10, decided by the user)
+
+Every evaluation reports three numbers on the same 100 trees (50 objects x 2 seeds):
+
+1. **Teacher's rule** (`teacher_rule_vs_d9_gt_pass` in `summary.json`): vertex count correct and
+   max vertex error / min GT vertex spacing < 0.1, against the D9-rounded GT. For a 512^3 octree this
+   is almost the same as strict exact. It is the headline number.
+2. **Strict exact** (`full_trees_exact`).
+3. **Minimum pass: exact within one D9 cell** (`analyze_boundary.py`, column `<=1`). The vertex count
+   must be correct and every wrong cell must pair one-to-one with a missed cell at Chebyshev distance 1.
+   The target is 100/100.
+
+Report all three, split by object size, plus per-vertex accuracy. Do not replace the teacher's rule
+with the one-cell metric without the teacher's agreement.
+
 ## Where round 1 left off (2026-10-09, warm start from S0@34000, ~102 min per run)
 
 | Run | LR | Exact trees /100 | <300 vertices | 300–700 | 700–1200 | 1200+ |
