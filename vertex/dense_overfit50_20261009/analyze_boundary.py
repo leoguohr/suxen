@@ -7,6 +7,10 @@
    label gives the vertex position inside its depth-9 cell (1/64 cell steps). We report how far the
    vertex is from the cell face the prediction crossed. Uniform positions would give 10% within 0.1
    cell and 25% within 0.25 cell. Much higher shares mean the misses are boundary near-misses.
+3. Paper-style distances. Nexus reports Chamfer/Hausdorff distances, not exact vertex sets. Per tree we
+   compute vertex-set Hausdorff and Chamfer (mean of the two directional mean nearest-neighbour
+   distances) between predicted and GT depth-9 cell centres, in the paper's [-1, 1] units
+   (one cell = 2/512 = 0.0039). These are vertex-set numbers, not the paper's surface metrics.
 
     python analyze_boundary.py --eval-dir <run>/evals/u003600_raw [--eval-dir ...] [--output boundary.json]
 """
@@ -18,10 +22,12 @@ from pathlib import Path
 
 import numpy as np
 from scipy.optimize import linear_sum_assignment
+from scipy.spatial import cKDTree
 
 HERE = Path(__file__).resolve().parent
 OFFSETS = np.array([[i >> 2 & 1, i >> 1 & 1, i & 1] for i in range(8)], dtype=np.int64)
 TOLERANCES = (0, 1, 2, 4, 8)
+CELL = 2.0 / 512  # one depth-9 cell in the paper's [-1, 1] normalisation
 
 
 def load_labels(data=HERE / "data"):
@@ -64,6 +70,7 @@ def analyze(eval_dir: Path, labels: dict) -> dict:
     within = dict.fromkeys(TOLERANCES, 0)
     trees = count_mismatch = incomplete = 0
     crossing, nearest_face, multi_vertex, multi_axis = [], 0, 0, 0
+    hausdorff, chamfer = [], []
     for path in files:
         uid = path.stem.split("_", 1)[1]
         d9, inside = labels[uid]
@@ -75,6 +82,14 @@ def analyze(eval_dir: Path, labels: dict) -> dict:
             pred = predicted_d9(z)
         truth = set(map(tuple, d9.tolist()))
         predicted = set(map(tuple, pred.tolist()))
+        if len(pred):
+            to_gt = cKDTree(d9).query(pred)[0]
+            to_pred = cKDTree(pred).query(d9)[0]
+            hausdorff.append(max(to_gt.max(), to_pred.max()) * CELL)
+            chamfer.append(0.5 * (to_gt.mean() + to_pred.mean()) * CELL)
+        else:
+            hausdorff.append(float("inf"))
+            chamfer.append(float("inf"))
         fn = np.array(sorted(truth - predicted), dtype=np.int64).reshape(-1, 3)
         fp = np.array(sorted(predicted - truth), dtype=np.int64).reshape(-1, 3)
         if len(fn) != len(fp):
@@ -108,6 +123,7 @@ def analyze(eval_dir: Path, labels: dict) -> dict:
                     nearest_face += int(np.argmin(sides) == (a + 3 if offset[a] > 0 else a))
     crossing = np.array(crossing)
     shifted = len(crossing)
+    hd, cd = np.array(hausdorff), np.array(chamfer)
     report = {
         "eval_dir": str(eval_dir), "trees": trees, "incomplete_trees": incomplete,
         "count_mismatch_trees": count_mismatch,
@@ -120,6 +136,11 @@ def analyze(eval_dir: Path, labels: dict) -> dict:
         "crossing_distance_histogram_0.1": np.histogram(crossing, bins=10, range=(0, 1))[0].tolist(),
         "crossed_nearest_face_share_single_axis": (nearest_face / (shifted - multi_axis)
                                                    if shifted - multi_axis else None),
+        "vertex_hausdorff_median": float(np.median(hd)) if len(hd) else None,
+        "vertex_hausdorff_max": float(hd.max()) if len(hd) else None,
+        "vertex_hausdorff_trees_le_cells": {str(k): int((hd <= k * CELL * 1.0001).sum()) for k in (0, 1, 2, 4, 8, 16)},
+        "vertex_chamfer_mean": float(cd[np.isfinite(cd)].mean()) if np.isfinite(cd).any() else None,
+        "vertex_chamfer_max": float(cd.max()) if len(cd) else None,
     }
     return report
 
@@ -143,6 +164,11 @@ def main():
                   f"{r['crossing_distance_median']:.2f}; crossed the nearest face: "
                   f"{r['crossed_nearest_face_share_single_axis']:.0%} (random: 17%)")
             print(f"   histogram (0-1 cell, 0.1 bins): {r['crossing_distance_histogram_0.1']}")
+        h = r["vertex_hausdorff_trees_le_cells"]
+        print(f"   vertex-set Hausdorff ([-1,1] units, 1 cell = {CELL:.4f}): median {r['vertex_hausdorff_median']:.4f}, "
+              f"max {r['vertex_hausdorff_max']:.4f}; trees within 0/1/2/4/8/16 cells: "
+              + " / ".join(str(h[k]) for k in ("0", "1", "2", "4", "8", "16")))
+        print(f"   vertex-set Chamfer: mean over trees {r['vertex_chamfer_mean']:.5f}, worst tree {r['vertex_chamfer_max']:.5f}")
     if args.output:
         args.output.write_text(json.dumps(reports, indent=2) + "\n")
 

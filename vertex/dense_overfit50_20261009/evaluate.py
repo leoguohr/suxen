@@ -33,6 +33,8 @@ def main():
     p.add_argument("--weights", choices=("raw", "ema"), default="raw")
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--steps", type=int, default=20)
+    p.add_argument("--sampler", choices=("euler", "dpm2m"), default="euler",
+                   help="per-level ODE solver; the paper uses 20 DPM-Solver steps (dpm2m = DPM-Solver++(2M))")
     p.add_argument("--hash-checkpoint", action="store_true")
     args = p.parse_args()
     assert torch.cuda.is_available() and torch.cuda.device_count() == 1, "set CUDA_VISIBLE_DEVICES to ONE GPU"
@@ -42,11 +44,12 @@ def main():
     weights, state = load_weights(args.checkpoint, args.weights)
     model = build_model(weights, device).eval().requires_grad_(False)
     info = {"checkpoint": str(args.checkpoint), "weights": args.weights, "update": state.get("update"),
-            "step": state.get("step"), "steps_per_depth": args.steps,
+            "step": state.get("step"), "steps_per_depth": args.steps, "sampler": args.sampler,
             "checkpoint_sha256": sha(args.checkpoint) if args.hash_checkpoint else None}
     del weights, state
     cache_fixed_features(model, conditions)
-    report = run_evaluation(model, manifest, conditions, leaves, raw_gt, args.output, steps=args.steps, info=info)
+    report = run_evaluation(model, manifest, conditions, leaves, raw_gt, args.output, steps=args.steps, info=info,
+                            sampler=args.sampler)
     print(f"EVALUATION_COMPLETE full_trees_exact={report['full_trees_exact']}/100 "
           f"per-depth exact={[d['full_level_exact'] for d in report['per_depth']]} "
           f"first-mismatch={report['first_mismatch_depth_histogram']} "

@@ -17,6 +17,7 @@ sys.path.insert(0, str(HERE / "vendor"))
 from architecture_variants import construct_model, cache_fixed_features  # noqa: E402
 from mini_nexus.octree import build_octree_levels, decode_leaf_centers, expand_occupied_children  # noqa: E402
 from mini_nexus.vertex_evaluation import sample_level  # noqa: E402
+from samplers import SAMPLERS, dpm_solver_pp_2m  # noqa: E402
 
 DATA = HERE / "data"
 DEPTH = 9
@@ -101,9 +102,20 @@ def noise_for(shape, seed, device):
     return torch.randn(shape, device=device, generator=torch.Generator(device=device).manual_seed(seed))
 
 
+def dpm_sample_level(model, context, parents, depth, noise, *, steps):
+    """One level with DPM-Solver++(2M) (samplers.py); same model call as mini_nexus sample_level."""
+    depths = torch.tensor([depth], device=context.device)
+    def velocity(x, s):
+        times = torch.full((x.shape[0],), s, device=x.device, dtype=x.dtype)
+        return model.flow(x, times, parents.unsqueeze(0), depths, context).float()
+    return dpm_solver_pp_2m(velocity, noise, steps)
+
+
 @torch.no_grad()
-def generate_tree(model, context, seed, *, steps=20, max_depth=DEPTH, capacity=4096):
-    """Same protocol as native_export.export_tree: root -> D9, own parents, Euler, >=0.5."""
+def generate_tree(model, context, seed, *, steps=20, max_depth=DEPTH, capacity=4096, sampler="euler"):
+    """Same protocol as native_export.export_tree: root -> D9, own parents, Euler, >=0.5.
+    sampler='dpm2m' swaps only the per-level ODE solver (the paper uses 20 DPM-Solver steps)."""
+    assert sampler in SAMPLERS, sampler
     parents = torch.zeros((1, 3), device=context.device, dtype=torch.long)
     levels, status = [], "complete"
     for depth in range(1, max_depth + 1):
@@ -111,7 +123,8 @@ def generate_tree(model, context, seed, *, steps=20, max_depth=DEPTH, capacity=4
             status = "capacity_abort"
             break
         noise = noise_for((1, len(parents), 8), seed + depth * 1000, context.device)
-        value = sample_level(model, context, parents, depth, noise, steps=steps) if len(parents) else noise
+        solve = sample_level if sampler == "euler" else dpm_sample_level
+        value = solve(model, context, parents, depth, noise, steps=steps) if len(parents) else noise
         if not torch.isfinite(value).all():
             raise FloatingPointError("nonfinite occupancy")
         occupancy = value[0] >= 0.5
@@ -240,7 +253,7 @@ def coarse_probe(model, conditions, leaves, *, seed=EVAL_SEEDS[0], max_depth=5, 
             "exact_through_depth": exact, "first_error_depth": first_error}
 
 
-def run_evaluation(model, manifest, conditions, leaves, raw_gt, output, *, steps=20, info=None):
+def run_evaluation(model, manifest, conditions, leaves, raw_gt, output, *, steps=20, info=None, sampler="euler"):
     """The 100-tree acceptance evaluation (50 objects x EVAL_SEEDS). Saves every prediction
     before any ground truth is read, then scores. Returns the summary dict."""
     import hashlib
@@ -255,7 +268,7 @@ def run_evaluation(model, manifest, conditions, leaves, raw_gt, output, *, steps
         for seed in EVAL_SEEDS:
             for index, uid in enumerate(manifest["train_uids"]):
                 context = model.condition_encoder(conditions[index])
-                status, levels, q = generate_tree(model, context, seed, steps=steps)
+                status, levels, q = generate_tree(model, context, seed, steps=steps, sampler=sampler)
                 path = output / "predictions" / f"seed-{seed}_{uid}.npz"
                 np.savez_compressed(path, integer_vertices=q, status=np.asarray(status),
                                     **{f"depth{lv['depth']}_{k}": lv[k] for lv in levels

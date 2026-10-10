@@ -59,3 +59,15 @@ the misses they cause, and whether the parent's strongest bit pointed at a true 
 Part C command line with `analyze_cascade.py` instead of `analyze_boundary.py` (same six evaluations,
 output `round2_cascade_dead.json` / `.log`) and push it as the next message. Add it to the hourly
 follow-up for final and Part B outputs.
+
+## Part E: the paper's sampler and paper-style distances (added after reading the Nexus paper)
+The paper (Sec. 4.1) samples each octree level with 20 DPM-Solver steps; we used 20 Euler steps.
+Pull again in the same NEW checkout. `evaluate.py` has a new flag `--sampler {euler,dpm2m}` (default
+`euler`, unchanged behaviour); `dpm2m` is DPM-Solver++(2M) (`samplers.py`). `analyze_boundary.py` now
+also prints paper-style vertex-set Hausdorff/Chamfer distances.
+1. CPU gate: `CUDA_VISIBLE_DEVICES= $PY tests/test_cpu.py` must end with `ALL CPU TESTS PASSED`
+   (three new dpm2m checks). If not, stop and report.
+2. On the same GPU and the same copied J3 checkpoint as the decoding test, add
+   `--sampler dpm2m --steps 20` for `--weights ema` and `--weights raw` (new output folders).
+3. Rerun `analyze_boundary.py` on every decoding-test output (1/20/50-step Euler, 20-step dpm2m)
+   and on the six Part C evaluations, and push the logs and JSON.

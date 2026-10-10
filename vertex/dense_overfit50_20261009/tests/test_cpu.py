@@ -231,6 +231,20 @@ def main():
                                           max_depth=4)
     report = summarize([score_tree(status, gen_levels, q, leaves[obj], raw_gt[obj]), scored])
     check("random-model generation + summarize run", report["trees"] == 2, f"status={status}")
+    # 6) DPM-Solver++(2M): with 1 or 2 steps it is exactly Euler; with more steps it runs and differs
+    context = model.condition_encoder(conditions[obj])
+    with torch.no_grad():
+        for n in (1, 2):
+            a = generate_tree(model, context, 97029000, steps=n, max_depth=3)[1]
+            b = generate_tree(model, context, 97029000, steps=n, max_depth=3, sampler="dpm2m")[1]
+            same = all(torch.allclose(torch.from_numpy(x["estimate"]), torch.from_numpy(y["estimate"]), atol=1e-5)
+                       for x, y in zip(a, b)) and len(a) == len(b)
+            check(f"dpm2m == euler at {n} step(s)", same)
+        a = generate_tree(model, context, 97029000, steps=5, max_depth=2)[1]
+        b = generate_tree(model, context, 97029000, steps=5, max_depth=2, sampler="dpm2m")[1]
+        diff = max(float(abs(x["estimate"] - y["estimate"]).max()) for x, y in zip(a, b))
+        check("dpm2m at 5 steps runs, finite, differs from euler", all(torch.isfinite(torch.from_numpy(y["estimate"])).all()
+              for y in b) and diff > 0, f"max diff={diff:.2e}")
     print(f"ALL CPU TESTS PASSED in {time.time() - started:.0f}s", flush=True)
 
 
