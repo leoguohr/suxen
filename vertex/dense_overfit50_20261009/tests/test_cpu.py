@@ -231,15 +231,20 @@ def main():
                                           max_depth=4)
     report = summarize([score_tree(status, gen_levels, q, leaves[obj], raw_gt[obj]), scored])
     check("random-model generation + summarize run", report["trees"] == 2, f"status={status}")
-    # 6) DPM-Solver++(2M): with 1 or 2 steps it is exactly Euler; with more steps it runs and differs
+    # 6) DPM-Solver++(2M): with 1 or 2 steps it runs the same float operations as Euler (bit-identical);
+    #    with more steps it runs and differs
     context = model.condition_encoder(conditions[obj])
     with torch.no_grad():
         for n in (1, 2):
             a = generate_tree(model, context, 97029000, steps=n, max_depth=3)[1]
             b = generate_tree(model, context, 97029000, steps=n, max_depth=3, sampler="dpm2m")[1]
-            same = all(torch.allclose(torch.from_numpy(x["estimate"]), torch.from_numpy(y["estimate"]), atol=1e-5)
-                       for x, y in zip(a, b)) and len(a) == len(b)
-            check(f"dpm2m == euler at {n} step(s)", same)
+            shapes = [(x["estimate"].shape, y["estimate"].shape) for x, y in zip(a, b)]
+            same = len(a) == len(b) and all(sa == sb for sa, sb in shapes) and all(
+                torch.equal(torch.from_numpy(x["estimate"]), torch.from_numpy(y["estimate"])) for x, y in zip(a, b))
+            detail = f"levels {len(a)}/{len(b)}, shapes {shapes}" if not same else ""
+            if not same and all(sa == sb for sa, sb in shapes):
+                detail += f", max diff {max(float(abs(x['estimate'] - y['estimate']).max()) for x, y in zip(a, b)):.2e}"
+            check(f"dpm2m == euler at {n} step(s), bit for bit", same, detail)
         a = generate_tree(model, context, 97029000, steps=5, max_depth=2)[1]
         b = generate_tree(model, context, 97029000, steps=5, max_depth=2, sampler="dpm2m")[1]
         diff = max(float(abs(x["estimate"] - y["estimate"]).max()) for x, y in zip(a, b))

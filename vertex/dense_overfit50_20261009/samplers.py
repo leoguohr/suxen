@@ -21,22 +21,25 @@ def euler(velocity, x, steps: int):
 
 
 def dpm_solver_pp_2m(velocity, x, steps: int):
+    """The 2M update x_t = (sigma_t/sigma_s) x + (t - s)/(1 - s) * D, D = data + (data - prev_data)/(2r),
+    rewritten as  x_t = [Euler step x + dt*v] + dt/(1 - s) * (D - data).
+    First-order steps (the first two and the last) skip the correction, so they run exactly the same
+    floating-point operations as mini_nexus euler_integrate and match it bit for bit."""
     if steps < 1:
         raise ValueError("steps must be positive")
     lam = lambda u: math.log(u / (1.0 - u))  # noqa: E731
+    dt = 1.0 / steps
     prev_data, prev_s = None, None
     for i in range(steps):
         s, t = i / steps, (i + 1) / steps
-        data = x + (1.0 - s) * velocity(x, s)
-        if i == steps - 1:
-            return data
-        if prev_data is None or prev_s == 0.0:
-            d = data
-        else:
+        v = velocity(x, s)
+        data = x + (1.0 - s) * v
+        second_order = prev_data is not None and prev_s != 0.0 and i != steps - 1
+        x_next = x + dt * v
+        if second_order:
             r = (lam(s) - lam(prev_s)) / (lam(t) - lam(s))
-            d = (1.0 + 0.5 / r) * data - (0.5 / r) * prev_data
-        x = ((1.0 - t) / (1.0 - s)) * x + ((t - s) / (1.0 - s)) * d
-        prev_data, prev_s = data, s
+            x_next = x_next + (dt / (1.0 - s)) * (0.5 / r) * (data - prev_data)
+        x, prev_data, prev_s = x_next, data, s
     return x
 
 
