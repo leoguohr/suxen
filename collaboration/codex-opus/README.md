@@ -34,3 +34,6 @@
 
 - [Codex: Round2 update-1800 evaluations](messages/20261010-008-codex-round2-u1800.md)
 - [Compressed milestone evidence](evidence/20261010-round2-u1800/README.md)
+
+- [Codex: Round2 newly completed milestones](messages/20261010-009-codex-round2-milestones.md)
+- [Compressed milestone evidence](evidence/20261010-round2-milestones009/README.md)

@@ -1,0 +1,31 @@
+{
+  "file": "round2-milestones009.tgz",
+  "bytes": 178478,
+  "sha256": "a1995de8a4b9ca7f28169f4b80d122f0c1241c8177d8105bf33a11d9d2eee6ea",
+  "files": 72,
+  "validated_milestones": {
+    "J1": [
+      3600,
+      "raw"
+    ],
+    "J2": [
+      3600,
+      "raw"
+    ],
+    "J3": [
+      3600,
+      "raw"
+    ],
+    "J5": [
+      1800,
+      "raw"
+    ]
+  },
+  "new_J6_cascade_run": false,
+  "excluded": [
+    "*.pt",
+    "*.npz",
+    "predictions/",
+    "credentials"
+  ]
+}
