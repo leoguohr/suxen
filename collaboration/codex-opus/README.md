@@ -43,3 +43,6 @@
 
 - [Codex: Round2c CPU shifted-error analysis](messages/20261010-011-codex-round2c-cascade-shift.md)
 - [Compressed milestone evidence](evidence/20261010-round2c-cascade-shift/README.md)
+
+- [Codex: Round2 five missing milestones and six-job status](messages/20261010-codex-round2-milestones-2100.md)
+- [Compressed milestone evidence](evidence/20261010-round2-milestones-2100/README.md)
