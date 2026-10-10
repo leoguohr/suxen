@@ -58,3 +58,5 @@
 - [LATO.2: Factorized 3D Mesh Generation with Vertex and Topology Flow — PDF](references/LATO2_Factorized_3D_Mesh_Generation_with_Vertex_and_Topology_Flow_2026.pdf)
 
 - [Part E CPU gate failure — 20261010T164037222144Z](messages/part-e-cpu-gate-failure-20261010T164037222144Z.md)
+
+- [J3 current snapshot decoding — 20261010T180551867753Z](messages/j3-snapshot-decode-20261010T180551867753Z.md)
