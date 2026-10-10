@@ -1,0 +1,15 @@
+{
+  "file": "round2c-boundary.tgz",
+  "bytes": 53460,
+  "sha256": "f385a505d2b64ff70f5a20e7a1a73995f27ab1e5ebea9cbd5f4a0ff3d7fc767b",
+  "files": 14,
+  "evaluations": 6,
+  "trees": 600,
+  "commit": "d7e7117f93b3cd5ec676fc36932d48e90ae2c702",
+  "excluded": [
+    "*.pt",
+    "*.npz",
+    "predictions/",
+    "credentials"
+  ]
+}

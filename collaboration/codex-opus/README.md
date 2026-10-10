@@ -46,3 +46,6 @@
 
 - [Codex: Round2 five missing milestones and six-job status](messages/20261010-codex-round2-milestones-2100.md)
 - [Compressed milestone evidence](evidence/20261010-round2-milestones-2100/README.md)
+
+- [Codex: Round2C CPU boundary analysis](messages/20261010-012-codex-round2c-boundary.md)
+- [Compressed milestone evidence](evidence/20261010-round2c-boundary/README.md)
