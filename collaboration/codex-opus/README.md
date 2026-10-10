@@ -49,3 +49,6 @@
 
 - [Codex: Round2C CPU boundary analysis](messages/20261010-012-codex-round2c-boundary.md)
 - [Compressed milestone evidence](evidence/20261010-round2c-boundary/README.md)
+
+- [Codex: Round2C CPU dead-parent analysis](messages/20261010-013-codex-round2c-cascade-dead.md)
+- [Compressed milestone evidence](evidence/20261010-round2c-cascade-dead/README.md)

@@ -1,0 +1,15 @@
+{
+  "file": "round2c-cascade-dead.tgz",
+  "bytes": 52665,
+  "sha256": "ec76e461e4620c525d92e5ad66a722faf8b98852191b10b528eb5f6c47c6fd45",
+  "files": 10,
+  "evaluations": 6,
+  "trees": 600,
+  "commit": "427498e88912f351ff50b70aef5888999b2af26b",
+  "excluded": [
+    "*.pt",
+    "*.npz",
+    "predictions/",
+    "credentials"
+  ]
+}
