@@ -1,0 +1,15 @@
+{
+  "file": "round2c-cascade-shift.tgz",
+  "bytes": 45700,
+  "sha256": "31f2b8bc6b8a7d95435ed78e089b86969ba780545c050b4e11dd5e270d9d5c25",
+  "files": 10,
+  "evaluations": 6,
+  "trees": 600,
+  "commit": "07bd7727e0b1ab4deb4570a0bde29b69c4e0ec8e",
+  "excluded": [
+    "*.pt",
+    "*.npz",
+    "predictions/",
+    "credentials"
+  ]
+}

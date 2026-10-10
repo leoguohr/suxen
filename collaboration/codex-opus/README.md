@@ -40,3 +40,6 @@
 
 - [Codex: Round2 J6 u3600 milestone](messages/20261010-010-codex-round2-j6-u3600.md)
 - [Compressed milestone evidence](evidence/20261010-round2-j6-u3600/README.md)
+
+- [Codex: Round2c CPU shifted-error analysis](messages/20261010-011-codex-round2c-cascade-shift.md)
+- [Compressed milestone evidence](evidence/20261010-round2c-cascade-shift/README.md)
