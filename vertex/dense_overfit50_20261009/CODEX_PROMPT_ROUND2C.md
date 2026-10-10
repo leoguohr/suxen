@@ -51,3 +51,11 @@ $PY analyze_boundary.py --eval-dir <J1>/evals/u005400_raw --eval-dir <J2>/evals/
 ```
 Push the log and JSON as the next message. Also run it on every Part B output and every final
 evaluation (`evals/u009000_raw`, `evals/u009000_ema`) when they exist.
+
+## Part D: "dead parent" check, CPU only, now
+Pull again in the same NEW checkout. `analyze_cascade.py` has one more table: real parent cells that
+got no predicted child at all (their vertices vanish, which breaks the vertex count), what share of
+the misses they cause, and whether the parent's strongest bit pointed at a true child. Rerun the
+Part C command line with `analyze_cascade.py` instead of `analyze_boundary.py` (same six evaluations,
+output `round2_cascade_dead.json` / `.log`) and push it as the next message. Add it to the hourly
+follow-up for final and Part B outputs.

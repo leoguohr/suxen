@@ -46,7 +46,8 @@ def analyze(eval_dir: Path, leaves: dict) -> dict:
             "extra_parents_with_no_children", "missing_parents", "first_loss_cells", "d9_vertices_under_first_loss",
             "missing_parents_next_to_predicted_6", "missing_parents_next_to_predicted_26",
             "predicted_parents", "ring6_candidates", "ring26_candidates",
-            "local_fn_with_adjacent_fp", "local_fp_with_adjacent_fn", "local_fn_with_sibling_fp")
+            "local_fn_with_adjacent_fp", "local_fp_with_adjacent_fn", "local_fn_with_sibling_fp",
+            "dead_parents", "fn_in_dead_parents", "dead_parents_argmax_hit", "dead_parents_max_estimate_ge_0.25")
     per_depth = {d: dict.fromkeys(keys, 0) for d in range(1, DEPTH + 1)}
     trees = 0
     for path in files:
@@ -60,6 +61,8 @@ def analyze(eval_dir: Path, leaves: dict) -> dict:
                     break
                 parents = z[f"depth{d}_parents"].reshape(-1, 3)
                 occupancy = z[f"depth{d}_occupancy"].astype(bool).reshape(len(parents), 8)
+                estimate = (z[f"depth{d}_estimate"].reshape(len(parents), 8)
+                            if f"depth{d}_estimate" in z.files else None)
                 stats = per_depth[d]
                 predicted_all, local_fn_cells, local_fp_cells = set(), [], []
                 for row, parent in enumerate(map(tuple, parents.tolist())):
@@ -72,6 +75,13 @@ def analyze(eval_dir: Path, leaves: dict) -> dict:
                         stats["local_fn"] += len(missed)
                         stats["local_fp"] += len(predicted - truth[d])
                         local_fn_cells += list(missed)
+                        if not predicted:  # a real parent with no predicted child: its vertices vanish
+                            stats["dead_parents"] += 1
+                            stats["fn_in_dead_parents"] += len(missed)
+                            if estimate is not None:
+                                best = int(np.argmax(estimate[row]))
+                                stats["dead_parents_argmax_hit"] += int(tuple(children[best].tolist()) in truth[d])
+                                stats["dead_parents_max_estimate_ge_0.25"] += int(estimate[row].max() >= 0.25)
                         local_fp_cells += list(predicted - truth[d])
                         for cell in missed:  # first loss: everything below this cell is gone
                             stats["first_loss_cells"] += 1
@@ -149,6 +159,11 @@ def main():
             if s["local_fn"] or s["local_fp"]:
                 print(f" {d} | {pct(s['shifted_fn_share'])} / {pct(s['sibling_fn_share'])} of {s['local_fn']} | "
                       f"{pct(s['shifted_fp_share'])} of {s['local_fp']}")
+        print(" d | real parents with no predicted child | their missed cells (share of local FN) | strongest bit is a true child | strongest bit >= 0.25")
+        for d, s in r["per_depth"].items():
+            if s["dead_parents"]:
+                print(f" {d} | {s['dead_parents']:5d} | {s['fn_in_dead_parents']:5d} ({s['fn_in_dead_parents'] / s['local_fn']:.0%}) | "
+                      f"{s['dead_parents_argmax_hit'] / s['dead_parents']:.0%} | {s['dead_parents_max_estimate_ge_0.25'] / s['dead_parents']:.0%}")
         print(" d | missing parents | next to a predicted cell (6-ring / 26-ring) | extra candidate tokens (6 / 26) per predicted cell")
         for d, s in r["per_depth"].items():
             if s["missing_parents"]:
