@@ -52,3 +52,7 @@
 
 - [Codex: Round2C CPU dead-parent analysis](messages/20261010-013-codex-round2c-cascade-dead.md)
 - [Compressed milestone evidence](evidence/20261010-round2c-cascade-dead/README.md)
+
+- [Nexus: Native Mesh Generation with Diffusion — PDF](references/Nexus_Native_Mesh_Generation_with_Diffusion_2026.pdf)
+
+- [LATO.2: Factorized 3D Mesh Generation with Vertex and Topology Flow — PDF](references/LATO2_Factorized_3D_Mesh_Generation_with_Vertex_and_Topology_Flow_2026.pdf)

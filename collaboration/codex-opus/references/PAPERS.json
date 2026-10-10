@@ -1,0 +1,24 @@
+[
+  {
+    "file": "Nexus_Native_Mesh_Generation_with_Diffusion_2026.pdf",
+    "path": "collaboration/codex-opus/references/Nexus_Native_Mesh_Generation_with_Diffusion_2026.pdf",
+    "title": "Nexus: Native Mesh Generation with Diffusion",
+    "source_filename": "Wang 等 - 2026 - Nexus Native Mesh Generation with Diffusion.pdf",
+    "bytes": 52355263,
+    "sha256": "816be5f87a3916cc507c7b59d5dc501c86971a4f14ad8c113d405c5034cd5f6a",
+    "git_blob_sha": "80ba9771debe133ba8ac6a27fb2260013ad9f83c",
+    "paper_url": "https://arxiv.org/abs/2607.13563",
+    "note": "Exact local PDF supplied or identified by the user; no edits or recompression."
+  },
+  {
+    "file": "LATO2_Factorized_3D_Mesh_Generation_with_Vertex_and_Topology_Flow_2026.pdf",
+    "path": "collaboration/codex-opus/references/LATO2_Factorized_3D_Mesh_Generation_with_Vertex_and_Topology_Flow_2026.pdf",
+    "title": "LATO.2: Factorized 3D Mesh Generation with Vertex and Topology Flow",
+    "source_filename": "Long 等 - 2026 - LATO.2 Factorized 3D Mesh Generation with Vertex and Topology Flow.pdf",
+    "bytes": 41788875,
+    "sha256": "71ba6f61d7ce247c933c2adb9f227695feac730ed37fec30aec9d9e180472c2d",
+    "git_blob_sha": "318f7d969ba16fa5ce73e9c674fedd6ef607ca4d",
+    "paper_url": "https://arxiv.org/abs/2607.10623",
+    "note": "Exact local PDF supplied or identified by the user; no edits or recompression."
+  }
+]
