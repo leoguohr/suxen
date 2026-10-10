@@ -39,3 +39,15 @@ $PY analyze_cascade.py --eval-dir $D/<job>_ema_s1 --eval-dir $D/<job>_raw_s1 --o
 `--steps 1` should take a few minutes, `--steps 50` about 40 min. Push each `summary.json`, the
 cascade log/JSON and the job's own final `evals/u009000_{raw,ema}/summary.json` side by side, as
 messages 012+. No `.pt` and no `predictions/`.
+
+## Part C: boundary check, CPU only, now (added after message 011)
+Pull again in the same NEW checkout. New script `analyze_boundary.py` (numpy + scipy, reads the
+depth-15 source labels under `data/`). It reports, per evaluation, how many trees are exact within
+0/1/2/4/8 depth-9 cells, and whether one-cell misses sit next to the cell face they crossed.
+```bash
+$PY analyze_boundary.py --eval-dir <J1>/evals/u005400_raw --eval-dir <J2>/evals/u005400_raw \
+  --eval-dir <J3>/evals/u005400_raw --eval-dir <J5>/evals/u003600_raw --eval-dir <J6>/evals/u005400_raw \
+  --eval-dir <J3>/evals/u003600_raw --output <NEW_DIR>/round2_boundary.json | tee <NEW_DIR>/round2_boundary.log
+```
+Push the log and JSON as the next message. Also run it on every Part B output and every final
+evaluation (`evals/u009000_raw`, `evals/u009000_ema`) when they exist.
