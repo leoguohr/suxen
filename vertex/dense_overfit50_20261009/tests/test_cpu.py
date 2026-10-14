@@ -69,6 +69,14 @@ def make_args(**overrides):
     return args
 
 
+def _raises(fn) -> bool:
+    try:
+        fn()
+    except Exception:
+        return True
+    return False
+
+
 def check(name, ok, detail=""):
     print(f"[{'PASS' if ok else 'FAIL'}] {name} {detail}", flush=True)
     if not ok:
@@ -250,6 +258,16 @@ def main():
         diff = max(float(abs(x["estimate"] - y["estimate"]).max()) for x, y in zip(a, b))
         check("dpm2m at 5 steps runs, finite, differs from euler", all(torch.isfinite(torch.from_numpy(y["estimate"])).all()
               for y in b) and diff > 0, f"max diff={diff:.2e}")
+    # 7) evaluate.py options: --seeds parsing, and an S1 sweep model generates through the same path
+    import evaluate
+    check("--seeds parses a pair and rejects duplicates",
+          evaluate.parse_seeds("97029002,97029003") == (97029002, 97029003)
+          and evaluate.parse_seeds(" 7 ") == (7,) and _raises(lambda: evaluate.parse_seeds("5,5")))
+    s1 = construct_model("S1", small=True).float().eval()
+    with torch.no_grad():
+        st, lv, _ = generate_tree(s1, s1.condition_encoder(conditions[obj]), 97029002, steps=2, max_depth=2)
+    check("S1 (final time modulation) generates through generate_tree", st == "complete" and len(lv) == 2
+          and all(torch.isfinite(torch.from_numpy(x["estimate"])).all() for x in lv))
     print(f"ALL CPU TESTS PASSED in {time.time() - started:.0f}s", flush=True)
 
 

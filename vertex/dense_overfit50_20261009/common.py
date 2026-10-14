@@ -76,10 +76,10 @@ def load_data(device, data=DATA):
     return manifest, conditions, leaves, levels, raw_gt
 
 
-def build_model(state_dict, device):
+def build_model(state_dict, device, variant="S0"):
     """S0 architecture (36x1536 DiT + 8-block VecSet), strict load."""
     with torch.device("meta"):
-        model = construct_model("S0")
+        model = construct_model(variant)
     model.load_state_dict(state_dict, strict=True, assign=True)
     model.to(device)
     for p in model.parameters():
@@ -253,9 +253,12 @@ def coarse_probe(model, conditions, leaves, *, seed=EVAL_SEEDS[0], max_depth=5, 
             "exact_through_depth": exact, "first_error_depth": first_error}
 
 
-def run_evaluation(model, manifest, conditions, leaves, raw_gt, output, *, steps=20, info=None, sampler="euler"):
+def run_evaluation(model, manifest, conditions, leaves, raw_gt, output, *, steps=20, info=None, sampler="euler",
+                   seeds=EVAL_SEEDS):
     """The 100-tree acceptance evaluation (50 objects x EVAL_SEEDS). Saves every prediction
-    before any ground truth is read, then scores. Returns the summary dict."""
+    before any ground truth is read, then scores. Returns the summary dict. Other seed tuples
+    (evaluate.py --seeds) give extra trees for pass-rate estimates; acceptance uses EVAL_SEEDS."""
+    seeds = tuple(int(x) for x in seeds)
     import hashlib
     import time
     output = Path(output)
@@ -265,7 +268,7 @@ def run_evaluation(model, manifest, conditions, leaves, raw_gt, output, *, steps
     model.eval()
     generated = []
     with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16, enabled=conditions[0].is_cuda):
-        for seed in EVAL_SEEDS:
+        for seed in seeds:
             for index, uid in enumerate(manifest["train_uids"]):
                 context = model.condition_encoder(conditions[index])
                 status, levels, q = generate_tree(model, context, seed, steps=steps, sampler=sampler)
@@ -276,7 +279,7 @@ def run_evaluation(model, manifest, conditions, leaves, raw_gt, output, *, steps
                 generated.append({"seed": seed, "uid": uid, "index": index, "status": status,
                                   "levels": levels, "q": q,
                                   "prediction_sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
-                write_json(output / "progress.json", {"generated": len(generated), "expected": 2 * len(conditions),
+                write_json(output / "progress.json", {"generated": len(generated), "expected": len(seeds) * len(conditions),
                                                       "minutes": (time.monotonic() - started) / 60})
     model.train(was_training)
     write_json(output / "generation_manifest.json",
@@ -287,8 +290,10 @@ def run_evaluation(model, manifest, conditions, leaves, raw_gt, output, *, steps
         scored = score_tree(g["status"], g["levels"], g["q"], leaves[g["index"]], raw_gt[g["index"]])
         rows.append({"seed": g["seed"], "uid": g["uid"], **scored})
     report = summarize(rows)
+    report["seeds"] = list(seeds)
     report["acceptance"] = {"criterion": "100/100 trees exact at every depth (50 objects x 2 seeds)",
-                            "passed": report["full_trees_exact"] == 100}
+                            "official_seeds": seeds == tuple(EVAL_SEEDS),
+                            "passed": seeds == tuple(EVAL_SEEDS) and report["full_trees_exact"] == 100}
     report["s0_reference"] = {"full_trees_exact": 7, "per_depth_full_level_exact": [98, 88, 58, 32, 16, 14, 12, 7, 7]}
     info = dict(info or {})
     write_json(output / "evaluation.json", {**info, **report, "rows": rows})

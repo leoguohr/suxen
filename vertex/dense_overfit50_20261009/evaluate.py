@@ -24,7 +24,16 @@ import time
 import numpy as np
 import torch
 
-from common import build_model, cache_fixed_features, load_data, load_weights, run_evaluation, sha
+from common import EVAL_SEEDS, build_model, cache_fixed_features, load_data, load_weights, run_evaluation, sha
+from architecture_variants import BRANCHES
+
+
+def parse_seeds(text: str) -> tuple[int, ...]:
+    """'97029002,97029003' -> (97029002, 97029003); at least one, no duplicates."""
+    seeds = tuple(int(x) for x in text.split(",") if x.strip())
+    if not seeds or len(set(seeds)) != len(seeds):
+        raise ValueError(f"bad --seeds {text!r}")
+    return seeds
 
 
 def main():
@@ -36,20 +45,24 @@ def main():
     p.add_argument("--sampler", choices=("euler", "dpm2m"), default="euler",
                    help="per-level ODE solver; the paper uses 20 DPM-Solver steps (dpm2m = DPM-Solver++(2M))")
     p.add_argument("--hash-checkpoint", action="store_true")
+    p.add_argument("--seeds", type=parse_seeds, default=tuple(EVAL_SEEDS),
+                   help="comma-separated generation seeds; default = the official pair 97029000,97029001")
+    p.add_argument("--variant", choices=BRANCHES, default="S0",
+                   help="architecture to build (S0 for all Round-2 checkpoints; S1..S6 for sweep checkpoints)")
     args = p.parse_args()
     assert torch.cuda.is_available() and torch.cuda.device_count() == 1, "set CUDA_VISIBLE_DEVICES to ONE GPU"
     device = torch.device("cuda:0")
     assert not args.output.exists(), "output must be a new directory"
     manifest, conditions, leaves, _levels, raw_gt = load_data(device)
     weights, state = load_weights(args.checkpoint, args.weights)
-    model = build_model(weights, device).eval().requires_grad_(False)
+    model = build_model(weights, device, args.variant).eval().requires_grad_(False)
     info = {"checkpoint": str(args.checkpoint), "weights": args.weights, "update": state.get("update"),
-            "step": state.get("step"), "steps_per_depth": args.steps, "sampler": args.sampler,
+            "step": state.get("step"), "steps_per_depth": args.steps, "sampler": args.sampler, "variant": args.variant,
             "checkpoint_sha256": sha(args.checkpoint) if args.hash_checkpoint else None}
     del weights, state
     cache_fixed_features(model, conditions)
     report = run_evaluation(model, manifest, conditions, leaves, raw_gt, args.output, steps=args.steps, info=info,
-                            sampler=args.sampler)
+                            sampler=args.sampler, seeds=args.seeds)
     print(f"EVALUATION_COMPLETE full_trees_exact={report['full_trees_exact']}/100 "
           f"per-depth exact={[d['full_level_exact'] for d in report['per_depth']]} "
           f"first-mismatch={report['first_mismatch_depth_histogram']} "
