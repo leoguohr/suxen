@@ -1,0 +1,142 @@
+{
+  "branch": "S1",
+  "checkpoint_identity": {
+    "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/runs/S1/checkpoint-034000.pt",
+    "sha256": "2126ce1be93405a45087af60bfed9e17db4e0377597cdd925b6c45e0146ce193",
+    "bytes": 28047197812,
+    "step": 34000,
+    "sweep_update": 10000,
+    "schedule_next_event": 80000,
+    "full_model_adam_rng": true,
+    "atomic_write_fsynced": true,
+    "readback_verified": true,
+    "readback_scope": "all model/Adam/RNG/config/cursor/exposure values exact",
+    "final": true
+  },
+  "paired_control_seeds": [
+    97029000,
+    97029001
+  ],
+  "steps": 20,
+  "threshold": 0.5,
+  "sampler": "source Euler left endpoint",
+  "gt_parents_used": false,
+  "scope": "50 seen meshes x 2 paired seeds; original root-to-D9 generation",
+  "expected_trees": 100,
+  "scored_trees": 100,
+  "complete_trees": 100,
+  "capacity_abort_trees": 0,
+  "full_trees_exact": 7,
+  "native_final_sets_exact": 7,
+  "per_depth": [
+    {
+      "depth": 1,
+      "trees_in_denominator": 100,
+      "trees_with_level_generated": 100,
+      "full_level_exact": 92,
+      "global_cells_tp": 776,
+      "global_cells_fp": 12,
+      "global_cells_fn": 0,
+      "global_cells_f1": 0.9923273657289002,
+      "generated_parent_bit_accuracy": 0.985,
+      "generated_parent_bits_scored": 800
+    },
+    {
+      "depth": 2,
+      "trees_in_denominator": 100,
+      "trees_with_level_generated": 100,
+      "full_level_exact": 92,
+      "global_cells_tp": 2355,
+      "global_cells_fp": 44,
+      "global_cells_fn": 13,
+      "global_cells_f1": 0.9880427942101951,
+      "generated_parent_bit_accuracy": 0.9909581218274112,
+      "generated_parent_bits_scored": 6304
+    },
+    {
+      "depth": 3,
+      "trees_in_denominator": 100,
+      "trees_with_level_generated": 100,
+      "full_level_exact": 85,
+      "global_cells_tp": 7395,
+      "global_cells_fp": 141,
+      "global_cells_fn": 93,
+      "global_cells_f1": 0.9844249201277955,
+      "generated_parent_bit_accuracy": 0.9889537307211338,
+      "generated_parent_bits_scored": 19192
+    },
+    {
+      "depth": 4,
+      "trees_in_denominator": 100,
+      "trees_with_level_generated": 100,
+      "full_level_exact": 43,
+      "global_cells_tp": 19346,
+      "global_cells_fp": 464,
+      "global_cells_fn": 566,
+      "global_cells_f1": 0.9740697850057902,
+      "generated_parent_bit_accuracy": 0.9862161624203821,
+      "generated_parent_bits_scored": 60288
+    },
+    {
+      "depth": 5,
+      "trees_in_denominator": 100,
+      "trees_with_level_generated": 100,
+      "full_level_exact": 24,
+      "global_cells_tp": 39978,
+      "global_cells_fp": 1799,
+      "global_cells_fn": 3082,
+      "global_cells_f1": 0.9424661409526504,
+      "generated_parent_bit_accuracy": 0.976899293286219,
+      "generated_parent_bits_scored": 158480
+    },
+    {
+      "depth": 6,
+      "trees_in_denominator": 100,
+      "trees_with_level_generated": 100,
+      "full_level_exact": 13,
+      "global_cells_tp": 60839,
+      "global_cells_fp": 6282,
+      "global_cells_fn": 9763,
+      "global_cells_f1": 0.8834980359126653,
+      "generated_parent_bit_accuracy": 0.9664019675898221,
+      "generated_parent_bits_scored": 334216
+    },
+    {
+      "depth": 7,
+      "trees_in_denominator": 100,
+      "trees_with_level_generated": 100,
+      "full_level_exact": 10,
+      "global_cells_tp": 68543,
+      "global_cells_fp": 17279,
+      "global_cells_fn": 23207,
+      "global_cells_f1": 0.7720023427116888,
+      "generated_parent_bit_accuracy": 0.9475741571192324,
+      "generated_parent_bits_scored": 536968
+    },
+    {
+      "depth": 8,
+      "trees_in_denominator": 100,
+      "trees_with_level_generated": 100,
+      "full_level_exact": 8,
+      "global_cells_tp": 62816,
+      "global_cells_fp": 33760,
+      "global_cells_fn": 39938,
+      "global_cells_f1": 0.63027140922089,
+      "generated_parent_bit_accuracy": 0.9292722145836732,
+      "generated_parent_bits_scored": 686576
+    },
+    {
+      "depth": 9,
+      "trees_in_denominator": 100,
+      "trees_with_level_generated": 100,
+      "full_level_exact": 7,
+      "global_cells_tp": 52451,
+      "global_cells_fp": 47095,
+      "global_cells_fn": 53193,
+      "global_cells_f1": 0.5112432379745602,
+      "generated_parent_bit_accuracy": 0.923054123177601,
+      "generated_parent_bits_scored": 772608
+    }
+  ],
+  "missing_depth_policy": "After capacity abort, later ungenerated depths score zero predicted global cells and all target cells as FN; generated-parent accuracy is N/A there"
+}

@@ -1,0 +1,26 @@
+{
+  "deps": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/deps",
+  "dependency_path_mode": "append_after_installed_packages",
+  "torch_version": "2.3.0a0+6ddf5cf85e.nv24.04",
+  "torch_path": "/usr/local/lib/python3.10/dist-packages/torch/__init__.py",
+  "numpy_version": "1.24.4",
+  "numpy_path": "/usr/local/lib/python3.10/dist-packages/numpy/__init__.py",
+  "diffusers_version": "0.40.0",
+  "diffusers_path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/deps/diffusers/__init__.py",
+  "scheduler_source_sha256": "0dd5333bd7b900b117d34f151adfc4b181dbb2062ca860105658037a0fe5dc06",
+  "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION": "python",
+  "xyz_metric_cpu_permuted_two_point_check": {
+    "count_correct": true,
+    "predicted_count": 2,
+    "target_count": 2,
+    "sum_squared_error": 0.0,
+    "coordinates": 6,
+    "max_error": 0.0,
+    "minimum_spacing": 3.7416573867739413,
+    "spacing_ratio": 0.0,
+    "symmetric_squared_chamfer": 0.0,
+    "status": "applicable_equal_count",
+    "matched_coordinate_rmse": 0.0
+  },
+  "complete_evaluate_ab_import_cpu": true
+}

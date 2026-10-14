@@ -1,0 +1,181 @@
+{
+  "scope": "Existing saved evidence only; CPU collection, no model execution or training",
+  "source_root": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b",
+  "branches": [
+    {
+      "branch": "S0",
+      "formal_training_started": true,
+      "training_complete": true,
+      "last_logged_sweep_update": 10000,
+      "last_logged_cumulative_step": 34000,
+      "train_rows": 10000,
+      "contiguous_train_log_verified": true,
+      "saved_checkpoint": {
+        "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/runs/S0/checkpoint-034000.pt",
+        "sha256": "3919d924ad7c48a3848ef5b4d1247f8ec9296e7b068343bfc7ffbbf1012e4935",
+        "bytes": 27990535028,
+        "step": 34000,
+        "sweep_update": 10000,
+        "schedule_next_event": 80000,
+        "full_model_adam_rng": true,
+        "atomic_write_fsynced": true,
+        "readback_verified": true,
+        "readback_scope": "all model/Adam/RNG/config/cursor/exposure values exact",
+        "final": true
+      },
+      "endpoint_evaluation_present": true,
+      "probes_found": [],
+      "full_trees_exact": 7,
+      "native_final_sets_exact": 7,
+      "evaluated_trees": 100,
+      "per_depth_exact": [
+        98,
+        88,
+        58,
+        32,
+        16,
+        14,
+        12,
+        7,
+        7
+      ],
+      "endpoint_rows_and_aggregates_verified": true
+    },
+    {
+      "branch": "S1",
+      "formal_training_started": true,
+      "training_complete": true,
+      "last_logged_sweep_update": 10000,
+      "last_logged_cumulative_step": 34000,
+      "train_rows": 10000,
+      "contiguous_train_log_verified": true,
+      "saved_checkpoint": {
+        "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/runs/S1/checkpoint-034000.pt",
+        "sha256": "2126ce1be93405a45087af60bfed9e17db4e0377597cdd925b6c45e0146ce193",
+        "bytes": 28047197812,
+        "step": 34000,
+        "sweep_update": 10000,
+        "schedule_next_event": 80000,
+        "full_model_adam_rng": true,
+        "atomic_write_fsynced": true,
+        "readback_verified": true,
+        "readback_scope": "all model/Adam/RNG/config/cursor/exposure values exact",
+        "final": true
+      },
+      "endpoint_evaluation_present": true,
+      "probes_found": [],
+      "full_trees_exact": 7,
+      "native_final_sets_exact": 7,
+      "evaluated_trees": 100,
+      "per_depth_exact": [
+        92,
+        92,
+        85,
+        43,
+        24,
+        13,
+        10,
+        8,
+        7
+      ],
+      "endpoint_rows_and_aggregates_verified": true
+    },
+    {
+      "branch": "S2",
+      "formal_training_started": true,
+      "training_complete": false,
+      "last_logged_sweep_update": 6098,
+      "last_logged_cumulative_step": 30098,
+      "train_rows": 6098,
+      "contiguous_train_log_verified": true,
+      "saved_checkpoint": {
+        "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S2/checkpoint-030000.pt",
+        "sha256": "0f93844224cb2e3774763c621753caba208b9ce4f7158d67974bc907803de04a",
+        "bytes": 27989112524,
+        "step": 30000,
+        "sweep_update": 6000,
+        "schedule_next_event": 48000,
+        "full_model_adam_rng": true,
+        "atomic_write_fsynced": true,
+        "readback_verified": true,
+        "readback_scope": "all model/Adam/RNG/config/cursor/exposure values exact",
+        "final": false
+      },
+      "endpoint_evaluation_present": false,
+      "probes_found": []
+    },
+    {
+      "branch": "S3",
+      "formal_training_started": true,
+      "training_complete": false,
+      "last_logged_sweep_update": 5688,
+      "last_logged_cumulative_step": 29688,
+      "train_rows": 5688,
+      "contiguous_train_log_verified": true,
+      "saved_checkpoint": {
+        "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S3/checkpoint-029600.pt",
+        "sha256": "a17e3effa5667203c772dbafbb62486d88704b92b17ed3640502f0cb13c5c7a7",
+        "bytes": 28015696204,
+        "step": 29600,
+        "sweep_update": 5600,
+        "schedule_next_event": 44800,
+        "full_model_adam_rng": true,
+        "atomic_write_fsynced": true,
+        "readback_verified": true,
+        "readback_scope": "all model/Adam/RNG/config/cursor/exposure values exact",
+        "final": false
+      },
+      "endpoint_evaluation_present": false,
+      "probes_found": []
+    },
+    {
+      "branch": "S4",
+      "formal_training_started": false,
+      "training_complete": false,
+      "endpoint_evaluation_present": false,
+      "status": "not_dispatched_in_saved_sweep",
+      "smoke_only_exists": false
+    },
+    {
+      "branch": "S5",
+      "formal_training_started": false,
+      "training_complete": false,
+      "endpoint_evaluation_present": false,
+      "status": "not_dispatched_in_saved_sweep",
+      "smoke_only_exists": true
+    },
+    {
+      "branch": "S6",
+      "formal_training_started": false,
+      "training_complete": false,
+      "endpoint_evaluation_present": false,
+      "status": "not_dispatched_in_saved_sweep",
+      "smoke_only_exists": false
+    }
+  ],
+  "inspected_roots": {
+    "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006": [
+      "S0",
+      "S1"
+    ],
+    "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261006": [
+      "S0",
+      "S1"
+    ],
+    "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007": [
+      "S0",
+      "S1"
+    ],
+    "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b": [
+      "S0",
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "queue_failure_file_present": false,
+  "why_pending": "Last saved queue has S2/S3 running and S4/S5/S6 pending. Later branches wait for a free slot. No later launch or completion exists in inspected roots.",
+  "external_stop_cause": "Unknown: queue and both training logs end near 2026-10-08 02:35:09 +08:00 without a terminal error/exit record. Instance expiry is not proven.",
+  "probe_note": "No independent training probe files were produced by this sweep; the execution card specifies endpoint-only evaluation.",
+  "checkpoint_hash_scope": "Hashes copied from saved checkpoint identities; no .pt was opened, downloaded, or rehashed in this collection."
+}

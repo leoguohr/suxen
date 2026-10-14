@@ -1,0 +1,7797 @@
+{
+  "restore_audit": {
+    "branch": "S0",
+    "source_step": 24000,
+    "source_sha256_required": "2505189c1ab0aa8e3cf9f0cdb2b801619b21aae20d64c3fa77c8455790006aba",
+    "model_keys_strict": true,
+    "migration_by": "semantic parameter name and shape",
+    "actual_value_verification": {
+      "method": "torch.equal after copy, CPU comparison",
+      "model_tensors_checked": 907,
+      "inherited_adam_tensors_checked": 2721,
+      "all_equal": true
+    },
+    "source_optimizer_mapping": "validated original S0 named_parameters order",
+    "inherited": [
+      {
+        "name": "condition_encoder.point_embedding.weight",
+        "shape": [
+          2048,
+          54
+        ],
+        "elements": 110592
+      },
+      {
+        "name": "condition_encoder.point_embedding.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.0.query_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.0.query_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.0.context_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.0.context_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.0.attention.query.weight",
+        "shape": [
+          2048,
+          2048
+        ],
+        "elements": 4194304
+      },
+      {
+        "name": "condition_encoder.blocks.0.attention.query.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.0.attention.key_value.weight",
+        "shape": [
+          4096,
+          2048
+        ],
+        "elements": 8388608
+      },
+      {
+        "name": "condition_encoder.blocks.0.attention.key_value.bias",
+        "shape": [
+          4096
+        ],
+        "elements": 4096
+      },
+      {
+        "name": "condition_encoder.blocks.0.attention.output.weight",
+        "shape": [
+          2048,
+          2048
+        ],
+        "elements": 4194304
+      },
+      {
+        "name": "condition_encoder.blocks.0.attention.output.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.0.ffn_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.0.ffn_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.0.ffn.0.weight",
+        "shape": [
+          8192,
+          2048
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.0.ffn.0.bias",
+        "shape": [
+          8192
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "condition_encoder.blocks.0.ffn.2.weight",
+        "shape": [
+          2048,
+          8192
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.0.ffn.2.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.1.attention_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.1.attention_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.1.attention.qkv.weight",
+        "shape": [
+          6144,
+          2048
+        ],
+        "elements": 12582912
+      },
+      {
+        "name": "condition_encoder.blocks.1.attention.qkv.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "condition_encoder.blocks.1.attention.output.weight",
+        "shape": [
+          2048,
+          2048
+        ],
+        "elements": 4194304
+      },
+      {
+        "name": "condition_encoder.blocks.1.attention.output.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.1.ffn_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.1.ffn_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.1.ffn.0.weight",
+        "shape": [
+          8192,
+          2048
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.1.ffn.0.bias",
+        "shape": [
+          8192
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "condition_encoder.blocks.1.ffn.2.weight",
+        "shape": [
+          2048,
+          8192
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.1.ffn.2.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.2.attention_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.2.attention_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.2.attention.qkv.weight",
+        "shape": [
+          6144,
+          2048
+        ],
+        "elements": 12582912
+      },
+      {
+        "name": "condition_encoder.blocks.2.attention.qkv.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "condition_encoder.blocks.2.attention.output.weight",
+        "shape": [
+          2048,
+          2048
+        ],
+        "elements": 4194304
+      },
+      {
+        "name": "condition_encoder.blocks.2.attention.output.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.2.ffn_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.2.ffn_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.2.ffn.0.weight",
+        "shape": [
+          8192,
+          2048
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.2.ffn.0.bias",
+        "shape": [
+          8192
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "condition_encoder.blocks.2.ffn.2.weight",
+        "shape": [
+          2048,
+          8192
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.2.ffn.2.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.3.attention_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.3.attention_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.3.attention.qkv.weight",
+        "shape": [
+          6144,
+          2048
+        ],
+        "elements": 12582912
+      },
+      {
+        "name": "condition_encoder.blocks.3.attention.qkv.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "condition_encoder.blocks.3.attention.output.weight",
+        "shape": [
+          2048,
+          2048
+        ],
+        "elements": 4194304
+      },
+      {
+        "name": "condition_encoder.blocks.3.attention.output.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.3.ffn_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.3.ffn_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.3.ffn.0.weight",
+        "shape": [
+          8192,
+          2048
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.3.ffn.0.bias",
+        "shape": [
+          8192
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "condition_encoder.blocks.3.ffn.2.weight",
+        "shape": [
+          2048,
+          8192
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.3.ffn.2.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.4.attention_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.4.attention_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.4.attention.qkv.weight",
+        "shape": [
+          6144,
+          2048
+        ],
+        "elements": 12582912
+      },
+      {
+        "name": "condition_encoder.blocks.4.attention.qkv.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "condition_encoder.blocks.4.attention.output.weight",
+        "shape": [
+          2048,
+          2048
+        ],
+        "elements": 4194304
+      },
+      {
+        "name": "condition_encoder.blocks.4.attention.output.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.4.ffn_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.4.ffn_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.4.ffn.0.weight",
+        "shape": [
+          8192,
+          2048
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.4.ffn.0.bias",
+        "shape": [
+          8192
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "condition_encoder.blocks.4.ffn.2.weight",
+        "shape": [
+          2048,
+          8192
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.4.ffn.2.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.5.attention_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.5.attention_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.5.attention.qkv.weight",
+        "shape": [
+          6144,
+          2048
+        ],
+        "elements": 12582912
+      },
+      {
+        "name": "condition_encoder.blocks.5.attention.qkv.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "condition_encoder.blocks.5.attention.output.weight",
+        "shape": [
+          2048,
+          2048
+        ],
+        "elements": 4194304
+      },
+      {
+        "name": "condition_encoder.blocks.5.attention.output.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.5.ffn_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.5.ffn_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.5.ffn.0.weight",
+        "shape": [
+          8192,
+          2048
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.5.ffn.0.bias",
+        "shape": [
+          8192
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "condition_encoder.blocks.5.ffn.2.weight",
+        "shape": [
+          2048,
+          8192
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.5.ffn.2.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.6.attention_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.6.attention_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.6.attention.qkv.weight",
+        "shape": [
+          6144,
+          2048
+        ],
+        "elements": 12582912
+      },
+      {
+        "name": "condition_encoder.blocks.6.attention.qkv.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "condition_encoder.blocks.6.attention.output.weight",
+        "shape": [
+          2048,
+          2048
+        ],
+        "elements": 4194304
+      },
+      {
+        "name": "condition_encoder.blocks.6.attention.output.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.6.ffn_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.6.ffn_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.6.ffn.0.weight",
+        "shape": [
+          8192,
+          2048
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.6.ffn.0.bias",
+        "shape": [
+          8192
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "condition_encoder.blocks.6.ffn.2.weight",
+        "shape": [
+          2048,
+          8192
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.6.ffn.2.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.7.attention_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.7.attention_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.7.attention.qkv.weight",
+        "shape": [
+          6144,
+          2048
+        ],
+        "elements": 12582912
+      },
+      {
+        "name": "condition_encoder.blocks.7.attention.qkv.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "condition_encoder.blocks.7.attention.output.weight",
+        "shape": [
+          2048,
+          2048
+        ],
+        "elements": 4194304
+      },
+      {
+        "name": "condition_encoder.blocks.7.attention.output.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.7.ffn_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.7.ffn_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.blocks.7.ffn.0.weight",
+        "shape": [
+          8192,
+          2048
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.7.ffn.0.bias",
+        "shape": [
+          8192
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "condition_encoder.blocks.7.ffn.2.weight",
+        "shape": [
+          2048,
+          8192
+        ],
+        "elements": 16777216
+      },
+      {
+        "name": "condition_encoder.blocks.7.ffn.2.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.output_norm.weight",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "condition_encoder.output_norm.bias",
+        "shape": [
+          2048
+        ],
+        "elements": 2048
+      },
+      {
+        "name": "flow.data_embedding.weight",
+        "shape": [
+          1536,
+          8
+        ],
+        "elements": 12288
+      },
+      {
+        "name": "flow.data_embedding.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.position_embedding.weight",
+        "shape": [
+          1536,
+          51
+        ],
+        "elements": 78336
+      },
+      {
+        "name": "flow.position_embedding.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.depth_embedding.weight",
+        "shape": [
+          9,
+          1536
+        ],
+        "elements": 13824
+      },
+      {
+        "name": "flow.time_embedding.0.weight",
+        "shape": [
+          1536,
+          256
+        ],
+        "elements": 393216
+      },
+      {
+        "name": "flow.time_embedding.0.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.time_embedding.2.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.time_embedding.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.0.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.0.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.0.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.0.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.0.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.0.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.0.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.0.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.0.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.0.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.0.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.0.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.0.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.0.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.0.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.0.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.0.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.0.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.0.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.0.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.0.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.0.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.1.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.1.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.1.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.1.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.1.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.1.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.1.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.1.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.1.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.1.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.1.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.1.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.1.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.1.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.1.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.1.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.1.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.1.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.1.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.1.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.1.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.1.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.2.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.2.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.2.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.2.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.2.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.2.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.2.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.2.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.2.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.2.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.2.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.2.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.2.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.2.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.2.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.2.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.2.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.2.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.2.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.2.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.2.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.2.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.3.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.3.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.3.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.3.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.3.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.3.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.3.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.3.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.3.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.3.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.3.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.3.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.3.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.3.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.3.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.3.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.3.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.3.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.3.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.3.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.3.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.3.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.4.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.4.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.4.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.4.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.4.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.4.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.4.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.4.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.4.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.4.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.4.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.4.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.4.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.4.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.4.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.4.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.4.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.4.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.4.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.4.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.4.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.4.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.5.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.5.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.5.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.5.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.5.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.5.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.5.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.5.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.5.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.5.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.5.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.5.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.5.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.5.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.5.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.5.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.5.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.5.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.5.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.5.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.5.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.5.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.6.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.6.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.6.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.6.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.6.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.6.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.6.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.6.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.6.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.6.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.6.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.6.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.6.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.6.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.6.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.6.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.6.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.6.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.6.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.6.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.6.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.6.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.7.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.7.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.7.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.7.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.7.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.7.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.7.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.7.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.7.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.7.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.7.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.7.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.7.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.7.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.7.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.7.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.7.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.7.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.7.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.7.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.7.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.7.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.8.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.8.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.8.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.8.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.8.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.8.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.8.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.8.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.8.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.8.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.8.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.8.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.8.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.8.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.8.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.8.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.8.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.8.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.8.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.8.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.8.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.8.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.9.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.9.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.9.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.9.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.9.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.9.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.9.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.9.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.9.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.9.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.9.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.9.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.9.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.9.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.9.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.9.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.9.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.9.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.9.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.9.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.9.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.9.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.10.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.10.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.10.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.10.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.10.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.10.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.10.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.10.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.10.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.10.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.10.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.10.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.10.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.10.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.10.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.10.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.10.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.10.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.10.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.10.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.10.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.10.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.11.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.11.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.11.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.11.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.11.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.11.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.11.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.11.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.11.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.11.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.11.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.11.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.11.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.11.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.11.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.11.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.11.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.11.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.11.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.11.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.11.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.11.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.12.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.12.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.12.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.12.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.12.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.12.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.12.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.12.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.12.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.12.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.12.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.12.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.12.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.12.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.12.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.12.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.12.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.12.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.12.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.12.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.12.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.12.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.13.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.13.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.13.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.13.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.13.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.13.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.13.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.13.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.13.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.13.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.13.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.13.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.13.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.13.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.13.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.13.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.13.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.13.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.13.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.13.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.13.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.13.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.14.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.14.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.14.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.14.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.14.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.14.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.14.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.14.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.14.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.14.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.14.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.14.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.14.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.14.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.14.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.14.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.14.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.14.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.14.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.14.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.14.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.14.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.15.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.15.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.15.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.15.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.15.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.15.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.15.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.15.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.15.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.15.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.15.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.15.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.15.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.15.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.15.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.15.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.15.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.15.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.15.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.15.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.15.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.15.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.16.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.16.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.16.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.16.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.16.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.16.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.16.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.16.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.16.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.16.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.16.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.16.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.16.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.16.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.16.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.16.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.16.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.16.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.16.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.16.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.16.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.16.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.17.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.17.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.17.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.17.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.17.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.17.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.17.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.17.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.17.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.17.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.17.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.17.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.17.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.17.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.17.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.17.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.17.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.17.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.17.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.17.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.17.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.17.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.18.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.18.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.18.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.18.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.18.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.18.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.18.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.18.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.18.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.18.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.18.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.18.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.18.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.18.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.18.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.18.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.18.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.18.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.18.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.18.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.18.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.18.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.19.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.19.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.19.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.19.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.19.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.19.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.19.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.19.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.19.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.19.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.19.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.19.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.19.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.19.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.19.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.19.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.19.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.19.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.19.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.19.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.19.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.19.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.20.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.20.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.20.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.20.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.20.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.20.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.20.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.20.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.20.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.20.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.20.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.20.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.20.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.20.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.20.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.20.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.20.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.20.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.20.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.20.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.20.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.20.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.21.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.21.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.21.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.21.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.21.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.21.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.21.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.21.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.21.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.21.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.21.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.21.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.21.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.21.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.21.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.21.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.21.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.21.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.21.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.21.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.21.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.21.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.22.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.22.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.22.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.22.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.22.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.22.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.22.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.22.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.22.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.22.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.22.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.22.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.22.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.22.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.22.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.22.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.22.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.22.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.22.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.22.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.22.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.22.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.23.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.23.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.23.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.23.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.23.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.23.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.23.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.23.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.23.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.23.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.23.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.23.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.23.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.23.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.23.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.23.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.23.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.23.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.23.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.23.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.23.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.23.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.24.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.24.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.24.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.24.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.24.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.24.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.24.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.24.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.24.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.24.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.24.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.24.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.24.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.24.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.24.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.24.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.24.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.24.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.24.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.24.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.24.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.24.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.25.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.25.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.25.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.25.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.25.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.25.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.25.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.25.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.25.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.25.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.25.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.25.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.25.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.25.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.25.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.25.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.25.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.25.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.25.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.25.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.25.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.25.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.26.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.26.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.26.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.26.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.26.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.26.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.26.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.26.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.26.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.26.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.26.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.26.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.26.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.26.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.26.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.26.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.26.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.26.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.26.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.26.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.26.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.26.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.27.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.27.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.27.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.27.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.27.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.27.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.27.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.27.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.27.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.27.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.27.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.27.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.27.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.27.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.27.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.27.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.27.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.27.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.27.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.27.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.27.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.27.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.28.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.28.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.28.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.28.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.28.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.28.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.28.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.28.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.28.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.28.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.28.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.28.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.28.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.28.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.28.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.28.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.28.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.28.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.28.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.28.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.28.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.28.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.29.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.29.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.29.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.29.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.29.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.29.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.29.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.29.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.29.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.29.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.29.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.29.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.29.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.29.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.29.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.29.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.29.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.29.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.29.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.29.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.29.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.29.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.30.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.30.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.30.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.30.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.30.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.30.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.30.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.30.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.30.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.30.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.30.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.30.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.30.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.30.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.30.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.30.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.30.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.30.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.30.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.30.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.30.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.30.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.31.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.31.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.31.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.31.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.31.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.31.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.31.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.31.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.31.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.31.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.31.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.31.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.31.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.31.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.31.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.31.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.31.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.31.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.31.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.31.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.31.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.31.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.32.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.32.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.32.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.32.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.32.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.32.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.32.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.32.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.32.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.32.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.32.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.32.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.32.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.32.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.32.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.32.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.32.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.32.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.32.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.32.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.32.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.32.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.33.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.33.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.33.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.33.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.33.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.33.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.33.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.33.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.33.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.33.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.33.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.33.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.33.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.33.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.33.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.33.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.33.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.33.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.33.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.33.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.33.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.33.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.34.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.34.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.34.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.34.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.34.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.34.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.34.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.34.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.34.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.34.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.34.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.34.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.34.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.34.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.34.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.34.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.34.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.34.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.34.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.34.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.34.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.34.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.blocks.35.cross_norm.weight",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.35.cross_norm.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.35.self_attention.qkv.weight",
+        "shape": [
+          4608,
+          1536
+        ],
+        "elements": 7077888
+      },
+      {
+        "name": "flow.blocks.35.self_attention.qkv.bias",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "flow.blocks.35.self_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.35.self_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.35.self_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.35.self_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.35.cross_attention.query.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.35.cross_attention.query.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.35.cross_attention.key_value.weight",
+        "shape": [
+          3072,
+          2048
+        ],
+        "elements": 6291456
+      },
+      {
+        "name": "flow.blocks.35.cross_attention.key_value.bias",
+        "shape": [
+          3072
+        ],
+        "elements": 3072
+      },
+      {
+        "name": "flow.blocks.35.cross_attention.query_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.35.cross_attention.key_norm.weight",
+        "shape": [
+          12,
+          128
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.35.cross_attention.output.weight",
+        "shape": [
+          1536,
+          1536
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "flow.blocks.35.cross_attention.output.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.35.ffn.0.weight",
+        "shape": [
+          6144,
+          1536
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.35.ffn.0.bias",
+        "shape": [
+          6144
+        ],
+        "elements": 6144
+      },
+      {
+        "name": "flow.blocks.35.ffn.2.weight",
+        "shape": [
+          1536,
+          6144
+        ],
+        "elements": 9437184
+      },
+      {
+        "name": "flow.blocks.35.ffn.2.bias",
+        "shape": [
+          1536
+        ],
+        "elements": 1536
+      },
+      {
+        "name": "flow.blocks.35.modulation.1.weight",
+        "shape": [
+          9216,
+          1536
+        ],
+        "elements": 14155776
+      },
+      {
+        "name": "flow.blocks.35.modulation.1.bias",
+        "shape": [
+          9216
+        ],
+        "elements": 9216
+      },
+      {
+        "name": "flow.output.weight",
+        "shape": [
+          8,
+          1536
+        ],
+        "elements": 12288
+      },
+      {
+        "name": "flow.output.bias",
+        "shape": [
+          8
+        ],
+        "elements": 8
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "transformed": [],
+    "optimizer": {
+      "class": "Adam",
+      "lr": 1e-05,
+      "weight_decay": 0,
+      "clip_required": 1.0,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "foreach": false,
+      "parameters": 907,
+      "states": 907,
+      "inherited_step24000": 907,
+      "new_step0": 0,
+      "transformed_step0": 0,
+      "removed_states": 0,
+      "coverage_complete": true
+    },
+    "initialization": {
+      "seed": 20261006,
+      "policy": "SHA256(seed|branch|parameter-name), local CPU generator",
+      "source_rng_consumed": false
+    },
+    "activation_checkpoint": false,
+    "equivalent_at_initialization_expected": true,
+    "parameter_elements": 2332430344,
+    "parameter_elements_by_module": {
+      "dit": 1929443336,
+      "vecset": 402987008
+    },
+    "options": {
+      "final_time_adaln": false,
+      "cross_qk": "rms",
+      "self_qk": "rms",
+      "learned_queries": false,
+      "hunyuan_vecset": false,
+      "global_condition": false
+    }
+  },
+  "optimizer_initial_steps": {
+    "condition_encoder.point_embedding.weight": 24000,
+    "condition_encoder.point_embedding.bias": 24000,
+    "condition_encoder.blocks.0.query_norm.weight": 24000,
+    "condition_encoder.blocks.0.query_norm.bias": 24000,
+    "condition_encoder.blocks.0.context_norm.weight": 24000,
+    "condition_encoder.blocks.0.context_norm.bias": 24000,
+    "condition_encoder.blocks.0.attention.query.weight": 24000,
+    "condition_encoder.blocks.0.attention.query.bias": 24000,
+    "condition_encoder.blocks.0.attention.key_value.weight": 24000,
+    "condition_encoder.blocks.0.attention.key_value.bias": 24000,
+    "condition_encoder.blocks.0.attention.output.weight": 24000,
+    "condition_encoder.blocks.0.attention.output.bias": 24000,
+    "condition_encoder.blocks.0.ffn_norm.weight": 24000,
+    "condition_encoder.blocks.0.ffn_norm.bias": 24000,
+    "condition_encoder.blocks.0.ffn.0.weight": 24000,
+    "condition_encoder.blocks.0.ffn.0.bias": 24000,
+    "condition_encoder.blocks.0.ffn.2.weight": 24000,
+    "condition_encoder.blocks.0.ffn.2.bias": 24000,
+    "condition_encoder.blocks.1.attention_norm.weight": 24000,
+    "condition_encoder.blocks.1.attention_norm.bias": 24000,
+    "condition_encoder.blocks.1.attention.qkv.weight": 24000,
+    "condition_encoder.blocks.1.attention.qkv.bias": 24000,
+    "condition_encoder.blocks.1.attention.output.weight": 24000,
+    "condition_encoder.blocks.1.attention.output.bias": 24000,
+    "condition_encoder.blocks.1.ffn_norm.weight": 24000,
+    "condition_encoder.blocks.1.ffn_norm.bias": 24000,
+    "condition_encoder.blocks.1.ffn.0.weight": 24000,
+    "condition_encoder.blocks.1.ffn.0.bias": 24000,
+    "condition_encoder.blocks.1.ffn.2.weight": 24000,
+    "condition_encoder.blocks.1.ffn.2.bias": 24000,
+    "condition_encoder.blocks.2.attention_norm.weight": 24000,
+    "condition_encoder.blocks.2.attention_norm.bias": 24000,
+    "condition_encoder.blocks.2.attention.qkv.weight": 24000,
+    "condition_encoder.blocks.2.attention.qkv.bias": 24000,
+    "condition_encoder.blocks.2.attention.output.weight": 24000,
+    "condition_encoder.blocks.2.attention.output.bias": 24000,
+    "condition_encoder.blocks.2.ffn_norm.weight": 24000,
+    "condition_encoder.blocks.2.ffn_norm.bias": 24000,
+    "condition_encoder.blocks.2.ffn.0.weight": 24000,
+    "condition_encoder.blocks.2.ffn.0.bias": 24000,
+    "condition_encoder.blocks.2.ffn.2.weight": 24000,
+    "condition_encoder.blocks.2.ffn.2.bias": 24000,
+    "condition_encoder.blocks.3.attention_norm.weight": 24000,
+    "condition_encoder.blocks.3.attention_norm.bias": 24000,
+    "condition_encoder.blocks.3.attention.qkv.weight": 24000,
+    "condition_encoder.blocks.3.attention.qkv.bias": 24000,
+    "condition_encoder.blocks.3.attention.output.weight": 24000,
+    "condition_encoder.blocks.3.attention.output.bias": 24000,
+    "condition_encoder.blocks.3.ffn_norm.weight": 24000,
+    "condition_encoder.blocks.3.ffn_norm.bias": 24000,
+    "condition_encoder.blocks.3.ffn.0.weight": 24000,
+    "condition_encoder.blocks.3.ffn.0.bias": 24000,
+    "condition_encoder.blocks.3.ffn.2.weight": 24000,
+    "condition_encoder.blocks.3.ffn.2.bias": 24000,
+    "condition_encoder.blocks.4.attention_norm.weight": 24000,
+    "condition_encoder.blocks.4.attention_norm.bias": 24000,
+    "condition_encoder.blocks.4.attention.qkv.weight": 24000,
+    "condition_encoder.blocks.4.attention.qkv.bias": 24000,
+    "condition_encoder.blocks.4.attention.output.weight": 24000,
+    "condition_encoder.blocks.4.attention.output.bias": 24000,
+    "condition_encoder.blocks.4.ffn_norm.weight": 24000,
+    "condition_encoder.blocks.4.ffn_norm.bias": 24000,
+    "condition_encoder.blocks.4.ffn.0.weight": 24000,
+    "condition_encoder.blocks.4.ffn.0.bias": 24000,
+    "condition_encoder.blocks.4.ffn.2.weight": 24000,
+    "condition_encoder.blocks.4.ffn.2.bias": 24000,
+    "condition_encoder.blocks.5.attention_norm.weight": 24000,
+    "condition_encoder.blocks.5.attention_norm.bias": 24000,
+    "condition_encoder.blocks.5.attention.qkv.weight": 24000,
+    "condition_encoder.blocks.5.attention.qkv.bias": 24000,
+    "condition_encoder.blocks.5.attention.output.weight": 24000,
+    "condition_encoder.blocks.5.attention.output.bias": 24000,
+    "condition_encoder.blocks.5.ffn_norm.weight": 24000,
+    "condition_encoder.blocks.5.ffn_norm.bias": 24000,
+    "condition_encoder.blocks.5.ffn.0.weight": 24000,
+    "condition_encoder.blocks.5.ffn.0.bias": 24000,
+    "condition_encoder.blocks.5.ffn.2.weight": 24000,
+    "condition_encoder.blocks.5.ffn.2.bias": 24000,
+    "condition_encoder.blocks.6.attention_norm.weight": 24000,
+    "condition_encoder.blocks.6.attention_norm.bias": 24000,
+    "condition_encoder.blocks.6.attention.qkv.weight": 24000,
+    "condition_encoder.blocks.6.attention.qkv.bias": 24000,
+    "condition_encoder.blocks.6.attention.output.weight": 24000,
+    "condition_encoder.blocks.6.attention.output.bias": 24000,
+    "condition_encoder.blocks.6.ffn_norm.weight": 24000,
+    "condition_encoder.blocks.6.ffn_norm.bias": 24000,
+    "condition_encoder.blocks.6.ffn.0.weight": 24000,
+    "condition_encoder.blocks.6.ffn.0.bias": 24000,
+    "condition_encoder.blocks.6.ffn.2.weight": 24000,
+    "condition_encoder.blocks.6.ffn.2.bias": 24000,
+    "condition_encoder.blocks.7.attention_norm.weight": 24000,
+    "condition_encoder.blocks.7.attention_norm.bias": 24000,
+    "condition_encoder.blocks.7.attention.qkv.weight": 24000,
+    "condition_encoder.blocks.7.attention.qkv.bias": 24000,
+    "condition_encoder.blocks.7.attention.output.weight": 24000,
+    "condition_encoder.blocks.7.attention.output.bias": 24000,
+    "condition_encoder.blocks.7.ffn_norm.weight": 24000,
+    "condition_encoder.blocks.7.ffn_norm.bias": 24000,
+    "condition_encoder.blocks.7.ffn.0.weight": 24000,
+    "condition_encoder.blocks.7.ffn.0.bias": 24000,
+    "condition_encoder.blocks.7.ffn.2.weight": 24000,
+    "condition_encoder.blocks.7.ffn.2.bias": 24000,
+    "condition_encoder.output_norm.weight": 24000,
+    "condition_encoder.output_norm.bias": 24000,
+    "flow.data_embedding.weight": 24000,
+    "flow.data_embedding.bias": 24000,
+    "flow.position_embedding.weight": 24000,
+    "flow.position_embedding.bias": 24000,
+    "flow.depth_embedding.weight": 24000,
+    "flow.time_embedding.0.weight": 24000,
+    "flow.time_embedding.0.bias": 24000,
+    "flow.time_embedding.2.weight": 24000,
+    "flow.time_embedding.2.bias": 24000,
+    "flow.blocks.0.cross_norm.weight": 24000,
+    "flow.blocks.0.cross_norm.bias": 24000,
+    "flow.blocks.0.self_attention.qkv.weight": 24000,
+    "flow.blocks.0.self_attention.qkv.bias": 24000,
+    "flow.blocks.0.self_attention.query_norm.weight": 24000,
+    "flow.blocks.0.self_attention.key_norm.weight": 24000,
+    "flow.blocks.0.self_attention.output.weight": 24000,
+    "flow.blocks.0.self_attention.output.bias": 24000,
+    "flow.blocks.0.cross_attention.query.weight": 24000,
+    "flow.blocks.0.cross_attention.query.bias": 24000,
+    "flow.blocks.0.cross_attention.key_value.weight": 24000,
+    "flow.blocks.0.cross_attention.key_value.bias": 24000,
+    "flow.blocks.0.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.0.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.0.cross_attention.output.weight": 24000,
+    "flow.blocks.0.cross_attention.output.bias": 24000,
+    "flow.blocks.0.ffn.0.weight": 24000,
+    "flow.blocks.0.ffn.0.bias": 24000,
+    "flow.blocks.0.ffn.2.weight": 24000,
+    "flow.blocks.0.ffn.2.bias": 24000,
+    "flow.blocks.0.modulation.1.weight": 24000,
+    "flow.blocks.0.modulation.1.bias": 24000,
+    "flow.blocks.1.cross_norm.weight": 24000,
+    "flow.blocks.1.cross_norm.bias": 24000,
+    "flow.blocks.1.self_attention.qkv.weight": 24000,
+    "flow.blocks.1.self_attention.qkv.bias": 24000,
+    "flow.blocks.1.self_attention.query_norm.weight": 24000,
+    "flow.blocks.1.self_attention.key_norm.weight": 24000,
+    "flow.blocks.1.self_attention.output.weight": 24000,
+    "flow.blocks.1.self_attention.output.bias": 24000,
+    "flow.blocks.1.cross_attention.query.weight": 24000,
+    "flow.blocks.1.cross_attention.query.bias": 24000,
+    "flow.blocks.1.cross_attention.key_value.weight": 24000,
+    "flow.blocks.1.cross_attention.key_value.bias": 24000,
+    "flow.blocks.1.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.1.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.1.cross_attention.output.weight": 24000,
+    "flow.blocks.1.cross_attention.output.bias": 24000,
+    "flow.blocks.1.ffn.0.weight": 24000,
+    "flow.blocks.1.ffn.0.bias": 24000,
+    "flow.blocks.1.ffn.2.weight": 24000,
+    "flow.blocks.1.ffn.2.bias": 24000,
+    "flow.blocks.1.modulation.1.weight": 24000,
+    "flow.blocks.1.modulation.1.bias": 24000,
+    "flow.blocks.2.cross_norm.weight": 24000,
+    "flow.blocks.2.cross_norm.bias": 24000,
+    "flow.blocks.2.self_attention.qkv.weight": 24000,
+    "flow.blocks.2.self_attention.qkv.bias": 24000,
+    "flow.blocks.2.self_attention.query_norm.weight": 24000,
+    "flow.blocks.2.self_attention.key_norm.weight": 24000,
+    "flow.blocks.2.self_attention.output.weight": 24000,
+    "flow.blocks.2.self_attention.output.bias": 24000,
+    "flow.blocks.2.cross_attention.query.weight": 24000,
+    "flow.blocks.2.cross_attention.query.bias": 24000,
+    "flow.blocks.2.cross_attention.key_value.weight": 24000,
+    "flow.blocks.2.cross_attention.key_value.bias": 24000,
+    "flow.blocks.2.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.2.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.2.cross_attention.output.weight": 24000,
+    "flow.blocks.2.cross_attention.output.bias": 24000,
+    "flow.blocks.2.ffn.0.weight": 24000,
+    "flow.blocks.2.ffn.0.bias": 24000,
+    "flow.blocks.2.ffn.2.weight": 24000,
+    "flow.blocks.2.ffn.2.bias": 24000,
+    "flow.blocks.2.modulation.1.weight": 24000,
+    "flow.blocks.2.modulation.1.bias": 24000,
+    "flow.blocks.3.cross_norm.weight": 24000,
+    "flow.blocks.3.cross_norm.bias": 24000,
+    "flow.blocks.3.self_attention.qkv.weight": 24000,
+    "flow.blocks.3.self_attention.qkv.bias": 24000,
+    "flow.blocks.3.self_attention.query_norm.weight": 24000,
+    "flow.blocks.3.self_attention.key_norm.weight": 24000,
+    "flow.blocks.3.self_attention.output.weight": 24000,
+    "flow.blocks.3.self_attention.output.bias": 24000,
+    "flow.blocks.3.cross_attention.query.weight": 24000,
+    "flow.blocks.3.cross_attention.query.bias": 24000,
+    "flow.blocks.3.cross_attention.key_value.weight": 24000,
+    "flow.blocks.3.cross_attention.key_value.bias": 24000,
+    "flow.blocks.3.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.3.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.3.cross_attention.output.weight": 24000,
+    "flow.blocks.3.cross_attention.output.bias": 24000,
+    "flow.blocks.3.ffn.0.weight": 24000,
+    "flow.blocks.3.ffn.0.bias": 24000,
+    "flow.blocks.3.ffn.2.weight": 24000,
+    "flow.blocks.3.ffn.2.bias": 24000,
+    "flow.blocks.3.modulation.1.weight": 24000,
+    "flow.blocks.3.modulation.1.bias": 24000,
+    "flow.blocks.4.cross_norm.weight": 24000,
+    "flow.blocks.4.cross_norm.bias": 24000,
+    "flow.blocks.4.self_attention.qkv.weight": 24000,
+    "flow.blocks.4.self_attention.qkv.bias": 24000,
+    "flow.blocks.4.self_attention.query_norm.weight": 24000,
+    "flow.blocks.4.self_attention.key_norm.weight": 24000,
+    "flow.blocks.4.self_attention.output.weight": 24000,
+    "flow.blocks.4.self_attention.output.bias": 24000,
+    "flow.blocks.4.cross_attention.query.weight": 24000,
+    "flow.blocks.4.cross_attention.query.bias": 24000,
+    "flow.blocks.4.cross_attention.key_value.weight": 24000,
+    "flow.blocks.4.cross_attention.key_value.bias": 24000,
+    "flow.blocks.4.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.4.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.4.cross_attention.output.weight": 24000,
+    "flow.blocks.4.cross_attention.output.bias": 24000,
+    "flow.blocks.4.ffn.0.weight": 24000,
+    "flow.blocks.4.ffn.0.bias": 24000,
+    "flow.blocks.4.ffn.2.weight": 24000,
+    "flow.blocks.4.ffn.2.bias": 24000,
+    "flow.blocks.4.modulation.1.weight": 24000,
+    "flow.blocks.4.modulation.1.bias": 24000,
+    "flow.blocks.5.cross_norm.weight": 24000,
+    "flow.blocks.5.cross_norm.bias": 24000,
+    "flow.blocks.5.self_attention.qkv.weight": 24000,
+    "flow.blocks.5.self_attention.qkv.bias": 24000,
+    "flow.blocks.5.self_attention.query_norm.weight": 24000,
+    "flow.blocks.5.self_attention.key_norm.weight": 24000,
+    "flow.blocks.5.self_attention.output.weight": 24000,
+    "flow.blocks.5.self_attention.output.bias": 24000,
+    "flow.blocks.5.cross_attention.query.weight": 24000,
+    "flow.blocks.5.cross_attention.query.bias": 24000,
+    "flow.blocks.5.cross_attention.key_value.weight": 24000,
+    "flow.blocks.5.cross_attention.key_value.bias": 24000,
+    "flow.blocks.5.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.5.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.5.cross_attention.output.weight": 24000,
+    "flow.blocks.5.cross_attention.output.bias": 24000,
+    "flow.blocks.5.ffn.0.weight": 24000,
+    "flow.blocks.5.ffn.0.bias": 24000,
+    "flow.blocks.5.ffn.2.weight": 24000,
+    "flow.blocks.5.ffn.2.bias": 24000,
+    "flow.blocks.5.modulation.1.weight": 24000,
+    "flow.blocks.5.modulation.1.bias": 24000,
+    "flow.blocks.6.cross_norm.weight": 24000,
+    "flow.blocks.6.cross_norm.bias": 24000,
+    "flow.blocks.6.self_attention.qkv.weight": 24000,
+    "flow.blocks.6.self_attention.qkv.bias": 24000,
+    "flow.blocks.6.self_attention.query_norm.weight": 24000,
+    "flow.blocks.6.self_attention.key_norm.weight": 24000,
+    "flow.blocks.6.self_attention.output.weight": 24000,
+    "flow.blocks.6.self_attention.output.bias": 24000,
+    "flow.blocks.6.cross_attention.query.weight": 24000,
+    "flow.blocks.6.cross_attention.query.bias": 24000,
+    "flow.blocks.6.cross_attention.key_value.weight": 24000,
+    "flow.blocks.6.cross_attention.key_value.bias": 24000,
+    "flow.blocks.6.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.6.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.6.cross_attention.output.weight": 24000,
+    "flow.blocks.6.cross_attention.output.bias": 24000,
+    "flow.blocks.6.ffn.0.weight": 24000,
+    "flow.blocks.6.ffn.0.bias": 24000,
+    "flow.blocks.6.ffn.2.weight": 24000,
+    "flow.blocks.6.ffn.2.bias": 24000,
+    "flow.blocks.6.modulation.1.weight": 24000,
+    "flow.blocks.6.modulation.1.bias": 24000,
+    "flow.blocks.7.cross_norm.weight": 24000,
+    "flow.blocks.7.cross_norm.bias": 24000,
+    "flow.blocks.7.self_attention.qkv.weight": 24000,
+    "flow.blocks.7.self_attention.qkv.bias": 24000,
+    "flow.blocks.7.self_attention.query_norm.weight": 24000,
+    "flow.blocks.7.self_attention.key_norm.weight": 24000,
+    "flow.blocks.7.self_attention.output.weight": 24000,
+    "flow.blocks.7.self_attention.output.bias": 24000,
+    "flow.blocks.7.cross_attention.query.weight": 24000,
+    "flow.blocks.7.cross_attention.query.bias": 24000,
+    "flow.blocks.7.cross_attention.key_value.weight": 24000,
+    "flow.blocks.7.cross_attention.key_value.bias": 24000,
+    "flow.blocks.7.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.7.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.7.cross_attention.output.weight": 24000,
+    "flow.blocks.7.cross_attention.output.bias": 24000,
+    "flow.blocks.7.ffn.0.weight": 24000,
+    "flow.blocks.7.ffn.0.bias": 24000,
+    "flow.blocks.7.ffn.2.weight": 24000,
+    "flow.blocks.7.ffn.2.bias": 24000,
+    "flow.blocks.7.modulation.1.weight": 24000,
+    "flow.blocks.7.modulation.1.bias": 24000,
+    "flow.blocks.8.cross_norm.weight": 24000,
+    "flow.blocks.8.cross_norm.bias": 24000,
+    "flow.blocks.8.self_attention.qkv.weight": 24000,
+    "flow.blocks.8.self_attention.qkv.bias": 24000,
+    "flow.blocks.8.self_attention.query_norm.weight": 24000,
+    "flow.blocks.8.self_attention.key_norm.weight": 24000,
+    "flow.blocks.8.self_attention.output.weight": 24000,
+    "flow.blocks.8.self_attention.output.bias": 24000,
+    "flow.blocks.8.cross_attention.query.weight": 24000,
+    "flow.blocks.8.cross_attention.query.bias": 24000,
+    "flow.blocks.8.cross_attention.key_value.weight": 24000,
+    "flow.blocks.8.cross_attention.key_value.bias": 24000,
+    "flow.blocks.8.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.8.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.8.cross_attention.output.weight": 24000,
+    "flow.blocks.8.cross_attention.output.bias": 24000,
+    "flow.blocks.8.ffn.0.weight": 24000,
+    "flow.blocks.8.ffn.0.bias": 24000,
+    "flow.blocks.8.ffn.2.weight": 24000,
+    "flow.blocks.8.ffn.2.bias": 24000,
+    "flow.blocks.8.modulation.1.weight": 24000,
+    "flow.blocks.8.modulation.1.bias": 24000,
+    "flow.blocks.9.cross_norm.weight": 24000,
+    "flow.blocks.9.cross_norm.bias": 24000,
+    "flow.blocks.9.self_attention.qkv.weight": 24000,
+    "flow.blocks.9.self_attention.qkv.bias": 24000,
+    "flow.blocks.9.self_attention.query_norm.weight": 24000,
+    "flow.blocks.9.self_attention.key_norm.weight": 24000,
+    "flow.blocks.9.self_attention.output.weight": 24000,
+    "flow.blocks.9.self_attention.output.bias": 24000,
+    "flow.blocks.9.cross_attention.query.weight": 24000,
+    "flow.blocks.9.cross_attention.query.bias": 24000,
+    "flow.blocks.9.cross_attention.key_value.weight": 24000,
+    "flow.blocks.9.cross_attention.key_value.bias": 24000,
+    "flow.blocks.9.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.9.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.9.cross_attention.output.weight": 24000,
+    "flow.blocks.9.cross_attention.output.bias": 24000,
+    "flow.blocks.9.ffn.0.weight": 24000,
+    "flow.blocks.9.ffn.0.bias": 24000,
+    "flow.blocks.9.ffn.2.weight": 24000,
+    "flow.blocks.9.ffn.2.bias": 24000,
+    "flow.blocks.9.modulation.1.weight": 24000,
+    "flow.blocks.9.modulation.1.bias": 24000,
+    "flow.blocks.10.cross_norm.weight": 24000,
+    "flow.blocks.10.cross_norm.bias": 24000,
+    "flow.blocks.10.self_attention.qkv.weight": 24000,
+    "flow.blocks.10.self_attention.qkv.bias": 24000,
+    "flow.blocks.10.self_attention.query_norm.weight": 24000,
+    "flow.blocks.10.self_attention.key_norm.weight": 24000,
+    "flow.blocks.10.self_attention.output.weight": 24000,
+    "flow.blocks.10.self_attention.output.bias": 24000,
+    "flow.blocks.10.cross_attention.query.weight": 24000,
+    "flow.blocks.10.cross_attention.query.bias": 24000,
+    "flow.blocks.10.cross_attention.key_value.weight": 24000,
+    "flow.blocks.10.cross_attention.key_value.bias": 24000,
+    "flow.blocks.10.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.10.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.10.cross_attention.output.weight": 24000,
+    "flow.blocks.10.cross_attention.output.bias": 24000,
+    "flow.blocks.10.ffn.0.weight": 24000,
+    "flow.blocks.10.ffn.0.bias": 24000,
+    "flow.blocks.10.ffn.2.weight": 24000,
+    "flow.blocks.10.ffn.2.bias": 24000,
+    "flow.blocks.10.modulation.1.weight": 24000,
+    "flow.blocks.10.modulation.1.bias": 24000,
+    "flow.blocks.11.cross_norm.weight": 24000,
+    "flow.blocks.11.cross_norm.bias": 24000,
+    "flow.blocks.11.self_attention.qkv.weight": 24000,
+    "flow.blocks.11.self_attention.qkv.bias": 24000,
+    "flow.blocks.11.self_attention.query_norm.weight": 24000,
+    "flow.blocks.11.self_attention.key_norm.weight": 24000,
+    "flow.blocks.11.self_attention.output.weight": 24000,
+    "flow.blocks.11.self_attention.output.bias": 24000,
+    "flow.blocks.11.cross_attention.query.weight": 24000,
+    "flow.blocks.11.cross_attention.query.bias": 24000,
+    "flow.blocks.11.cross_attention.key_value.weight": 24000,
+    "flow.blocks.11.cross_attention.key_value.bias": 24000,
+    "flow.blocks.11.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.11.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.11.cross_attention.output.weight": 24000,
+    "flow.blocks.11.cross_attention.output.bias": 24000,
+    "flow.blocks.11.ffn.0.weight": 24000,
+    "flow.blocks.11.ffn.0.bias": 24000,
+    "flow.blocks.11.ffn.2.weight": 24000,
+    "flow.blocks.11.ffn.2.bias": 24000,
+    "flow.blocks.11.modulation.1.weight": 24000,
+    "flow.blocks.11.modulation.1.bias": 24000,
+    "flow.blocks.12.cross_norm.weight": 24000,
+    "flow.blocks.12.cross_norm.bias": 24000,
+    "flow.blocks.12.self_attention.qkv.weight": 24000,
+    "flow.blocks.12.self_attention.qkv.bias": 24000,
+    "flow.blocks.12.self_attention.query_norm.weight": 24000,
+    "flow.blocks.12.self_attention.key_norm.weight": 24000,
+    "flow.blocks.12.self_attention.output.weight": 24000,
+    "flow.blocks.12.self_attention.output.bias": 24000,
+    "flow.blocks.12.cross_attention.query.weight": 24000,
+    "flow.blocks.12.cross_attention.query.bias": 24000,
+    "flow.blocks.12.cross_attention.key_value.weight": 24000,
+    "flow.blocks.12.cross_attention.key_value.bias": 24000,
+    "flow.blocks.12.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.12.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.12.cross_attention.output.weight": 24000,
+    "flow.blocks.12.cross_attention.output.bias": 24000,
+    "flow.blocks.12.ffn.0.weight": 24000,
+    "flow.blocks.12.ffn.0.bias": 24000,
+    "flow.blocks.12.ffn.2.weight": 24000,
+    "flow.blocks.12.ffn.2.bias": 24000,
+    "flow.blocks.12.modulation.1.weight": 24000,
+    "flow.blocks.12.modulation.1.bias": 24000,
+    "flow.blocks.13.cross_norm.weight": 24000,
+    "flow.blocks.13.cross_norm.bias": 24000,
+    "flow.blocks.13.self_attention.qkv.weight": 24000,
+    "flow.blocks.13.self_attention.qkv.bias": 24000,
+    "flow.blocks.13.self_attention.query_norm.weight": 24000,
+    "flow.blocks.13.self_attention.key_norm.weight": 24000,
+    "flow.blocks.13.self_attention.output.weight": 24000,
+    "flow.blocks.13.self_attention.output.bias": 24000,
+    "flow.blocks.13.cross_attention.query.weight": 24000,
+    "flow.blocks.13.cross_attention.query.bias": 24000,
+    "flow.blocks.13.cross_attention.key_value.weight": 24000,
+    "flow.blocks.13.cross_attention.key_value.bias": 24000,
+    "flow.blocks.13.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.13.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.13.cross_attention.output.weight": 24000,
+    "flow.blocks.13.cross_attention.output.bias": 24000,
+    "flow.blocks.13.ffn.0.weight": 24000,
+    "flow.blocks.13.ffn.0.bias": 24000,
+    "flow.blocks.13.ffn.2.weight": 24000,
+    "flow.blocks.13.ffn.2.bias": 24000,
+    "flow.blocks.13.modulation.1.weight": 24000,
+    "flow.blocks.13.modulation.1.bias": 24000,
+    "flow.blocks.14.cross_norm.weight": 24000,
+    "flow.blocks.14.cross_norm.bias": 24000,
+    "flow.blocks.14.self_attention.qkv.weight": 24000,
+    "flow.blocks.14.self_attention.qkv.bias": 24000,
+    "flow.blocks.14.self_attention.query_norm.weight": 24000,
+    "flow.blocks.14.self_attention.key_norm.weight": 24000,
+    "flow.blocks.14.self_attention.output.weight": 24000,
+    "flow.blocks.14.self_attention.output.bias": 24000,
+    "flow.blocks.14.cross_attention.query.weight": 24000,
+    "flow.blocks.14.cross_attention.query.bias": 24000,
+    "flow.blocks.14.cross_attention.key_value.weight": 24000,
+    "flow.blocks.14.cross_attention.key_value.bias": 24000,
+    "flow.blocks.14.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.14.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.14.cross_attention.output.weight": 24000,
+    "flow.blocks.14.cross_attention.output.bias": 24000,
+    "flow.blocks.14.ffn.0.weight": 24000,
+    "flow.blocks.14.ffn.0.bias": 24000,
+    "flow.blocks.14.ffn.2.weight": 24000,
+    "flow.blocks.14.ffn.2.bias": 24000,
+    "flow.blocks.14.modulation.1.weight": 24000,
+    "flow.blocks.14.modulation.1.bias": 24000,
+    "flow.blocks.15.cross_norm.weight": 24000,
+    "flow.blocks.15.cross_norm.bias": 24000,
+    "flow.blocks.15.self_attention.qkv.weight": 24000,
+    "flow.blocks.15.self_attention.qkv.bias": 24000,
+    "flow.blocks.15.self_attention.query_norm.weight": 24000,
+    "flow.blocks.15.self_attention.key_norm.weight": 24000,
+    "flow.blocks.15.self_attention.output.weight": 24000,
+    "flow.blocks.15.self_attention.output.bias": 24000,
+    "flow.blocks.15.cross_attention.query.weight": 24000,
+    "flow.blocks.15.cross_attention.query.bias": 24000,
+    "flow.blocks.15.cross_attention.key_value.weight": 24000,
+    "flow.blocks.15.cross_attention.key_value.bias": 24000,
+    "flow.blocks.15.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.15.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.15.cross_attention.output.weight": 24000,
+    "flow.blocks.15.cross_attention.output.bias": 24000,
+    "flow.blocks.15.ffn.0.weight": 24000,
+    "flow.blocks.15.ffn.0.bias": 24000,
+    "flow.blocks.15.ffn.2.weight": 24000,
+    "flow.blocks.15.ffn.2.bias": 24000,
+    "flow.blocks.15.modulation.1.weight": 24000,
+    "flow.blocks.15.modulation.1.bias": 24000,
+    "flow.blocks.16.cross_norm.weight": 24000,
+    "flow.blocks.16.cross_norm.bias": 24000,
+    "flow.blocks.16.self_attention.qkv.weight": 24000,
+    "flow.blocks.16.self_attention.qkv.bias": 24000,
+    "flow.blocks.16.self_attention.query_norm.weight": 24000,
+    "flow.blocks.16.self_attention.key_norm.weight": 24000,
+    "flow.blocks.16.self_attention.output.weight": 24000,
+    "flow.blocks.16.self_attention.output.bias": 24000,
+    "flow.blocks.16.cross_attention.query.weight": 24000,
+    "flow.blocks.16.cross_attention.query.bias": 24000,
+    "flow.blocks.16.cross_attention.key_value.weight": 24000,
+    "flow.blocks.16.cross_attention.key_value.bias": 24000,
+    "flow.blocks.16.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.16.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.16.cross_attention.output.weight": 24000,
+    "flow.blocks.16.cross_attention.output.bias": 24000,
+    "flow.blocks.16.ffn.0.weight": 24000,
+    "flow.blocks.16.ffn.0.bias": 24000,
+    "flow.blocks.16.ffn.2.weight": 24000,
+    "flow.blocks.16.ffn.2.bias": 24000,
+    "flow.blocks.16.modulation.1.weight": 24000,
+    "flow.blocks.16.modulation.1.bias": 24000,
+    "flow.blocks.17.cross_norm.weight": 24000,
+    "flow.blocks.17.cross_norm.bias": 24000,
+    "flow.blocks.17.self_attention.qkv.weight": 24000,
+    "flow.blocks.17.self_attention.qkv.bias": 24000,
+    "flow.blocks.17.self_attention.query_norm.weight": 24000,
+    "flow.blocks.17.self_attention.key_norm.weight": 24000,
+    "flow.blocks.17.self_attention.output.weight": 24000,
+    "flow.blocks.17.self_attention.output.bias": 24000,
+    "flow.blocks.17.cross_attention.query.weight": 24000,
+    "flow.blocks.17.cross_attention.query.bias": 24000,
+    "flow.blocks.17.cross_attention.key_value.weight": 24000,
+    "flow.blocks.17.cross_attention.key_value.bias": 24000,
+    "flow.blocks.17.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.17.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.17.cross_attention.output.weight": 24000,
+    "flow.blocks.17.cross_attention.output.bias": 24000,
+    "flow.blocks.17.ffn.0.weight": 24000,
+    "flow.blocks.17.ffn.0.bias": 24000,
+    "flow.blocks.17.ffn.2.weight": 24000,
+    "flow.blocks.17.ffn.2.bias": 24000,
+    "flow.blocks.17.modulation.1.weight": 24000,
+    "flow.blocks.17.modulation.1.bias": 24000,
+    "flow.blocks.18.cross_norm.weight": 24000,
+    "flow.blocks.18.cross_norm.bias": 24000,
+    "flow.blocks.18.self_attention.qkv.weight": 24000,
+    "flow.blocks.18.self_attention.qkv.bias": 24000,
+    "flow.blocks.18.self_attention.query_norm.weight": 24000,
+    "flow.blocks.18.self_attention.key_norm.weight": 24000,
+    "flow.blocks.18.self_attention.output.weight": 24000,
+    "flow.blocks.18.self_attention.output.bias": 24000,
+    "flow.blocks.18.cross_attention.query.weight": 24000,
+    "flow.blocks.18.cross_attention.query.bias": 24000,
+    "flow.blocks.18.cross_attention.key_value.weight": 24000,
+    "flow.blocks.18.cross_attention.key_value.bias": 24000,
+    "flow.blocks.18.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.18.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.18.cross_attention.output.weight": 24000,
+    "flow.blocks.18.cross_attention.output.bias": 24000,
+    "flow.blocks.18.ffn.0.weight": 24000,
+    "flow.blocks.18.ffn.0.bias": 24000,
+    "flow.blocks.18.ffn.2.weight": 24000,
+    "flow.blocks.18.ffn.2.bias": 24000,
+    "flow.blocks.18.modulation.1.weight": 24000,
+    "flow.blocks.18.modulation.1.bias": 24000,
+    "flow.blocks.19.cross_norm.weight": 24000,
+    "flow.blocks.19.cross_norm.bias": 24000,
+    "flow.blocks.19.self_attention.qkv.weight": 24000,
+    "flow.blocks.19.self_attention.qkv.bias": 24000,
+    "flow.blocks.19.self_attention.query_norm.weight": 24000,
+    "flow.blocks.19.self_attention.key_norm.weight": 24000,
+    "flow.blocks.19.self_attention.output.weight": 24000,
+    "flow.blocks.19.self_attention.output.bias": 24000,
+    "flow.blocks.19.cross_attention.query.weight": 24000,
+    "flow.blocks.19.cross_attention.query.bias": 24000,
+    "flow.blocks.19.cross_attention.key_value.weight": 24000,
+    "flow.blocks.19.cross_attention.key_value.bias": 24000,
+    "flow.blocks.19.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.19.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.19.cross_attention.output.weight": 24000,
+    "flow.blocks.19.cross_attention.output.bias": 24000,
+    "flow.blocks.19.ffn.0.weight": 24000,
+    "flow.blocks.19.ffn.0.bias": 24000,
+    "flow.blocks.19.ffn.2.weight": 24000,
+    "flow.blocks.19.ffn.2.bias": 24000,
+    "flow.blocks.19.modulation.1.weight": 24000,
+    "flow.blocks.19.modulation.1.bias": 24000,
+    "flow.blocks.20.cross_norm.weight": 24000,
+    "flow.blocks.20.cross_norm.bias": 24000,
+    "flow.blocks.20.self_attention.qkv.weight": 24000,
+    "flow.blocks.20.self_attention.qkv.bias": 24000,
+    "flow.blocks.20.self_attention.query_norm.weight": 24000,
+    "flow.blocks.20.self_attention.key_norm.weight": 24000,
+    "flow.blocks.20.self_attention.output.weight": 24000,
+    "flow.blocks.20.self_attention.output.bias": 24000,
+    "flow.blocks.20.cross_attention.query.weight": 24000,
+    "flow.blocks.20.cross_attention.query.bias": 24000,
+    "flow.blocks.20.cross_attention.key_value.weight": 24000,
+    "flow.blocks.20.cross_attention.key_value.bias": 24000,
+    "flow.blocks.20.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.20.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.20.cross_attention.output.weight": 24000,
+    "flow.blocks.20.cross_attention.output.bias": 24000,
+    "flow.blocks.20.ffn.0.weight": 24000,
+    "flow.blocks.20.ffn.0.bias": 24000,
+    "flow.blocks.20.ffn.2.weight": 24000,
+    "flow.blocks.20.ffn.2.bias": 24000,
+    "flow.blocks.20.modulation.1.weight": 24000,
+    "flow.blocks.20.modulation.1.bias": 24000,
+    "flow.blocks.21.cross_norm.weight": 24000,
+    "flow.blocks.21.cross_norm.bias": 24000,
+    "flow.blocks.21.self_attention.qkv.weight": 24000,
+    "flow.blocks.21.self_attention.qkv.bias": 24000,
+    "flow.blocks.21.self_attention.query_norm.weight": 24000,
+    "flow.blocks.21.self_attention.key_norm.weight": 24000,
+    "flow.blocks.21.self_attention.output.weight": 24000,
+    "flow.blocks.21.self_attention.output.bias": 24000,
+    "flow.blocks.21.cross_attention.query.weight": 24000,
+    "flow.blocks.21.cross_attention.query.bias": 24000,
+    "flow.blocks.21.cross_attention.key_value.weight": 24000,
+    "flow.blocks.21.cross_attention.key_value.bias": 24000,
+    "flow.blocks.21.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.21.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.21.cross_attention.output.weight": 24000,
+    "flow.blocks.21.cross_attention.output.bias": 24000,
+    "flow.blocks.21.ffn.0.weight": 24000,
+    "flow.blocks.21.ffn.0.bias": 24000,
+    "flow.blocks.21.ffn.2.weight": 24000,
+    "flow.blocks.21.ffn.2.bias": 24000,
+    "flow.blocks.21.modulation.1.weight": 24000,
+    "flow.blocks.21.modulation.1.bias": 24000,
+    "flow.blocks.22.cross_norm.weight": 24000,
+    "flow.blocks.22.cross_norm.bias": 24000,
+    "flow.blocks.22.self_attention.qkv.weight": 24000,
+    "flow.blocks.22.self_attention.qkv.bias": 24000,
+    "flow.blocks.22.self_attention.query_norm.weight": 24000,
+    "flow.blocks.22.self_attention.key_norm.weight": 24000,
+    "flow.blocks.22.self_attention.output.weight": 24000,
+    "flow.blocks.22.self_attention.output.bias": 24000,
+    "flow.blocks.22.cross_attention.query.weight": 24000,
+    "flow.blocks.22.cross_attention.query.bias": 24000,
+    "flow.blocks.22.cross_attention.key_value.weight": 24000,
+    "flow.blocks.22.cross_attention.key_value.bias": 24000,
+    "flow.blocks.22.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.22.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.22.cross_attention.output.weight": 24000,
+    "flow.blocks.22.cross_attention.output.bias": 24000,
+    "flow.blocks.22.ffn.0.weight": 24000,
+    "flow.blocks.22.ffn.0.bias": 24000,
+    "flow.blocks.22.ffn.2.weight": 24000,
+    "flow.blocks.22.ffn.2.bias": 24000,
+    "flow.blocks.22.modulation.1.weight": 24000,
+    "flow.blocks.22.modulation.1.bias": 24000,
+    "flow.blocks.23.cross_norm.weight": 24000,
+    "flow.blocks.23.cross_norm.bias": 24000,
+    "flow.blocks.23.self_attention.qkv.weight": 24000,
+    "flow.blocks.23.self_attention.qkv.bias": 24000,
+    "flow.blocks.23.self_attention.query_norm.weight": 24000,
+    "flow.blocks.23.self_attention.key_norm.weight": 24000,
+    "flow.blocks.23.self_attention.output.weight": 24000,
+    "flow.blocks.23.self_attention.output.bias": 24000,
+    "flow.blocks.23.cross_attention.query.weight": 24000,
+    "flow.blocks.23.cross_attention.query.bias": 24000,
+    "flow.blocks.23.cross_attention.key_value.weight": 24000,
+    "flow.blocks.23.cross_attention.key_value.bias": 24000,
+    "flow.blocks.23.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.23.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.23.cross_attention.output.weight": 24000,
+    "flow.blocks.23.cross_attention.output.bias": 24000,
+    "flow.blocks.23.ffn.0.weight": 24000,
+    "flow.blocks.23.ffn.0.bias": 24000,
+    "flow.blocks.23.ffn.2.weight": 24000,
+    "flow.blocks.23.ffn.2.bias": 24000,
+    "flow.blocks.23.modulation.1.weight": 24000,
+    "flow.blocks.23.modulation.1.bias": 24000,
+    "flow.blocks.24.cross_norm.weight": 24000,
+    "flow.blocks.24.cross_norm.bias": 24000,
+    "flow.blocks.24.self_attention.qkv.weight": 24000,
+    "flow.blocks.24.self_attention.qkv.bias": 24000,
+    "flow.blocks.24.self_attention.query_norm.weight": 24000,
+    "flow.blocks.24.self_attention.key_norm.weight": 24000,
+    "flow.blocks.24.self_attention.output.weight": 24000,
+    "flow.blocks.24.self_attention.output.bias": 24000,
+    "flow.blocks.24.cross_attention.query.weight": 24000,
+    "flow.blocks.24.cross_attention.query.bias": 24000,
+    "flow.blocks.24.cross_attention.key_value.weight": 24000,
+    "flow.blocks.24.cross_attention.key_value.bias": 24000,
+    "flow.blocks.24.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.24.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.24.cross_attention.output.weight": 24000,
+    "flow.blocks.24.cross_attention.output.bias": 24000,
+    "flow.blocks.24.ffn.0.weight": 24000,
+    "flow.blocks.24.ffn.0.bias": 24000,
+    "flow.blocks.24.ffn.2.weight": 24000,
+    "flow.blocks.24.ffn.2.bias": 24000,
+    "flow.blocks.24.modulation.1.weight": 24000,
+    "flow.blocks.24.modulation.1.bias": 24000,
+    "flow.blocks.25.cross_norm.weight": 24000,
+    "flow.blocks.25.cross_norm.bias": 24000,
+    "flow.blocks.25.self_attention.qkv.weight": 24000,
+    "flow.blocks.25.self_attention.qkv.bias": 24000,
+    "flow.blocks.25.self_attention.query_norm.weight": 24000,
+    "flow.blocks.25.self_attention.key_norm.weight": 24000,
+    "flow.blocks.25.self_attention.output.weight": 24000,
+    "flow.blocks.25.self_attention.output.bias": 24000,
+    "flow.blocks.25.cross_attention.query.weight": 24000,
+    "flow.blocks.25.cross_attention.query.bias": 24000,
+    "flow.blocks.25.cross_attention.key_value.weight": 24000,
+    "flow.blocks.25.cross_attention.key_value.bias": 24000,
+    "flow.blocks.25.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.25.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.25.cross_attention.output.weight": 24000,
+    "flow.blocks.25.cross_attention.output.bias": 24000,
+    "flow.blocks.25.ffn.0.weight": 24000,
+    "flow.blocks.25.ffn.0.bias": 24000,
+    "flow.blocks.25.ffn.2.weight": 24000,
+    "flow.blocks.25.ffn.2.bias": 24000,
+    "flow.blocks.25.modulation.1.weight": 24000,
+    "flow.blocks.25.modulation.1.bias": 24000,
+    "flow.blocks.26.cross_norm.weight": 24000,
+    "flow.blocks.26.cross_norm.bias": 24000,
+    "flow.blocks.26.self_attention.qkv.weight": 24000,
+    "flow.blocks.26.self_attention.qkv.bias": 24000,
+    "flow.blocks.26.self_attention.query_norm.weight": 24000,
+    "flow.blocks.26.self_attention.key_norm.weight": 24000,
+    "flow.blocks.26.self_attention.output.weight": 24000,
+    "flow.blocks.26.self_attention.output.bias": 24000,
+    "flow.blocks.26.cross_attention.query.weight": 24000,
+    "flow.blocks.26.cross_attention.query.bias": 24000,
+    "flow.blocks.26.cross_attention.key_value.weight": 24000,
+    "flow.blocks.26.cross_attention.key_value.bias": 24000,
+    "flow.blocks.26.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.26.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.26.cross_attention.output.weight": 24000,
+    "flow.blocks.26.cross_attention.output.bias": 24000,
+    "flow.blocks.26.ffn.0.weight": 24000,
+    "flow.blocks.26.ffn.0.bias": 24000,
+    "flow.blocks.26.ffn.2.weight": 24000,
+    "flow.blocks.26.ffn.2.bias": 24000,
+    "flow.blocks.26.modulation.1.weight": 24000,
+    "flow.blocks.26.modulation.1.bias": 24000,
+    "flow.blocks.27.cross_norm.weight": 24000,
+    "flow.blocks.27.cross_norm.bias": 24000,
+    "flow.blocks.27.self_attention.qkv.weight": 24000,
+    "flow.blocks.27.self_attention.qkv.bias": 24000,
+    "flow.blocks.27.self_attention.query_norm.weight": 24000,
+    "flow.blocks.27.self_attention.key_norm.weight": 24000,
+    "flow.blocks.27.self_attention.output.weight": 24000,
+    "flow.blocks.27.self_attention.output.bias": 24000,
+    "flow.blocks.27.cross_attention.query.weight": 24000,
+    "flow.blocks.27.cross_attention.query.bias": 24000,
+    "flow.blocks.27.cross_attention.key_value.weight": 24000,
+    "flow.blocks.27.cross_attention.key_value.bias": 24000,
+    "flow.blocks.27.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.27.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.27.cross_attention.output.weight": 24000,
+    "flow.blocks.27.cross_attention.output.bias": 24000,
+    "flow.blocks.27.ffn.0.weight": 24000,
+    "flow.blocks.27.ffn.0.bias": 24000,
+    "flow.blocks.27.ffn.2.weight": 24000,
+    "flow.blocks.27.ffn.2.bias": 24000,
+    "flow.blocks.27.modulation.1.weight": 24000,
+    "flow.blocks.27.modulation.1.bias": 24000,
+    "flow.blocks.28.cross_norm.weight": 24000,
+    "flow.blocks.28.cross_norm.bias": 24000,
+    "flow.blocks.28.self_attention.qkv.weight": 24000,
+    "flow.blocks.28.self_attention.qkv.bias": 24000,
+    "flow.blocks.28.self_attention.query_norm.weight": 24000,
+    "flow.blocks.28.self_attention.key_norm.weight": 24000,
+    "flow.blocks.28.self_attention.output.weight": 24000,
+    "flow.blocks.28.self_attention.output.bias": 24000,
+    "flow.blocks.28.cross_attention.query.weight": 24000,
+    "flow.blocks.28.cross_attention.query.bias": 24000,
+    "flow.blocks.28.cross_attention.key_value.weight": 24000,
+    "flow.blocks.28.cross_attention.key_value.bias": 24000,
+    "flow.blocks.28.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.28.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.28.cross_attention.output.weight": 24000,
+    "flow.blocks.28.cross_attention.output.bias": 24000,
+    "flow.blocks.28.ffn.0.weight": 24000,
+    "flow.blocks.28.ffn.0.bias": 24000,
+    "flow.blocks.28.ffn.2.weight": 24000,
+    "flow.blocks.28.ffn.2.bias": 24000,
+    "flow.blocks.28.modulation.1.weight": 24000,
+    "flow.blocks.28.modulation.1.bias": 24000,
+    "flow.blocks.29.cross_norm.weight": 24000,
+    "flow.blocks.29.cross_norm.bias": 24000,
+    "flow.blocks.29.self_attention.qkv.weight": 24000,
+    "flow.blocks.29.self_attention.qkv.bias": 24000,
+    "flow.blocks.29.self_attention.query_norm.weight": 24000,
+    "flow.blocks.29.self_attention.key_norm.weight": 24000,
+    "flow.blocks.29.self_attention.output.weight": 24000,
+    "flow.blocks.29.self_attention.output.bias": 24000,
+    "flow.blocks.29.cross_attention.query.weight": 24000,
+    "flow.blocks.29.cross_attention.query.bias": 24000,
+    "flow.blocks.29.cross_attention.key_value.weight": 24000,
+    "flow.blocks.29.cross_attention.key_value.bias": 24000,
+    "flow.blocks.29.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.29.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.29.cross_attention.output.weight": 24000,
+    "flow.blocks.29.cross_attention.output.bias": 24000,
+    "flow.blocks.29.ffn.0.weight": 24000,
+    "flow.blocks.29.ffn.0.bias": 24000,
+    "flow.blocks.29.ffn.2.weight": 24000,
+    "flow.blocks.29.ffn.2.bias": 24000,
+    "flow.blocks.29.modulation.1.weight": 24000,
+    "flow.blocks.29.modulation.1.bias": 24000,
+    "flow.blocks.30.cross_norm.weight": 24000,
+    "flow.blocks.30.cross_norm.bias": 24000,
+    "flow.blocks.30.self_attention.qkv.weight": 24000,
+    "flow.blocks.30.self_attention.qkv.bias": 24000,
+    "flow.blocks.30.self_attention.query_norm.weight": 24000,
+    "flow.blocks.30.self_attention.key_norm.weight": 24000,
+    "flow.blocks.30.self_attention.output.weight": 24000,
+    "flow.blocks.30.self_attention.output.bias": 24000,
+    "flow.blocks.30.cross_attention.query.weight": 24000,
+    "flow.blocks.30.cross_attention.query.bias": 24000,
+    "flow.blocks.30.cross_attention.key_value.weight": 24000,
+    "flow.blocks.30.cross_attention.key_value.bias": 24000,
+    "flow.blocks.30.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.30.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.30.cross_attention.output.weight": 24000,
+    "flow.blocks.30.cross_attention.output.bias": 24000,
+    "flow.blocks.30.ffn.0.weight": 24000,
+    "flow.blocks.30.ffn.0.bias": 24000,
+    "flow.blocks.30.ffn.2.weight": 24000,
+    "flow.blocks.30.ffn.2.bias": 24000,
+    "flow.blocks.30.modulation.1.weight": 24000,
+    "flow.blocks.30.modulation.1.bias": 24000,
+    "flow.blocks.31.cross_norm.weight": 24000,
+    "flow.blocks.31.cross_norm.bias": 24000,
+    "flow.blocks.31.self_attention.qkv.weight": 24000,
+    "flow.blocks.31.self_attention.qkv.bias": 24000,
+    "flow.blocks.31.self_attention.query_norm.weight": 24000,
+    "flow.blocks.31.self_attention.key_norm.weight": 24000,
+    "flow.blocks.31.self_attention.output.weight": 24000,
+    "flow.blocks.31.self_attention.output.bias": 24000,
+    "flow.blocks.31.cross_attention.query.weight": 24000,
+    "flow.blocks.31.cross_attention.query.bias": 24000,
+    "flow.blocks.31.cross_attention.key_value.weight": 24000,
+    "flow.blocks.31.cross_attention.key_value.bias": 24000,
+    "flow.blocks.31.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.31.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.31.cross_attention.output.weight": 24000,
+    "flow.blocks.31.cross_attention.output.bias": 24000,
+    "flow.blocks.31.ffn.0.weight": 24000,
+    "flow.blocks.31.ffn.0.bias": 24000,
+    "flow.blocks.31.ffn.2.weight": 24000,
+    "flow.blocks.31.ffn.2.bias": 24000,
+    "flow.blocks.31.modulation.1.weight": 24000,
+    "flow.blocks.31.modulation.1.bias": 24000,
+    "flow.blocks.32.cross_norm.weight": 24000,
+    "flow.blocks.32.cross_norm.bias": 24000,
+    "flow.blocks.32.self_attention.qkv.weight": 24000,
+    "flow.blocks.32.self_attention.qkv.bias": 24000,
+    "flow.blocks.32.self_attention.query_norm.weight": 24000,
+    "flow.blocks.32.self_attention.key_norm.weight": 24000,
+    "flow.blocks.32.self_attention.output.weight": 24000,
+    "flow.blocks.32.self_attention.output.bias": 24000,
+    "flow.blocks.32.cross_attention.query.weight": 24000,
+    "flow.blocks.32.cross_attention.query.bias": 24000,
+    "flow.blocks.32.cross_attention.key_value.weight": 24000,
+    "flow.blocks.32.cross_attention.key_value.bias": 24000,
+    "flow.blocks.32.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.32.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.32.cross_attention.output.weight": 24000,
+    "flow.blocks.32.cross_attention.output.bias": 24000,
+    "flow.blocks.32.ffn.0.weight": 24000,
+    "flow.blocks.32.ffn.0.bias": 24000,
+    "flow.blocks.32.ffn.2.weight": 24000,
+    "flow.blocks.32.ffn.2.bias": 24000,
+    "flow.blocks.32.modulation.1.weight": 24000,
+    "flow.blocks.32.modulation.1.bias": 24000,
+    "flow.blocks.33.cross_norm.weight": 24000,
+    "flow.blocks.33.cross_norm.bias": 24000,
+    "flow.blocks.33.self_attention.qkv.weight": 24000,
+    "flow.blocks.33.self_attention.qkv.bias": 24000,
+    "flow.blocks.33.self_attention.query_norm.weight": 24000,
+    "flow.blocks.33.self_attention.key_norm.weight": 24000,
+    "flow.blocks.33.self_attention.output.weight": 24000,
+    "flow.blocks.33.self_attention.output.bias": 24000,
+    "flow.blocks.33.cross_attention.query.weight": 24000,
+    "flow.blocks.33.cross_attention.query.bias": 24000,
+    "flow.blocks.33.cross_attention.key_value.weight": 24000,
+    "flow.blocks.33.cross_attention.key_value.bias": 24000,
+    "flow.blocks.33.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.33.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.33.cross_attention.output.weight": 24000,
+    "flow.blocks.33.cross_attention.output.bias": 24000,
+    "flow.blocks.33.ffn.0.weight": 24000,
+    "flow.blocks.33.ffn.0.bias": 24000,
+    "flow.blocks.33.ffn.2.weight": 24000,
+    "flow.blocks.33.ffn.2.bias": 24000,
+    "flow.blocks.33.modulation.1.weight": 24000,
+    "flow.blocks.33.modulation.1.bias": 24000,
+    "flow.blocks.34.cross_norm.weight": 24000,
+    "flow.blocks.34.cross_norm.bias": 24000,
+    "flow.blocks.34.self_attention.qkv.weight": 24000,
+    "flow.blocks.34.self_attention.qkv.bias": 24000,
+    "flow.blocks.34.self_attention.query_norm.weight": 24000,
+    "flow.blocks.34.self_attention.key_norm.weight": 24000,
+    "flow.blocks.34.self_attention.output.weight": 24000,
+    "flow.blocks.34.self_attention.output.bias": 24000,
+    "flow.blocks.34.cross_attention.query.weight": 24000,
+    "flow.blocks.34.cross_attention.query.bias": 24000,
+    "flow.blocks.34.cross_attention.key_value.weight": 24000,
+    "flow.blocks.34.cross_attention.key_value.bias": 24000,
+    "flow.blocks.34.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.34.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.34.cross_attention.output.weight": 24000,
+    "flow.blocks.34.cross_attention.output.bias": 24000,
+    "flow.blocks.34.ffn.0.weight": 24000,
+    "flow.blocks.34.ffn.0.bias": 24000,
+    "flow.blocks.34.ffn.2.weight": 24000,
+    "flow.blocks.34.ffn.2.bias": 24000,
+    "flow.blocks.34.modulation.1.weight": 24000,
+    "flow.blocks.34.modulation.1.bias": 24000,
+    "flow.blocks.35.cross_norm.weight": 24000,
+    "flow.blocks.35.cross_norm.bias": 24000,
+    "flow.blocks.35.self_attention.qkv.weight": 24000,
+    "flow.blocks.35.self_attention.qkv.bias": 24000,
+    "flow.blocks.35.self_attention.query_norm.weight": 24000,
+    "flow.blocks.35.self_attention.key_norm.weight": 24000,
+    "flow.blocks.35.self_attention.output.weight": 24000,
+    "flow.blocks.35.self_attention.output.bias": 24000,
+    "flow.blocks.35.cross_attention.query.weight": 24000,
+    "flow.blocks.35.cross_attention.query.bias": 24000,
+    "flow.blocks.35.cross_attention.key_value.weight": 24000,
+    "flow.blocks.35.cross_attention.key_value.bias": 24000,
+    "flow.blocks.35.cross_attention.query_norm.weight": 24000,
+    "flow.blocks.35.cross_attention.key_norm.weight": 24000,
+    "flow.blocks.35.cross_attention.output.weight": 24000,
+    "flow.blocks.35.cross_attention.output.bias": 24000,
+    "flow.blocks.35.ffn.0.weight": 24000,
+    "flow.blocks.35.ffn.0.bias": 24000,
+    "flow.blocks.35.ffn.2.weight": 24000,
+    "flow.blocks.35.ffn.2.bias": 24000,
+    "flow.blocks.35.modulation.1.weight": 24000,
+    "flow.blocks.35.modulation.1.bias": 24000,
+    "flow.output.weight": 24000,
+    "flow.output.bias": 24000
+  },
+  "strict_model": true,
+  "rng_readback": true,
+  "new_branch_cursor": 0,
+  "source_cursor": 16000,
+  "trainable_parameters": 2332430344,
+  "gpu": "GPU-80f199d2-afab-fad3-824d-6d2482a4c882",
+  "gpu_name": "NVIDIA A100-SXM4-80GB"
+}

@@ -1,0 +1,31 @@
+{
+  "state": "running",
+  "running": {
+    "GPU-6cf268fa-8e3b-ecfc-c88c-22bc22cc98c3": {
+      "branch": "S2",
+      "pid": 1493
+    },
+    "GPU-6977060b-ce26-90fc-e2ba-8af1370f8c0e": {
+      "branch": "S3",
+      "pid": 1581
+    }
+  },
+  "pending": [
+    "S4",
+    "S5",
+    "S6"
+  ],
+  "exit_codes": {
+    "S0": 0,
+    "S1": 0
+  },
+  "finished": [
+    "S0",
+    "S1"
+  ],
+  "failed": [],
+  "automatic_retry": false,
+  "stop_requested": false,
+  "launch_failure": null,
+  "running_branches_allowed_to_finish": true
+}

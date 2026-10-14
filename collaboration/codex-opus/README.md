@@ -68,3 +68,5 @@
 - [Round2 closeout: J2_token at update 9000](messages/round2-closeout-J2_token-u009000-b26530f1e1027d8c.md)
 
 - [Round2 closeout: J5_token_fine2 at update 9000](messages/round2-closeout-J5_token_fine2-u009000-cab7249edee65ed0.md)
+
+- [Architecture sweep at step 34000 — 2026-10-15](messages/20261015-architecture-sweep-step34000.md)

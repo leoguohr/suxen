@@ -1,0 +1,19 @@
+{
+  "state": "complete_discarded",
+  "sweep_update": 1,
+  "smoke_only": true,
+  "formal_updates_counted": 0,
+  "checkpoint": {
+    "path": "smoke_S5_group2/checkpoint-024001.pt",
+    "sha256": "5fd0fe6098bc70b0a56a1f816ebe4a04623ed3609610e6f1d26e90b5a1db250a",
+    "bytes": 27983486880,
+    "step": 24001,
+    "sweep_update": 1,
+    "schedule_next_event": 8,
+    "full_model_adam_rng": true,
+    "atomic_write_fsynced": true,
+    "readback_verified": true,
+    "readback_scope": "all model/Adam/RNG/config/cursor/exposure values exact",
+    "final": false
+  }
+}

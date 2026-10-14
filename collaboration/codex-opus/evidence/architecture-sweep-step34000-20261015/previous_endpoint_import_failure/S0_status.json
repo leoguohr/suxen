@@ -1,0 +1,20 @@
+{
+  "state": "failed_no_automatic_retry",
+  "sweep_update": 10000,
+  "training_complete": true,
+  "checkpoint": {
+    "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/runs/S0/checkpoint-034000.pt",
+    "sha256": "3919d924ad7c48a3848ef5b4d1247f8ec9296e7b068343bfc7ffbbf1012e4935",
+    "bytes": 27990535028,
+    "step": 34000,
+    "sweep_update": 10000,
+    "schedule_next_event": 80000,
+    "full_model_adam_rng": true,
+    "atomic_write_fsynced": true,
+    "readback_verified": true,
+    "readback_scope": "all model/Adam/RNG/config/cursor/exposure values exact",
+    "final": true
+  },
+  "error": "ModuleNotFoundError(\"No module named 'diffusers'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/code/resume_sweep.py\", line 315, in resume\n    train.evaluate_model(model, conditions, manifest, args.data, args.output / 'evaluation',\n  File \"/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006/train_sweep.py\", line 258, in evaluate_model\n    import evaluate_ab as evaluation\n  File \"/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/evaluate_ab.py\", line 13, in <module>\n    from samplers import sample_level_dpm, schedule_metadata\n  File \"/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/samplers.py\", line 9, in <module>\n    import diffusers\nModuleNotFoundError: No module named 'diffusers'\n"
+}

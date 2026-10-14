@@ -1,0 +1,54 @@
+{
+  "pid": 1126,
+  "launched_at_utc": "2026-10-07T15:27:35Z",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/code/eval_continue_queue.py",
+    "--base-root",
+    "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006",
+    "--original-runs",
+    "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/runs",
+    "--first-code",
+    "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261006/code",
+    "--previous-code",
+    "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/code",
+    "--deps",
+    "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/deps",
+    "--output",
+    "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs",
+    "--start",
+    "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/experiment/A/checkpoint-024000.pt",
+    "--data",
+    "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/prepared_d9",
+    "--microgroup",
+    "2"
+  ],
+  "code_identity": {
+    "files": {
+      "eval_continue.py": {
+        "sha256": "35336470b9965a8d3bd3e37451123590f126a5f7c540e77f28bd10aab647beef",
+        "bytes": 18795
+      },
+      "eval_continue_queue.py": {
+        "sha256": "fa587e89003919cb8fe6075e9e7a3236d5aaa64a10aac6b0cf2e044333e72c1f",
+        "bytes": 10618
+      },
+      "test_eval_continue_model.py": {
+        "sha256": "1c29d6b9a0dc5675ce08312101fc8ef6475c320fe7c0ba04d4597ad65d2c5bb7",
+        "bytes": 9799
+      },
+      "test_eval_continue_queue.py": {
+        "sha256": "c1c88d32bc6b51ec8208e48591fc1a87d5fd173972a6f24b4597d6797ca82bdb",
+        "bytes": 14446
+      }
+    },
+    "scope": "new evaluation and continuation wrappers only; historical code and results unchanged",
+    "local_validation": "seven stdlib CPU queue tests pass; AST for all four Python files passes",
+    "real_torch_cpu_tests": "test_eval_continue_model.py requires verified server environment",
+    "startup_cpu_check": "complete evaluate_ab plus permuted nonempty two-point xyz_metric, pinned scheduler and four scoring-source identities"
+  },
+  "stdout": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/audit/queue.log",
+  "startup_verified": false,
+  "no_continuous_monitoring": true
+}

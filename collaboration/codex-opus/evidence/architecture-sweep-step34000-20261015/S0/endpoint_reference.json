@@ -1,0 +1,1169 @@
+{
+  "mode": "frozen_terminal_model_evaluation_only",
+  "training_updates_this_attempt": 0,
+  "checkpoint_reference": {
+    "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/runs/S0/checkpoint-034000.pt",
+    "sha256": "3919d924ad7c48a3848ef5b4d1247f8ec9296e7b068343bfc7ffbbf1012e4935",
+    "bytes": 27990535028,
+    "step": 34000,
+    "sweep_update": 10000,
+    "schedule_next_event": 80000,
+    "full_model_adam_rng": true,
+    "atomic_write_fsynced": true,
+    "readback_verified": true,
+    "readback_scope": "all model/Adam/RNG/config/cursor/exposure values exact",
+    "final": true
+  },
+  "checkpoint_copied": false,
+  "actual_runtime_wrapper": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/code/eval_continue.py",
+  "code_sources": {
+    "architecture_variants.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006/architecture_variants.py",
+      "sha256": "2e7390ac4e48ce3426eefe6450f772d6d1287ce39ae69760460daf01d1742ce5",
+      "role": "frozen_original"
+    },
+    "run_sweep_queue.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006/run_sweep_queue.py",
+      "sha256": "7fb84671b2d8eaa7d955fa432eca27d295d97913b94cbce11490adee2a3d9710",
+      "role": "frozen_original"
+    },
+    "test_architecture_variants.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006/test_architecture_variants.py",
+      "sha256": "b9e9366689bed7a4c5cc7920a905bfd37a4f4295d6cb41d76dc364921235d552",
+      "role": "frozen_original"
+    },
+    "test_queue_cpu.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006/test_queue_cpu.py",
+      "sha256": "baef29e8aecb538a858f12efb8f62463befa5d06ffa65c9b20c6998005290ccb",
+      "role": "frozen_original"
+    },
+    "test_train_sweep.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006/test_train_sweep.py",
+      "sha256": "2558433e733b4d8e37a97697edc191ee5b05e6dbd725059f306e3f5260f2c0d4",
+      "role": "frozen_original"
+    },
+    "train_sweep.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006/train_sweep.py",
+      "sha256": "e60bbc1d6e09292ec656fd8740f1862bae9a6196ae1ab8ad5206b08d211dd1ea",
+      "role": "frozen_original"
+    },
+    "ab/train_ab.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/train_ab.py",
+      "sha256": "5064e499efb9f078f0dd1dfffe0f00fa7bebd916812ee32df2a54d148793a408",
+      "role": "frozen_original"
+    },
+    "ab/prepare_data.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/prepare_data.py",
+      "sha256": "8205cdc8d3d346c79c0295471faab314a44ea4b2cd9ad3e06744e544e70a16ec",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/.___init__.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/.___init__.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._data.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._data.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._data_2k.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._data_2k.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._flash_varlen_topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._flash_varlen_topology.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._flow.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._flow.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._models.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._models.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._negative_candidates.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._negative_candidates.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._octree.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._octree.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._packed_topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._packed_topology.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._topology.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._topology_checkpoint.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._topology_checkpoint.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._topology_evaluation.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._topology_evaluation.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._training.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._training.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._training_2k.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._training_2k.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._vertex.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._vertex.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/._vertex_evaluation.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/._vertex_evaluation.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/__init__.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/__init__.py",
+      "sha256": "a854fc419dea46fa4bb00307fbf3aa591392b4dcf575febf407dcc0aeb49a7d6",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/data.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/data.py",
+      "sha256": "fc26c596fa0adc09ccf833570e0825bea5845f1275b1ca9d19fcb25410c9bd55",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/data_2k.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/data_2k.py",
+      "sha256": "ccebfddbb2b4d9f41ec345f38a4d62a0605f20429b43a0c338ea185ee3bd8f94",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/flash_varlen_topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/flash_varlen_topology.py",
+      "sha256": "2841a3b52ff55008f677e61ff36cc3dffdbb691e91ff7416b089af3edcb2592b",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/flow.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/flow.py",
+      "sha256": "9730d962dbee230e7a18eac0be1f88b2d697a8bb7e6b42b33e8db20dfafd712b",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/models.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/models.py",
+      "sha256": "805762d98a7de108f28a28ba6712eb3cc4d249d29acc0ba695bcb2874edb7aaf",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/negative_candidates.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/negative_candidates.py",
+      "sha256": "37792a6ef62505363f63b5a783d02792c55b3eed3420070b41e5ed093c453a85",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/octree.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/octree.py",
+      "sha256": "817134bbbe59f07cefa01d979b2f1409e386966e57ff333bde408f18b18b3d38",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/packed_topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/packed_topology.py",
+      "sha256": "0350818bd4d3ad68833c7e615eb1ca9f1e2324e1ee147ae9b95da9446675faed",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/topology.py",
+      "sha256": "43d4eff36f7768010450455768090a2b90a2d18bd8d2749dd2f626d36ee09e91",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/topology_checkpoint.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/topology_checkpoint.py",
+      "sha256": "d4968f5e3bd803553e5454e6ad72485e805757df0afebd6b2f81d94f0ed8196f",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/topology_evaluation.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/topology_evaluation.py",
+      "sha256": "daeb1aa1622ecd51115423985c0b03e8e6c49922a6f84ffd48ae04def2fb4681",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/training.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/training.py",
+      "sha256": "0825a7d6db4844cdf8087ebc9a21ef3fd3370f4781d8f2984f2166c38421394a",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/training_2k.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/training_2k.py",
+      "sha256": "8ca165f72af4e5b92689650d09865f2d2fdf9cad7d323e44d75fd5532f1900d3",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/vertex.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/vertex.py",
+      "sha256": "39491f94fadec84797b59a92d969dd923353abeea29a91a02e1a0f904ae1f386",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/mini_nexus/vertex_evaluation.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/mini_nexus/vertex_evaluation.py",
+      "sha256": "94e1271b07d446d08577657f22ffa52f99f767611c067831ab8345522ce3415d",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._audit_nexus2k_topology_recovery.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._audit_nexus2k_topology_recovery.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._audit_pilot_for_algorithm.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._audit_pilot_for_algorithm.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._benchmark_nexus2k_single.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._benchmark_nexus2k_single.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._benchmark_topology_ae_step.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._benchmark_topology_ae_step.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._check_vertex_sampler.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._check_vertex_sampler.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._compare_topology_ae_checkpoints.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._compare_topology_ae_checkpoints.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._evaluate_nexus2k_topology_ae.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._evaluate_nexus2k_topology_ae.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._evaluate_pilot.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._evaluate_pilot.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._evaluate_vertex_b1_frozen.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._evaluate_vertex_b1_frozen.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._evaluate_vertex_b2_frozen.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._evaluate_vertex_b2_frozen.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._evaluate_vertex_c_checkpoint.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._evaluate_vertex_c_checkpoint.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._export_train_topology_comparison.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._export_train_topology_comparison.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._plot_vertex_overfit.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._plot_vertex_overfit.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._profile_topology_ae_step.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._profile_topology_ae_step.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._smoke_negative_candidates_v2.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._smoke_negative_candidates_v2.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._smoke_nexus2k_loader.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._smoke_nexus2k_loader.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._smoke_real_pilot.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._smoke_real_pilot.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._train_nexus2k_single.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._train_nexus2k_single.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._train_pilot.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._train_pilot.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._train_topology_ae_fp32_flash_bf16_experiment.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._train_topology_ae_fp32_flash_bf16_experiment.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._train_topology_ae_overfit_packed.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._train_topology_ae_overfit_packed.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._train_toy.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._train_toy.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._train_vertex_a100_b1.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._train_vertex_a100_b1.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._train_vertex_b2.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._train_vertex_b2.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._train_vertex_c.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._train_vertex_c.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._train_vertex_d2.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._train_vertex_d2.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._train_vertex_overfit.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._train_vertex_overfit.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._train_vertex_staged.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._train_vertex_staged.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/._vertex_b1_evidence.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/._vertex_b1_evidence.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/audit_nexus2k_topology_recovery.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/audit_nexus2k_topology_recovery.py",
+      "sha256": "5f2ef3cb0aff847045ffec05da6f391a30f5db93a7016e42c31327ec9b0fef60",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/audit_pilot_for_algorithm.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/audit_pilot_for_algorithm.py",
+      "sha256": "16982592b6bf027ad4cf8d80a44bd9a8f05de413006373a8e45e61589784a20f",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/benchmark_nexus2k_single.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/benchmark_nexus2k_single.py",
+      "sha256": "1f0b5242603797113e372fef19a2aa7df2c7855fd5c53d1bf52f87e09ef51585",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/benchmark_topology_ae_step.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/benchmark_topology_ae_step.py",
+      "sha256": "df87a637109cace79d526031c46c1229a98636f90f6a16075a66e80e0f2065dd",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/check_vertex_sampler.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/check_vertex_sampler.py",
+      "sha256": "9392794f164acba88d7bfaaf343539778cd242641155b5ba3ecff2917d351fd0",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/compare_topology_ae_checkpoints.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/compare_topology_ae_checkpoints.py",
+      "sha256": "b9394cf8cc851f7806f071763900af298582a7dd608f7983905b2ede7d512a54",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/evaluate_nexus2k_topology_ae.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/evaluate_nexus2k_topology_ae.py",
+      "sha256": "0030b104cf88174ae633b87d2d66c95df49abff2c1b8837eac9cf8cdbc6accee",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/evaluate_pilot.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/evaluate_pilot.py",
+      "sha256": "c1d949e77d534d6b4534cd551eab02c678df6093c26563e557fc9f5722f5b843",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/evaluate_vertex_b1_frozen.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/evaluate_vertex_b1_frozen.py",
+      "sha256": "001ecc4c9e84aa66119967dfd1081dbfe831eadc6410608cca71451584ecc957",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/evaluate_vertex_b2_frozen.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/evaluate_vertex_b2_frozen.py",
+      "sha256": "f879fc5597790110ff777b3f3b79a6df28c38009ef252729d7cc2fa7f8fdf289",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/evaluate_vertex_c_checkpoint.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/evaluate_vertex_c_checkpoint.py",
+      "sha256": "81e25622f0c6b2c876f938d49784c78fc1d953c7256310776b66403d50200181",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/export_train_topology_comparison.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/export_train_topology_comparison.py",
+      "sha256": "f3c51860a38a7ce6100fbcf9f73cbe6b311c9c7a7ed328edc5fb01d650361c0b",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/plot_vertex_overfit.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/plot_vertex_overfit.py",
+      "sha256": "29fbb43e9c30e0abd7cc05e0910f1f22fdb7c5998ea7063fd507ae603241aeee",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/profile_topology_ae_step.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/profile_topology_ae_step.py",
+      "sha256": "6d8df0e2d655003e838a22ca8108c6ba135bc6c04197be378e24ba26458bb0a3",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/smoke_negative_candidates_v2.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/smoke_negative_candidates_v2.py",
+      "sha256": "32fdd2c950861106f4dff6b88a4dc6af0adaf1e8ce9366d93773cba94f6118f8",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/smoke_nexus2k_loader.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/smoke_nexus2k_loader.py",
+      "sha256": "c52aa33f1788bf80637601ff12928106ef9232adb9ac2c1a7445a0d9d268040e",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/smoke_real_pilot.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/smoke_real_pilot.py",
+      "sha256": "ccc14d7e4aa2506c13cc38e340804a999b08c37c18500b670f866a2973fc6f22",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/train_nexus2k_single.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/train_nexus2k_single.py",
+      "sha256": "8f538da935d330c6e7aea9c05e3467bdf64b0a3d8886a2bcea7c7df6ef1703ad",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/train_pilot.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/train_pilot.py",
+      "sha256": "14506bdbe9c6ddea3ca20a49e28b4c8d539dc796b3b016493708a176a0eb880d",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/train_topology_ae_fp32_flash_bf16_experiment.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/train_topology_ae_fp32_flash_bf16_experiment.py",
+      "sha256": "70ffd13ea9a058e16fa3cfef11a5f02c1cff0c03cdee6ac99cb98bd4b73f68eb",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/train_topology_ae_overfit_packed.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/train_topology_ae_overfit_packed.py",
+      "sha256": "75d922af180a0f61aed01098824782dfeda9b5ac5598a70b85f42baac7601cd7",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/train_toy.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/train_toy.py",
+      "sha256": "8bd2f20dce661dbe315b072c078802cdf6632234b914af299cb6b69115041478",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/train_vertex_a100_b1.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/train_vertex_a100_b1.py",
+      "sha256": "c6227312de38744fd8dadbbe380fafac5ead164564a12588e05a7f1dbdc0bb01",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/train_vertex_b2.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/train_vertex_b2.py",
+      "sha256": "7fcb55970b9a90ff6b70ffaf1b2a241bc1eb9fdf82b37e0c9867e2a6a26d2d24",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/train_vertex_c.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/train_vertex_c.py",
+      "sha256": "895e32a20a6f871e550a5bb9c86d774cb745a69021444278b99292b59e3be820",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/train_vertex_d2.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/train_vertex_d2.py",
+      "sha256": "6e18d5b1ca3fbe4d14d2adb7547962d92a6779daac97ef68ff3da96e904b9266",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/train_vertex_overfit.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/train_vertex_overfit.py",
+      "sha256": "4b0979ec27b595536221e91625775b9d78f3ba87ae220b9ce2bdf4cbf3e39ef9",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/train_vertex_staged.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/train_vertex_staged.py",
+      "sha256": "43257d858784075dd321708012fd7ccf11172227bd288c8e12e07c5be10ae078",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/scripts/vertex_b1_evidence.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/scripts/vertex_b1_evidence.py",
+      "sha256": "314c92639bd2f3b5f272e4867db00c5af03beb96ad8a203c9eaa8396aa7c48cc",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_data.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_data.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_data_2k.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_data_2k.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_flash_varlen_topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_flash_varlen_topology.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_flow.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_flow.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_models.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_models.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_negative_candidates.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_negative_candidates.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_octree.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_octree.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_packed_topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_packed_topology.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_topology.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_topology_evaluation_scripts.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_topology_evaluation_scripts.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_training.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_training.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_training_2k.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_training_2k.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_vertex.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_vertex.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_vertex_a100_b1.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_vertex_a100_b1.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_vertex_b1_frozen.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_vertex_b1_frozen.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_vertex_b2.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_vertex_b2.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_vertex_b2_frozen.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_vertex_b2_frozen.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_vertex_c.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_vertex_c.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_vertex_c_checkpoint.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_vertex_c_checkpoint.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_vertex_d2.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_vertex_d2.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_vertex_overfit.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_vertex_overfit.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/._test_vertex_staged.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/._test_vertex_staged.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_data.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_data.py",
+      "sha256": "e1a41271bc678ad0bcdb6374fe433fca2a0d1dde4255a15896fa09dcefbab9d4",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_data_2k.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_data_2k.py",
+      "sha256": "23e20cda7c2ba66c44a4b2a6e6e9b6792dc0a870f74255a8053e49232242c9df",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_flash_varlen_topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_flash_varlen_topology.py",
+      "sha256": "885c99cc435129daea790b6b28afd4fe0ae78335b36c1e22a963decfe6931982",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_flow.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_flow.py",
+      "sha256": "8f96f01521d83d86a644f5cab0f6e4abadba6e5c6564f845f36bab9a6060bc5c",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_models.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_models.py",
+      "sha256": "5fa86dff8c69c086f67677654e58e8a494983b8e5912e216055a09275730e8f0",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_negative_candidates.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_negative_candidates.py",
+      "sha256": "3576e5b9180237c00970a8cd9f4e01cef5007c34512a1f5697b9bf833314ad14",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_octree.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_octree.py",
+      "sha256": "5eeeeda9ad1a6bf5f542bbd3e6e9f124dd4f7ae0dba0d4364bdd2aabd50fee15",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_packed_topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_packed_topology.py",
+      "sha256": "4a666231e894b69b53211ac659fe57ee507e0788d07202402adfdc66dcca333d",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_topology.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_topology.py",
+      "sha256": "ff456242543dac5f5dc2e5fa5c9a60d192d3b35f77b7a5a80eebedeeafde37f3",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_topology_evaluation_scripts.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_topology_evaluation_scripts.py",
+      "sha256": "b4fbd5911590e1537fb9ca12eeedd8124e4951bb88e851f75dde22442de05f61",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_training.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_training.py",
+      "sha256": "6c7d61fc9b113ccedf5263ad87ca7dd53140b0c285e57c3f31d8ad60a7f273b8",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_training_2k.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_training_2k.py",
+      "sha256": "7579b4b96499ee9a0019a3ececd84dd7a0e220b702ad5d0072ec7567f8d36fb8",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_vertex.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_vertex.py",
+      "sha256": "0963a8f8871d0f54a54d71cb9fc2f99566957dae1eec7ce9cd5892f2e82c8adb",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_vertex_a100_b1.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_vertex_a100_b1.py",
+      "sha256": "4ff323aa7383d3686de6f4c8c8248dd3f494f3eb3cf1f50e4c731b65989fa85f",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_vertex_b1_frozen.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_vertex_b1_frozen.py",
+      "sha256": "2245f8b396e2185243bc42c0f0d71bfa1f079d9fd19a386a805d37cf55d3a9a2",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_vertex_b2.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_vertex_b2.py",
+      "sha256": "932a869365d3133d207cf8c389baf57ecebbd3158d2c9f8628da54c7bdab57fb",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_vertex_b2_frozen.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_vertex_b2_frozen.py",
+      "sha256": "4ebf28242116fee57ff1ee197dd817d08c3eeea6ac486e2a519da9b10582354f",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_vertex_c.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_vertex_c.py",
+      "sha256": "0fc15d97f0d13511b6e389e9caaea8b4ed3e89f18b9233442d765bdf9e6d2804",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_vertex_c_checkpoint.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_vertex_c_checkpoint.py",
+      "sha256": "66aa64b7ab8c0df0eeac3457dacc92e99dc6d0ba09a2bc1da630632fc872ca99",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_vertex_d2.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_vertex_d2.py",
+      "sha256": "9d2387c6f357a3c4b9519c4c8172d0d81a9df71e16eb3b905129b068fbaefd52",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_vertex_overfit.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_vertex_overfit.py",
+      "sha256": "779aa583ad901840a75ea1f43493b254fb346a57a45c0f1e6252c70ac4b4231e",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/d15_code/tests/test_vertex_staged.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/d15_code/tests/test_vertex_staged.py",
+      "sha256": "115369eebbf1211ed9624295a4bddc237dabadde7fa1b37900cbaebc0b223d0f",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._common.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._common.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._d15_evaluate.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._d15_evaluate.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._d15_model.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._d15_model.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._encode_d15.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._encode_d15.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._evaluate_after_training.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._evaluate_after_training.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._evaluate_after_training5200.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._evaluate_after_training5200.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._evaluate_exports.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._evaluate_exports.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._integrity_gate.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._integrity_gate.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._migrate_d15.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._migrate_d15.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._native_export.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._native_export.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._phase2_evaluate.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._phase2_evaluate.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._phase2_prepare.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._phase2_prepare.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._phase2_prepare_cad50.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._phase2_prepare_cad50.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._phase2_train.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._phase2_train.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._resume_state.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._resume_state.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._run_resume2600.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._run_resume2600.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._run_resume5200.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._run_resume5200.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._run_resume800.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._run_resume800.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._test_d15.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._test_d15.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._test_integrity_gate.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._test_integrity_gate.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._test_resume_state.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._test_resume_state.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._test_train_path.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._test_train_path.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._train_d15.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._train_d15.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._train_d15_resume.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._train_d15_resume.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._train_d15_resume2600.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._train_d15_resume2600.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/._train_d15_resume5200.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/._train_d15_resume5200.py",
+      "sha256": "1482a277010a924fd7e2b606adc5526910da182eddfb90872d013b00bf6fbc97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/common.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/common.py",
+      "sha256": "5e0e5960e43682f99145735560f544d8d55188a725f6550051b1c487fe5cdd18",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/d15_evaluate.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/d15_evaluate.py",
+      "sha256": "687454cc343c1f6435f3f8d91a19b1edbe91193bf2e5ccfe8a30254d29dfd5da",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/d15_model.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/d15_model.py",
+      "sha256": "4b9e40718ed233d3906f8a64c83ee677e7401dfc5a5cbef3f192e8fea85b6958",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/encode_d15.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/encode_d15.py",
+      "sha256": "9a7529239e25db25142d156b70443080c12b99238c22d3706e4d3f6aa4f9af9e",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/evaluate_after_training.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/evaluate_after_training.py",
+      "sha256": "2f26dd07dc757c13a23c75c693656d5361c1e1db57231bfbb6069698e0ecf9c4",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/evaluate_after_training5200.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/evaluate_after_training5200.py",
+      "sha256": "81e20c1ebbba656eeb9114871008caad57c1e34d95155a92ea15ad5449e83cf4",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/evaluate_exports.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/evaluate_exports.py",
+      "sha256": "3481ecd9c4e704744a6bc1ba138dc92f04fd7b424262ff99c1645180915cc03d",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/integrity_gate.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/integrity_gate.py",
+      "sha256": "4a933aa3f3a6676a9173e81d36c2e47af4db36f5771efdd356482c762513c2a6",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/migrate_d15.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/migrate_d15.py",
+      "sha256": "8ab3f8a870de0fd72dbefc78a427d56e1d69596c29d9cb899ad6f8fc1715258c",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/native_export.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/native_export.py",
+      "sha256": "7f64048023fac3adc8877d47bac5a195c47e3135f6b360de5711a9f3c8eb13c8",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/overfit50_evaluate.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/overfit50_evaluate.py",
+      "sha256": "472ee8b0be61f5caa1711e94f7dd406d9024a3da80f0c38596abd27ff4396b97",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/overfit50_pipeline.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/overfit50_pipeline.py",
+      "sha256": "8f1b796d03fc86eae9cf08f7c74e4d5849e90e3d658fa35d12bbb814e35c7d3a",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/overfit50_prepare.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/overfit50_prepare.py",
+      "sha256": "60912f30b76e66372227950dc56df9fa4dd9db78e54acd05162c5d20dc7dd460",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/overfit50_test_ddp.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/overfit50_test_ddp.py",
+      "sha256": "334bbae71b6a835c6bcb7b5e90dbf1c0dc93fb73a5313dcf49918a955b1404d4",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/overfit50_train.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/overfit50_train.py",
+      "sha256": "57d5e139f15f0e4f47781cc12b67a6156a029f0feb59f666820580f3c47d1d43",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/package_phase2_final.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/package_phase2_final.py",
+      "sha256": "ed60edb1d8e8f8c4752fe1cda2338035dee064ce61c77e2a88152a240f63abd5",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_after_training_fast_gpu.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_after_training_fast_gpu.py",
+      "sha256": "dbc9d5453f1ac80e45b4c13e2ef5104af9fdcecdcb9eb74015bff396b29728a5",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_after_training_selected_gpu.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_after_training_selected_gpu.py",
+      "sha256": "deb7e5e0a0a6fc4d36eb99bfc2e947dc7d17be5cd6be5d39d5ae68ca15e596e9",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_after_training_ssd.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_after_training_ssd.py",
+      "sha256": "399afaa6367085500198b95bc206616bc71a1feed6c30a61c4492777c4fea7bd",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_complete_saved_evaluation.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_complete_saved_evaluation.py",
+      "sha256": "413fb4314ebf8da3888edf0755eefe3e918b484dd154116139ce16d975ef3bf1",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_evaluate.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_evaluate.py",
+      "sha256": "c3ef79e90345ac4640510d1e37a46094e6491382dcaa65b4f46971e931cfa45f",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_evaluate_resume.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_evaluate_resume.py",
+      "sha256": "8c5470fff04e8b081525f047c46861238e13313c2fac26a4dd49afbdaa67bbaa",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_execution_fast.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_execution_fast.py",
+      "sha256": "5c713593ee48a2192754a39d94db4b44e5f68e3ecaf10bd93dfdee6c72e30f6c",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_prepare.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_prepare.py",
+      "sha256": "0a310560f79638cba1b53f5fffe7ebc7e44b119829c4204d864090e98eb08f1a",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_prepare_cad50.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_prepare_cad50.py",
+      "sha256": "787ffa96128b762b8ec87b1e44c0948a6ebb30265f4f7dfb16882b638474bb20",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_speed_control.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_speed_control.py",
+      "sha256": "04eb2532a10475dd5d03f980c75721052dc903a81dda3bf0eab7922e1bfbbda3",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_speed_probe.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_speed_probe.py",
+      "sha256": "b8f4bb84449b74f5427bd794381c1d4fdc70ed6b32088e331d564a2773eb917b",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_train.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_train.py",
+      "sha256": "9a63ae0e1c0578fb85dd04b71e62f64b0bb6daf12c3f667e7ffcf38b9a00252e",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_train_ssd.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_train_ssd.py",
+      "sha256": "96eb005b3258d294f608294768e438a8637f1dbf63b12b80488de51809c24954",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/phase2_train_ssd_fast.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/phase2_train_ssd_fast.py",
+      "sha256": "d02be442325fdcce0291a717cc72b14abd7fe0981ba18f6f7bb44b401edc753d",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/resume_state.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/resume_state.py",
+      "sha256": "be9c329eaab7c4c7ea6de14a065698253efb09e8ba53daae13793d15d182d58d",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/run_resume2600.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/run_resume2600.py",
+      "sha256": "6f10de2299e2b9a7048118fadfe19c0e329c3df034fab8dc27ad81f0002cde01",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/run_resume5200.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/run_resume5200.py",
+      "sha256": "a46afbea63f431195aae9b9ada6c576facec3c14ff0a0006630bc416efa1608f",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/run_resume800.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/run_resume800.py",
+      "sha256": "bca735c32218b08e40fda2b84b63ea28b284ce63ea4de7e189adbb52e7c196bf",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/test_d15.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/test_d15.py",
+      "sha256": "9f2fa9d44f35b4a95b82b7645860ee573793a7f5dca722dd706cc8c192b7dbfc",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/test_integrity_gate.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/test_integrity_gate.py",
+      "sha256": "daac32538d342b31ae74aadbd2a8e0677d6edcc62c8b9e3a0b721958d4245525",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/test_resume_state.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/test_resume_state.py",
+      "sha256": "67d0fe43aac677cf6b345a5cfa78c8f70cff4f7367037acc1c20634fdb2379ae",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/test_train_path.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/test_train_path.py",
+      "sha256": "25a64a036ede7e6c8da7e84cc239a4bb1d479997044971a24f562878d31a6779",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/train_d15.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/train_d15.py",
+      "sha256": "d6bdc47901c93c9646510f7185d21bd37c5fb98394362d7c49f3b28fbf04e5b4",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/train_d15_resume.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/train_d15_resume.py",
+      "sha256": "b8785d6cfaba653c4272f96e3a9585530b265283624ce62af2be328f863d527e",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/train_d15_resume2600.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/train_d15_resume2600.py",
+      "sha256": "3757fb91c391b2950e924c98952c5b9fa90ea7e655f7c85e2fa2d5c459f3e90d",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/train_d15_resume5200.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/train_d15_resume5200.py",
+      "sha256": "55f48b4062ddf048f863eebb36790596761c7d4ec4991fdef0ea8dd51d9132c4",
+      "role": "frozen_original"
+    },
+    "ab/source_runtime/scripts/verify_phase2_final.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/scripts/verify_phase2_final.py",
+      "sha256": "7ee8a99c83a98bb37cac44bf2b787b70c1cadf2b41cf081ec47a3e4b5574b1d9",
+      "role": "frozen_original"
+    },
+    "ab/evaluate_ab.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/evaluate_ab.py",
+      "sha256": "0db8a73a433287f779260b09803af2d73683602f7495e30e4dd714b2744c5121",
+      "role": "frozen_original"
+    },
+    "ab/samplers.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/samplers.py",
+      "sha256": "b3a22d57366d85eabb24f4c790d5f068f8d872c94a94aa0c378bdccb8076a52d",
+      "role": "frozen_original"
+    },
+    "historical_recovery400/resume_sweep.py": {
+      "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261006/code/resume_sweep.py",
+      "sha256": "57efa7248f192e8b4ecab245060a52dd8ebba90d7a13bd61b925326626b61502",
+      "role": "historical_recovery400"
+    },
+    "historical_recovery400/resume_queue.py": {
+      "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261006/code/resume_queue.py",
+      "sha256": "1464e7485ec50d74cbfd9d250be3d2b84e212b66e76938026fd33b111f406f83",
+      "role": "historical_recovery400"
+    },
+    "historical_recovery7600/resume_sweep.py": {
+      "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/code/resume_sweep.py",
+      "sha256": "7b728718114eec32825328f5a5ae8f0c94a04b13c97c23a23c0cb7cd50afd133",
+      "role": "historical_recovery7600"
+    },
+    "historical_recovery7600/resume_queue.py": {
+      "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/code/resume_queue.py",
+      "sha256": "ea750edab13c74f6addea66658a0fc494ee779bf9d4e4a4664fa76105b4e0369",
+      "role": "historical_recovery7600"
+    },
+    "actual_runtime_wrapper/eval_continue.py": {
+      "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/code/eval_continue.py",
+      "sha256": "35336470b9965a8d3bd3e37451123590f126a5f7c540e77f28bd10aab647beef",
+      "role": "actual_runtime_wrapper"
+    },
+    "actual_runtime_wrapper/eval_continue_queue.py": {
+      "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/code/eval_continue_queue.py",
+      "sha256": "fa587e89003919cb8fe6075e9e7a3236d5aaa64a10aac6b0cf2e044333e72c1f",
+      "role": "actual_runtime_wrapper"
+    },
+    "ab/source_runtime/teacher_candidate/replay.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/teacher_candidate/replay.py",
+      "sha256": "b4c21112f6aa386a89d6fbac16abcf859193f0741651a91f37d75f546caaf86a",
+      "role": "actual_scoring_runtime"
+    },
+    "ab/source_runtime/teacher_candidate/models.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/teacher_candidate/models.py",
+      "sha256": "679c6482a47ca40ed3bcb5e86eb6f407db105a5fb6cc41a6c8708b6e64127a0a",
+      "role": "actual_scoring_runtime"
+    },
+    "ab/source_runtime/teacher_candidate/teacher_ae.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/teacher_candidate/teacher_ae.py",
+      "sha256": "740de899b2d7ea47ec56edf61101d45dee6251956505426e16c1f5cec9f6416c",
+      "role": "actual_scoring_runtime"
+    },
+    "ab/source_runtime/teacher_candidate/indicators.py": {
+      "path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/source_runtime/teacher_candidate/indicators.py",
+      "sha256": "9d3fc97d83194c7249f5f0542d5c1591e06de3010061f4be0db051012aef989b",
+      "role": "actual_scoring_runtime"
+    }
+  },
+  "environment": {
+    "deps": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/deps",
+    "dependency_path_mode": "append_after_installed_packages",
+    "torch_version": "2.3.0a0+6ddf5cf85e.nv24.04",
+    "torch_path": "/usr/local/lib/python3.10/dist-packages/torch/__init__.py",
+    "numpy_version": "1.24.4",
+    "numpy_path": "/usr/local/lib/python3.10/dist-packages/numpy/__init__.py",
+    "diffusers_version": "0.40.0",
+    "diffusers_path": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/deps/diffusers/__init__.py",
+    "scheduler_source_sha256": "0dd5333bd7b900b117d34f151adfc4b181dbb2062ca860105658037a0fe5dc06",
+    "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION": "python",
+    "xyz_metric_cpu_permuted_two_point_check": {
+      "count_correct": true,
+      "predicted_count": 2,
+      "target_count": 2,
+      "sum_squared_error": 0.0,
+      "coordinates": 6,
+      "max_error": 0.0,
+      "minimum_spacing": 3.7416573867739413,
+      "spacing_ratio": 0.0,
+      "symmetric_squared_chamfer": 0.0,
+      "status": "applicable_equal_count",
+      "matched_coordinate_rmse": 0.0
+    },
+    "complete_evaluate_ab_import_cpu": true
+  },
+  "training_history": {
+    "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/runs/S0/train.jsonl",
+    "sha256": "cc7b6adfb857c1189ee49077600ca05842a9f164cb5a7c2296297878bd3a2899",
+    "continuous_updates": 10000,
+    "events": 80000,
+    "last_cumulative_step": 34000
+  }
+}

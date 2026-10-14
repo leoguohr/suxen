@@ -1,0 +1,632 @@
+[
+  {
+    "path": "data_manifest.json",
+    "source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_d9_ab_20260930/prepared_d9/manifest.json",
+    "source_bytes": 41639,
+    "source_sha256": "101cc76ffbbe55012a8ad5bfbbb5c54148a755f1562fd0236ec0cbca70e7a6e6",
+    "bytes": 41639,
+    "sha256": "101cc76ffbbe55012a8ad5bfbbb5c54148a755f1562fd0236ec0cbca70e7a6e6",
+    "compression": null,
+    "source_mtime_utc": "2026-09-30T11:53:59.088206+00:00"
+  },
+  {
+    "path": "S0/status.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/status.json",
+    "source_bytes": 657,
+    "source_sha256": "c23fdea6cdf0385ba4009e3f9f5710f074fe01df7b73a22bd6ba528f6d8b06a3",
+    "bytes": 657,
+    "sha256": "c23fdea6cdf0385ba4009e3f9f5710f074fe01df7b73a22bd6ba528f6d8b06a3",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:48:04.825722+00:00"
+  },
+  {
+    "path": "S0/config.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/config.json",
+    "source_bytes": 43214,
+    "source_sha256": "e699d2eb26b6ece2234fa014eef333d271d4c7abbb19477eed88f5c1171c46fb",
+    "bytes": 43214,
+    "sha256": "e699d2eb26b6ece2234fa014eef333d271d4c7abbb19477eed88f5c1171c46fb",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T03:02:48.290590+00:00"
+  },
+  {
+    "path": "S0/checkpoint_identity.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/checkpoint_identity.json",
+    "source_bytes": 467,
+    "source_sha256": "07e2af2746b997be6730119fb75d1f846a535c322ee1ae1b108ce65d5c969698",
+    "bytes": 467,
+    "sha256": "07e2af2746b997be6730119fb75d1f846a535c322ee1ae1b108ce65d5c969698",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T04:38:58.643698+00:00"
+  },
+  {
+    "path": "S0/startup.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/startup.json",
+    "source_bytes": 190380,
+    "source_sha256": "7fcd6e2afc8ae3ddc2ab4fa4d4f82cfdd8f1607244f6f3d424f76f8724df7084",
+    "bytes": 190380,
+    "sha256": "7fcd6e2afc8ae3ddc2ab4fa4d4f82cfdd8f1607244f6f3d424f76f8724df7084",
+    "compression": null,
+    "source_mtime_utc": "2026-10-05T18:23:27.759520+00:00"
+  },
+  {
+    "path": "S0/coverage.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/coverage.json",
+    "source_bytes": 6883,
+    "source_sha256": "2b8b833724b422d2f295b7a9e71c4ab0e96532631ab4696c6f02f5cdc5f7ba2e",
+    "bytes": 6883,
+    "sha256": "2b8b833724b422d2f295b7a9e71c4ab0e96532631ab4696c6f02f5cdc5f7ba2e",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T04:39:00.576603+00:00"
+  },
+  {
+    "path": "S0/endpoint_reference.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/endpoint_reference.json",
+    "source_bytes": 73480,
+    "source_sha256": "80f542e7da1d21eaac2d360189aaa096d705300124f00b88af4a315abc346bc6",
+    "bytes": 73480,
+    "sha256": "80f542e7da1d21eaac2d360189aaa096d705300124f00b88af4a315abc346bc6",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:29:01.396823+00:00"
+  },
+  {
+    "path": "S0/evaluation_runtime_config.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/evaluation_runtime_config.json",
+    "source_bytes": 147457,
+    "source_sha256": "94c2ab8a63ff7650c4f3a6967337d77f55061299cc301395f23063707c9bde1a",
+    "bytes": 147457,
+    "sha256": "94c2ab8a63ff7650c4f3a6967337d77f55061299cc301395f23063707c9bde1a",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:29:01.393194+00:00"
+  },
+  {
+    "path": "S0/checkpoint-034000.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/checkpoint-034000.json",
+    "source_bytes": 467,
+    "source_sha256": "07e2af2746b997be6730119fb75d1f846a535c322ee1ae1b108ce65d5c969698",
+    "bytes": 467,
+    "sha256": "07e2af2746b997be6730119fb75d1f846a535c322ee1ae1b108ce65d5c969698",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T04:38:58.640622+00:00"
+  },
+  {
+    "path": "S0/train.jsonl.gz",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/train.jsonl",
+    "source_bytes": 33218791,
+    "source_sha256": "cc7b6adfb857c1189ee49077600ca05842a9f164cb5a7c2296297878bd3a2899",
+    "bytes": 6746602,
+    "sha256": "0f62448172d1d04fa57d3bd4a130eec8a05d43d34ade4c60bf958fa430424b9d",
+    "compression": "gzip",
+    "source_mtime_utc": "2026-10-07T04:37:51.329200+00:00"
+  },
+  {
+    "path": "S0/evaluation/summary.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/evaluation/summary.json",
+    "source_bytes": 4529,
+    "source_sha256": "1189110b3ca97568353c8c8dad9f1f96724dcb844a1fa5320856d365cca03198",
+    "bytes": 4529,
+    "sha256": "1189110b3ca97568353c8c8dad9f1f96724dcb844a1fa5320856d365cca03198",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:48:04.820101+00:00"
+  },
+  {
+    "path": "S0/evaluation/evaluation.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/evaluation/evaluation.json",
+    "source_bytes": 472136,
+    "source_sha256": "c731686fa563c8cb759bf321a6c21083d0f270c3c9433c756b2a67708a28a611",
+    "bytes": 472136,
+    "sha256": "c731686fa563c8cb759bf321a6c21083d0f270c3c9433c756b2a67708a28a611",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:48:04.801687+00:00"
+  },
+  {
+    "path": "S0/evaluation/generation_manifest.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/evaluation/generation_manifest.json",
+    "source_bytes": 27324,
+    "source_sha256": "b2089fde5d1b6fe87616ad5121617bee3cea4c1399af5ae4995dbb679116d185",
+    "bytes": 27324,
+    "sha256": "b2089fde5d1b6fe87616ad5121617bee3cea4c1399af5ae4995dbb679116d185",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:47:59.412867+00:00"
+  },
+  {
+    "path": "S0/evaluation/generation_progress.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/evaluation/generation_progress.json",
+    "source_bytes": 42,
+    "source_sha256": "f294056a0a4d80217f07a07c080ca3c93ec63590dec790806b36a31c34c228e4",
+    "bytes": 42,
+    "sha256": "f294056a0a4d80217f07a07c080ca3c93ec63590dec790806b36a31c34c228e4",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:47:51.331004+00:00"
+  },
+  {
+    "path": "S0/evaluation/runtime_identity.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S0/evaluation/runtime_identity.json",
+    "source_bytes": 73480,
+    "source_sha256": "80f542e7da1d21eaac2d360189aaa096d705300124f00b88af4a315abc346bc6",
+    "bytes": 73480,
+    "sha256": "80f542e7da1d21eaac2d360189aaa096d705300124f00b88af4a315abc346bc6",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:48:04.823506+00:00"
+  },
+  {
+    "path": "S1/status.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/status.json",
+    "source_bytes": 657,
+    "source_sha256": "04455ba27a738b560ce6d2b583e6a1e9fdfaae3a842dee0c3978116bd77d8fb3",
+    "bytes": 657,
+    "sha256": "04455ba27a738b560ce6d2b583e6a1e9fdfaae3a842dee0c3978116bd77d8fb3",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:48:21.778323+00:00"
+  },
+  {
+    "path": "S1/config.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/config.json",
+    "source_bytes": 43214,
+    "source_sha256": "5c8a6cb23b925a90f7cb2654281547566030ffa78221c71f11e3c579cf504522",
+    "bytes": 43214,
+    "sha256": "5c8a6cb23b925a90f7cb2654281547566030ffa78221c71f11e3c579cf504522",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T03:02:16.158420+00:00"
+  },
+  {
+    "path": "S1/checkpoint_identity.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/checkpoint_identity.json",
+    "source_bytes": 467,
+    "source_sha256": "d9f1aedfd17682691e7659b78fc38dc20204485f60ef4f4659b4e16b4671bd0b",
+    "bytes": 467,
+    "sha256": "d9f1aedfd17682691e7659b78fc38dc20204485f60ef4f4659b4e16b4671bd0b",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T04:39:52.305736+00:00"
+  },
+  {
+    "path": "S1/startup.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/startup.json",
+    "source_bytes": 190754,
+    "source_sha256": "db7cdcf7cbb47bfa48c9340dfe8259fc1a18761a21ad2066446fd5480a2cf857",
+    "bytes": 190754,
+    "sha256": "db7cdcf7cbb47bfa48c9340dfe8259fc1a18761a21ad2066446fd5480a2cf857",
+    "compression": null,
+    "source_mtime_utc": "2026-10-05T18:23:27.586990+00:00"
+  },
+  {
+    "path": "S1/coverage.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/coverage.json",
+    "source_bytes": 6883,
+    "source_sha256": "2b8b833724b422d2f295b7a9e71c4ab0e96532631ab4696c6f02f5cdc5f7ba2e",
+    "bytes": 6883,
+    "sha256": "2b8b833724b422d2f295b7a9e71c4ab0e96532631ab4696c6f02f5cdc5f7ba2e",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T04:39:54.251067+00:00"
+  },
+  {
+    "path": "S1/endpoint_reference.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/endpoint_reference.json",
+    "source_bytes": 73480,
+    "source_sha256": "66ecdb0df6fb696fe19fffc7f1adacae45dd8be93732095ea863c2a8486ee650",
+    "bytes": 73480,
+    "sha256": "66ecdb0df6fb696fe19fffc7f1adacae45dd8be93732095ea863c2a8486ee650",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:29:01.420797+00:00"
+  },
+  {
+    "path": "S1/evaluation_runtime_config.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/evaluation_runtime_config.json",
+    "source_bytes": 147457,
+    "source_sha256": "67f34e5fbc248c93d7d03d3661d84e4092e0100d1c70797ba201d8cf55514893",
+    "bytes": 147457,
+    "sha256": "67f34e5fbc248c93d7d03d3661d84e4092e0100d1c70797ba201d8cf55514893",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:29:01.416778+00:00"
+  },
+  {
+    "path": "S1/checkpoint-034000.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/checkpoint-034000.json",
+    "source_bytes": 467,
+    "source_sha256": "d9f1aedfd17682691e7659b78fc38dc20204485f60ef4f4659b4e16b4671bd0b",
+    "bytes": 467,
+    "sha256": "d9f1aedfd17682691e7659b78fc38dc20204485f60ef4f4659b4e16b4671bd0b",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T04:39:52.303352+00:00"
+  },
+  {
+    "path": "S1/train.jsonl.gz",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/train.jsonl",
+    "source_bytes": 33255971,
+    "source_sha256": "f69139d1040821e2a5584de18335caba64999b8edba73f335724e84e5206f8bf",
+    "bytes": 6747195,
+    "sha256": "cfb692422d55df605d28d63c71ea171a9d9c79f4bf393be7676a380b2309df1f",
+    "compression": "gzip",
+    "source_mtime_utc": "2026-10-07T04:38:43.490338+00:00"
+  },
+  {
+    "path": "S1/evaluation/summary.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/evaluation/summary.json",
+    "source_bytes": 4521,
+    "source_sha256": "3e591d88eb20dd827cdd4bde3a7c1c08ac99442028e5e96dcf3179b5b0009dcd",
+    "bytes": 4521,
+    "sha256": "3e591d88eb20dd827cdd4bde3a7c1c08ac99442028e5e96dcf3179b5b0009dcd",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:48:21.769845+00:00"
+  },
+  {
+    "path": "S1/evaluation/evaluation.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/evaluation/evaluation.json",
+    "source_bytes": 470912,
+    "source_sha256": "4d5a96c4bdcd5ecdf71ef96de4033f187d90b474bf500df50975b5694d6ee794",
+    "bytes": 470912,
+    "sha256": "4d5a96c4bdcd5ecdf71ef96de4033f187d90b474bf500df50975b5694d6ee794",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:48:21.744327+00:00"
+  },
+  {
+    "path": "S1/evaluation/generation_manifest.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/evaluation/generation_manifest.json",
+    "source_bytes": 27324,
+    "source_sha256": "ef4b4f438aac2ff982735feaa56a87fba2afdaf798ff74e956fd3c498cfd762b",
+    "bytes": 27324,
+    "sha256": "ef4b4f438aac2ff982735feaa56a87fba2afdaf798ff74e956fd3c498cfd762b",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:48:16.500452+00:00"
+  },
+  {
+    "path": "S1/evaluation/generation_progress.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/evaluation/generation_progress.json",
+    "source_bytes": 42,
+    "source_sha256": "f294056a0a4d80217f07a07c080ca3c93ec63590dec790806b36a31c34c228e4",
+    "bytes": 42,
+    "sha256": "f294056a0a4d80217f07a07c080ca3c93ec63590dec790806b36a31c34c228e4",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:48:08.399545+00:00"
+  },
+  {
+    "path": "S1/evaluation/runtime_identity.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S1/evaluation/runtime_identity.json",
+    "source_bytes": 73480,
+    "source_sha256": "66ecdb0df6fb696fe19fffc7f1adacae45dd8be93732095ea863c2a8486ee650",
+    "bytes": 73480,
+    "sha256": "66ecdb0df6fb696fe19fffc7f1adacae45dd8be93732095ea863c2a8486ee650",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:48:21.775228+00:00"
+  },
+  {
+    "path": "S2/status.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S2/status.json",
+    "source_bytes": 625,
+    "source_sha256": "cc9de1ce7263342d659b548fe34d3f17a3c6d597ea002f42cf32885011f670b2",
+    "bytes": 625,
+    "sha256": "cc9de1ce7263342d659b548fe34d3f17a3c6d597ea002f42cf32885011f670b2",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T18:35:08.907726+00:00"
+  },
+  {
+    "path": "S2/config.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S2/config.json",
+    "source_bytes": 40734,
+    "source_sha256": "aa2cd31c750e6976b6983541a532d2fb60f17aee69da95c83e8cf0544ff7e229",
+    "bytes": 40734,
+    "sha256": "aa2cd31c750e6976b6983541a532d2fb60f17aee69da95c83e8cf0544ff7e229",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:49:24.056160+00:00"
+  },
+  {
+    "path": "S2/checkpoint_identity.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S2/checkpoint_identity.json",
+    "source_bytes": 468,
+    "source_sha256": "0ec4781ab71e80f86c5aadf4e86051ca4dbfd2e4f95ac153d904a9864f3736ee",
+    "bytes": 468,
+    "sha256": "0ec4781ab71e80f86c5aadf4e86051ca4dbfd2e4f95ac153d904a9864f3736ee",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T18:33:04.385258+00:00"
+  },
+  {
+    "path": "S2/startup.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S2/startup.json",
+    "source_bytes": 185943,
+    "source_sha256": "16cbfef6bbedf157b0b7507baf18d5255c203f1f848bb758b5525d83f1aa3041",
+    "bytes": 185943,
+    "sha256": "16cbfef6bbedf157b0b7507baf18d5255c203f1f848bb758b5525d83f1aa3041",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:49:24.066927+00:00"
+  },
+  {
+    "path": "S2/checkpoint-029800.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S2/checkpoint-029800.json",
+    "source_bytes": 468,
+    "source_sha256": "69b56f80f64fd0ea68e8d3702b216dda48f5baceb71d6190af8600ea4afbec15",
+    "bytes": 468,
+    "sha256": "69b56f80f64fd0ea68e8d3702b216dda48f5baceb71d6190af8600ea4afbec15",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T18:27:43.287041+00:00"
+  },
+  {
+    "path": "S2/checkpoint-030000.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S2/checkpoint-030000.json",
+    "source_bytes": 468,
+    "source_sha256": "0ec4781ab71e80f86c5aadf4e86051ca4dbfd2e4f95ac153d904a9864f3736ee",
+    "bytes": 468,
+    "sha256": "0ec4781ab71e80f86c5aadf4e86051ca4dbfd2e4f95ac153d904a9864f3736ee",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T18:33:04.383015+00:00"
+  },
+  {
+    "path": "S2/train.jsonl.gz",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S2/train.jsonl",
+    "source_bytes": 20218156,
+    "source_sha256": "d930e63301e75053430129f7b62cbcb337e7b4ec6d2a759b8e9ad0d0621f8d69",
+    "bytes": 4115377,
+    "sha256": "99b2c13ca5c57f4f2f7c3d25a0bb8bfd2abcf454a1cba56da66e1620138c3503",
+    "compression": "gzip",
+    "source_mtime_utc": "2026-10-07T18:35:08.906197+00:00"
+  },
+  {
+    "path": "S3/status.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S3/status.json",
+    "source_bytes": 626,
+    "source_sha256": "293c33c6614551ad48da1e49517b0fd588bd12d7141b006ba86783a3e6a2ce87",
+    "bytes": 626,
+    "sha256": "293c33c6614551ad48da1e49517b0fd588bd12d7141b006ba86783a3e6a2ce87",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T18:35:08.365057+00:00"
+  },
+  {
+    "path": "S3/config.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S3/config.json",
+    "source_bytes": 37684,
+    "source_sha256": "cef6d748c435e179493470c24b410288c892f2a965cf6eee4071234cffb20202",
+    "bytes": 37684,
+    "sha256": "cef6d748c435e179493470c24b410288c892f2a965cf6eee4071234cffb20202",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:49:20.005742+00:00"
+  },
+  {
+    "path": "S3/checkpoint_identity.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S3/checkpoint_identity.json",
+    "source_bytes": 468,
+    "source_sha256": "628efa529d624d1c5094e4dd12e51994cc3016124ffd5d4cd18f90988db43a7e",
+    "bytes": 468,
+    "sha256": "628efa529d624d1c5094e4dd12e51994cc3016124ffd5d4cd18f90988db43a7e",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T18:33:02.044263+00:00"
+  },
+  {
+    "path": "S3/startup.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S3/startup.json",
+    "source_bytes": 190587,
+    "source_sha256": "fcec6393b73c6042c84af96144e007f6c4b66e0b013bd2a826e9e20456574e75",
+    "bytes": 190587,
+    "sha256": "fcec6393b73c6042c84af96144e007f6c4b66e0b013bd2a826e9e20456574e75",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:49:20.017679+00:00"
+  },
+  {
+    "path": "S3/checkpoint-029400.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S3/checkpoint-029400.json",
+    "source_bytes": 468,
+    "source_sha256": "aaca8df4d8641f687bf50ee6a5d3b5779f16b0290702c0110b4be9765ad2efee",
+    "bytes": 468,
+    "sha256": "aaca8df4d8641f687bf50ee6a5d3b5779f16b0290702c0110b4be9765ad2efee",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T18:27:03.800146+00:00"
+  },
+  {
+    "path": "S3/checkpoint-029600.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S3/checkpoint-029600.json",
+    "source_bytes": 468,
+    "source_sha256": "628efa529d624d1c5094e4dd12e51994cc3016124ffd5d4cd18f90988db43a7e",
+    "bytes": 468,
+    "sha256": "628efa529d624d1c5094e4dd12e51994cc3016124ffd5d4cd18f90988db43a7e",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T18:33:02.042116+00:00"
+  },
+  {
+    "path": "S3/train.jsonl.gz",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S3/train.jsonl",
+    "source_bytes": 18848956,
+    "source_sha256": "977ea31b365f00a6a3312f4e1334e51b70b0ab84881d38bb00d8c1d2cf6110ce",
+    "bytes": 3839682,
+    "sha256": "4ceb4824f51bd82a85b6cd943a3c959eae8f52f8e3bb6512b2d5aaee5b5c9e29",
+    "compression": "gzip",
+    "source_mtime_utc": "2026-10-07T18:35:08.363574+00:00"
+  },
+  {
+    "path": "queue/queue_status.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/queue_status.json",
+    "source_bytes": 518,
+    "source_sha256": "83fea7d096deabc7ec758808d5fd8f977816168be4b084c724c2bb8ebd0da530",
+    "bytes": 518,
+    "sha256": "83fea7d096deabc7ec758808d5fd8f977816168be4b084c724c2bb8ebd0da530",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T18:35:05.624086+00:00"
+  },
+  {
+    "path": "queue/commands.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/audit/commands.json",
+    "source_bytes": 5325,
+    "source_sha256": "683c87fd3e2944084a399eaa3737b4ca28ff93c365b9a774060a34af11f920a2",
+    "bytes": 5325,
+    "sha256": "683c87fd3e2944084a399eaa3737b4ca28ff93c365b9a774060a34af11f920a2",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:48:24.548914+00:00"
+  },
+  {
+    "path": "queue/queue_config.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/queue_config.json",
+    "source_bytes": 73839,
+    "source_sha256": "43d40e7f17173c1090fb04a12a76007de5670bd911b44a58ab5c220dc52ec96c",
+    "bytes": 73839,
+    "sha256": "43d40e7f17173c1090fb04a12a76007de5670bd911b44a58ab5c220dc52ec96c",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:28:06.862449+00:00"
+  },
+  {
+    "path": "queue/CONTINUATION.md",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/audit/CONTINUATION.md",
+    "source_bytes": 3159,
+    "source_sha256": "01411cdfdaa436bdc325bb8f48b9333873c28b0ffddb39792772f5a002eeb733",
+    "bytes": 3159,
+    "sha256": "01411cdfdaa436bdc325bb8f48b9333873c28b0ffddb39792772f5a002eeb733",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:30:34.931897+00:00"
+  },
+  {
+    "path": "queue/launch.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/audit/launch.json",
+    "source_bytes": 2278,
+    "source_sha256": "c4b2ec771f375e5eedaa81993e6034870db6a4f7189ecb3e03053ab2ac59b140",
+    "bytes": 2278,
+    "sha256": "c4b2ec771f375e5eedaa81993e6034870db6a4f7189ecb3e03053ab2ac59b140",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:27:35.540162+00:00"
+  },
+  {
+    "path": "queue/environment_final.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/audit/environment_final.json",
+    "source_bytes": 1113,
+    "source_sha256": "e66e04e0759dc3f32621597cb05cc7492fbeedb33da6645e51e72104aba1bdfa",
+    "bytes": 1113,
+    "sha256": "e66e04e0759dc3f32621597cb05cc7492fbeedb33da6645e51e72104aba1bdfa",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:14:48.375149+00:00"
+  },
+  {
+    "path": "queue/review.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/audit/review.json",
+    "source_bytes": 633,
+    "source_sha256": "c225ca0ab63910c20ee4de3818e6d7db1452aae92340a1158439aabed4116dbb",
+    "bytes": 633,
+    "sha256": "c225ca0ab63910c20ee4de3818e6d7db1452aae92340a1158439aabed4116dbb",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:30:35.007856+00:00"
+  },
+  {
+    "path": "queue/S0.log.gz",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/audit/S0.log",
+    "source_bytes": 0,
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 20,
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+    "compression": "gzip",
+    "source_mtime_utc": "2026-10-07T15:28:06.936223+00:00"
+  },
+  {
+    "path": "queue/S1.log.gz",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/audit/S1.log",
+    "source_bytes": 0,
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 20,
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+    "compression": "gzip",
+    "source_mtime_utc": "2026-10-07T15:28:07.023837+00:00"
+  },
+  {
+    "path": "queue/S2.log.gz",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/audit/S2.log",
+    "source_bytes": 1570863,
+    "source_sha256": "50bf7c530092282fc19c8a4cd2ccfda072403e888181329617439a487132a548",
+    "bytes": 293658,
+    "sha256": "0ac9f33f7e3e9b4d4d0a6197c9117ed84516285c1cdeb524044a528e9a859943",
+    "compression": "gzip",
+    "source_mtime_utc": "2026-10-07T18:35:08.909189+00:00"
+  },
+  {
+    "path": "queue/S3.log.gz",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/audit/S3.log",
+    "source_bytes": 1464721,
+    "source_sha256": "26c05e7928f5378d3392b17b6cbc9e703442bda02614a42ae7ccf11cd1bf6c76",
+    "bytes": 273290,
+    "sha256": "fa13da808c8c798673d94213153b38541230c2cec67436071ffc3670e2115db3",
+    "compression": "gzip",
+    "source_mtime_utc": "2026-10-07T18:35:08.366732+00:00"
+  },
+  {
+    "path": "source/eval_continue.py",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/code/eval_continue.py",
+    "source_bytes": 18795,
+    "source_sha256": "35336470b9965a8d3bd3e37451123590f126a5f7c540e77f28bd10aab647beef",
+    "bytes": 18795,
+    "sha256": "35336470b9965a8d3bd3e37451123590f126a5f7c540e77f28bd10aab647beef",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:12:42.881663+00:00"
+  },
+  {
+    "path": "source/eval_continue_queue.py",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/code/eval_continue_queue.py",
+    "source_bytes": 10618,
+    "source_sha256": "fa587e89003919cb8fe6075e9e7a3236d5aaa64a10aac6b0cf2e044333e72c1f",
+    "bytes": 10618,
+    "sha256": "fa587e89003919cb8fe6075e9e7a3236d5aaa64a10aac6b0cf2e044333e72c1f",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:12:42.973132+00:00"
+  },
+  {
+    "path": "source/frozen_code_identity.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/code/frozen_code_identity.json",
+    "source_bytes": 1033,
+    "source_sha256": "dff097cab58591b7dea3b95563897a5521c81a72d2ff6e0509dfc278d338e93b",
+    "bytes": 1033,
+    "sha256": "dff097cab58591b7dea3b95563897a5521c81a72d2ff6e0509dfc278d338e93b",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T15:12:43.266838+00:00"
+  },
+  {
+    "path": "source/EXECUTION_CARD.md",
+    "source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006/EXECUTION_CARD.md",
+    "source_bytes": 6385,
+    "source_sha256": "61a71025d4475a8111b4c5b8a354a5e7880c870180fd6416d85cde2b0783a900",
+    "bytes": 6385,
+    "sha256": "61a71025d4475a8111b4c5b8a354a5e7880c870180fd6416d85cde2b0783a900",
+    "compression": null,
+    "source_mtime_utc": "2026-10-05T18:21:04.361438+00:00"
+  },
+  {
+    "path": "source/ARCHITECTURE_CARD.md",
+    "source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006/ARCHITECTURE_CARD.md",
+    "source_bytes": 14924,
+    "source_sha256": "3b7176ef2c9670510c9f5183218f45ecbffac610e62517d6dbbcd58b57b507ea",
+    "bytes": 14924,
+    "sha256": "3b7176ef2c9670510c9f5183218f45ecbffac610e62517d6dbbcd58b57b507ea",
+    "compression": null,
+    "source_mtime_utc": "2026-10-05T18:21:04.150948+00:00"
+  },
+  {
+    "path": "source/train_sweep.py",
+    "source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006/train_sweep.py",
+    "source_bytes": 24164,
+    "source_sha256": "e60bbc1d6e09292ec656fd8740f1862bae9a6196ae1ab8ad5206b08d211dd1ea",
+    "bytes": 24164,
+    "sha256": "e60bbc1d6e09292ec656fd8740f1862bae9a6196ae1ab8ad5206b08d211dd1ea",
+    "compression": null,
+    "source_mtime_utc": "2026-10-05T18:20:18.231194+00:00"
+  },
+  {
+    "path": "smoke_only/S5_status.json",
+    "source": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/nexus_vertex_arch_sweep_20261006/smoke_S5_group2/status.json",
+    "source_bytes": 562,
+    "source_sha256": "be112acf087500afee55fc3c64d733fea4ca08506e602cbf2abe7a0357133b54",
+    "bytes": 562,
+    "sha256": "be112acf087500afee55fc3c64d733fea4ca08506e602cbf2abe7a0357133b54",
+    "compression": null,
+    "source_mtime_utc": "2026-10-05T18:19:10.770989+00:00"
+  },
+  {
+    "path": "previous_endpoint_import_failure/S0_status.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/runs/S0/status.json",
+    "source_bytes": 1473,
+    "source_sha256": "b8fef4eb68280cf2101fb4b695cfc2efeb2afd17140269177b59027e345c058a",
+    "bytes": 1473,
+    "sha256": "b8fef4eb68280cf2101fb4b695cfc2efeb2afd17140269177b59027e345c058a",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T04:39:02.134186+00:00"
+  },
+  {
+    "path": "previous_endpoint_import_failure/S1_status.json",
+    "source": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007/runs/S1/status.json",
+    "source_bytes": 1473,
+    "source_sha256": "715372ca2d2d3101a806782d6199c825a73b7e182cce5e84dc739db7e041bf05",
+    "bytes": 1473,
+    "sha256": "715372ca2d2d3101a806782d6199c825a73b7e182cce5e84dc739db7e041bf05",
+    "compression": null,
+    "source_mtime_utc": "2026-10-07T04:39:54.537359+00:00"
+  }
+]

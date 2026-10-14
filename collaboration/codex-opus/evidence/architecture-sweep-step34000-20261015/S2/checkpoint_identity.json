@@ -1,0 +1,13 @@
+{
+  "path": "/guohaoran/tmp/nexus_vertex_arch_sweep_recovery_20261007b/runs/S2/checkpoint-030000.pt",
+  "sha256": "0f93844224cb2e3774763c621753caba208b9ce4f7158d67974bc907803de04a",
+  "bytes": 27989112524,
+  "step": 30000,
+  "sweep_update": 6000,
+  "schedule_next_event": 48000,
+  "full_model_adam_rng": true,
+  "atomic_write_fsynced": true,
+  "readback_verified": true,
+  "readback_scope": "all model/Adam/RNG/config/cursor/exposure values exact",
+  "final": false
+}
