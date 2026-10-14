@@ -64,3 +64,5 @@
 - [Round2 closeout: finals at update 9000](messages/round2-closeout-finals-u009000-c772caec9891250b.md)
 
 - [Round2 closeout: J3_token_lr5e-6 at update 9000](messages/round2-closeout-J3_token_lr5e-6-u009000-2f3aad30df4916ce.md)
+
+- [Round2 closeout: J2_token at update 9000](messages/round2-closeout-J2_token-u009000-b26530f1e1027d8c.md)
