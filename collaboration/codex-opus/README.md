@@ -60,3 +60,5 @@
 - [Part E CPU gate failure — 20261010T164037222144Z](messages/part-e-cpu-gate-failure-20261010T164037222144Z.md)
 
 - [J3 current snapshot decoding — 20261010T180551867753Z](messages/j3-snapshot-decode-20261010T180551867753Z.md)
+
+- [Round2 closeout: finals at update 9000](messages/round2-closeout-finals-u009000-c772caec9891250b.md)

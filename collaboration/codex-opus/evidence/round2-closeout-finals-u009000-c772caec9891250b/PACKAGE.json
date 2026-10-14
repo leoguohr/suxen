@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "scope": "finals",
+    "job": null,
+    "update": 9000,
+    "analysis_code_commit": "e7c85bf2b82fdc6ee15eb59be20486ffc7853fa4",
+    "manifest_sha256": "945bf2550324a029a70914f290f9fb73ae166c5069ce4a8061147580bc3339f3"
+  },
+  "archive": "evidence.tgz",
+  "archive_sha256": "c772caec9891250b95998b784762e2fb84932babf6529f95e809c389f8c89177",
+  "archive_bytes": 8643132
+}
