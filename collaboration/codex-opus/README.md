@@ -62,3 +62,5 @@
 - [J3 current snapshot decoding — 20261010T180551867753Z](messages/j3-snapshot-decode-20261010T180551867753Z.md)
 
 - [Round2 closeout: finals at update 9000](messages/round2-closeout-finals-u009000-c772caec9891250b.md)
+
+- [Round2 closeout: J3_token_lr5e-6 at update 9000](messages/round2-closeout-J3_token_lr5e-6-u009000-2f3aad30df4916ce.md)
