@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "scope": "decode",
+    "job": "J5_token_fine2",
+    "update": 9000,
+    "analysis_code_commit": "e7c85bf2b82fdc6ee15eb59be20486ffc7853fa4",
+    "manifest_sha256": "8ce6aa93546d528ccdc1122a5285bf9009a7af759144274fd94175b6e11b0656"
+  },
+  "archive": "evidence.tgz",
+  "archive_sha256": "cab7249edee65ed0d3c507e1406e2ed4bbecebfa94619c8daaffa5b9a37590c3",
+  "archive_bytes": 1777077
+}
