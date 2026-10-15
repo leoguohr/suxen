@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "uid": "nexus_2k_001093",
+  "j5_files": 32,
+  "j2_files": 12,
+  "prediction_files": 44,
+  "all_saved_thresholds_verified": true,
+  "all_tree_pass_values_recomputed": true,
+  "all_saved_parent_expansions_verified": true,
+  "training_label_hashes_verified": true,
+  "repository_unchanged": true,
+  "gpu_used": false,
+  "training_started": false,
+  "same_persistent_missing_cells": [
+    [
+      18,
+      31,
+      35
+    ]
+  ]
+}

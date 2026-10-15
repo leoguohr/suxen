@@ -1,0 +1,52 @@
+[
+  {
+    "path": "CODE_REFERENCES.md",
+    "bytes": 879,
+    "sha256": "0189aacd4025c116a789a9e9e0d9a78401ddcb6d9760835d34d9f8472575f346"
+  },
+  {
+    "path": "EXECUTION.txt",
+    "bytes": 410,
+    "sha256": "7e91181799a693d1be0cfc49efee92ca8cb77e008cc6f0de9e0d2d592bcb4fff"
+  },
+  {
+    "path": "INPUT_MANIFEST.json",
+    "bytes": 20518,
+    "sha256": "c23f0183918ea0373db36d8e752e0a3eea77a4b0028b4f4a96382f8fba437465"
+  },
+  {
+    "path": "REPORT.md",
+    "bytes": 33733,
+    "sha256": "79ef9ad65478e9055943a567d7dc38dcb0f5a6a933e05ef36287ce7515584a92"
+  },
+  {
+    "path": "STATUS.json",
+    "bytes": 452,
+    "sha256": "74312cdd99a26d28f9011a479d944768fb77e0aa545a0241dc2081713ba5ca6b"
+  },
+  {
+    "path": "diagnose_001093.py",
+    "bytes": 20860,
+    "sha256": "56255d782634609caa9ad44a12af46256b5fa284986dbb9b2077b0ef302e7bec"
+  },
+  {
+    "path": "diagnosis.json",
+    "bytes": 541922,
+    "sha256": "c438ea5c26999fda1fad6e260a85b08b00b3215d6f31939051b7ddb9ebe4ac2d"
+  },
+  {
+    "path": "diagnosis.log",
+    "bytes": 6734,
+    "sha256": "f66e0e10f12cf23aff7bedc356a1c0eed9c922f56118cf78e18643d47ab27ffe"
+  },
+  {
+    "path": "package_partc.py",
+    "bytes": 7521,
+    "sha256": "cc851499bd867cbd63b6a0056569e03dec97a182d74ebe793cc8cfb34e05ee72"
+  },
+  {
+    "path": "publish_partc.py",
+    "bytes": 11278,
+    "sha256": "a4349cd70a8e2b084be903bae9c4e8ebd11b79966c4f4c1edb812259716ba6f5"
+  }
+]
