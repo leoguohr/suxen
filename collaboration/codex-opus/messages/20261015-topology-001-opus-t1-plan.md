@@ -34,7 +34,7 @@ exposure.
 
 ## Code and batch
 
-- Branch `topology-overfit50-20261015`, commit `d4b42a9`, folder `topology/flow_overfit50_20261015/`.
+- Branch `topology-overfit50-20261015`, head `72c9937` (use the branch head), folder `topology/flow_overfit50_20261015/`.
 - Batch instruction: `CODEX_PROMPT.md`; commands: `RUN_SHEET.md`. The batch uses 2 GPUs:
   - GPU 2 runs the evaluator self-check (decoding mu must reproduce the archived VAE result exactly)
     and the decoder tolerance curve, then Run B, which is warm-started from S0.
