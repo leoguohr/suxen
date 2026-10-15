@@ -1,0 +1,20 @@
+{
+  "note": "Byte-identical copies. Do not edit; tests/test_cpu.py checks these SHA256 values.",
+  "files": {
+    "vertex_s0.py": {
+      "sha256": "39491f94fadec84797b59a92d969dd923353abeea29a91a02e1a0f904ae1f386",
+      "source": "leoguohr/suxen branch vertex-dense-overfit50-20261009 (e7e3a32), vertex/dense_overfit50_20261009/vendor/mini_nexus/vertex.py",
+      "what": "The vertex chat's S0 model code: VertexDiT blocks (_VertexBlock), VecSet VertexConditionEncoder, XYZ RoPE, Fourier features"
+    },
+    "ownae_v2_native_models.py": {
+      "sha256": "ad754ba4c83213ea6b69b2c6f496095924c6a4c2bfbd9c7c0300372ecb4fa1f3",
+      "source": "leoguohr/suxen branch vae/archive-20261008 (c9b28ad), vae/current/code/native_models.py",
+      "what": "Frozen OwnAE-v2 VAE (B_v2_teacher_blocks, latent 512); same SHA as the checkpoint's recorded parent code and as the archived flow's _vae_reference.py"
+    },
+    "samplers.py": {
+      "sha256": "e1bcc2e0c26c20797092f7614af1c58904082bffd0538efec2cd95ee1fbc50ed",
+      "source": "leoguohr/suxen branch vertex-dense-overfit50-20261009 (e7e3a32), vertex/dense_overfit50_20261009/samplers.py",
+      "what": "Euler and DPM-Solver++(2M) for x_t = t x1 + (1 - t) x0, t = 0 noise"
+    }
+  }
+}

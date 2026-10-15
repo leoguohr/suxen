@@ -1,0 +1,975 @@
+{
+ "source": "archive/topology-flow-20261008 snapshot/initial/vae_baseline/mu/*/metrics.json (frozen OwnAE-v2 step36220, cached mu, logit>0, all predicted-edge triangles)",
+ "vae_sha256": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15",
+ "cache_manifest_sha256": "f14f796c421cab6b9d5206047f927ea7c3490ff3c2435b2ebd38904a749c27e3",
+ "uids": [
+  "nexus_2k_001150",
+  "nexus_2k_001045",
+  "nexus_2k_000084",
+  "nexus_2k_001692",
+  "nexus_2k_001843",
+  "nexus_2k_000346",
+  "nexus_2k_001780",
+  "nexus_2k_000796",
+  "nexus_2k_001085",
+  "nexus_2k_000020",
+  "nexus_2k_000447",
+  "nexus_2k_001179",
+  "nexus_2k_000118",
+  "nexus_2k_000074",
+  "nexus_2k_000519",
+  "nexus_2k_001087",
+  "nexus_2k_000053",
+  "nexus_2k_000675",
+  "nexus_2k_001716",
+  "nexus_2k_000242",
+  "nexus_2k_000823",
+  "nexus_2k_001536",
+  "nexus_2k_000840",
+  "nexus_2k_001577",
+  "nexus_2k_001216",
+  "nexus_2k_001331",
+  "nexus_2k_000142",
+  "nexus_2k_001550",
+  "nexus_2k_000872",
+  "nexus_2k_000952",
+  "nexus_2k_001825",
+  "nexus_2k_001483",
+  "nexus_2k_001439",
+  "nexus_2k_001178",
+  "nexus_2k_001317",
+  "nexus_2k_000869",
+  "nexus_2k_001415",
+  "nexus_2k_000283",
+  "nexus_2k_000935",
+  "nexus_2k_000815",
+  "nexus_2k_000800",
+  "nexus_2k_001211",
+  "nexus_2k_001093",
+  "nexus_2k_000783",
+  "nexus_2k_000083",
+  "nexus_2k_001792",
+  "nexus_2k_000280",
+  "nexus_2k_000167",
+  "nexus_2k_001232",
+  "nexus_2k_000898"
+ ],
+ "totals": {
+  "edge": {
+   "tp": 154973,
+   "fp": 125,
+   "fn": 5,
+   "tn": 41711618
+  },
+  "face": {
+   "tp": 102878,
+   "fp": 870,
+   "fn": 12,
+   "tn": 118
+  }
+ },
+ "per_uid": {
+  "nexus_2k_001150": {
+   "edge": {
+    "tp": 42,
+    "fp": 0,
+    "fn": 0,
+    "tn": 111
+   },
+   "face": {
+    "tp": 28,
+    "fp": 0,
+    "fn": 0,
+    "tn": 1
+   },
+   "candidates": 29,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001045": {
+   "edge": {
+    "tp": 156,
+    "fp": 0,
+    "fn": 0,
+    "tn": 1275
+   },
+   "face": {
+    "tp": 104,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 104,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000084": {
+   "edge": {
+    "tp": 378,
+    "fp": 0,
+    "fn": 0,
+    "tn": 7750
+   },
+   "face": {
+    "tp": 252,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 252,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001692": {
+   "edge": {
+    "tp": 413,
+    "fp": 0,
+    "fn": 0,
+    "tn": 10762
+   },
+   "face": {
+    "tp": 274,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 274,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001843": {
+   "edge": {
+    "tp": 576,
+    "fp": 0,
+    "fn": 0,
+    "tn": 17002
+   },
+   "face": {
+    "tp": 392,
+    "fp": 11,
+    "fn": 0,
+    "tn": 7
+   },
+   "candidates": 410,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000346": {
+   "edge": {
+    "tp": 570,
+    "fp": 0,
+    "fn": 0,
+    "tn": 17766
+   },
+   "face": {
+    "tp": 380,
+    "fp": 0,
+    "fn": 0,
+    "tn": 2
+   },
+   "candidates": 382,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001780": {
+   "edge": {
+    "tp": 576,
+    "fp": 0,
+    "fn": 0,
+    "tn": 18534
+   },
+   "face": {
+    "tp": 384,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 384,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000796": {
+   "edge": {
+    "tp": 634,
+    "fp": 1,
+    "fn": 0,
+    "tn": 19265
+   },
+   "face": {
+    "tp": 468,
+    "fp": 41,
+    "fn": 0,
+    "tn": 22
+   },
+   "candidates": 531,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001085": {
+   "edge": {
+    "tp": 657,
+    "fp": 0,
+    "fn": 0,
+    "tn": 24768
+   },
+   "face": {
+    "tp": 432,
+    "fp": 1,
+    "fn": 0,
+    "tn": 1
+   },
+   "candidates": 434,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000020": {
+   "edge": {
+    "tp": 811,
+    "fp": 0,
+    "fn": 0,
+    "tn": 40517
+   },
+   "face": {
+    "tp": 534,
+    "fp": 1,
+    "fn": 0,
+    "tn": 15
+   },
+   "candidates": 550,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000447": {
+   "edge": {
+    "tp": 1140,
+    "fp": 1,
+    "fn": 0,
+    "tn": 53805
+   },
+   "face": {
+    "tp": 760,
+    "fp": 2,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 762,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001179": {
+   "edge": {
+    "tp": 975,
+    "fp": 0,
+    "fn": 0,
+    "tn": 51675
+   },
+   "face": {
+    "tp": 650,
+    "fp": 0,
+    "fn": 0,
+    "tn": 1
+   },
+   "candidates": 651,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000118": {
+   "edge": {
+    "tp": 847,
+    "fp": 0,
+    "fn": 0,
+    "tn": 64494
+   },
+   "face": {
+    "tp": 502,
+    "fp": 0,
+    "fn": 0,
+    "tn": 2
+   },
+   "candidates": 504,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000074": {
+   "edge": {
+    "tp": 1152,
+    "fp": 0,
+    "fn": 0,
+    "tn": 73153
+   },
+   "face": {
+    "tp": 768,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 768,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000519": {
+   "edge": {
+    "tp": 1133,
+    "fp": 0,
+    "fn": 0,
+    "tn": 75503
+   },
+   "face": {
+    "tp": 748,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 748,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001087": {
+   "edge": {
+    "tp": 1266,
+    "fp": 0,
+    "fn": 0,
+    "tn": 89259
+   },
+   "face": {
+    "tp": 843,
+    "fp": 1,
+    "fn": 1,
+    "tn": 7
+   },
+   "candidates": 852,
+   "face_fn_missing": 0,
+   "face_fn_present": 1
+  },
+  "nexus_2k_000053": {
+   "edge": {
+    "tp": 1458,
+    "fp": 2,
+    "fn": 0,
+    "tn": 117368
+   },
+   "face": {
+    "tp": 972,
+    "fp": 3,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 975,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000675": {
+   "edge": {
+    "tp": 1542,
+    "fp": 0,
+    "fn": 0,
+    "tn": 131328
+   },
+   "face": {
+    "tp": 1028,
+    "fp": 0,
+    "fn": 0,
+    "tn": 6
+   },
+   "candidates": 1034,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001716": {
+   "edge": {
+    "tp": 1544,
+    "fp": 0,
+    "fn": 0,
+    "tn": 140767
+   },
+   "face": {
+    "tp": 1024,
+    "fp": 10,
+    "fn": 0,
+    "tn": 4
+   },
+   "candidates": 1038,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000242": {
+   "edge": {
+    "tp": 1962,
+    "fp": 2,
+    "fn": 0,
+    "tn": 210262
+   },
+   "face": {
+    "tp": 1308,
+    "fp": 51,
+    "fn": 0,
+    "tn": 3
+   },
+   "candidates": 1362,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000823": {
+   "edge": {
+    "tp": 1996,
+    "fp": 0,
+    "fn": 0,
+    "tn": 219449
+   },
+   "face": {
+    "tp": 1330,
+    "fp": 1,
+    "fn": 0,
+    "tn": 2
+   },
+   "candidates": 1333,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001536": {
+   "edge": {
+    "tp": 2178,
+    "fp": 0,
+    "fn": 0,
+    "tn": 262450
+   },
+   "face": {
+    "tp": 1452,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 1452,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000840": {
+   "edge": {
+    "tp": 2337,
+    "fp": 2,
+    "fn": 0,
+    "tn": 315664
+   },
+   "face": {
+    "tp": 1542,
+    "fp": 3,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 1545,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001577": {
+   "edge": {
+    "tp": 2478,
+    "fp": 2,
+    "fn": 0,
+    "tn": 346550
+   },
+   "face": {
+    "tp": 1652,
+    "fp": 3,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 1655,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001216": {
+   "edge": {
+    "tp": 2765,
+    "fp": 0,
+    "fn": 0,
+    "tn": 436688
+   },
+   "face": {
+    "tp": 1830,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 1830,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001331": {
+   "edge": {
+    "tp": 2736,
+    "fp": 4,
+    "fn": 0,
+    "tn": 466256
+   },
+   "face": {
+    "tp": 1824,
+    "fp": 18,
+    "fn": 0,
+    "tn": 3
+   },
+   "candidates": 1845,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000142": {
+   "edge": {
+    "tp": 3021,
+    "fp": 0,
+    "fn": 0,
+    "tn": 525885
+   },
+   "face": {
+    "tp": 2002,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 2002,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001550": {
+   "edge": {
+    "tp": 3429,
+    "fp": 5,
+    "fn": 0,
+    "tn": 642382
+   },
+   "face": {
+    "tp": 2312,
+    "fp": 18,
+    "fn": 0,
+    "tn": 7
+   },
+   "candidates": 2337,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000872": {
+   "edge": {
+    "tp": 3438,
+    "fp": 2,
+    "fn": 0,
+    "tn": 734065
+   },
+   "face": {
+    "tp": 2240,
+    "fp": 92,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 2332,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000952": {
+   "edge": {
+    "tp": 3741,
+    "fp": 2,
+    "fn": 0,
+    "tn": 778132
+   },
+   "face": {
+    "tp": 2494,
+    "fp": 2,
+    "fn": 0,
+    "tn": 2
+   },
+   "candidates": 2498,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001825": {
+   "edge": {
+    "tp": 3452,
+    "fp": 4,
+    "fn": 0,
+    "tn": 811270
+   },
+   "face": {
+    "tp": 2274,
+    "fp": 7,
+    "fn": 0,
+    "tn": 2
+   },
+   "candidates": 2283,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001483": {
+   "edge": {
+    "tp": 4206,
+    "fp": 0,
+    "fn": 0,
+    "tn": 1000447
+   },
+   "face": {
+    "tp": 2804,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 2804,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001439": {
+   "edge": {
+    "tp": 4351,
+    "fp": 2,
+    "fn": 0,
+    "tn": 1040382
+   },
+   "face": {
+    "tp": 2900,
+    "fp": 4,
+    "fn": 0,
+    "tn": 4
+   },
+   "candidates": 2908,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001178": {
+   "edge": {
+    "tp": 4325,
+    "fp": 1,
+    "fn": 1,
+    "tn": 1057826
+   },
+   "face": {
+    "tp": 2872,
+    "fp": 2,
+    "fn": 3,
+    "tn": 0
+   },
+   "candidates": 2875,
+   "face_fn_missing": 2,
+   "face_fn_present": 1
+  },
+  "nexus_2k_001317": {
+   "edge": {
+    "tp": 4362,
+    "fp": 5,
+    "fn": 0,
+    "tn": 1174513
+   },
+   "face": {
+    "tp": 2904,
+    "fp": 94,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 2998,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000869": {
+   "edge": {
+    "tp": 4410,
+    "fp": 2,
+    "fn": 0,
+    "tn": 1258843
+   },
+   "face": {
+    "tp": 2940,
+    "fp": 2,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 2942,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001415": {
+   "edge": {
+    "tp": 4755,
+    "fp": 3,
+    "fn": 0,
+    "tn": 1288878
+   },
+   "face": {
+    "tp": 3170,
+    "fp": 157,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 3327,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000283": {
+   "edge": {
+    "tp": 4919,
+    "fp": 4,
+    "fn": 0,
+    "tn": 1345623
+   },
+   "face": {
+    "tp": 3269,
+    "fp": 6,
+    "fn": 0,
+    "tn": 3
+   },
+   "candidates": 3278,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000935": {
+   "edge": {
+    "tp": 4937,
+    "fp": 2,
+    "fn": 0,
+    "tn": 1461389
+   },
+   "face": {
+    "tp": 3261,
+    "fp": 48,
+    "fn": 0,
+    "tn": 1
+   },
+   "candidates": 3310,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000815": {
+   "edge": {
+    "tp": 5032,
+    "fp": 2,
+    "fn": 0,
+    "tn": 1499211
+   },
+   "face": {
+    "tp": 3336,
+    "fp": 11,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 3347,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000800": {
+   "edge": {
+    "tp": 5483,
+    "fp": 6,
+    "fn": 2,
+    "tn": 1666215
+   },
+   "face": {
+    "tp": 3654,
+    "fp": 121,
+    "fn": 4,
+    "tn": 1
+   },
+   "candidates": 3776,
+   "face_fn_missing": 4,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001211": {
+   "edge": {
+    "tp": 5407,
+    "fp": 4,
+    "fn": 0,
+    "tn": 1668124
+   },
+   "face": {
+    "tp": 3597,
+    "fp": 12,
+    "fn": 0,
+    "tn": 6
+   },
+   "candidates": 3615,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001093": {
+   "edge": {
+    "tp": 5733,
+    "fp": 7,
+    "fn": 0,
+    "tn": 1921926
+   },
+   "face": {
+    "tp": 3800,
+    "fp": 23,
+    "fn": 0,
+    "tn": 4
+   },
+   "candidates": 3827,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000783": {
+   "edge": {
+    "tp": 6419,
+    "fp": 10,
+    "fn": 0,
+    "tn": 2351277
+   },
+   "face": {
+    "tp": 4270,
+    "fp": 9,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 4279,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000083": {
+   "edge": {
+    "tp": 6140,
+    "fp": 6,
+    "fn": 1,
+    "tn": 2497056
+   },
+   "face": {
+    "tp": 3957,
+    "fp": 45,
+    "fn": 2,
+    "tn": 0
+   },
+   "candidates": 4002,
+   "face_fn_missing": 2,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001792": {
+   "edge": {
+    "tp": 6647,
+    "fp": 5,
+    "fn": 0,
+    "tn": 2509994
+   },
+   "face": {
+    "tp": 4393,
+    "fp": 5,
+    "fn": 0,
+    "tn": 7
+   },
+   "candidates": 4405,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000280": {
+   "edge": {
+    "tp": 6829,
+    "fp": 9,
+    "fn": 0,
+    "tn": 2588943
+   },
+   "face": {
+    "tp": 4544,
+    "fp": 28,
+    "fn": 0,
+    "tn": 1
+   },
+   "candidates": 4573,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000167": {
+   "edge": {
+    "tp": 6682,
+    "fp": 8,
+    "fn": 0,
+    "tn": 2575438
+   },
+   "face": {
+    "tp": 4412,
+    "fp": 12,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 4424,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  },
+  "nexus_2k_001232": {
+   "edge": {
+    "tp": 7589,
+    "fp": 14,
+    "fn": 1,
+    "tn": 2866399
+   },
+   "face": {
+    "tp": 5192,
+    "fp": 17,
+    "fn": 2,
+    "tn": 4
+   },
+   "candidates": 5213,
+   "face_fn_missing": 2,
+   "face_fn_present": 0
+  },
+  "nexus_2k_000898": {
+   "edge": {
+    "tp": 7344,
+    "fp": 8,
+    "fn": 0,
+    "tn": 3234979
+   },
+   "face": {
+    "tp": 4800,
+    "fp": 9,
+    "fn": 0,
+    "tn": 0
+   },
+   "candidates": 4809,
+   "face_fn_missing": 0,
+   "face_fn_present": 0
+  }
+ },
+ "vertices": {
+  "nexus_2k_001150": 18,
+  "nexus_2k_001045": 54,
+  "nexus_2k_000084": 128,
+  "nexus_2k_001692": 150,
+  "nexus_2k_001843": 188,
+  "nexus_2k_000346": 192,
+  "nexus_2k_001780": 196,
+  "nexus_2k_000796": 200,
+  "nexus_2k_001085": 226,
+  "nexus_2k_000020": 288,
+  "nexus_2k_000447": 332,
+  "nexus_2k_001179": 325,
+  "nexus_2k_000118": 362,
+  "nexus_2k_000074": 386,
+  "nexus_2k_000519": 392,
+  "nexus_2k_001087": 426,
+  "nexus_2k_000053": 488,
+  "nexus_2k_000675": 516,
+  "nexus_2k_001716": 534,
+  "nexus_2k_000242": 652,
+  "nexus_2k_000823": 666,
+  "nexus_2k_001536": 728,
+  "nexus_2k_000840": 798,
+  "nexus_2k_001577": 836,
+  "nexus_2k_001216": 938,
+  "nexus_2k_001331": 969,
+  "nexus_2k_000142": 1029,
+  "nexus_2k_001550": 1137,
+  "nexus_2k_000872": 1215,
+  "nexus_2k_000952": 1251,
+  "nexus_2k_001825": 1277,
+  "nexus_2k_001483": 1418,
+  "nexus_2k_001439": 1446,
+  "nexus_2k_001178": 1458,
+  "nexus_2k_001317": 1536,
+  "nexus_2k_000869": 1590,
+  "nexus_2k_001415": 1609,
+  "nexus_2k_000283": 1644,
+  "nexus_2k_000935": 1713,
+  "nexus_2k_000815": 1735,
+  "nexus_2k_000800": 1829,
+  "nexus_2k_001211": 1830,
+  "nexus_2k_001093": 1964,
+  "nexus_2k_000783": 2172,
+  "nexus_2k_000083": 2238,
+  "nexus_2k_001792": 2244,
+  "nexus_2k_000280": 2279,
+  "nexus_2k_000167": 2273,
+  "nexus_2k_001232": 2398,
+  "nexus_2k_000898": 2547
+ }
+}
