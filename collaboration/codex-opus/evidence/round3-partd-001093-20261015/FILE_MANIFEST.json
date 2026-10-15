@@ -1,0 +1,142 @@
+[
+  {
+    "path": "history_analyze.py",
+    "bytes": 17094,
+    "sha256": "3a5d1f8414d1f04ddd3533840e916eccabc0856a3b0f787ae2db36b8d245abd3"
+  },
+  {
+    "path": "history.json",
+    "bytes": 174339,
+    "sha256": "9d2d098075dda0d7c1f5bfb9a89b04510d8e5287e02a6ff5380f402684650127"
+  },
+  {
+    "path": "history.md",
+    "bytes": 5714,
+    "sha256": "dff1edb4f38ad580c7ba28312689d006760fd8b24b4702a655c6986a2237d182"
+  },
+  {
+    "path": "history.log",
+    "bytes": 4381,
+    "sha256": "e6945aa6498f39282917295b416922315f9f864af031dfb62cd4470ddfa1d47c"
+  },
+  {
+    "path": "history_execution.json",
+    "bytes": 1271,
+    "sha256": "618fa9627309decd8d1ec63f6fba7c62150dafd176ed3b7095ed4564e5c633b9"
+  },
+  {
+    "path": "input_manifest_history.json",
+    "bytes": 30736,
+    "sha256": "8db2826576d66734160b7c4920e1b4c76e905ac4912711cc2c4d1934cd9a7c7d"
+  },
+  {
+    "path": "density.py",
+    "bytes": 14201,
+    "sha256": "e2767684cc6fce440259449994a483646252692d5c76d43aaf2612c2ee828b65"
+  },
+  {
+    "path": "density.json",
+    "bytes": 3801156,
+    "sha256": "38b814a3472c6e53fc089ecfad591a74a48d2f8afe49d83fd3627d285ee49a55"
+  },
+  {
+    "path": "density.md",
+    "bytes": 1982,
+    "sha256": "c5c1fb9bdeba1a98247fad4ac7e3e022a1e0d20da68530cabd665de7e5e0198b"
+  },
+  {
+    "path": "density.log",
+    "bytes": 4121,
+    "sha256": "c2d90eab79db6d6dcc1114391b4549784a6634629e538b4a85963426379bf861"
+  },
+  {
+    "path": "input_manifest_density.json",
+    "bytes": 5463,
+    "sha256": "1eaabee7e310f6eac735ba9a17efbb55d8e4944b8ebdc99620b4f5985cf4eaf6"
+  },
+  {
+    "path": "recurrence.py",
+    "bytes": 17793,
+    "sha256": "67fcd51f4ceda6360bc0cb051fa149371e3cb3770cda0df684f9c0dff41a7410"
+  },
+  {
+    "path": "recurrence.json",
+    "bytes": 2565859,
+    "sha256": "102ccdf12c3c34f9b8ea9d466a97ed9e7a4d5a1bdf39c2c29e2f24929f0132e6"
+  },
+  {
+    "path": "recurrence.md",
+    "bytes": 8626,
+    "sha256": "62ebb9be2ef38dfd68eafd0c562a5a8110f0313cbc418a89345b7e796b1da0f5"
+  },
+  {
+    "path": "recurrence.log",
+    "bytes": 9640,
+    "sha256": "a88b913d9070ec331ad5f433fbe89f802583674e55fc501b21be0c4740b03d64"
+  },
+  {
+    "path": "input_manifest_recurrence.json",
+    "bytes": 18068,
+    "sha256": "f1c83258f080bd12d85e954099631e70e2acbfa362edb238d131cfd7a4b4ba51"
+  },
+  {
+    "path": "recurrence_appendix.py",
+    "bytes": 5758,
+    "sha256": "2e01ca2a723a5457b6f2b7e9471748d42f24cd8f4b2e248064d1cd09776fd0db"
+  },
+  {
+    "path": "recurrence_appendix.log",
+    "bytes": 123,
+    "sha256": "b1b821a6d6f7378b6599586e1058fbc2d8f84aee60452643d2dd5fd85499246e"
+  },
+  {
+    "path": "recurrence_cells.json",
+    "bytes": 771781,
+    "sha256": "265a4bc0ca56109261394ad473d6abc6584ded45be86e60a1b7604b7cfaa8882"
+  },
+  {
+    "path": "recurrence_cells.md",
+    "bytes": 5845,
+    "sha256": "d7703738b7c450c70e342bd66e43d30ccc16fd3b31b537a2e5fb18ae37f3a5c5"
+  },
+  {
+    "path": "recurrence_cells.tsv",
+    "bytes": 37529,
+    "sha256": "e33a799e5f1a72744ba084c7310a1e9df4942c22598014da78e19f75ef7d0f9b"
+  },
+  {
+    "path": "recurrence_siblings.tsv",
+    "bytes": 273274,
+    "sha256": "2afebeab3bb602ff9f3858829669a3f224ad4a5421c5cf7f61f59ce7bac0d6c1"
+  },
+  {
+    "path": "package_partd.py",
+    "bytes": 11253,
+    "sha256": "641592d10e4f226d843f7fee38316e27a44cbfd41d640793f5d9f819d2bee21f"
+  },
+  {
+    "path": "publish_partd.py",
+    "bytes": 11294,
+    "sha256": "2dc777f384b9682a845f7d08acdef20165a397733ed02b4fa52a0eedfc138c60"
+  },
+  {
+    "path": "REPORT.md",
+    "bytes": 12287,
+    "sha256": "442b5396be3723203f7f05cf7ebdea30e2e0c621f83d450037db40dcf9bf914e"
+  },
+  {
+    "path": "STATUS.json",
+    "bytes": 31005,
+    "sha256": "a256f3a487ec3ce7f5c22dcf25975593ca1f517a7a8f8f993f89191538aabdf7"
+  },
+  {
+    "path": "VERIFICATION.json",
+    "bytes": 46237,
+    "sha256": "8de236fdf7778f8aee23546da0b5b47fc4889e48817b79eb24d788b30d7dc900"
+  },
+  {
+    "path": "EXECUTION.txt",
+    "bytes": 1567,
+    "sha256": "b3c9010fcd036a44f6f1a79c073f268b6585013d77b5d2a4c4745570269d96f2"
+  }
+]

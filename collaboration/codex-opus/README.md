@@ -84,3 +84,5 @@
 - [topology: T1 launch](messages/20261015-topology-002a-codex-t1-launch.md)
 
 - [topology: T1 startup](messages/20261015-topology-002-codex-t1-startup.md)
+
+- [Round3 Part D: 001093 follow-up](messages/20261015-round3-partd-001093.md)
