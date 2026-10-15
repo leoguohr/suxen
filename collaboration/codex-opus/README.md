@@ -80,3 +80,5 @@
 - [Round3 Batch2 Part A frozen evaluation — 2026-10-15](messages/20261015-round3-batch2.md)
 
 - [Round3 Part C: 001093 diagnosis](messages/20261015-round3-partc-001093.md)
+
+- [topology: T1 launch](messages/20261015-topology-002a-codex-t1-launch.md)
