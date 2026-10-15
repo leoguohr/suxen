@@ -1,0 +1,788 @@
+{
+  "scope": "Frozen evaluation evidence only; collector does not execute models or load checkpoint tensors",
+  "collected_utc": "2026-10-15T04:53:28.692709+00:00",
+  "source_commit": {
+    "expected_commit": "e7e3a326a65bc550be695104ae69e0d3435bd446",
+    "actual_commit": "e7e3a326a65bc550be695104ae69e0d3435bd446",
+    "git_error": null,
+    "source_file_hashes": {
+      "source/evaluate.py": "ff904d6de34df9cfcf94b5ff89cf99b6e2e524c152314a888d5d56f37e29bbd7",
+      "source/common.py": "cf021ffd21f6daffb1f905a40d58e3459ae01f762f6445dc4aa413497b856d9b",
+      "source/samplers.py": "e1bcc2e0c26c20797092f7614af1c58904082bffd0538efec2cd95ee1fbc50ed",
+      "source/analyze_boundary.py": "c7516437482fd1de70ad4c5e663bd4b93103a4b289afd23b9ff073204d5b940d",
+      "source/analyze_cascade.py": "5bd40b78ee17ffeec8f7df27aa92d80a291983045a92519c2882331a02f2fe66",
+      "source/tests/test_cpu.py": "1254a533a2c6d7d2a0e07b083f5a4b80cb58d255347f8cd37af34aa20e08580f",
+      "source/CODEX_PROMPT_ROUND2C.md": "ffc8d967290a625fe9baf1ebdd64aee9a99e2340d57401fa796e13e7f3969ea1",
+      "source/data_manifest.json": "101cc76ffbbe55012a8ad5bfbbb5c54148a755f1562fd0236ec0cbca70e7a6e6"
+    },
+    "commit_verified": true
+  },
+  "queue_status": "incomplete_or_analysis_failed",
+  "completed_evaluations": 18,
+  "scheduled_evaluations": 18,
+  "jobs": [
+    {
+      "id": "J5_ema_euler20_seeds97029002_97029003",
+      "name": "J5",
+      "status": "complete",
+      "weights": "ema",
+      "steps": 20,
+      "seeds": [
+        97029002,
+        97029003
+      ],
+      "gpu": 0,
+      "started_utc": "2026-10-15T03:19:37.523710+00:00",
+      "ended_utc": "2026-10-15T03:46:53.638872+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "recovered_without_regeneration": true,
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 86,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        92,
+        90,
+        88,
+        86
+      ],
+      "official_seeds": false,
+      "boundary_fallback_success": false
+    },
+    {
+      "id": "J2_ema_euler20_seeds97029002_97029003",
+      "name": "J2",
+      "status": "evaluation_complete_analysis_failed",
+      "weights": "ema",
+      "steps": 20,
+      "seeds": [
+        97029002,
+        97029003
+      ],
+      "gpu": 1,
+      "started_utc": "2026-10-15T03:19:37.561160+00:00",
+      "ended_utc": "2026-10-15T03:46:56.470832+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 1,
+        "cascade": 0
+      },
+      "recovered_without_regeneration": true,
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 79,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        99,
+        90,
+        85,
+        81,
+        81
+      ],
+      "official_seeds": false,
+      "boundary_fallback_exit_code": 0,
+      "boundary_fallback": {
+        "original_exit_code": 1,
+        "state": "complete",
+        "output_sha256_valid": true,
+        "original_log_sha256_valid": true,
+        "source_sha256_valid": true,
+        "adapter_sha256_valid": true
+      },
+      "boundary_fallback_success": true
+    },
+    {
+      "id": "J5_ema_euler20_seeds97029004_97029005",
+      "name": "J5",
+      "status": "evaluation_complete_analysis_failed",
+      "weights": "ema",
+      "steps": 20,
+      "seeds": [
+        97029004,
+        97029005
+      ],
+      "gpu": 2,
+      "started_utc": "2026-10-15T03:19:37.495766+00:00",
+      "ended_utc": "2026-10-15T03:47:07.688093+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 1,
+        "cascade": 0
+      },
+      "recovered_without_regeneration": true,
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 87,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        94,
+        93,
+        90,
+        90,
+        87
+      ],
+      "official_seeds": false,
+      "boundary_fallback_exit_code": 0,
+      "boundary_fallback": {
+        "original_exit_code": 1,
+        "state": "complete",
+        "output_sha256_valid": true,
+        "original_log_sha256_valid": true,
+        "source_sha256_valid": true,
+        "adapter_sha256_valid": true
+      },
+      "boundary_fallback_success": true
+    },
+    {
+      "id": "J2_ema_euler20_seeds97029004_97029005",
+      "name": "J2",
+      "status": "complete",
+      "weights": "ema",
+      "steps": 20,
+      "seeds": [
+        97029004,
+        97029005
+      ],
+      "gpu": 3,
+      "started_utc": "2026-10-15T03:19:37.557134+00:00",
+      "ended_utc": "2026-10-15T03:47:18.188426+00:00",
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "recovered_without_regeneration": true,
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": "unknown",
+      "trees": 100,
+      "full_trees_exact": 76,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus original EVALUATION_COMPLETE log; exit code unavailable",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        99,
+        95,
+        88,
+        84,
+        82,
+        76
+      ],
+      "official_seeds": false,
+      "boundary_fallback_success": false
+    },
+    {
+      "id": "J5_ema_euler20_seeds97029006_97029007",
+      "name": "J5",
+      "status": "complete",
+      "weights": "ema",
+      "steps": 20,
+      "seeds": [
+        97029006,
+        97029007
+      ],
+      "gpu": 1,
+      "started_utc": "2026-10-15T03:38:56.212747+00:00",
+      "ended_utc": "2026-10-15T04:05:35.340842+00:00",
+      "eval_exit_code": null,
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "adopted_exit_status_unavailable": true,
+      "adopted_pid": 1898,
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": "unknown",
+      "trees": 100,
+      "full_trees_exact": 86,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus original EVALUATION_COMPLETE log; exit code unavailable",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        99,
+        95,
+        91,
+        90,
+        89,
+        86
+      ],
+      "official_seeds": false,
+      "boundary_fallback_success": false
+    },
+    {
+      "id": "J2_ema_euler20_seeds97029006_97029007",
+      "name": "J2",
+      "status": "complete",
+      "weights": "ema",
+      "steps": 20,
+      "seeds": [
+        97029006,
+        97029007
+      ],
+      "gpu": 0,
+      "started_utc": "2026-10-15T03:39:23.721272+00:00",
+      "ended_utc": "2026-10-15T04:05:48.020163+00:00",
+      "eval_exit_code": null,
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "adopted_exit_status_unavailable": true,
+      "adopted_pid": 1924,
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": "unknown",
+      "trees": 100,
+      "full_trees_exact": 75,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus original EVALUATION_COMPLETE log; exit code unavailable",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        95,
+        86,
+        80,
+        76,
+        75
+      ],
+      "official_seeds": false,
+      "boundary_fallback_success": false
+    },
+    {
+      "id": "J5_ema_euler20_seeds97029008_97029009",
+      "name": "J5",
+      "status": "evaluation_complete_analysis_failed",
+      "weights": "ema",
+      "steps": 20,
+      "seeds": [
+        97029008,
+        97029009
+      ],
+      "gpu": 1,
+      "started_utc": "2026-10-15T03:46:53.611595+00:00",
+      "ended_utc": "2026-10-15T04:17:47.972549+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 1,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 87,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        99,
+        96,
+        94,
+        88,
+        87
+      ],
+      "official_seeds": false,
+      "boundary_fallback_exit_code": 0,
+      "boundary_fallback": {
+        "original_exit_code": 1,
+        "state": "complete",
+        "output_sha256_valid": true,
+        "original_log_sha256_valid": true,
+        "source_sha256_valid": true,
+        "adapter_sha256_valid": true
+      },
+      "boundary_fallback_success": true
+    },
+    {
+      "id": "J2_ema_euler20_seeds97029008_97029009",
+      "name": "J2",
+      "status": "complete",
+      "weights": "ema",
+      "steps": 20,
+      "seeds": [
+        97029008,
+        97029009
+      ],
+      "gpu": 0,
+      "started_utc": "2026-10-15T03:46:53.606908+00:00",
+      "ended_utc": "2026-10-15T04:19:06.598480+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 83,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        95,
+        92,
+        85,
+        83
+      ],
+      "official_seeds": false,
+      "boundary_fallback_success": false
+    },
+    {
+      "id": "J5_ema_euler5_official",
+      "name": "J5",
+      "status": "complete",
+      "weights": "ema",
+      "steps": 5,
+      "seeds": [
+        97029000,
+        97029001
+      ],
+      "gpu": 2,
+      "started_utc": "2026-10-15T03:46:53.615973+00:00",
+      "ended_utc": "2026-10-15T03:55:29.496126+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 96,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        98,
+        97,
+        97,
+        96
+      ],
+      "official_seeds": true,
+      "boundary_fallback_success": false
+    },
+    {
+      "id": "J2_ema_euler5_official",
+      "name": "J2",
+      "status": "complete",
+      "weights": "ema",
+      "steps": 5,
+      "seeds": [
+        97029000,
+        97029001
+      ],
+      "gpu": 2,
+      "started_utc": "2026-10-15T03:46:53.623121+00:00",
+      "ended_utc": "2026-10-15T03:55:38.314664+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 94,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        98,
+        95,
+        94,
+        94
+      ],
+      "official_seeds": true,
+      "boundary_fallback_success": false
+    },
+    {
+      "id": "J5_ema_euler10_official",
+      "name": "J5",
+      "status": "complete",
+      "weights": "ema",
+      "steps": 10,
+      "seeds": [
+        97029000,
+        97029001
+      ],
+      "gpu": 3,
+      "started_utc": "2026-10-15T03:46:53.630328+00:00",
+      "ended_utc": "2026-10-15T04:03:22.699937+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 92,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        98,
+        97,
+        93,
+        92
+      ],
+      "official_seeds": true,
+      "boundary_fallback_success": false
+    },
+    {
+      "id": "J2_ema_euler10_official",
+      "name": "J2",
+      "status": "evaluation_complete_analysis_failed",
+      "weights": "ema",
+      "steps": 10,
+      "seeds": [
+        97029000,
+        97029001
+      ],
+      "gpu": 3,
+      "started_utc": "2026-10-15T03:46:53.636376+00:00",
+      "ended_utc": "2026-10-15T04:03:11.695697+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 1,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 87,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        96,
+        91,
+        87,
+        87
+      ],
+      "official_seeds": true,
+      "boundary_fallback_exit_code": 0,
+      "boundary_fallback": {
+        "original_exit_code": 1,
+        "state": "complete",
+        "output_sha256_valid": true,
+        "original_log_sha256_valid": true,
+        "source_sha256_valid": true,
+        "adapter_sha256_valid": true
+      },
+      "boundary_fallback_success": true
+    },
+    {
+      "id": "J5_ema_euler15_official",
+      "name": "J5",
+      "status": "complete",
+      "weights": "ema",
+      "steps": 15,
+      "seeds": [
+        97029000,
+        97029001
+      ],
+      "gpu": 2,
+      "started_utc": "2026-10-15T03:55:38.318719+00:00",
+      "ended_utc": "2026-10-15T04:19:41.750366+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 93,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        97,
+        96,
+        95,
+        93
+      ],
+      "official_seeds": true,
+      "boundary_fallback_success": false
+    },
+    {
+      "id": "J2_ema_euler15_official",
+      "name": "J2",
+      "status": "evaluation_complete_analysis_failed",
+      "weights": "ema",
+      "steps": 15,
+      "seeds": [
+        97029000,
+        97029001
+      ],
+      "gpu": 2,
+      "started_utc": "2026-10-15T03:55:38.322174+00:00",
+      "ended_utc": "2026-10-15T04:19:50.543068+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 1,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 87,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        98,
+        93,
+        90,
+        87,
+        87
+      ],
+      "official_seeds": true,
+      "boundary_fallback_exit_code": 0,
+      "boundary_fallback": {
+        "original_exit_code": 1,
+        "state": "complete",
+        "output_sha256_valid": true,
+        "original_log_sha256_valid": true,
+        "source_sha256_valid": true,
+        "adapter_sha256_valid": true
+      },
+      "boundary_fallback_success": true
+    },
+    {
+      "id": "J5_ema_euler30_official",
+      "name": "J5",
+      "status": "complete",
+      "weights": "ema",
+      "steps": 30,
+      "seeds": [
+        97029000,
+        97029001
+      ],
+      "gpu": 3,
+      "started_utc": "2026-10-15T04:03:11.701443+00:00",
+      "ended_utc": "2026-10-15T04:51:19.801472+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 86,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        95,
+        93,
+        88,
+        86
+      ],
+      "official_seeds": true,
+      "boundary_fallback_success": false
+    },
+    {
+      "id": "J2_ema_euler30_official",
+      "name": "J2",
+      "status": "evaluation_complete_analysis_failed",
+      "weights": "ema",
+      "steps": 30,
+      "seeds": [
+        97029000,
+        97029001
+      ],
+      "gpu": 3,
+      "started_utc": "2026-10-15T04:03:22.705576+00:00",
+      "ended_utc": "2026-10-15T04:53:20.566930+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 1,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 79,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        100,
+        100,
+        100,
+        100,
+        98,
+        93,
+        87,
+        79,
+        79
+      ],
+      "official_seeds": true,
+      "boundary_fallback_exit_code": 0,
+      "boundary_fallback": {
+        "original_exit_code": 1,
+        "state": "complete",
+        "output_sha256_valid": true,
+        "original_log_sha256_valid": true,
+        "source_sha256_valid": true,
+        "adapter_sha256_valid": true
+      },
+      "boundary_fallback_success": true
+    },
+    {
+      "id": "S0_raw_euler20_official",
+      "name": "S0",
+      "status": "complete",
+      "weights": "raw",
+      "steps": 20,
+      "seeds": [
+        97029000,
+        97029001
+      ],
+      "gpu": 1,
+      "started_utc": "2026-10-15T04:05:35.346953+00:00",
+      "ended_utc": "2026-10-15T04:30:00.608602+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 7,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        98,
+        88,
+        58,
+        32,
+        16,
+        14,
+        12,
+        7,
+        7
+      ],
+      "official_seeds": true,
+      "boundary_fallback_success": false
+    },
+    {
+      "id": "S1_raw_euler20_official",
+      "name": "S1",
+      "status": "complete",
+      "weights": "raw",
+      "steps": 20,
+      "seeds": [
+        97029000,
+        97029001
+      ],
+      "gpu": 0,
+      "started_utc": "2026-10-15T04:05:48.023307+00:00",
+      "ended_utc": "2026-10-15T04:31:58.301575+00:00",
+      "eval_exit_code": 0,
+      "analysis_exit_codes": {
+        "boundary": 0,
+        "cascade": 0
+      },
+      "metrics_complete": true,
+      "analysis_complete_after_fallback": true,
+      "evaluator_exit_status": 0,
+      "trees": 100,
+      "full_trees_exact": 7,
+      "completion_evidence": "100 unique UID/seed pairs and consistent summary counts plus evaluator exit 0",
+      "per_depth_full_level_exact": [
+        92,
+        92,
+        85,
+        43,
+        24,
+        13,
+        10,
+        8,
+        7
+      ],
+      "official_seeds": true,
+      "boundary_fallback_success": false
+    }
+  ],
+  "missing_evidence": [],
+  "evaluation_complete": true,
+  "analysis_complete_after_fallback": true,
+  "checkpoint_hash_boundary": "No checkpoint was opened or rehashed by this collection. Saved identities are included.",
+  "sweep_train_logs": {
+    "S0": "https://github.com/leoguohr/suxen/blob/5369c4a56b3d2c2743a032413982a30d8bcae205/collaboration/codex-opus/evidence/architecture-sweep-step34000-20261015/S0/train.jsonl.gz",
+    "S1": "https://github.com/leoguohr/suxen/blob/5369c4a56b3d2c2743a032413982a30d8bcae205/collaboration/codex-opus/evidence/architecture-sweep-step34000-20261015/S1/train.jsonl.gz"
+  },
+  "sweep_train_logs_commit": "5369c4a56b3d2c2743a032413982a30d8bcae205",
+  "excluded": [
+    "checkpoint tensors",
+    "prediction arrays",
+    "predictions folders",
+    "credentials",
+    "duplicate sweep training logs"
+  ],
+  "delivery_complete": true,
+  "complete": true
+}

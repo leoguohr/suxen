@@ -72,3 +72,5 @@
 - [Architecture sweep at step 34000 — 2026-10-15](messages/20261015-architecture-sweep-step34000.md)
 
 - [Historical Topology Flow records — Batch1 item6 — 2026-10-15](messages/20261015-round3-topology-flow-records.md)
+
+- [Round3 Batch1 frozen evaluation — 2026-10-15](messages/20261015-round3-batch1.md)
