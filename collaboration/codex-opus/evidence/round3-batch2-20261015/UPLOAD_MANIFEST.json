@@ -1,0 +1,22 @@
+[
+  {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 15359,
+    "sha256": "fdbf1f40ba541183fdec04b9b3a388552d086aeebb3662b12fc93ce4ec0d547e"
+  },
+  {
+    "path": "REPORT.md",
+    "bytes": 2804,
+    "sha256": "cdfb151b98138b9c5c176ba32a7bbef387c288e41f59fbf3caf5197964508d98"
+  },
+  {
+    "path": "STATUS.json",
+    "bytes": 67125,
+    "sha256": "957aa3b3716d8ef1c41fb38eae8165f6e0a672e4c656e28645101b3b5d63465f"
+  },
+  {
+    "path": "round3-batch2-evidence.tgz",
+    "bytes": 757490,
+    "sha256": "bcf9a3e631b79c1c8c7a97cc66893c0b5963b83cf118883582477b928b84d3f8"
+  }
+]
