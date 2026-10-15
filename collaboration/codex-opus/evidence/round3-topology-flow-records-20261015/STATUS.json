@@ -1,0 +1,169 @@
+{
+  "state": "historical_lightweight_evidence_verified",
+  "as_of": "2026-10-15",
+  "historical_snapshot_date": "2026-10-08",
+  "new_model_runs": 0,
+  "gpu_used": false,
+  "server_accessed": false,
+  "training_commit": null,
+  "training_commit_note": "Original training Git commit absent from run configs. Per-file code_sha256 and imported_code paths are preserved.",
+  "archive_branch": "archive/topology-flow-20261008",
+  "archive_commit": "f89ecbd4ff3adc4ed160adea235ad34c26e69f53",
+  "archive_commit_is_training_commit": false,
+  "release_tag": "topology-flow-evidence-2026-10-08",
+  "evaluations": [
+    {
+      "name": "C0_500",
+      "evaluated": 50,
+      "expected": 50,
+      "complete": true,
+      "source": "snapshot/c0/evaluations/step500_seed0",
+      "edge_micro_f1": 0.03395797034455784,
+      "face_micro_f1": 0.00045021626459853034,
+      "joint_strict": 0
+    },
+    {
+      "name": "C0_1000",
+      "evaluated": 50,
+      "expected": 50,
+      "complete": true,
+      "source": "snapshot/c0/evaluations/step1000_seed0",
+      "edge_micro_f1": 0.09820654037805887,
+      "face_micro_f1": 0.0038177981345948356,
+      "joint_strict": 0
+    },
+    {
+      "name": "C1_500",
+      "evaluated": 50,
+      "expected": 50,
+      "complete": true,
+      "source": "snapshot/candidates/c1/eval500",
+      "edge_micro_f1": 0.056811290427041444,
+      "face_micro_f1": 0.0013022577428524653,
+      "joint_strict": 0
+    },
+    {
+      "name": "C1_904",
+      "evaluated": 41,
+      "expected": 50,
+      "complete": false,
+      "source": "snapshot/candidates/c1/eval904"
+    },
+    {
+      "name": "C2_500",
+      "evaluated": 39,
+      "expected": 50,
+      "complete": false,
+      "source": "snapshot/candidates/c2/eval500"
+    },
+    {
+      "name": "VAE_mu",
+      "evaluated": 50,
+      "expected": 50,
+      "complete": true,
+      "source": "snapshot/initial/vae_baseline/mu",
+      "edge_micro_f1": 0.999580747945665,
+      "face_micro_f1": 0.9957316660052846,
+      "joint_strict": 15
+    },
+    {
+      "name": "VAE_posterior0",
+      "evaluated": 50,
+      "expected": 50,
+      "complete": true,
+      "source": "snapshot/initial/vae_baseline/posterior_seed0",
+      "edge_micro_f1": 0.9995839689363473,
+      "face_micro_f1": 0.9957267645848961,
+      "joint_strict": 15
+    },
+    {
+      "name": "VAE_posterior1",
+      "evaluated": 50,
+      "expected": 50,
+      "complete": true,
+      "source": "snapshot/initial/vae_baseline/posterior_seed1",
+      "edge_micro_f1": 0.9995743034055727,
+      "face_micro_f1": 0.9957221114573857,
+      "joint_strict": 14
+    }
+  ],
+  "train_logs": [
+    {
+      "path": "snapshot/c0/run/updates-from0000000-1790935268142429630.jsonl",
+      "rows": 500,
+      "first_update": 1,
+      "last_update": 500
+    },
+    {
+      "path": "snapshot/c0/run/updates-from0000500-1791289673635578531.jsonl",
+      "rows": 500,
+      "first_update": 501,
+      "last_update": 1000
+    },
+    {
+      "path": "snapshot/candidates/c1/run/updates-from0000000-1791371601630269956.jsonl",
+      "rows": 904,
+      "first_update": 1,
+      "last_update": 904
+    },
+    {
+      "path": "snapshot/candidates/c2/run/updates-from0000000-1791378077797736560.jsonl",
+      "rows": 1049,
+      "first_update": 1,
+      "last_update": 1049
+    }
+  ],
+  "source_code_hash_checks": [
+    {
+      "group": "C0",
+      "config": "snapshot/c0/run/config-from0000000-1790935268142429630.json",
+      "logged_imported_code": "/ssdwork/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_20261002/code",
+      "source_file_hashes_checked": 22,
+      "mismatches": []
+    },
+    {
+      "group": "C0",
+      "config": "snapshot/c0/run/config-from0000500-1791289673635578531.json",
+      "logged_imported_code": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_user50_continue_20261006/code",
+      "source_file_hashes_checked": 22,
+      "mismatches": []
+    },
+    {
+      "group": "C1",
+      "config": "snapshot/candidates/c1/run/config-from0000000-1791371601630269956.json",
+      "logged_imported_code": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/code",
+      "source_file_hashes_checked": 26,
+      "mismatches": []
+    },
+    {
+      "group": "C2",
+      "config": "snapshot/candidates/c2/run/config-from0000000-1791378077797736560.json",
+      "logged_imported_code": "/guohaoran/nexus_fast_track/diagnostics/topology_flow_candidates_20261007/code",
+      "source_file_hashes_checked": 26,
+      "mismatches": []
+    }
+  ],
+  "checks": {
+    "selected_files_sha256": true,
+    "complete_300_per_uid_metric_hashes": true,
+    "complete_metric_sums_and_f1": true,
+    "partial_denominators_preserved": true
+  },
+  "file_count": 527,
+  "source_bytes": 11669994,
+  "checkpoint_hash_scope": "Existing archived identities only; no checkpoint tensor files were read or uploaded.",
+  "exclusions": [
+    "checkpoint/Adam tensors",
+    "npz arrays",
+    "predictions folders",
+    "rendered meshes/images",
+    "credentials"
+  ],
+  "limitations": [
+    "Historical local evidence does not establish current server file availability.",
+    "C1@904 is partial 41/50; C2@500 is partial 39/50; no full-cohort score inferred.",
+    "C2 ran 1049 updates; no completed evaluation at update1000 or1049 is present.",
+    "Flow uses original GT vertices and point/normal conditions; not full Vertex-to-Topology generation.",
+    "VAE reconstruction is a separate frozen OwnAE-v2 baseline, not Flow generation."
+  ]
+}
