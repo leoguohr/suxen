@@ -3,6 +3,8 @@
 Round 1 (2026-10-09): warm start from S0@34000 with a wall-clock deadline (--train-minutes).
 Round 2: unattended jobs (--max-updates) that resume themselves after a restart, evaluate every
 --eval-every updates, stop early at 100/100, and decay the LR over the last --decay-fraction.
+Round 3: --boost-uids adds named objects to every update that does not already include them
+(targeted fine-tune of a persistently missed object); off by default, streams unchanged.
 
 Same model, same rectified-flow velocity-MSE objective, same data. Every update takes K objects
 and ALL nine depths of each (VecSet runs once per object); depths 1..C get R stratified-t copies.
@@ -51,6 +53,21 @@ def objects_for_update(args, update: int, count: int) -> list[int]:
         epoch, offset = divmod(position, count)
         picked.append(object_order(args.seed, count, epoch)[offset])
     return picked
+
+
+def boost_indices(train_uids: list[str], text: str) -> list[int]:
+    """--boost-uids: comma-separated uids -> object indices (manifest order). Empty text = no boost."""
+    uids = [u.strip() for u in text.split(",") if u.strip()]
+    unknown = [u for u in uids if u not in train_uids]
+    if unknown or len(set(uids)) != len(uids):
+        raise ValueError(f"bad --boost-uids {text!r}: unknown {unknown} or duplicated")
+    return [train_uids.index(u) for u in uids]
+
+
+def boost_objects(args, picked: list[int]) -> list[int]:
+    """Round 3 KT arm: each boosted object joins every update in which the schedule did not already
+    pick it (so the update has one more object). Off by default: the object stream is unchanged."""
+    return picked + [b for b in getattr(args, "boost_indices", ()) if b not in picked]
 
 
 SIX_NEIGHBOURS = ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1))
@@ -127,7 +144,7 @@ def lr_at(args, update: int) -> float:
 
 
 def train_update(model, optimizer, args, conditions, levels, update, device):
-    objects = objects_for_update(args, update, len(conditions))
+    objects = boost_objects(args, objects_for_update(args, update, len(conditions)))
     items = build_items(args, objects, levels, update, device)
     token_denominator = (8.0 * sum(len(item.codes) for item in items)
                          if getattr(args, "loss_weighting", "item") == "token" else None)
@@ -308,6 +325,8 @@ def main():
     p.add_argument("--eval-steps", type=int, default=20)
     p.add_argument("--stop-at-pass", type=int, default=1, help="stop early when an evaluation reaches 100/100")
     p.add_argument("--preflight", action="store_true", help="3 updates on the largest objects, no saves")
+    p.add_argument("--boost-uids", default="",
+                   help="comma list of uids added to every update that does not already include them (Round 3 KT arm)")
     args = p.parse_args()
     args.start_wall = time.time()
     unattended = args.train_minutes is None and not args.preflight
@@ -342,6 +361,9 @@ def main():
         actual = sha(args.init)
         assert actual == args.init_sha, f"--init SHA256 mismatch: {actual}"
     manifest, conditions, leaves, levels, raw_gt = load_data(device)
+    args.boost_indices = boost_indices(manifest["train_uids"], args.boost_uids)
+    if args.boost_indices:
+        print(f"BOOST: objects {args.boost_indices} ({args.boost_uids}) join every update", flush=True)
     state = torch.load(source, map_location="cpu", mmap=True, weights_only=False)
     model = build_model(state["model"], device)
     model.train().requires_grad_(True)

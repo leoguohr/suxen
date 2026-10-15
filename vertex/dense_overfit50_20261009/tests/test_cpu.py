@@ -191,6 +191,37 @@ def main():
     check("perturbed parents: true targets kept, spurious parents empty, no duplicates", ok and added > 0 and dropped > 0,
           f"added={added} dropped={dropped}")
 
+    # 2a') --boost-uids (Round 3 KT arm): off leaves the schedule untouched; on adds the object once per update
+    uids = manifest["train_uids"]
+    check("--boost-uids resolves uids, rejects unknown and duplicated ones",
+          dense_train.boost_indices(uids, "") == [] and dense_train.boost_indices(uids, f" {uids[7]} ") == [7]
+          and dense_train.boost_indices(uids, f"{uids[7]},{uids[2]}") == [7, 2]
+          and _raises(lambda: dense_train.boost_indices(uids, "nexus_2k_not_a_uid"))
+          and _raises(lambda: dense_train.boost_indices(uids, f"{uids[7]},{uids[7]}")))
+    plain, boosted = make_args(objects_per_update=8), make_args(objects_per_update=8, boost_indices=[7])
+    ok, already = True, 0
+    for u in range(1, 64):
+        scheduled = dense_train.objects_for_update(plain, u, 50)
+        ok &= dense_train.boost_objects(plain, scheduled) == scheduled  # no boost_indices attribute = off
+        ok &= dense_train.boost_objects(make_args(boost_indices=[]), scheduled) == scheduled
+        got = dense_train.boost_objects(boosted, scheduled)
+        ok &= got[:len(scheduled)] == scheduled and 7 in got
+        ok &= got.count(7) == (scheduled.count(7) if 7 in scheduled else 1)
+        ok &= len(got) == len(scheduled) + (7 not in scheduled)
+        already += 7 in scheduled
+    check("boost: object in every update, schedule otherwise unchanged", ok and 0 < already < 63,
+          f"already scheduled in {already}/63 updates")
+    target_obj = sorted(range(50), key=lambda i: sizes[i])[1]
+    boost_args = make_args(loss_weighting="token", boost_indices=[target_obj], row_tokens=4096, chunk_tokens=8192)
+    update = next(u for u in range(1, 100) if target_obj not in dense_train.objects_for_update(boost_args, u, 50))
+    row = dense_train.train_update(model, RecordingSGD(model.parameters()), boost_args, conditions, levels, update, DEVICE)
+    expected_objects = dense_train.objects_for_update(boost_args, update, 50) + [target_obj]
+    boosted_items = dense_train.build_items(boost_args, expected_objects, levels, update, DEVICE)
+    check("boosted train_update runs: extra object logged, finite loss, weights sum to 1",
+          row["objects"] == expected_objects and row["items"] == len(boosted_items)
+          and torch.isfinite(torch.tensor(row["loss"])) and abs(sum(i.weight for i in boosted_items) - 1) < 1e-9,
+          f"objects={row['objects']}")
+
     # 2b) learning-rate schedule: warmup, constant, linear decay over the last 20%
     sched = make_args(lr=1e-5, warmup=20, max_updates=100, decay_fraction=0.2, min_lr=0.0)
     values = [dense_train.lr_at(sched, u) for u in (10, 20, 50, 80, 90, 100)]
