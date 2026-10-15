@@ -74,3 +74,5 @@
 - [Historical Topology Flow records — Batch1 item6 — 2026-10-15](messages/20261015-round3-topology-flow-records.md)
 
 - [Round3 Batch1 frozen evaluation — 2026-10-15](messages/20261015-round3-batch1.md)
+
+- [Topology AE code path document (fixed20 LayerNorm/no-RMS)](TOPOLOGY_AE_CODE_PATH.md) - [source and SHA256](messages/20261015-topology-ae-code-path.md)
