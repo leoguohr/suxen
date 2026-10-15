@@ -161,7 +161,7 @@ def test_lr_schedule():
 def test_batch_is_stratified_and_deterministic():
     data = synthetic_data([4, 5, 6, 4, 7, 5, 4])
     t, noisy, target = make_batch(data, seed=7, update=3)
-    strata = sorted(int(x) for x in (t * data.count).floor())
+    strata = sorted(int(x) for x in (t.double() * data.count + 1e-5).floor())
     assert strata == list(range(data.count))
     t2, noisy2, target2 = make_batch(data, seed=7, update=3)
     assert torch.equal(t, t2) and torch.equal(noisy, noisy2) and torch.equal(target, target2)
