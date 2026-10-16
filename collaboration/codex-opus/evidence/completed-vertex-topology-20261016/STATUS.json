@@ -1,0 +1,1138 @@
+{
+  "title": "Completed Vertex K1/K2 and Topology pair A/B; quad progress snapshot",
+  "vertex": {
+    "task": "Round3 Batch2 completed K1/K2 handoff",
+    "collected_at_utc": "2026-10-16T09:07:38.800427+00:00",
+    "source_root": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015",
+    "code_commit": "e7e3a326a65bc550be695104ae69e0d3435bd446",
+    "runs": [
+      {
+        "name": "K1_J5_lr1e-5_d0.4",
+        "source": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K1_J5_lr1e-5_d0.4",
+        "updates": 4500,
+        "budget": 4500,
+        "training_log_rows": 4500,
+        "contiguous_updates_verified": true,
+        "lr": 1e-05,
+        "decay_fraction": 0.4,
+        "eval_steps": 20,
+        "checkpoint": {
+          "path": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K1_J5_lr1e-5_d0.4/final.pt",
+          "exists": true,
+          "bytes": 37320289539,
+          "mtime_utc": "2026-10-16T03:16:53.385999+00:00",
+          "reported_update": 4500,
+          "reported_update_evidence": "status.json and JOB_COMPLETE",
+          "sha256": null,
+          "tensor_contents_loaded_this_collection": false,
+          "limitation": "No new checkpoint hash or tensor-content verification; .pt remains on server."
+        },
+        "completion_lines": [
+          "START attempt=1 UTC=2026-10-15T07:25:15Z",
+          "TRAINING_COMPLETE updates=4500; final evaluations ['raw', 'ema']",
+          "JOB_COMPLETE updates=4500 final=/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K1_J5_lr1e-5_d0.4/final.pt",
+          "EXIT attempt=1 rc=0 UTC=2026-10-16T03:51:51Z",
+          "VERIFIED_JOB_COMPLETE 4500"
+        ],
+        "evaluations": [
+          {
+            "path": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K1_J5_lr1e-5_d0.4/evals/u004500_ema/evaluation.json",
+            "weights": "ema",
+            "update": 4500,
+            "trees": 100,
+            "unique_uid_seed_pairs": 100,
+            "exact": 90,
+            "all_status_complete": true,
+            "seeds": [
+              97029000,
+              97029001
+            ],
+            "uids": 50,
+            "per_depth_exact": [
+              100,
+              100,
+              100,
+              100,
+              100,
+              97,
+              93,
+              90,
+              90
+            ],
+            "target_001093": [
+              {
+                "seed": 97029000,
+                "all_levels_exact": true,
+                "first_mismatch_depth": null
+              },
+              {
+                "seed": 97029001,
+                "all_levels_exact": true,
+                "first_mismatch_depth": null
+              }
+            ]
+          },
+          {
+            "path": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K1_J5_lr1e-5_d0.4/evals/u004500_raw/evaluation.json",
+            "weights": "raw",
+            "update": 4500,
+            "trees": 100,
+            "unique_uid_seed_pairs": 100,
+            "exact": 90,
+            "all_status_complete": true,
+            "seeds": [
+              97029000,
+              97029001
+            ],
+            "uids": 50,
+            "per_depth_exact": [
+              100,
+              100,
+              100,
+              100,
+              100,
+              97,
+              93,
+              90,
+              90
+            ],
+            "target_001093": [
+              {
+                "seed": 97029000,
+                "all_levels_exact": true,
+                "first_mismatch_depth": null
+              },
+              {
+                "seed": 97029001,
+                "all_levels_exact": true,
+                "first_mismatch_depth": null
+              }
+            ]
+          }
+        ],
+        "additional_10_seed_2_and_20_step_evaluations": "Not found under this completed run directory; not executed by this collection."
+      },
+      {
+        "name": "K2_J5_lr5e-6_d0.5",
+        "source": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K2_J5_lr5e-6_d0.5",
+        "updates": 4500,
+        "budget": 4500,
+        "training_log_rows": 4500,
+        "contiguous_updates_verified": true,
+        "lr": 5e-06,
+        "decay_fraction": 0.5,
+        "eval_steps": 20,
+        "checkpoint": {
+          "path": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K2_J5_lr5e-6_d0.5/final.pt",
+          "exists": true,
+          "bytes": 37320289539,
+          "mtime_utc": "2026-10-16T04:30:30.218261+00:00",
+          "reported_update": 4500,
+          "reported_update_evidence": "status.json and JOB_COMPLETE",
+          "sha256": null,
+          "tensor_contents_loaded_this_collection": false,
+          "limitation": "No new checkpoint hash or tensor-content verification; .pt remains on server."
+        },
+        "completion_lines": [
+          "START attempt=1 UTC=2026-10-15T08:33:52Z",
+          "TRAINING_COMPLETE updates=4500; final evaluations ['raw', 'ema']",
+          "JOB_COMPLETE updates=4500 final=/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K2_J5_lr5e-6_d0.5/final.pt",
+          "EXIT attempt=1 rc=0 UTC=2026-10-16T05:03:19Z",
+          "VERIFIED_JOB_COMPLETE 4500"
+        ],
+        "evaluations": [
+          {
+            "path": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K2_J5_lr5e-6_d0.5/evals/u004500_ema/evaluation.json",
+            "weights": "ema",
+            "update": 4500,
+            "trees": 100,
+            "unique_uid_seed_pairs": 100,
+            "exact": 91,
+            "all_status_complete": true,
+            "seeds": [
+              97029000,
+              97029001
+            ],
+            "uids": 50,
+            "per_depth_exact": [
+              100,
+              100,
+              100,
+              100,
+              100,
+              100,
+              95,
+              92,
+              91
+            ],
+            "target_001093": [
+              {
+                "seed": 97029000,
+                "all_levels_exact": true,
+                "first_mismatch_depth": null
+              },
+              {
+                "seed": 97029001,
+                "all_levels_exact": false,
+                "first_mismatch_depth": 7
+              }
+            ]
+          },
+          {
+            "path": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K2_J5_lr5e-6_d0.5/evals/u004500_raw/evaluation.json",
+            "weights": "raw",
+            "update": 4500,
+            "trees": 100,
+            "unique_uid_seed_pairs": 100,
+            "exact": 92,
+            "all_status_complete": true,
+            "seeds": [
+              97029000,
+              97029001
+            ],
+            "uids": 50,
+            "per_depth_exact": [
+              100,
+              100,
+              100,
+              100,
+              100,
+              100,
+              96,
+              93,
+              92
+            ],
+            "target_001093": [
+              {
+                "seed": 97029000,
+                "all_levels_exact": true,
+                "first_mismatch_depth": null
+              },
+              {
+                "seed": 97029001,
+                "all_levels_exact": false,
+                "first_mismatch_depth": 7
+              }
+            ]
+          }
+        ],
+        "additional_10_seed_2_and_20_step_evaluations": "Not found under this completed run directory; not executed by this collection."
+      }
+    ],
+    "collection_scope": "Existing CPU-readable small files only; no training, GPU calls, new evaluations, .pt loading or old-folder modifications.",
+    "caveats": [
+      "Training completion is distinct from the 100/100 exact acceptance criterion; neither arm passes.",
+      "K1 actually used decay_fraction=0.4. The separately prepared old K1 decay0.2 and K3/K4 are not these runs.",
+      "Supplementary final EMA evaluations on ten seeds at 2 and 20 steps are not present in these completed run directories.",
+      "Historical deployment/preparation reports say not started; they predate the terminal run logs and are provenance only.",
+      "Source J5 SHA/full-state checks are historical evidence in audit/READY.json; final checkpoint SHA/tensors were not independently rechecked now."
+    ]
+  },
+  "topology": {
+    "captured_utc": "2026-10-16T09:09:55.055324+00:00",
+    "captured_singapore": "2026-10-16T17:09:57.240217+08:00",
+    "research_source_commit": "72c993772a91482a3660faa7c83993bfd566cbfe",
+    "execution_code": "Separate distributed/migration wrappers are included and hashed; these wrappers differ from original single-GPU repository code.",
+    "scope": "CPU/file-only evidence collection; no GPU, training, restart, checkpoint read/hash or original-folder edits.",
+    "pair_completed": {
+      "A_fresh": {
+        "state": {
+          "state": "complete",
+          "update": 4000,
+          "final": {
+            "file": "checkpoint-u004000-finalstage.pt",
+            "bytes": 37344882648,
+            "sha256": "92f09fab446dec509a48039beddb1b9735e09c9db85de059dcddf328674f6e6d",
+            "update": 4000,
+            "final_stage": true,
+            "recipe_sha256": "e3070735d507e152ff18515b7021a9d51d2b3efe0eca8491bec962146d592727"
+          },
+          "passed_early": true
+        },
+        "final_checkpoint_record": {
+          "file": "checkpoint-u004000-finalstage.pt",
+          "bytes": 37344882648,
+          "sha256": "92f09fab446dec509a48039beddb1b9735e09c9db85de059dcddf328674f6e6d",
+          "update": 4000,
+          "final_stage": true,
+          "recipe_sha256": "e3070735d507e152ff18515b7021a9d51d2b3efe0eca8491bec962146d592727"
+        },
+        "checkpoint_exists": true,
+        "checkpoint_bytes_match_manifest": true,
+        "checkpoint_sha256_note": "Recorded committed SHA only; not rehashed or loaded in this CPU handoff.",
+        "milestone_rows": [
+          {
+            "update": 2000,
+            "weights": "raw",
+            "steps": 20,
+            "face_micro_f1": {
+              "0": 0.985834164774836,
+              "1": 0.9852366708572364
+            },
+            "edge_micro_f1": {
+              "0": 0.9954498355633644,
+              "1": 0.9951009878441451
+            },
+            "joint_strict": {
+              "0": 3,
+              "1": 4
+            },
+            "latent_rmse": {
+              "0": 0.12318598153790525,
+              "1": 0.1232054782113027
+            },
+            "by_size": {
+              "0": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.9828032262973673,
+                  "joint_strict": 2,
+                  "latent_rmse_mean": 0.14029582142829894
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.9872963682558661,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.12531861866062338
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.9921911973497397,
+                  "joint_strict": 1,
+                  "latent_rmse_mean": 0.12304418108292989
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.9847367033080124,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.12229141694578258
+                }
+              },
+              "1": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.9844559585492227,
+                  "joint_strict": 4,
+                  "latent_rmse_mean": 0.14143117815256118
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.9847009735744089,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.1254992444406856
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.9928568609653103,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.12287538711513792
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.9840978042885792,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.1223146224563772
+                }
+              }
+            },
+            "overflow": {
+              "0": [],
+              "1": []
+            },
+            "passed": false,
+            "minutes": 1.3781073786473523
+          },
+          {
+            "update": 2000,
+            "weights": "ema",
+            "steps": 20,
+            "face_micro_f1": {
+              "0": 0.1766263290924752,
+              "1": 0.17820898145707004
+            },
+            "edge_micro_f1": {
+              "0": 0.5214864135324816,
+              "1": 0.52206813358517
+            },
+            "joint_strict": {
+              "0": 0,
+              "1": 0
+            },
+            "latent_rmse": {
+              "0": 0.5960079376316221,
+              "1": 0.596342679365207
+            },
+            "by_size": {
+              "0": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.1834099365287809,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.5828328907489777
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.2294336273367726,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.5808041258291765
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.21603260869565216,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.6098434158733913
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.16766647186221595,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.5940881777893413
+                }
+              },
+              "1": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.19392123287671234,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.5829381287097931
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.23442711135018826,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.580408058383248
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.21788002941485451,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.61004809822355
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.16853208170002063,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.5944602895866741
+                }
+              }
+            },
+            "overflow": {
+              "0": [],
+              "1": []
+            },
+            "passed": false,
+            "minutes": 1.3667516028198103
+          },
+          {
+            "update": 4000,
+            "weights": "raw",
+            "steps": 20,
+            "face_micro_f1": {
+              "0": 0.9942495103136411,
+              "1": 0.9942024360406362
+            },
+            "edge_micro_f1": {
+              "0": 0.9989200411351497,
+              "1": 0.9988943437462728
+            },
+            "joint_strict": {
+              "0": 8,
+              "1": 7
+            },
+            "latent_rmse": {
+              "0": 0.07987098699004037,
+              "1": 0.07991064700554835
+            },
+            "by_size": {
+              "0": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.9890243902439024,
+                  "joint_strict": 5,
+                  "latent_rmse_mean": 0.10597053021192551
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.9951870049132658,
+                  "joint_strict": 3,
+                  "latent_rmse_mean": 0.08416036042300137
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.997507812809051,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.08200624691588539
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.9938185572331913,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.07824960418722847
+                }
+              },
+              "1": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.9894704715397528,
+                  "joint_strict": 4,
+                  "latent_rmse_mean": 0.10574829876422882
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.9944895301072036,
+                  "joint_strict": 2,
+                  "latent_rmse_mean": 0.08383696323091333
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.9974677534224895,
+                  "joint_strict": 1,
+                  "latent_rmse_mean": 0.08186861340488706
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.9938331333617164,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.07843303849751299
+                }
+              }
+            },
+            "overflow": {
+              "0": [],
+              "1": []
+            },
+            "passed": true,
+            "minutes": 1.3764220897729198
+          },
+          {
+            "update": 4000,
+            "weights": "ema",
+            "steps": 20,
+            "face_micro_f1": {
+              "0": 0.9103483791230013,
+              "1": 0.9114379942478172
+            },
+            "edge_micro_f1": {
+              "0": 0.9648622229267391,
+              "1": 0.965287750190645
+            },
+            "joint_strict": {
+              "0": 0,
+              "1": 0
+            },
+            "latent_rmse": {
+              "0": 0.24017102787342484,
+              "1": 0.24022168794456758
+            },
+            "by_size": {
+              "0": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.4874418604651163,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.31655667424201966
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.7650550265858785,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.25367157703096216
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.9476413929365275,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.24149751024586813
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.9321830849234023,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.23612372915853153
+                }
+              },
+              "1": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.47549824150058617,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.3153667837381363
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.7720073664825046,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.253094498406757
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.94429730177123,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.2420523464679718
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.9337351812993678,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.23617706380107187
+                }
+              }
+            },
+            "overflow": {
+              "0": [],
+              "1": []
+            },
+            "passed": false,
+            "minutes": 1.3663996792864055
+          }
+        ],
+        "sweeps": {
+          "sweep_ema": {
+            "cases": 12,
+            "objects_per_case": [
+              50
+            ],
+            "overflow_count": 0,
+            "lower_bound_cases": 0
+          },
+          "sweep_raw": {
+            "cases": 2,
+            "objects_per_case": [
+              50
+            ],
+            "overflow_count": 0,
+            "lower_bound_cases": 0
+          },
+          "sweep_ema_fp32": {
+            "cases": 2,
+            "objects_per_case": [
+              50
+            ],
+            "overflow_count": 0,
+            "lower_bound_cases": 0
+          }
+        },
+        "segments": [
+          {
+            "name": "A_fresh",
+            "status": "exited",
+            "returncode": 0,
+            "started_at": 1792124279.4417095,
+            "ended_at": 1792136744.3827395
+          },
+          {
+            "name": "A_fresh_sweep_ema",
+            "status": "exited",
+            "returncode": 0,
+            "started_at": 1792136782.9020977,
+            "ended_at": 1792137458.9290972
+          },
+          {
+            "name": "A_fresh_sweep_raw",
+            "status": "exited",
+            "returncode": 0,
+            "started_at": 1792137460.9811594,
+            "ended_at": 1792137657.6215823
+          },
+          {
+            "name": "A_fresh_sweep_ema_fp32",
+            "status": "exited",
+            "returncode": 0,
+            "started_at": 1792137659.6723819,
+            "ended_at": 1792138115.2396705
+          }
+        ]
+      },
+      "B_s0warm": {
+        "state": {
+          "state": "complete",
+          "update": 4000,
+          "final": {
+            "file": "checkpoint-u004000-finalstage.pt",
+            "bytes": 37344882776,
+            "sha256": "abc330ba9328a79ac29c3eb0ad1989b18d2be6ebb0a941d8e3f773bb75ae9d59",
+            "update": 4000,
+            "final_stage": true,
+            "recipe_sha256": "0ba735ef288e0e5603cabe553f5eddb60f44276c87ada75d73a23f8bb4db98be"
+          },
+          "passed_early": true
+        },
+        "final_checkpoint_record": {
+          "file": "checkpoint-u004000-finalstage.pt",
+          "bytes": 37344882776,
+          "sha256": "abc330ba9328a79ac29c3eb0ad1989b18d2be6ebb0a941d8e3f773bb75ae9d59",
+          "update": 4000,
+          "final_stage": true,
+          "recipe_sha256": "0ba735ef288e0e5603cabe553f5eddb60f44276c87ada75d73a23f8bb4db98be"
+        },
+        "checkpoint_exists": true,
+        "checkpoint_bytes_match_manifest": true,
+        "checkpoint_sha256_note": "Recorded committed SHA only; not rehashed or loaded in this CPU handoff.",
+        "milestone_rows": [
+          {
+            "update": 2000,
+            "weights": "raw",
+            "steps": 20,
+            "face_micro_f1": {
+              "0": 0.9880592510380615,
+              "1": 0.9876269189957458
+            },
+            "edge_micro_f1": {
+              "0": 0.996908565244779,
+              "1": 0.996786123806909
+            },
+            "joint_strict": {
+              "0": 2,
+              "1": 1
+            },
+            "latent_rmse": {
+              "0": 0.10925868606556356,
+              "1": 0.10945252044825714
+            },
+            "by_size": {
+              "0": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.9777639558389053,
+                  "joint_strict": 2,
+                  "latent_rmse_mean": 0.1228401355445385
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.9873532982598139,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.11254607073285362
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.9947648131990164,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.10919693005936486
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.9874819826254074,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.10809968479655006
+                }
+              },
+              "1": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.9766136576239476,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.12480604350566864
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.9866923038000304,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.11199369891123338
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.9933717007342727,
+                  "joint_strict": 1,
+                  "latent_rmse_mean": 0.10977509192058019
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.9872658592624324,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.10828785970807076
+                }
+              }
+            },
+            "overflow": {
+              "0": [],
+              "1": []
+            },
+            "passed": false,
+            "minutes": 1.3735152105490367
+          },
+          {
+            "update": 2000,
+            "weights": "ema",
+            "steps": 20,
+            "face_micro_f1": {
+              "0": 0.2584056895086236,
+              "1": 0.25671165210310043
+            },
+            "edge_micro_f1": {
+              "0": 0.602496003670172,
+              "1": 0.6017465904249034
+            },
+            "joint_strict": {
+              "0": 0,
+              "1": 0
+            },
+            "latent_rmse": {
+              "0": 0.5705110917994772,
+              "1": 0.5707094203006983
+            },
+            "by_size": {
+              "0": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.11038251366120219,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.5720375776290894
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.2194213238208482,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.5576621402393688
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.29472073450650343,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.5730220420019967
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.26054957801687934,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.5702376636591825
+                }
+              },
+              "1": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.11628532974427995,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.568732863664627
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.2192559829397362,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.556774226101962
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.29545800558233953,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.5749274066516331
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.2582551868873363,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.5703535052863035
+                }
+              }
+            },
+            "overflow": {
+              "0": [],
+              "1": []
+            },
+            "passed": false,
+            "minutes": 1.3602931330601373
+          },
+          {
+            "update": 4000,
+            "weights": "raw",
+            "steps": 20,
+            "face_micro_f1": {
+              "0": 0.9950446657568983,
+              "1": 0.9950491455783498
+            },
+            "edge_micro_f1": {
+              "0": 0.9993002370164944,
+              "1": 0.9992679993163694
+            },
+            "joint_strict": {
+              "0": 11,
+              "1": 9
+            },
+            "latent_rmse": {
+              "0": 0.07199300172379726,
+              "1": 0.07228354438650146
+            },
+            "by_size": {
+              "0": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.9922030270600826,
+                  "joint_strict": 5,
+                  "latent_rmse_mean": 0.08210958987474441
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.9952872756442395,
+                  "joint_strict": 4,
+                  "latent_rmse_mean": 0.07374460385604338
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.997705514676794,
+                  "joint_strict": 2,
+                  "latent_rmse_mean": 0.07255621254444122
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.9946991561263163,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.07138626243580472
+                }
+              },
+              "1": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.9915889279706377,
+                  "joint_strict": 5,
+                  "latent_rmse_mean": 0.08350309059023857
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.9955872028883763,
+                  "joint_strict": 3,
+                  "latent_rmse_mean": 0.0731251680038192
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.9975076156189421,
+                  "joint_strict": 1,
+                  "latent_rmse_mean": 0.07296058109828404
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.9947247099236148,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.07172902030023662
+                }
+              }
+            },
+            "overflow": {
+              "0": [],
+              "1": []
+            },
+            "passed": true,
+            "minutes": 1.3655111946476002
+          },
+          {
+            "update": 4000,
+            "weights": "ema",
+            "steps": 20,
+            "face_micro_f1": {
+              "0": 0.9396169054013728,
+              "1": 0.9381436109625979
+            },
+            "edge_micro_f1": {
+              "0": 0.9738608824404102,
+              "1": 0.9735510281496468
+            },
+            "joint_strict": {
+              "0": 0,
+              "1": 0
+            },
+            "latent_rmse": {
+              "0": 0.1675692184490645,
+              "1": 0.16750100781739952
+            },
+            "by_size": {
+              "0": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.8599167822468793,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.19426261335611344
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.9662761079979623,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.1629413217306137
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.9711367329567437,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.16454331151076726
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.934236000490136,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.1674074571241032
+                }
+              },
+              "1": {
+                "0-300": {
+                  "objects": 10,
+                  "face_micro_f1": 0.8744648056174003,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.1942959502339363
+                },
+                "300-700": {
+                  "objects": 11,
+                  "face_micro_f1": 0.9661619754090032,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.16242121430960568
+                },
+                "700-1200": {
+                  "objects": 7,
+                  "face_micro_f1": 0.9732412937252772,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.16481799951621465
+                },
+                "1200+": {
+                  "objects": 22,
+                  "face_micro_f1": 0.9315212347668937,
+                  "joint_strict": 0,
+                  "latent_rmse_mean": 0.16742942956360904
+                }
+              }
+            },
+            "overflow": {
+              "0": [],
+              "1": []
+            },
+            "passed": false,
+            "minutes": 1.3629397383114943
+          }
+        ],
+        "sweeps": {
+          "sweep_ema": {
+            "cases": 12,
+            "objects_per_case": [
+              50
+            ],
+            "overflow_count": 0,
+            "lower_bound_cases": 0
+          },
+          "sweep_raw": {
+            "cases": 2,
+            "objects_per_case": [
+              50
+            ],
+            "overflow_count": 0,
+            "lower_bound_cases": 0
+          },
+          "sweep_ema_fp32": {
+            "cases": 2,
+            "objects_per_case": [
+              50
+            ],
+            "overflow_count": 0,
+            "lower_bound_cases": 0
+          }
+        },
+        "segments": [
+          {
+            "name": "B_s0warm",
+            "status": "exited",
+            "returncode": 0,
+            "started_at": 1792124377.1189854,
+            "ended_at": 1792136806.8234534
+          },
+          {
+            "name": "B_s0warm_sweep_ema",
+            "status": "exited",
+            "returncode": 0,
+            "started_at": 1792136848.9024675,
+            "ended_at": 1792137526.9499583
+          },
+          {
+            "name": "B_s0warm_sweep_raw",
+            "status": "exited",
+            "returncode": 0,
+            "started_at": 1792137528.968899,
+            "ended_at": 1792137631.3018744
+          },
+          {
+            "name": "B_s0warm_sweep_ema_fp32",
+            "status": "exited",
+            "returncode": 0,
+            "started_at": 1792137633.3166182,
+            "ended_at": 1792138074.7667496
+          }
+        ]
+      }
+    },
+    "quad_snapshot_only": {
+      "A_fresh": {
+        "directory_exists": true,
+        "state": "not_final_snapshot",
+        "directory_entries": [
+          "checkpoint-u002000-train.pt",
+          "config-u001386.json",
+          "evals",
+          "evals.jsonl",
+          "latest.json",
+          "migration.json",
+          "probes.jsonl",
+          "recipe.json",
+          "status.json",
+          "train.jsonl"
+        ],
+        "last_train_row": {
+          "update": 2668,
+          "loss": 0.08894632756710052,
+          "grad_norm": 0.15026326477527618,
+          "lr": 0.0001,
+          "t_bin_mse": [
+            0.018493767827749252,
+            0.020146219059824944,
+            0.02014179900288582,
+            0.02428492158651352,
+            0.02873292565345764,
+            0.03486158326268196,
+            0.048958443105220795,
+            0.07575509697198868,
+            0.14344577491283417,
+            0.5519428849220276
+          ],
+          "largest_object_mse": 0.02083487994968891,
+          "smallest_object_mse": 0.0750289335846901,
+          "seconds": 2.4425158500671387,
+          "batch_seconds": 0.0018851077184081078,
+          "forward_backward_seconds": 2.227238357067108,
+          "gradient_sync_seconds": 0.12958752270787954,
+          "clip_adam_ema_seconds": 0.08380489889532328,
+          "gradient_payload_bytes": 9335861248,
+          "local_objects": 12,
+          "local_tokens": 13195,
+          "peak_allocated_gib": 55.55869150161743,
+          "peak_reserved_gib": 68.697265625,
+          "wall_hours": 0.9973780745267868
+        },
+        "final_pointer_present": false,
+        "interpretation": "Training log progressed during current read-only checks; this is not a final result."
+      },
+      "B_s0warm": {
+        "directory_exists": true,
+        "state": "not_final_snapshot",
+        "directory_entries": [
+          "migration.json"
+        ],
+        "last_train_row": null,
+        "final_pointer_present": false,
+        "interpretation": "Prepared migration/dry-run exists; no training log or START was observed at capture. Submission/queue status is not inferred."
+      }
+    },
+    "exclusions": [
+      ".pt",
+      ".npz",
+      "predictions",
+      "raw training data",
+      "credentials"
+    ]
+  },
+  "archive": {
+    "file": "completed-results-evidence.tgz",
+    "bytes": 3010880,
+    "sha256": "21bd5624dc36bb47f453795c15c152eb2f2b1ab5b7bbd25c068ff89ea6b69c91",
+    "members": 238
+  },
+  "verification": "Small files copied, hashed, and archive entries read back; no new model inference.",
+  "excluded": [
+    "checkpoint tensors",
+    "prediction arrays",
+    "training data",
+    "credentials"
+  ],
+  "scope": "Publish existing completed results and a bounded snapshot; no training or GPU work."
+}

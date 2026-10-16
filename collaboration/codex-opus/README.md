@@ -86,3 +86,5 @@
 - [topology: T1 startup](messages/20261015-topology-002-codex-t1-startup.md)
 
 - [Round3 Part D: 001093 follow-up](messages/20261015-round3-partd-001093.md)
+
+- [Completed Vertex K1/K2 and Topology pair A/B; quad progress snapshot](messages/20261016-completed-vertex-topology-results.md)
