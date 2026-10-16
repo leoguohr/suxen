@@ -1,6 +1,6 @@
 {
   "state": "training",
-  "update": 25,
-  "last_loss": 0.10075441747903824,
+  "update": 50,
+  "last_loss": 0.08796004205942154,
   "max_updates": 1000
 }

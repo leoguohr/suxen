@@ -1,6 +1,6 @@
 # topology: T2 gate 3
 
-本地证据更新时间：2026-10-16T20:30:05+08:00。
+本地证据更新时间：2026-10-16T20:35:16+08:00。
 
 ## 来源与执行状态
 
@@ -171,7 +171,7 @@ cascade_flow1：strict Face FP+FN 最大的 10 棵树（并列按 UID、vertex s
 
 ## Cooldown 训练阶段评价
 
-状态：`{"state": "training", "update": 25, "last_loss": 0.10075441747903824, "max_updates": 1000}`。
+状态：`{"state": "training", "update": 50, "last_loss": 0.08796004205942154, "max_updates": 1000}`。
 
 | 初始化来源核验 | 实际配置记录 |
 | --- | --- |
