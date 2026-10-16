@@ -12,23 +12,23 @@
     1
   ],
   "cpu_gate": "CPU_GATE_OK (14 tests)",
-  "patches": "train.py: serialize init_checkpoint Path in config JSON; no training semantics changed",
+  "patches": "train.py: serialize init_checkpoint Path in config JSON; isolated T2 four-GPU adapter validates cooldown Adam step offset, evolved EMA, recipe and cursor; no model or loss change",
   "patch_sha256": "754386805f3315f88536e945433f19fccc8105bab5562766c5e2f8c8b16904e1",
-  "cooldown_execution": "GPU 2 single GPU; T1 adapter does not accept --init-checkpoint; AdamW state retained",
+  "cooldown_execution": "先在 GPU 2 以单卡 B_cooldown 继承 B/u4000 的 AdamW 启动；随后获准迁移至独立 T2/B_cooldown_4gpu，使用 4 卡。实际启动及进度以各目录 status.json 为准。",
   "gpu_allocation": {
-    "0": "gt_reference then B; cooldown raw after completion",
-    "1": "A; cooldown ema after completion",
-    "2": "B cooldown single GPU",
-    "3": "unused fallback"
+    "0": "四卡 cooldown rank 0；完成后 raw Gate 3",
+    "1": "四卡 cooldown rank 1；完成后 EMA Gate 3",
+    "2": "四卡 cooldown rank 2",
+    "3": "四卡 cooldown rank 3"
   },
   "deadline_utc": "2026-10-16T16:04:04+00:00",
   "gpu_budget_max_hours": 16,
   "wall_budget_max_hours": 4,
   "individual_quota": "unknown; quota and mmlsquota unavailable",
   "persistent_mount": "/guohaoran (GPFS)",
-  "checkpoint_retention": "cooldown latest.pt then final.pt; one old copy retained until atomic replacement; parent checkpoints unchanged",
+  "checkpoint_retention": "保留原单卡 B_cooldown checkpoint 作为迁移父本；新 B_cooldown_4gpu 独立保存 checkpoint-uXXXXXX-*.pt 与 latest.json/final.json，SHA 校验及原子提交后才替换本目录旧点；T1 父 checkpoint 不变。",
   "expected_checkpoint_bytes": 37344882776,
-  "expected_peak_new_checkpoint_bytes": 74689765552,
+  "expected_peak_new_checkpoint_bytes": 112034648328,
   "veval_verified_manifest_sha256": "0e75c07658cbb8a8106c93187dcaa8f9fdcbb453f980aa1132ac3244332e76c3",
   "earlier_quad_A": "already complete u4000; no stop required",
   "created_utc": "2026-10-16T12:21:06.338866+00:00",
@@ -37,5 +37,30 @@
     "B": "abc330ba9328a79ac29c3eb0ad1989b18d2be6ebb0a941d8e3f773bb75ae9d59",
     "vae": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15"
   },
-  "input_checkpoints_rehashed_this_batch": true
+  "input_checkpoints_rehashed_this_batch": true,
+  "initial_gpu_allocation": {
+    "0": "gt_reference then B; cooldown raw after completion",
+    "1": "A; cooldown ema after completion",
+    "2": "B cooldown single GPU",
+    "3": "unused fallback"
+  },
+  "cooldown_active_run": "B_cooldown_4gpu",
+  "cooldown_migration": {
+    "source_run": "B_cooldown",
+    "target_run": "B_cooldown_4gpu",
+    "target_world_size": 4,
+    "adam_step_offset": 4000,
+    "preserve_evolved_ema": true,
+    "global_rng_state_saved_by_single_gpu_source": false,
+    "global_rng_restored_from_single_gpu_source": false,
+    "stateless_batch_seed": 20261016,
+    "state_transfer": "继承单卡阶段模型、AdamW、已演化 EMA 与 cooldown 更新游标；Adam step = 4000 + cooldown update；不重置 LR 日程或 EMA。",
+    "randomness": "单卡源 checkpoint 未保存全局 RNG 快照，不能宣称恢复该快照；t、Flow 噪声及后验采样沿用 seed/update 键控随机流。迁移后的原生分布式 checkpoint 保存各 rank RNG 及数据游标。",
+    "cpu_validation": "迁移校验 10 tests OK；四 rank 原生恢复 CPU gate: exact_model_adam_ema_rng_cursor=1。该结果验证原生 checkpoint 恢复，不补造单卡源全局 RNG。",
+    "cpu_validation_evidence": [
+      "four_gpu_adapter/evidence/migration_unit_correct_env.log",
+      "four_gpu_adapter/evidence/native_regression.log"
+    ]
+  },
+  "expected_peak_new_checkpoint_note": "T2 原单卡迁移父本 + 四卡当前点 + 四卡原子保存临时新点；不含已有 T1 父 checkpoint。"
 }

@@ -19,5 +19,15 @@
     "returncode": 0,
     "seconds": 283.49639773368835,
     "gpu_hours_upper_bound": 0.07874899990028805
+  },
+  "B_cooldown": {
+    "stage": "B_cooldown",
+    "gpu": 2,
+    "returncode": 143,
+    "reason": "authorized migration to four GPUs",
+    "seconds": 1885.8951666355133,
+    "gpu_hours_upper_bound": 0.5238597685098648,
+    "update": 208,
+    "checkpoint": "/guohaoran/nexus_topology_flow_overfit50_20261015/T2/B_cooldown/latest.pt"
   }
 }

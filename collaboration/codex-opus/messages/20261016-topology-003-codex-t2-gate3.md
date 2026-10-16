@@ -1,6 +1,6 @@
 # topology: T2 gate 3
 
-本地证据更新时间：2026-10-16T20:35:16+08:00。
+本地证据更新时间：2026-10-16T21:05:54+08:00。
 
 ## 来源与执行状态
 
@@ -10,17 +10,20 @@
 | Vertex VEVAL | /guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K2_J5_lr5e-6_d0.5/evals/u004500_raw |
 | Vertex full_trees_exact | 92 |
 | CPU gate | CPU_GATE_OK (14 tests) |
-| 执行补丁 | train.py: serialize init_checkpoint Path in config JSON; no training semantics changed |
+| 执行补丁 | train.py: serialize init_checkpoint Path in config JSON; isolated T2 four-GPU adapter validates cooldown Adam step offset, evolved EMA, recipe and cursor; no model or loss change |
 
 | 实际执行边界 | 记录 |
 | --- | --- |
-| GPU 分配 | {"0": "gt_reference then B; cooldown raw after completion", "1": "A; cooldown ema after completion", "2": "B cooldown single GPU", "3": "unused fallback"} |
-| Cooldown 实际入口 | GPU 2 single GPU; T1 adapter does not accept --init-checkpoint; AdamW state retained |
+| GPU 分配 | {"0": "四卡 cooldown rank 0；完成后 raw Gate 3", "1": "四卡 cooldown rank 1；完成后 EMA Gate 3", "2": "四卡 cooldown rank 2", "3": "四卡 cooldown rank 3"} |
+| Cooldown 实际入口 | 先在 GPU 2 以单卡 B_cooldown 继承 B/u4000 的 AdamW 启动；随后获准迁移至独立 T2/B_cooldown_4gpu，使用 4 卡。实际启动及进度以各目录 status.json 为准。 |
 | 执行上限 | 4 小时墙钟；最多 16 GPU 小时；截止 2026-10-17T00:04:04+08:00（新加坡时间） |
-| 存储边界 | /guohaoran (GPFS)；单个新增完整检查点约 34.8 GiB，原子替换峰值约 69.6 GiB；个人配额：unknown; quota and mmlsquota unavailable |
-| 检查点保留 | cooldown latest.pt then final.pt; one old copy retained until atomic replacement; parent checkpoints unchanged |
+| 存储边界 | /guohaoran (GPFS)；单个新增完整检查点约 34.8 GiB，原子替换峰值约 104.3 GiB；个人配额：unknown; quota and mmlsquota unavailable。T2 原单卡迁移父本 + 四卡当前点 + 四卡原子保存临时新点；不含已有 T1 父 checkpoint。 |
+| 检查点保留 | 保留原单卡 B_cooldown checkpoint 作为迁移父本；新 B_cooldown_4gpu 独立保存 checkpoint-uXXXXXX-*.pt 与 latest.json/final.json，SHA 校验及原子提交后才替换本目录旧点；T1 父 checkpoint 不变。 |
 | VEVAL 文件清单 SHA256 | 0e75c07658cbb8a8106c93187dcaa8f9fdcbb453f980aa1132ac3244332e76c3 |
 | 输入 checkpoint 重新哈希记录 | input_checkpoint_sha256.json |
+| 四卡迁移与状态继承 | 继承单卡阶段模型、AdamW、已演化 EMA 与 cooldown 更新游标；Adam step = 4000 + cooldown update；不重置 LR 日程或 EMA。 |
+| 随机流恢复边界 | 单卡源 checkpoint 未保存全局 RNG 快照，不能宣称恢复该快照；t、Flow 噪声及后验采样沿用 seed/update 键控随机流。迁移后的原生分布式 checkpoint 保存各 rank RNG 及数据游标。 |
+| 四卡恢复 CPU 验证 | 迁移校验 10 tests OK；四 rank 原生恢复 CPU gate: exact_model_adam_ema_rng_cursor=1。该结果验证原生 checkpoint 恢复，不补造单卡源全局 RNG。 |
 
 生成使用 Vertex 预测 D9 cells 与原点云条件；strict 和 one_cell 均为生成后的匹配评价。每个 flow seed 包含 2 个 vertex seeds × 50 条，共 100 棵树；GT reference 为 50 条。exact/inexact 划分以批准的 Topology GT 为准，001825 使用 1277 点版本。
 
@@ -171,7 +174,15 @@ cascade_flow1：strict Face FP+FN 最大的 10 棵树（并列按 UID、vertex s
 
 ## Cooldown 训练阶段评价
 
-状态：`{"state": "training", "update": 50, "last_loss": 0.08796004205942154, "max_updates": 1000}`。
+当前续训目录：`B_cooldown_4gpu`。
+
+已从 cooldown u208 接续为四卡同模型训练。前3次有效更新的耗时中位数为 2.507s，原单卡末20步中位数为 8.559s，该启动测量的加速比为 3.41×。评价与保存时间另计。
+
+状态：`{"state": "saving", "update": 208}`。
+
+原单卡段 `B_cooldown` 的保留状态：`{"state": "interrupted", "update": 208, "latest": "/guohaoran/nexus_topology_flow_overfit50_20261015/T2/B_cooldown/latest.pt"}`。
+
+原单卡 cooldown 初始化来源（四卡迁移继续保留此后演化的 EMA，不重新初始化）：
 
 | 初始化来源核验 | 实际配置记录 |
 | --- | --- |
@@ -183,4 +194,4 @@ cascade_flow1：strict Face FP+FN 最大的 10 棵树（并列按 UID、vertex s
 
 训练阶段评价使用 GT 顶点，Gate 3 使用 Vertex 生成顶点，二者分开报告。未完成组不用于全量成功结论，joint strict 不等同于 micro-F1 达标。
 
-小文件证据与 SHA256 清单：[`evidence/topology-t2-20261016/manifest.json`](../evidence/topology-t2-20261016/manifest.json)，共 25 个文件。
+小文件证据与 SHA256 清单：[`evidence/topology-t2-20261016/manifest.json`](../evidence/topology-t2-20261016/manifest.json)，共 43 个文件。

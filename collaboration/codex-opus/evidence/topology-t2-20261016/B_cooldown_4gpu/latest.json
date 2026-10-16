@@ -1,0 +1,8 @@
+{
+  "file": "checkpoint-u000208-train.pt",
+  "bytes": 37344909956,
+  "sha256": "055c98725c9237d917758c1fe32d071fb01f4f18c17c397d6789a1fdfe5f7567",
+  "update": 208,
+  "final_stage": false,
+  "recipe_sha256": "d51fd9e0655aa818ca9a4c3a1ab155a594a1d240a5101e6ba465371384942903"
+}

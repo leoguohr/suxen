@@ -1,6 +1,5 @@
 {
-  "state": "training",
-  "update": 50,
-  "last_loss": 0.08796004205942154,
-  "max_updates": 1000
+  "state": "interrupted",
+  "update": 208,
+  "latest": "/guohaoran/nexus_topology_flow_overfit50_20261015/T2/B_cooldown/latest.pt"
 }

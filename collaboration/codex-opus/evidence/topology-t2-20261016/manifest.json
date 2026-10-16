@@ -14,8 +14,38 @@
   {
     "file": "B_cooldown/status.json",
     "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/B_cooldown/status.json",
-    "bytes": 100,
-    "sha256": "c0a6a78602353195b03cb24a5d1c8c4d9a3ec6a3fe1048d4fbd2a0dc913882ad"
+    "bytes": 134,
+    "sha256": "95ab50fcb899831194875cc3115348f3f3999362632c0e1580ddc1844230a4a8"
+  },
+  {
+    "file": "B_cooldown_4gpu/config-u000208.json",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/B_cooldown_4gpu/config-u000208.json",
+    "bytes": 3558,
+    "sha256": "ca3ef5f6b9ce1da377b5129feab8a092da942669274024c6cf71e49df0e0c51f"
+  },
+  {
+    "file": "B_cooldown_4gpu/latest.json",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/B_cooldown_4gpu/latest.json",
+    "bytes": 275,
+    "sha256": "fc0037d28b8962b56c67d7c57d5cc1f2168252c7d2c8925f3557a4b05aabe0c7"
+  },
+  {
+    "file": "B_cooldown_4gpu/migration.json",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/B_cooldown_4gpu/migration.json",
+    "bytes": 3302,
+    "sha256": "2d8902f286e8a72cb2688003d377643dd85b6f4adab4822486f42b67b1092632"
+  },
+  {
+    "file": "B_cooldown_4gpu/status.json",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/B_cooldown_4gpu/status.json",
+    "bytes": 40,
+    "sha256": "26a492b7623b671793e662e81725c8976379e716907065783663817245624794"
+  },
+  {
+    "file": "MIGRATION_READY.json",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/MIGRATION_READY.json",
+    "bytes": 3797,
+    "sha256": "b2324b7d82104b211583eaf6bdb7e396219a3a1509569760e126d8eea76ce28a"
   },
   {
     "file": "cascade_A/cascade_flow0/summary.json",
@@ -78,6 +108,12 @@
     "sha256": "bab67950fa9a609fb7737f8769486665507cf342860c9b4f8f9c0c6eb9d3c627"
   },
   {
+    "file": "continue_t2_four_gpu.py",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/continue_t2_four_gpu.py",
+    "bytes": 6883,
+    "sha256": "b9ea9c716341924e4eeeab1d388abf63fea97eca52d0221433ef42795f551074"
+  },
+  {
     "file": "cooldown_path_serialization.patch",
     "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/cooldown_path_serialization.patch",
     "bytes": 876,
@@ -86,8 +122,74 @@
   {
     "file": "events.jsonl",
     "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/events.jsonl",
-    "bytes": 4048,
-    "sha256": "d2879111ea564bab80487f166ab417acd73902dda026598dfbbb15515efaab89"
+    "bytes": 5697,
+    "sha256": "31f94c218f89c1d57276017fa933224826525d86e24e22e3178e9ccb8510f9d3"
+  },
+  {
+    "file": "four_gpu_launch_args.json",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/four_gpu_launch_args.json",
+    "bytes": 1523,
+    "sha256": "b99ac5873a879954a14e34821be36e66f92992abd2adbc754c2b7a4773ef6b81"
+  },
+  {
+    "file": "four_gpu_parent_validation.json",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/four_gpu_parent_validation.json",
+    "bytes": 5318,
+    "sha256": "2dffd163c34be59d87876b6589b3c80103d6d0ee19369533631d5a8a3e5bd40d"
+  },
+  {
+    "file": "four_gpu_tools/benchmark_distributed.py",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/four_gpu_tools/benchmark_distributed.py",
+    "bytes": 21421,
+    "sha256": "6fb8972ca43943de388a004d48a9741cb034aafafce2f8ce20b4617e518669e3"
+  },
+  {
+    "file": "four_gpu_tools/checkpoint_policy.py",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/four_gpu_tools/checkpoint_policy.py",
+    "bytes": 2215,
+    "sha256": "8b1027eb0260b413371b3629b67ab70204da1204c863ab3a5ae84dee70bb4543"
+  },
+  {
+    "file": "four_gpu_tools/prepare_t2_migration.py",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/four_gpu_tools/prepare_t2_migration.py",
+    "bytes": 5059,
+    "sha256": "c1daea18e8daab87664e1d0c3029dfb516154f6295a8e378a10a1a1080bf48de"
+  },
+  {
+    "file": "four_gpu_tools/single_gpu_migration.py",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/four_gpu_tools/single_gpu_migration.py",
+    "bytes": 10806,
+    "sha256": "632866b5da4a4a9a9c245fd54dfd3afb25935e3df68a23f6f31b2378ac371e74"
+  },
+  {
+    "file": "four_gpu_tools/test_single_gpu_migration.py",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/four_gpu_tools/test_single_gpu_migration.py",
+    "bytes": 10229,
+    "sha256": "4bce0c1633815418bd68d0837af79da10d884ccdfad3b28a74c2776540a5df94"
+  },
+  {
+    "file": "four_gpu_tools/test_single_to_distributed.py",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/four_gpu_tools/test_single_to_distributed.py",
+    "bytes": 12283,
+    "sha256": "96fb8125cb4b7ed5d034c22dd23719f2f280b7431567b05c44b72b11f55cc0e1"
+  },
+  {
+    "file": "four_gpu_tools/test_train_distributed.py",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/four_gpu_tools/test_train_distributed.py",
+    "bytes": 5377,
+    "sha256": "f81a3d3777b18ee8658be4aa03c43e170e9ec0bcb4179587ee3e21507383e9aa"
+  },
+  {
+    "file": "four_gpu_tools/train_distributed.py",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/four_gpu_tools/train_distributed.py",
+    "bytes": 26443,
+    "sha256": "a5e05734afa642685e05fb478faeb51443eaeaf48e4dd83e9caa4890c56b5779"
+  },
+  {
+    "file": "four_gpu_validation.json",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/four_gpu_validation.json",
+    "bytes": 2415,
+    "sha256": "1443e3d00114045e6004e236b268fca581522c596496e33edab62d9fa0d5388d"
   },
   {
     "file": "gt_reference_B/gt_reference_flow0/summary.json",
@@ -122,14 +224,20 @@
   {
     "file": "provenance.json",
     "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/provenance.json",
-    "bytes": 1880,
-    "sha256": "c269bd6ac8ace4191ddc0a59befc5a01bf17897544c3f71edff8a1ef98cf6d3e"
+    "bytes": 3725,
+    "sha256": "b70f258c6d8aff0e6a8c7f3e900d8cac90f45887ea2afdb003bf71d420a78f7c"
   },
   {
     "file": "self_check.json",
     "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/self_check.json",
     "bytes": 383,
     "sha256": "90ae164186fe22e6e24b0e9c3c1c79cae2cc68c81df5170b39311bb5beece0be"
+  },
+  {
+    "file": "single_stop.json",
+    "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/single_stop.json",
+    "bytes": 299,
+    "sha256": "72cdfe4c47470c806f65edd5fbf5dca332c6135306e8ea99f2e94215bb8ca3d5"
   },
   {
     "file": "source_files.json",
@@ -140,8 +248,8 @@
   {
     "file": "stage_status.json",
     "source": "/Users/luthier/Documents/sophomore/nexus_fast_track/diagnostics/topology_t2_gate3_20261016/evidence/stage_status.json",
-    "bytes": 513,
-    "sha256": "44f7cd21793b3d8597f5c7874f874236c0ab1c9681de5f3dc7df3a2204c7fedb"
+    "bytes": 848,
+    "sha256": "2615b44b5426b4c2acdff4d5ae298aacb63f1b79e5d72f345f023f17b4b4d976"
   },
   {
     "file": "veval_verified.json",

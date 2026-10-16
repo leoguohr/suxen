@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "synthetic_legacy_updates": 2,
+  "migrated_update": 3,
+  "resumed_update": 4,
+  "parent_sha256": "4ab96be3fc760ad6d6a316eb7b513458865928fa19e0f4c6f59d8058f5b69978",
+  "parent_unchanged": true,
+  "target_world_size": 4,
+  "partition_covers_all_50_once": true,
+  "partition_covers_all_tokens_once": true,
+  "single_to_distributed": "within existing FP32 CPU tolerances",
+  "native_resume": "exact model/EMA/Adam/rank RNG/data cursor",
+  "global_rng_independent_batch": true,
+  "update_preserves_global_rng": true,
+  "production_cursor_test": "500 -> 501 inputs and LR; update 1000 LR zero",
+  "inherited_adam_offset": 2,
+  "cooldown_updates": 4,
+  "final_adam_steps": 6,
+  "historical_global_rng_recovered": false,
+  "gpu_work": false,
+  "migration_unit_tests": 10,
+  "native_resume_regression": "DISTRIBUTED_RESUME_GATE_OK world=4 exact_model_adam_ema_rng_cursor=1",
+  "adapter_manifest": {
+    "train_distributed.py": {
+      "sha256": "a5e05734afa642685e05fb478faeb51443eaeaf48e4dd83e9caa4890c56b5779",
+      "bytes": 26443
+    },
+    "single_gpu_migration.py": {
+      "sha256": "632866b5da4a4a9a9c245fd54dfd3afb25935e3df68a23f6f31b2378ac371e74",
+      "bytes": 10806
+    },
+    "benchmark_distributed.py": {
+      "sha256": "6fb8972ca43943de388a004d48a9741cb034aafafce2f8ce20b4617e518669e3",
+      "bytes": 21421
+    },
+    "checkpoint_policy.py": {
+      "sha256": "8b1027eb0260b413371b3629b67ab70204da1204c863ab3a5ae84dee70bb4543",
+      "bytes": 2215
+    },
+    "prepare_t2_migration.py": {
+      "sha256": "c1daea18e8daab87664e1d0c3029dfb516154f6295a8e378a10a1a1080bf48de",
+      "bytes": 5059
+    },
+    "test_single_gpu_migration.py": {
+      "sha256": "4bce0c1633815418bd68d0837af79da10d884ccdfad3b28a74c2776540a5df94",
+      "bytes": 10229
+    },
+    "test_single_to_distributed.py": {
+      "sha256": "96fb8125cb4b7ed5d034c22dd23719f2f280b7431567b05c44b72b11f55cc0e1",
+      "bytes": 12283
+    },
+    "test_train_distributed.py": {
+      "sha256": "f81a3d3777b18ee8658be4aa03c43e170e9ec0bcb4179587ee3e21507383e9aa",
+      "bytes": 5377
+    }
+  },
+  "validation_evidence": {
+    "native_regression.log": "5d83870be66500927139fd8554a511b61868bc8d4b008432be856f1538d4898c",
+    "cooldown_acceptance.json": "5f47cca6c20e0aaf875da0ea93aa5452dbc17facece180b8d822846a1cef2b2c",
+    "migration_unit_correct_env.log": "e30bebbc036c56c314d14f1a1125d1bae8b434393b747b2b6d8f2f1e01517705"
+  }
+}
