@@ -260,6 +260,12 @@ def main():
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--init-vertex", type=Path, default=None, help="Run B: S0 checkpoint-034000.pt for the warm start")
     p.add_argument("--init-vertex-sha", default=S0_SHA256)
+    p.add_argument("--init-checkpoint", type=Path, default=None,
+                   help="cooldown: start from a finished topology checkpoint (model, optionally AdamW and EMA)")
+    p.add_argument("--init-checkpoint-sha", default=None, help="optional SHA256 check of --init-checkpoint")
+    p.add_argument("--init-optimizer", type=int, default=1, help="with --init-checkpoint: also load its AdamW state")
+    p.add_argument("--ema-from-raw", type=int, default=1,
+                   help="with --init-checkpoint: start the EMA from the loaded raw weights (1) or load its EMA (0)")
     p.add_argument("--lr", type=float, default=1e-4)
     p.add_argument("--min-lr", type=float, default=0.0)
     p.add_argument("--warmup", type=int, default=500)
@@ -321,10 +327,30 @@ def main():
         transfer = transfer_vertex_weights(system, s0["model"])
         del s0
         print(f"warm start from S0: {transfer['copied']} tensors copied; fresh: {transfer['kept_fresh']}", flush=True)
+    init_optimizer_state = init_ema_state = None
+    if args.init_checkpoint is not None and not resume:
+        if args.init_vertex is not None:
+            raise SystemExit("--init-checkpoint and --init-vertex are exclusive")
+        if args.init_checkpoint_sha and sha256_file(args.init_checkpoint) != args.init_checkpoint_sha:
+            raise SystemExit("--init-checkpoint SHA256 mismatch")
+        parent = torch.load(args.init_checkpoint, map_location="cpu", mmap=True, weights_only=False)
+        system.load_state_dict(parent["model"], strict=True)
+        init_optimizer_state = parent.get("optimizer") if args.init_optimizer else None
+        init_ema_state = None if args.ema_from_raw else parent["ema"]
+        transfer = dict(init_checkpoint=str(args.init_checkpoint), parent_update=parent.get("update"),
+                        optimizer_loaded=init_optimizer_state is not None, ema_from_raw=bool(args.ema_from_raw))
+        del parent
+        print(f"cooldown start from {args.init_checkpoint}: {transfer}", flush=True)
     system.train()
     optimizer = torch.optim.AdamW(system.parameters(), lr=args.lr, betas=(0.9, 0.999), eps=1e-8,
                                   weight_decay=args.weight_decay, fused=True)
+    if init_optimizer_state is not None:
+        optimizer.load_state_dict(init_optimizer_state)
+        del init_optimizer_state
     ema = EMA(system, args.ema_decay)
+    if init_ema_state is not None:
+        ema.load(system, init_ema_state)
+        del init_ema_state
     start_update, final_stage = 0, False
     if resume:
         state = torch.load(latest, map_location="cpu", mmap=True, weights_only=False)

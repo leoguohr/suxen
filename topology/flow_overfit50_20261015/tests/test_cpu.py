@@ -276,6 +276,44 @@ def test_decode_and_score_with_a_tiny_vae():
     assert torch.allclose(edge, native["edge"], atol=1e-6) and torch.allclose(face, native["face"], atol=1e-6)
 
 
+def test_cascade_matching_mapping_and_scoring():
+    import cascade
+    gt = np.array([[10, 10, 10], [11, 10, 10], [10, 11, 10], [11, 11, 10], [12, 11, 10]], dtype=np.int64)
+    gt_faces = np.array([[0, 1, 2], [0, 2, 3], [2, 3, 4]], dtype=np.int64)
+    gt_edges = np.unique(np.sort(np.concatenate([gt_faces[:, [0, 1]], gt_faces[:, [0, 2]], gt_faces[:, [1, 2]]]),
+                                 axis=1), axis=0)
+    shifted = gt[4] + np.array([1, 0, 0])
+    pred = np.stack([gt[3], gt[0], shifted, gt[1], gt[2], np.array([40, 40, 40])])
+    strict = cascade.match_vertices(pred, gt, one_cell=False)
+    loose = cascade.match_vertices(pred, gt, one_cell=True)
+    assert strict.tolist() == [3, 0, -1, 1, 2, -1] and loose.tolist() == [3, 0, 4, 1, 2, -1]
+    edges, faces, lost_e, lost_f = cascade.map_gt_to_pred(strict, len(gt), gt_edges, gt_faces)
+    assert {tuple(f) for f in faces.tolist()} == {(1, 3, 4), (0, 1, 4)} and lost_f == 1 and lost_e == 2
+    perfect_edges, perfect_faces, _, _ = cascade.map_gt_to_pred(loose, len(gt), gt_edges, gt_faces)
+    assert len(perfect_faces) == 3 and len(perfect_edges) == len(gt_edges)
+    # A decoder that predicts exactly the one-cell-mapped mesh on the 6 predicted vertices.
+    predicted_edges = {tuple(e) for e in perfect_edges.tolist()}
+    predicted_faces = {tuple(f) for f in perfect_faces.tolist()}
+    old_edge, old_face = metrics.edge_logits, metrics.face_logits
+    metrics.edge_logits = lambda emb, pairs: torch.tensor([1.0 if tuple(p) in predicted_edges else -1.0 for p in pairs.tolist()])
+    metrics.face_logits = lambda emb, ids: torch.tensor([1.0 if tuple(t) in predicted_faces else -1.0 for t in ids.tolist()])
+    try:
+        emb = torch.zeros(len(pred), 4)
+        loose_row = cascade.score_tree(emb, emb, loose, len(gt), gt_edges, gt_faces)
+        strict_row = cascade.score_tree(emb, emb, strict, len(gt), gt_edges, gt_faces)
+    finally:
+        metrics.edge_logits, metrics.face_logits = old_edge, old_face
+    assert loose_row["joint_strict"] and loose_row["face"]["tp"] == 3 and loose_row["edge"]["tp"] == len(gt_edges)
+    # Strict matching: the shifted vertex is unmatched, so its 2 edges / 1 face are both false and missed.
+    assert (strict_row["edge"]["tp"], strict_row["edge"]["fp"], strict_row["edge"]["fn"]) == (len(gt_edges) - 2, 2, 2)
+    assert (strict_row["face"]["tp"], strict_row["face"]["fp"], strict_row["face"]["fn"]) == (2, 1, 1)
+    assert cascade.xyz_to_cells(cascade.cells_to_xyz(gt)).tolist() == gt.tolist()
+    failed = cascade.failed_tree(gt_edges, gt_faces)
+    summary = cascade.aggregate_trees([dict(loose_row, vertex_set_exact=False, vertex_seed=1),
+                                       dict(failed, vertex_set_exact=False, vertex_seed=2)])
+    assert summary["all"]["face"]["fn"] == 3 and summary["all"]["trees"] == 2 and summary["exact_vertex_trees"]["trees"] == 0
+
+
 if __name__ == "__main__":
     tests = [(name, fn) for name, fn in sorted(globals().items()) if name.startswith("test_") and callable(fn)]
     failures = 0
