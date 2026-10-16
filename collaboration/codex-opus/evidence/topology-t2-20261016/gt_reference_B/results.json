@@ -1,0 +1,171 @@
+{
+  "mode": "gt_reference",
+  "checkpoint": "/guohaoran/nexus_topology_flow_overfit50_20261015/pair_resume_20261016/B_s0warm/checkpoint-u004000-finalstage.pt",
+  "weights": "raw",
+  "steps": 20,
+  "sampler": "euler",
+  "dtype": "bf16",
+  "vertex_eval": "None",
+  "runs": {
+    "gt_reference_flow0": {
+      "strict": {
+        "all": {
+          "trees": 50,
+          "edge": {
+            "tp": 154944,
+            "fp": 183,
+            "fn": 34,
+            "micro_f1": 0.9993002370164944
+          },
+          "face": {
+            "tp": 102811,
+            "fp": 945,
+            "fn": 79,
+            "micro_f1": 0.9950446657568983
+          },
+          "joint_strict": 11,
+          "overflow_trees": 0,
+          "face_fn_unmatched_vertex": 0
+        },
+        "exact_vertex_trees": {
+          "trees": 50,
+          "edge": {
+            "tp": 154944,
+            "fp": 183,
+            "fn": 34,
+            "micro_f1": 0.9993002370164944
+          },
+          "face": {
+            "tp": 102811,
+            "fp": 945,
+            "fn": 79,
+            "micro_f1": 0.9950446657568983
+          },
+          "joint_strict": 11,
+          "overflow_trees": 0,
+          "face_fn_unmatched_vertex": 0
+        },
+        "inexact_vertex_trees": {
+          "trees": 0,
+          "edge": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "micro_f1": 0.0
+          },
+          "face": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "micro_f1": 0.0
+          },
+          "joint_strict": 0,
+          "overflow_trees": 0,
+          "face_fn_unmatched_vertex": 0
+        },
+        "vertex_seed_gt": {
+          "trees": 50,
+          "edge": {
+            "tp": 154944,
+            "fp": 183,
+            "fn": 34,
+            "micro_f1": 0.9993002370164944
+          },
+          "face": {
+            "tp": 102811,
+            "fp": 945,
+            "fn": 79,
+            "micro_f1": 0.9950446657568983
+          },
+          "joint_strict": 11,
+          "overflow_trees": 0,
+          "face_fn_unmatched_vertex": 0
+        }
+      },
+      "one_cell": {
+        "all": {
+          "trees": 50,
+          "edge": {
+            "tp": 154944,
+            "fp": 183,
+            "fn": 34,
+            "micro_f1": 0.9993002370164944
+          },
+          "face": {
+            "tp": 102811,
+            "fp": 945,
+            "fn": 79,
+            "micro_f1": 0.9950446657568983
+          },
+          "joint_strict": 11,
+          "overflow_trees": 0,
+          "face_fn_unmatched_vertex": 0
+        },
+        "exact_vertex_trees": {
+          "trees": 50,
+          "edge": {
+            "tp": 154944,
+            "fp": 183,
+            "fn": 34,
+            "micro_f1": 0.9993002370164944
+          },
+          "face": {
+            "tp": 102811,
+            "fp": 945,
+            "fn": 79,
+            "micro_f1": 0.9950446657568983
+          },
+          "joint_strict": 11,
+          "overflow_trees": 0,
+          "face_fn_unmatched_vertex": 0
+        },
+        "inexact_vertex_trees": {
+          "trees": 0,
+          "edge": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "micro_f1": 0.0
+          },
+          "face": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "micro_f1": 0.0
+          },
+          "joint_strict": 0,
+          "overflow_trees": 0,
+          "face_fn_unmatched_vertex": 0
+        },
+        "vertex_seed_gt": {
+          "trees": 50,
+          "edge": {
+            "tp": 154944,
+            "fp": 183,
+            "fn": 34,
+            "micro_f1": 0.9993002370164944
+          },
+          "face": {
+            "tp": 102811,
+            "fp": 945,
+            "fn": 79,
+            "micro_f1": 0.9950446657568983
+          },
+          "joint_strict": 11,
+          "overflow_trees": 0,
+          "face_fn_unmatched_vertex": 0
+        }
+      }
+    }
+  },
+  "vertex_gt_cell_differences": [
+    {
+      "uid": "nexus_2k_001825",
+      "vertex_gt_cells": 1279,
+      "topology_gt_cells": 1277,
+      "only_in_vertex_gt": 2,
+      "only_in_topology_gt": 0
+    }
+  ],
+  "minutes": 2.5825222443323583
+}

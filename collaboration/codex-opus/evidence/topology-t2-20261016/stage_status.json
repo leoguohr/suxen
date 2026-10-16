@@ -1,0 +1,23 @@
+{
+  "gt_reference_B": {
+    "stage": "gt_reference_B",
+    "gpu": 0,
+    "returncode": 0,
+    "seconds": 157.1577889919281,
+    "gpu_hours_upper_bound": 0.04365494204892052
+  },
+  "cascade_B": {
+    "stage": "cascade_B",
+    "gpu": 0,
+    "returncode": 0,
+    "seconds": 220.81963467597961,
+    "gpu_hours_upper_bound": 0.061338788270950316
+  },
+  "cascade_A": {
+    "stage": "cascade_A",
+    "gpu": 1,
+    "returncode": 0,
+    "seconds": 283.49639773368835,
+    "gpu_hours_upper_bound": 0.07874899990028805
+  }
+}

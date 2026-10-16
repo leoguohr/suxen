@@ -1,0 +1,12 @@
+diff --git a/topology/flow_overfit50_20261015/train.py b/topology/flow_overfit50_20261015/train.py
+index d7f4a46..1367a4c 100644
+--- a/topology/flow_overfit50_20261015/train.py
++++ b/topology/flow_overfit50_20261015/train.py
+@@ -363,6 +363,7 @@ def main():
+     groups = object_groups(data, args.chunk_tokens)
+     info = dict(vars(args), output=str(args.output), cache=str(args.cache), vae=str(args.vae),
+                 init_vertex=str(args.init_vertex) if args.init_vertex else None,
++                init_checkpoint=str(args.init_checkpoint) if args.init_checkpoint else None,
+                 start_update=start_update, resumed=resume, uids=data.uids, tokens=data.seg.tokens,
+                 parameters=dict(total=parameter_count(system), flow=parameter_count(system.flow),
+                                 condition_encoder=parameter_count(system.condition_encoder)),

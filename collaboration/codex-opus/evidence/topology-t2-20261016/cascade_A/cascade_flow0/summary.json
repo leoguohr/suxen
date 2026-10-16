@@ -1,0 +1,692 @@
+{
+  "strict": {
+    "all": {
+      "trees": 100,
+      "edge": {
+        "tp": 309810,
+        "fp": 607,
+        "fn": 146,
+        "micro_f1": 0.9987862141002268
+      },
+      "face": {
+        "tp": 205530,
+        "fp": 2243,
+        "fn": 250,
+        "micro_f1": 0.9939717521091613
+      },
+      "joint_strict": 16,
+      "overflow_trees": 0,
+      "face_fn_unmatched_vertex": 49
+    },
+    "exact_vertex_trees": {
+      "trees": 90,
+      "edge": {
+        "tp": 261844,
+        "fp": 488,
+        "fn": 77,
+        "micro_f1": 0.9989222760766271
+      },
+      "face": {
+        "tp": 173960,
+        "fp": 1881,
+        "fn": 162,
+        "micro_f1": 0.9941622400082294
+      },
+      "joint_strict": 16,
+      "overflow_trees": 0,
+      "face_fn_unmatched_vertex": 0
+    },
+    "inexact_vertex_trees": {
+      "trees": 10,
+      "edge": {
+        "tp": 47966,
+        "fp": 119,
+        "fn": 69,
+        "micro_f1": 0.9980441115272576
+      },
+      "face": {
+        "tp": 31570,
+        "fp": 362,
+        "fn": 88,
+        "micro_f1": 0.9929234156313885
+      },
+      "joint_strict": 0,
+      "overflow_trees": 0,
+      "face_fn_unmatched_vertex": 49
+    },
+    "vertex_seed_97029000": {
+      "trees": 50,
+      "edge": {
+        "tp": 154924,
+        "fp": 298,
+        "fn": 54,
+        "micro_f1": 0.9988652482269503
+      },
+      "face": {
+        "tp": 102787,
+        "fp": 1114,
+        "fn": 103,
+        "micro_f1": 0.9941148309162391
+      },
+      "joint_strict": 7,
+      "overflow_trees": 0,
+      "face_fn_unmatched_vertex": 12
+    },
+    "vertex_seed_97029001": {
+      "trees": 50,
+      "edge": {
+        "tp": 154886,
+        "fp": 309,
+        "fn": 92,
+        "micro_f1": 0.9987071730937251
+      },
+      "face": {
+        "tp": 102743,
+        "fp": 1129,
+        "fn": 147,
+        "micro_f1": 0.9938286532341533
+      },
+      "joint_strict": 9,
+      "overflow_trees": 0,
+      "face_fn_unmatched_vertex": 37
+    }
+  },
+  "one_cell": {
+    "all": {
+      "trees": 100,
+      "edge": {
+        "tp": 309816,
+        "fp": 601,
+        "fn": 140,
+        "micro_f1": 0.9988055573018169
+      },
+      "face": {
+        "tp": 205536,
+        "fp": 2237,
+        "fn": 244,
+        "micro_f1": 0.9940007689461811
+      },
+      "joint_strict": 16,
+      "overflow_trees": 0,
+      "face_fn_unmatched_vertex": 43
+    },
+    "exact_vertex_trees": {
+      "trees": 90,
+      "edge": {
+        "tp": 261844,
+        "fp": 488,
+        "fn": 77,
+        "micro_f1": 0.9989222760766271
+      },
+      "face": {
+        "tp": 173960,
+        "fp": 1881,
+        "fn": 162,
+        "micro_f1": 0.9941622400082294
+      },
+      "joint_strict": 16,
+      "overflow_trees": 0,
+      "face_fn_unmatched_vertex": 0
+    },
+    "inexact_vertex_trees": {
+      "trees": 10,
+      "edge": {
+        "tp": 47972,
+        "fp": 113,
+        "fn": 63,
+        "micro_f1": 0.9981689554723263
+      },
+      "face": {
+        "tp": 31576,
+        "fp": 356,
+        "fn": 82,
+        "micro_f1": 0.9931121245478849
+      },
+      "joint_strict": 0,
+      "overflow_trees": 0,
+      "face_fn_unmatched_vertex": 43
+    },
+    "vertex_seed_97029000": {
+      "trees": 50,
+      "edge": {
+        "tp": 154924,
+        "fp": 298,
+        "fn": 54,
+        "micro_f1": 0.9988652482269503
+      },
+      "face": {
+        "tp": 102787,
+        "fp": 1114,
+        "fn": 103,
+        "micro_f1": 0.9941148309162391
+      },
+      "joint_strict": 7,
+      "overflow_trees": 0,
+      "face_fn_unmatched_vertex": 12
+    },
+    "vertex_seed_97029001": {
+      "trees": 50,
+      "edge": {
+        "tp": 154892,
+        "fp": 303,
+        "fn": 86,
+        "micro_f1": 0.998745861180696
+      },
+      "face": {
+        "tp": 102749,
+        "fp": 1123,
+        "fn": 141,
+        "micro_f1": 0.9938866909780327
+      },
+      "joint_strict": 9,
+      "overflow_trees": 0,
+      "face_fn_unmatched_vertex": 31
+    }
+  },
+  "vertex_status": {
+    "97029000": [
+      {
+        "uid": "nexus_2k_001150",
+        "status": "complete",
+        "predicted_n": 18
+      },
+      {
+        "uid": "nexus_2k_001045",
+        "status": "complete",
+        "predicted_n": 54
+      },
+      {
+        "uid": "nexus_2k_000084",
+        "status": "complete",
+        "predicted_n": 128
+      },
+      {
+        "uid": "nexus_2k_001692",
+        "status": "complete",
+        "predicted_n": 150
+      },
+      {
+        "uid": "nexus_2k_001843",
+        "status": "complete",
+        "predicted_n": 188
+      },
+      {
+        "uid": "nexus_2k_000346",
+        "status": "complete",
+        "predicted_n": 192
+      },
+      {
+        "uid": "nexus_2k_001780",
+        "status": "complete",
+        "predicted_n": 196
+      },
+      {
+        "uid": "nexus_2k_000796",
+        "status": "complete",
+        "predicted_n": 200
+      },
+      {
+        "uid": "nexus_2k_001085",
+        "status": "complete",
+        "predicted_n": 226
+      },
+      {
+        "uid": "nexus_2k_000020",
+        "status": "complete",
+        "predicted_n": 288
+      },
+      {
+        "uid": "nexus_2k_000447",
+        "status": "complete",
+        "predicted_n": 332
+      },
+      {
+        "uid": "nexus_2k_001179",
+        "status": "complete",
+        "predicted_n": 325
+      },
+      {
+        "uid": "nexus_2k_000118",
+        "status": "complete",
+        "predicted_n": 362
+      },
+      {
+        "uid": "nexus_2k_000074",
+        "status": "complete",
+        "predicted_n": 386
+      },
+      {
+        "uid": "nexus_2k_000519",
+        "status": "complete",
+        "predicted_n": 392
+      },
+      {
+        "uid": "nexus_2k_001087",
+        "status": "complete",
+        "predicted_n": 425
+      },
+      {
+        "uid": "nexus_2k_000053",
+        "status": "complete",
+        "predicted_n": 488
+      },
+      {
+        "uid": "nexus_2k_000675",
+        "status": "complete",
+        "predicted_n": 516
+      },
+      {
+        "uid": "nexus_2k_001716",
+        "status": "complete",
+        "predicted_n": 534
+      },
+      {
+        "uid": "nexus_2k_000242",
+        "status": "complete",
+        "predicted_n": 652
+      },
+      {
+        "uid": "nexus_2k_000823",
+        "status": "complete",
+        "predicted_n": 666
+      },
+      {
+        "uid": "nexus_2k_001536",
+        "status": "complete",
+        "predicted_n": 728
+      },
+      {
+        "uid": "nexus_2k_000840",
+        "status": "complete",
+        "predicted_n": 798
+      },
+      {
+        "uid": "nexus_2k_001577",
+        "status": "complete",
+        "predicted_n": 836
+      },
+      {
+        "uid": "nexus_2k_001216",
+        "status": "complete",
+        "predicted_n": 938
+      },
+      {
+        "uid": "nexus_2k_001331",
+        "status": "complete",
+        "predicted_n": 969
+      },
+      {
+        "uid": "nexus_2k_000142",
+        "status": "complete",
+        "predicted_n": 1029
+      },
+      {
+        "uid": "nexus_2k_001550",
+        "status": "complete",
+        "predicted_n": 1137
+      },
+      {
+        "uid": "nexus_2k_000872",
+        "status": "complete",
+        "predicted_n": 1215
+      },
+      {
+        "uid": "nexus_2k_000952",
+        "status": "complete",
+        "predicted_n": 1251
+      },
+      {
+        "uid": "nexus_2k_001825",
+        "status": "complete",
+        "predicted_n": 1279
+      },
+      {
+        "uid": "nexus_2k_001483",
+        "status": "complete",
+        "predicted_n": 1418
+      },
+      {
+        "uid": "nexus_2k_001439",
+        "status": "complete",
+        "predicted_n": 1446
+      },
+      {
+        "uid": "nexus_2k_001178",
+        "status": "complete",
+        "predicted_n": 1458
+      },
+      {
+        "uid": "nexus_2k_001317",
+        "status": "complete",
+        "predicted_n": 1536
+      },
+      {
+        "uid": "nexus_2k_000869",
+        "status": "complete",
+        "predicted_n": 1590
+      },
+      {
+        "uid": "nexus_2k_001415",
+        "status": "complete",
+        "predicted_n": 1609
+      },
+      {
+        "uid": "nexus_2k_000283",
+        "status": "complete",
+        "predicted_n": 1643
+      },
+      {
+        "uid": "nexus_2k_000935",
+        "status": "complete",
+        "predicted_n": 1713
+      },
+      {
+        "uid": "nexus_2k_000815",
+        "status": "complete",
+        "predicted_n": 1735
+      },
+      {
+        "uid": "nexus_2k_000800",
+        "status": "complete",
+        "predicted_n": 1829
+      },
+      {
+        "uid": "nexus_2k_001211",
+        "status": "complete",
+        "predicted_n": 1830
+      },
+      {
+        "uid": "nexus_2k_001093",
+        "status": "complete",
+        "predicted_n": 1964
+      },
+      {
+        "uid": "nexus_2k_000783",
+        "status": "complete",
+        "predicted_n": 2172
+      },
+      {
+        "uid": "nexus_2k_000083",
+        "status": "complete",
+        "predicted_n": 2238
+      },
+      {
+        "uid": "nexus_2k_001792",
+        "status": "complete",
+        "predicted_n": 2244
+      },
+      {
+        "uid": "nexus_2k_000280",
+        "status": "complete",
+        "predicted_n": 2279
+      },
+      {
+        "uid": "nexus_2k_000167",
+        "status": "complete",
+        "predicted_n": 2273
+      },
+      {
+        "uid": "nexus_2k_001232",
+        "status": "complete",
+        "predicted_n": 2398
+      },
+      {
+        "uid": "nexus_2k_000898",
+        "status": "complete",
+        "predicted_n": 2547
+      }
+    ],
+    "97029001": [
+      {
+        "uid": "nexus_2k_001150",
+        "status": "complete",
+        "predicted_n": 18
+      },
+      {
+        "uid": "nexus_2k_001045",
+        "status": "complete",
+        "predicted_n": 54
+      },
+      {
+        "uid": "nexus_2k_000084",
+        "status": "complete",
+        "predicted_n": 128
+      },
+      {
+        "uid": "nexus_2k_001692",
+        "status": "complete",
+        "predicted_n": 150
+      },
+      {
+        "uid": "nexus_2k_001843",
+        "status": "complete",
+        "predicted_n": 188
+      },
+      {
+        "uid": "nexus_2k_000346",
+        "status": "complete",
+        "predicted_n": 192
+      },
+      {
+        "uid": "nexus_2k_001780",
+        "status": "complete",
+        "predicted_n": 196
+      },
+      {
+        "uid": "nexus_2k_000796",
+        "status": "complete",
+        "predicted_n": 200
+      },
+      {
+        "uid": "nexus_2k_001085",
+        "status": "complete",
+        "predicted_n": 226
+      },
+      {
+        "uid": "nexus_2k_000020",
+        "status": "complete",
+        "predicted_n": 288
+      },
+      {
+        "uid": "nexus_2k_000447",
+        "status": "complete",
+        "predicted_n": 332
+      },
+      {
+        "uid": "nexus_2k_001179",
+        "status": "complete",
+        "predicted_n": 325
+      },
+      {
+        "uid": "nexus_2k_000118",
+        "status": "complete",
+        "predicted_n": 362
+      },
+      {
+        "uid": "nexus_2k_000074",
+        "status": "complete",
+        "predicted_n": 386
+      },
+      {
+        "uid": "nexus_2k_000519",
+        "status": "complete",
+        "predicted_n": 392
+      },
+      {
+        "uid": "nexus_2k_001087",
+        "status": "complete",
+        "predicted_n": 426
+      },
+      {
+        "uid": "nexus_2k_000053",
+        "status": "complete",
+        "predicted_n": 488
+      },
+      {
+        "uid": "nexus_2k_000675",
+        "status": "complete",
+        "predicted_n": 516
+      },
+      {
+        "uid": "nexus_2k_001716",
+        "status": "complete",
+        "predicted_n": 534
+      },
+      {
+        "uid": "nexus_2k_000242",
+        "status": "complete",
+        "predicted_n": 652
+      },
+      {
+        "uid": "nexus_2k_000823",
+        "status": "complete",
+        "predicted_n": 666
+      },
+      {
+        "uid": "nexus_2k_001536",
+        "status": "complete",
+        "predicted_n": 728
+      },
+      {
+        "uid": "nexus_2k_000840",
+        "status": "complete",
+        "predicted_n": 798
+      },
+      {
+        "uid": "nexus_2k_001577",
+        "status": "complete",
+        "predicted_n": 836
+      },
+      {
+        "uid": "nexus_2k_001216",
+        "status": "complete",
+        "predicted_n": 938
+      },
+      {
+        "uid": "nexus_2k_001331",
+        "status": "complete",
+        "predicted_n": 969
+      },
+      {
+        "uid": "nexus_2k_000142",
+        "status": "complete",
+        "predicted_n": 1029
+      },
+      {
+        "uid": "nexus_2k_001550",
+        "status": "complete",
+        "predicted_n": 1137
+      },
+      {
+        "uid": "nexus_2k_000872",
+        "status": "complete",
+        "predicted_n": 1215
+      },
+      {
+        "uid": "nexus_2k_000952",
+        "status": "complete",
+        "predicted_n": 1251
+      },
+      {
+        "uid": "nexus_2k_001825",
+        "status": "complete",
+        "predicted_n": 1279
+      },
+      {
+        "uid": "nexus_2k_001483",
+        "status": "complete",
+        "predicted_n": 1418
+      },
+      {
+        "uid": "nexus_2k_001439",
+        "status": "complete",
+        "predicted_n": 1446
+      },
+      {
+        "uid": "nexus_2k_001178",
+        "status": "complete",
+        "predicted_n": 1456
+      },
+      {
+        "uid": "nexus_2k_001317",
+        "status": "complete",
+        "predicted_n": 1536
+      },
+      {
+        "uid": "nexus_2k_000869",
+        "status": "complete",
+        "predicted_n": 1590
+      },
+      {
+        "uid": "nexus_2k_001415",
+        "status": "complete",
+        "predicted_n": 1608
+      },
+      {
+        "uid": "nexus_2k_000283",
+        "status": "complete",
+        "predicted_n": 1644
+      },
+      {
+        "uid": "nexus_2k_000935",
+        "status": "complete",
+        "predicted_n": 1713
+      },
+      {
+        "uid": "nexus_2k_000815",
+        "status": "complete",
+        "predicted_n": 1735
+      },
+      {
+        "uid": "nexus_2k_000800",
+        "status": "complete",
+        "predicted_n": 1829
+      },
+      {
+        "uid": "nexus_2k_001211",
+        "status": "complete",
+        "predicted_n": 1830
+      },
+      {
+        "uid": "nexus_2k_001093",
+        "status": "complete",
+        "predicted_n": 1963
+      },
+      {
+        "uid": "nexus_2k_000783",
+        "status": "complete",
+        "predicted_n": 2172
+      },
+      {
+        "uid": "nexus_2k_000083",
+        "status": "complete",
+        "predicted_n": 2237
+      },
+      {
+        "uid": "nexus_2k_001792",
+        "status": "complete",
+        "predicted_n": 2244
+      },
+      {
+        "uid": "nexus_2k_000280",
+        "status": "complete",
+        "predicted_n": 2279
+      },
+      {
+        "uid": "nexus_2k_000167",
+        "status": "complete",
+        "predicted_n": 2273
+      },
+      {
+        "uid": "nexus_2k_001232",
+        "status": "complete",
+        "predicted_n": 2398
+      },
+      {
+        "uid": "nexus_2k_000898",
+        "status": "complete",
+        "predicted_n": 2546
+      }
+    ]
+  }
+}

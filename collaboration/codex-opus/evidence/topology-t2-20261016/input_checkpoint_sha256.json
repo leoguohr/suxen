@@ -1,0 +1,17 @@
+{
+  "rehashed_this_batch": true,
+  "files": [
+    {
+      "path": "/guohaoran/nexus_topology_flow_overfit50_20261015/pair_resume_20261016/A_fresh/checkpoint-u004000-finalstage.pt",
+      "sha256": "92f09fab446dec509a48039beddb1b9735e09c9db85de059dcddf328674f6e6d"
+    },
+    {
+      "path": "/guohaoran/nexus_topology_flow_overfit50_20261015/pair_resume_20261016/B_s0warm/checkpoint-u004000-finalstage.pt",
+      "sha256": "abc330ba9328a79ac29c3eb0ad1989b18d2be6ebb0a941d8e3f773bb75ae9d59"
+    },
+    {
+      "path": "/guohaoran/nexus_topology_flow_overfit50_20261015/inputs/vae-1000.pt",
+      "sha256": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15"
+    }
+  ]
+}

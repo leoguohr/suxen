@@ -1,0 +1,41 @@
+{
+  "source_commit": "205c1b7d24b7321debe08feb8fec127d52d94a2b",
+  "branch": "topology-overfit50-20261015",
+  "vertex_eval": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K2_J5_lr5e-6_d0.5/evals/u004500_raw",
+  "full_trees_exact": 92,
+  "vertex_official_seeds": [
+    97029000,
+    97029001
+  ],
+  "flow_seeds": [
+    0,
+    1
+  ],
+  "cpu_gate": "CPU_GATE_OK (14 tests)",
+  "patches": "train.py: serialize init_checkpoint Path in config JSON; no training semantics changed",
+  "patch_sha256": "754386805f3315f88536e945433f19fccc8105bab5562766c5e2f8c8b16904e1",
+  "cooldown_execution": "GPU 2 single GPU; T1 adapter does not accept --init-checkpoint; AdamW state retained",
+  "gpu_allocation": {
+    "0": "gt_reference then B; cooldown raw after completion",
+    "1": "A; cooldown ema after completion",
+    "2": "B cooldown single GPU",
+    "3": "unused fallback"
+  },
+  "deadline_utc": "2026-10-16T16:04:04+00:00",
+  "gpu_budget_max_hours": 16,
+  "wall_budget_max_hours": 4,
+  "individual_quota": "unknown; quota and mmlsquota unavailable",
+  "persistent_mount": "/guohaoran (GPFS)",
+  "checkpoint_retention": "cooldown latest.pt then final.pt; one old copy retained until atomic replacement; parent checkpoints unchanged",
+  "expected_checkpoint_bytes": 37344882776,
+  "expected_peak_new_checkpoint_bytes": 74689765552,
+  "veval_verified_manifest_sha256": "0e75c07658cbb8a8106c93187dcaa8f9fdcbb453f980aa1132ac3244332e76c3",
+  "earlier_quad_A": "already complete u4000; no stop required",
+  "created_utc": "2026-10-16T12:21:06.338866+00:00",
+  "input_checkpoint_sha256": {
+    "A": "92f09fab446dec509a48039beddb1b9735e09c9db85de059dcddf328674f6e6d",
+    "B": "abc330ba9328a79ac29c3eb0ad1989b18d2be6ebb0a941d8e3f773bb75ae9d59",
+    "vae": "e89b8078b7abb0ca7b0c2c44f9f20382ec5b742f2aee948f209d642852714d15"
+  },
+  "input_checkpoints_rehashed_this_batch": true
+}

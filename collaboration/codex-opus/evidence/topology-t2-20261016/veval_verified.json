@@ -1,0 +1,837 @@
+{
+  "VEVAL": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K2_J5_lr5e-6_d0.5/evals/u004500_raw",
+  "VDATA": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/repo/vertex/dense_overfit50_20261009/data/prepared_d9",
+  "vdata_manifest_sha256": "101cc76ffbbe55012a8ad5bfbbb5c54148a755f1562fd0236ec0cbca70e7a6e6",
+  "generation_manifest_sha256": "3c5319f245931bd67d2461c298f64bb70d1611c7f9f8da4e7f7bd25f0b571289",
+  "evaluation_sha256": "5b0f5488cad297c52ea4a7d4fcee0daf41288fc328dedba18efc430c7e35d345",
+  "summary_sha256": "a47a893893b834771ec7ef635e0db4df0cca6ed2255fcdf6c75c0de5bff7a2f9",
+  "source_generation_manifest": {
+    "gt_read": false,
+    "rows": [
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001150",
+        "status": "complete",
+        "prediction_sha256": "c94a875524688ab7e3e7689bf2e432c277224282738878415f33984949289eda"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001045",
+        "status": "complete",
+        "prediction_sha256": "339c507efce6f4c1b180e98fbb7a2d740e43713e1c0469623da97b769267aca4"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000084",
+        "status": "complete",
+        "prediction_sha256": "fb5c617c47f19ea9df57cedc47d58007abfd8cfcdc3d25f169f92fc3a10e8005"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001692",
+        "status": "complete",
+        "prediction_sha256": "e34ad02bfa1a92404aa01c2767fd67f1f6bc29731649e7aab33e013bb618a30e"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001843",
+        "status": "complete",
+        "prediction_sha256": "faedba518c136e3d44f5b6f80631fa3cdb69cf030e0dfce712639556ead4fd71"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000346",
+        "status": "complete",
+        "prediction_sha256": "cdde335a1c71174c340a9ede90d7e32c386b576bcffefacfdfe140cb52668494"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001780",
+        "status": "complete",
+        "prediction_sha256": "6a58cb44a62514f8d7dff326225d2ba1dda3715dc2e6a2eead8b26f44b8e0cc1"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000796",
+        "status": "complete",
+        "prediction_sha256": "aafe619fcc984cdd386467d757a7365e700827979ba94995ee194901cbf3e173"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001085",
+        "status": "complete",
+        "prediction_sha256": "4f046135c9bf8ebc9584cfea2966b69fd0888ec3458e6205576a1baaa2c83f99"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000020",
+        "status": "complete",
+        "prediction_sha256": "501bbd27eb2777aa7cf2dfe298c95dd41b196bd10603d1e59f467d97d4dbf002"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000447",
+        "status": "complete",
+        "prediction_sha256": "90bd1cb7329494f20f3bc292a7a5f8238423dcedda6dd6019a9c1a9d562e9f58"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001179",
+        "status": "complete",
+        "prediction_sha256": "3ece71f2dd108d1d380995c22711319f5552db89f738c28fba92c305b03008fe"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000118",
+        "status": "complete",
+        "prediction_sha256": "00485bc80b82479d027b756fd6f86ea6efba784c9da44d4e9595b9478ba8f109"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000074",
+        "status": "complete",
+        "prediction_sha256": "7b8dbfb917c971548a78d6e59e3404664466199a0f4797eb9f78342bf4578450"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000519",
+        "status": "complete",
+        "prediction_sha256": "d19dfcb2965a6ae4b7d7d15846a41ed09271f88db634c89b6152ec52191c3700"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001087",
+        "status": "complete",
+        "prediction_sha256": "4e69b66071aac3754a41697ebdb71e2bf8cc22477b21cac3d47b1e69dfa5ebb7"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000053",
+        "status": "complete",
+        "prediction_sha256": "8a69b80d6839d04c52340bfe0c4fd80b132f02902904c624f921eebee8f0c260"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000675",
+        "status": "complete",
+        "prediction_sha256": "c59b585c0382a95ed765c84b32396b1069f8f43e15cbc046aa9d6ee9a2de31f6"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001716",
+        "status": "complete",
+        "prediction_sha256": "5af1007be757273a74350b008db26c14035e6aaeb21fa26b73bad63c51278039"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000242",
+        "status": "complete",
+        "prediction_sha256": "13cddc67a28ab97f1bd749441327f8805a75ac107e04ac1f61b5620465ea7a72"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000823",
+        "status": "complete",
+        "prediction_sha256": "85c254ce9baf66befaa1d6181c108006fa61919d93164375ebd57badd664d57c"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001536",
+        "status": "complete",
+        "prediction_sha256": "4b968fa09d5f11a1818b16e6bc65477d63bef9580fc929db40d9093a138a5045"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000840",
+        "status": "complete",
+        "prediction_sha256": "69b8a82dca532f714075dcdcc5c6ce5d5eeb10b6133757544e5387d6dbef8274"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001577",
+        "status": "complete",
+        "prediction_sha256": "88c4c07e3c044a845104557d17a478fc25864a8b7a0fd7612b1797c58fac9f54"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001216",
+        "status": "complete",
+        "prediction_sha256": "b3d1f9cb344534e0b58dc0f814cc5ed094c54060394a486eb20e93b490f38cf7"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001331",
+        "status": "complete",
+        "prediction_sha256": "bb3df1474b32a20c26c1983a248571fd878511d044b21c9d4e7de0475ac0208d"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000142",
+        "status": "complete",
+        "prediction_sha256": "c89c6535967d37ad1b987b1a817869b0afb1cfd3858897c8c543fc495a917c70"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001550",
+        "status": "complete",
+        "prediction_sha256": "3e9e811cbac5b3f084f55ea2a45b3c4c580c72c8482f40cbc9e3f59ff7fa9985"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000872",
+        "status": "complete",
+        "prediction_sha256": "5a0f34f1d5348a866d8e39669aa70f20d608029a09e91ae255177ba570af5020"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000952",
+        "status": "complete",
+        "prediction_sha256": "0bbf9d0b7e234d5942d35a1f21623085a57a20a769a48506ce66ba50de5e7ddf"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001825",
+        "status": "complete",
+        "prediction_sha256": "fba1c00f4e868f85bd569d6455bdf2e08344785f5da06f125fa19594febee156"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001483",
+        "status": "complete",
+        "prediction_sha256": "d53560081ed39adf153eb8ede0e95db41d3259798916674b009d16fc47f22c32"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001439",
+        "status": "complete",
+        "prediction_sha256": "d6c5a55e31a8f08096725c3d875b95ea0c2c6d09faa516c8d88a1d936b900384"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001178",
+        "status": "complete",
+        "prediction_sha256": "2e27415d49fdc5230a4fe7ca92d44e14ea6c5be8fd3d5473b6ad53a6896dac04"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001317",
+        "status": "complete",
+        "prediction_sha256": "6e7c14e7f74615b7dc7fdf288250c193dc82a3aa6c37f8d0641e88ae0c84380a"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000869",
+        "status": "complete",
+        "prediction_sha256": "7fa5a4be8c5dfa5eda790a165618f24f47103ddd5c8637bd7e23a011f1590d26"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001415",
+        "status": "complete",
+        "prediction_sha256": "fe773981291fa222fef436b3408e648417cf7a666d32c2836bc9e2b7b98b4ee6"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000283",
+        "status": "complete",
+        "prediction_sha256": "1eeedd4f12ec3d58844011017b98528e8a9f1a5ef7787db8818ee723fdc8c184"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000935",
+        "status": "complete",
+        "prediction_sha256": "6e9c62b3f55057ee7571299dc643e797aaaa8d4c2efc02713418cc59dbea7138"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000815",
+        "status": "complete",
+        "prediction_sha256": "8d47742d84afc908bb7655108829ed4d2acd5bec44257544323d4d2c2a0f2649"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000800",
+        "status": "complete",
+        "prediction_sha256": "2b5653d8a40450198086b1558700be567368ff8ea9c1d20e91fc6e46bc7a595a"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001211",
+        "status": "complete",
+        "prediction_sha256": "48b22aea2391ab894880384c7d3e969ecda3ae76e2ef0a2dafb79a1404348784"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001093",
+        "status": "complete",
+        "prediction_sha256": "e59e32e5d2cd43497fd3a271458fcdaf1b65821d78ce18cf919ae975906e48b5"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000783",
+        "status": "complete",
+        "prediction_sha256": "fa62856acee74a53421ffdeffc58c71dd3cd7ca4b707712eff6d5fc9a9ca142b"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000083",
+        "status": "complete",
+        "prediction_sha256": "652c287e3a5a5420f1f1f7bddd38a1acf7038e127f29d606d5043f564fd3f2cd"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001792",
+        "status": "complete",
+        "prediction_sha256": "2f166d182d30dfa5375e3bac10f04a28771081bafa5c540abd91ea3412847191"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000280",
+        "status": "complete",
+        "prediction_sha256": "13fe323a8813c94e54e803710a8799c09c27e4f4917a4e7339b15831cad50864"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000167",
+        "status": "complete",
+        "prediction_sha256": "2fb6f5da34c47c869beba871dd2859ea056b8140dc62fcdb2829a8aaeeb9ade8"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_001232",
+        "status": "complete",
+        "prediction_sha256": "155f3be983421a5f773c6fbea5eec659366a6e4981ce5e1c2ca4357db139a79c"
+      },
+      {
+        "seed": 97029000,
+        "uid": "nexus_2k_000898",
+        "status": "complete",
+        "prediction_sha256": "72475f0512e5e3f1b2e34295427ea9d58551a905075ccba914a255319466be04"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001150",
+        "status": "complete",
+        "prediction_sha256": "676e0a2e837eceb4cc751a4bc66bac8f7d8dce3300a82ecd3df298e730c350c0"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001045",
+        "status": "complete",
+        "prediction_sha256": "40266005df960a8f74263fff2e2788990a6faac93158fdbba7bf16d5189e10b3"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000084",
+        "status": "complete",
+        "prediction_sha256": "be65c04699b8de3130b542b50adaf371fe61a2b08f5fa7ad4e7522084a3b9e12"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001692",
+        "status": "complete",
+        "prediction_sha256": "b648ead8550915876721f629181d1753b7ca5ad343e08f1d379a24286b10f34e"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001843",
+        "status": "complete",
+        "prediction_sha256": "02e81db2396521fd364302f10534a4c1dce7da6d9b7b6cc065af59bcc1a194b5"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000346",
+        "status": "complete",
+        "prediction_sha256": "503d9f2895c9e41f049362ee01ef04af86884a80f41507bcf5dd6835c2a6fe2e"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001780",
+        "status": "complete",
+        "prediction_sha256": "bae0da43c1dc59e506b7732dd73a27393f244c64ddb778d64cf4941e32b75f17"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000796",
+        "status": "complete",
+        "prediction_sha256": "71f2c276f7425391fac1174bd977d0d65462bc570e178442e32657205877ad71"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001085",
+        "status": "complete",
+        "prediction_sha256": "a07e050beac255c2d543bb079d3b76171b151d34cd5bf5085d1c94bb6173195a"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000020",
+        "status": "complete",
+        "prediction_sha256": "06af4d7343cbdff4cff450f093d37c6954b390232a9a92e608b3fff4baaf8561"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000447",
+        "status": "complete",
+        "prediction_sha256": "26f25a2c2c06912760032284408b4d4b43c194b2ad08675517853646bdb2d485"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001179",
+        "status": "complete",
+        "prediction_sha256": "16bf926b6bbaa62d8b5372cad821c98e10e5f877ac01642dea73f0d5af0e90d8"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000118",
+        "status": "complete",
+        "prediction_sha256": "4e77c8b6d925caf478afc6452a57239f24ce82b50c0e57712cdfbad5898ee6bd"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000074",
+        "status": "complete",
+        "prediction_sha256": "5e015ae2650b0051d8f7b4dd3fd9bf1183618b8bacfd435425d4e442b114a714"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000519",
+        "status": "complete",
+        "prediction_sha256": "2ec9d8737a6cc4597f6625446f1ff3a788b6ddfbecce4d7c43a666c84a46e498"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001087",
+        "status": "complete",
+        "prediction_sha256": "da7e21a593d0ae40c979d61ae5616f118a7bdb715409ac3acde9c13e191971c3"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000053",
+        "status": "complete",
+        "prediction_sha256": "ffc0d42fa8a9086f8cb6906be69704ecc7e4791ba2ac56bcf30ab2768c766160"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000675",
+        "status": "complete",
+        "prediction_sha256": "04c8b5355afd8f04b419d23b85a15a31a738d196d02614be027137103a4bebd2"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001716",
+        "status": "complete",
+        "prediction_sha256": "b12b24ae11b06e62d66e7f16e8e7c9a874843296014a0ec7019a9d3dcdaaca51"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000242",
+        "status": "complete",
+        "prediction_sha256": "688e47d5becdef1d392f711e08f7c0cc6e8c034aaee7264a1a88210d77f82645"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000823",
+        "status": "complete",
+        "prediction_sha256": "641bc77bce098b7c067d0c084407260a16ff5a1a6dc4f62fa1f5f3d29e21f5a6"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001536",
+        "status": "complete",
+        "prediction_sha256": "c95c6e66928284d68f1fa571387aed96a490dcb2f3b1a11972645b8055b8fb0c"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000840",
+        "status": "complete",
+        "prediction_sha256": "000a8ed639503a448f92b5382b0b277ec8360d5b37ba2ea2ef096e7d3e8f70b5"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001577",
+        "status": "complete",
+        "prediction_sha256": "72323252ac3566a33a8eb42629eaaca9723629930e7919fe3d28fe45559f26bd"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001216",
+        "status": "complete",
+        "prediction_sha256": "64a1ca8b7c76d26dffd8b9526c3a16861d29e98ac7c40fe3508f8519d5ef481d"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001331",
+        "status": "complete",
+        "prediction_sha256": "4a96b8586b9012c85fa33b74a7fe54a940e5853688d6de23d5abaccf2494dd32"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000142",
+        "status": "complete",
+        "prediction_sha256": "fde00fe27f2dfe7a3be981a7c0529c92bc96122762888b2fcc2b8b29e019a59b"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001550",
+        "status": "complete",
+        "prediction_sha256": "a5567575ac9d23cf2f9ed6fff35ad89c437df2c8707be4df599655cc3b283185"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000872",
+        "status": "complete",
+        "prediction_sha256": "9dd8e9e788288f4f82650b4c5b959208185a2d5bfd1b803bebefc458717cfc09"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000952",
+        "status": "complete",
+        "prediction_sha256": "b30c49d98f0ca83433c1bc5bca65f45200e07e22a0ade801f10b2db82fe976dc"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001825",
+        "status": "complete",
+        "prediction_sha256": "25655db1977189c74ed30bab0f3b45655ad824c4798684a5bc7fb93b4581ed26"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001483",
+        "status": "complete",
+        "prediction_sha256": "290dfbde766698308441f5a3285fd893c2ca936c79a4c20749d114c9dfd16b76"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001439",
+        "status": "complete",
+        "prediction_sha256": "0ef74d7e2cbea5bacb7ec3c83ee3c23cfb2705a9d9962aa9b993d578ff1ae703"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001178",
+        "status": "complete",
+        "prediction_sha256": "1a356c7244c29721a506a5473ec9f2990eccc81aa883878adf4543cb747ad280"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001317",
+        "status": "complete",
+        "prediction_sha256": "b6a6d22bb59e1e09f527593f15d8adfda1eabc7f7075ca5db0f130db2ff054ff"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000869",
+        "status": "complete",
+        "prediction_sha256": "f93fa195d5f834676d550164a79442225879f8b46488c0755175f9fa1dcb4dfc"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001415",
+        "status": "complete",
+        "prediction_sha256": "19c67ee1a3b69c34cf1330a31cd74f0a654c02410992eb2c87e63e597703fac6"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000283",
+        "status": "complete",
+        "prediction_sha256": "636a455e6307d29d47ee8bbb56967879339638593c3a562f2f045790df060afa"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000935",
+        "status": "complete",
+        "prediction_sha256": "aefdfaca41eb9868a2f105d72b31960bd358ab83c22b947a78147da333542583"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000815",
+        "status": "complete",
+        "prediction_sha256": "e0c3ec17ec9c9c9691c272bea2844dad38e7c2cdc01745953735ef0a520c2fad"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000800",
+        "status": "complete",
+        "prediction_sha256": "99a5fc84c42f0671fde2bcc0c9ebfc11df281ebc4fa48ecc7583b18dbe5bd8ed"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001211",
+        "status": "complete",
+        "prediction_sha256": "e94541e7840f8857201dfc44eda1ef6f7f1caf3b6c4eaec8d6f13ba89e7f2c3f"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001093",
+        "status": "complete",
+        "prediction_sha256": "d2fde3edb7b100e3cebbec372c1b73e11eff0ed09b70b64af9d8d22db39340ca"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000783",
+        "status": "complete",
+        "prediction_sha256": "4676f8d247b6501d3b746bc33d78fef8b0c8a2ade38fa45dbbd4a9a99736263e"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000083",
+        "status": "complete",
+        "prediction_sha256": "629269241dde2196041e55d49ec376dadc2c15d945883cc69da8356ce1f17242"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001792",
+        "status": "complete",
+        "prediction_sha256": "091129c0868fe32e21b828096aa39f3eaba7ea0a96e5427e7c57bb43990a9933"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000280",
+        "status": "complete",
+        "prediction_sha256": "da4f746ada598b9f742422e072727a63d69ae531b83a5aa6e952b4ab588198b2"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000167",
+        "status": "complete",
+        "prediction_sha256": "2b1a1c40e144a2f7c3143b7912a00166316d70d2a1550d428a4a5aff70244041"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_001232",
+        "status": "complete",
+        "prediction_sha256": "26bd28e3285160ae84fd719f0942ba2e4a21a1302957e740e17caa744e6b86fa"
+      },
+      {
+        "seed": 97029001,
+        "uid": "nexus_2k_000898",
+        "status": "complete",
+        "prediction_sha256": "a1c99f06f908ac436910bf9897b064ed45d51e23bafdade062a45499b751f1c3"
+      }
+    ]
+  },
+  "summary": {
+    "update": 4500,
+    "weights": "raw",
+    "run_output": "/guohaoran/tmp/nexus_vertex_round3_batch2_20261015/round3_train/K2_J5_lr5e-6_d0.5",
+    "trees": 100,
+    "full_trees_exact": 92,
+    "native_final_sets_exact": 92,
+    "capacity_abort_trees": 0,
+    "count_accuracy": 0.93,
+    "teacher_rule_vs_d9_gt_pass": 92,
+    "first_mismatch_depth_histogram": {
+      "None": 92,
+      "8": 3,
+      "7": 4,
+      "9": 1
+    },
+    "exact_by_vertex_count": {
+      "0-300": {
+        "trees": 20,
+        "exact": 20
+      },
+      "300-700": {
+        "trees": 22,
+        "exact": 21
+      },
+      "700-1200": {
+        "trees": 14,
+        "exact": 14
+      },
+      "1200+": {
+        "trees": 44,
+        "exact": 37
+      }
+    },
+    "per_depth": [
+      {
+        "depth": 1,
+        "full_level_exact": 100,
+        "global_cells_tp": 776,
+        "global_cells_fp": 0,
+        "global_cells_fn": 0,
+        "global_cells_f1": 1.0
+      },
+      {
+        "depth": 2,
+        "full_level_exact": 100,
+        "global_cells_tp": 2368,
+        "global_cells_fp": 0,
+        "global_cells_fn": 0,
+        "global_cells_f1": 1.0
+      },
+      {
+        "depth": 3,
+        "full_level_exact": 100,
+        "global_cells_tp": 7488,
+        "global_cells_fp": 0,
+        "global_cells_fn": 0,
+        "global_cells_f1": 1.0
+      },
+      {
+        "depth": 4,
+        "full_level_exact": 100,
+        "global_cells_tp": 19912,
+        "global_cells_fp": 0,
+        "global_cells_fn": 0,
+        "global_cells_f1": 1.0
+      },
+      {
+        "depth": 5,
+        "full_level_exact": 100,
+        "global_cells_tp": 43060,
+        "global_cells_fp": 0,
+        "global_cells_fn": 0,
+        "global_cells_f1": 1.0
+      },
+      {
+        "depth": 6,
+        "full_level_exact": 100,
+        "global_cells_tp": 70602,
+        "global_cells_fp": 0,
+        "global_cells_fn": 0,
+        "global_cells_f1": 1.0
+      },
+      {
+        "depth": 7,
+        "full_level_exact": 96,
+        "global_cells_tp": 91746,
+        "global_cells_fp": 0,
+        "global_cells_fn": 4,
+        "global_cells_f1": 0.9999782011596983
+      },
+      {
+        "depth": 8,
+        "full_level_exact": 93,
+        "global_cells_tp": 102747,
+        "global_cells_fp": 0,
+        "global_cells_fn": 7,
+        "global_cells_f1": 0.9999659369054165
+      },
+      {
+        "depth": 9,
+        "full_level_exact": 92,
+        "global_cells_tp": 105635,
+        "global_cells_fp": 1,
+        "global_cells_fn": 9,
+        "global_cells_f1": 0.9999526694433927
+      }
+    ],
+    "seeds": [
+      97029000,
+      97029001
+    ],
+    "acceptance": {
+      "criterion": "100/100 trees exact at every depth (50 objects x 2 seeds)",
+      "official_seeds": true,
+      "passed": false
+    },
+    "s0_reference": {
+      "full_trees_exact": 7,
+      "per_depth_full_level_exact": [
+        98,
+        88,
+        58,
+        32,
+        16,
+        14,
+        12,
+        7,
+        7
+      ]
+    },
+    "minutes": 16.266007594034697
+  },
+  "cohort": [
+    "nexus_2k_001150",
+    "nexus_2k_001045",
+    "nexus_2k_000084",
+    "nexus_2k_001692",
+    "nexus_2k_001843",
+    "nexus_2k_000346",
+    "nexus_2k_001780",
+    "nexus_2k_000796",
+    "nexus_2k_001085",
+    "nexus_2k_000020",
+    "nexus_2k_000447",
+    "nexus_2k_001179",
+    "nexus_2k_000118",
+    "nexus_2k_000074",
+    "nexus_2k_000519",
+    "nexus_2k_001087",
+    "nexus_2k_000053",
+    "nexus_2k_000675",
+    "nexus_2k_001716",
+    "nexus_2k_000242",
+    "nexus_2k_000823",
+    "nexus_2k_001536",
+    "nexus_2k_000840",
+    "nexus_2k_001577",
+    "nexus_2k_001216",
+    "nexus_2k_001331",
+    "nexus_2k_000142",
+    "nexus_2k_001550",
+    "nexus_2k_000872",
+    "nexus_2k_000952",
+    "nexus_2k_001825",
+    "nexus_2k_001483",
+    "nexus_2k_001439",
+    "nexus_2k_001178",
+    "nexus_2k_001317",
+    "nexus_2k_000869",
+    "nexus_2k_001415",
+    "nexus_2k_000283",
+    "nexus_2k_000935",
+    "nexus_2k_000815",
+    "nexus_2k_000800",
+    "nexus_2k_001211",
+    "nexus_2k_001093",
+    "nexus_2k_000783",
+    "nexus_2k_000083",
+    "nexus_2k_001792",
+    "nexus_2k_000280",
+    "nexus_2k_000167",
+    "nexus_2k_001232",
+    "nexus_2k_000898"
+  ],
+  "official_seeds": [
+    97029000,
+    97029001
+  ],
+  "prediction_file_count": 100,
+  "uid_count": 50,
+  "unique_uid_seed_pairs": 100,
+  "cohort_matches_vdata_manifest": true,
+  "all_prediction_sha256_verified": true,
+  "verification_method": "Earlier in this subtask, all 100 NPZ files were rehashed and compared with generation_manifest.json, then integer_vertices/status/uniqueness/range were checked. This save step rereads only small JSON evidence; no repeated prediction-array read.",
+  "all_complete": true,
+  "integer_vertex_format": {
+    "dtype": "int64",
+    "shape": "N x 3",
+    "range": [
+      0,
+      511
+    ],
+    "duplicate_coordinates": false
+  },
+  "per_seed_vertex_totals": {
+    "97029000": 52820,
+    "97029001": 52816
+  },
+  "full_trees_exact": 92,
+  "weights": "raw",
+  "update": 4500,
+  "steps": 20,
+  "sampler": "euler",
+  "vertex_code_commit": "e7e3a326a65bc550be695104ae69e0d3435bd446",
+  "vertex_chat": "01a07b33-b8e8-71e0-9d24-1e151f321444",
+  "checkpoint_rehashed_this_task": false,
+  "topology_gt_difference": {
+    "uid": "nexus_2k_001825",
+    "vertex_prediction_count_each_official_seed": 1279,
+    "topology_ownae_gt_count": 1277,
+    "action": "Preserve actual K2 predictions. Do not substitute or silently trim to the OwnAE GT count."
+  },
+  "read_only_scope": "No GPU use, no server writes, no Vertex changes, no upload."
+}

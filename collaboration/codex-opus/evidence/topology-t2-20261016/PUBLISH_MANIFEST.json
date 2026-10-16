@@ -1,0 +1,137 @@
+[
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/AB_READY.json",
+    "bytes": 57,
+    "sha256": "dea8f8b43f3b6a241fdfe6a2bba919bd55c6fa538f736f919fe788ff54c09618"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/B_cooldown/config.json",
+    "bytes": 3183,
+    "sha256": "c298269b3600d3a7a38337be64ad7953b026d3e9572d3252128500fa6d799547"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/B_cooldown/status.json",
+    "bytes": 100,
+    "sha256": "70f12efddb612b013937eb392f2ad56871aab5f51a525261d5642ce4250f66e4"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/cascade_A/cascade_flow0/summary.json",
+    "bytes": 14846,
+    "sha256": "7fcc5c27c59e855fe23241bd897e44bf7726b621185bd781575c532a4ee314a5"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/cascade_A/cascade_flow0/trees.jsonl",
+    "bytes": 95017,
+    "sha256": "0236d7ccc4075f8ad823e17b2ffb135473e10ad04c8ce183be62e810ff221a1c"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/cascade_A/cascade_flow1/summary.json",
+    "bytes": 14842,
+    "sha256": "cfd76f9064fe2d511db85653784680a8f9089f0fe9c34a9abc291cc4a6147555"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/cascade_A/cascade_flow1/trees.jsonl",
+    "bytes": 95006,
+    "sha256": "6eb9092fc138332e57fe7962166f85e772a1743fec9e0612138276fadc4b7729"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/cascade_A/results.json",
+    "bytes": 35868,
+    "sha256": "0b7c364944c9b744ef8d9ffb66f0626a893c0477b4e0acc1d4890fecb07895e0"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/cascade_B/cascade_flow0/summary.json",
+    "bytes": 14841,
+    "sha256": "4ed06d979942eb74a6f542aebca87e1460d33f93fa425e5023ed75213a50ef54"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/cascade_B/cascade_flow0/trees.jsonl",
+    "bytes": 94652,
+    "sha256": "3038478b9e9938a3084f8d3836e2a9c02cf1475ed969c58484b74f3425f85d07"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/cascade_B/cascade_flow1/summary.json",
+    "bytes": 14841,
+    "sha256": "676cbef04041135b06f12aa776eec6d0c072ce64bdbe4eabd4c45d7039635fd2"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/cascade_B/cascade_flow1/trees.jsonl",
+    "bytes": 94431,
+    "sha256": "78cbf0f6f405784e89ff5ebbf1f522771c38826ce12997d42d34233cc9e3eae9"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/cascade_B/results.json",
+    "bytes": 35864,
+    "sha256": "bab67950fa9a609fb7737f8769486665507cf342860c9b4f8f9c0c6eb9d3c627"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/cooldown_path_serialization.patch",
+    "bytes": 876,
+    "sha256": "754386805f3315f88536e945433f19fccc8105bab5562766c5e2f8c8b16904e1"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/events.jsonl",
+    "bytes": 4048,
+    "sha256": "d2879111ea564bab80487f166ab417acd73902dda026598dfbbb15515efaab89"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/gt_reference_B/gt_reference_flow0/summary.json",
+    "bytes": 3022,
+    "sha256": "cf8704aaa2ba881fa80bae52349588d611bb44d66c29c4416fe3388e460fa71c"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/gt_reference_B/gt_reference_flow0/trees.jsonl",
+    "bytes": 46986,
+    "sha256": "c34bb23d42c032f15e374a9948aaed3d13495c08999c120f61d6fa5d1d63667f"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/gt_reference_B/results.json",
+    "bytes": 4164,
+    "sha256": "f109f1ab52caf0671974d487c74c0bebe9f9fd26bbad41a180209a1ab5b3e25e"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/input_checkpoint_sha256.json",
+    "bytes": 683,
+    "sha256": "c6852c2e1827d21162d5884507764d9117f38e23134d50cd1f8ef07977dac38e"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/logs/cpu_gate.log",
+    "bytes": 582,
+    "sha256": "fee0838a6ddd4d5e2164dc2cdd1f77af561e45df6dc1240aa48d5225de4f2d5b"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/manifest.json",
+    "bytes": 7434,
+    "sha256": "4057521fc187c4e192651d17e2c9038c3e692d1f66b22b22b77d136780d8afd1"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/provenance.json",
+    "bytes": 1880,
+    "sha256": "c269bd6ac8ace4191ddc0a59befc5a01bf17897544c3f71edff8a1ef98cf6d3e"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/self_check.json",
+    "bytes": 383,
+    "sha256": "90ae164186fe22e6e24b0e9c3c1c79cae2cc68c81df5170b39311bb5beece0be"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/source_files.json",
+    "bytes": 2660,
+    "sha256": "44b030ccd9be733459e5d61b799d38768c1422b3819b6fa1bcddd01443875711"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/stage_status.json",
+    "bytes": 513,
+    "sha256": "44f7cd21793b3d8597f5c7874f874236c0ab1c9681de5f3dc7df3a2204c7fedb"
+  },
+  {
+    "path": "collaboration/codex-opus/evidence/topology-t2-20261016/veval_verified.json",
+    "bytes": 26559,
+    "sha256": "0e75c07658cbb8a8106c93187dcaa8f9fdcbb453f980aa1132ac3244332e76c3"
+  },
+  {
+    "path": "collaboration/codex-opus/messages/20261016-topology-003-codex-t2-gate3.md",
+    "bytes": 11202,
+    "sha256": "443195f21d02929af731786aab89c34d2e691a121c2ecdfbd2557f9410a891ad"
+  }
+]

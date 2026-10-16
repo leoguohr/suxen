@@ -1,0 +1,97 @@
+[
+  {
+    "path": "CODEX_PROMPT.md",
+    "sha256": "4dc73ccf602e55f17410a556eb14bffa2462af6f54cd59bb92130ac9bef5a738",
+    "bytes": 3368
+  },
+  {
+    "path": "CODEX_PROMPT_T2.md",
+    "sha256": "54196ec324a728e7a87439ae4e641c87da5517c1bd045fb334cdf4b7f1638e61",
+    "bytes": 4867
+  },
+  {
+    "path": "README.md",
+    "sha256": "b592064d97937e9f4bde30e02f426c8bd0459300be9031cac25c18012c1d21f3",
+    "bytes": 2917
+  },
+  {
+    "path": "RUN_SHEET.md",
+    "sha256": "c7cd8f86de2a358b540a265b14b667344e6ff0d178146be9eb1945391679d4ea",
+    "bytes": 4578
+  },
+  {
+    "path": "cascade.py",
+    "sha256": "a0056d60df656530e0f08904bd9c2831fc39a963e81c618a6ee30e4def4838f6",
+    "bytes": 17342
+  },
+  {
+    "path": "common.py",
+    "sha256": "92f93b7def681bd230fa0b8370eeaa2d0db86d1d7fccf6fc789514e9b1b5fce5",
+    "bytes": 2617
+  },
+  {
+    "path": "data.py",
+    "sha256": "7b43a6bea978171b07e4774176bbfcd022a3d3df20e7b75088e33f70ed89bf00",
+    "bytes": 8197
+  },
+  {
+    "path": "evaluate.py",
+    "sha256": "4be263e73243afa02ef502f21d0dd280110088fb0d9ff199a45e409a52a016bb",
+    "bytes": 7373
+  },
+  {
+    "path": "fixtures/vae_mu_baseline.json",
+    "sha256": "8a0dd41aaeb60e04fae30e73f61a49791f7c7793be235fa6fe998b4378a49cc7",
+    "bytes": 15463
+  },
+  {
+    "path": "metrics.py",
+    "sha256": "456af4cdad7894214f31e571874369ec3563335c1c4c76b94e4a3d2dbd41c51b",
+    "bytes": 8915
+  },
+  {
+    "path": "model.py",
+    "sha256": "bc28fb6c1fca81421d36f07559ee40026bc64143e98dcf038cbcd019ca0f8b86",
+    "bytes": 13540
+  },
+  {
+    "path": "sampling.py",
+    "sha256": "25cdf5bd9552b4e5774d50d057aa5afd7fcce7b68ad3301dc6f080a111c2cae1",
+    "bytes": 2743
+  },
+  {
+    "path": "tests/test_cpu.py",
+    "sha256": "e9a97e4cf5286b4c77150cbc5d0b9c69ff0641907e55ab6816d8fcfc7407e117",
+    "bytes": 16716
+  },
+  {
+    "path": "train.py",
+    "sha256": "62e081a361d962263e3c0f163ee6aae82fde37682d7a7eca49f3ea324d3e678f",
+    "bytes": 26327
+  },
+  {
+    "path": "vendor/SOURCES.json",
+    "sha256": "b572def2a21c40825eca4345d1519b7fd1d18573bcf8d00fc6bdafe8fbc0fc1b",
+    "bytes": 1235
+  },
+  {
+    "path": "vendor/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "vendor/ownae_v2_native_models.py",
+    "sha256": "ad754ba4c83213ea6b69b2c6f496095924c6a4c2bfbd9c7c0300372ecb4fa1f3",
+    "bytes": 9139
+  },
+  {
+    "path": "vendor/samplers.py",
+    "sha256": "e1bcc2e0c26c20797092f7614af1c58904082bffd0538efec2cd95ee1fbc50ed",
+    "bytes": 2200
+  },
+  {
+    "path": "vendor/vertex_s0.py",
+    "sha256": "39491f94fadec84797b59a92d969dd923353abeea29a91a02e1a0f904ae1f386",
+    "bytes": 17910
+  }
+]
