@@ -26,3 +26,19 @@ below the teacher's 0.997.
 
 T1 result (2026-10-16, raw weights, update 4,000, Euler 20): Run B 0.99504 / 0.99505, Run A 0.99425 / 0.99420
 face micro-F1 on seeds 0 / 1, so the topology gate is passed. EMA weights (0.91-0.94) lagged; the runs stopped before LR decay.
+
+T2 result (2026-10-16): the evaluator self-check reproduced gate 2 exactly (faces 102811/945/79). Run B was
+cooled down for 1,000 updates (LR 1e-4 to 0, EMA 0.998 from raw; checkpoint SHA256 b71fb6f6...). On GT
+vertices it reaches face micro-F1 0.99555 on both seeds (VAE mu ceiling 0.99573). Gate 3 (full pipeline: the
+vertex chat's K2 u4500 generated cells, 2 vertex seeds x 50 objects, Euler 20), face micro-F1 on flow seeds 0 / 1:
+
+| Weights | Strict face F1 | Exact-vertex trees (90) | Inexact-vertex trees (10) | Joint strict |
+| --- | --- | --- | --- | --- |
+| Run B u4000 raw | 0.99495 / 0.99498 | 0.99517 / 0.99520 | 0.99375 / 0.99375 | 23 / 23 of 100 |
+| Run A u4000 raw | 0.99397 / 0.99397 | 0.99416 / 0.99422 | 0.99292 / 0.99261 | 16 / 15 of 100 |
+| B cooldown raw | 0.99541 / 0.99534 | 0.99558 / 0.99555 | 0.99446 / 0.99421 | 27 / 25 of 100 |
+| B cooldown EMA | 0.99540 / 0.99535 | 0.99558 / 0.99554 | 0.99443 / 0.99426 | 30 / 24 of 100 |
+
+Gate 3 passes (teacher's bar about 0.99; his own pipeline 0.9911). About 93% of the remaining face errors are
+the frozen VAE's own: decoding the VAE mu on the same trees gives 1,740 FP / 24 FN against the cooldown's
+1,814 / 84. Evidence: `codex-opus-exchange`, `evidence/topology-t2-20261016/` and release `topology-t2-gate3-2026-10-16`.
